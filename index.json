@@ -1832,18 +1832,8 @@
       "description": "This model may ignore up to X points of AP. This may not ignore AP from abilities which increase a weapon's base AP.",
       "points": ["rule.x", {"multiply": 1}]
     },
-    "resilient": {
-      "name": "Defiant",
-      "inputs": ["x"],
-      "description": "Roll a die each time this model is hit. On a value of X or less that hit is prevented.",
-      "points": ["rule.x", {"multiply": 2}]
-    },
-    "defiant": {
-      "name": "Defiant",
-      "inputs": ["x"],
-      "description": "Roll a die each time this model is hit. On a value of X or less that hit is prevented.",
-      "points": ["rule.x", {"multiply": 2}]
-    },
+    "resilient": {"name": "Defiant", "inputs": ["x"], "description": "Roll a die each time this model is hit. On a value of X or less that hit is prevented.", "points": ["rule.x", {"multiply": 2}]},
+    "defiant": {"name": "Defiant", "inputs": ["x"], "description": "Roll a die each time this model is hit. On a value of X or less that hit is prevented.", "points": ["rule.x", {"multiply": 2}]},
     "reach": {
       "name": "Reach",
       "inputs": ["x"],
@@ -2238,7 +2228,7 @@
       },
       "dual_fronts": {
         "name": "Dual Fronts",
-        "map": "https://github.com/dice-guild/battle-forge-data/raw/main/rules/missions/battle/dual_fronts.png",
+        "map": "https://github.com/dice-guild/vortex-gate-data/raw/main/maps/dual_frontlines.png",
         "setup": "You and your opponent must set up objective markers as shown in the mission map.",
         "deployment": "Roll off and the winner chooses a table edge for their reinforcements. Their opponent will get the opposite table edge.",
         "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling three or more objectives"
@@ -2252,7 +2242,7 @@
       },
       "push": {
         "name": "Push",
-        "map": "https://github.com/dice-guild/battle-forge-data/raw/main/rules/missions/battle/push.png",
+        "map": "https://github.com/dice-guild/vortex-gate-data/raw/main/maps/push.png",
         "setup": "You and your opponent must set up objective markers as shown in the mission map.",
         "deployment": "Roll off and the winner chooses a table edge for their reinforcements. Their opponent will get the opposite table edge.",
         "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling three or more objectives"
@@ -2287,7 +2277,7 @@
       },
       "sectors": {
         "name": "Sectors",
-        "map": "https://github.com/dice-guild/battle-forge-data/raw/main/rules/missions/battle/sectors.png",
+        "map": "https://github.com/dice-guild/vortex-gate-data/raw/main/maps/sectors.png",
         "setup": "You and your opponent must set up objective markers as shown in the mission map.",
         "deployment": "Roll off and the winner chooses a table edge for their reinforcements. Their opponent will get the opposite table edge.",
         "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling three or more objectives"
