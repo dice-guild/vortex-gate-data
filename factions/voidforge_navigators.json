@@ -72,12 +72,12 @@
       "keywords": ["Biker"]
     },
     "forge_chieftain_destroyer": {
-      "name": "Forgeborn Chieftain in Destroyer Armor",
+      "name": "Forgeborn Chieftain in Gravite Armor",
       "description": "A leader of a clan of ferocious defenders of the great forges.",
       "category": "hero",
       "models": [
         {
-          "name": "Forgeborn Chieftain in Destroyer Armor",
+          "name": "Forgeborn Chieftain in Gravite Armor",
           "movement": 4,
           "courage": 7,
           "shoot": 6,
@@ -186,12 +186,12 @@
       "keywords": ["Biker"]
     },
     "forge_runesmith_destroyer": {
-      "name": "Forgeborn Runesmith in Destroyer Armor",
+      "name": "Forgeborn Runesmith in Gravite Armor",
       "description": "A powerful spellcaster, using magical runes to change the outcome of a battle.",
       "category": "hero",
       "models": [
         {
-          "name": "Forgeborn Runesmith in Destroyer Armor",
+          "name": "Forgeborn Runesmith in Gravite Armor",
           "movement": 4,
           "courage": 7,
           "shoot": 6,
@@ -287,12 +287,12 @@
       "keywords": ["Biker"]
     },
     "forge_artificer_destroyer": {
-      "name": "Forgeborn Artificer in Destroyer Armor",
+      "name": "Forgeborn Artificer in Gravite Armor",
       "description": "A high-ranking mechanic and inventor, creating weapons and tools.",
       "category": "hero",
       "models": [
         {
-          "name": "Forgeborn Artificer in Destroyer Armor",
+          "name": "Forgeborn Artificer in Gravite Armor",
           "movement": 4,
           "courage": 7,
           "shoot": 6,
