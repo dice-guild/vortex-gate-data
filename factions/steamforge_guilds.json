@@ -91,7 +91,7 @@
     "data_specialist": {
       "name": "Data Specialist",
       "description": "An expert in manipulating machine data.",
-      "category": "elite",
+      "category": "hero",
       "keywords": ["Heavy Infantry"],
       "models": [
         {
@@ -103,7 +103,7 @@
           "defense": 9,
           "reflexes": 6,
           "weapons": ["handweapon", "radiation_pistol"],
-          "rules": ["protocols"],
+          "rules": ["leader", "protocols", {"id": "wounds", "x": 2}],
           "options": [
             {"replaceWeapon": "radiation_pistol", "withWeapon": ["thermal_pistol", "emp_pistol", "plasma_pistol", "fusion_pistol"]},
             {"replaceWeapon": {"id": "handweapon"}, "withWeapon": ["energy_powerweapon", "taser_sword", "energy_handweapon"]}
