@@ -326,7 +326,7 @@
           "defense": 11,
           "reflexes": 6,
           "rules": [{"id": "wounds", "x": 4}, {"id": "impact", "x": 3}],
-          "weapons": ["great_scythe", {"id": "handweapon", "count": 2}, {"id": "hooves_and_teeth", "count": 4}],
+          "weapons": [{"id": "great_scythe", "count": 3}, {"id": "hooves_and_teeth", "count": 4}],
           "options": [{"addRule": ["banner"]}],
           "min": 1,
           "max": 1
