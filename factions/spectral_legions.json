@@ -314,7 +314,7 @@
     "ghost_chariot": {
       "name": "Ghostly Chariot",
       "description": "A dreadful chariot pulled by ghastly horses.",
-      "category": "elite",
+      "category": "rare",
       "keywords": ["Vehicle"],
       "models": [
         {
@@ -323,9 +323,9 @@
           "courage": 5,
           "shoot": 5,
           "fight": 5,
-          "defense": 10,
+          "defense": 11,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 3}, {"id": "impact", "x": 3}],
+          "rules": [{"id": "wounds", "x": 4}, {"id": "impact", "x": 3}],
           "weapons": ["great_scythe", {"id": "handweapon", "count": 2}, {"id": "hooves_and_teeth", "count": 4}],
           "options": [{"addRule": ["banner"]}],
           "min": 1,
