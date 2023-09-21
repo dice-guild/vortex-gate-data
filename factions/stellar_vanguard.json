@@ -64,7 +64,7 @@
               "withWeapon": [{"id": "energy_handweapon", "count": 3}, {"id": "energy_powerweapon", "count": 3}, {"id": "twin_energy_handweapon", "count": 4}, {"id": "energy_greatweapon", "count": 3}]
             },
             {"addRule": ["jetpack_character", "destroyer_armor"], "limit": 1},
-            {"addRule": ["shield", {"name": "Army Standard", "id": "inspiring"}]}
+            {"addRule": ["shield"]}
           ],
           "min": 1,
           "max": 1
@@ -99,7 +99,7 @@
               "replaceWeapon": {"id": "twin_marine_rifle", "mount": ["Front"]},
               "withWeapon": [{"id": "twin_plasma_rifle", "mount": ["Front"]}, {"id": "twin_flamethrower", "mount": ["Front"]}, {"id": "twin_fusion_rifle", "mount": ["Front"]}]
             },
-            {"addRule": [{"id": "hover", "name": "Anti-Grav Engine"}, "shield", {"name": "Army Standard", "id": "inspiring", "x": "Infantry, Biker"}]}
+            {"addRule": [{"id": "hover", "name": "Anti-Grav Engine"}, "shield"]}
           ],
           "min": 1,
           "max": 1
@@ -130,7 +130,7 @@
               "withWeapon": [{"id": "energy_handweapon", "count": 4}, {"id": "energy_powerweapon", "count": 4}, {"id": "twin_energy_handweapon", "count": 5}, {"id": "energy_greatweapon", "count": 4}]
             },
             {"addRule": ["jetpack_character", "destroyer_armor"], "limit": 1},
-            {"addRule": ["shield", {"name": "Army Standard", "id": "inspiring"}]}
+            {"addRule": ["shield"]}
           ],
           "min": 1,
           "max": 1
@@ -165,7 +165,7 @@
               "replaceWeapon": {"id": "twin_marine_rifle", "mount": ["Front"]},
               "withWeapon": [{"id": "twin_plasma_rifle", "mount": ["Front"]}, {"id": "twin_flamethrower", "mount": ["Front"]}, {"id": "twin_fusion_rifle", "mount": ["Front"]}]
             },
-            {"addRule": ["shield", {"name": "Army Standard", "id": "inspiring", "x": "Infantry, Biker"}, {"id": "hover", "name": "Anti-Grav Engine"}]}
+            {"addRule": ["shield", {"id": "hover", "name": "Anti-Grav Engine"}]}
           ],
           "min": 1,
           "max": 1
@@ -1572,10 +1572,10 @@
           "rules": [{"id": "leader", "x": "Infantry, Heavy Infantry"}, {"id": "power", "x": 1}, {"id": "tactician", "x": "Infantry, Heavy Infantry"}, {"id": "wounds", "x": 3}],
           "weapons": ["twin_marine_rifle", {"id": "energy_handweapon", "count": 5}],
           "options": [
-            {"replaceWeapon": "twin_marine_rifle", "withWeapon": ["heavy_flamethrower", "medium_machinegun", "psychic_cannon"]},
+            {"replaceWeapon": "twin_marine_rifle", "withWeapon": ["heavy_flamethrower", "energy_gatling", "energy_cannon"]},
             {
               "replaceWeapon": {"id": "energy_handweapon", "count": 5},
-              "withWeapon": [{"id": "energy_polearm", "count": 5}, {"id": "energy_handweapon", "count": 6}, {"id": "energy_powerweapon", "count": 5}]
+              "withWeapon": [{"id": "energy_polearm", "count": 5}, {"id": "twin_energy_handweapon", "count": 6}, {"id": "energy_powerweapon", "count": 5}]
             },
             {"replaceRule": {"id": "power", "x": 1}, "withRule": [{"id": "power", "x": 2}]},
             {"addRule": [{"id": "defiant", "x": 3}]}
@@ -1602,13 +1602,12 @@
           "rules": ["leader", {"id": "power", "x": 1}, "tactician", {"id": "wounds", "x": 3}],
           "weapons": ["storm_rifle", {"id": "energy_handweapon", "count": 4}],
           "options": [
-            {"replaceWeapon": "storm_rifle", "withWeapon": "marine_smg"},
             {
               "replaceWeapon": {"id": "energy_handweapon", "count": 4},
-              "withWeapon": [{"id": "energy_polearm", "count": 4}, {"id": "energy_handweapon", "count": 5}, {"id": "energy_powerweapon", "count": 4}]
+              "withWeapon": [{"id": "energy_polearm", "count": 4}, {"id": "twin_energy_handweapon", "count": 5}, {"id": "energy_powerweapon", "count": 4}]
             },
             {"replaceRule": {"id": "power", "x": 1}, "withRule": [{"id": "power", "x": 2}]},
-            {"addRule": [{"id": "defiant", "x": 3}, {"name": "Army Standard", "id": "inspiring"}, "destroyer_armor"]}
+            {"addRule": [{"id": "defiant", "x": 3}, "destroyer_armor"]}
           ],
           "min": 1,
           "max": 1
@@ -1634,7 +1633,7 @@
           "weapons": [{"id": "heavy_walker_fist", "count": 8}],
           "options": [
             {"replaceWeapon": {"id": "heavy_walker_fist", "count": 4}, "withWeapon": [{"id": "energy_greathammer", "count": 4}, {"id": "energy_greatsword", "count": 4}]},
-            {"addWeapon": ["twin_heavy_flamethrower", "heavy_psychic_cannon", "heavy_gatling_gun"], "limit": 2},
+            {"addWeapon": ["twin_heavy_flamethrower", "heavy_energy_cannon", "heavy_gatling_gun"], "limit": 2},
             {"addRule": [{"id": "defiant", "x": 3}]}
           ],
           "min": 1,
@@ -1661,7 +1660,7 @@
           "weapons": [{"id": "heavy_walker_fist", "count": 8}],
           "options": [
             {"replaceWeapon": {"id": "heavy_walker_fist", "count": 4}, "withWeapon": [{"id": "energy_greathammer", "count": 4}, {"id": "energy_greatsword", "count": 4}]},
-            {"addWeapon": ["twin_heavy_flamethrower", "heavy_psychic_cannon", "heavy_gatling_gun"], "limit": 2},
+            {"addWeapon": ["twin_heavy_flamethrower", "heavy_energy_cannon", "heavy_gatling_gun"], "limit": 2},
             {"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]},
             {"addRule": [{"id": "defiant", "x": 3}]}
           ],
@@ -1706,7 +1705,7 @@
       "options": [
         {
           "replaceWeapon": ["storm_rifle", {"id": "energy_handweapon", "count": 2}],
-          "withWeapon": [["heavy_flamethrower", "handweapon"], ["medium_machinegun", "handweapon"], ["psychic_cannon", "handweapon"]],
+          "withWeapon": [["heavy_flamethrower", "handweapon"], ["energy_gatling", "handweapon"], ["energy_cannon", "handweapon"]],
           "modelLimit": "1/5"
         },
         {"replaceWeapon": "storm_rifle", "withWeapon": "marine_smg"},
@@ -1743,7 +1742,7 @@
         {"name": "Psychic Purge Marine", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 8, "reflexes": 6, "weapons": ["heavy_flamethrower", "handweapon"], "min": 4, "max": 9}
       ],
       "options": [
-        {"replaceWeapon": ["heavy_flamethrower"], "withWeapon": ["psychic_cannon", "medium_machinegun"]},
+        {"replaceWeapon": ["heavy_flamethrower"], "withWeapon": ["energy_cannon", "energy_gatling"]},
         {"addRule": ["ambush"], "modelLimit": "all"},
         {"addRule": [{"id": "defiant", "x": 3}], "limit": "1/5"}
       ]
@@ -1784,7 +1783,7 @@
       "options": [
         {
           "replaceWeapon": ["storm_rifle", {"id": "energy_handweapon", "count": 2}],
-          "withWeapon": [["heavy_flamethrower", "handweapon"], ["medium_machinegun", "handweapon"], ["psychic_cannon", "handweapon"]],
+          "withWeapon": [["heavy_flamethrower", "handweapon"], ["energy_gatling", "handweapon"], ["energy_cannon", "handweapon"]],
           "modelLimit": "1/5"
         },
         {"replaceWeapon": "storm_rifle", "withWeapon": "marine_smg"},
@@ -1814,7 +1813,7 @@
           "rules": ["ambush", "conclave"],
           "weapons": ["twin_marine_rifle", {"id": "energy_handweapon", "count": 2}],
           "options": [
-            {"replaceWeapon": "twin_marine_rifle", "withWeapon": ["heavy_flamethrower", "medium_machinegun", "psychic_cannon"]},
+            {"replaceWeapon": "twin_marine_rifle", "withWeapon": ["heavy_flamethrower", "energy_gatling", "energy_cannon"]},
             {
               "replaceWeapon": {"id": "energy_handweapon", "count": 2},
               "withWeapon": [{"id": "energy_polearm", "count": 2}, {"id": "energy_polearm", "count": 2}, {"id": "energy_handweapon", "count": 3}, {"id": "energy_powerweapon", "count": 2}]
@@ -1844,7 +1843,7 @@
           "rules": ["ambush", "conclave", {"id": "wounds", "x": 2}],
           "weapons": ["twin_marine_rifle", {"id": "energy_handweapon", "count": 3}],
           "options": [
-            {"replaceWeapon": "twin_marine_rifle", "withWeapon": ["heavy_flamethrower", "medium_machinegun", "psychic_cannon"]},
+            {"replaceWeapon": "twin_marine_rifle", "withWeapon": ["heavy_flamethrower", "energy_gatling", "energy_cannon"]},
             {
               "replaceWeapon": {"id": "energy_handweapon", "count": 3},
               "withWeapon": [{"id": "energy_polearm", "count": 3}, {"id": "energy_polearm", "count": 3}, {"id": "energy_handweapon", "count": 4}, {"id": "energy_powerweapon", "count": 3}]
