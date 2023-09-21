@@ -54,7 +54,7 @@
             },
             {"addWeapon": ["thermal_rifle", "eradication_ray", "plasma_rifle", "emp_rifle", "fusion_rifle", "flamethrower"], "limit": 1},
             {"addWeapon": ["servo_arm"], "limit": 2},
-            {"addRule": ["protocols", {"id": "power", "x": 1}, {"id": "power", "x": 2}], "limit": 1}
+            {"addRule": [{"id": "power", "x": 1}, {"id": "power", "x": 2}], "limit": 1}
           ],
           "min": 1,
           "max": 1
@@ -81,7 +81,7 @@
             {"replaceWeapon": [{"id": "handweapon", "count": 2}], "withWeapon": [{"id": "energy_powerweapon", "count": 2}, {"id": "energy_handweapon", "count": 2}, {"id": "taser_sword", "count": 2}]},
             {"addWeapon": ["thermal_rifle", "eradication_ray", "plasma_rifle", "emp_rifle", "fusion_rifle", "flamethrower"], "limit": 1},
             {"addWeapon": ["servo_arm"], "limit": 2},
-            {"addRule": [{"id": "power", "x": 1}, "protocols"], "limit": 1}
+            {"addRule": [{"id": "power", "x": 1}], "limit": 1}
           ],
           "min": 1,
           "max": 1
@@ -92,6 +92,7 @@
       "name": "Data Specialist",
       "description": "An expert in manipulating machine data.",
       "category": "elite",
+      "keywords": ["Heavy Infantry"],
       "models": [
         {
           "name": "Data Specialist",
@@ -102,7 +103,7 @@
           "defense": 9,
           "reflexes": 6,
           "weapons": ["handweapon", "radiation_pistol"],
-          "rules": ["engineer", "protocols", {"id": "support", "x": "Vehicles"}],
+          "rules": ["protocols"],
           "options": [
             {"replaceWeapon": "radiation_pistol", "withWeapon": ["thermal_pistol", "emp_pistol", "plasma_pistol", "fusion_pistol"]},
             {"replaceWeapon": {"id": "handweapon"}, "withWeapon": ["energy_powerweapon", "taser_sword", "energy_handweapon"]}
@@ -817,9 +818,9 @@
     "data_link": {"name": "Data Link", "description": "This model's unit gains +1 Courage.", "points": 5},
     "heat_scanner": {"name": "Heat Scanner", "description": "This model's unit gains +6\" to long range when shooting.", "points": 5},
     "protocols": {
-      "name": "Combat Protocols",
-      "description": "When this unit is activated, choose a Protocol for this unit or a friendly _Infantry_ or _Heavy Infantry_ unit within 6\" to be active until the end of the turn:\n* Advance: This unit has +2� Movement.\n* Extermination: When this unit shoots, hit rolls of 1 or 2 generate an additional hit.\n* Protection: Roll a die when a model in this unit loses a wound. On a roll of 1 or 2 that wound is not lost.",
-      "points": [15]
+      "name": "Protocols",
+      "description": "At the start of the round, choose one of the following abilities to be active for this model's unit until the end of the round:\n* Advance: Gain +2\" Movement.\n* Extermination: Hit rolls of 1 or 2 generate an additional hit.\n* Protection: Roll a die each time this model is hit. On a value of X or less that hit is prevented.",
+      "points": 15
     },
     "legend_machine_whisperer": {"name": "Machine Whisperer", "description": "This model may reroll failed _Engineer_ rolls.", "points": 5},
     "legend_masterwork_mechanisms": {"name": "Masterwork Mechanisms", "description": "This model has +1 save.", "points": 5}

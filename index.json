@@ -1835,13 +1835,13 @@
     "resilient": {
       "name": "Defiant",
       "inputs": ["x"],
-      "description": "Roll a die when this model is killed or loses a Wound. On a value of X or less that loss is prevented.",
+      "description": "Roll a die each time this model is hit. On a value of X or less that hit is prevented.",
       "points": ["rule.x", {"multiply": 2}]
     },
     "defiant": {
       "name": "Defiant",
       "inputs": ["x"],
-      "description": "Roll a die when this model is killed or loses a Wound. On a value of X or less that loss is prevented.",
+      "description": "Roll a die each time this model is hit. On a value of X or less that hit is prevented.",
       "points": ["rule.x", {"multiply": 2}]
     },
     "reach": {
