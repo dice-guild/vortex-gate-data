@@ -2245,7 +2245,7 @@
       },
       "wide": {
         "name": "Frontline Wide",
-        "map": "https://github.com/dice-guild/battle-forge-data/raw/main/rules/missions/battle/wide.png",
+        "map": "https://github.com/dice-guild/vortex-gate-data/raw/main/maps/wide.png",
         "setup": "You and your opponent must set up objective markers as shown in the mission map.",
         "deployment": "Roll off and the winner chooses a table edge for their reinforcements. Their opponent will get the opposite table edge.",
         "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling three or more objectives"
@@ -2294,7 +2294,7 @@
       },
       "wide_push": {
         "name": "Push Wide",
-        "map": "https://github.com/dice-guild/battle-forge-data/raw/main/rules/missions/battle/wide_push.png",
+        "map": "https://github.com/dice-guild/vortex-gate-data/raw/main/maps/wide_push.png",
         "setup": "You and your opponent must set up objective markers as shown in the mission map.",
         "deployment": "Roll off and the winner chooses a table edge for their reinforcements. Their opponent will get the opposite table edge.",
         "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling three or more objectives"
