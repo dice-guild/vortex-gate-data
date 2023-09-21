@@ -2266,7 +2266,7 @@
       },
       "flanking_frontlines": {
         "name": "Flanking Frontlines",
-        "map": "https://github.com/dice-guild/battle-forge-data/raw/main/rules/missions/battle/flanking_frontlines.png",
+        "map": "https://github.com/dice-guild/vortex-gate-data/raw/main/maps/flanking_frontlines.png",
         "setup": "You and your opponent must set up objective markers as shown in the mission map.",
         "deployment": "Roll off and the winner chooses a table edge for their reinforcements. Their opponent will get the opposite table edge.",
         "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling three or more objectives"
