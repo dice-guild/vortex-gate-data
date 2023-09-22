@@ -334,24 +334,11 @@
       ]
     },
     "goblin_herd": {
-      "name": "Goblin Herd",
-      "description": "A herd of lowly goblins.",
+      "name": "Goblins",
+      "description": "A horde of lowly goblins.",
       "category": "core",
       "keywords": ["Goblin", "Infantry"],
       "models": [
-        {
-          "name": "Goblin Herder",
-          "movement": 6,
-          "courage": 5,
-          "shoot": 4,
-          "fight": 6,
-          "defense": 5,
-          "reflexes": 5,
-          "weapons": ["heavy_pistol", {"id": "handweapon", "count": 2}],
-          "options": [{"addWeapon": ["attack_beast"]}],
-          "min": 1,
-          "max": 1
-        },
         {
           "name": "Goblin",
           "movement": 6,
@@ -396,7 +383,7 @@
           "min": 1,
           "max": 1
         },
-        {"name": "Marauder", "movement": 6, "courage": 5, "shoot": 4, "fight": 6, "defense": 5, "reflexes": 5, "weapons": ["carbine", "handweapon"], "min": 9, "max": 29}
+        {"name": "Marauder", "movement": 6, "courage": 5, "shoot": 4, "fight": 6, "defense": 5, "reflexes": 5, "weapons": ["carbine", "handweapon"], "min": 9, "max": 19}
       ]
     },
     "boss_mob": {
@@ -1254,28 +1241,6 @@
         }
       ]
     },
-    "goblin_veterans": {
-      "name": "Goblin Veterans",
-      "subfactions": ["none", "mechanized_focus", "revolution_focus"],
-      "keywords": ["Goblin", "Infantry"],
-      "description": "A herd of veteran goblin fighters.",
-      "category": "core",
-      "models": [
-        {
-          "name": "Goblin Veteran",
-          "courage": 5,
-          "shoot": 6,
-          "fight": 5,
-          "defense": 4,
-          "reflexes": 5,
-          "movement": 6,
-          "weapons": ["carbine", {"id": "light_handweapon"}],
-          "options": [{"addRule": ["heavy_armor"], "modelLimit": "all"}],
-          "min": 10,
-          "max": 20
-        }
-      ]
-    },
     "goblin_divers": {
       "name": "Goblin Divers",
       "description": "Skydiving goblins prepared to strike fast and hard.",
@@ -1306,7 +1271,7 @@
       "subfactions": ["none", "mechanized_focus", "revolution_focus"],
       "category": "elite",
       "keywords": ["Goblin", "Vehicle"],
-      "rules": [{"id": "impact", "x": 3}, "vulnerable_side_rear", {"id": "wounds", "x": 3}],
+      "rules": [{"id": "impact", "x": 3}, "vulnerable_side_rear", {"id": "wounds", "x": 2}],
       "models": [
         {
           "name": "Goblin Tank",
@@ -1318,8 +1283,8 @@
           "movement": 10,
           "weapons": [{"id": "plasma_rifle"}],
           "options": [{"replaceWeapon": {"id": "plasma_rifle"}, "withWeapon": ["heavy_flamethrower", "rocket_launcher", "heavy_machinegun", "goblin_bazooka"]}],
-          "min": 1,
-          "max": 3
+          "min": 3,
+          "max": 6
         }
       ]
     },
