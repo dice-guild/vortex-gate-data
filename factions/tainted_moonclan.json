@@ -21,7 +21,7 @@
           "reflexes": 8,
           "rules": [{"id": "striker", "x": 1}, "furious", {"id": "leader", "x": "Infantry, Heavy Infantry"}, {"id": "wounds", "x": 4}],
           "weapons": [{"id": "gouging_horns", "count": 2}, {"id": "grand_axe", "count": 3}],
-          "options": [{"addRule": [{"id": "icon", "x": "Infantry. Heavy Infantry"}]}, {"replaceRule": [{"id": "striker", "x": 1}], "withRule": [{"id": "striker", "x": 2}]}],
+          "options": [{"addRule": [{"id": "inspiring", "x": "Infantry. Heavy Infantry"}]}, {"replaceRule": [{"id": "striker", "x": 1}], "withRule": [{"id": "striker", "x": 2}]}],
           "min": 1,
           "max": 1
         }
@@ -64,7 +64,7 @@
           "reflexes": 8,
           "rules": ["leader", {"id": "warrior", "x": 1}, {"id": "wounds", "x": 3}],
           "weapons": [{"id": "grand_weapon", "count": 6}],
-          "options": [{"addRule": ["shield", {"id": "icon", "x": "Infantry"}]}, {"replaceRule": [{"id": "warrior", "x": 1}], "withRule": [{"id": "warrior", "x": 2}]}],
+          "options": [{"addRule": ["shield", {"id": "inspiring", "x": "Infantry"}]}, {"replaceRule": [{"id": "warrior", "x": 1}], "withRule": [{"id": "warrior", "x": 2}]}],
           "min": 1,
           "max": 1
         }
@@ -111,7 +111,7 @@
           "reflexes": 5,
           "rules": [{"id": "wounds", "x": 3}, {"id": "impact", "x": 6}, {"id": "leader", "x": "Vehicle"}, {"id": "warrior", "x": 1}],
           "weapons": [{"id": "grand_weapon", "count": 6}, {"id": "boar_tusks", "count": 4}],
-          "options": [{"addRule": ["relic_shield", {"id": "icon", "x": "Vehicle"}]}, {"replaceRule": [{"id": "warrior", "x": 1}], "withRule": [{"id": "warrior", "x": 2}]}],
+          "options": [{"addRule": ["relic_shield", {"id": "inspiring", "x": "Vehicle"}]}, {"replaceRule": [{"id": "warrior", "x": 1}], "withRule": [{"id": "warrior", "x": 2}]}],
           "min": 1,
           "max": 1
         }

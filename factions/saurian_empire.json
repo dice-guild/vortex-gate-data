@@ -110,7 +110,7 @@
           "weapons": [{"id": "handweapon", "count": 2}],
           "options": [
             {"replaceWeapon": [{"id": "handweapon", "count": 2}], "withWeapon": [["blowpipe", {"id": "light_handweapon", "count": 2}], ["javelin", {"id": "light_handweapon", "count": 2}]]},
-            {"addRule": [{"id": "icon", "x": "Infantry"}]}
+            {"addRule": [{"id": "inspiring", "x": "Infantry"}]}
           ],
           "min": 1,
           "max": 1
@@ -135,7 +135,7 @@
           "weapons": [{"id": "handweapon", "count": 2}, {"id": "fangs_and_teeth", "count": 2}],
           "options": [
             {"replaceWeapon": [{"id": "handweapon", "count": 2}], "withWeapon": [["javelin", {"id": "light_handweapon", "count": 2}], {"id": "lance", "count": 2}]},
-            {"addRule": [{"id": "icon", "x": "Infantry, Cavalry"}]},
+            {"addRule": [{"id": "inspiring", "x": "Infantry, Cavalry"}]},
             {"replaceRule": [{"id": "warrior", "x": 1}], "withRule": [{"id": "warrior", "x": 2}]}
           ],
           "min": 1,
@@ -186,7 +186,7 @@
           "weapons": [{"id": "handweapon", "count": 2}, {"id": "raking_claws", "count": 2}],
           "options": [
             {"replaceWeapon": [{"id": "handweapon", "count": 2}], "withWeapon": [["blowpipe", {"id": "light_handweapon", "count": 2}], ["javelin", {"id": "light_handweapon", "count": 2}]]},
-            {"addRule": [{"id": "icon", "x": "Infantry, Cavalry"}]},
+            {"addRule": [{"id": "inspiring", "x": "Infantry, Cavalry"}]},
             {"replaceRule": [{"id": "warrior", "x": 1}], "withRule": [{"id": "warrior", "x": 2}]}
           ],
           "min": 1,
@@ -211,7 +211,7 @@
           "weapons": [{"id": "great_weapon", "count": 3}],
           "options": [
             {"replaceWeapon": [{"id": "great_weapon", "count": 3}], "withWeapon": [{"id": "great_hammer", "count": 3}, {"id": "great_weapon", "count": 4}, {"id": "heavy_spear", "count": 3}]},
-            {"addRule": [{"id": "icon", "x": "Infantry"}, {"id": "power", "x": 1}], "limit": 1},
+            {"addRule": [{"id": "inspiring", "x": "Infantry"}, {"id": "power", "x": 1}], "limit": 1},
             {"replaceRule": [{"id": "tactician", "x": 1}], "withRule": [{"id": "tactician", "x": 2}]}
           ],
           "min": 1,
@@ -237,7 +237,7 @@
           "weapons": [{"id": "great_weapon", "count": 3}, {"id": "fangs_and_teeth", "count": 2}],
           "options": [
             {"replaceWeapon": [{"id": "great_weapon", "count": 3}], "withWeapon": [{"id": "great_hammer", "count": 3}, {"id": "great_weapon", "count": 4}, {"id": "lance", "count": 3}]},
-            {"addRule": [{"id": "icon", "x": "Infantry, Cavalry"}]},
+            {"addRule": [{"id": "inspiring", "x": "Infantry, Cavalry"}]},
             {"replaceRule": [{"id": "warrior", "x": 1}], "withRule": [{"id": "warrior", "x": 2}]}
           ],
           "min": 1,
@@ -263,7 +263,7 @@
           "weapons": [{"id": "great_weapon", "count": 3}, {"id": "raking_claws", "count": 2}],
           "options": [
             {"replaceWeapon": [{"id": "great_weapon", "count": 3}], "withWeapon": [{"id": "great_hammer", "count": 3}, {"id": "great_weapon", "count": 4}, {"id": "lance", "count": 3}]},
-            {"addRule": [{"id": "icon", "x": "Infantry, Cavalry"}]},
+            {"addRule": [{"id": "inspiring", "x": "Infantry, Cavalry"}]},
             {"replaceRule": [{"id": "warrior", "x": 1}], "withRule": [{"id": "warrior", "x": 2}]}
           ],
           "min": 1,

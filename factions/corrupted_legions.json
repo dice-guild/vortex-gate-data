@@ -24,7 +24,7 @@
               "replaceWeapon": [{"id": "great_weapon", "count": 3}],
               "withWeapon": [{"id": "heavy_polearm", "count": 3}, {"id": "heavy_flail", "count": 3}, {"id": "great_weapon", "count": 4}, {"id": "grand_weapon", "count": 3}]
             },
-            {"addRule": ["shield", {"id": "icon", "x": "Infantry"}]},
+            {"addRule": ["shield", {"id": "inspiring", "x": "Infantry"}]},
             {"addWeapon": ["barbed_whip"], "subfactions": ["shock_focus"]},
             {"addRule": ["disk_of_change"], "subfactions": ["power_focus"]},
             {"replaceRule": [{"id": "corrupted_tactics", "x": 1}], "withRule": [{"id": "corrupted_tactics", "x": 2}]}
@@ -55,7 +55,7 @@
               "replaceWeapon": [{"id": "great_weapon", "count": 3}],
               "withWeapon": [{"id": "heavy_flail", "count": 3}, {"id": "great_weapon", "count": 4}, {"id": "grand_weapon", "count": 3}, {"id": "heavy_lance", "count": 3}]
             },
-            {"addRule": ["shield", {"id": "icon", "x": "Infantry, Cavalry"}]},
+            {"addRule": ["shield", {"id": "inspiring", "x": "Infantry, Cavalry"}]},
             {"replaceRule": [{"id": "corrupted_tactics", "x": 1}], "withRule": [{"id": "corrupted_tactics", "x": 2}]}
           ],
           "min": 1,
@@ -84,7 +84,7 @@
               "replaceWeapon": [{"id": "great_weapon", "count": 3}],
               "withWeapon": [{"id": "heavy_flail", "count": 3}, {"id": "great_weapon", "count": 4}, {"id": "grand_weapon", "count": 3}, {"id": "heavy_lance", "count": 3}]
             },
-            {"addRule": ["shield", {"id": "icon", "x": "Infantry, Cavalry"}]},
+            {"addRule": ["shield", {"id": "inspiring", "x": "Infantry, Cavalry"}]},
             {"replaceRule": [{"id": "corrupted_tactics", "x": 1}], "withRule": [{"id": "corrupted_tactics", "x": 2}]}
           ],
           "min": 1,
@@ -113,7 +113,7 @@
               "replaceWeapon": [{"id": "great_weapon", "count": 4}],
               "withWeapon": [{"id": "heavy_flail", "count": 4}, {"id": "great_weapon", "count": 5}, {"id": "grand_weapon", "count": 4}, {"id": "heavy_lance", "count": 4}]
             },
-            {"addRule": ["relic_shield", {"id": "icon", "x": "Infantry, Cavalry"}]},
+            {"addRule": ["relic_shield", {"id": "inspiring", "x": "Infantry, Cavalry"}]},
             {"replaceRule": [{"id": "corrupted_tactics", "x": 2}], "withRule": [{"id": "corrupted_tactics", "x": 3}]}
           ],
           "min": 1,

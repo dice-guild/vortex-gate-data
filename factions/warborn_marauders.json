@@ -48,7 +48,7 @@
             {"replaceWeapon": {"id": "handweapon", "count": 5}, "withWeapon": [{"id": "energy_handweapon", "count": 5}, {"id": "energy_saw", "count": 5}, {"id": "heavy_energy_claw", "count": 5}]},
             {"addWeapon": ["attack_beast"]},
             {"addRule": [{"id": "defiant", "x": 3, "name": "Cyborg Body"}, "ultra_armor"], "limit": 1},
-            {"addRule": [{"id": "icon", "x": "Infantry"}, "war_banner"], "limit": 1},
+            {"addRule": [{"id": "inspiring", "x": "Infantry"}, "war_banner"], "limit": 1},
             {"replaceRule": {"id": "warrior", "x": 1}, "withRule": {"id": "warrior", "x": 2}}
           ],
           "min": 1,
@@ -1485,7 +1485,7 @@
     "extra_space": {"name": "Extra Space", "description_short": "Transport +10", "hidden": true, "points": 10},
     "extra_armor": {"name": "Extra Armor", "description_short": "Save +1", "hidden": true, "points": 12},
     "war_banner": {"name": "War Banner", "description": "Once per round, a friendly _Infantry_ unit within 6\" gains +1 AP on all Melee weapons.", "points": 10},
-    "icon": {"name": "Icon", "description": "Friendly units of X types within 6\" may re-roll a single failed Courage test when removing Shock.", "points": 10, "inputs": ["x"]},
+    "inspiring": {"name": "Icon", "description": "Friendly units of X types within 6\" may re-roll a single failed Courage test when removing Shock.", "points": 10, "inputs": ["x"]},
     "brr": {"name": "Big Red Button", "hidden": true, "description_short": "Movement +2\"", "points": 6},
     "ultra_armor": {"name": "Ultra Armor", "hidden": true, "description_short": "Save +1, Movement -1\"", "points": 5, "description": "Save +1, Movement -1\""},
     "goblin_tactics": {

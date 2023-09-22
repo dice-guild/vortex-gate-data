@@ -1712,7 +1712,6 @@
     "legend_courage": {"name": "Inspired", "description": "This model gains +1 Courage.", "points": 10},
     "legend_quick_reflexes": {"name": "Quick Reflexes", "description": "This model gains +1 Initiative.", "points": 10},
     "legend_expert_fighter": {"name": "Expert Fighter", "description": "This model may make one additional attack with any Melee weapon.", "points": 10},
-    "icon": {"name": "Icon", "description": "This model's unit may re-roll failed Courage tests of 9+.", "points": 10},
     "mount_horse": {"name": "Horse", "hidden": true, "description_short": "+2\" Movement", "description": "Increase this model's Movement by 2\".", "points": 2},
     "barbed_net": {"name": "Barbed Net", "description": "Units hit by this weapon half their movement until the end of the turn.", "points": 3},
     "regeneration": {"name": "Regeneration", "description": "At the end of it's activation you can heal 1 wound that has been allocated to this model.", "points": 5},

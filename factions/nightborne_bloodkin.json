@@ -70,7 +70,7 @@
           "weapons": [{"id": "heavy_handweapon", "count": 4}, {"id": "hooves_and_teeth", "count": 2}],
           "options": [
             {"replaceWeapon": [{"id": "heavy_handweapon", "count": 4}], "withWeapon": [{"id": "lance", "count": 4}, {"id": "heavy_handweapon", "count": 5}, {"id": "great_weapon", "count": 4}]},
-            {"addRule": ["enchanted_shield", {"id": "icon", "x": "Infantry, Cavalry"}]},
+            {"addRule": ["enchanted_shield", {"id": "inspiring", "x": "Infantry, Cavalry"}]},
             {"addRule": [{"id": "power", "x": 1}, {"id": "power", "x": 2}]},
             {"replaceRule": [{"id": "warrior", "x": 1}], "withRule": [{"id": "warrior", "x": 2}]}
           ],
@@ -101,7 +101,7 @@
               "replaceWeapon": [{"id": "heavy_handweapon", "count": 4}],
               "withWeapon": [{"id": "great_weapon", "count": 4}, {"id": "heavy_handweapon", "count": 5}, {"id": "polearm", "count": 4}, {"id": "grand_mace", "count": 3}]
             },
-            {"addRule": ["enchanted_shield", {"id": "icon", "x": "Infantry"}]},
+            {"addRule": ["enchanted_shield", {"id": "inspiring", "x": "Infantry"}]},
             {"addRule": [{"id": "fly", "name": "Wings"}]},
             {"addRule": [{"id": "power", "x": 1}, {"id": "power", "x": 2}], "limit": 1},
             {"replaceRule": [{"id": "vampire_tactics", "x": 1}], "withRule": [{"id": "vampire_tactics", "x": 2}]}
@@ -158,7 +158,7 @@
               "replaceWeapon": [{"id": "great_weapon", "count": 4}],
               "withWeapon": [{"id": "great_polearm", "count": 3}, {"id": "great_lance", "count": 3}, {"id": "grand_axe", "count": 3}, {"id": "grand_mace", "count": 3}]
             },
-            {"addRule": ["enchanted_shield", {"id": "icon", "x": "Infantry, Cavalry"}]},
+            {"addRule": ["enchanted_shield", {"id": "inspiring", "x": "Infantry, Cavalry"}]},
             {"addRule": [{"id": "power", "x": 1}]}
           ]
         }
@@ -183,7 +183,7 @@
           "weapons": [{"id": "great_weapon", "count": 4}],
           "options": [
             {"replaceWeapon": [{"id": "great_weapon", "count": 4}], "withWeapon": [{"id": "grand_axe", "count": 3}, {"id": "grand_mace", "count": 3}, {"id": "great_polearm", "count": 3}]},
-            {"addRule": ["enchanted_shield", {"id": "icon", "x": "Infantry"}]},
+            {"addRule": ["enchanted_shield", {"id": "inspiring", "x": "Infantry"}]},
             {"addRule": [{"id": "power", "x": 1}]}
           ],
           "min": 1,

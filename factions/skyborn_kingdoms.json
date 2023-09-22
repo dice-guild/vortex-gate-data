@@ -31,7 +31,7 @@
               ]
             },
             {"addWeapon": ["heavy_pistol", "heavy_crossbow", "repeater_handgun"], "limit": 1},
-            {"addRule": ["shield", {"id": "icon", "x": "Infantry"}]},
+            {"addRule": ["shield", {"id": "inspiring", "x": "Infantry"}]},
             {"replaceRule": [{"id": "battlefield_commands", "x": 1}], "withRule": [{"id": "battlefield_commands", "x": 2}]}
           ],
           "min": 1,
@@ -61,7 +61,7 @@
               "withWeapon": [{"id": "great_weapon", "count": 3}, {"id": "grand_hammer", "count": 3}, {"id": "grand_weapon", "count": 3}, {"id": "handweapon", "count": 4}, {"id": "lance", "count": 3}]
             },
             {"addWeapon": ["heavy_pistol", "heavy_crossbow", "repeater_handgun"], "limit": 1},
-            {"addRule": ["shield", {"id": "icon", "x": "Infantry, Cavalry"}, {"name": "Wings", "id": "fly"}]},
+            {"addRule": ["shield", {"id": "inspiring", "x": "Infantry, Cavalry"}, {"name": "Wings", "id": "fly"}]},
             {"replaceRule": [{"id": "battlefield_commands", "x": 1}], "withRule": [{"id": "battlefield_commands", "x": 2}]}
           ],
           "min": 1,
@@ -88,7 +88,7 @@
           "options": [
             {"replaceWeapon": [{"id": "grand_weapon", "count": 3}], "withWeapon": [{"id": "heavy_lance", "count": 3}, {"id": "grand_weapon", "count": 4}, {"id": "grand_hammer", "count": 3}]},
             {"addWeapon": ["heavy_pistol", "heavy_crossbow", "repeater_handgun"], "limit": 1},
-            {"addRule": ["relic_shield", {"id": "icon", "x": "Infantry, Cavalry"}]},
+            {"addRule": ["relic_shield", {"id": "inspiring", "x": "Infantry, Cavalry"}]},
             {"replaceRule": [{"id": "battlefield_commands", "x": 1}], "withRule": [{"id": "battlefield_commands", "x": 2}]}
           ],
           "min": 1,

@@ -48,7 +48,7 @@
               "withWeapon": [{"id": "grand_axe", "count": 3}, {"id": "great_weapon", "count": 4}, {"id": "grand_weapon", "count": 3}, {"id": "heavy_polearm", "count": 3}]
             },
             {"addWeapon": ["bow", "attack_beast"]},
-            {"addRule": ["shield", {"id": "icon", "x": "Infantry"}]},
+            {"addRule": ["shield", {"id": "inspiring", "x": "Infantry"}]},
             {"replaceRule": [{"id": "orc_tactics", "x": 1}], "withRule": [{"id": "orc_tactics", "x": 2}]}
           ],
           "min": 1,
@@ -78,7 +78,7 @@
               "withWeapon": [{"id": "grand_axe", "count": 3}, {"id": "great_weapon", "count": 4}, {"id": "heavy_lance", "count": 3}, {"id": "grand_weapon", "count": 3}]
             },
             {"addWeapon": ["bow"]},
-            {"addRule": ["shield", {"id": "icon", "x": "Infantry, Cavalry"}]},
+            {"addRule": ["shield", {"id": "inspiring", "x": "Infantry, Cavalry"}]},
             {"replaceRule": [{"id": "orc_tactics", "x": 1}], "withRule": [{"id": "orc_tactics", "x": 2}]}
           ],
           "min": 1,
@@ -108,7 +108,7 @@
               "withWeapon": [{"id": "grand_axe", "count": 3}, {"id": "great_weapon", "count": 4}, {"id": "heavy_lance", "count": 3}, {"id": "grand_weapon", "count": 3}]
             },
             {"addWeapon": ["bow"]},
-            {"addRule": ["shield", {"id": "icon", "x": "Infantry, Cavalry"}]},
+            {"addRule": ["shield", {"id": "inspiring", "x": "Infantry, Cavalry"}]},
             {"replaceRule": [{"id": "orc_tactics", "x": 1}], "withRule": [{"id": "orc_tactics", "x": 2}]}
           ],
           "min": 1,
@@ -138,7 +138,7 @@
               "withWeapon": [{"id": "grand_axe", "count": 3}, {"id": "great_weapon", "count": 4}, {"id": "heavy_lance", "count": 3}, {"id": "grand_weapon", "count": 3}]
             },
             {"addWeapon": ["bow"]},
-            {"addRule": ["relic_shield", {"id": "icon", "x": "Monster"}]},
+            {"addRule": ["relic_shield", {"id": "inspiring", "x": "Monster"}]},
             {"replaceRule": [{"id": "orc_tactics", "x": 1}], "withRule": [{"id": "orc_tactics", "x": 2}]}
           ],
           "min": 1,
@@ -168,7 +168,7 @@
               "withWeapon": [{"id": "grand_axe", "count": 3}, {"id": "great_weapon", "count": 4}, {"id": "heavy_lance", "count": 3}, {"id": "grand_weapon", "count": 3}]
             },
             {"addWeapon": ["bow"]},
-            {"addRule": ["relic_shield", {"id": "icon", "x": "Infantry, Cavalry"}]},
+            {"addRule": ["relic_shield", {"id": "inspiring", "x": "Infantry, Cavalry"}]},
             {"replaceRule": [{"id": "orc_tactics", "x": 1}], "withRule": [{"id": "orc_tactics", "x": 2}]}
           ],
           "min": 1,
@@ -198,7 +198,7 @@
               "withWeapon": [{"id": "grand_axe", "count": 3}, {"id": "great_weapon", "count": 4}, {"id": "heavy_lance", "count": 3}, {"id": "grand_weapon", "count": 3}]
             },
             {"addWeapon": ["bow"]},
-            {"addRule": ["relic_shield", {"id": "icon", "x": "Infantry, Cavalry"}]},
+            {"addRule": ["relic_shield", {"id": "inspiring", "x": "Infantry, Cavalry"}]},
             {"replaceRule": [{"id": "orc_tactics", "x": 1}], "withRule": [{"id": "orc_tactics", "x": 2}]}
           ],
           "min": 1,
@@ -228,7 +228,7 @@
               "withWeapon": [{"id": "grand_axe", "count": 3}, {"id": "great_weapon", "count": 4}, {"id": "heavy_lance", "count": 3}, {"id": "grand_weapon", "count": 3}]
             },
             {"addWeapon": ["bow"]},
-            {"addRule": ["relic_shield", {"id": "icon", "x": "Vehicle"}]},
+            {"addRule": ["relic_shield", {"id": "inspiring", "x": "Vehicle"}]},
             {"replaceRule": [{"id": "orc_tactics", "x": 1}], "withRule": [{"id": "orc_tactics", "x": 2}]}
           ],
           "min": 1,
@@ -365,7 +365,7 @@
           "options": [
             {"replaceWeapon": [{"id": "handweapon", "count": 3}], "withWeapon": [{"id": "great_weapon", "count": 3}, {"id": "handweapon", "count": 4}, {"id": "polearm", "count": 3}]},
             {"addWeapon": ["short_bow", "attack_beast"]},
-            {"addRule": ["shield", {"id": "icon", "x": "Infantry"}]},
+            {"addRule": ["shield", {"id": "inspiring", "x": "Infantry"}]},
             {"replaceRule": [{"id": "goblin_tactics", "x": 1}], "withRule": [{"id": "goblin_tactics", "x": 2}]}
           ],
           "min": 1,
@@ -392,7 +392,7 @@
           "options": [
             {"replaceWeapon": [{"id": "handweapon", "count": 3}], "withWeapon": [{"id": "great_weapon", "count": 3}, {"id": "handweapon", "count": 4}, {"id": "lance", "count": 3}]},
             {"addWeapon": ["short_bow"]},
-            {"addRule": ["shield", {"id": "icon", "x": "Infantry, Cavalry"}]},
+            {"addRule": ["shield", {"id": "inspiring", "x": "Infantry, Cavalry"}]},
             {"replaceRule": [{"id": "goblin_tactics", "x": 1}], "withRule": [{"id": "goblin_tactics", "x": 2}]}
           ],
           "min": 1,
@@ -419,7 +419,7 @@
           "options": [
             {"replaceWeapon": [{"id": "handweapon", "count": 3}], "withWeapon": [{"id": "great_weapon", "count": 3}, {"id": "handweapon", "count": 4}, {"id": "lance", "count": 3}]},
             {"addWeapon": ["short_bow"]},
-            {"addRule": ["shield", {"id": "icon", "x": "Infantry, Cavalry"}]},
+            {"addRule": ["shield", {"id": "inspiring", "x": "Infantry, Cavalry"}]},
             {"replaceRule": [{"id": "goblin_tactics", "x": 1}], "withRule": [{"id": "goblin_tactics", "x": 2}]}
           ],
           "min": 1,
@@ -446,7 +446,7 @@
           "options": [
             {"replaceWeapon": [{"id": "handweapon", "count": 3}], "withWeapon": [{"id": "great_weapon", "count": 3}, {"id": "handweapon", "count": 4}, {"id": "lance", "count": 3}]},
             {"addWeapon": ["short_bow"]},
-            {"addRule": ["shield", {"id": "icon", "x": "Infantry, Cavalry"}]},
+            {"addRule": ["shield", {"id": "inspiring", "x": "Infantry, Cavalry"}]},
             {"replaceRule": [{"id": "goblin_tactics", "x": 1}], "withRule": [{"id": "goblin_tactics", "x": 2}]}
           ],
           "min": 1,
@@ -473,7 +473,7 @@
           "options": [
             {"replaceWeapon": [{"id": "handweapon", "count": 3}], "withWeapon": [{"id": "great_weapon", "count": 3}, {"id": "handweapon", "count": 4}, {"id": "lance", "count": 3}]},
             {"addWeapon": ["short_bow"]},
-            {"addRule": [{"id": "icon", "x": "Vehicle"}]},
+            {"addRule": [{"id": "inspiring", "x": "Vehicle"}]},
             {"replaceRule": [{"id": "goblin_tactics", "x": 1}], "withRule": [{"id": "goblin_tactics", "x": 2}]}
           ],
           "min": 1,

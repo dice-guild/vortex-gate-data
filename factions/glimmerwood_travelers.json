@@ -268,7 +268,7 @@
               "replaceWeapon": [{"id": "handweapon", "count": 3}],
               "withWeapon": [{"id": "great_weapon", "count": 3}, {"id": "handweapon", "count": 4}, {"id": "polearm", "count": 3}, {"id": "long_spear", "count": 3}]
             },
-            {"addRule": [{"name": "Wings", "id": "fly"}, "shield", {"id": "icon", "x": "Infantry"}, {"id": "power", "x": 1}]},
+            {"addRule": [{"name": "Wings", "id": "fly"}, "shield", {"id": "inspiring", "x": "Infantry"}, {"id": "power", "x": 1}]},
             {"replaceRule": [{"id": "warrior", "x": 1}], "withRule": [{"id": "tactician", "x": 1}]}
           ],
           "min": 1,
@@ -298,7 +298,7 @@
               "withWeapon": [{"id": "great_weapon", "count": 3}, {"id": "handweapon", "count": 4}, {"id": "polearm", "count": 3}, {"id": "lance", "count": 3}]
             },
             {"replaceWeapon": [{"id": "hooves_and_teeth", "count": 2}], "withWeapon": [{"id": "antlers_and_hooves", "count": 2}]},
-            {"addRule": [{"id": "power", "x": 1}, "shield", {"id": "icon", "x": "Infantry, Cavalry"}]},
+            {"addRule": [{"id": "power", "x": 1}, "shield", {"id": "inspiring", "x": "Infantry, Cavalry"}]},
             {"replaceRule": [{"id": "marksman", "x": 1}], "withRule": [{"id": "warrior", "x": 1}]}
           ],
           "min": 1,
@@ -327,7 +327,7 @@
               "replaceWeapon": [{"id": "handweapon", "count": 3}],
               "withWeapon": [{"id": "great_weapon", "count": 3}, {"id": "handweapon", "count": 4}, {"id": "polearm", "count": 3}, {"id": "lance", "count": 3}]
             },
-            {"addRule": ["relic_shield", {"id": "power", "x": 1}, {"id": "icon", "x": "Cavalry"}]},
+            {"addRule": ["relic_shield", {"id": "power", "x": 1}, {"id": "inspiring", "x": "Cavalry"}]},
             {"replaceRule": [{"id": "marksman", "x": 1}], "withRule": [{"id": "warrior", "x": 1}]}
           ],
           "min": 1,
@@ -356,7 +356,7 @@
               "replaceWeapon": [{"id": "handweapon", "count": 3}],
               "withWeapon": [{"id": "great_weapon", "count": 3}, {"id": "handweapon", "count": 4}, {"id": "polearm", "count": 3}, {"id": "lance", "count": 3}]
             },
-            {"addRule": ["relic_shield", {"id": "icon", "x": "Monster"}, {"id": "power", "x": 1}]},
+            {"addRule": ["relic_shield", {"id": "inspiring", "x": "Monster"}, {"id": "power", "x": 1}]},
             {"replaceRule": [{"id": "warrior", "x": 2}], "withRule": [{"id": "warrior", "x": 3}]}
           ],
           "min": 1,
