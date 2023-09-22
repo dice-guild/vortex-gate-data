@@ -186,7 +186,7 @@
           "reflexes": 6,
           "weapons": ["auto_rifle", "light_handweapon"],
           "options": [{"replaceWeapon": ["auto_rifle"], "withWeapon": ["flamethrower", "plasma_rifle", "fusion_blaster", "stun_grenade_launcher"], "modelLimit": 1}],
-          "min": 9,
+          "min": 4,
           "max": 9
         }
       ]
