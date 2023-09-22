@@ -322,7 +322,7 @@
           "reflexes": 6,
           "weapons": ["great_weapon", "shield"],
           "options": [{"replaceWeapon": ["great_weapon", "shield"], "withWeapon": [["pike", "shield"], ["long_bow", "light_handweapon"]], "modelLimit": "all"}],
-          "max": 30,
+          "max": 20,
           "min": 10
         }
       ],
