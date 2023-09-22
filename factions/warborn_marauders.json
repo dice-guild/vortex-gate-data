@@ -2,12 +2,12 @@
   "id": "warborn_marauders",
   "name": "Warborn Marauders",
   "author": "guitarninja",
-  "background": "The Warborn Marauders are a band of roving orcs who scrap, fight and die for the glory of it. Their origin is still unknown, but they are spread across the galaxy in wide numbers. Orcs usually gather with a steady amount of goblins who act as the workers and some even pilot goblin mech creations.",
-  "lore": "\n\nIn the far reaches of the galaxy, on a planet called Cragoria, exists a formidable race known as the Warborn Marauders. These orcs are a warlike and tenacious people, who have embraced their warrior spirit and mastered the art of combat. They are renowned for their fearsome raids and conquests, leaving a trail of destruction in their wake.\n\nLong ago, the Warborn Marauders emerged on a desolate and unforgiving planet, a world of harsh landscapes and scarce resources. In their quest for survival, the Warborn learned to harness their natural strength and adaptability, becoming skilled scavengers and warriors.\n\nIn this harsh environment, they encountered remnants of advanced technology scattered across their planet. These remnants were the ruins of a long-lost civilization, abandoned in ages past. The Warborn saw potential in this scrap technology and, over time, learned to salvage, repair, and repurpose it to their advantage. They became masters of makeshift weapons, armor, and machinery, cobbling together formidable war machines from salvaged parts.\n\nWith their newfound technological prowess and relentless combat skills, the Warborn Marauders began to expand their influence beyond their homeworld. Driven by their warrior spirit, they embarked on interstellar conquests, raiding and pillaging other planets and civilizations that stood in their way.\n\nTheir ferocity and scrap technology made them a formidable force, and their reputation as marauders spread across the galaxy. Few dared to challenge the Warborn in open warfare, for their scrap-armored warriors and powerful war machines struck terror into the hearts of their enemies.\n\nAs the Warborn Marauders continued their relentless conquests, they formed tight-knit clans, each led by a battle-hardened warlord. These warlords, known for their tactical brilliance and indomitable spirit, were chosen through feats of strength and cunning, proving themselves worthy to lead the clans into battle.\n\nThe Warborn Marauders developed a code of honor, respecting strength, courage, and loyalty. They valued those who fought alongside them, whether they were born Warborn or earned their place among the clan through combat prowess and loyalty.\n\nDespite their fearsome reputation, the Warborn Marauders were not without honor. In certain cases, they forged uneasy alliances with other races or civilizations, entering into mercenary contracts to bolster their resources and expand their dominion. However, when these alliances no longer served their interests, the Warborn had no qualms about turning on former allies to claim victory.\n\nAs the Warborn Marauders continue to conquer and raid across the galaxy, they remain a force to be reckoned with – a people driven by their warrior spirit, bound by the strength of their clans, and wielding scrap technology that has become a symbol of their resilience and resourcefulness. Their legacy as feared marauders continues to echo across the cosmos, leaving the galaxy to wonder what worlds will fall next to the unstoppable might of the Warborn Marauders.",
+  "background": "The Warborn Marauders are a band of roving orc-like beings who scrap, fight and die for the glory of it. Their origin is still unknown, but they are spread across the galaxy in wide numbers. Marauders usually gather with a steady amount of goblins who act as the workers and some even pilot goblin mech creations.",
+  "lore": "\n\nIn the far reaches of the galaxy, on a planet called Cragoria, exists a formidable race known as the Warborn Marauders. These marauders are a warlike and tenacious people, who have embraced their warrior spirit and mastered the art of combat. They are renowned for their fearsome raids and conquests, leaving a trail of destruction in their wake.\n\nLong ago, the Warborn Marauders emerged on a desolate and unforgiving planet, a world of harsh landscapes and scarce resources. In their quest for survival, the Warborn learned to harness their natural strength and adaptability, becoming skilled scavengers and warriors.\n\nIn this harsh environment, they encountered remnants of advanced technology scattered across their planet. These remnants were the ruins of a long-lost civilization, abandoned in ages past. The Warborn saw potential in this scrap technology and, over time, learned to salvage, repair, and repurpose it to their advantage. They became masters of makeshift weapons, armor, and machinery, cobbling together formidable war machines from salvaged parts.\n\nWith their newfound technological prowess and relentless combat skills, the Warborn Marauders began to expand their influence beyond their homeworld. Driven by their warrior spirit, they embarked on interstellar conquests, raiding and pillaging other planets and civilizations that stood in their way.\n\nTheir ferocity and scrap technology made them a formidable force, and their reputation as marauders spread across the galaxy. Few dared to challenge the Warborn in open warfare, for their scrap-armored warriors and powerful war machines struck terror into the hearts of their enemies.\n\nAs the Warborn Marauders continued their relentless conquests, they formed tight-knit clans, each led by a battle-hardened warlord. These warlords, known for their tactical brilliance and indomitable spirit, were chosen through feats of strength and cunning, proving themselves worthy to lead the clans into battle.\n\nThe Warborn Marauders developed a code of honor, respecting strength, courage, and loyalty. They valued those who fought alongside them, whether they were born Warborn or earned their place among the clan through combat prowess and loyalty.\n\nDespite their fearsome reputation, the Warborn Marauders were not without honor. In certain cases, they forged uneasy alliances with other races or civilizations, entering into mercenary contracts to bolster their resources and expand their dominion. However, when these alliances no longer served their interests, the Warborn had no qualms about turning on former allies to claim victory.\n\nAs the Warborn Marauders continue to conquer and raid across the galaxy, they remain a force to be reckoned with – a people driven by their warrior spirit, bound by the strength of their clans, and wielding scrap technology that has become a symbol of their resilience and resourcefulness. Their legacy as feared marauders continues to echo across the cosmos, leaving the galaxy to wonder what worlds will fall next to the unstoppable might of the Warborn Marauders.",
   "hidden_units": {
     "grand_warlord": {
       "name": "Grand Warlord",
-      "description": "One of the strongest Orcs to ever live and a dreadfully scary opponent in a fight.",
+      "description": "One of the strongest marauders to ever live and a dreadfully scary opponent in a fight.",
       "category": "hero",
       "models": [
         {
@@ -29,7 +29,7 @@
   "units": {
     "warlord": {
       "name": "Warlord",
-      "description": "The clan leader and toughest orc boss.",
+      "description": "The clan leader and toughest boss.",
       "category": "hero",
       "models": [
         {
@@ -168,7 +168,7 @@
     },
     "mechanic": {
       "name": "Mechanic",
-      "description": "An orc with a knack for scrapping and fixing things.",
+      "description": "A marauder with a knack for scrapping and fixing things.",
       "category": "hero",
       "models": [
         {
@@ -196,7 +196,7 @@
     },
     "mechanic_bike": {
       "name": "Mechanic on Bike",
-      "description": "An orc with a knack for scrapping and fixing things on a war bike.",
+      "description": "A marauder with a knack for scrapping and fixing things on a war bike.",
       "category": "hero",
       "keywords": ["Biker"],
       "models": [
@@ -270,7 +270,7 @@
     },
     "mad_doctor": {
       "name": "Mad Doctor",
-      "description": "An orc with a knack for fixing up the wounded.",
+      "description": "A marauder with a knack for fixing up the wounded.",
       "category": "elite",
       "models": [
         {
@@ -297,7 +297,7 @@
     },
     "mad_doctor_bike": {
       "name": "Mad Doctor on Bike",
-      "description": "An orc with a knack for fixing up the wounded on a war bike.",
+      "description": "A marauder with a knack for fixing up the wounded on a war bike.",
       "category": "elite",
       "keywords": ["Biker"],
       "models": [
@@ -368,8 +368,8 @@
       ]
     },
     "orc_mob": {
-      "name": "Orc Orcs",
-      "description": "A group of angry orcs.",
+      "name": "Marauders",
+      "description": "A group of angry marauders.",
       "category": "core",
       "options": [
         {"replaceWeapon": ["carbine", "handweapon"], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 2}]]},
@@ -380,7 +380,7 @@
       ],
       "models": [
         {
-          "name": "Orc Champion",
+          "name": "Marauder Champion",
           "movement": 6,
           "courage": 5,
           "shoot": 4,
@@ -396,16 +396,16 @@
           "min": 1,
           "max": 1
         },
-        {"name": "Orc", "movement": 6, "courage": 5, "shoot": 4, "fight": 6, "defense": 5, "reflexes": 5, "weapons": ["carbine", "handweapon"], "min": 9, "max": 29}
+        {"name": "Marauder", "movement": 6, "courage": 5, "shoot": 4, "fight": 6, "defense": 5, "reflexes": 5, "weapons": ["carbine", "handweapon"], "min": 9, "max": 29}
       ]
     },
     "boss_mob": {
-      "name": "Brute Orcs",
-      "description": "A group of big orcs ready to cause maximum havoc.",
+      "name": "Brutes",
+      "description": "A group of big marauders ready to cause maximum havoc.",
       "category": "core",
       "models": [
         {
-          "name": "Orc Brute",
+          "name": "Warborn Brute",
           "movement": 6,
           "courage": 5,
           "shoot": 4,
@@ -428,13 +428,13 @@
       ]
     },
     "looter_mob": {
-      "name": "Looter Orcs",
-      "description": "A group of Orcs obsessed with looting and upgrading shooting weapons. Can be equipped for various specialist roles.",
+      "name": "Looters",
+      "description": "A group of marauders obsessed with looting and upgrading shooting weapons. Can be equipped for various specialist roles.",
       "category": "elite",
       "options": [{"replaceWeapon": "carbine", "withWeapon": ["flamethrower", "plasma_rifle", "fusion_rifle", "grenade_launcher", "light_machinegun"]}, {"addRule": ["banner"], "modelLimit": 1}],
       "models": [
         {
-          "name": "Looter Orc Champion",
+          "name": "Looter Champion",
           "movement": 6,
           "courage": 5,
           "shoot": 5,
@@ -455,8 +455,8 @@
       ]
     },
     "commando_orcs": {
-      "name": "Commando Orcs",
-      "description": "A group of sneaky orcs.",
+      "name": "Commandos",
+      "description": "A group of sneaky marauders.",
       "category": "elite",
       "rules": ["ambush", "evasive"],
       "options": [
@@ -469,7 +469,7 @@
       ],
       "models": [
         {
-          "name": "Commando Orc Champion",
+          "name": "Commando Champion",
           "movement": 6,
           "courage": 5,
           "shoot": 5,
@@ -485,12 +485,12 @@
           "min": 1,
           "max": 1
         },
-        {"name": "Commando Orc", "movement": 6, "courage": 5, "shoot": 5, "fight": 6, "defense": 6, "reflexes": 6, "weapons": ["carbine", "handweapon"], "min": 4, "max": 14}
+        {"name": "Commando", "movement": 6, "courage": 5, "shoot": 5, "fight": 6, "defense": 6, "reflexes": 6, "weapons": ["carbine", "handweapon"], "min": 4, "max": 14}
       ]
     },
     "storm_orcs": {
-      "name": "Jetpack Orcs",
-      "description": "A group of angry orcs equipped with jetpacks.",
+      "name": "Jetpack Marauders",
+      "description": "A group of angry marauders equipped with jetpacks.",
       "category": "elite",
       "rules": ["fly"],
       "options": [
@@ -502,7 +502,7 @@
       ],
       "models": [
         {
-          "name": "Jetpack Orc Champion",
+          "name": "Jetpack Champion",
           "movement": 8,
           "courage": 5,
           "shoot": 4,
@@ -518,18 +518,18 @@
           "min": 1,
           "max": 1
         },
-        {"name": "Jetpack Orc", "movement": 8, "courage": 5, "shoot": 4, "fight": 6, "defense": 5, "reflexes": 5, "weapons": ["carbine", "handweapon"], "min": 4, "max": 19}
+        {"name": "Jetpack Marauders", "movement": 8, "courage": 5, "shoot": 4, "fight": 6, "defense": 5, "reflexes": 5, "weapons": ["carbine", "handweapon"], "min": 4, "max": 19}
       ]
     },
     "ultra_boss_mob": {
-      "name": "Ultra Brute Orcs",
-      "description": "A group of orcs bosses that are heavily armored and dangerous.",
+      "name": "Gravite Brutes",
+      "description": "A group of marauders bosses that are heavily armored and dangerous.",
       "category": "elite",
       "keywords": ["Heavy Infantry"],
       "rules": [{"id": "wounds", "x": 2}],
       "models": [
         {
-          "name": "Ultra Brute",
+          "name": "Gravite Brute",
           "movement": 5,
           "courage": 6,
           "shoot": 4,
@@ -561,25 +561,14 @@
       ]
     },
     "attack_beast_herd": {
-      "name": "Attack Beast Herd",
+      "name": "Beast Herd",
       "description": "A ravening horde of bouncing beasts with gnashing teeth.",
       "category": "elite",
       "keywords": ["Beast"],
       "models": [
+        {"name": "Beast Herder", "movement": 6, "courage": 5, "shoot": 4, "fight": 6, "defense": 5, "reflexes": 5, "weapons": ["heavy_pistol", {"id": "handweapon", "count": 2}], "min": 0, "max": 1},
         {
-          "name": "Attack Beast Herder",
-          "movement": 6,
-          "courage": 5,
-          "shoot": 4,
-          "fight": 6,
-          "defense": 5,
-          "reflexes": 5,
-          "weapons": ["heavy_pistol", {"id": "handweapon", "count": 2}],
-          "min": 0,
-          "max": 1
-        },
-        {
-          "name": "Attack Beast",
+          "name": "Beast",
           "movement": 8,
           "courage": 4,
           "shoot": 4,
@@ -594,8 +583,8 @@
       ]
     },
     "biker_mob": {
-      "name": "Biker Orcs",
-      "description": "A group of angry orcs on bikes.",
+      "name": "Marauder Bikers",
+      "description": "A group of angry marauders on bikes.",
       "category": "elite",
       "keywords": ["Biker"],
       "rules": [{"id": "impact", "x": 1}],
@@ -632,7 +621,7 @@
           "max": 1
         },
         {
-          "name": "Orc Biker",
+          "name": "Marauder Biker",
           "movement": 8,
           "courage": 5,
           "shoot": 4,
@@ -646,8 +635,8 @@
       ]
     },
     "boss_bikers": {
-      "name": "Biker Brute Orcs",
-      "description": "A group of bigger orcs mounted on bikes.",
+      "name": "Biker Brutes",
+      "description": "A group of bigger marauders mounted on bikes.",
       "category": "elite",
       "keywords": ["Biker"],
       "rules": [{"id": "impact", "x": 1}],
@@ -683,13 +672,13 @@
       ]
     },
     "orc_minicopter": {
-      "name": "Orc Minicopters",
-      "description": "Miniature helicopters for quick and deadly air attacks piloted by orcs.",
+      "name": "Warborn Scrapcopters",
+      "description": "Miniature helicopters for quick and deadly air attacks piloted by marauders.",
       "category": "elite",
       "keywords": ["Aircraft", "Vehicle"],
       "models": [
         {
-          "name": "Orc Minicopter",
+          "name": "Warborn Scrapcopters",
           "movement": 10,
           "courage": 5,
           "shoot": 4,
@@ -761,13 +750,13 @@
       ]
     },
     "battle_truck": {
-      "name": "Battle Truck",
-      "description": "A grand battle truck build out of various parts taken from other wrecked vehicles.",
+      "name": "Battle Rig",
+      "description": "A grand battle rig build out of various parts taken from other wrecked vehicles.",
       "category": "rare",
       "keywords": ["Vehicle"],
       "models": [
         {
-          "name": "Battle Truck",
+          "name": "Battle Rig",
           "movement": 10,
           "courage": 5,
           "shoot": 4,
@@ -823,13 +812,13 @@
       ]
     },
     "battle_tank": {
-      "name": "Orc Battle Tank",
+      "name": "Warborn Battle Tank",
       "description": "A ramshackle battle tank held together by sheer will.",
       "category": "rare",
       "keywords": ["Vehicle", "Tank"],
       "models": [
         {
-          "name": "Orc Battle Tank",
+          "name": "Warborn Battle Tank",
           "movement": 10,
           "courage": 5,
           "shoot": 5,
@@ -869,13 +858,13 @@
       ]
     },
     "heavy_battle_tank": {
-      "name": "Orc Heavy Battle Tank",
+      "name": "Warborn Heavy Battle Tank",
       "description": "A larger ramshackle tank with more powerful weapon options.",
       "category": "rare",
       "keywords": ["Vehicle", "Tank"],
       "models": [
         {
-          "name": "Orc Heavy Battle Tank",
+          "name": "Warborn Heavy Battle Tank",
           "movement": 8,
           "courage": 5,
           "shoot": 5,
@@ -1048,13 +1037,13 @@
       ]
     },
     "orc_juggernaut": {
-      "name": "Orc Juggernaut",
+      "name": "Warborn Juggernaut",
       "description": "A heavily armed but ramshackle combat walker.",
       "category": "rare",
       "keywords": ["Vehicle", "Juggernaut"],
       "models": [
         {
-          "name": "Orc Juggernaut",
+          "name": "Warborn Juggernaut",
           "movement": 8,
           "courage": 5,
           "shoot": 4,
@@ -1109,13 +1098,13 @@
       ]
     },
     "heavy_walker": {
-      "name": "Orc Heavy Walker",
+      "name": "Warborn Heavy Juggernaut",
       "description": "A large walker with a multitude of weapons and transport capacity within its belly.",
       "category": "rare",
       "keywords": ["Vehicle"],
       "models": [
         {
-          "name": "Orc Heavy Walker",
+          "name": "Warborn Heavy Juggernaut",
           "movement": 10,
           "courage": 6,
           "shoot": 4,
@@ -1153,13 +1142,13 @@
       ]
     },
     "super_heavy_walker": {
-      "name": "Orc Super Heavy Walker",
+      "name": "Warborn Super Heavy Juggernaut",
       "description": "A massive walker with a multitude of weapons and transport capacity within its belly.",
       "category": "rare",
       "keywords": ["Vehicle"],
       "models": [
         {
-          "name": "Orc Super Heavy Walker",
+          "name": "Warborn Super Heavy Juggernaut",
           "movement": 10,
           "courage": 6,
           "shoot": 4,
@@ -1476,7 +1465,7 @@
     "speed_pole": {"name": "Big Boss Pole", "description": "Friendly _Infantry_ units within 6\" add +1\" to their Movement characteristic.", "points": 5},
     "tracks": {"name": "Tracks", "description": "This unit may ignore difficult terrain and obstacles of height 2\" or less when moving.", "points": 5},
     "goblin_assistant": {"name": "Goblin Assistant", "description": "Models in this unit gain +1 to their Repair rule for each model with this rule.", "points": 2},
-    "orc_idol": {"name": "Orc Idol", "description": "This model and friendly _Infantry_ units within 6\" gain +1 Courage.", "points": 10},
+    "orc_idol": {"name": "Warborn Idol", "description": "This model and friendly _Infantry_ units within 6\" gain +1 Courage.", "points": 10},
     "precision_monicle": {"name": "Precision Monicle", "description": "This model has +1 Accuracy.", "points": 5},
     "energy_field": {"name": "Energy Field", "description": "Once per round, a friendly _Infantry_ unit within 6\" may gain +1 Save.", "points": 20},
     "force_field": {"name": "Force Field", "description": "Roll a die for each hit this model takes, on a 3 or less that hit is prevented.", "points": 20},
@@ -1517,16 +1506,16 @@
       "points": 5
     },
     "speed_pole": {
-      "name": "Big Boss Pole",
+      "name": "Big Boss Banner",
       "rule": "speed_pole",
-      "description": "Upgrade one Warlord model with The Big Boss Pole.",
-      "flavor": "Nearby Orcs are filled with a zeal to charge forward and attack.",
+      "description": "Upgrade one Warlord model with The Big Boss Banner.",
+      "flavor": "Nearby marauders are filled with a zeal to charge forward and attack.",
       "points": 5
     },
     "boom_cannon": {
-      "name": "The Boom Cannon",
+      "name": "The Blast Cannon",
       "weapon": "boom_cannon",
-      "description": "Replace one model's Battle Cannon with The Boom Cannon.",
+      "description": "Replace one model's Battle Cannon with The Blast Cannon.",
       "flavor": "A very scary cannon for pure destruction.",
       "points": 10
     }
@@ -1545,7 +1534,7 @@
     "ramshackle": {
       "phase": "activation",
       "name": "Ramshackle",
-      "flavor": "Many parts of Orc vehicles end up being less important than they seem, falling off without causing damage.",
+      "flavor": "Many parts of Warborn equipment end up being less important than they seem, falling off without causing damage.",
       "description": "Use when a unit is targeted by an attack. For that attack, roll a D10 each time that unit is hit. On a 3 or less the hit is ignored.",
       "cost": 2
     },
