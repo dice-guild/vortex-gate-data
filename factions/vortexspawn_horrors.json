@@ -80,7 +80,7 @@
         }
       ]
     },
-    "abyssal__champion_chariot": {
+    "abyssal_champion_chariot": {
       "name": "Vortex Champion on Chariot",
       "description": "A demonic leader, commanding their warband atop a demonic chariot.",
       "category": "hero",
@@ -175,13 +175,13 @@
       ]
     },
     "demonic_champion": {
-      "name": "Demonic Champion",
+      "name": "Vortexspawn Lord",
       "description": "A massive demon gifted by the dark gods.",
       "category": "hero",
       "keywords": ["Monster"],
       "models": [
         {
-          "name": "Demonic Champion",
+          "name": "Vortexspawn Lord",
           "movement": 8,
           "courage": 7,
           "shoot": 7,
@@ -192,8 +192,7 @@
           "weapons": [{"id": "daemon_sword", "count": 3}, {"id": "daemon_claws", "count": 2}],
           "options": [
             {"replaceWeapon": {"id": "daemon_sword", "count": 3}, "withWeapon": [{"id": "daemon_axe", "count": 3}, {"id": "daemon_claws", "count": 4}]},
-            {"addRule": [{"name": "Wings", "id": "fly"}]},
-            {"replaceRule": {"id": "power", "x": 1}, "withRule": [{"id": "power", "x": 2}]}
+            {"addRule": [{"name": "Wings", "id": "fly"}]}
           ],
           "min": 1,
           "max": 1
@@ -201,13 +200,13 @@
       ]
     },
     "greater_abyssal": {
-      "name": "Greater Vortex",
+      "name": "Greater Vortexspawn",
       "description": "Gigantic commanders of the abyssal forces.",
       "category": "hero",
       "keywords": ["Monster"],
       "models": [
         {
-          "name": "Greater Vortex",
+          "name": "Greater Vortexspawn",
           "movement": 8,
           "courage": 7,
           "shoot": 7,
@@ -230,12 +229,12 @@
       ]
     },
     "lesser_abyssals": {
-      "name": "Lesser Vortexs",
+      "name": "Lesser Vortexspawn",
       "description": "The most common of the demonic warriors, swarming the battlefield in great numbers.",
       "category": "core",
       "models": [
         {
-          "name": "Lesser Vortex",
+          "name": "Lesser Vortexspawn",
           "movement": 6,
           "courage": 5,
           "shoot": 5,
@@ -251,7 +250,7 @@
       "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
     },
     "lesser_abyssals_warbeast": {
-      "name": "Lesser Vortexs on Warbeasts",
+      "name": "Lesser Vortexspawn on Warbeasts",
       "description": "A swarm of lesser demons riding atop unstoppable beasts.",
       "category": "elite",
       "subfactions": ["assault_focus"],
@@ -337,7 +336,7 @@
       "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
     },
     "exalted_abyssals": {
-      "name": "Exalted Vortexs",
+      "name": "Exalted Vortexspawn",
       "description": "Massive warriors of the abyss, these demons rend apart their enemies with ease.",
       "category": "elite",
       "models": [

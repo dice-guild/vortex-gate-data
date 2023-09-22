@@ -1890,9 +1890,9 @@
       "description": "Hit rolls of 1 or 2 from this weapon cause 2 hits instead of 1. Additional hits must be assigned to the same model.",
       "points": ["weapon.attacks", {"multiply": 1}]
     },
-    "armored_front": {"name": "Heavy Armor(Front)", "description": "This model gets +1 Save when hit in its front arc.", "points": 5},
-    "vulnerable_side_rear": {"name": "Vulnerable(Side, Rear)", "description": "This model gets -1 Save when hit in its Side arc or -2 Save when hit in its Rear arc.", "points": -10},
-    "vulnerable_rear": {"name": "Vulnerable(Rear)", "description": "This model gets -1 Save when hit in its Rear arc.", "points": -5},
+    "armored_front": {"name": "Heavy Armor(Front)", "description": "This model gets +1 Save when hit by a ranged attack in its front arc.", "points": 5},
+    "vulnerable_side_rear": {"name": "Vulnerable(Side, Rear)", "description": "This model gets -1 Save when hit by a ranged attack in its Side arc or -2 Save when hit by a ranged attack in its Rear arc.", "points": -10},
+    "vulnerable_rear": {"name": "Vulnerable(Rear)", "description": "This model gets -1 Save when hit by a ranged attack in its Rear arc.", "points": -5},
     "furious": {"name": "Furious", "description": "When this model charges, Strength rolls of 1 or 2 cause 2 hits instead of 1.", "points": 2},
     "relentless": {"name": "Relentless", "description": "When this model shoots, Accuracy rolls of 1 or 2 cause 2 hits instead of 1.", "points": 2},
     "crack_shot": {"name": "Crack Shot", "description": "Hits rolls of 1 or 2 from shooting attacks made by this model ignore the benefit of cover.", "points": [1]},

@@ -1630,11 +1630,10 @@
           "defense": 12,
           "reflexes": 6,
           "rules": [{"id": "wounds", "x": 5}, {"id": "power", "x": 1}, "vulnerable_rear"],
-          "weapons": [{"id": "heavy_walker_fist", "count": 8}],
+          "weapons": [{"id": "heavy_walker_fist", "count": 5}],
           "options": [
-            {"replaceWeapon": {"id": "heavy_walker_fist", "count": 4}, "withWeapon": [{"id": "energy_greathammer", "count": 4}, {"id": "energy_greatsword", "count": 4}]},
-            {"addWeapon": ["twin_heavy_flamethrower", "heavy_energy_cannon", "heavy_gatling_gun"], "limit": 2},
-            {"addRule": [{"id": "defiant", "x": 3}]}
+            {"replaceWeapon": {"id": "heavy_walker_fist", "count": 5}, "withWeapon": [{"id": "energy_greathammer", "count": 5}, {"id": "energy_greatsword", "count": 5}]},
+            {"addWeapon": ["twin_heavy_flamethrower", "heavy_energy_cannon", "heavy_gatling_gun"], "limit": 2}
           ],
           "min": 1,
           "max": 1
@@ -1657,12 +1656,10 @@
           "defense": 12,
           "reflexes": 6,
           "rules": [{"id": "wounds", "x": 5}, "leader", {"id": "power", "x": 1}, "tactician", "vulnerable_rear"],
-          "weapons": [{"id": "heavy_walker_fist", "count": 8}],
+          "weapons": [{"id": "walker_fist", "count": 5}],
           "options": [
-            {"replaceWeapon": {"id": "heavy_walker_fist", "count": 4}, "withWeapon": [{"id": "energy_greathammer", "count": 4}, {"id": "energy_greatsword", "count": 4}]},
-            {"addWeapon": ["twin_heavy_flamethrower", "heavy_energy_cannon", "heavy_gatling_gun"], "limit": 2},
-            {"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]},
-            {"addRule": [{"id": "defiant", "x": 3}]}
+            {"replaceWeapon": {"id": "walker_fist", "count": 5}, "withWeapon": [{"id": "energy_greathammer", "count": 5}, {"id": "energy_greatsword", "count": 5}]},
+            {"addWeapon": ["twin_heavy_flamethrower", "heavy_energy_cannon", "heavy_gatling_gun"], "limit": 2}
           ],
           "min": 1,
           "max": 1
