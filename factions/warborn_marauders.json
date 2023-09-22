@@ -1532,13 +1532,13 @@
     "crunch": {"name": "Crunch", "description": "Target enemy unit within 12\" takes 4 hits with AP(4).", "charge": 5}
   },
   "strategies": {
-    "here_we_go": {"name": "Here We Go!", "phase": "activation", "description": "Use when a unit declares a _Charge_ action. That unit gets +3\" of Movement for that action.", "cost": 1},
-    "ramshackle": {
+    "here_we_go": {"name": "Get Em", "phase": "activation", "description": "Use when a unit declares a _Charge_ action. That unit gets +3\" of Movement for that action.", "cost": 1},
+    "final_stand": {
       "phase": "activation",
-      "name": "Ramshackle",
-      "flavor": "Many parts of Warborn equipment end up being less important than they seem, falling off without causing damage.",
-      "description": "Use when a unit is targeted by an attack. For that attack, roll a D10 each time that unit is hit. On a 3 or less the hit is ignored.",
-      "cost": 2
+      "name": "Final Stand",
+      "description": "Use when a unit is destroyed. If it didn't activate this round, it may take a free _Fight_ or _Shoot_ action before it is removed from the game.",
+      "flavor": "With their dying breath, the warborn lash out at their foes in revenge.",
+      "cost": 1
     },
     "goblin_shield": {
       "name": "Goblin Shield",

@@ -783,7 +783,7 @@
       "name": "Preservation Protocols",
       "phase": "activation",
       "flavor": "Enclave drones are programmed to protect their creators at all costs.",
-      "description": "Use after an _Infantry_ or _Heavy Infantry_ unit has been hit by a ranged weapon. For this attack, you can roll a D10 each time an attack made with a ranged weapon hits that unit. If there is a friendly _Drone_ unit within 6\" of it, and the _Drone_ unit is closer to the attacking model than the target unit. On an 8 or less a hit is transferred to the _Drone_ unit instead of the original target.",
+      "description": "Use after a unit has been hit by a ranged weapon. For this attack, you can roll a D10 each time an attack made with a ranged weapon hits that unit. If there is a friendly _Drone_ unit within 6\" of it, and the _Drone_ unit is closer to the attacking model than the target unit. On an 8 or less a hit is transferred to the _Drone_ unit instead of the original target.",
       "cost": 2
     },
     "danger_close": {
