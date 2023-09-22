@@ -532,7 +532,7 @@
           "weapons": ["marine_rifle", "handweapon"],
           "options": [
             {"replaceWeapon": ["marine_rifle"], "withWeapon": ["combi_rifle", "twin_marine_rifle"]},
-            {"replaceWeapon": ["heavy_marine_rifle", "handweapon"], "withWeapon": ["marine_pistol", {"id": "handweapon", "count": 2}]},
+            {"replaceWeapon": ["marine_rifle", "handweapon"], "withWeapon": [["marine_pistol", {"id": "handweapon", "count": 2}]]},
             {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol", "gravity_pistol", "thermal_pistol"]},
             {
               "replaceWeapon": {"id": "handweapon", "count": 2},
@@ -613,7 +613,7 @@
           "weapons": ["marine_rifle", "handweapon"],
           "options": [
             {"replaceWeapon": ["marine_rifle"], "withWeapon": ["combi_rifle", "twin_marine_rifle"]},
-            {"replaceWeapon": ["marine_rifle", "handweapon"], "withWeapon": ["marine_pistol", {"id": "handweapon", "count": 2}]},
+            {"replaceWeapon": ["marine_rifle", "handweapon"], "withWeapon": [["marine_pistol", {"id": "handweapon", "count": 2}]]},
             {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol", "gravity_pistol", "thermal_pistol"]},
             {
               "replaceWeapon": {"id": "handweapon", "count": 2},
@@ -722,7 +722,7 @@
       "description": "Upgraded and highly trained bikers armed to the teeth.",
       "category": "elite",
       "keywords": ["Biker"],
-      "rules": [{"id": "impact", "x": 1}],
+      "rules": [{"id": "impact", "x": 1}, {"id": "wounds", "x": 2}],
       "models": [
         {
           "name": "Vanguard Biker Sergeant",
@@ -735,7 +735,7 @@
           "weapons": [{"id": "twin_marine_rifle", "mount": ["Front"]}, "marine_rifle", "handweapon"],
           "options": [
             {"replaceWeapon": ["marine_rifle"], "withWeapon": ["combi_rifle", "twin_marine_rifle"]},
-            {"replaceWeapon": ["marine_rifle", "handweapon"], "withWeapon": [{"id": "twin_energy_handweapon", "count": 4}]},
+            {"replaceWeapon": ["marine_rifle", "handweapon"], "withWeapon": [[{"id": "twin_energy_handweapon", "count": 4}]]},
             {"replaceWeapon": ["marine_pistol"], "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol", "thermal_pistol", "gravity_pistol"]},
             {
               "replaceWeapon": [{"id": "handweapon", "count": 2}],
@@ -782,7 +782,7 @@
       "description": "Scout marines on combat bikes.",
       "category": "elite",
       "keywords": ["Biker"],
-      "rules": [{"id": "impact", "x": 1}, "scout"],
+      "rules": [{"id": "impact", "x": 1}, "scout", {"id": "wounds", "x": 2}],
       "models": [
         {
           "name": "Scout Biker Sergeant",
@@ -795,7 +795,7 @@
           "weapons": [{"id": "twin_marine_rifle", "mount": ["Front"]}, "marine_rifle", "handweapon"],
           "options": [
             {"replaceWeapon": ["marine_rifle"], "withWeapon": ["combi_rifle", "twin_marine_rifle"]},
-            {"replaceWeapon": ["marine_rifle", "handweapon"], "withWeapon": [{"id": "twin_energy_handweapon", "count": 4}]},
+            {"replaceWeapon": ["marine_rifle", "handweapon"], "withWeapon": [[{"id": "twin_energy_handweapon", "count": 4}]]},
             {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol", "gravity_pistol", "thermal_pistol"]},
             {
               "replaceWeapon": {"id": "handweapon", "count": 2},

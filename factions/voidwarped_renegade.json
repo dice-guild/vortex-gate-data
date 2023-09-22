@@ -1413,7 +1413,7 @@
       "description": "Corrupted marines on combat bikes.",
       "category": "elite",
       "keywords": ["Biker"],
-      "rules": [{"id": "impact", "x": 1}],
+      "rules": [{"id": "impact", "x": 1}, {"id": "wounds", "x": 2}],
       "options": [
         {"replaceWeapon": ["marine_rifle", "handweapon"], "withWeapon": [["marine_pistol", {"id": "handweapon", "count": 2}]]},
         {"replaceWeapon": ["marine_rifle"], "withWeapon": ["fusion_rifle", "flamethrower", "plasma_rifle"], "modelLimit": "1/3"},
