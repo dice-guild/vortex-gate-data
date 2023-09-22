@@ -215,7 +215,6 @@
       "name": "Abomination Warriors",
       "description": "A group of Dark Elven warriors subject to genetic experiments.",
       "category": "core",
-      "rules": [{"id": "defiant", "x": 2}],
       "models": [
         {
           "name": "Abomination Warrior Leader",
