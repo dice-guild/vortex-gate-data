@@ -1374,7 +1374,7 @@
       "subfactions": ["siege_focus"],
       "name": "Bolster",
       "phase": "activation",
-      "description": "Use when a unit is targeted by an enemy. If it did not move this round, that unit may increase its cover level by 1 (none to soft, soft to hard).",
+      "description": "Use when a unit is targeted by an enemy. If it did not move this round, that unit is treated as if it was in cover.",
       "flavor": "A strong defensive position ensures greater survival, even against the toughest of weapons.",
       "cost": 1
     },
@@ -1382,7 +1382,7 @@
       "subfactions": ["siege_focus"],
       "name": "Devastation",
       "phase": "activation",
-      "description": "Use before shooting with a unit. The target reduces its cover level by 1 (hard to soft, soft to none).",
+      "description": "Use before shooting with a unit. The target is treated as not being in cover or obscured.",
       "flavor": "Finding and exploiting a vulnerable piece of cover can lead to devastating results.",
       "cost": 1
     },
@@ -1891,7 +1891,11 @@
       "points": ["weapon.attacks", {"multiply": 1}]
     },
     "armored_front": {"name": "Heavy Armor(Front)", "description": "This model gets +1 Save when hit by a ranged attack in its front arc.", "points": 5},
-    "vulnerable_side_rear": {"name": "Vulnerable(Side, Rear)", "description": "This model gets -1 Save when hit by a ranged attack in its Side arc or -2 Save when hit by a ranged attack in its Rear arc.", "points": -10},
+    "vulnerable_side_rear": {
+      "name": "Vulnerable(Side, Rear)",
+      "description": "This model gets -1 Save when hit by a ranged attack in its Side arc or -2 Save when hit by a ranged attack in its Rear arc.",
+      "points": -10
+    },
     "vulnerable_rear": {"name": "Vulnerable(Rear)", "description": "This model gets -1 Save when hit by a ranged attack in its Rear arc.", "points": -5},
     "furious": {"name": "Furious", "description": "When this model charges, Strength rolls of 1 or 2 cause 2 hits instead of 1.", "points": 2},
     "relentless": {"name": "Relentless", "description": "When this model shoots, Accuracy rolls of 1 or 2 cause 2 hits instead of 1.", "points": 2},
