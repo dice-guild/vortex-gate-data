@@ -99,7 +99,7 @@
           "fight": 7,
           "defense": 7,
           "reflexes": 6,
-          "weapons": ["sniper_cannon", {"id": "light_handweapon", "count": 2}],
+          "weapons": ["heavy_sniper_rifle", {"id": "light_handweapon", "count": 2}],
           "rules": [],
           "min": 1,
           "max": 1
@@ -138,40 +138,6 @@
           "rules": [],
           "min": 5,
           "max": 15
-        }
-      ]
-    },
-    "mimes": {
-      "name": "Lore Keeper Initiates",
-      "description": "A group of newly indicted troupe mebers doing their best to prove themselves on and off of the battlefield.",
-      "category": "core",
-      "rules": [],
-      "keywords": ["Infantry"],
-      "models": [
-        {
-          "name": "Lore Keeper Initiate",
-          "courage": 5,
-          "movement": 7,
-          "shoot": 5,
-          "fight": 6,
-          "defense": 6,
-          "reflexes": 6,
-          "weapons": ["shard_pistol", {"id": "elven_blade", "count": 3}],
-          "options": [
-            {"replaceWeapon": "shard_pistol", "withWeapon": ["neuron_pistol", "fusion_pistol", "exploding_bola"]},
-            {
-              "replaceWeapon": {"id": "elven_blade", "count": 3},
-              "withWeapon": [
-                {"id": "energy_handweapon", "count": 3},
-                {"id": "deathly_kiss", "count": 3},
-                {"id": "deathly_caress", "count": 3},
-                {"id": "deathly_embrace", "count": 3},
-                {"id": "energy_greatweapon", "count": 4}
-              ]
-            }
-          ],
-          "min": 5,
-          "max": 20
         }
       ]
     },
@@ -240,7 +206,7 @@
           "fight": 7,
           "defense": 7,
           "reflexes": 6,
-          "weapons": ["shard_rifle", {"id": "elven_blade", "count": 3}, "plasma_grenadess", {"id": "twin_shard_rifle", "mount": ["Front"]}],
+          "weapons": ["shard_rifle", {"id": "elven_blade", "count": 3}, {"id": "twin_shard_rifle", "mount": ["Front"]}],
           "options": [
             {"replaceWeapon": ["shard_rifle"], "withWeapon": ["fusion_rifle", "flamethrower", "shard_sniper", "nova_blaster", "missile_launcher"]},
             {
@@ -644,12 +610,12 @@
           "fight": 6,
           "defense": 7,
           "reflexes": 6,
-          "weapons": ["spectre_rifle"],
+          "weapons": ["spectre_rifle", {"id": "energy_handweapon", "count": 2}],
           "options": [{"replaceWeapon": "spectre_rifle", "withWeapon": ["elven_blaster", "emp_cannon"]}],
           "min": 1,
           "max": 1
         },
-        {"name": "Phantom", "courage": 6, "movement": 8, "shoot": 6, "fight": 6, "defense": 7, "reflexes": 6, "weapons": ["spectre_rifle"], "min": 2, "max": 8}
+        {"name": "Phantom", "courage": 6, "movement": 8, "shoot": 6, "fight": 6, "defense": 7, "reflexes": 6, "weapons": ["spectre_rifle", {"id": "energy_handweapon", "count": 2}], "min": 2, "max": 8}
       ]
     },
     "hawk_squad": {
@@ -733,21 +699,18 @@
       "description": "A squad of highly trained bikers that are adept at both melee and ranged combat.",
       "category": "elite",
       "keywords": ["Biker"],
-      "rules": ["hover"],
-      "options": [
-        {"addWeapon": [["laser_lance_shoot", {"id": "laser_lance_melee", "count": 3}]], "modelLimit": "all"},
-        {"replaceWeapon": [{"id": "twin_shard_rifle", "mount": ["Front"]}], "withWeapon": [{"id": "laser_machinegun", "mount": ["Front"]}, {"id": "shard_cannon", "mount": ["Front"]}]}
-      ],
+      "rules": ["hover", {"id": "wounds", "x": 2}],
+      "options": [{"replaceWeapon": [{"id": "twin_shard_rifle", "mount": ["Front"]}], "withWeapon": [{"id": "laser_machinegun", "mount": ["Front"]}, {"id": "shard_cannon", "mount": ["Front"]}]}],
       "models": [
         {
           "name": "Aeonweyr Biker Leader",
           "courage": 6,
           "shoot": 6,
           "fight": 6,
-          "defense": 8,
+          "defense": 6,
           "reflexes": 6,
           "movement": 8,
-          "weapons": [{"id": "twin_shard_rifle", "mount": ["Front"]}],
+          "weapons": ["laser_lance_shoot", {"id": "laser_lance_melee", "count": 3}, {"id": "twin_shard_rifle", "mount": ["Front"]}],
           "options": [
             {
               "replaceWeapon": ["laser_lance_shoot", {"id": "laser_lance_melee", "count": 3}],
@@ -757,7 +720,18 @@
           "min": 1,
           "max": 1
         },
-        {"name": "Aeonweyr Biker", "courage": 6, "shoot": 6, "fight": 6, "defense": 8, "reflexes": 6, "movement": 8, "weapons": [{"id": "twin_shard_rifle", "mount": ["Front"]}], "min": 2, "max": 8}
+        {
+          "name": "Aeonweyr Biker",
+          "courage": 6,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 6,
+          "reflexes": 6,
+          "movement": 8,
+          "weapons": ["laser_lance_shoot", {"id": "laser_lance_melee", "count": 3}, {"id": "twin_shard_rifle", "mount": ["Front"]}],
+          "min": 2,
+          "max": 8
+        }
       ]
     },
     "ranger_bikers": {
@@ -765,7 +739,7 @@
       "description": "A squad of highly trained bikers that are adept at taking out high-value targets on the move.",
       "category": "elite",
       "keywords": ["Biker"],
-      "rules": ["evasive", "hover", "scout"],
+      "rules": ["evasive", "hover", "scout", {"id": "wounds", "x": 2}],
       "options": [{"replaceWeapon": [{"id": "twin_shard_rifle", "mount": ["Front"]}], "withWeapon": [{"id": "laser_machinegun", "mount": ["Front"]}, {"id": "shard_cannon", "mount": ["Front"]}]}],
       "models": [
         {
@@ -773,7 +747,7 @@
           "courage": 6,
           "shoot": 6,
           "fight": 6,
-          "defense": 8,
+          "defense": 6,
           "reflexes": 6,
           "movement": 8,
           "weapons": ["shard_sniper", {"id": "twin_shard_rifle", "mount": ["Front"]}],
@@ -786,7 +760,7 @@
           "courage": 6,
           "shoot": 6,
           "fight": 6,
-          "defense": 8,
+          "defense": 6,
           "reflexes": 6,
           "movement": 8,
           "weapons": ["shard_sniper", {"id": "twin_shard_rifle", "mount": ["Front"]}],
@@ -963,7 +937,7 @@
     "space_lance_melee": {"name": "Space Lance (Melee)", "attacks": 1, "short": "Melee", "ap": 2, "rules": ["lance", {"id": "reach", "x": 1}]},
     "hawk_talon": {"name": "Hawk Talon", "attacks": 4, "short": 12, "medium": 24, "ap": 2, "rules": ["assault"]},
     "sunlight_rifle": {"name": "Sunlight Rifle", "attacks": 4, "short": 12, "medium": 24, "ap": 1, "rules": ["assault"]},
-    "nova_blaster": {"name": "Nova Blaster", "attacks": 1, "ap": 4, "short": 6, "medium": 12, "rules": ["assault", {"id": "blast", "x": 3}]},
+    "nova_blaster": {"name": "Nova Blaster", "attacks": 1, "ap": 3, "short": 6, "medium": 12, "rules": ["assault", {"id": "blast", "x": 2}]},
     "web_rifle": {"name": "Web Rifle", "attacks": 1, "short": 9, "medium": 18, "ap": 4, "rules": [{"id": "slowing", "x": 2}, "rapid_fire"]},
     "shattersky_launcher": {"name": "Skyshatter Launcher", "attacks": 2, "short": 18, "medium": 36, "ap": 2, "rules": [{"id": "blast", "x": 3}, "indirect"]},
     "revenant_fist": {"name": "Revenant Fist", "attacks": 1, "ap": 4, "short": "Melee"},
