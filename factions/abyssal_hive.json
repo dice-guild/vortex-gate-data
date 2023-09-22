@@ -71,7 +71,7 @@
           "defense": 8,
           "reflexes": 7,
           "movement": 8,
-          "rules": ["agile", "leader", "tactician", {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
+          "rules": ["agile", "leader", "warrior", {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
           "weapons": [{"id": "large_razor_talons", "count": 6}],
           "min": 1,
           "max": 1
@@ -142,7 +142,7 @@
               "withWeapon": [{"id": "razor_talons", "count": 2}, {"id": "boneswords", "count": 2}, "chokethorn_cannon", "acid_cannon", {"id": "spike_launcher", "count": 3}, "consumer"]
             },
             {"replaceWeapon": {"id": "razor_talons", "count": 3}, "withWeapon": [{"id": "boneswords", "count": 4}]},
-            {"addRule": [{"name": "Meat Hooks", "id": "impact", "x": 2}, {"name": "Wings", "id": "fly"}]}
+            {"addRule": [{"name": "Assault Hooks", "id": "impact", "x": 1}, {"name": "Wings", "id": "fly"}]}
           ],
           "min": 1,
           "max": 1
@@ -171,7 +171,7 @@
               "withWeapon": ["chokethorn_cannon", "acid_cannon", {"id": "razor_talons", "count": 3}, {"id": "boneswords", "count": 2}, {"id": "spike_launcher", "count": 3}, "consumer"]
             },
             {"replaceWeapon": {"id": "razor_talons", "count": 3}, "withWeapon": [{"id": "boneswords", "count": 4}]},
-            {"addRule": [{"name": "Meat Hooks", "id": "impact", "x": 2}]}
+            {"addRule": [{"name": "Assault Hooks", "id": "impact", "x": 1}]}
           ],
           "min": 3,
           "max": 9
@@ -193,7 +193,7 @@
           "movement": 8,
           "rules": ["agile"],
           "weapons": [{"id": "razor_talons", "count": 3}],
-          "options": [{"addRule": {"name": "Meat Hooks", "id": "impact", "x": 2}, "limit": 1, "modelLimit": "1/5"}],
+          "options": [{"addRule": {"name": "Assault Hooks", "id": "impact", "x": 1}, "limit": 1, "modelLimit": "1/5"}],
           "min": 5,
           "max": 20
         }
