@@ -1518,7 +1518,7 @@
       "subfactions": ["mobility_focus"],
       "phase": "activation",
       "name": "Quick Aim",
-      "description": "Use when a unit with any _Assault_ weapons is firing. That unit does not suffer -1 to hit when using the _Assault_ rule.",
+      "description": "Use when a unit makes a _Move_ action. That unit may perform a free _Shoot_ action. All weapons without the _Assault_ rule suffer -1 Accuracy for this attack.",
       "flavor": "These fighters are so used to firing from the hip while speeding their way upfield that their accuracy doesn't suffer.",
       "cost": 1
     },
@@ -1535,7 +1535,7 @@
       "phase": "activation",
       "name": "Push It",
       "description": "Use when a unit makes a _Move_ action. It gains +3\" move for that action",
-      "flavor": "These orcs have either a special fuel or know little tricks to get them upfield just that little bit faster than their slower brethren.",
+      "flavor": "Gaining a strong tactical position can sometimes mean the difference between a good shot and a great shot.",
       "cost": 1
     },
     "terror": {
@@ -1566,9 +1566,9 @@
       "subfactions": ["firepower_focus"],
       "name": "Weak Point",
       "phase": "activation",
-      "description": "Use before a unit performs a _Shoot_ action. The target reduces its cover level by 1 (hard to soft, soft to none).",
+      "description": "Use before a unit performs a _Shoot_ action. All weapons gain 1 additional point of AP.",
       "flavor": "Aiming for the enemy's weak point can sometimes ignore cover all together.",
-      "cost": 1
+      "cost": 2
     },
     "burst_fire": {
       "subfactions": ["firepower_focus"],
@@ -1582,7 +1582,7 @@
       "subfactions": ["firepower_focus"],
       "name": "Crack Shot",
       "phase": "activation",
-      "description": "Use before shooting with a unit. Add 3\" to the short and long ranges of all weapons for that unit.",
+      "description": "Use before shooting with a unit. Add 6\" to the short and long ranges of all weapons for that unit.",
       "flavor": "In rare occasions, weapons can be used past their effective ranges.",
       "cost": 1
     },
