@@ -17,7 +17,7 @@
           "fight": 7,
           "defense": 6,
           "reflexes": 6,
-          "rules": [{"id": "elven_tactics", "x": 1}, "leader", {"id": "wounds", "x": 3}],
+          "rules": [{"id": "tactician", "x": 1}, "leader", {"id": "wounds", "x": 3}],
           "weapons": [{"id": "handweapon", "count": 3}],
           "options": [
             {
@@ -25,8 +25,7 @@
               "withWeapon": [{"id": "handweapon", "count": 4}, {"id": "long_spear", "count": 3}, {"id": "great_weapon", "count": 3}, {"id": "polearm", "count": 3}]
             },
             {"addWeapon": ["long_bow"]},
-            {"addRule": ["cloak", "shield", {"id": "inspiring", "x": "Infantry"}, {"id": "power", "x": 1}]},
-            {"replaceRule": [{"id": "elven_tactics", "x": 1}], "withRule": [{"id": "elven_tactics", "x": 2}]}
+            {"addRule": ["cloak", "shield", {"id": "inspiring", "x": "Infantry"}, {"id": "power", "x": 1}]}
           ],
           "min": 1,
           "max": 1
@@ -47,13 +46,13 @@
           "fight": 7,
           "defense": 6,
           "reflexes": 6,
-          "rules": [{"id": "elven_tactics", "x": 1}, {"id": "leader_x", "x": "Infantry, Cavarly"}, {"id": "wounds", "x": 3}],
+          "rules": [{"id": "tactician", "x": 1}, {"id": "leader_x", "x": "Infantry, Cavarly"}, {"id": "wounds", "x": 3}],
           "weapons": [{"id": "handweapon", "count": 3}, {"id": "heavy_hooves_and_teeth", "count": 2}],
           "options": [
             {"replaceWeapon": [{"id": "handweapon", "count": 3}], "withWeapon": [{"id": "lance", "count": 3}, {"id": "great_weapon", "count": 3}, {"id": "handweapon", "count": 4}]},
             {"addWeapon": ["long_bow"]},
             {"addRule": ["cloak", "shield", {"id": "inspiring", "x": "Infantry, Cavalry"}, {"id": "power", "x": 1}]},
-            {"replaceRule": [{"id": "elven_tactics", "x": 1}], "withRule": [{"id": "elven_tactics", "x": 2}]}
+            {"replaceRule": [{"id": "tactician", "x": 1}], "withRule": [{"id": "tactician", "x": 2}]}
           ],
           "min": 1,
           "max": 1
@@ -64,7 +63,7 @@
       "name": "Luminastra Noble on Lunar Drake",
       "description": "A noble of the ancient high elves atop a mighty dragon, leading his kin into battle.",
       "category": "hero",
-      "keywords": ["Cavalry", "Monster"],
+      "keywords": ["Monster"],
       "models": [
         {
           "name": "Luminastra Noble on Lunar Drake",
@@ -74,13 +73,12 @@
           "fight": 7,
           "defense": 13,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 3}, "fly", {"id": "knight_tactics", "x": 1}, {"id": "leader_x", "x": "Cavalry, Monster"}],
+          "rules": [{"id": "wounds", "x": 6}, "fly", {"id": "tactician", "x": 1}],
           "weapons": [{"id": "handweapon", "count": 3}, {"id": "flame_breath", "count": 4}, {"id": "fangs_and_claws", "count": 3}, "bashing_tail"],
           "options": [
             {"replaceWeapon": [{"id": "handweapon", "count": 3}], "withWeapon": [{"id": "lance", "count": 3}, {"id": "great_weapon", "count": 3}, {"id": "handweapon", "count": 4}]},
             {"addWeapon": ["long_bow"]},
-            {"addRule": ["cloak", "relic_shield", {"id": "inspiring", "x": "Monster"}, {"id": "power", "x": 1}]},
-            {"replaceRule": [{"id": "knight_tactics", "x": 1}], "withRule": [{"id": "knight_tactics", "x": 2}]}
+            {"addRule": ["cloak", "relic_shield", {"id": "inspiring", "x": "Monster"}, {"id": "power", "x": 1}]}
           ],
           "min": 1,
           "max": 1
@@ -101,14 +99,14 @@
           "fight": 7,
           "defense": 10,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 3}, {"id": "elven_tactics", "x": 2}, {"id": "impact", "x": 3}, {"id": "leader_x", "x": "Vehicle"}],
+          "rules": [{"id": "wounds", "x": 3}, {"id": "tactician", "x": 2}, {"id": "impact", "x": 3}, {"id": "leader_x", "x": "Vehicle"}],
           "weapons": [{"id": "hooves_and_teeth", "count": 4}, {"id": "handweapon", "count": 3}],
           "options": [
             {"replaceWeapon": [{"id": "handweapon", "count": 3}], "withWeapon": [{"id": "lance", "count": 3}, {"id": "great_weapon", "count": 3}, {"id": "handweapon", "count": 4}]},
             {"replaceWeapon": [{"id": "hooves_and_teeth", "count": 4}], "withWeapon": [{"id": "claws", "count": 4}]},
             {"addWeapon": ["long_bow"]},
             {"addRule": ["cloak", "relic_shield", {"id": "inspiring", "x": "Vehicle"}, {"id": "power", "x": 1}]},
-            {"replaceRule": [{"id": "elven_tactics", "x": 2}], "withRule": [{"id": "elven_tactics", "x": 3}]}
+            {"replaceRule": [{"id": "tactician", "x": 2}], "withRule": [{"id": "tactician", "x": 3}]}
           ],
           "min": 1,
           "max": 1
@@ -225,12 +223,11 @@
           "fight": 6,
           "defense": 7,
           "reflexes": 6,
-          "rules": [{"id": "defiant", "x": 2}, "fear", "fearless", "leader", {"id": "warrior_tactics", "x": 1}, {"id": "wounds", "x": 3}],
+          "rules": [{"id": "defiant", "x": 2}, "fear", "fearless", "leader", {"id": "tactician", "x": 1}, {"id": "wounds", "x": 3}],
           "weapons": [{"id": "heavy_polearm", "count": 4}],
           "options": [
             {"replaceWeapon": [{"id": "heavy_polearm", "count": 4}], "withWeapon": [{"id": "grand_weapon", "count": 4}]},
-            {"addRule": ["shield", {"id": "inspiring", "x": "Infantry"}, {"id": "power", "x": 1}]},
-            {"replaceRule": [{"id": "warrior_tactics", "x": 1}], "withRule": [{"id": "warrior_tactics", "x": 2}]}
+            {"addRule": ["shield", {"id": "inspiring", "x": "Infantry"}, {"id": "power", "x": 1}]}
           ],
           "min": 1,
           "max": 1
@@ -238,25 +235,24 @@
       ]
     },
     "phoenix_pal_phoenix": {
-      "name": "Moon Paladin on Divine Moon",
-      "description": "Noble Protector of the Temple of the Last Flame, riding a divine Moon.",
+      "name": "Moon Paladin on Divine Phoenix",
+      "description": "Noble Protector of the Temple of the Last Flame, riding a divine Phoenix.",
       "category": "hero",
-      "keywords": ["Cavalry", "Monster"],
+      "keywords": ["Monster"],
       "models": [
         {
-          "name": "Moon Paladin on Divine Moon",
+          "name": "Moon Paladin on Divine Phoenix",
           "movement": 10,
           "courage": 6,
           "shoot": 7,
           "fight": 7,
           "defense": 12,
           "reflexes": 7,
-          "rules": [{"id": "wounds", "x": 3}, {"id": "defiant", "x": 2}, "fear", "fearless", "fly", {"id": "knight_tactics", "x": 2}, {"id": "leader_x", "x": "Cavalry, Monster"}],
+          "rules": [{"id": "wounds", "x": 3}, {"id": "defiant", "x": 2}, "fear", "fearless", "fly", {"id": "tactician", "x": 2}, {"id": "leader_x", "x": "Cavalry, Monster"}],
           "weapons": [{"id": "heavy_polearm", "count": 4}, {"id": "beak_and_claws", "count": 6}, {"id": "flame_breath", "count": 2}],
           "options": [
             {"replaceWeapon": [{"id": "heavy_polearm", "count": 4}], "withWeapon": [{"id": "grand_weapon", "count": 4}]},
-            {"addRule": ["relic_shield", {"id": "inspiring", "x": "Cavalry, Monster"}, {"id": "power", "x": 1}]},
-            {"replaceRule": [{"id": "knight_tactics", "x": 2}], "withRule": [{"id": "knight_tactics", "x": 3}]}
+            {"addRule": ["relic_shield", {"id": "inspiring", "x": "Cavalry, Monster"}, {"id": "power", "x": 1}]}
           ],
           "min": 1,
           "max": 1
@@ -277,13 +273,13 @@
           "fight": 6,
           "defense": 10,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 3}, {"id": "defiant", "x": 2}, "fear", "fearless", {"id": "impact", "x": 3}, {"id": "leader_x", "x": "Vehicle"}, {"id": "knight_tactics", "x": 2}],
+          "rules": [{"id": "wounds", "x": 3}, {"id": "defiant", "x": 2}, "fear", "fearless", {"id": "impact", "x": 3}, {"id": "leader_x", "x": "Vehicle"}, {"id": "tactician", "x": 2}],
           "weapons": [{"id": "hooves_and_teeth", "count": 4}, {"id": "heavy_polearm", "count": 4}],
           "options": [
             {"replaceWeapon": [{"id": "heavy_polearm", "count": 4}], "withWeapon": [{"id": "grand_weapon", "count": 4}]},
             {"replaceWeapon": [{"id": "hooves_and_teeth", "count": 4}], "withWeapon": [{"id": "claws", "count": 4}]},
             {"addRule": ["relic_shield", {"id": "inspiring", "x": "Vehicle"}, {"id": "power", "x": 1}]},
-            {"replaceRule": [{"id": "knight_tactics", "x": 2}], "withRule": [{"id": "knight_tactics", "x": 3}]}
+            {"replaceRule": [{"id": "tactician", "x": 2}], "withRule": [{"id": "tactician", "x": 3}]}
           ],
           "min": 1,
           "max": 1
@@ -494,7 +490,7 @@
       "name": "Dragon Knights",
       "description": "The personal bodyguards of elven nobles, these royal knights have tamed mighty dragons.",
       "category": "rare",
-      "keywords": ["Cavalry", "Monster"],
+      "keywords": ["Monster"],
       "models": [
         {
           "name": "Dragon Knight",
@@ -535,13 +531,13 @@
       ]
     },
     "phoenix": {
-      "name": "Divine Moon",
+      "name": "Divine Phoenix",
       "description": "A magical creature, its the destruction of fire incarnate.",
       "category": "rare",
       "keywords": ["Monster"],
       "models": [
         {
-          "name": "Divine Moon",
+          "name": "Divine Phoenix",
           "movement": 10,
           "courage": 6,
           "shoot": 6,
@@ -684,7 +680,7 @@
     "runes": {"name": "Warding Runes", "description": "All model within 6\" of this terrain feature have +1 to their Save characteristic when being hit by a Power.", "points": [20]},
     "discipline": {"name": "Discipline", "description": "This unit and all friendly units within 6\" ignore Shock when making any reaction rolls.", "points": 15},
     "astral_quiver": {"name": "Astral Quiver", "description": "When you use the Moonfire Arrows strategy on this unit, you don't spend SP to use it.", "points": 4},
-    "elven_tactics": {
+    "tactician": {
       "name": "Luminastra Tactics",
       "inputs": ["x"],
       "description": "When this unit is activated, choose up to X friendly _Infantry_ or _Cavalry_ units within 6\". This unit and those units gains one of these effects until the end of the round.\n* Re-roll failed Strength tests of 9+\n* Re-roll failed Accuracy tests of 9+",
