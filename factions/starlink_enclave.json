@@ -446,7 +446,7 @@
           "courage": 5,
           "shoot": 5,
           "fight": 5,
-          "defense": 9,
+          "defense": 10,
           "reflexes": 6,
           "weapons": [{"id": "pulse_gatling", "mount": ["Front"]}],
           "rules": [{"id": "wounds", "x": 3}, "hover", {"id": "impact", "x": 3}, "vulnerable_side_rear"],
