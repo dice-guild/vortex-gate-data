@@ -862,7 +862,7 @@
       "name": "Gravite Assault Squad",
       "description": "Highly trained marines clad in very heavy armor.",
       "category": "elite",
-      "keywords": ["Heavy Infantry"],
+      "keywords": ["Infantry"],
       "models": [
         {
           "name": "Gravite Assault Squad",
@@ -873,10 +873,10 @@
           "defense": 9,
           "reflexes": 6,
           "rules": ["ambush"],
-          "weapons": ["twin_marine_rifle", {"id": "energy_handweapon", "count": 2}],
+          "weapons": ["storm_rifle", {"id": "energy_handweapon", "count": 2}],
           "options": [
             {
-              "replaceWeapon": "twin_marine_rifle",
+              "replaceWeapon": "storm_rifle",
               "withWeapon": [
                 "combi_rifle",
                 "twin_autocannon",
@@ -891,7 +891,7 @@
                 "thermal_carbine"
               ]
             },
-            {"replaceWeapon": ["twin_marine_rifle", {"id": "energy_handweapon", "count": 2}], "withWeapon": [{"id": "twin_energy_handweapon", "count": 4}]},
+            {"replaceWeapon": ["storm_rifle", {"id": "energy_handweapon", "count": 2}], "withWeapon": [{"id": "twin_energy_handweapon", "count": 4}]},
             {
               "replaceWeapon": {"id": "energy_handweapon", "count": 2},
               "withWeapon": [{"id": "energy_powerweapon", "count": 2}, {"id": "twin_energy_handweapon", "count": 3}, {"id": "energy_greatweapon", "count": 2}]
@@ -975,7 +975,7 @@
           "defense": 9,
           "reflexes": 6,
           "rules": [{"id": "wounds", "x": 2}],
-          "weapons": ["marine_pistol", {"id": "energy_handweapon", "count": 2}],
+          "weapons": ["marine_pistol", {"id": "energy_handweapon", "count": 3}],
           "min": 3,
           "max": 6
         }
@@ -1570,9 +1570,9 @@
           "defense": 9,
           "reflexes": 6,
           "rules": [{"id": "leader", "x": "Infantry, Heavy Infantry"}, {"id": "power", "x": 1}, {"id": "tactician", "x": "Infantry, Heavy Infantry"}, {"id": "wounds", "x": 3}],
-          "weapons": ["twin_marine_rifle", {"id": "energy_handweapon", "count": 5}],
+          "weapons": ["storm_rifle", {"id": "energy_handweapon", "count": 5}],
           "options": [
-            {"replaceWeapon": "twin_marine_rifle", "withWeapon": ["heavy_flamethrower", "energy_gatling", "energy_cannon"]},
+            {"replaceWeapon": "storm_rifle", "withWeapon": ["heavy_flamethrower", "energy_gatling", "energy_cannon"]},
             {
               "replaceWeapon": {"id": "energy_handweapon", "count": 5},
               "withWeapon": [{"id": "energy_polearm", "count": 5}, {"id": "twin_energy_handweapon", "count": 6}, {"id": "energy_powerweapon", "count": 5}]
@@ -1808,9 +1808,9 @@
           "movement": 5,
           "reflexes": 6,
           "rules": ["ambush", "conclave"],
-          "weapons": ["twin_marine_rifle", {"id": "energy_handweapon", "count": 2}],
+          "weapons": ["storm_rifle", {"id": "energy_handweapon", "count": 2}],
           "options": [
-            {"replaceWeapon": "twin_marine_rifle", "withWeapon": ["heavy_flamethrower", "energy_gatling", "energy_cannon"]},
+            {"replaceWeapon": "storm_rifle", "withWeapon": ["heavy_flamethrower", "energy_gatling", "energy_cannon"]},
             {
               "replaceWeapon": {"id": "energy_handweapon", "count": 2},
               "withWeapon": [{"id": "energy_polearm", "count": 2}, {"id": "energy_polearm", "count": 2}, {"id": "energy_handweapon", "count": 3}, {"id": "energy_powerweapon", "count": 2}]
@@ -1838,9 +1838,9 @@
           "movement": 5,
           "reflexes": 6,
           "rules": ["ambush", "conclave", {"id": "wounds", "x": 2}],
-          "weapons": ["twin_marine_rifle", {"id": "energy_handweapon", "count": 3}],
+          "weapons": ["storm_rifle", {"id": "energy_handweapon", "count": 3}],
           "options": [
-            {"replaceWeapon": "twin_marine_rifle", "withWeapon": ["heavy_flamethrower", "energy_gatling", "energy_cannon"]},
+            {"replaceWeapon": "storm_rifle", "withWeapon": ["heavy_flamethrower", "energy_gatling", "energy_cannon"]},
             {
               "replaceWeapon": {"id": "energy_handweapon", "count": 3},
               "withWeapon": [{"id": "energy_polearm", "count": 3}, {"id": "energy_polearm", "count": 3}, {"id": "energy_handweapon", "count": 4}, {"id": "energy_powerweapon", "count": 3}]

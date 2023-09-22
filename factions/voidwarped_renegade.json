@@ -852,10 +852,10 @@
           "rules": ["ambush"],
           "weapons": ["twin_marine_rifle", {"id": "pestilence_sword", "count": 2}],
           "options": [
-            {"replaceWeapon": "twin_marine_rifle", "withWeapon": ["combi_rifle", "combi_rifle"]},
+            {"replaceWeapon": "storm_rifle", "withWeapon": ["combi_rifle", "combi_rifle"]},
             {"replaceWeapon": {"id": "pestilence_sword", "count": 2}, "withWeapon": [{"id": "pestilence_axe", "count": 2}]},
-            {"modelLimit": "2/5", "replaceWeapon": "twin_marine_rifle", "withWeapon": ["pestilence_sprayer", "pestilence_launcher", "reaper_cannon"]},
-            {"modelLimit": "1/5", "replaceWeapon": ["twin_marine_rifle", {"id": "pestilence_sword", "count": 2}], "withWeapon": [{"id": "pestilence_great_flail", "count": 4}]}
+            {"modelLimit": "2/5", "replaceWeapon": "storm_rifle", "withWeapon": ["pestilence_sprayer", "pestilence_launcher", "reaper_cannon"]},
+            {"modelLimit": "1/5", "replaceWeapon": ["storm_rifle", {"id": "pestilence_sword", "count": 2}], "withWeapon": [{"id": "pestilence_great_flail", "count": 4}]}
           ],
           "min": 5,
           "max": 10
@@ -1059,6 +1059,52 @@
         {"name": "Recon Marine", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 7, "reflexes": 7, "weapons": ["marine_rifle", "handweapon"], "min": 4, "max": 19}
       ]
     },
+    "gravite_assault_squad": {
+      "name": "Gravite Assault Squad",
+      "description": "Renegade marines clad in very heavy armor.",
+      "category": "elite",
+      "keywords": ["Infantry"],
+      "models": [
+        {
+          "name": "Gravite Assault Squad",
+          "movement": 5,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 9,
+          "reflexes": 6,
+          "rules": ["ambush"],
+          "weapons": ["storm_rifle", {"id": "energy_handweapon", "count": 2}],
+          "options": [
+            {
+              "replaceWeapon": "storm_rifle",
+              "withWeapon": [
+                "combi_rifle",
+                "twin_autocannon",
+                "thermal_lance",
+                "gravity_cannon",
+                "fusion_cannon",
+                "plasma_cannon",
+                "minigun",
+                "missile_launcher",
+                "heavy_flamethrower",
+                "plasma_repeater",
+                "thermal_carbine"
+              ]
+            },
+            {"replaceWeapon": ["storm_rifle", {"id": "energy_handweapon", "count": 2}], "withWeapon": [{"id": "twin_energy_handweapon", "count": 4}]},
+            {
+              "replaceWeapon": {"id": "energy_handweapon", "count": 2},
+              "withWeapon": [{"id": "energy_powerweapon", "count": 2}, {"id": "twin_energy_handweapon", "count": 3}, {"id": "energy_greatweapon", "count": 2}]
+            },
+            {"addWeapon": ["rocket_pod"], "modelLimit": "1/5"},
+            {"addRule": ["shield"]}
+          ],
+          "min": 5,
+          "max": 10
+        }
+      ]
+    },
     "psychic_marines": {
       "name": "Psychic Marines",
       "description": "Marines corrupted by the vortex gate with potent psychic powers.",
@@ -1129,7 +1175,7 @@
       ]
     },
     "psychic_destroyers": {
-      "name": "Psychic Destroyers",
+      "name": "Psychic Gravite Squad",
       "description": "Deadly destroyers corrupted by the vortex gate with potent psychic powers.",
       "category": "elite",
       "subfactions": ["power_focus"],
@@ -1144,10 +1190,10 @@
           "defense": 9,
           "reflexes": 6,
           "rules": ["ambush", "conclave"],
-          "weapons": ["twin_marine_rifle", {"id": "energy_handweapon", "count": 2}],
+          "weapons": ["storm_rifle", {"id": "energy_handweapon", "count": 2}],
           "options": [
             {
-              "replaceWeapon": "twin_marine_rifle",
+              "replaceWeapon": "storm_rifle",
               "withWeapon": [
                 {"id": "energy_handweapon", "count": 2},
                 "combi_rifle",
@@ -1347,7 +1393,7 @@
       ]
     },
     "voidwarped_destoyers": {
-      "name": "Voidwarped Destroyers",
+      "name": "Voidwarped Gravite Squad",
       "description": "Destroyers that have been corrupted by the vortex gate.",
       "category": "elite",
       "keywords": ["Heavy Infantry"],
@@ -1388,7 +1434,7 @@
       ]
     },
     "mutated_destoyers": {
-      "name": "Mutated Destroyers",
+      "name": "Mutated Gravite Squad",
       "description": "Destroyers that have been mutated by the vortex gate.",
       "category": "elite",
       "keywords": ["Heavy Infantry"],
