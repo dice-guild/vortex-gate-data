@@ -650,19 +650,7 @@
     }
   },
   "models": {
-    "support_turret": {
-      "name": "Support Turret",
-      "movement": 0,
-      "courage": 4,
-      "shoot": 5,
-      "fight": 0,
-      "defense": 5,
-      "reflexes": 5,
-      "weapons": ["smart_missiles"],
-      "rules": ["deployable"],
-      "min": 1,
-      "max": 1
-    },
+    "support_turret": {"name": "Support Turret", "movement": "-", "courage": "-", "shoot": 5, "fight": 0, "defense": "-", "reflexes": "-", "weapons": ["smart_missiles"], "min": 1, "max": 1},
     "recon_drone": {
       "name": "Heavy Gunner Drone",
       "movement": "-",
@@ -672,7 +660,7 @@
       "defense": "-",
       "reflexes": "-",
       "weapons": ["pulse_gatling"],
-      "rules": ["recon_drone", "fly"],
+      "rules": ["recon_drone"],
       "min": 1,
       "max": 1
     },
@@ -684,43 +672,19 @@
       "fight": 0,
       "defense": "-",
       "reflexes": "-",
-      "rules": [{"id": "resilient", "x": 3}, "fly"],
+      "rules": [{"id": "resilient", "x": 3}],
       "weapons": ["missile_pod"],
       "min": 1,
       "max": 1
     },
-    "inhibitor_drone": {"name": "Inhibitor Drone", "movement": "-", "courage": "-", "shoot": 5, "fight": 0, "defense": "-", "reflexes": "-", "rules": ["inhibitor", "fly"], "min": 0, "max": 1},
-    "spotter_drone": {"name": "Spotter Drone", "movement": "-", "courage": "-", "shoot": 0, "fight": 0, "defense": "-", "reflexes": "-", "rules": ["fly", "spotting_laser"], "min": 1, "max": 1},
-    "missile_drone": {
-      "name": "Missile Drone",
-      "movement": "-",
-      "courage": "-",
-      "shoot": 5,
-      "fight": 0,
-      "defense": "-",
-      "reflexes": "-",
-      "rules": ["fly"],
-      "weapons": ["missile_pod"],
-      "min": 1,
-      "max": 1
-    },
-    "stealth_drone": {"name": "Stealth Drone", "movement": "-", "courage": "-", "shoot": 0, "fight": 0, "defense": "-", "reflexes": "-", "rules": ["fly", "stealth_field"], "min": 1, "max": 1},
-    "gunner_drone": {
-      "name": "Gunner Drone",
-      "movement": "-",
-      "courage": "-",
-      "shoot": 5,
-      "fight": 0,
-      "defense": "-",
-      "reflexes": "-",
-      "rules": ["fly"],
-      "weapons": ["pulse_carbine"],
-      "min": 1,
-      "max": 1
-    },
-    "shield_drone": {"name": "Shield Drone", "movement": "-", "courage": "-", "shoot": 0, "fight": 0, "defense": "-", "reflexes": "-", "rules": ["fly", "pulse_shield"], "min": 1, "max": 1},
-    "guardian_drone": {"name": "Guardian Drone", "movement": "-", "courage": "-", "shoot": 0, "fight": 0, "defense": "-", "reflexes": "-", "rules": ["fly", "protection"], "min": 1, "max": 1},
-    "accelerator_drone": {"name": "Accelerator Drone", "movement": "-", "courage": "-", "shoot": 0, "fight": 0, "defense": "-", "reflexes": "-", "rules": ["accelerator", "fly"], "min": 1, "max": 1}
+    "inhibitor_drone": {"name": "Inhibitor Drone", "movement": "-", "courage": "-", "shoot": 5, "fight": 0, "defense": "-", "reflexes": "-", "rules": ["inhibitor"], "min": 0, "max": 1},
+    "spotter_drone": {"name": "Spotter Drone", "movement": "-", "courage": "-", "shoot": 0, "fight": 0, "defense": "-", "reflexes": "-", "rules": ["spotting_laser"], "min": 1, "max": 1},
+    "missile_drone": {"name": "Missile Drone", "movement": "-", "courage": "-", "shoot": 5, "fight": 0, "defense": "-", "reflexes": "-", "weapons": ["missile_pod"], "min": 1, "max": 1},
+    "stealth_drone": {"name": "Stealth Drone", "movement": "-", "courage": "-", "shoot": 0, "fight": 0, "defense": "-", "reflexes": "-", "rules": ["stealth_field"], "min": 1, "max": 1},
+    "gunner_drone": {"name": "Gunner Drone", "movement": "-", "courage": "-", "shoot": 5, "fight": 0, "defense": "-", "reflexes": "-", "weapons": ["pulse_carbine"], "min": 1, "max": 1},
+    "shield_drone": {"name": "Shield Drone", "movement": "-", "courage": "-", "shoot": 0, "fight": 0, "defense": "-", "reflexes": "-", "rules": ["pulse_shield"], "min": 1, "max": 1},
+    "guardian_drone": {"name": "Guardian Drone", "movement": "-", "courage": "-", "shoot": 0, "fight": 0, "defense": "-", "reflexes": "-", "rules": ["protection"], "min": 1, "max": 1},
+    "accelerator_drone": {"name": "Accelerator Drone", "movement": "-", "courage": "-", "shoot": 0, "fight": 0, "defense": "-", "reflexes": "-", "rules": ["accelerator"], "min": 1, "max": 1}
   },
   "weapons": {
     "ion_bombs": {"name": "Ion Bombs", "attacks": 2, "short": 3, "ap": 4, "rules": ["bomb", {"id": "blast", "x": 3}]},
