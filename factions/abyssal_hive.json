@@ -571,7 +571,7 @@
           "shoot": 5,
           "defense": 13,
           "movement": 6,
-          "rules": [{"id": "wounds", "x": 8}],
+          "rules": [{"id": "wounds", "x": 6}],
           "weapons": [{"id": "light_razor_talons", "count": 4}, "acid_jet"],
           "options": [{"replaceWeapon": "acid_jet", "withWeapon": ["bio_plasma_cannon", "razor_blaster_cluster", "bio_eruptor"]}, {"addWeapon": ["spine_salvo"]}, {"addRule": ["enhanced_senses"]}],
           "min": 1,
@@ -613,7 +613,7 @@
           "fight": 6,
           "defense": 14,
           "movement": 10,
-          "rules": [{"id": "heavy_impact", "x": "6"}, {"id": "transport", "x": "20"}, "walker", {"id": "wounds", "x": 8}],
+          "rules": [{"id": "heavy_impact", "x": "6"}, {"id": "transport", "x": "20"}, "walker", {"id": "wounds", "x": 6}],
           "weapons": [{"id": "gargantuan_talons", "count": 6}, {"id": "barbed_tentacles", "count": 10}, "acidic_torrent", "bio_cannon"],
           "min": 1,
           "max": 1
@@ -634,7 +634,7 @@
           "shoot": 6,
           "defense": 13,
           "movement": 12,
-          "rules": ["aircraft", "hover", {"id": "transport", "x": "20"}, {"id": "wounds", "x": 8}],
+          "rules": ["aircraft", "hover", {"id": "transport", "x": "20"}, {"id": "wounds", "x": 6}],
           "weapons": [{"id": "gargantuan_talons", "count": 5}, "bio_cannon"],
           "min": 1,
           "max": 1
