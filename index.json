@@ -1122,7 +1122,10 @@
     "thermal_carbine": {"name": "Thermal Carbine", "attacks": 1, "short": 9, "medium": 18, "ap": 3, "rules": ["assault", "breaching", {"id": "deadly", "x": 1}]},
     "combi_rifle": {
       "name": "Combi-rifle",
-      "profiles": [{"name": "Rifle", "rules": ["rapid_fire"], "ap": 2, "medium": 24, "short": 12, "attacks": 1}, {"name": "Lance", "attacks": 1, "short": 12, "medium": 24, "ap": 5}]
+      "profiles": [
+        {"name": "Rifle", "rules": ["rapid_fire"], "ap": 2, "medium": 24, "short": 12, "attacks": 1},
+        {"name": "Charge", "attacks": 1, "short": 12, "medium": 24, "ap": 5, "rules": ["overheat"]}
+      ]
     },
     "plasma_rifle": {"name": "Plasma Rifle", "rules": ["rapid_fire", "overcharge"], "ap": 5, "medium": 24, "short": 12, "attacks": 1},
     "twin_plasma_rifle": {"name": "Twin Plasma Rifle", "rules": ["rapid_fire", "overcharge"], "ap": 5, "medium": 24, "short": 12, "attacks": 2},
