@@ -553,7 +553,6 @@
           "modelLimit": "1/5"
         },
         {"addWeapon": "grenade_launcher_attachment", "modelLimit": "1/5"},
-        {"addRule": {"id": "resistant", "x": 2}, "subfactions": ["assault_focus"], "modelLimit": "all"},
         {"addRule": "multi_scanner", "modelLimit": 1},
         {"addRule": "banner", "modelLimit": 1}
       ]
@@ -1577,8 +1576,7 @@
               "replaceWeapon": {"id": "energy_handweapon", "count": 5},
               "withWeapon": [{"id": "energy_polearm", "count": 5}, {"id": "twin_energy_handweapon", "count": 6}, {"id": "energy_powerweapon", "count": 5}]
             },
-            {"replaceRule": {"id": "power", "x": 1}, "withRule": [{"id": "power", "x": 2}]},
-            {"addRule": [{"id": "resistant", "x": 3}]}
+            {"replaceRule": {"id": "power", "x": 1}, "withRule": [{"id": "power", "x": 2}]}
           ],
           "min": 1,
           "max": 1
@@ -1607,7 +1605,7 @@
               "withWeapon": [{"id": "energy_polearm", "count": 4}, {"id": "twin_energy_handweapon", "count": 5}, {"id": "energy_powerweapon", "count": 4}]
             },
             {"replaceRule": {"id": "power", "x": 1}, "withRule": [{"id": "power", "x": 2}]},
-            {"addRule": [{"id": "resistant", "x": 3}, "destroyer_armor"]}
+            {"addRule": ["destroyer_armor"]}
           ],
           "min": 1,
           "max": 1
@@ -1710,8 +1708,7 @@
           "replaceWeapon": {"id": "energy_handweapon", "count": 2},
           "withWeapon": [{"id": "energy_polearm", "count": 2}, {"id": "energy_handweapon", "count": 3}, {"id": "energy_powerweapon", "count": 2}]
         },
-        {"addRule": ["ambush"], "modelLimit": "all"},
-        {"addRule": [{"id": "resistant", "x": 3}], "limit": "1/5"}
+        {"addRule": ["ambush"], "modelLimit": "all"}
       ]
     },
     "purge_squad": {
@@ -1738,11 +1735,7 @@
         },
         {"name": "Psychic Purge Marine", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 8, "reflexes": 6, "weapons": ["heavy_flamethrower", "handweapon"], "min": 4, "max": 9}
       ],
-      "options": [
-        {"replaceWeapon": ["heavy_flamethrower"], "withWeapon": ["energy_cannon", "energy_gatling"]},
-        {"addRule": ["ambush"], "modelLimit": "all"},
-        {"addRule": [{"id": "resistant", "x": 3}], "limit": "1/5"}
-      ]
+      "options": [{"replaceWeapon": ["heavy_flamethrower"], "withWeapon": ["energy_cannon", "energy_gatling"]}, {"addRule": ["ambush"], "modelLimit": "all"}]
     },
     "teleport_squad": {
       "name": "Psychic Teleport Squad",
@@ -1788,8 +1781,7 @@
           "replaceWeapon": {"id": "energy_handweapon", "count": 2},
           "withWeapon": [{"id": "energy_polearm", "count": 2}, {"id": "energy_polearm", "count": 2}, {"id": "energy_handweapon", "count": 3}, {"id": "energy_powerweapon", "count": 2}]
         },
-        {"addRule": ["ambush"], "modelLimit": "all"},
-        {"addRule": [{"id": "resistant", "x": 3}], "limit": "1/5"}
+        {"addRule": ["ambush"], "modelLimit": "all"}
       ]
     },
     "psychic_destroyers": {
@@ -1814,8 +1806,7 @@
             {
               "replaceWeapon": {"id": "energy_handweapon", "count": 2},
               "withWeapon": [{"id": "energy_polearm", "count": 2}, {"id": "energy_polearm", "count": 2}, {"id": "energy_handweapon", "count": 3}, {"id": "energy_powerweapon", "count": 2}]
-            },
-            {"addRule": [{"id": "resistant", "x": 3}], "limit": "1/5"}
+            }
           ],
           "min": 5,
           "max": 10
@@ -1844,8 +1835,7 @@
             {
               "replaceWeapon": {"id": "energy_handweapon", "count": 3},
               "withWeapon": [{"id": "energy_polearm", "count": 3}, {"id": "energy_polearm", "count": 3}, {"id": "energy_handweapon", "count": 4}, {"id": "energy_powerweapon", "count": 3}]
-            },
-            {"addRule": [{"id": "resistant", "x": 3}], "limit": "1/3"}
+            }
           ],
           "min": 3,
           "max": 9
