@@ -1479,8 +1479,8 @@
       "subfactions": ["tactical_focus"],
       "name": "Re-organize",
       "phase": "activation",
-      "description": "Use at any point during a unit's activation. That unit may split into two separate units or merge with another unit of the same data-sheet. This may not exceed the maximum unit size or go below the unit's minimum size.",
-      "flavor": "With a wave of fire, enemy units cannot hope to stand a chance.",
+      "description": "Use at the start of a unit's activation if that unit contains a _Leader_. That _Leader_ may be moved to another valid friendly unit within 6\". This may only target each _Leader_ once per game.",
+      "flavor": "A strategic re-organization can sometimes turn the tide of battle in your favor.",
       "cost": 1
     },
     "vigilance": {
@@ -2106,13 +2106,9 @@
     "legend_defensive_mastery": {"name": "Defensive Mastery", "description": "This model may re-roll failed Save tests of 9+.", "points": 10},
     "legend_watchmaster": {"name": "Watchmaster", "description": "Friendly units within 6\" may re-roll Initiative tests of 9+.", "points": 10},
     "legend_eagle_eyed": {"name": "Eagle-Eyed", "description": "This unit may re-roll failed Accuracy tests when attacking whilst controlling an Objective.", "points": 10},
-    "legend_siege_master": {
-      "name": "Siege Master",
-      "description": "This unit may re-roll failed Strength and Accuracy tests when attacking a unit with the _Damage Chart_ special rule.",
-      "points": 10
-    },
+    "legend_siege_master": {"name": "Siege Master", "description": "This unit may re-roll failed Strength and Accuracy tests when attacking a unit with the _Wounds_ special rule.", "points": 10},
     "legend_expert_gunner": {"name": "Expert Gunner", "description": "This model may make one additional attack with any Ranged weapon.", "points": 10},
-    "legend_grenadier": {"name": "Grenadier", "description": "Weapons with the _Grenade_ special rule used by this unit hit with +1 Accuracy.", "points": 10},
+    "legend_grenadier": {"name": "Grenadier", "description": "Weapons with the _Blast_ special rule used by this unit hit with +1 Accuracy.", "points": 10},
     "legend_stabilizers": {
       "name": "Stabilizers",
       "description": "This model may make a free shoot action at any time during their move at -1 Accuracy. They may not shoot again this round.",
