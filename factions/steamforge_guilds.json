@@ -868,5 +868,6 @@
       "flavor": "A particularly lucky guild-leader may find themselves with a superior chassis to his kin.",
       "cost": 5
     }
-  }
+  },
+  "buyLinks": [{"name": "Games Workshop", "link": "https://www.games-workshop.com/en-US/Warhammer-40-000?N=2562756967+1001313688"}]
 }
