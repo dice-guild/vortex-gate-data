@@ -657,7 +657,7 @@
     },
     "assault_squad": {
       "name": "Assault Squad",
-      "description": "A squad of elite assault marines equipped to fight in close combat.",
+      "description": "A squad of assault marines equipped to fight in close combat.",
       "category": "core",
       "models": [
         {
@@ -672,10 +672,21 @@
           "options": [
             {
               "replaceWeapon": ["combat_rifle"],
-              "withWeapon": ["twin_combat_rifle", "combi_rifle", "plasma_rifle", "flamethrower", "fusion_rifle", "gravity_rifle", "thermal_rifle", "heavy_combat_shotgun", "marksman_rifle", "heavy_smg"],
+              "withWeapon": [
+                "twin_combat_rifle",
+                "combi_rifle",
+                "plasma_rifle",
+                "flamethrower",
+                "fusion_rifle",
+                "gravity_rifle",
+                "thermal_rifle",
+                "heavy_combat_shotgun",
+                "marksman_rifle",
+                "heavy_smg"
+              ],
               "modelLimit": "2/5"
             },
-            {"replaceWeapon": ["combat_rifle", {"id": "handweapon", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 3}], {"id": "twin_energy_handweapon", "count": 5}]},
+            {"replaceWeapon": ["combat_rifle", {"id": "handweapon", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 3}]]},
             {"replaceWeapon": ["heavy_pistol"], "withWeapon": ["plasma_pistol", "flamethrower_pistol", "fusion_pistol", "gravity_pistol", "thermal_pistol", "storm_rifle"]},
             {
               "replaceWeapon": [{"id": "handweapon", "count": 3}],
@@ -686,8 +697,79 @@
             {"addRule": "multi_scanner", "modelLimit": 1}
           ],
           "min": 5,
-          "max": 10
+          "max": 9
         }
+      ]
+    },
+    "assault_veteran_squad": {
+      "name": "Assault Veteran Squad",
+      "description": "A squad of elite assault marines equipped to fight in close combat.",
+      "category": "elite",
+      "rules": ["furious"],
+      "models": [
+        {
+          "name": "Veteran Assault Marine",
+          "movement": 6,
+          "courage": 7,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 8,
+          "reflexes": 6,
+          "weapons": ["combat_rifle", {"id": "handweapon", "count": 2}],
+          "options": [
+            {
+              "replaceWeapon": ["combat_rifle"],
+              "withWeapon": [
+                "twin_combat_rifle",
+                "combi_rifle",
+                "plasma_rifle",
+                "flamethrower",
+                "fusion_rifle",
+                "gravity_rifle",
+                "thermal_rifle",
+                "heavy_combat_shotgun",
+                "marksman_rifle",
+                "heavy_smg"
+              ],
+              "modelLimit": "2/5"
+            },
+            {"replaceWeapon": ["combat_rifle", {"id": "handweapon", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 3}]]},
+            {"replaceWeapon": ["heavy_pistol"], "withWeapon": ["plasma_pistol", "flamethrower_pistol", "fusion_pistol", "gravity_pistol", "thermal_pistol", "storm_rifle"]},
+            {
+              "replaceWeapon": [{"id": "handweapon", "count": 3}],
+              "withWeapon": [{"id": "energy_handweapon", "count": 3}, {"id": "energy_powerweapon", "count": 3}, {"id": "twin_energy_handweapon", "count": 4}, {"id": "energy_greatweapon", "count": 3}]
+            },
+            {"addRule": ["shield"]},
+            {"addRule": ["jetpack"], "modelLimit": "all"},
+            {"addRule": "multi_scanner", "modelLimit": 1}
+          ],
+          "min": 5,
+          "max": 9
+        }
+      ]
+    },
+    "veteran_squad": {
+      "name": "Veteran Squad",
+      "description": "Elite trained marines sworn to protect the Empire.",
+      "category": "elite",
+      "rules": ["relentless"],
+      "models": [{"name": "Veteran Marine", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 8, "reflexes": 6, "weapons": ["combat_rifle", "handweapon"], "min": 5, "max": 10}],
+      "options": [
+        {"replaceWeapon": ["combat_rifle"], "withWeapon": ["combi_rifle", "marksman_rifle", "heavy_smg"]},
+        {"replaceWeapon": ["combat_rifle", "handweapon"], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 2}]]},
+        {"replaceWeapon": "heavy_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol", "gravity_pistol", "thermal_pistol"]},
+        {
+          "replaceWeapon": {"id": "handweapon", "count": 2},
+          "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "energy_powerweapon", "count": 2}, {"id": "twin_energy_handweapon", "count": 3}, {"id": "energy_greatweapon", "count": 2}]
+        },
+        {"replaceWeapon": "combat_rifle", "withWeapon": ["plasma_rifle", "flamethrower", "fusion_rifle", "gravity_rifle", "thermal_rifle"]},
+        {
+          "replaceWeapon": "combat_rifle",
+          "withWeapon": ["heavy_machinegun", "missile_launcher", "laser_cannon", "fusion_cannon", "plasma_cannon", "gravity_cannon", "heavy_flamethrower", "thermal_lance", "autocannon"],
+          "modelLimit": "1/5"
+        },
+        {"addRule": "multi_scanner", "modelLimit": 1},
+        {"addRule": "banner", "modelLimit": 1}
       ]
     },
     "hazard_marines": {
@@ -1039,7 +1121,7 @@
             }
           ],
           "min": 5,
-          "max": 20
+          "max": 10
         }
       ]
     },
