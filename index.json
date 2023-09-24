@@ -1607,31 +1607,9 @@
       "cost": 1
     }
   },
-  "hidden_units": {
-    "defense_line": {
-      "name": "Defense Line",
-      "description": "A prepared defense wall.",
-      "category": "fortification",
-      "keywords": ["Fortification"],
-      "models": [
-        {"name": "Large Wall (8\" Section)", "courage": "-", "movement": "-", "shoot": "-", "fight": "-", "defense": "-", "reflexes": "-", "rules": ["terrain", "soft_cover"], "min": 1, "max": 4},
-        {
-          "name": "Twin Small Wall (4\" Sections)",
-          "courage": "-",
-          "movement": "-",
-          "shoot": "-",
-          "fight": "-",
-          "defense": "-",
-          "reflexes": "-",
-          "weapons": [],
-          "rules": ["terrain", "soft_cover"],
-          "min": 0,
-          "max": 2
-        }
-      ]
-    },
+  "units": {
     "improvised_barricade": {
-      "name": "Improvised Barricade (8\"x1\" Sections)",
+      "name": "Improvised Barricade",
       "description": "A hastily constructed barricade.",
       "category": "fortification",
       "keywords": ["Fortification"],
@@ -1642,49 +1620,69 @@
           "movement": "-",
           "shoot": "-",
           "fight": "-",
-          "defense": "-",
+          "defense": 8,
           "reflexes": "-",
-          "rules": ["terrain", "clearable", {"id": "impassable", "x": "Artillery, Vehicle"}, "soft_cover"],
+          "rules": ["terrain", "cover", {"id": "wounds", "x": 3}],
           "min": 1,
           "max": 2
         }
       ]
     },
-    "psychic_crystal": {
-      "name": "Psychic Amplification Crystal",
-      "description": "A crystaline structure that amplifies psychic powers.",
+    "channeling_station": {
+      "name": "Channeling Station",
+      "description": "A comm station, calming mist or other focus enhancing structure.",
       "category": "fortification",
       "keywords": ["Fortification"],
       "models": [
         {
-          "name": "Psychic Amplification Crystal",
+          "name": "Channeling Station",
           "courage": "-",
           "movement": "-",
           "shoot": "-",
           "fight": "-",
-          "defense": "-",
+          "defense": 10,
           "reflexes": "-",
-          "rules": ["terrain", {"id": "impassable", "x": "Artillery, Vehicle, Infantry, Heavy Infantry"}, "hard_cover", "amplification"],
+          "rules": ["terrain", "vigilant_aura", {"id": "wounds", "x": 4}],
           "min": 1,
           "max": 1
         }
       ]
     },
     "victory_symbol": {
-      "name": "Symbol of Victory",
+      "name": "Inspiring Symbol",
       "description": "Whether it's a hero's statue, a grand banner, or a Holo-Display of home, every sentient race has something to fight for.",
       "category": "fortification",
       "keywords": ["Fortification"],
       "models": [
         {
-          "name": "Symbol of Victory",
+          "name": "Inspiring Symbol",
           "courage": "-",
           "movement": "-",
           "shoot": "-",
           "fight": "-",
-          "defense": "-",
+          "defense": 10,
           "reflexes": "-",
-          "rules": ["terrain", {"id": "impassable", "x": "Artillery, Vehicle, Infantry, Heavy Infantry"}, "soft_cover", "inspiration"],
+          "rules": ["terrain", "inspiring_aura", {"id": "wounds", "x": 4}],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "psychic_crystal": {
+      "name": "Amplification Crystal",
+      "description": "A crystaline structure that amplifies psychic powers.",
+      "category": "fortification",
+      "keywords": ["Fortification"],
+      "models": [
+        {
+          "name": "Amplification Crystal",
+          "courage": "-",
+          "movement": "-",
+          "shoot": "-",
+          "fight": "-",
+          "defense": 10,
+          "reflexes": "-",
+          "rules": ["terrain", "amplification_aura", {"id": "wounds", "x": 4}],
           "min": 1,
           "max": 1
         }
@@ -1692,15 +1690,6 @@
     }
   },
   "phases": {"pre_game": {"name": "Pre-Game"}, "bidding": {"name": "Bidding"}, "activation": {"name": "Activation"}},
-  "hidden_strategies": {
-    "hidden_deployment": {
-      "phase": "pre_game",
-      "name": "Hidden Deployment",
-      "flavor": "Staying hidden and waiting for the right moment to strike can have a devastating effect.",
-      "description": "Any number of _Infantry_, _Artillery_ or _Fortification_ units, one point per pair may be placed in hidden deployment instead of deployed on the field. See the section for hidden units in the core rules for details on how hidden units work.",
-      "cost": "1/pair"
-    }
-  },
   "rules": {
     "poisoned_blades": {"name": "Poisoned Blades", "description": "This model's melee weapons have +1 AP against enemies without _Damage Table(X)_.", "points": 5},
     "legend_strategist": {"name": "Strategist", "description": "At the start of the round, roll a D10 for each model with this rule. On any 5 or less gain 1 Tactic Point.", "points": 20},
@@ -1988,7 +1977,7 @@
     "unreliable": {"name": "Unreliable", "description": "Attacks with this weapon are made at -1 Accuracy.", "points": ["weapon.attacks", {"multiply": -1}]},
     "terrain": {
       "name": "Terrain",
-      "description": "This model may be placed anywhere on the field during deployment, more than 12\" from any enemy units or deployment zones. Once placed, this unit is treated as terrain and may not be controlled or activated by the owning player."
+      "description": "This model may be placed anywhere on the field during deployment, more than 6\" from any enemy units, deployment zones or objectives. Once placed, this unit is treated as terrain and may not be controlled or activated by the owning player."
     },
     "impassable": {"name": "Impassable", "inputs": ["x"], "description": "This model may not be crossed by X unit types.", "points": 10},
     "clearable": {
@@ -2000,10 +1989,8 @@
       "description": "Up to X models or a gun with X or less Crew may occupy this model in the same way models occupy a building. If this model is destroyed while units are embarked, each model inside must take a single Save with no AP and then the unit takes 3 Shock.",
       "inputs": ["x"]
     },
-    "soft_cover_x": {"name": "Normal Cover", "inputs": ["x"], "description": "This model provides Normal Cover to X models in it.", "points": ["rule.x", {"multiply": 2}]},
-    "soft_cover": {"name": "Normal Cover", "description": "This model provides Normal Cover to models behind it.", "points": 10},
-    "hard_cover_x": {"name": "Normal Cover", "inputs": ["x"], "description": "This model provides Normal Cover to X models in it.", "points": ["rule.x", {"multiply": 4}]},
-    "hard_cover": {"name": "Normal Cover", "description": "This model provides Normal Cover to models behind it.", "points": 20},
+    "cover_x": {"name": "Cover", "inputs": ["x"], "description": "This model provides Cover to X models in it.", "points": ["rule.x", {"multiply": 2}]},
+    "cover": {"name": "Cover", "description": "This model provides Cover to models behind it.", "points": 10},
     "skirmishers": {
       "name": "Skirmishers",
       "description": "This unit has +1 Save when hit by a shooting attack, +1 to initiative tests when rushing and has a 3“ coherency instead of a 2“ coherency if all models in it have this rule.",
@@ -2034,6 +2021,8 @@
     },
     "disrupt": {"name": "Disrupt", "inputs": ["x"], "description": "This weapon has +X AP against units with _Damage Chart_.", "points": ["rule.x", {"multiply": 0.5}]},
     "inspiring": {"name": "Inspiring", "description": "This model's unit may re-roll failed Courage Tests.", "points": 10},
+    "inspiring_aura": {"name": "Inspiring Aura", "description": "Friendly units within 6\" may re-roll failed Courage tests.", "points": 10},
+    "amplification_aura": {"name": "Amplification Aura", "description": "Friendly units within 6\" may re-roll failed Power tests.", "points": 10},
     "epic_tactician": {"name": "Epic Tactician", "description": "This model's unit may re-roll all failed Accuracy and Strength tests.", "points": 20},
     "tactician": {"name": "Tactician", "description": "This model's unit may re-roll failed Accuracy and Strength tests of 9+.", "points": 10},
     "defender": {"name": "Defender", "description": "This model's unit gains +1 Save.", "points": 10},
@@ -2043,6 +2032,7 @@
     "spotter": {"name": "Spotter", "description": "Accuracy rolls of 1 or 2 for this model's unit cause 2 hits instead of 1.", "points": 10},
     "marksman": {"name": "Marksman", "description": "This model's unit may re-roll failed Accuracy tests of 9+.", "points": 10},
     "striker": {"name": "Striker", "description": "This model's unit gains +1 AP on all weapons.", "points": 10},
+    "vigilant_aura": {"name": "Vigilant Aura", "description": "Friendly units within 6\" gain +1 Initiative.", "points": 10},
     "vigilant": {"name": "Vigilant", "description": "This model's unit gains +1 Initiative.", "points": 10},
     "wings": {"name": "Wings", "description": "This model may ignore models and terrain when moving.", "points": 5},
     "scrambler": {"name": "Scrambler", "description": "Enemy units arriving from reserves within 18\" of this model suffer -2 Initiative on reserve tests.", "points": 5},
@@ -2074,7 +2064,6 @@
     "surveying_device": {"name": "Surveying Device", "description": "Once per round, a friendly _Infantry_ unit within 12\" may ignore the benefit of cover while shooting.", "points": 10},
     "spotting_device": {"name": "Spotting Device", "description": "Increase the short and long range of all ranged weapons equipped by this unit by 6\".", "points": 5},
     "titan_shield": {"name": "Titan Shield", "description": "This unit subtracts 1 from all Damage Chart rolls.", "points": 10},
-    "amplification": {"name": "Psionic Amplification", "description": "When making power tests within 6\" of this model, you may roll two dice and discard one.", "points": 10},
     "inspiration": {"name": "Inspiration", "description": "Models gain +1 Courage when taking Courage Tests within 6\" of this model.", "points": 5},
     "intensity": {"name": "Intensity", "inputs": ["x"], "description": "This weapon has +X AP at long range.", "points": ["rule.x", {"multiply": 1}]},
     "medic_biker": {
@@ -2124,16 +2113,10 @@
       "description": "Any time during this model's activation, pick an enemy unit within 36\" to gain 1 spotting marker. When a friendly unit shoots at that target they may spend spotting markers to gain the following for that attack: \n * One Marker: Re-roll Accuracy rolls of 9+ \n * Two Markers: +1 Accuracy \n\n\n These effects are cumulative and may be activated multiple times. At the end of the round, remove all spotting markers.",
       "points": 5
     },
-    "knockback": {
-      "name": "Knockback",
-      "inputs": ["x"],
-      "description": "When an enemy model takes any unsaved hit by this weapon, you can move that model X“ directly away from this model.",
-      "points": ["rule.x", {"multiply": 1}]
-    },
     "drag": {
       "name": "Drag",
       "inputs": ["x"],
-      "description": "When an enemy model takes any unsaved hit by this weapon, you can move that model X“ directly towards this model.",
+      "description": "When an enemy model takes any unsaved hit by this weapon, you can move that model X\" directly towards this model.",
       "points": ["rule.x", {"multiply": 1}]
     }
   },
@@ -2177,18 +2160,6 @@
     "blinded": {"name": "Blinded", "description": "This unit suffers -1 Accuracy for all tests.", "points": [-1, {"multiply": ["unit.totalModels"]}]},
     "weakened": {"name": "Weakened", "description": "This unit suffers -1 Strength for all tests.", "points": [-1, {"multiply": ["unit.totalModels"]}]},
     "exhausted": {"name": "Exhausted", "description": "This unit suffers -1 Initiative for all tests.", "points": [-1, {"multiply": ["unit.totalModels"]}]}
-  },
-  "terrain": {
-    "wooden_house": {"name": "Wooden House", "description": "A wood constructed house.", "rules": ["Normal Cover", "Building"]},
-    "stone_house": {"name": "Stone/Brick House", "description": "A stone or brick constructed house.", "rules": ["Normal Cover", "Building"]},
-    "crater": {"name": "Crater", "description": "A blast crater created by artillery or another large object.", "rules": ["Normal Cover", "Area Terrain"]},
-    "improvised_wall": {"name": "Improvised Wall/Barricade", "description": "An improvised barricade or hastily constructed wall.", "rules": ["Normal Cover", "Obstacle", "Defensible"]},
-    "wood_fence": {"name": "Wooden Fence", "description": "A low fence, either wood stone or less durable material.", "rules": ["Normal Cover", "Obstacle", "Defensible"]},
-    "stone_wall": {"name": "Stone Wall", "description": "A low wall, either concrete stone or other durable material.", "rules": ["Normal Cover", "Obstacle", "Defensible"]},
-    "woods": {"name": "Woods", "description": "A dense forest or wooded area.", "rules": ["Obscuring", "Area Terrain", "Not Visible Through"]},
-    "ruined_building": {"name": "Ruined Building", "description": "A ruined building. Can be multiple floors.", "rules": ["Normal Cover", "Area Terrain", "Not Visible Through"]},
-    "hedgerow": {"name": "Hedgerow", "description": "A low hedgerow wild or trimmed.", "rules": ["Normal Cover", "Obstacle"]},
-    "bocage": {"name": "Bocage", "description": "A thick section of bocage typically 6 feet or more in height.", "rules": ["Obscuring", "Obstacle", "Only Visible Through When Within 2\""]}
   },
   "missions": {
     "hidden_missions": {

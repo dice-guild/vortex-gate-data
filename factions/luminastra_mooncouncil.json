@@ -661,7 +661,9 @@
         }
       ],
       "options": [{"addRule": ["champion"], "modelLimit": 1}]
-    },
+    }
+  },
+  "hidden_units": {
     "waystone": {
       "name": "Luminastra Waystone",
       "description": "An ancient rune-inscribed waystone, capable of warding off evil magic.",

@@ -776,12 +776,14 @@
         }
       ]
     },
-    "teleporter": {
-      "name": "Teleporter Unit",
-      "description": "Advanced Technology allows for quick redeployment and surprise maneuvers during a firefight.",
-      "category": "fortification",
-      "keywords": ["Fortification"],
-      "models": [{"name": "Teleporter Unit", "min": 2, "max": 2, "rules": ["terrain", "portal"], "courage": "-", "movement": "-", "shoot": "-", "fight": "-", "defense": "-", "reflexes": "-"}]
+    "hidden_units": {
+      "teleporter": {
+        "name": "Teleporter Unit",
+        "description": "Advanced Technology allows for quick redeployment and surprise maneuvers during a firefight.",
+        "category": "fortification",
+        "keywords": ["Fortification"],
+        "models": [{"name": "Teleporter Unit", "min": 2, "max": 2, "rules": ["terrain", "portal"], "courage": "-", "movement": "-", "shoot": "-", "fight": "-", "defense": "-", "reflexes": "-"}]
+      }
     }
   },
   "weapons": {
