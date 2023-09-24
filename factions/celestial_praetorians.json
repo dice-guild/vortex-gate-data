@@ -124,7 +124,7 @@
       "description": "A Throne Guardian who foreswore ranged weapons in favor of mastering the blade.",
       "category": "hero",
       "keywords": ["Infantry"],
-      "rules": [{"id": "wounds", "x": 3}, {"id": "tactician", "x": 1}, {"id": "leader", "x": "Infantry"}],
+      "rules": [{"id": "wounds", "x": 3}, "striker", {"id": "leader", "x": "Infantry"}],
       "models": [
         {
           "name": "Praetorian Blademaster",
@@ -134,7 +134,7 @@
           "movement": 6,
           "defense": 9,
           "reflexes": 7,
-          "weapons": [{"id": "praetorian_champion_blade"}],
+          "weapons": [{"id": "praetorian_sword_blade", "count": 4}, "praetorian_sword_pistol"],
           "options": [{"addWeapon": {"id": "praetorian_dagger"}}, {"addWeapon": "shield"}],
           "min": 1,
           "max": 1
@@ -522,10 +522,6 @@
     "scorching_spear": {
       "name": "Scorching Spear",
       "profiles": [{"name": "Blade", "attacks": 1, "short": "Melee", "ap": 3}, {"name": "Flame", "attacks": 1, "short": 6, "medium": 12, "ap": 4, "rules": ["assault"]}]
-    },
-    "praetorian_champion_blade": {
-      "name": "Praetorian Champion Sword",
-      "profiles": [{"name": "Sweep", "attacks": 8, "short": "Melee", "ap": 3}, {"name": "elite", "attacks": 4, "short": "Melee", "ap": 6}]
     }
   },
   "powers": {
