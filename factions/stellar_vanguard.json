@@ -772,9 +772,9 @@
         {"addRule": "banner", "modelLimit": 1}
       ]
     },
-    "hazard_marines": {
+    "hazard_squad": {
       "name": "Hazard Squad",
-      "description": "Elite, well-equipped marines specialising in chemical and radiological weaponry.",
+      "description": "Elite, well-equipped marines specialising in high-tech weaponry.",
       "category": "elite",
       "models": [
         {
@@ -788,7 +788,7 @@
           "weapons": ["handweapon", {"id": "heavy_pistol", "count": 2}],
           "options": [
             {"replaceWeapon": ["heavy_pistol"], "withWeapon": ["plasma_pistol", "flamethrower_pistol", "thermal_pistol", "gravity_pistol", "fusion_pistol"], "limit": 2},
-            {"replaceWeapon": [{"id": "heavy_pistol", "count": 2}], "withWeapon": ["hazard_flamethrower", "hazard_launcher", "fusion_rifle", "gravity_rifle", "hazard_blaster"]},
+            {"replaceWeapon": [{"id": "heavy_pistol", "count": 2}], "withWeapon": ["hazard_flamethrower", "hazard_launcher", "fusion_rifle", "gravity_rifle", "heavy_flamethrower", "plasma_rifle"]},
             {"addRule": ["jetpack"], "modelLimit": "all"},
             {"addRule": ["shield"]},
             {"addRule": "multi_scanner", "modelLimit": 1}
@@ -1932,9 +1932,8 @@
     "arch_sword": {"name": "Arch-Marine Blade", "profiles": [{"name": "elite", "short": "Melee", "attacks": 4, "ap": 6}, {"name": "Sweep", "short": "Melee", "attacks": 8, "ap": 3}]},
     "laser_sniper": {"name": "Laser Sniper Rifle", "ap": 7, "attacks": 1, "short": 18, "medium": 36, "rules": ["sniper"]},
     "plasma_repeater": {"name": "Plasma Repeater", "ap": 5, "attacks": 2, "short": 9, "medium": 18, "rules": ["assault", "overcharge"]},
-    "hazard_flamethrower": {"name": "Hazard Flamethrower", "ap": 2, "attacks": 3, "short": 6, "medium": 12, "rules": ["breaching", "poison"]},
-    "hazard_launcher": {"name": "Hazard Launcher", "ap": 3, "attacks": 1, "short": 12, "medium": 24, "rules": ["poison", {"id": "blast", "x": 2}]},
-    "hazard_blaster": {"name": "Hazard Blaster", "ap": 4, "attacks": 1, "short": 12, "medium": 24, "rules": [{"id": "deadly", "x": 1}]},
+    "hazard_flamethrower": {"name": "Chem-thrower", "ap": 2, "attacks": 3, "short": 6, "medium": 12, "rules": ["breaching", "poison"]},
+    "hazard_launcher": {"name": "Chem-launcher", "ap": 3, "attacks": 1, "short": 12, "medium": 24, "rules": ["poison", {"id": "blast", "x": 2}]},
     "combi_machinegun": {
       "name": "Combi-Heavy Machinegun",
       "rules": ["heavy"],
