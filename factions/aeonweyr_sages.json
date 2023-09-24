@@ -146,7 +146,7 @@
       "description": "Fast-moving hover bikes outfitted with deadly weapons to choreograph the dance of war.",
       "category": "elite",
       "rules": ["hover", {"id": "wounds", "x": 2}],
-      "keywords": ["Biker"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Lore Keeper Jetbike",
@@ -198,7 +198,7 @@
       "name": "Aeonweyr Champion on Bike",
       "description": "A leader of the high elf martial forces riding a swift hover bike.",
       "category": "hero",
-      "keywords": ["Biker"],
+      "keywords": ["Mounted"],
       "rules": ["hover", {"id": "leader", "x": "Infantry, Biker"}, {"id": "tactician", "x": 2}, {"id": "wounds", "x": 3}],
       "models": [
         {
@@ -261,7 +261,7 @@
       "name": "Psychic on Bike",
       "description": "A gifted high elf psychic riding a swift hover bike.",
       "category": "hero",
-      "keywords": ["Biker"],
+      "keywords": ["Mounted"],
       "rules": ["hover", {"id": "leader", "x": "Infantry, Biker"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
       "models": [
         {
@@ -351,7 +351,7 @@
       "name": "Runecaster on Bike",
       "description": "A high elf psychic supporting the elven forces on the battlefield, riding a swift hover bike.",
       "category": "hero",
-      "keywords": ["Biker"],
+      "keywords": ["Mounted"],
       "rules": ["hover", {"id": "leader", "x": "Infantry, Biker"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 2}],
       "models": [
         {
@@ -394,7 +394,7 @@
       "name": "Runecaster Conclave on Bikes",
       "description": "A conclave of trained psychics riding swift hover bikes for enhanced mobility.",
       "category": "elite",
-      "keywords": ["Biker"],
+      "keywords": ["Mounted"],
       "rules": ["conclave", "hover"],
       "models": [
         {
@@ -704,7 +704,7 @@
       "name": "Aeonweyr Biker Squad",
       "description": "A squad of highly trained bikers that are adept at both melee and ranged combat.",
       "category": "elite",
-      "keywords": ["Biker"],
+      "keywords": ["Mounted"],
       "rules": ["hover", {"id": "wounds", "x": 2}],
       "options": [{"replaceWeapon": [{"id": "twin_shard_rifle", "mount": ["Front"]}], "withWeapon": [{"id": "laser_machinegun", "mount": ["Front"]}, {"id": "shard_cannon", "mount": ["Front"]}]}],
       "models": [
@@ -744,7 +744,7 @@
       "name": "Ranger Biker Squad",
       "description": "A squad of highly trained bikers that are adept at taking out high-value targets on the move.",
       "category": "elite",
-      "keywords": ["Biker"],
+      "keywords": ["Mounted"],
       "rules": ["evasive", "hover", "scout", {"id": "wounds", "x": 2}],
       "options": [{"replaceWeapon": [{"id": "twin_shard_rifle", "mount": ["Front"]}], "withWeapon": [{"id": "laser_machinegun", "mount": ["Front"]}, {"id": "shard_cannon", "mount": ["Front"]}]}],
       "models": [

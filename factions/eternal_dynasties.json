@@ -96,6 +96,7 @@
       "name": "Annihilator Overlord",
       "description": "A high lord with a repulsion engine.",
       "category": "hero",
+      "keywords": ["Heavy Infantry"],
       "rules": ["leader", "hover", {"id": "wounds", "x": 3}, {"id": "machine_tactics", "x": 1}],
       "models": [
         {
@@ -128,6 +129,7 @@
       "name": "Tri-Scorpion Lord",
       "description": "A lord equipped with high tech tri-legs and a tough carapace, rushing into the fray in a flash of steel.",
       "category": "hero",
+      "keywords": ["Heavy Infantry"],
       "rules": ["leader", "strider", {"id": "wounds", "x": 3}, {"id": "machine_tactics", "x": 1}],
       "models": [
         {
@@ -299,7 +301,7 @@
       "description": "A group of machine soldiers mounted on gyroscopic anti-gravity bikes.",
       "category": "elite",
       "rules": ["hover", {"id": "impact", "x": 1}],
-      "keywords": ["Biker"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Gyro-Biker",
@@ -326,6 +328,7 @@
       "name": "Shifter Constructs",
       "description": "Insectoid robots that partially exist in another dimension.",
       "category": "elite",
+      "keywords": ["Heavy Infantry"],
       "rules": ["teleport", {"id": "wounds", "x": 2}],
       "models": [
         {
@@ -360,7 +363,7 @@
           "weapons": [{"id": "piercing_claws", "count": 3}],
           "options": [{"addRule": "ambush", "modelLimit": "all"}],
           "min": 5,
-          "max": 20
+          "max": 10
         }
       ]
     },
@@ -389,6 +392,7 @@
       "name": "Tri-Scorpion Annihilators",
       "description": "Annihilators equipped with high tech tri-legs and a tough carapace, rushing into the fray in a storm of blades.",
       "category": "elite",
+      "keywords": ["Heavy Infantry"],
       "models": [
         {
           "name": "Tri-Scorpion Annihilator",
@@ -424,6 +428,7 @@
       "description": "Annihilators which burrow through the ground, moving swiftly with their coiling bodies.",
       "category": "elite",
       "rules": ["ambush"],
+      "keywords": ["Heavy Infantry"],
       "models": [
         {
           "name": "Stalker Annihilator",
@@ -457,7 +462,8 @@
     "annihilators": {
       "name": "Annihilators",
       "description": "Annihilators with repulsion engines and devastating weapons.",
-      "category": "rare",
+      "category": "elite",
+      "keywords": ["Heavy Infantry"],
       "models": [
         {
           "rules": ["hover", {"id": "wounds", "x": 2}, {"id": "impact", "x": 1}],
@@ -478,7 +484,8 @@
     "heavy_annihilators": {
       "name": "Heavy Annihilators",
       "description": "Heavy Annihilators with repulsion engines and devastating weapons.",
-      "category": "rare",
+      "category": "elite",
+      "keywords": ["Heavy Infantry"],
       "models": [
         {
           "name": "Heavy Annihilator",
@@ -498,7 +505,7 @@
     },
     "outcasts": {
       "name": "Outcasts",
-      "description": "A group of machine guardians that were once of other races.",
+      "description": "A group of machine guardians trained to stop Magic powers.",
       "category": "elite",
       "rules": [{"id": "ward", "x": 1}],
       "models": [
@@ -512,7 +519,7 @@
           "reflexes": 5,
           "weapons": [{"id": "reaper_glaive", "count": 3}, "heavy_gauss_rifle"],
           "min": 5,
-          "max": 20
+          "max": 10
         }
       ]
     },
@@ -520,7 +527,7 @@
       "name": "Hypersonic Transport",
       "description": "A very fast and highly advanced transport craft.",
       "category": "transport",
-      "rules": ["aircraft", {"id": "transport", "x": 10}, {"id": "wounds", "x": 3}],
+      "rules": ["aircraft", {"id": "transport", "x": 10}, {"id": "wounds", "x": 4}],
       "keywords": ["Vehicle", "Aircraft"],
       "models": [
         {
@@ -542,7 +549,7 @@
       "name": "Hypersonic Fighter",
       "description": "A very fast and highly advanced fighter craft.",
       "category": "elite",
-      "rules": ["aircraft", {"id": "wounds", "x": 3}],
+      "rules": ["aircraft", {"id": "wounds", "x": 4}],
       "keywords": ["Vehicle", "Aircraft"],
       "models": [
         {
@@ -564,7 +571,7 @@
       "name": "Transport Arc",
       "description": "A hovering transport craft with optional built-in repair-machines.",
       "category": "transport",
-      "rules": ["hover", "flare_shielding", "vulnerable_side_rear", {"id": "impact", "x": 6}, {"id": "transport", "x": 11}, {"id": "wounds", "x": 3}],
+      "rules": ["hover", "flare_shielding", "vulnerable_side_rear", {"id": "impact", "x": 6}, {"id": "transport", "x": 11}, {"id": "wounds", "x": 4}],
       "keywords": ["Vehicle"],
       "models": [
         {
@@ -586,7 +593,7 @@
       "name": "Doom Arc",
       "description": "A hovering deadly weapon carrier.",
       "category": "rare",
-      "rules": ["hover", "flare_shielding", "vulnerable_side_rear", {"id": "impact", "x": 6}, {"id": "wounds", "x": 3}],
+      "rules": ["hover", "flare_shielding", "vulnerable_side_rear", {"id": "impact", "x": 6}, {"id": "wounds", "x": 5}],
       "keywords": ["Vehicle"],
       "models": [
         {
@@ -607,7 +614,7 @@
       "name": "Tesla Arc",
       "description": "A floating vehicle with large tesla cannons.",
       "category": "rare",
-      "rules": ["hover", "flare_shielding", {"id": "wounds", "x": 3}, {"id": "impact", "x": 3}],
+      "rules": ["hover", "flare_shielding", {"id": "wounds", "x": 4}, {"id": "impact", "x": 3}],
       "keywords": ["Vehicle"],
       "models": [
         {
@@ -651,7 +658,7 @@
       "name": "Heavy Invasion Arc",
       "description": "A large hovering fortress with optional portal.",
       "category": "rare",
-      "rules": ["hover", "flare_shielding", "vulnerable_rear", {"id": "wounds", "x": 3}],
+      "rules": ["hover", "flare_shielding", "vulnerable_rear", {"id": "wounds", "x": 6}],
       "keywords": ["Vehicle"],
       "models": [
         {
@@ -698,7 +705,7 @@
       "name": "Dimensional Shard Vault",
       "description": "A large hovering vault containing a dimensional shard.",
       "category": "rare",
-      "rules": ["hover", "flare_shielding", "vulnerable_rear", {"id": "wounds", "x": 3}, {"id": "power", "x": 3}, {"id": "psychic_prowess", "x": 2}],
+      "rules": ["hover", "flare_shielding", "vulnerable_rear", {"id": "wounds", "x": 6}, {"id": "power", "x": 3}, {"id": "psychic_prowess", "x": 2}],
       "keywords": ["Vehicle"],
       "models": [
         {
@@ -720,7 +727,7 @@
       "name": "Doom Walker",
       "description": "A tall walking machine tasked with a large cannon.",
       "category": "rare",
-      "rules": ["walker", "flare_shielding", {"id": "wounds", "x": 3}, {"id": "impact", "x": 3}],
+      "rules": ["walker", "flare_shielding", {"id": "wounds", "x": 4}, {"id": "impact", "x": 3}],
       "keywords": ["Vehicle"],
       "models": [
         {
@@ -741,7 +748,7 @@
       "name": "Machine Stalker",
       "description": "A large walking vehicle with underslung mounted weapon and massive crushing legs.",
       "category": "rare",
-      "rules": ["walker", "flare_shielding", "vulnerable_side_rear", {"id": "wounds", "x": 3}, "targeting_relay"],
+      "rules": ["walker", "flare_shielding", "vulnerable_side_rear", {"id": "wounds", "x": 5}, "targeting_relay"],
       "keywords": ["Vehicle"],
       "models": [
         {
@@ -787,7 +794,7 @@
       "name": "Reanimator",
       "description": "A tall walking machine tasked with reanimating fallen units.",
       "category": "elite",
-      "rules": ["walker", "reanimation_beam", {"id": "wounds", "x": 2}],
+      "rules": ["walker", "reanimation_beam", {"id": "wounds", "x": 3}],
       "keywords": ["Vehicle"],
       "models": [
         {
@@ -813,7 +820,7 @@
     "twin_heavy_reaper_cannon": {"name": "Twin Heavy Reaper Cannon", "attacks": 2, "ap": 4, "short": 18, "medium": 36, "rules": ["heavy", {"id": "blast", "x": 3}]},
     "gauss_rifle": {"name": "Gauss Rifle", "attacks": 1, "ap": 1, "short": 12, "medium": 24, "rules": ["rapid_fire"]},
     "gauss_rifle_array": {"name": "Gauss Rifle Array", "attacks": 3, "ap": 1, "short": 12, "medium": 24, "rules": ["rapid_fire"]},
-    "heavy_gauss_rifle": {"name": "Heavy Gauss Rifle", "attacks": 1, "ap": 3, "short": 18, "medium": 36, "rules": ["heavy", "rapid_fire"]},
+    "heavy_gauss_rifle": {"name": "Heavy Gauss Rifle", "attacks": 1, "ap": 2, "short": 18, "medium": 36, "rules": ["heavy", "rapid_fire"]},
     "twin_heavy_gauss_rifle": {"name": "Twin Heavy Gauss Rifle", "attacks": 2, "ap": 3, "short": 18, "medium": 36, "rules": ["heavy", "rapid_fire"]},
     "gauss_sniper": {"name": "Gauss Sniper", "attacks": 1, "short": 18, "medium": 36, "ap": 3, "rules": ["sniper"]},
     "gauss_beamer": {"name": "Gauss Beamer", "attacks": 1, "ap": 4, "short": 12, "medium": 24},
@@ -907,12 +914,12 @@
     },
     "regeneration_orb": {
       "name": "Regeneration Orb",
-      "description": "Once per round after taking Saves for an _Infantry_ or _Heavy Infantry_ unit within 6\" roll a D10 for each model or Wound(x) lost. On a 3 or less, that model or Wound(x) is restored. Models must be restored to full Wounds(x) before restoring a new model.",
+      "description": "Once per round after taking Saves for this model's unit. Roll a D10 for each model or Wound(x) lost. On a 3 or less, that model or Wound(x) is restored. Models must be restored to full Wounds(x) before restoring a new model.",
       "points": 10
     },
     "eternal_orb": {
       "name": "Eternal Orb",
-      "description": "Once per round after taking Saves for an _Infantry_ or _Heavy Infantry_ unit within 6\" roll a D10 for each model or Wound(x) lost. On a 5 or less, that model or Wound(x) is restored. Models must be restored to full Wounds(x) before restoring a new model.",
+      "description": "Once per round after taking Saves for this model's unit. Roll a D10 for each model or Wound(x) lost. On a 5 or less, that model or Wound(x) is restored. Models must be restored to full Wounds(x) before restoring a new model.",
       "points": 10
     },
     "regeneration_pods": {

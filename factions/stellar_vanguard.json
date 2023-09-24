@@ -75,7 +75,7 @@
       "name": "Lieutenant on Bike",
       "description": "A fearless leader on combat bike.",
       "category": "hero",
-      "keywords": ["Biker"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Lieutenant on Bike",
@@ -141,7 +141,7 @@
       "name": "Captain on Bike",
       "description": "A fearless leader on combat bike.",
       "category": "hero",
-      "keywords": ["Biker"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Captain on Bike",
@@ -269,7 +269,7 @@
       "name": "Psychic on Bike",
       "description": "A fearless psychic on combat bike.",
       "category": "hero",
-      "keywords": ["Biker"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Psychic on Bike",
@@ -344,7 +344,7 @@
       "name": "Engineer on Bike",
       "description": "A fearless marine engineer on combat bike.",
       "category": "hero",
-      "keywords": ["Biker"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Engineer on Bike",
@@ -412,7 +412,7 @@
       "name": "Zealot on Bike",
       "description": "An armored priest on a combat bike who blesses their allies and smites their foes.",
       "category": "hero",
-      "keywords": ["Biker"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Marine Zealot on Bike",
@@ -720,7 +720,7 @@
       "name": "Vanguard Biker Squad",
       "description": "Upgraded and highly trained bikers armed to the teeth.",
       "category": "elite",
-      "keywords": ["Biker"],
+      "keywords": ["Mounted"],
       "rules": [{"id": "impact", "x": 1}, {"id": "wounds", "x": 2}],
       "models": [
         {
@@ -780,7 +780,7 @@
       "name": "Scout Bikers",
       "description": "Scout marines on combat bikes.",
       "category": "elite",
-      "keywords": ["Biker"],
+      "keywords": ["Mounted"],
       "rules": [{"id": "impact", "x": 1}, "scout", {"id": "wounds", "x": 2}],
       "models": [
         {

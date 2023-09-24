@@ -414,7 +414,7 @@
       "name": "Neophyte Outriders",
       "description": "Cultists using drit bikes and quads to overwhelm their foes with sheer speed.",
       "category": "elite",
-      "keywords": ["Biker"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Neophyte Outrider Sergeant",

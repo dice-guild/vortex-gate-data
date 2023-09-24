@@ -101,7 +101,7 @@
       "name": "Praetorian Captain on Jetbike",
       "description": "Praetorians on high speed jet bikes.",
       "category": "hero",
-      "keywords": ["Biker"],
+      "keywords": ["Mounted"],
       "rules": [{"id": "wounds", "x": 3}, "hover", {"id": "tactician", "x": 1}, {"id": "leader", "x": "Infantry, Biker"}],
       "models": [
         {

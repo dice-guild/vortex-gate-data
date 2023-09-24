@@ -115,7 +115,7 @@
       "name": "Voidwarped Champion on Bike",
       "description": "A champion of the vortex gate riding a combat bike.",
       "category": "hero",
-      "keywords": ["Biker"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Voidwarped Lord on Bike",
@@ -181,7 +181,7 @@
       "name": "Voidwarped Lord on Bike",
       "description": "A lord of the vortex gate riding a combat bike.",
       "category": "hero",
-      "keywords": ["Biker"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Voidwarped Lord on Bike",
@@ -280,7 +280,7 @@
       "name": "Voidwarped Engineer on Bike",
       "description": "Riding a combat bike, this marine is dedicated to repairing corrupted machines.",
       "category": "hero",
-      "keywords": ["Biker"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Voidwarped Engineer on Biker",
@@ -347,7 +347,7 @@
       "name": "Voidwarped Psychic on Bike",
       "description": "A potent psychic riding a combat bike.",
       "category": "hero",
-      "keywords": ["Biker"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Corrrupted Psychic on Bike",
@@ -1458,7 +1458,7 @@
       "name": "Voidwarped Bikers",
       "description": "Corrupted marines on combat bikes.",
       "category": "elite",
-      "keywords": ["Biker"],
+      "keywords": ["Mounted"],
       "rules": [{"id": "impact", "x": 1}, {"id": "wounds", "x": 2}],
       "options": [
         {"replaceWeapon": ["marine_rifle", "handweapon"], "withWeapon": [["marine_pistol", {"id": "handweapon", "count": 2}]]},

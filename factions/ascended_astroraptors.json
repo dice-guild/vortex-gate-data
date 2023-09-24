@@ -495,7 +495,7 @@
       "name": "Raptor Bikers",
       "description": "A squad of raptors clad in bike-shaped armor to zip across the battlefield.",
       "category": "elite",
-      "keywords": ["Biker"],
+      "keywords": ["Mounted"],
       "rules": ["evasive"],
       "options": [
         {"replaceWeapon": ["laser_carbine", {"id": "handweapon", "count": 1}], "withWeapon": [[{"id": "laser_pistol"}, {"id": "handweapon", "count": 2}]]},

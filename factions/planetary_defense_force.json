@@ -1311,7 +1311,7 @@
     "savage_claw": {"name": "The Savage Claw", "attacks": 1, "ap": 5, "short": "Melee", "rules": ["cumbersome", {"id": "deadly", "x": 1}]}
   },
   "rules": {
-    "high_command": {"name": "High Command", "description": "This model may use Defense Force Tactics one additional time.", "points": 2},
+    "high_command": {"name": "High Command", "description": "This model may be used for Field Order one additional time.", "points": 5},
     "ogre_shield": {"name": "Ogre Shield", "description_short": "+1 Save", "description": "This model gets +1 Save.", "points": 2},
     "heavy_armor": {"name": "Heavy Armor", "hidden": true, "description": "This model gets +1 Save.", "description_short": "Save +1", "points": 2},
     "banner": {"name": "Inspiring Banner", "description": "Friendly _Infantry_ units within 6\" get +1 Courage.", "points": 10}
@@ -1321,40 +1321,22 @@
     "bolster": {"name": "Bolster", "description": "Target friendly unit within 12\" gets +1 Courage until the end of the round.", "charge": 6},
     "crush": {"name": "Crush", "description": "Target enemy unit within 12\" takes 2 hits with AP(6).", "charge": 7}
   },
-  "hidden_strategies": {
-    "defensive_tactics": {
-      "phase": "activation",
-      "subfactions": ["neon_hive"],
-      "name": "Tunnels and Trenches",
-      "flavor": "The people of the megacities are unused to being above ground and not inside massive buildings, and thus spend much of their offhours building complex tunnel networks and trenches",
-      "description": "Use when an Infantry is targetted by an attack. That unit is treated as being in Light Cover, or Hard Cover if already in Light Cover.",
-      "cost": 1
-    },
-    "bug_dust": {
-      "phase": "activation",
-      "subfactions": ["neon_hive"],
-      "name": "Alien Roach Dust",
-      "flavor": "Made from the ground up glands of the foul insectoid aliens, this stimulent is very powerful, and warps the user to hate their enemy.",
-      "description": "Use when an Infantry is doing a charge or _Fight_ action. The unit is treated as having +1 strength, but at the end of the unit's activation, it gets +1 shock.",
-      "cost": 1
-    }
-  },
   "strategies": {
-    "take_cover": {
-      "name": "Take Cover",
+    "dig_in": {
+      "name": "Dig In",
       "phase": "activation",
-      "description": "Use before taking Save rolls for a unit. It gets +1 Save.",
+      "description": "Use when a unit is targeted by an enemy. If it did not move this round, that unit is treated as if it was in cover.",
       "flavor": "Imperial Defense force soldiers are trained to take the best advantage of cover they can to survive.",
-      "cost": 2
+      "cost": 1
     },
     "field_order": {
       "name": "Field Order",
       "phase": "activation",
-      "description": "Use when activating a unit. Choose a friendly _Leader_ model within 6\" that could be attached to this unit. This unit is treated as having that Leader attached for this activation.",
+      "description": "Use when activating a unit. Choose a friendly _Leader_ model within 6\" that could be attached to this unit. This unit is treated as having that Leader attached for this activation. This may be used once per _Leader_ per round.",
       "flavor": "Field officers need to be flexible in the heat of battle to lead other units to victory.",
       "cost": 1
     },
-    "field_repairs": {"name": "Field Repairs", "phase": "activation", "description": "Use when activating a unit. That unit may restore one Wound.", "cost": 2}
+    "patch_up": {"name": "Patch Up", "phase": "activation", "description": "Use when activating a unit. That unit may restore one Wound.", "cost": 2}
   },
   "relics": {
     "strategist": {
@@ -1367,9 +1349,9 @@
     "high_command": {
       "name": "High Command",
       "rule": "high_command",
-      "description": "Upgrade one Leader model with Defense Force Tactics with High Command.",
+      "description": "Upgrade one Leader model with High Command.",
       "flavor": "This model has been promoted to a higher position in the defense force ranks.",
-      "points": 5
+      "points": 10
     },
     "hammer_cannon": {
       "name": "The Hammer",

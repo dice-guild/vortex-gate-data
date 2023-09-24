@@ -63,7 +63,7 @@
       "name": "Warlord on Bike",
       "description": "A tough warboss mounted on a war bike.",
       "category": "hero",
-      "keywords": ["Biker"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Warlord on Bike",
@@ -135,7 +135,7 @@
       "name": "Shaman on Bike",
       "description": "A strange orc with psychic powers on a war bike.",
       "category": "hero",
-      "keywords": ["Biker"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Shaman on Bike",
@@ -207,7 +207,7 @@
       "name": "Mechanic on Bike",
       "description": "A marauder with a knack for scrapping and fixing things on a war bike.",
       "category": "hero",
-      "keywords": ["Biker"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Mechanic on Bike",
@@ -314,7 +314,7 @@
       "name": "Mad Doctor on Bike",
       "description": "A marauder with a knack for fixing up the wounded on a war bike.",
       "category": "elite",
-      "keywords": ["Biker"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Mad Doctor on Bike",
@@ -609,7 +609,7 @@
       "name": "Marauder Bikers",
       "description": "A group of angry marauders on bikes.",
       "category": "elite",
-      "keywords": ["Biker"],
+      "keywords": ["Mounted"],
       "rules": [{"id": "impact", "x": 1}],
       "options": [
         {"replaceWeapon": ["assault_carbine", "handweapon"], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 2}]]},
@@ -664,7 +664,7 @@
       "name": "Biker Brutes",
       "description": "A group of bigger marauders mounted on bikes.",
       "category": "elite",
-      "keywords": ["Biker"],
+      "keywords": ["Mounted"],
       "rules": [{"id": "impact", "x": 1}],
       "models": [
         {
@@ -1390,7 +1390,7 @@
       "name": "Goblin Bikers",
       "description": "Only the best are selected to ride these fast moving death traps.",
       "category": "elite",
-      "keywords": ["Biker"],
+      "keywords": ["Mounted"],
       "options": [{}],
       "models": [
         {

@@ -8,7 +8,7 @@
       "name": "Beastmaster",
       "description": "A collector of rare beasts, mounted on a fast hover board.",
       "category": "hero",
-      "keywords": ["Biker"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Beastmaster",
@@ -34,7 +34,7 @@
       "name": "Raid Master on Jetbike",
       "description": "A Raid Master is a revered individual, leading their fellow dark elves into battle on a swift jetbike.",
       "category": "hero",
-      "keywords": ["Biker"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Raid Master on Jetbike",
@@ -482,7 +482,7 @@
       "name": "Jetbike Witches",
       "description": "A squad of Dark Elven warriors on swift jetbikes.",
       "category": "elite",
-      "keywords": ["Biker"],
+      "keywords": ["Mounted"],
       "rules": [{"id": "heavy_impact", "x": 1}, "hover"],
       "models": [
         {
@@ -523,7 +523,7 @@
       "name": "Hoverboard Riders",
       "description": "A group of Dark Elven warriors mounted on fast hover boards.",
       "category": "elite",
-      "keywords": ["Biker"],
+      "keywords": ["Mounted"],
       "rules": ["hover"],
       "models": [
         {
