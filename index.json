@@ -1246,7 +1246,7 @@
     "heavy_fusion_cannon": {"name": "Heavy Fusion Cannon", "ap": 7, "medium": 60, "short": 30, "attacks": 1, "rules": ["heavy", {"id": "deadly", "x": 2}]},
     "nova_cannon": {"name": "Nova Cannon", "attacks": 1, "short": 18, "medium": 36, "ap": 6, "rules": ["breaching", "heavy", {"id": "blast", "x": 3}]},
     "siege_cannon": {"name": "Siege Cannon", "attacks": 1, "short": 12, "medium": 24, "ap": 8, "rules": ["heavy", {"id": "blast", "x": 3}]},
-    "tank_hunter_cannon": {"name": "Tank Hunter Cannon", "attacks": 2, "short": 36, "medium": 72, "ap": 7, "rules": [{"id": "deadly", "x": 1}, "heavy"]},
+    "tank_hunter_cannon": {"name": "Tank Hunter Cannon", "attacks": 1, "short": 36, "medium": 72, "ap": 8, "rules": [{"id": "deadly", "x": 2}, "heavy"]},
     "gatling_cannon": {"name": "Gatling Cannon", "attacks": 8, "short": 12, "medium": 24, "ap": 2, "rules": ["heavy"]},
     "heavy_shotgun": {"name": "Heavy Shotgun", "attacks": 2, "short": 6, "medium": 12, "ap": 2},
     "light_battle_cannon": {"name": "Light Battle Cannon", "attacks": 1, "ap": 5, "short": 24, "medium": 48, "rules": ["heavy", {"id": "blast", "x": 3}]},
