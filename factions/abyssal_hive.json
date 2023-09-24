@@ -50,7 +50,7 @@
           "fight": 5,
           "defense": 12,
           "movement": 8,
-          "rules": ["leader", {"id": "power", "x": 1}, "regeneration_pods", "tactician", {"id": "wounds", "x": 5}],
+          "rules": ["leader", {"id": "power", "x": 1}, "regeneration_aura", "tactician", {"id": "wounds", "x": 5}],
           "weapons": [{"id": "large_razor_talons", "count": 3}, "spine_salvo"],
           "options": [{"replaceWeapon": {"id": "large_razor_talons", "count": 3}, "withWeapon": [{"id": "crushing_claws", "count": 3}]}, {"addRule": [{"id": "transport", "x": 12}]}],
           "min": 1,
@@ -690,11 +690,6 @@
     "tusks": {"name": "Tusks", "hidden": true, "description_short": "Heavy Impact +3", "points": 12},
     "enhanced_senses": {"name": "Enhanced Senses", "hidden": true, "description_short": "+1 Accuracy", "description": "This model gets +1 Accuracy", "points": 10},
     "spore_cloud": {"name": "Spore Cloud", "description": "Models suffer -1 Accuracy when shooting at a friendly unit within 3\" of this model.", "points": 10},
-    "regeneration_pods": {
-      "name": "Regeneration Pods",
-      "description": "Once per round after taking Saves for a unit within 12“, roll a D10 for each model or Wound(x) lost. On a 3 or less, that model or Wound(x) is restored. Models must be restored to full Wounds(x) before restoring a new model.",
-      "points": 15
-    },
     "legend_adrenaline_pheromones": {"name": "Adrenaline Pheromones", "description": "This model's unit adds +1\" to their Movement characteristic.", "points": 5},
     "legend_stealth_master": {"name": "Master Infiltrator", "description": "Enemy units suffer -1 Accuracy and -1 Strength when attacking this unit.", "points": 10}
   },

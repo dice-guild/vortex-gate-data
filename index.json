@@ -1696,6 +1696,11 @@
     "mount_horse": {"name": "Horse", "hidden": true, "description_short": "+2\" Movement", "description": "Increase this model's Movement by 2\".", "points": 2},
     "barbed_net": {"name": "Barbed Net", "description": "Units hit by this weapon half their movement until the end of the turn.", "points": 3},
     "regeneration": {"name": "Regeneration", "description": "At the end of it's activation you can heal 1 wound that has been allocated to this model.", "points": 5},
+    "regeneration_aura": {
+      "name": "Regeneration Aura",
+      "description": "Once per round after taking Saves for a unit within 6\", roll a D10 for each model or Wound(x) lost. On a 3 or less, that model or Wound(x) is restored. Models must be restored to full Wounds(x) before restoring a new model.",
+      "points": 10
+    },
     "monstrous_regeneration": {"name": "Monstrous Regeneration", "description": "At the end of this unit's activation you may restore 1 Wound that has been allocated to this model.", "points": 20},
     "enchanted": {"name": "Enchanted", "description": "This weapon hits at Strength +1.", "points": ["weapon.attacks"]},
     "heavy_buckler": {"name": "Heavy Buckler", "description": "This model has +1 Save against melee attacks.", "points": 2},

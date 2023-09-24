@@ -582,7 +582,7 @@
           "defense": 10,
           "reflexes": 5,
           "weapons": [{"id": "gauss_rifle_array", "mount": ["Left"]}, {"id": "gauss_rifle_array", "mount": ["Right"]}],
-          "options": [{"addRule": ["extra_space", "regeneration_pods"]}],
+          "options": [{"addRule": ["extra_space", "regeneration_aura"]}],
           "min": 1,
           "max": 1
         }
@@ -793,7 +793,7 @@
       "name": "Reanimator",
       "description": "A tall walking machine tasked with reanimating fallen units.",
       "category": "elite",
-      "rules": ["walker", "reanimation_beam", {"id": "wounds", "x": 3}],
+      "rules": ["walker", "regeneration_aura", {"id": "wounds", "x": 3}],
       "keywords": ["Vehicle"],
       "models": [
         {
@@ -902,11 +902,6 @@
     "legend_nanobot_cloak": {"name": "Nanorobot Cloak", "description": "When this model is hit by an attack, roll a D10. On a 3 or less, that attack is prevented.", "points": 1},
     "relentless_advance": {"name": "Relentless Advance", "description": "Friendly _Infantry_ units within 6\" add +1\" to their Movement characteristic.", "points": 5},
     "plasma_injector": {"name": "Plasma Injector", "description": "Once per round, this unit may re-roll a single failed Strength test.", "points": 5},
-    "reanimation_beam": {
-      "name": "Reanimation Beam",
-      "description": "Once per round after taking Saves for an _Infantry_ or _Heavy Infantry_ unit within 12\" roll a D10 for each model or Wound(x) lost. On a 5 or less, that model or Wound(x) is restored. Models must be restored to full Wounds(x) before restoring a new model.",
-      "points": 20
-    },
     "regeneration_orb": {
       "name": "Regeneration Orb",
       "description": "Once per round after taking Saves for this model's unit. Roll a D10 for each model or Wound(x) lost. On a 3 or less, that model or Wound(x) is restored. Models must be restored to full Wounds(x) before restoring a new model.",
@@ -915,11 +910,6 @@
     "eternal_orb": {
       "name": "Eternal Orb",
       "description": "Once per round after taking Saves for this model's unit. Roll a D10 for each model or Wound(x) lost. On a 5 or less, that model or Wound(x) is restored. Models must be restored to full Wounds(x) before restoring a new model.",
-      "points": 10
-    },
-    "regeneration_pods": {
-      "name": "Regeneration Pods",
-      "description": "Once per round after taking Saves for an _Infantry_ or _Heavy Infantry_ unit within 6\" roll a D10 for each model or Wound(x) lost. On a 3 or less, that model or Wound(x) is restored. Models must be restored to full Wounds(x) before restoring a new model.",
       "points": 10
     },
     "control_orb": {
