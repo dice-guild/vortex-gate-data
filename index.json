@@ -1527,7 +1527,7 @@
       "subfactions": ["mobility_focus"],
       "phase": "activation",
       "name": "Push It",
-      "description": "Use when a unit makes a _Move_ action. It gains +3\" move for that action",
+      "description": "Use when a unit makes a _Move_ action. It gains +3\" move for that action.",
       "flavor": "Gaining a strong tactical position can sometimes mean the difference between a good shot and a great shot.",
       "cost": 1
     },

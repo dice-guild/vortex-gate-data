@@ -928,11 +928,7 @@
       "description": "When this unit activates, choose one friendly _Vehicle_ unit within 6\" to immediately activate. That unit gets +1 Accuracy and Strength.",
       "points": 10
     },
-    "time_orb": {
-      "name": "Time Orb",
-      "description": "When this unit activates, choose one visible enemy unit within 18\". That unit subtracts 2\" from its Movement characteristic until the end of the round.",
-      "points": 10
-    },
+    "time_orb": {"name": "Time Orb", "description": "Enemy units targeting this model's unit suffer -1 Accuracy.", "points": 10},
     "targeting_relay": {
       "name": "Targeting Relay",
       "description": "If this unit hits an enemy unit with a ranged attack, mark that unit. The next friendly unit to target that enemy unit may re-roll failed Accuracy rolls of 9+.",
@@ -968,54 +964,18 @@
       "cost": 2
     },
     {
-      "name": "Repair Overdrive",
+      "name": "Overdrive",
       "phase": "activation",
-      "description": "Use when activating a unit. It may immediately restore one Wound.",
-      "flavor": "With self-repairing nano-machines this vehicle can recover from nearly anything.",
-      "cost": 2
+      "description": "Use when a unit makes a _Move_ action. It gains +3\" move for that action.",
+      "flavor": "Gaining a critical position can cause significantly more destruction.",
+      "cost": 1
     }
   ],
   "powerCategories": {"solar": {"name": "Solar", "subfactions": ["solar_fire"]}, "lunar": {"name": "Lunar", "subfactions": ["combat_focus"]}},
   "powers": {
     "deconstruction_beam": {"name": "Deconstruction Beam", "description": "Target enemy unit within 12\" takes 2 hits with AP(4).", "charge": 5},
     "dimensional_rift": {"name": "Dimensional Rift", "description": "Target enemy unit within 12\" gets -2\" of Movement until the end of the round.", "charge": 6},
-    "meteorites": {"name": "Meteorite Swarm", "description": "Target enemy unit within 18\" takes 6 hits with AP(2).", "charge": 7},
-    "unnerving_accuracy": {
-      "name": "Unnerving Accuracy",
-      "description": "Target friendly unit within 18\" may make one additional attack with any Ranged weapon until the end of the turn.",
-      "charge": 6,
-      "category": "solar",
-      "subfactions": ["solar_fire"]
-    },
-    "incinerating_beam": {"name": "Incinerating Beam", "description": "Target enemy unit within 12\" takes 1 hits with AP(8).", "charge": 7, "subfactions": ["solar_fire"], "category": "solar"},
-    "supernova": {
-      "name": "Supernova",
-      "description": "Roll a d10 for each enemy unit within 6\". On a roll of 5 or lower the unit hit takes 2 hits with AP(4).",
-      "charge": 5,
-      "subfactions": ["solar_fire"],
-      "category": "solar"
-    },
-    "rejuvenation_beam": {
-      "name": "Rejuvenation Beam",
-      "description": "Target friendly _Infantry_ unit within 12\" rolls 1D10 for each missing model in the unit. On a 3 or less that model is restored. This power may only be cast once per turn.",
-      "charge": 5,
-      "subfactions": ["combat_focus"],
-      "category": "lunar"
-    },
-    "detect_weakness": {
-      "name": "Detect Weakness",
-      "description": "Target enemy unit within 12\" must re-roll one succesful die on its next Save test. This power may be cast unlimited times.",
-      "charge": 6,
-      "subfactions": ["combat_focus"],
-      "category": "lunar"
-    },
-    "heightened_senses": {
-      "name": "Heightened Senses",
-      "description": "Target friendly unit within 12\" has +1 Initiative until the of the turn.",
-      "charge": 7,
-      "subfactions": ["combat_focus"],
-      "category": "lunar"
-    }
+    "meteorites": {"name": "Meteorite Swarm", "description": "Target enemy unit within 18\" takes 6 hits with AP(2).", "charge": 7}
   },
   "buyLinks": [
     {"name": "Games Workshop", "link": "https://www.games-workshop.com/en-US/Warhammer-40-000?N=2562756967+2529025757"},
