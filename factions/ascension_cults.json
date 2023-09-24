@@ -7,7 +7,7 @@
   "units": {
     "militia_commander": {
       "name": "Militia Commander",
-      "description": "Foot infantry platoon leader of the imperial defense force.",
+      "description": "Foot infantry platoon leader of the planetary defense force.",
       "category": "hero",
       "models": [
         {
@@ -483,7 +483,7 @@
     },
     "battle_tank": {
       "name": "Cult Battle Tank",
-      "description": "A main line battle tank stolen from the imperial defense force.",
+      "description": "A main line battle tank stolen from the planetary defense force.",
       "category": "rare",
       "keywords": ["Vehicle", "Tank"],
       "models": [
@@ -496,7 +496,7 @@
           "movement": 10,
           "reflexes": 5,
           "rules": [{"id": "wounds", "x": 5}, {"id": "impact", "x": 6}, "vulnerable_side_rear"],
-          "weapons": ["battle_cannon"],
+          "weapons": ["battle_cannon", {"id": "heavy_flamethrower", "mount": ["Front"]}],
           "options": [
             {
               "replaceWeapon": "battle_cannon",
@@ -513,14 +513,15 @@
               ]
             },
             {
-              "addWeapon": [
-                {"id": "heavy_flamethrower", "mount": ["Front"]},
+              "replaceWeapon": {"id": "heavy_flamethrower", "mount": ["Front"]},
+              "withWeapon": [
                 {"id": "heavy_machinegun", "mount": ["Front"]},
                 {"id": "laser_cannon", "mount": ["Front"]},
-                {"id": "fusion_cannon", "mount": ["Front"]},
-                {"id": "plasma_cannon", "mount": ["Front"]}
-              ],
-              "limit": 1
+                {"id": "gatling_gun", "mount": ["Front"]},
+                {"id": "siege_cannon", "mount": ["Front"]},
+                {"id": "plasma_cannon", "mount": ["Front"]},
+                {"id": "fusion_cannon", "mount": ["Front"]}
+              ]
             },
             {
               "addWeapon": [
@@ -543,7 +544,7 @@
     },
     "heavy_battle_tank": {
       "name": "Cult Heavy Battle Tank",
-      "description": "A larger battle tank with more powerful weapon options stolen from the imperial defense force.",
+      "description": "A larger battle tank with more powerful weapon options stolen from the planetary defense force.",
       "category": "rare",
       "keywords": ["Vehicle", "Tank"],
       "models": [
@@ -636,7 +637,7 @@
     },
     "light_apc": {
       "name": "Cult APC",
-      "description": "A light transport stolen from the imperial defense force.",
+      "description": "A light transport of the planetary defense force.",
       "category": "transport",
       "keywords": ["Vehicle"],
       "models": [
@@ -648,10 +649,10 @@
           "fight": 5,
           "defense": 11,
           "reflexes": 5,
-          "rules": [{"id": "wounds", "x": 5}, {"id": "impact", "x": 3}, {"id": "transport", "x": 12}, "vulnerable_side_rear"],
+          "rules": [{"id": "wounds", "x": 3}, {"id": "impact", "x": 5}, {"id": "transport", "x": 12}, "vulnerable_side_rear"],
           "weapons": ["heavy_flamethrower", {"id": "heavy_flamethrower", "mount": ["Front"]}],
           "options": [
-            {"replaceWeapon": "heavy_flamethrower", "withWeapon": ["laser_cannon", "heavy_machinegun", "plasma_cannon", "fusion_cannon", "acid_cannon", "flamestorm_cannon", "laser_machinegun"]},
+            {"replaceWeapon": "heavy_flamethrower", "withWeapon": ["laser_cannon", "heavy_machinegun", "laser_machinegun"]},
             {
               "replaceWeapon": [{"id": "heavy_flamethrower", "mount": ["Front"]}],
               "withWeapon": [
@@ -673,7 +674,7 @@
     },
     "light_gunship": {
       "name": "Cult Light Transport Gunship",
-      "description": "A light gunship with sliding doors for troop transport stolen from the imperial defense force.",
+      "description": "A light gunship with sliding doors for troop transport stolen from the planetary defense force.",
       "category": "transport",
       "keywords": ["Aircraft", "Vehicle"],
       "models": [
@@ -726,7 +727,7 @@
     },
     "heavy_gunship": {
       "name": "Cult Heavy Gunship",
-      "description": "A heavy gunship with a variety of weapon options stolen from the imperial defense force.",
+      "description": "A heavy gunship with a variety of weapon options stolen from the planetary defense force.",
       "category": "rare",
       "keywords": ["Vehicle"],
       "models": [

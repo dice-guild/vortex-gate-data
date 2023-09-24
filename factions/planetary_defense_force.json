@@ -6,7 +6,7 @@
   "units": {
     "commander": {
       "name": "Company Commander",
-      "description": "Foot infantry commander of the imperial defense force.",
+      "description": "Foot infantry commander of the planetary defense force.",
       "category": "hero",
       "rules": [{"id": "leader", "x": "Infantry"}, {"id": "tactician", "x": 2}, {"id": "wounds", "x": 2}],
       "models": [
@@ -63,7 +63,7 @@
       "name": "Commissar",
       "description": "A field officer assigned to keep soldiers motivated and in line.",
       "category": "hero",
-      "rules": [{"id": "leader", "x": "Infantry"}, "no_retreat", {"id": "wounds", "x": 2}],
+      "rules": [{"id": "leader", "x": "Infantry"}, "inspiring", {"id": "wounds", "x": 2}],
       "models": [
         {
           "name": "Commissar",
@@ -149,7 +149,7 @@
     },
     "infantry_squad": {
       "name": "Infantry Squad",
-      "description": "The backbone of the imperial defense force.",
+      "description": "The backbone of the planetary defense force.",
       "category": "core",
       "options": [{"replaceWeapon": "auto_rifle", "withWeapon": ["flamethrower", "grenade_launcher", "fusion_rifle", "plasma_rifle", "sniper_rifle", "light_machinegun"], "modelLimit": "1/5"}],
       "models": [
@@ -742,7 +742,7 @@
     },
     "light_apc": {
       "name": "APC",
-      "description": "A light transport of the imperial defense force.",
+      "description": "A light transport of the planetary defense force.",
       "category": "transport",
       "keywords": ["Vehicle"],
       "models": [
@@ -1156,7 +1156,7 @@
     },
     "armored_truck": {
       "name": "Armored Truck",
-      "description": "An armored transport of the imperial defense force.",
+      "description": "An armored transport of the planetary defense force.",
       "category": "transport",
       "keywords": ["Vehicle"],
       "models": [
@@ -1190,7 +1190,7 @@
     },
     "armored_stormtrooper_truck": {
       "name": "Armored Stormtrooper Truck",
-      "description": "An armored transport of the imperial defense force.",
+      "description": "An armored transport of the planetary defense force.",
       "category": "transport",
       "keywords": ["Vehicle"],
       "models": [
@@ -1355,11 +1355,11 @@
       "flavor": "Imperial Defense force soldiers are trained to take the best advantage of cover they can to survive.",
       "cost": 2
     },
-    "bravery": {
-      "name": "Bravery",
+    "field_order": {
+      "name": "Field Order",
       "phase": "activation",
-      "description": "Use when activating a unit. That unit gets +1 Courage.",
-      "flavor": "These soldiers are particularly brave in the face of many horrors.",
+      "description": "Use when activating a unit. Choose a friendly _Leader_ model within 6\" that could be attached to this unit. This unit is treated as having that Leader attached for this activation.",
+      "flavor": "Field officers need to be flexible in the heat of battle to lead other units to victory.",
       "cost": 1
     },
     "field_repairs": {"name": "Field Repairs", "phase": "activation", "description": "Use when activating a unit. That unit may restore one Wound.", "cost": 2}

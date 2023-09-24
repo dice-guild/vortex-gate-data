@@ -1307,13 +1307,6 @@
       "description": "Use when taking a skill test. You may re-roll that test and it may not be re-rolled again. This may be used once per round.",
       "cost": 1
     },
-    "incredible_courage": {
-      "phase": "activation",
-      "name": "Incredible Courage",
-      "flavor": "Even in the darkest of times, moments of great courage can occur.",
-      "description": "Use when a unit takes a Courage test. That unit gains +2 Courage for that test. This may be used once per round.",
-      "cost": 2
-    },
     "battlefield_reserves": {
       "phase": "pre_game",
       "name": "Outflanking Reserves",
@@ -1601,7 +1594,7 @@
       "flavor": "True toughness is standing and facing utter defeat with courage.",
       "cost": 2
     },
-    "bravery": {
+    "insane_bravery": {
       "subfactions": ["morale_focus"],
       "name": "Bravery",
       "phase": "activation",
@@ -1610,7 +1603,7 @@
       "cost": 1
     }
   },
-  "units": {
+  "hidden_units": {
     "defense_line": {
       "name": "Defense Line",
       "description": "A prepared defense wall.",
@@ -2077,7 +2070,6 @@
     "surveying_device": {"name": "Surveying Device", "description": "Once per round, a friendly _Infantry_ unit within 12\" may ignore the benefit of cover while shooting.", "points": 10},
     "spotting_device": {"name": "Spotting Device", "description": "Increase the short and long range of all ranged weapons equipped by this unit by 6\".", "points": 5},
     "titan_shield": {"name": "Titan Shield", "description": "This unit subtracts 1 from all Damage Chart rolls.", "points": 10},
-    "no_retreat": {"name": "No Retreat", "description": "Once per round, a friendly _Infantry_ unit within 3\" may automatically pass a Break test.", "points": 2},
     "amplification": {"name": "Psionic Amplification", "description": "When making power tests within 6\" of this model, you may roll two dice and discard one.", "points": 10},
     "inspiration": {"name": "Inspiration", "description": "Models gain +1 Courage when taking Courage Tests within 6\" of this model.", "points": 5},
     "intensity": {"name": "Intensity", "inputs": ["x"], "description": "This weapon has +X AP at long range.", "points": ["rule.x", {"multiply": 1}]},
