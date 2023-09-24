@@ -1160,7 +1160,7 @@
           "fight": 0,
           "defense": 11,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 5}, {"id": "impact", "x": 3}, {"id": "transport", "x": 12}, "vulnerable_side_rear"],
+          "rules": [{"id": "wounds", "x": 4}, {"id": "impact", "x": 3}, {"id": "transport", "x": 12}, "vulnerable_side_rear"],
           "weapons": ["twin_combat_rifle"],
           "options": [
             {"replaceWeapon": ["twin_combat_rifle"], "withWeapon": ["light_machinegun", "plasma_rifle", "fusion_rifle", "flamethrower", "missile_launcher"]},
@@ -1186,7 +1186,7 @@
           "fight": 0,
           "defense": 12,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 6}, {"id": "impact", "x": 3}, {"id": "transport", "x": 12}, "vulnerable_side_rear"],
+          "rules": [{"id": "wounds", "x": 5}, {"id": "impact", "x": 3}, {"id": "transport", "x": 12}, "vulnerable_side_rear"],
           "weapons": [{"id": "twin_combat_rifle", "mount": ["Front"]}, {"id": "twin_combat_rifle", "mount": ["Front", "Left"]}, {"id": "twin_combat_rifle", "mount": ["Front", "Right"]}],
           "options": [
             {
@@ -1237,7 +1237,7 @@
           "fight": 0,
           "defense": 10,
           "reflexes": 6,
-          "rules": ["ambush", {"id": "wounds", "x": 5}, {"id": "transport", "x": 12}],
+          "rules": ["ambush", {"id": "wounds", "x": 3}, {"id": "transport", "x": 12}],
           "weapons": ["twin_combat_rifle"],
           "options": [{"replaceWeapon": "twin_combat_rifle", "withWeapon": "missile_launcher"}],
           "min": 1,
@@ -1259,7 +1259,7 @@
           "fight": 6,
           "defense": 12,
           "reflexes": 6,
-          "rules": ["aircraft", {"id": "wounds", "x": 6}, "hover_mode", {"id": "transport", "x": 12}, {"id": "walker_transport", "x": 1}],
+          "rules": ["aircraft", {"id": "wounds", "x": 5}, "hover_mode", {"id": "transport", "x": 12}, {"id": "walker_transport", "x": 1}],
           "weapons": [{"id": "twin_fusion_cannon", "mount": ["Front"]}, {"id": "storm_missiles", "mount": ["Front"]}, {"id": "twin_laser_cannon", "mount": ["Front", "Left", "Right"]}],
           "options": [
             {
@@ -1292,20 +1292,11 @@
           "defense": 10,
           "reflexes": 6,
           "rules": [{"id": "wounds", "x": 5}, {"id": "impact", "x": 3}, "vulnerable_side_rear"],
-          "weapons": [{"id": "twin_combat_rifle", "mount": ["Front"]}, "twin_aa_autocannon"],
+          "weapons": [{"id": "twin_combat_rifle", "mount": ["Front"]}, "twin_missile_launcher"],
           "options": [
             {
-              "replaceWeapon": ["twin_aa_autocannon"],
-              "withWeapon": [
-                "twin_missile_launcher",
-                "mortar_cannon",
-                "artillery_missiles",
-                "medium_howitzer",
-                "gravity_mortar_cannon",
-                "plasma_mortar_cannon",
-                "twin_heavy_fusion_cannon",
-                "heavy_howitzer"
-              ]
+              "replaceWeapon": ["twin_missile_launcher"],
+              "withWeapon": ["twin_aa_autocannon", "heavy_plasma_mortar", "twin_heavy_fusion_cannon", "artillery_missiles", "medium_artillery_cannon", "artillery_cannon"]
             },
             {
               "replaceWeapon": [{"id": "twin_combat_rifle", "mount": ["Front"]}],
@@ -1460,9 +1451,9 @@
           "rules": [{"id": "wounds", "x": 5}, "scout", "vulnerable_rear"],
           "weapons": ["twin_light_machinegun", {"id": "walker_fist", "count": 2}],
           "options": [
-            {"replaceWeapon": "twin_light_machinegun", "withWeapon": ["twin_heavy_flamethrower", "twin_plasma_rifle", "twin_fusion_rifle", "gravity_cannon", "twin_thermal_rifle"]},
+            {"replaceWeapon": "twin_light_machinegun", "withWeapon": ["twin_heavy_flamethrower", "twin_plasma_rifle", "twin_fusion_rifle", "twin_thermal_rifle"]},
             {"addWeapon": ["rocket_pod", "heavy_machinegun"]},
-            {"addWeapon": [{"id": "light_machinegun", "count": 2}]}
+            {"addWeapon": [{"id": "twin_light_machinegun", "mount": ["Front"]}]}
           ],
           "min": 1,
           "max": 1
@@ -1622,7 +1613,7 @@
           "shoot": 6,
           "defense": 10,
           "reflexes": 6,
-          "rules": ["aircraft", {"id": "wounds", "x": 5}, "hover_mode"],
+          "rules": ["aircraft", {"id": "wounds", "x": 4}, "hover_mode"],
           "weapons": ["twin_gatling_gun", {"id": "twin_laser_cannon", "mount": ["Front"]}],
           "options": [
             {
@@ -1929,7 +1920,7 @@
     "artillery_missiles": {
       "name": "Artillery Missiles",
       "profiles": [
-        {"name": "Frag", "attacks": 2, "short": 36, "medium": 72, "ap": 3, "rules": ["heavy", "indirect", {"id": "blast", "x": 3}]},
+        {"name": "Frag", "attacks": 2, "short": 36, "medium": 72, "ap": 3, "rules": ["heavy", "indirect", {"id": "blast", "x": 2}]},
         {"name": "AT", "attacks": 3, "short": 36, "medium": 72, "ap": 6, "rules": ["heavy", "indirect"]}
       ]
     },
