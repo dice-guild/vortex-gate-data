@@ -541,7 +541,7 @@
     "pestilence_great_weapon": {"name": "Pestilent Great Weapon", "attacks": 1, "ap": 3, "short": "Melee", "rules": ["poison"]},
     "pestilence_tentacles": {"name": "Pestilent Tentacles", "attacks": 1, "ap": 1, "short": "Melee", "rules": ["poison", "rending"]},
     "pestilence_tongue": {"name": "Pestilent Tongue", "attacks": 1, "ap": 2, "short": "Melee", "rules": ["poison"]},
-    "pestilence_bile": {"name": "Pestilent Bile", "attacks": 1, "ap": 2, "short": "Melee", "rules": ["poison", "flame", {"id": "blast", "x": 3}]},
+    "pestilence_bile": {"name": "Pestilent Bile", "attacks": 1, "ap": 2, "short": "Melee", "rules": ["poison", "breaching", {"id": "blast", "x": 3}]},
     "pestilence_heavy_handweapon": {"name": "Pestilent Heavy Weapon", "attacks": 1, "ap": 2, "short": "Melee", "rules": ["poison"]},
     "pestilence_great_flail": {"name": "Pestilent Great Flail", "attacks": 1, "ap": 5, "short": "Melee", "rules": [{"id": "reach", "x": 1}, "cumbersome", "poison"]},
     "pestilence_polearm": {"name": "Pestilent Polearm", "attacks": 1, "ap": 2, "short": "Melee", "rules": [{"id": "reach", "x": 1}, "poison"]},

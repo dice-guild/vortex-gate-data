@@ -423,7 +423,7 @@
     "raptor_talons": {"name": "Raptor Talons", "ap": 2, "attacks": 1, "short": "Melee", "rules": ["lance"]},
     "enchanted_horns": {"name": "Enchanted Horns", "ap": 5, "attacks": 1, "short": "Melee"},
     "cloven_hooves": {"name": "Cloven Hooves", "ap": 2, "attacks": 1, "short": "Melee"},
-    "Draconic_Fire": {"name": "Draconic Fire", "attacks": 1, "short": 6, "medium": 12, "ap": 6, "rules": [{"id": "blast", "x": 3}, "flame"]},
+    "Draconic_Fire": {"name": "Draconic Fire", "attacks": 1, "short": 6, "medium": 12, "ap": 6, "rules": [{"id": "blast", "x": 3}, "breaching"]},
     "boar_tusks": {"name": "Boar Tusks", "ap": 1, "attacks": 1, "short": "Melee", "rules": ["lance"]}
   },
   "rules": {},

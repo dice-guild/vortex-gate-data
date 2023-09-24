@@ -186,7 +186,7 @@
       ]
     },
     "twin_siege_cannon": {"name": "Twin Siege Cannon", "attacks": 2, "short": 24, "medium": 48, "ap": 4, "rules": ["heavy", {"id": "blast", "x": 2}]},
-    "triple_flamethrower_cannon": {"name": "Triple Flamethrower Cannon", "attacks": 9, "short": 9, "medium": 18, "ap": 5, "rules": ["flame"]},
+    "triple_flamethrower_cannon": {"name": "Triple Flamethrower Cannon", "attacks": 9, "short": 9, "medium": 18, "ap": 5, "rules": ["breaching"]},
     "harpoon_cannon": {"name": "Harpoon Cannon", "attacks": 1, "short": 9, "medium": 18, "ap": 8, "rules": [{"id": "deadly", "x": 2}, {"id": "drag", "x": 3}, "heavy"]},
     "twin_storm_missiles": {"name": "Twin Storm Missiles", "attacks": 2, "ap": 6, "short": 36, "medium": 72, "rules": ["heavy"]}
   },

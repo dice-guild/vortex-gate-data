@@ -1023,7 +1023,7 @@
   },
   "weapons": {
     "devouring_maw": {"name": "Devouring Maw", "ap": 6, "attacks": 1, "short": "Melee", "rules": [{"id": "deadly", "x": 3}]},
-    "napalm_breath": {"name": "Napalm Breath", "rules": ["flame", {"id": "deadly", "x": 1}], "attacks": 3, "ap": 4, "medium": 12, "short": 6},
+    "napalm_breath": {"name": "Napalm Breath", "rules": ["breaching", {"id": "deadly", "x": 1}], "attacks": 3, "ap": 4, "medium": 12, "short": 6},
     "alchemical_grenade": {
       "name": "Chemical Bomb",
       "profiles": [
