@@ -47,9 +47,9 @@
           "defense": 6,
           "reflexes": 6,
           "movement": 6,
-          "weapons": ["heavy_auto_rifle", {"id": "handweapon", "count": 2}],
+          "weapons": ["combat_rifle", {"id": "handweapon", "count": 2}],
           "options": [
-            {"replaceWeapon": ["heavy_auto_rifle", {"id": "handweapon", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 3}]]},
+            {"replaceWeapon": ["combat_rifle", {"id": "handweapon", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 3}]]},
             {"replaceWeapon": "heavy_pistol", "withWeapon": ["plasma_pistol"]},
             {"replaceWeapon": {"id": "handweapon", "count": 3}, "withWeapon": [{"id": "energy_handweapon", "count": 3}, {"id": "energy_powerweapon", "count": 3}]},
             {"addRule": {"id": "ambush", "name": "Orbital Insertion", "modelLimit": "all"}}
@@ -163,7 +163,7 @@
           "movement": 6,
           "weapons": ["auto_rifle", "light_handweapon"],
           "options": [
-            {"replaceWeapon": "auto_rifle", "withWeapon": ["heavy_auto_rifle", "auto_carbine"]},
+            {"replaceWeapon": "auto_rifle", "withWeapon": ["combat_rifle", "auto_carbine"]},
             {"replaceWeapon": ["auto_rifle", "light_handweapon"], "withWeapon": [["pistol", {"id": "light_handweapon", "count": 2}]]},
             {"replaceWeapon": "pistol", "withWeapon": ["heavy_pistol", "plasma_pistol"]},
             {
@@ -295,7 +295,7 @@
           "movement": 6,
           "weapons": ["auto_rifle", "light_handweapon"],
           "options": [
-            {"replaceWeapon": "auto_rifle", "withWeapon": ["heavy_auto_rifle", "auto_carbine"]},
+            {"replaceWeapon": "auto_rifle", "withWeapon": ["combat_rifle", "auto_carbine"]},
             {"replaceWeapon": ["auto_rifle", "light_handweapon"], "withWeapon": [["pistol", {"id": "light_handweapon", "count": 2}]]},
             {"replaceWeapon": "pistol", "withWeapon": ["heavy_pistol", "plasma_pistol"]},
             {
@@ -442,7 +442,7 @@
           "rules": ["engineer"],
           "weapons": ["shotgun", {"id": "light_handweapon", "count": 2}],
           "options": [
-            {"replaceWeapon": ["shotgun"], "withWeapon": ["auto_rifle", "heavy_auto_rifle"]},
+            {"replaceWeapon": ["shotgun"], "withWeapon": ["auto_rifle", "combat_rifle"]},
             {"replaceWeapon": ["shotgun", "light_handweapon"], "withWeapon": [["pistol", {"id": "light_handweapon", "count": 2}]]},
             {"replaceWeapon": "pistol", "withWeapon": ["plasma_pistol", "heavy_pistol"]},
             {
@@ -482,7 +482,7 @@
       "category": "core",
       "keywords": ["Storm Trooper", "Infantry"],
       "options": [
-        {"replaceWeapon": "heavy_auto_rifle", "withWeapon": ["flamethrower", "volley_gun", "plasma_rifle", "grenade_launcher", "fusion_rifle", "sniper_rifle"], "modelLimit": "2/5"},
+        {"replaceWeapon": "combat_rifle", "withWeapon": ["flamethrower", "volley_gun", "plasma_rifle", "grenade_launcher", "fusion_rifle", "sniper_rifle"], "modelLimit": "2/5"},
         {"addRule": {"id": "ambush", "name": "Orbital Insertion", "modelLimit": "all"}}
       ],
       "models": [
@@ -494,9 +494,9 @@
           "defense": 6,
           "reflexes": 6,
           "movement": 6,
-          "weapons": ["heavy_auto_rifle", "light_handweapon"],
+          "weapons": ["combat_rifle", "light_handweapon"],
           "options": [
-            {"replaceWeapon": ["heavy_auto_rifle", "light_handweapon"], "withWeapon": [["heavy_pistol", {"id": "light_handweapon", "count": 2}]]},
+            {"replaceWeapon": ["combat_rifle", "light_handweapon"], "withWeapon": [["heavy_pistol", {"id": "light_handweapon", "count": 2}]]},
             {"replaceWeapon": "heavy_pistol", "withWeapon": ["plasma_pistol"]},
             {
               "replaceWeapon": {"id": "light_handweapon", "count": 2},
@@ -514,7 +514,7 @@
           "defense": 6,
           "reflexes": 6,
           "movement": 6,
-          "weapons": ["heavy_auto_rifle", "light_handweapon"],
+          "weapons": ["combat_rifle", "light_handweapon"],
           "options": [{"addRule": {"id": "field_radio"}, "modelLimit": 1}],
           "min": 4,
           "max": 9
@@ -760,7 +760,7 @@
               ]
             },
             {"addWeapon": [[{"id": "auto_rifle", "count": 3, "mount": ["Left"]}, {"id": "auto_rifle", "count": 3, "mount": ["Right"]}]]},
-            {"addWeapon": ["light_machinegun", "twin_heavy_auto_rifle"], "limit": 1},
+            {"addWeapon": ["light_machinegun", "twin_combat_rifle"], "limit": 1},
             {"addWeapon": ["hunter_missiles"]},
             {"addRule": [{"id": "dozer", "name": "Dozer Blade"}, "field_radio"]}
           ],
@@ -796,7 +796,7 @@
                 {"id": "twin_heavy_machinegun", "mount": ["Front"]}
               ]
             },
-            {"addWeapon": ["laser_cannon", "heavy_flamethrower", "light_machinegun", "twin_heavy_auto_rifle"]},
+            {"addWeapon": ["laser_cannon", "heavy_flamethrower", "light_machinegun", "twin_combat_rifle"]},
             {"replaceRule": {"id": "transport", "x": 12}, "withRule": [{"id": "transport", "x": 20}]},
             {"addRule": [{"id": "dozer", "name": "Dozer Blade"}]}
           ],
@@ -855,7 +855,7 @@
               ],
               "limit": 1
             },
-            {"addWeapon": ["light_machinegun", "twin_heavy_auto_rifle"], "limit": 1},
+            {"addWeapon": ["light_machinegun", "twin_combat_rifle"], "limit": 1},
             {"addWeapon": ["hunter_missiles"]},
             {"addRule": [{"id": "dozer", "name": "Dozer Blade"}, "field_radio"]}
           ],
@@ -917,7 +917,7 @@
               ],
               "limit": 1
             },
-            {"addWeapon": ["light_machinegun", "twin_heavy_auto_rifle"], "limit": 1},
+            {"addWeapon": ["light_machinegun", "twin_combat_rifle"], "limit": 1},
             {"addWeapon": ["hunter_missiles"]},
             {"addRule": [{"id": "dozer", "name": "Dozer Blade"}, "field_radio"]}
           ],
@@ -974,7 +974,7 @@
               ],
               "limit": 1
             },
-            {"addWeapon": ["light_machinegun", "twin_heavy_auto_rifle"], "limit": 1},
+            {"addWeapon": ["light_machinegun", "twin_combat_rifle"], "limit": 1},
             {"addWeapon": ["hunter_missiles"]},
             {"addRule": [{"id": "dozer", "name": "Dozer Blade"}, "field_radio"]}
           ],
@@ -1014,7 +1014,7 @@
                 {"id": "fusion_cannon", "mount": ["Front"]}
               ]
             },
-            {"addWeapon": ["light_machinegun", "twin_heavy_auto_rifle"], "limit": 1},
+            {"addWeapon": ["light_machinegun", "twin_combat_rifle"], "limit": 1},
             {"addRule": [{"id": "dozer", "name": "Dozer Blade"}]}
           ],
           "min": 1,
@@ -1049,7 +1049,7 @@
                 {"id": "fusion_cannon", "mount": ["Front"]}
               ]
             },
-            {"addWeapon": ["light_machinegun", "twin_heavy_auto_rifle"], "limit": 1},
+            {"addWeapon": ["light_machinegun", "twin_combat_rifle"], "limit": 1},
             {"addRule": [{"id": "dozer", "name": "Dozer Blade"}]}
           ],
           "min": 1,
@@ -1097,7 +1097,7 @@
               ],
               "limit": 4
             },
-            {"addWeapon": ["light_machinegun", "twin_heavy_auto_rifle"], "limit": 1},
+            {"addWeapon": ["light_machinegun", "twin_combat_rifle"], "limit": 1},
             {"addWeapon": ["hunter_missiles"]},
             {"addRule": [{"id": "dozer", "name": "Dozer Blade"}, "field_radio"]}
           ],
@@ -1134,7 +1134,7 @@
               ],
               "limit": 2
             },
-            {"addWeapon": ["light_machinegun", "twin_heavy_auto_rifle"], "limit": 1},
+            {"addWeapon": ["light_machinegun", "twin_combat_rifle"], "limit": 1},
             {"addWeapon": ["hunter_missiles"]},
             {"replaceRule": {"id": "transport", "x": 25}, "withRule": {"id": "transport", "x": 40}},
             {"replaceRule": {"id": "open_topped", "x": 10}, "withRule": {"id": "open_topped", "x": 20}},
@@ -1171,7 +1171,7 @@
               ],
               "limit": 1
             },
-            {"addWeapon": ["light_machinegun", "twin_heavy_auto_rifle"], "limit": 1},
+            {"addWeapon": ["light_machinegun", "twin_combat_rifle"], "limit": 1},
             {"addRule": [{"id": "dozer", "name": "Dozer Blade"}, "field_radio"]}
           ],
           "min": 1,
@@ -1208,7 +1208,7 @@
               ],
               "limit": 1
             },
-            {"addWeapon": ["light_machinegun", "twin_heavy_auto_rifle"], "limit": 1},
+            {"addWeapon": ["light_machinegun", "twin_combat_rifle"], "limit": 1},
             {"addRule": [{"id": "dozer", "name": "Dozer Blade"}, "field_radio"]}
           ],
           "min": 1,

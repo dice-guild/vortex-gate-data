@@ -71,10 +71,10 @@
           "fight": 7,
           "defense": 7,
           "reflexes": 6,
-          "weapons": ["heavy_auto_rifle", {"id": "light_handweapon", "count": 3}],
+          "weapons": ["combat_rifle", {"id": "light_handweapon", "count": 3}],
           "options": [
-            {"replaceWeapon": "heavy_auto_rifle", "withWeapon": ["combi_rifle", "twin_heavy_auto_rifle"]},
-            {"replaceWeapon": ["heavy_auto_rifle", {"id": "light_handweapon", "count": 3}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 4}]]},
+            {"replaceWeapon": "combat_rifle", "withWeapon": ["combi_rifle", "twin_combat_rifle"]},
+            {"replaceWeapon": ["combat_rifle", {"id": "light_handweapon", "count": 3}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 4}]]},
             {"replaceWeapon": "heavy_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol"]},
             {
               "replaceWeapon": {"id": "handweapon", "count": 4},
@@ -101,10 +101,10 @@
           "fight": 7,
           "defense": 7,
           "reflexes": 6,
-          "weapons": ["heavy_auto_rifle", {"id": "light_handweapon", "count": 3}],
+          "weapons": ["combat_rifle", {"id": "light_handweapon", "count": 3}],
           "options": [
-            {"replaceWeapon": "heavy_auto_rifle", "withWeapon": ["combi_rifle", "twin_heavy_auto_rifle"]},
-            {"replaceWeapon": ["heavy_auto_rifle", {"id": "light_handweapon", "count": 3}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 4}]]},
+            {"replaceWeapon": "combat_rifle", "withWeapon": ["combi_rifle", "twin_combat_rifle"]},
+            {"replaceWeapon": ["combat_rifle", {"id": "light_handweapon", "count": 3}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 4}]]},
             {"replaceWeapon": "heavy_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol"]},
             {
               "replaceWeapon": {"id": "handweapon", "count": 4},
@@ -131,7 +131,7 @@
           "fight": 6,
           "defense": 7,
           "reflexes": 6,
-          "weapons": ["heavy_auto_rifle", {"id": "light_handweapon", "count": 2}],
+          "weapons": ["combat_rifle", {"id": "light_handweapon", "count": 2}],
           "options": [{"replaceRule": "banner_of_focus", "withRule": ["banner_of_justice", "banner_of_wrath"], "limit": 1}, {"addRule": [{"id": "ward", "x": 1}]}],
           "min": 1,
           "max": 1
@@ -161,8 +161,8 @@
       "description": "A group of newly trained wardens with marine rifles.",
       "category": "core",
       "options": [
-        {"replaceWeapon": "heavy_auto_rifle", "withWeapon": ["flamethrower"], "modelLimit": "1/5"},
-        {"replaceWeapon": ["heavy_auto_rifle", "light_handweapon"], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 2}]]},
+        {"replaceWeapon": "combat_rifle", "withWeapon": ["flamethrower"], "modelLimit": "1/5"},
+        {"replaceWeapon": ["combat_rifle", "light_handweapon"], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 2}]]},
         {
           "replaceWeapon": {"id": "handweapon", "count": 2},
           "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "energy_handweapon", "count": 2}, {"id": "heavy_chainsword", "count": 2}, {"id": "shock_whip", "count": 2}],
@@ -179,7 +179,7 @@
           "fight": 5,
           "defense": 7,
           "reflexes": 5,
-          "weapons": ["heavy_auto_rifle", "light_handweapon"],
+          "weapons": ["combat_rifle", "light_handweapon"],
           "options": [
             {"replaceWeapon": "heavy_pistol", "withWeapon": ["plasma_pistol"]},
             {"replaceWeapon": {"id": "handweapon", "count": 2}, "withWeapon": [{"id": "energy_handweapon", "count": 2}]}
@@ -187,7 +187,7 @@
           "min": 1,
           "max": 1
         },
-        {"name": "Initiate", "movement": 6, "courage": 5, "shoot": 5, "fight": 5, "defense": 7, "reflexes": 5, "weapons": ["heavy_auto_rifle", "light_handweapon"], "min": 4, "max": 9}
+        {"name": "Initiate", "movement": 6, "courage": 5, "shoot": 5, "fight": 5, "defense": 7, "reflexes": 5, "weapons": ["combat_rifle", "light_handweapon"], "min": 4, "max": 9}
       ]
     },
     "faith_wardens": {
@@ -195,8 +195,8 @@
       "description": "A group of zealots armed with marine rifles to pack an extra punch.",
       "category": "core",
       "options": [
-        {"replaceWeapon": "heavy_auto_rifle", "withWeapon": ["flamethrower", "fusion_rifle", "twin_heavy_auto_rifle", "heavy_fusion_rifle", "heavy_flamethrower", "heavy_machinegun"], "modelLimit": "2/5"},
-        {"replaceWeapon": ["heavy_auto_rifle", "light_handweapon"], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 2}]]},
+        {"replaceWeapon": "combat_rifle", "withWeapon": ["flamethrower", "fusion_rifle", "twin_combat_rifle", "heavy_fusion_rifle", "heavy_flamethrower", "heavy_machinegun"], "modelLimit": "2/5"},
+        {"replaceWeapon": ["combat_rifle", "light_handweapon"], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 2}]]},
         {"modelLimit": 1, "addRule": ["lucky_angel"]},
         {"modelLimit": 1, "addRule": ["banner"]}
       ],
@@ -209,16 +209,16 @@
           "fight": 5,
           "defense": 7,
           "reflexes": 5,
-          "weapons": ["heavy_auto_rifle", "light_handweapon"],
+          "weapons": ["combat_rifle", "light_handweapon"],
           "options": [
-            {"replaceWeapon": "heavy_auto_rifle", "withWeapon": ["combi_rifle", "twin_heavy_auto_rifle"]},
+            {"replaceWeapon": "combat_rifle", "withWeapon": ["combi_rifle", "twin_combat_rifle"]},
             {"replaceWeapon": "heavy_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol"]},
             {"replaceWeapon": {"id": "handweapon", "count": 2}, "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "energy_powerweapon", "count": 2}]}
           ],
           "min": 1,
           "max": 1
         },
-        {"name": "Order Warden", "movement": 6, "courage": 6, "shoot": 6, "fight": 5, "defense": 7, "reflexes": 5, "weapons": ["heavy_auto_rifle", "light_handweapon"], "min": 4, "max": 9}
+        {"name": "Order Warden", "movement": 6, "courage": 6, "shoot": 6, "fight": 5, "defense": 7, "reflexes": 5, "weapons": ["combat_rifle", "light_handweapon"], "min": 4, "max": 9}
       ]
     },
     "protector_wardens": {
@@ -262,7 +262,7 @@
       "description": "A group of zealots armed with heavy weapons, able to quickly move up the battlefield.",
       "category": "elite",
       "options": [
-        {"replaceWeapon": "heavy_auto_rifle", "withWeapon": ["flamethrower", "fusion_rifle", "twin_heavy_auto_rifle"]},
+        {"replaceWeapon": "combat_rifle", "withWeapon": ["flamethrower", "fusion_rifle", "twin_combat_rifle"]},
         {"modelLimit": 1, "addRule": ["lucky_angel"]},
         {"modelLimit": 1, "addRule": ["banner"]}
       ],
@@ -276,10 +276,10 @@
           "fight": 5,
           "defense": 7,
           "reflexes": 5,
-          "weapons": ["heavy_auto_rifle", "light_handweapon"],
+          "weapons": ["combat_rifle", "light_handweapon"],
           "options": [
-            {"replaceWeapon": "heavy_auto_rifle", "withWeapon": ["combi_rifle", "combi_rifle"]},
-            {"replaceWeapon": ["heavy_auto_rifle", "light_handweapon"], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 2}]]},
+            {"replaceWeapon": "combat_rifle", "withWeapon": ["combi_rifle", "combi_rifle"]},
+            {"replaceWeapon": ["combat_rifle", "light_handweapon"], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 2}]]},
             {"replaceWeapon": "heavy_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol"]},
             {
               "replaceWeapon": {"id": "handweapon", "count": 2},
@@ -289,7 +289,7 @@
           "min": 1,
           "max": 1
         },
-        {"name": "Seeker", "movement": 6, "courage": 6, "shoot": 6, "fight": 5, "defense": 7, "reflexes": 5, "weapons": ["heavy_auto_rifle", "light_handweapon"], "min": 4, "max": 9}
+        {"name": "Seeker", "movement": 6, "courage": 6, "shoot": 6, "fight": 5, "defense": 7, "reflexes": 5, "weapons": ["combat_rifle", "light_handweapon"], "min": 4, "max": 9}
       ]
     },
     "redemption_wardens": {
@@ -384,10 +384,10 @@
           "fight": 6,
           "defense": 7,
           "reflexes": 5,
-          "weapons": ["heavy_auto_rifle", "light_handweapon"],
+          "weapons": ["combat_rifle", "light_handweapon"],
           "options": [
-            {"replaceWeapon": "heavy_auto_rifle", "withWeapon": ["combi_rifle", "twin_heavy_auto_rifle"]},
-            {"replaceWeapon": ["heavy_auto_rifle", "light_handweapon"], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 2}]]},
+            {"replaceWeapon": "combat_rifle", "withWeapon": ["combi_rifle", "twin_combat_rifle"]},
+            {"replaceWeapon": ["combat_rifle", "light_handweapon"], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 2}]]},
             {"replaceWeapon": "heavy_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol"]},
             {
               "replaceWeapon": {"id": "handweapon", "count": 2},
@@ -441,8 +441,8 @@
           "fight": 6,
           "defense": 11,
           "reflexes": 6,
-          "weapons": ["twin_heavy_auto_rifle"],
-          "options": [{"addWeapon": ["twin_heavy_auto_rifle", "hunter_missiles"]}, {"addRule": ["spiked_ram", {"id": "dozer", "name": "Dozer Blade"}]}],
+          "weapons": ["twin_combat_rifle"],
+          "options": [{"addWeapon": ["twin_combat_rifle", "hunter_missiles"]}, {"addRule": ["spiked_ram", {"id": "dozer", "name": "Dozer Blade"}]}],
           "min": 1,
           "max": 1
         }
@@ -465,7 +465,7 @@
           "reflexes": 6,
           "weapons": [{"id": "heavy_machinegun", "mount": ["Front"]}, "twin_heavy_fusion_rifle"],
           "options": [
-            {"addWeapon": ["twin_heavy_auto_rifle", "hunter_missiles"]},
+            {"addWeapon": ["twin_combat_rifle", "hunter_missiles"]},
             {"addRule": ["spiked_ram", {"id": "dozer", "name": "Dozer Blade"}]},
             {"replaceWeapon": "twin_heavy_fusion_rifle", "withWeapon": ["twin_heavy_machinegun", "twin_heavy_flamethrower"]}
           ],
@@ -489,7 +489,7 @@
           "fight": 5,
           "defense": 12,
           "reflexes": 6,
-          "weapons": [{"id": "heavy_flamethrower", "count": 1}, {"id": "twin_heavy_auto_rifle", "count": 1}],
+          "weapons": [{"id": "heavy_flamethrower", "count": 1}, {"id": "twin_combat_rifle", "count": 1}],
           "options": [{"addRule": ["spiked_ram", {"id": "dozer", "name": "Dozer Blade"}]}, {"addWeapon": "heavy_flamethrower"}],
           "min": 1,
           "max": 1
@@ -512,7 +512,7 @@
           "defense": 12,
           "reflexes": 5,
           "weapons": [{"id": "heavy_machinegun", "mount": ["Front"]}, "organ_missiles"],
-          "options": [{"addWeapon": ["twin_heavy_auto_rifle", "hunter_missiles"]}, {"addRule": ["spiked_ram", {"id": "dozer", "name": "Dozer Blade"}]}],
+          "options": [{"addWeapon": ["twin_combat_rifle", "hunter_missiles"]}, {"addRule": ["spiked_ram", {"id": "dozer", "name": "Dozer Blade"}]}],
           "min": 1,
           "max": 1
         }
@@ -538,7 +538,7 @@
             {"addRule": [{"id": "dozer", "name": "Dozer Blade"}]},
             {"replaceWeapon": "twin_autocannon", "withWeapon": ["battle_cannon"]},
             {"addWeapon": [[{"id": "heavy_machinegun", "mount": ["Left", "Front"]}, {"id": "heavy_machinegun", "mount": ["Right", "Front"]}]], "limit": 1},
-            {"addWeapon": [{"id": "twin_heavy_auto_rifle", "count": 1}], "limit": 1},
+            {"addWeapon": [{"id": "twin_combat_rifle", "count": 1}], "limit": 1},
             {"addWeapon": ["hunter_missiles"]}
           ],
           "rules": [{"id": "impact", "x": 6}],

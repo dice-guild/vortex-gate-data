@@ -17,10 +17,10 @@
                     "fight": 6,
                     "defense": 8,
                     "reflexes": 6,
-                    "weapons": ["heavy_auto_rifle", {"id": "handweapon", "count": 3}],
+                    "weapons": ["combat_rifle", {"id": "handweapon", "count": 3}],
                     "options": [
                         {
-                            "replaceWeapon": ["heavy_auto_rifle"],
+                            "replaceWeapon": ["combat_rifle"],
                             "withWeapon": [
                                 "thermal_rifle",
                                 "plasma_rifle",
@@ -57,10 +57,10 @@
                     "fight": 6,
                     "defense": 6,
                     "reflexes": 6,
-                    "weapons": ["heavy_auto_rifle", {"id": "handweapon", "count": 2}],
+                    "weapons": ["combat_rifle", {"id": "handweapon", "count": 2}],
                     "rules": [{"id": "field_orders", "x": 1}, "leader", {"id": "wounds", "x": 3}],
                     "options": [
-                        {"replaceWeapon": ["heavy_auto_rifle", {"id": "handweapon", "count": 2}], "withWeapon": [["pistol", {"id": "handweapon", "count": 3}]]},
+                        {"replaceWeapon": ["combat_rifle", {"id": "handweapon", "count": 2}], "withWeapon": [["pistol", {"id": "handweapon", "count": 3}]]},
                         {"replaceWeapon": ["pistol"], "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol", "thermal_pistol"]},
                         {"replaceWeapon": [{"id": "handweapon", "count": 3}], "withWeapon": [{"id": "energy_handweapon", "count": 3}, {"id": "energy_powerweapon", "count": 3}]},
                         {"addRule": [{"name": "Orbital Insertion", "id": "ambush"}, {"name": "Camo-Cloak", "id": "evasive"}]},
@@ -133,7 +133,7 @@
             "category": "core",
             "options": [
                 {
-                    "replaceWeapon": ["heavy_auto_rifle"],
+                    "replaceWeapon": ["combat_rifle"],
                     "withWeapon": [
                         "light_machinegun",
                         "fusion_rifle",
@@ -148,8 +148,8 @@
                     ],
                     "modelLimit": "1/5"
                 },
-                {"replaceWeapon": "heavy_auto_rifle", "withWeapon": "combat_shotgun", "modelLimit": "any"},
-                {"replaceWeapon": ["heavy_auto_rifle", "light_handweapon"], "withWeapon": [["energy_handweapon", "heavy_pistol", "shield"]], "modelLimit": "any"},
+                {"replaceWeapon": "combat_rifle", "withWeapon": "combat_shotgun", "modelLimit": "any"},
+                {"replaceWeapon": ["combat_rifle", "light_handweapon"], "withWeapon": [["energy_handweapon", "heavy_pistol", "shield"]], "modelLimit": "any"},
                 {"addRule": [{"name": "Orbital Insertion", "id": "ambush"}], "modelLimit": "all"},
                 {"addRule": ["field_radio"], "modelLimit": 1},
                 {"addRule": ["medic"], "modelLimit": 1}
@@ -163,9 +163,9 @@
                     "fight": 6,
                     "defense": 6,
                     "reflexes": 6,
-                    "weapons": ["heavy_auto_rifle", "light_handweapon"],
+                    "weapons": ["combat_rifle", "light_handweapon"],
                     "options": [
-                        {"replaceWeapon": ["heavy_auto_rifle", "light_handweapon"], "withWeapon": [["pistol", {"id": "light_handweapon", "count": 2}]]},
+                        {"replaceWeapon": ["combat_rifle", "light_handweapon"], "withWeapon": [["pistol", {"id": "light_handweapon", "count": 2}]]},
                         {"replaceWeapon": ["pistol"], "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol", "thermal_pistol"]},
                         {"replaceWeapon": [{"id": "light_handweapon", "count": 2}], "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "energy_powerweapon", "count": 2}]},
                         {"addRule": {"id": "fear", "name": "Loudspeaker Drone"}}
@@ -173,7 +173,7 @@
                     "min": 1,
                     "max": 1
                 },
-                {"name": "Veteran", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 6, "reflexes": 6, "weapons": ["heavy_auto_rifle", "light_handweapon"], "min": 4, "max": 9}
+                {"name": "Veteran", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 6, "reflexes": 6, "weapons": ["combat_rifle", "light_handweapon"], "min": 4, "max": 9}
             ]
         },
         "veteran_scouts": {
@@ -223,10 +223,10 @@
                     "fight": 6,
                     "defense": 8,
                     "reflexes": 6,
-                    "weapons": ["heavy_auto_rifle", {"id": "handweapon", "count": 2}],
+                    "weapons": ["combat_rifle", {"id": "handweapon", "count": 2}],
                     "options": [
                         {
-                            "replaceWeapon": ["heavy_auto_rifle"],
+                            "replaceWeapon": ["combat_rifle"],
                             "withWeapon": ["thermal_rifle", "plasma_rifle", "fusion_rifle", "flamethrower", "grenade_launcher", "heavy_machinegun", "laser_cannon", "heavy_shotgun", "autocannon"]
                         },
                         {"replaceWeapon": [{"id": "handweapon", "count": 2}], "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "energy_powerweapon", "count": 2}]},
@@ -490,7 +490,7 @@
                     "weapons": ["light_battle_cannon"],
                     "options": [
                         {"addRule": [{"id": "dozer", "name": "Dozer Blade"}, "field_radio"]},
-                        {"addWeapon": [{"id": "light_machinegun", "count": 1}, {"id": "twin_heavy_auto_rifle", "count": 1}], "limit": 1},
+                        {"addWeapon": [{"id": "light_machinegun", "count": 1}, {"id": "twin_combat_rifle", "count": 1}], "limit": 1},
                         {"replaceWeapon": "light_battle_cannon", "withWeapon": ["twin_minigun", "missile_rack"]},
                         {"addWeapon": [{"id": "heavy_volley_gun", "count": 2, "mount": ["Front"]}, {"id": "autocannon", "count": 2, "mount": ["Front"]}], "limit": 1}
                     ],
@@ -631,8 +631,8 @@
                     "fight": 6,
                     "defense": 11,
                     "reflexes": 6,
-                    "weapons": ["twin_heavy_auto_rifle"],
-                    "options": [{"addWeapon": ["twin_heavy_auto_rifle", "hunter_missiles"]}, {"addRule": ["spiked_ram", {"id": "dozer", "name": "Dozer Blade"}]}],
+                    "weapons": ["twin_combat_rifle"],
+                    "options": [{"addWeapon": ["twin_combat_rifle", "hunter_missiles"]}, {"addRule": ["spiked_ram", {"id": "dozer", "name": "Dozer Blade"}]}],
                     "rules": [],
                     "min": 1,
                     "max": 1
@@ -654,10 +654,10 @@
                     "fight": 6,
                     "defense": 11,
                     "reflexes": 6,
-                    "weapons": ["twin_heavy_auto_rifle", "heavy_flamethrower"],
+                    "weapons": ["twin_combat_rifle", "heavy_flamethrower"],
                     "options": [
                         {"addWeapon": ["heavy_flamethrower", "hunter_missiles"]},
-                        {"replaceWeapon": "twin_heavy_auto_rifle", "withWeapon": "twin_grenade_launcher"},
+                        {"replaceWeapon": "twin_combat_rifle", "withWeapon": "twin_grenade_launcher"},
                         {"addRule": ["spiked_ram", {"id": "dozer", "name": "Dozer Blade"}]}
                     ],
                     "rules": [],
@@ -687,7 +687,7 @@
                         {"id": "assault_rifle_array", "mount": ["Right", "Front"]}
                     ],
                     "options": [
-                        {"addWeapon": ["twin_heavy_auto_rifle", "heavy_fusion_rifle", "hunter_missiles"]},
+                        {"addWeapon": ["twin_combat_rifle", "heavy_fusion_rifle", "hunter_missiles"]},
                         {
                             "replaceWeapon": [{"id": "assault_rifle_array", "mount": ["Left", "Front"]}, {"id": "assault_rifle_array", "mount": ["Right", "Front"]}],
                             "withWeapon": [
@@ -767,7 +767,7 @@
                         {"addRule": [{"id": "dozer", "name": "Dozer Blade"}, "field_radio", "extra_armor"]},
                         {"replaceWeapon": "nova_cannon", "withWeapon": ["battle_cannon", "siege_cannon", "twin_autocannon", "tank_hunter_cannon", "heavy_plasma_cannon", "gatling_cannon"]},
                         {"replaceWeapon": {"id": "heavy_flamethrower", "mount": ["Front"]}, "withWeapon": [{"id": "heavy_machinegun", "mount": ["Front"]}, {"id": "laser_cannon", "mount": ["Front"]}]},
-                        {"addWeapon": [{"id": "light_machinegun", "count": 1}, {"id": "twin_heavy_auto_rifle", "count": 1}], "limit": 1},
+                        {"addWeapon": [{"id": "light_machinegun", "count": 1}, {"id": "twin_combat_rifle", "count": 1}], "limit": 1},
                         {"addWeapon": ["hunter_missiles"]},
                         {
                             "addWeapon": [

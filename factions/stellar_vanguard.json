@@ -54,10 +54,10 @@
           "defense": 8,
           "reflexes": 6,
           "rules": ["leader", "striker", {"id": "wounds", "x": 2}],
-          "weapons": ["heavy_auto_rifle", {"id": "handweapon", "count": 2}],
+          "weapons": ["combat_rifle", {"id": "handweapon", "count": 2}],
           "options": [
-            {"replaceWeapon": ["heavy_auto_rifle"], "withWeapon": ["combi_rifle", "twin_heavy_auto_rifle", "marksman_rifle", "heavy_smg"]},
-            {"replaceWeapon": ["heavy_auto_rifle", {"id": "handweapon", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 3}], {"id": "twin_energy_handweapon", "count": 5}]},
+            {"replaceWeapon": ["combat_rifle"], "withWeapon": ["combi_rifle", "twin_combat_rifle", "marksman_rifle", "heavy_smg"]},
+            {"replaceWeapon": ["combat_rifle", {"id": "handweapon", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 3}], {"id": "twin_energy_handweapon", "count": 5}]},
             {"replaceWeapon": "heavy_pistol", "withWeapon": ["plasma_pistol", "gravity_pistol", "fusion_pistol", "flamethrower_pistol", "thermal_pistol"]},
             {
               "replaceWeapon": {"id": "handweapon", "count": 3},
@@ -86,17 +86,17 @@
           "defense": 8,
           "reflexes": 6,
           "rules": [{"id": "impact", "x": 1}, "striker", {"id": "leader", "x": "Infantry, Biker"}, {"id": "wounds", "x": 2}],
-          "weapons": ["heavy_auto_rifle", {"id": "handweapon", "count": 2}, {"id": "twin_heavy_auto_rifle", "mount": ["Front"]}],
+          "weapons": ["combat_rifle", {"id": "handweapon", "count": 2}, {"id": "twin_combat_rifle", "mount": ["Front"]}],
           "options": [
-            {"replaceWeapon": ["heavy_auto_rifle"], "withWeapon": ["combi_rifle", "twin_heavy_auto_rifle", "marksman_rifle", "heavy_smg"]},
-            {"replaceWeapon": ["heavy_auto_rifle", {"id": "handweapon", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 3}], {"id": "twin_energy_handweapon", "count": 5}]},
+            {"replaceWeapon": ["combat_rifle"], "withWeapon": ["combi_rifle", "twin_combat_rifle", "marksman_rifle", "heavy_smg"]},
+            {"replaceWeapon": ["combat_rifle", {"id": "handweapon", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 3}], {"id": "twin_energy_handweapon", "count": 5}]},
             {"replaceWeapon": "heavy_pistol", "withWeapon": ["plasma_pistol", "gravity_pistol", "fusion_pistol", "flamethrower_pistol", "thermal_pistol"]},
             {
               "replaceWeapon": {"id": "handweapon", "count": 3},
               "withWeapon": [{"id": "energy_handweapon", "count": 3}, {"id": "energy_powerweapon", "count": 3}, {"id": "twin_energy_handweapon", "count": 4}, {"id": "energy_greatweapon", "count": 3}]
             },
             {
-              "replaceWeapon": {"id": "twin_heavy_auto_rifle", "mount": ["Front"]},
+              "replaceWeapon": {"id": "twin_combat_rifle", "mount": ["Front"]},
               "withWeapon": [{"id": "twin_plasma_rifle", "mount": ["Front"]}, {"id": "twin_flamethrower", "mount": ["Front"]}, {"id": "twin_fusion_rifle", "mount": ["Front"]}]
             },
             {"addRule": [{"id": "hover", "name": "Anti-Grav Engine"}, "shield"]}
@@ -120,10 +120,10 @@
           "defense": 8,
           "reflexes": 6,
           "rules": ["leader", "tactician", {"id": "wounds", "x": 3}],
-          "weapons": ["heavy_auto_rifle", {"id": "handweapon", "count": 3}],
+          "weapons": ["combat_rifle", {"id": "handweapon", "count": 3}],
           "options": [
-            {"replaceWeapon": ["heavy_auto_rifle"], "withWeapon": ["combi_rifle", "twin_heavy_auto_rifle", "marksman_rifle", "heavy_smg"]},
-            {"replaceWeapon": ["heavy_auto_rifle", {"id": "handweapon", "count": 3}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 4}], {"id": "twin_energy_handweapon", "count": 6}]},
+            {"replaceWeapon": ["combat_rifle"], "withWeapon": ["combi_rifle", "twin_combat_rifle", "marksman_rifle", "heavy_smg"]},
+            {"replaceWeapon": ["combat_rifle", {"id": "handweapon", "count": 3}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 4}], {"id": "twin_energy_handweapon", "count": 6}]},
             {"replaceWeapon": "heavy_pistol", "withWeapon": ["plasma_pistol", "gravity_pistol", "fusion_pistol", "flamethrower_pistol", "thermal_pistol"]},
             {
               "replaceWeapon": {"id": "handweapon", "count": 4},
@@ -152,17 +152,17 @@
           "defense": 8,
           "reflexes": 6,
           "rules": [{"id": "impact", "x": 1}, {"id": "leader", "x": "Infantry, Biker"}, {"id": "tactician", "x": "Infantry, Biker"}, {"id": "wounds", "x": 3}],
-          "weapons": ["heavy_auto_rifle", {"id": "handweapon", "count": 3}, {"id": "twin_heavy_auto_rifle", "mount": ["Front"]}],
+          "weapons": ["combat_rifle", {"id": "handweapon", "count": 3}, {"id": "twin_combat_rifle", "mount": ["Front"]}],
           "options": [
-            {"replaceWeapon": ["heavy_auto_rifle"], "withWeapon": ["combi_rifle", "twin_heavy_auto_rifle", "marksman_rifle", "heavy_smg"]},
-            {"replaceWeapon": ["heavy_auto_rifle", {"id": "handweapon", "count": 3}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 4}], {"id": "twin_energy_handweapon", "count": 6}]},
+            {"replaceWeapon": ["combat_rifle"], "withWeapon": ["combi_rifle", "twin_combat_rifle", "marksman_rifle", "heavy_smg"]},
+            {"replaceWeapon": ["combat_rifle", {"id": "handweapon", "count": 3}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 4}], {"id": "twin_energy_handweapon", "count": 6}]},
             {"replaceWeapon": "heavy_pistol", "withWeapon": ["plasma_pistol", "gravity_pistol", "fusion_pistol", "flamethrower_pistol", "thermal_pistol"]},
             {
               "replaceWeapon": {"id": "handweapon", "count": 4},
               "withWeapon": [{"id": "energy_handweapon", "count": 4}, {"id": "energy_powerweapon", "count": 4}, {"id": "twin_energy_handweapon", "count": 5}, {"id": "energy_greatweapon", "count": 4}]
             },
             {
-              "replaceWeapon": {"id": "twin_heavy_auto_rifle", "mount": ["Front"]},
+              "replaceWeapon": {"id": "twin_combat_rifle", "mount": ["Front"]},
               "withWeapon": [{"id": "twin_plasma_rifle", "mount": ["Front"]}, {"id": "twin_flamethrower", "mount": ["Front"]}, {"id": "twin_fusion_rifle", "mount": ["Front"]}]
             },
             {"addRule": ["shield", {"id": "hover", "name": "Anti-Grav Engine"}]}
@@ -241,10 +241,10 @@
           "reflexes": 6,
           "movement": 6,
           "rules": ["leader", {"id": "power", "x": 1}, {"id": "wounds", "x": 2}],
-          "weapons": ["heavy_auto_rifle", {"id": "handweapon", "count": 2}],
+          "weapons": ["combat_rifle", {"id": "handweapon", "count": 2}],
           "options": [
-            {"replaceWeapon": ["heavy_auto_rifle"], "withWeapon": ["combi_rifle", "twin_heavy_auto_rifle", "marksman_rifle", "heavy_smg"]},
-            {"replaceWeapon": ["heavy_auto_rifle", {"id": "handweapon", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 3}], {"id": "twin_energy_handweapon", "count": 5}]},
+            {"replaceWeapon": ["combat_rifle"], "withWeapon": ["combi_rifle", "twin_combat_rifle", "marksman_rifle", "heavy_smg"]},
+            {"replaceWeapon": ["combat_rifle", {"id": "handweapon", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 3}], {"id": "twin_energy_handweapon", "count": 5}]},
             {"replaceWeapon": "heavy_pistol", "withWeapon": ["plasma_pistol", "gravity_pistol", "fusion_pistol", "flamethrower_pistol", "thermal_pistol"]},
             {
               "replaceWeapon": {"id": "handweapon", "count": 3},
@@ -280,10 +280,10 @@
           "reflexes": 6,
           "movement": 8,
           "rules": [{"id": "impact", "x": 1}, {"id": "leader", "x": "Infantry, Biker"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 2}],
-          "weapons": ["heavy_auto_rifle", {"id": "handweapon", "count": 2}, {"id": "twin_heavy_auto_rifle", "mount": ["Front"]}],
+          "weapons": ["combat_rifle", {"id": "handweapon", "count": 2}, {"id": "twin_combat_rifle", "mount": ["Front"]}],
           "options": [
-            {"replaceWeapon": ["heavy_auto_rifle"], "withWeapon": ["combi_rifle", "twin_heavy_auto_rifle", "marksman_rifle", "heavy_smg"]},
-            {"replaceWeapon": ["heavy_auto_rifle", {"id": "handweapon", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 3}], {"id": "twin_energy_handweapon", "count": 5}]},
+            {"replaceWeapon": ["combat_rifle"], "withWeapon": ["combi_rifle", "twin_combat_rifle", "marksman_rifle", "heavy_smg"]},
+            {"replaceWeapon": ["combat_rifle", {"id": "handweapon", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 3}], {"id": "twin_energy_handweapon", "count": 5}]},
             {"replaceWeapon": "heavy_pistol", "withWeapon": ["plasma_pistol", "gravity_pistol", "fusion_pistol", "flamethrower_pistol", "thermal_pistol"]},
             {
               "replaceWeapon": {"id": "handweapon", "count": 3},
@@ -296,7 +296,7 @@
               ]
             },
             {
-              "replaceWeapon": {"id": "twin_heavy_auto_rifle", "mount": ["Front"]},
+              "replaceWeapon": {"id": "twin_combat_rifle", "mount": ["Front"]},
               "withWeapon": [{"id": "twin_plasma_rifle", "mount": ["Front"]}, {"id": "twin_flamethrower", "mount": ["Front"]}, {"id": "twin_fusion_rifle", "mount": ["Front"]}]
             },
             {"replaceRule": {"id": "power", "x": 1}, "withRule": {"id": "power", "x": 2}},
@@ -321,16 +321,16 @@
           "movement": 6,
           "reflexes": 6,
           "rules": ["engineer", "leader", {"id": "wounds", "x": 3}],
-          "weapons": ["heavy_auto_rifle", {"id": "handweapon", "count": 2}],
+          "weapons": ["combat_rifle", {"id": "handweapon", "count": 2}],
           "options": [
-            {"replaceWeapon": "heavy_auto_rifle", "withWeapon": ["twin_heavy_auto_rifle", "combi_rifle", "marksman_rifle", "heavy_smg"]},
-            {"replaceWeapon": ["heavy_auto_rifle", {"id": "handweapon", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 3}], {"id": "twin_energy_handweapon", "count": 5}]},
+            {"replaceWeapon": "combat_rifle", "withWeapon": ["twin_combat_rifle", "combi_rifle", "marksman_rifle", "heavy_smg"]},
+            {"replaceWeapon": ["combat_rifle", {"id": "handweapon", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 3}], {"id": "twin_energy_handweapon", "count": 5}]},
             {"replaceWeapon": "heavy_pistol", "withWeapon": ["fusion_pistol", "gravity_pistol", "flamethrower_pistol", "plasma_pistol", "thermal_pistol"]},
             {
               "replaceWeapon": {"id": "handweapon", "count": 3},
               "withWeapon": [{"id": "energy_handweapon", "count": 3}, {"id": "energy_powerweapon", "count": 3}, {"id": "twin_energy_handweapon", "count": 4}, {"id": "energy_greatweapon", "count": 3}]
             },
-            {"addWeapon": ["thermal_rifle", "plasma_rifle", "flamethrower", "gravity_rifle", "fusion_rifle", "heavy_auto_rifle", "fusion_beamer"], "limit": 2},
+            {"addWeapon": ["thermal_rifle", "plasma_rifle", "flamethrower", "gravity_rifle", "fusion_rifle", "combat_rifle", "fusion_beamer"], "limit": 2},
             {"addWeapon": ["servo_arm"], "limit": 2},
             {"addRule": ["jetpack_character", "destroyer_armor"], "limit": 1},
             {"addRule": ["shield"]}
@@ -355,19 +355,19 @@
           "movement": 6,
           "reflexes": 8,
           "rules": ["engineer", {"id": "impact", "x": 1}, {"id": "leader", "x": "Infantry, Biker"}, {"id": "wounds", "x": 3}],
-          "weapons": ["heavy_auto_rifle", {"id": "handweapon", "count": 2}, {"id": "twin_heavy_auto_rifle", "mount": ["Front"]}],
+          "weapons": ["combat_rifle", {"id": "handweapon", "count": 2}, {"id": "twin_combat_rifle", "mount": ["Front"]}],
           "options": [
-            {"replaceWeapon": "heavy_auto_rifle", "withWeapon": ["twin_heavy_auto_rifle", "combi_rifle", "marksman_rifle", "heavy_smg"]},
-            {"replaceWeapon": ["heavy_auto_rifle", {"id": "handweapon", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 3}], {"id": "twin_energy_handweapon", "count": 5}]},
+            {"replaceWeapon": "combat_rifle", "withWeapon": ["twin_combat_rifle", "combi_rifle", "marksman_rifle", "heavy_smg"]},
+            {"replaceWeapon": ["combat_rifle", {"id": "handweapon", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 3}], {"id": "twin_energy_handweapon", "count": 5}]},
             {"replaceWeapon": "heavy_pistol", "withWeapon": ["fusion_pistol", "gravity_pistol", "flamethrower_pistol", "plasma_pistol", "thermal_pistol"]},
             {
               "replaceWeapon": {"id": "handweapon", "count": 3},
               "withWeapon": [{"id": "energy_handweapon", "count": 3}, {"id": "energy_powerweapon", "count": 3}, {"id": "twin_energy_handweapon", "count": 4}, {"id": "energy_greatweapon", "count": 3}]
             },
-            {"addWeapon": ["plasma_rifle", "flamethrower", "gravity_rifle", "fusion_rifle", "heavy_auto_rifle", "fusion_beamer"]},
+            {"addWeapon": ["plasma_rifle", "flamethrower", "gravity_rifle", "fusion_rifle", "combat_rifle", "fusion_beamer"]},
             {"addWeapon": ["servo_arm"], "limit": 2},
             {
-              "replaceWeapon": {"id": "twin_heavy_auto_rifle", "mount": ["Front"]},
+              "replaceWeapon": {"id": "twin_combat_rifle", "mount": ["Front"]},
               "withWeapon": [{"id": "twin_plasma_rifle", "mount": ["Front"]}, {"id": "twin_flamethrower", "mount": ["Front"]}, {"id": "twin_fusion_rifle", "mount": ["Front"]}]
             },
             {"addRule": ["shield", {"id": "hover", "name": "Anti-Grav Engine"}]}
@@ -391,10 +391,10 @@
           "defense": 8,
           "reflexes": 6,
           "rules": ["zealot", "leader", {"id": "wounds", "x": 3}],
-          "weapons": ["heavy_auto_rifle", {"id": "handweapon", "count": 3}],
+          "weapons": ["combat_rifle", {"id": "handweapon", "count": 3}],
           "options": [
-            {"replaceWeapon": ["heavy_auto_rifle"], "withWeapon": ["twin_heavy_auto_rifle", "combi_rifle", "heavy_smg", "marksman_rifle"]},
-            {"replaceWeapon": ["heavy_auto_rifle", {"id": "handweapon", "count": 3}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 4}], {"id": "twin_energy_handweapon", "count": 6}]},
+            {"replaceWeapon": ["combat_rifle"], "withWeapon": ["twin_combat_rifle", "combi_rifle", "heavy_smg", "marksman_rifle"]},
+            {"replaceWeapon": ["combat_rifle", {"id": "handweapon", "count": 3}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 4}], {"id": "twin_energy_handweapon", "count": 6}]},
             {"replaceWeapon": ["heavy_pistol"], "withWeapon": ["plasma_pistol", "flamethrower_pistol", "fusion_pistol", "gravity_pistol", "thermal_pistol"]},
             {
               "replaceWeapon": [{"id": "handweapon", "count": 4}],
@@ -423,17 +423,17 @@
           "defense": 8,
           "reflexes": 6,
           "rules": ["zealot", {"id": "impact", "x": 1}, {"id": "leader", "x": "Infantry, Biker"}, {"id": "wounds", "x": 3}],
-          "weapons": ["heavy_auto_rifle", {"id": "handweapon", "count": 3}, {"id": "twin_heavy_auto_rifle", "mount": ["Front"]}],
+          "weapons": ["combat_rifle", {"id": "handweapon", "count": 3}, {"id": "twin_combat_rifle", "mount": ["Front"]}],
           "options": [
-            {"replaceWeapon": ["heavy_auto_rifle"], "withWeapon": ["twin_heavy_auto_rifle", "combi_rifle", "heavy_smg", "marksman_rifle"]},
-            {"replaceWeapon": ["heavy_auto_rifle", {"id": "handweapon", "count": 3}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 4}], {"id": "twin_energy_handweapon", "count": 6}]},
+            {"replaceWeapon": ["combat_rifle"], "withWeapon": ["twin_combat_rifle", "combi_rifle", "heavy_smg", "marksman_rifle"]},
+            {"replaceWeapon": ["combat_rifle", {"id": "handweapon", "count": 3}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 4}], {"id": "twin_energy_handweapon", "count": 6}]},
             {"replaceWeapon": ["heavy_pistol"], "withWeapon": ["plasma_pistol", "flamethrower_pistol", "fusion_pistol", "gravity_pistol", "thermal_pistol"]},
             {
               "replaceWeapon": [{"id": "handweapon", "count": 4}],
               "withWeapon": [{"id": "energy_handweapon", "count": 4}, {"id": "energy_powerweapon", "count": 4}, {"id": "energy_greatweapon", "count": 4}, {"id": "twin_energy_handweapon", "count": 5}]
             },
             {
-              "replaceWeapon": {"id": "twin_heavy_auto_rifle", "mount": ["Front"]},
+              "replaceWeapon": {"id": "twin_combat_rifle", "mount": ["Front"]},
               "withWeapon": [{"id": "twin_plasma_rifle", "mount": ["Front"]}, {"id": "twin_flamethrower", "mount": ["Front"]}, {"id": "twin_fusion_rifle", "mount": ["Front"]}]
             },
             {"addRule": ["shield", {"id": "hover", "name": "Anti-Grav Engine"}]}
@@ -492,7 +492,7 @@
           "defense": 8,
           "reflexes": 6,
           "rules": [{"id": "impact", "x": 1}, {"id": "medic", "x": "Infantry, Biker"}, {"id": "support", "x": "Infantry, Biker"}, {"id": "wounds", "x": 2}],
-          "weapons": ["heavy_pistol", {"id": "handweapon", "count": 3}, {"id": "twin_heavy_auto_rifle", "mount": ["Front"]}],
+          "weapons": ["heavy_pistol", {"id": "handweapon", "count": 3}, {"id": "twin_combat_rifle", "mount": ["Front"]}],
           "options": [
             {"replaceWeapon": ["heavy_pistol"], "withWeapon": ["plasma_pistol", "flamethrower_pistol", "fusion_pistol", "gravity_pistol", "thermal_pistol"]},
             {
@@ -506,7 +506,7 @@
               ]
             },
             {
-              "replaceWeapon": {"id": "twin_heavy_auto_rifle", "mount": ["Front"]},
+              "replaceWeapon": {"id": "twin_combat_rifle", "mount": ["Front"]},
               "withWeapon": [{"id": "twin_plasma_rifle", "mount": ["Front"]}, {"id": "twin_flamethrower", "mount": ["Front"]}, {"id": "twin_fusion_rifle", "mount": ["Front"]}]
             },
             {"addRule": ["shield", {"id": "hover", "name": "Anti-Grav Engine"}]}
@@ -529,10 +529,10 @@
           "fight": 6,
           "defense": 8,
           "reflexes": 6,
-          "weapons": ["heavy_auto_rifle", "handweapon"],
+          "weapons": ["combat_rifle", "handweapon"],
           "options": [
-            {"replaceWeapon": ["heavy_auto_rifle"], "withWeapon": ["combi_rifle", "twin_heavy_auto_rifle"]},
-            {"replaceWeapon": ["heavy_auto_rifle", "handweapon"], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 2}]]},
+            {"replaceWeapon": ["combat_rifle"], "withWeapon": ["combi_rifle", "twin_combat_rifle"]},
+            {"replaceWeapon": ["combat_rifle", "handweapon"], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 2}]]},
             {"replaceWeapon": "heavy_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol", "gravity_pistol", "thermal_pistol"]},
             {
               "replaceWeapon": {"id": "handweapon", "count": 2},
@@ -542,13 +542,13 @@
           "min": 1,
           "max": 1
         },
-        {"name": "Vanguard Marine", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 8, "reflexes": 6, "weapons": ["heavy_auto_rifle", "handweapon"], "min": 4, "max": 19}
+        {"name": "Vanguard Marine", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 8, "reflexes": 6, "weapons": ["combat_rifle", "handweapon"], "min": 4, "max": 19}
       ],
       "options": [
-        {"replaceWeapon": "heavy_auto_rifle", "withWeapon": ["marksman_rifle", "heavy_smg"]},
-        {"replaceWeapon": "heavy_auto_rifle", "withWeapon": ["plasma_rifle", "flamethrower", "fusion_rifle", "gravity_rifle", "thermal_rifle"], "modelLimit": "1/5"},
+        {"replaceWeapon": "combat_rifle", "withWeapon": ["marksman_rifle", "heavy_smg"]},
+        {"replaceWeapon": "combat_rifle", "withWeapon": ["plasma_rifle", "flamethrower", "fusion_rifle", "gravity_rifle", "thermal_rifle"], "modelLimit": "1/5"},
         {
-          "replaceWeapon": "heavy_auto_rifle",
+          "replaceWeapon": "combat_rifle",
           "withWeapon": ["heavy_machinegun", "missile_launcher", "laser_cannon", "fusion_cannon", "plasma_cannon", "gravity_cannon", "heavy_flamethrower", "thermal_lance", "autocannon"],
           "modelLimit": "1/5"
         },
@@ -570,10 +570,10 @@
           "fight": 6,
           "defense": 9,
           "reflexes": 6,
-          "weapons": ["heavy_repeating_rifle", "handweapon"],
+          "weapons": ["heavy_combat_rifle", "handweapon"],
           "options": [
-            {"replaceWeapon": ["heavy_repeating_rifle"], "withWeapon": ["combi_rifle", "twin_heavy_auto_rifle"]},
-            {"replaceWeapon": ["heavy_repeating_rifle", "handweapon"], "withWeapon": ["heavy_pistol", {"id": "handweapon", "count": 2}]},
+            {"replaceWeapon": ["heavy_combat_rifle"], "withWeapon": ["combi_rifle", "twin_combat_rifle"]},
+            {"replaceWeapon": ["heavy_combat_rifle", "handweapon"], "withWeapon": ["heavy_pistol", {"id": "handweapon", "count": 2}]},
             {"replaceWeapon": "heavy_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol", "gravity_pistol", "thermal_pistol"]},
             {
               "replaceWeapon": {"id": "handweapon", "count": 2},
@@ -583,11 +583,11 @@
           "min": 1,
           "max": 1
         },
-        {"name": "Gravite Vanguard Marine", "movement": 5, "courage": 6, "shoot": 6, "fight": 6, "defense": 9, "reflexes": 6, "weapons": ["heavy_repeating_rifle", "handweapon"], "min": 4, "max": 9}
+        {"name": "Gravite Vanguard Marine", "movement": 5, "courage": 6, "shoot": 6, "fight": 6, "defense": 9, "reflexes": 6, "weapons": ["heavy_combat_rifle", "handweapon"], "min": 4, "max": 9}
       ],
       "options": [
         {
-          "replaceWeapon": "heavy_repeating_rifle",
+          "replaceWeapon": "heavy_combat_rifle",
           "withWeapon": ["heavy_machinegun", "missile_launcher", "laser_cannon", "fusion_cannon", "plasma_cannon", "gravity_cannon", "heavy_flamethrower", "thermal_lance", "autocannon"],
           "modelLimit": "1/5"
         },
@@ -609,10 +609,10 @@
           "fight": 6,
           "defense": 7,
           "reflexes": 6,
-          "weapons": ["heavy_auto_rifle", "handweapon"],
+          "weapons": ["combat_rifle", "handweapon"],
           "options": [
-            {"replaceWeapon": ["heavy_auto_rifle"], "withWeapon": ["combi_rifle", "twin_heavy_auto_rifle"]},
-            {"replaceWeapon": ["heavy_auto_rifle", "handweapon"], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 2}]]},
+            {"replaceWeapon": ["combat_rifle"], "withWeapon": ["combi_rifle", "twin_combat_rifle"]},
+            {"replaceWeapon": ["combat_rifle", "handweapon"], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 2}]]},
             {"replaceWeapon": "heavy_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol", "gravity_pistol", "thermal_pistol"]},
             {
               "replaceWeapon": {"id": "handweapon", "count": 2},
@@ -622,12 +622,12 @@
           "min": 1,
           "max": 1
         },
-        {"name": "Scout Marine", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 7, "reflexes": 6, "weapons": ["heavy_auto_rifle", "handweapon"], "min": 4, "max": 9}
+        {"name": "Scout Marine", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 7, "reflexes": 6, "weapons": ["combat_rifle", "handweapon"], "min": 4, "max": 9}
       ],
       "options": [
-        {"replaceWeapon": "heavy_auto_rifle", "withWeapon": ["heavy_combat_shotgun", "sniper_rifle", "marksman_rifle", "heavy_smg", "heavy_carbine"]},
+        {"replaceWeapon": "combat_rifle", "withWeapon": ["heavy_combat_shotgun", "sniper_rifle", "marksman_rifle", "heavy_smg", "heavy_carbine"]},
         {
-          "replaceWeapon": "heavy_auto_rifle",
+          "replaceWeapon": "combat_rifle",
           "withWeapon": [
             "plasma_rifle",
             "flamethrower",
@@ -647,7 +647,7 @@
           ],
           "modelLimit": "1/5"
         },
-        {"replaceWeapon": ["heavy_auto_rifle", "handweapon"], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 2}]]},
+        {"replaceWeapon": ["combat_rifle", "handweapon"], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 2}]]},
         {
           "addRule": [{"name": "Orbital Insertion", "id": "ambush"}, {"id": "evasive", "name": "Camouflage Cloak"}, "grappling_hook", {"id": "fear", "name": "Death Masks"}],
           "modelLimit": "all",
@@ -668,14 +668,14 @@
           "fight": 6,
           "defense": 8,
           "reflexes": 6,
-          "weapons": ["heavy_auto_rifle", {"id": "handweapon", "count": 2}],
+          "weapons": ["combat_rifle", {"id": "handweapon", "count": 2}],
           "options": [
             {
-              "replaceWeapon": ["heavy_auto_rifle"],
-              "withWeapon": ["twin_heavy_auto_rifle", "combi_rifle", "plasma_rifle", "flamethrower", "fusion_rifle", "gravity_rifle", "thermal_rifle", "heavy_combat_shotgun", "marksman_rifle", "heavy_smg"],
+              "replaceWeapon": ["combat_rifle"],
+              "withWeapon": ["twin_combat_rifle", "combi_rifle", "plasma_rifle", "flamethrower", "fusion_rifle", "gravity_rifle", "thermal_rifle", "heavy_combat_shotgun", "marksman_rifle", "heavy_smg"],
               "modelLimit": "2/5"
             },
-            {"replaceWeapon": ["heavy_auto_rifle", {"id": "handweapon", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 3}], {"id": "twin_energy_handweapon", "count": 5}]},
+            {"replaceWeapon": ["combat_rifle", {"id": "handweapon", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 3}], {"id": "twin_energy_handweapon", "count": 5}]},
             {"replaceWeapon": ["heavy_pistol"], "withWeapon": ["plasma_pistol", "flamethrower_pistol", "fusion_pistol", "gravity_pistol", "thermal_pistol", "storm_rifle"]},
             {
               "replaceWeapon": [{"id": "handweapon", "count": 3}],
@@ -731,10 +731,10 @@
           "fight": 6,
           "defense": 8,
           "reflexes": 6,
-          "weapons": [{"id": "twin_heavy_auto_rifle", "mount": ["Front"]}, "heavy_auto_rifle", "handweapon"],
+          "weapons": [{"id": "twin_combat_rifle", "mount": ["Front"]}, "combat_rifle", "handweapon"],
           "options": [
-            {"replaceWeapon": ["heavy_auto_rifle"], "withWeapon": ["combi_rifle", "twin_heavy_auto_rifle"]},
-            {"replaceWeapon": ["heavy_auto_rifle", "handweapon"], "withWeapon": [[{"id": "twin_energy_handweapon", "count": 4}]]},
+            {"replaceWeapon": ["combat_rifle"], "withWeapon": ["combi_rifle", "twin_combat_rifle"]},
+            {"replaceWeapon": ["combat_rifle", "handweapon"], "withWeapon": [[{"id": "twin_energy_handweapon", "count": 4}]]},
             {"replaceWeapon": ["heavy_pistol"], "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol", "thermal_pistol", "gravity_pistol"]},
             {
               "replaceWeapon": [{"id": "handweapon", "count": 2}],
@@ -752,16 +752,16 @@
           "fight": 6,
           "defense": 8,
           "reflexes": 6,
-          "weapons": [{"id": "twin_heavy_auto_rifle", "mount": ["Front"]}, "heavy_auto_rifle", "handweapon"],
+          "weapons": [{"id": "twin_combat_rifle", "mount": ["Front"]}, "combat_rifle", "handweapon"],
           "min": 2,
           "max": 8
         }
       ],
       "options": [
-        {"replaceWeapon": ["heavy_auto_rifle", "handweapon"], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 2}]]},
-        {"replaceWeapon": ["heavy_auto_rifle"], "withWeapon": ["fusion_rifle", "flamethrower", "plasma_rifle", "thermal_rifle", "gravity_rifle"], "modelLimit": "1/3"},
+        {"replaceWeapon": ["combat_rifle", "handweapon"], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 2}]]},
+        {"replaceWeapon": ["combat_rifle"], "withWeapon": ["fusion_rifle", "flamethrower", "plasma_rifle", "thermal_rifle", "gravity_rifle"], "modelLimit": "1/3"},
         {
-          "replaceWeapon": {"id": "twin_heavy_auto_rifle", "mount": ["Front"]},
+          "replaceWeapon": {"id": "twin_combat_rifle", "mount": ["Front"]},
           "withWeapon": [
             {"id": "twin_plasma_rifle", "mount": ["Front"]},
             {"id": "twin_flamethrower", "mount": ["Front"]},
@@ -791,10 +791,10 @@
           "fight": 6,
           "defense": 7,
           "reflexes": 6,
-          "weapons": [{"id": "twin_heavy_auto_rifle", "mount": ["Front"]}, "heavy_auto_rifle", "handweapon"],
+          "weapons": [{"id": "twin_combat_rifle", "mount": ["Front"]}, "combat_rifle", "handweapon"],
           "options": [
-            {"replaceWeapon": ["heavy_auto_rifle"], "withWeapon": ["combi_rifle", "twin_heavy_auto_rifle"]},
-            {"replaceWeapon": ["heavy_auto_rifle", "handweapon"], "withWeapon": [[{"id": "twin_energy_handweapon", "count": 4}]]},
+            {"replaceWeapon": ["combat_rifle"], "withWeapon": ["combi_rifle", "twin_combat_rifle"]},
+            {"replaceWeapon": ["combat_rifle", "handweapon"], "withWeapon": [[{"id": "twin_energy_handweapon", "count": 4}]]},
             {"replaceWeapon": "heavy_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol", "gravity_pistol", "thermal_pistol"]},
             {
               "replaceWeapon": {"id": "handweapon", "count": 2},
@@ -819,15 +819,15 @@
           "fight": 6,
           "defense": 7,
           "reflexes": 6,
-          "weapons": [{"id": "twin_heavy_auto_rifle", "mount": ["Front"]}, "heavy_auto_rifle", "handweapon"],
+          "weapons": [{"id": "twin_combat_rifle", "mount": ["Front"]}, "combat_rifle", "handweapon"],
           "min": 2,
           "max": 8
         }
       ],
       "options": [
-        {"replaceWeapon": "heavy_auto_rifle", "withWeapon": ["heavy_combat_shotgun", "sniper_rifle"]},
-        {"replaceWeapon": ["heavy_auto_rifle", "handweapon"], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 2}]]},
-        {"replaceWeapon": {"id": "twin_heavy_auto_rifle", "mount": ["Front"]}, "withWeapon": [{"id": "grenade_launcher", "mount": ["Front"]}]},
+        {"replaceWeapon": "combat_rifle", "withWeapon": ["heavy_combat_shotgun", "sniper_rifle"]},
+        {"replaceWeapon": ["combat_rifle", "handweapon"], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 2}]]},
+        {"replaceWeapon": {"id": "twin_combat_rifle", "mount": ["Front"]}, "withWeapon": [{"id": "grenade_launcher", "mount": ["Front"]}]},
         {"addRule": [{"id": "hover", "name": "Anti-Grav Engine"}, {"id": "light_armor", "name": "Armor Plating"}], "modelLimit": "all"}
       ]
     },
@@ -937,10 +937,10 @@
           "fight": 6,
           "defense": 8,
           "reflexes": 6,
-          "weapons": ["heavy_auto_rifle", "handweapon"],
+          "weapons": ["combat_rifle", "handweapon"],
           "options": [
-            {"replaceWeapon": ["heavy_auto_rifle"], "withWeapon": ["combi_rifle", "twin_heavy_auto_rifle", "heavy_flamethrower", "heavy_smg", "marksman_rifle"]},
-            {"replaceWeapon": ["heavy_auto_rifle", "handweapon"], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 2}]]},
+            {"replaceWeapon": ["combat_rifle"], "withWeapon": ["combi_rifle", "twin_combat_rifle", "heavy_flamethrower", "heavy_smg", "marksman_rifle"]},
+            {"replaceWeapon": ["combat_rifle", "handweapon"], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 2}]]},
             {"replaceWeapon": "heavy_pistol", "withWeapon": ["plasma_pistol", "gravity_pistol", "fusion_pistol", "flamethrower_pistol", "thermal_pistol"]},
             {
               "replaceWeapon": {"id": "handweapon", "count": 2},
@@ -1079,9 +1079,9 @@
           "defense": 11,
           "reflexes": 6,
           "rules": [{"id": "wounds", "x": 5}, {"id": "impact", "x": 3}, {"id": "transport", "x": 12}, "vulnerable_side_rear"],
-          "weapons": ["twin_heavy_auto_rifle"],
+          "weapons": ["twin_combat_rifle"],
           "options": [
-            {"replaceWeapon": ["twin_heavy_auto_rifle"], "withWeapon": ["light_machinegun", "plasma_rifle", "fusion_rifle", "flamethrower", "missile_launcher"]},
+            {"replaceWeapon": ["twin_combat_rifle"], "withWeapon": ["light_machinegun", "plasma_rifle", "fusion_rifle", "flamethrower", "missile_launcher"]},
             {"addWeapon": ["hunter_missiles"]},
             {"addRule": ["assault_ramp", {"id": "dozer", "name": "Dozer Blade"}, {"id": "hover", "name": "Anti-Gravity Engine"}, "spiked_ram"]}
           ],
@@ -1105,10 +1105,10 @@
           "defense": 12,
           "reflexes": 6,
           "rules": [{"id": "wounds", "x": 6}, {"id": "impact", "x": 3}, {"id": "transport", "x": 12}, "vulnerable_side_rear"],
-          "weapons": [{"id": "twin_heavy_auto_rifle", "mount": ["Front"]}, {"id": "twin_heavy_auto_rifle", "mount": ["Front", "Left"]}, {"id": "twin_heavy_auto_rifle", "mount": ["Front", "Right"]}],
+          "weapons": [{"id": "twin_combat_rifle", "mount": ["Front"]}, {"id": "twin_combat_rifle", "mount": ["Front", "Left"]}, {"id": "twin_combat_rifle", "mount": ["Front", "Right"]}],
           "options": [
             {
-              "replaceWeapon": [{"id": "twin_heavy_auto_rifle", "mount": ["Front"]}],
+              "replaceWeapon": [{"id": "twin_combat_rifle", "mount": ["Front"]}],
               "withWeapon": [
                 {"id": "twin_light_machinegun", "mount": ["Front"]},
                 {"id": "twin_flamethrower", "mount": ["Front"]},
@@ -1120,7 +1120,7 @@
               ]
             },
             {
-              "replaceWeapon": [{"id": "twin_heavy_auto_rifle", "mount": ["Front", "Left"]}, {"id": "twin_heavy_auto_rifle", "mount": ["Front", "Right"]}],
+              "replaceWeapon": [{"id": "twin_combat_rifle", "mount": ["Front", "Left"]}, {"id": "twin_combat_rifle", "mount": ["Front", "Right"]}],
               "withWeapon": [
                 [{"id": "twin_light_machinegun", "mount": ["Front", "Left"]}, {"id": "twin_light_machinegun", "mount": ["Front", "Right"]}],
                 [{"id": "twin_flamethrower", "mount": ["Front", "Left"]}, {"id": "twin_flamethrower", "mount": ["Front", "Right"]}],
@@ -1132,7 +1132,7 @@
                 [{"id": "thermal_lance", "mount": ["Front", "Left"]}, {"id": "thermal_lance", "mount": ["Front", "Right"]}]
               ]
             },
-            {"addWeapon": ["twin_heavy_auto_rifle", "heavy_machinegun", "plasma_cannon", "fusion_cannon", "heavy_flamethrower", "missile_launcher"], "limit": 1},
+            {"addWeapon": ["twin_combat_rifle", "heavy_machinegun", "plasma_cannon", "fusion_cannon", "heavy_flamethrower", "missile_launcher"], "limit": 1},
             {"addWeapon": ["hunter_missiles"]},
             {"addRule": ["assault_ramp", {"id": "dozer", "name": "Dozer Blade"}, {"id": "hover", "name": "Anti-Gravity Engine"}, "spiked_ram"]}
           ],
@@ -1156,8 +1156,8 @@
           "defense": 10,
           "reflexes": 6,
           "rules": ["ambush", {"id": "wounds", "x": 5}, {"id": "transport", "x": 12}],
-          "weapons": ["twin_heavy_auto_rifle"],
-          "options": [{"replaceWeapon": "twin_heavy_auto_rifle", "withWeapon": "missile_launcher"}],
+          "weapons": ["twin_combat_rifle"],
+          "options": [{"replaceWeapon": "twin_combat_rifle", "withWeapon": "missile_launcher"}],
           "min": 1,
           "max": 1
         }
@@ -1210,7 +1210,7 @@
           "defense": 10,
           "reflexes": 6,
           "rules": [{"id": "wounds", "x": 5}, {"id": "impact", "x": 3}, "vulnerable_side_rear"],
-          "weapons": [{"id": "twin_heavy_auto_rifle", "mount": ["Front"]}, "twin_aa_autocannon"],
+          "weapons": [{"id": "twin_combat_rifle", "mount": ["Front"]}, "twin_aa_autocannon"],
           "options": [
             {
               "replaceWeapon": ["twin_aa_autocannon"],
@@ -1226,7 +1226,7 @@
               ]
             },
             {
-              "replaceWeapon": [{"id": "twin_heavy_auto_rifle", "mount": ["Front"]}],
+              "replaceWeapon": [{"id": "twin_combat_rifle", "mount": ["Front"]}],
               "withWeapon": [
                 {"id": "twin_light_machinegun", "mount": ["Front"]},
                 {"id": "twin_flamethrower", "mount": ["Front"]},
@@ -1263,7 +1263,7 @@
             {"replaceWeapon": ["heavy_autocannon"], "withWeapon": ["battle_cannon", "twin_laser_cannon", "demolition_cannon", "twin_gatling_gun"]},
             {
               "addWeapon": [
-                [{"id": "twin_heavy_auto_rifle", "mount": ["Front", "Left"]}, {"id": "twin_heavy_auto_rifle", "mount": ["Front", "Right"]}],
+                [{"id": "twin_combat_rifle", "mount": ["Front", "Left"]}, {"id": "twin_combat_rifle", "mount": ["Front", "Right"]}],
                 [{"id": "twin_light_machinegun", "mount": ["Front", "Left"]}, {"id": "twin_light_machinegun", "mount": ["Front", "Right"]}],
                 [{"id": "heavy_machinegun", "mount": ["Front", "Left"]}, {"id": "heavy_machinegun", "mount": ["Front", "Right"]}],
                 [{"id": "laser_cannon", "mount": ["Front", "Left"]}, {"id": "laser_cannon", "mount": ["Front", "Right"]}],
@@ -1351,8 +1351,8 @@
               "limit": 1
             },
             {"addWeapon": ["gatling_gun", "plasma_cannon", "fusion_cannon", "missile_launcher", "heavy_flamethrower", "heavy_machinegun", "thermal_lance", "gravity_cannon"], "limit": 1},
-            {"addWeapon": ["twin_heavy_auto_rifle", "light_machinegun", "plasma_rifle", "fusion_rifle", "flamethrower", "rocket_pod", "gravity_rifle", "thermal_rifle"], "limit": 2},
-            {"addWeapon": ["twin_heavy_auto_rifle", "grenade_launcher", "aa_rocket_pod", "twin_aa_light_machinegun"], "limit": 1},
+            {"addWeapon": ["twin_combat_rifle", "light_machinegun", "plasma_rifle", "fusion_rifle", "flamethrower", "rocket_pod", "gravity_rifle", "thermal_rifle"], "limit": 2},
+            {"addWeapon": ["twin_combat_rifle", "grenade_launcher", "aa_rocket_pod", "twin_aa_light_machinegun"], "limit": 1},
             {"addWeapon": ["hunter_missiles"]},
             {"addRule": ["spiked_ram", {"id": "dozer", "name": "Dozer Blade"}, {"id": "hover", "name": "Anti-Gravity Engine"}]}
           ],
