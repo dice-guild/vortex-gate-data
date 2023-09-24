@@ -703,7 +703,7 @@
     },
     "legend_shield": {
       "name": "Timeless Shield",
-      "rule": {"id": "defiant", "x": 3},
+      "rule": {"id": "resistant", "x": 3},
       "description": "Upgrade one _Leader_ model with Defiant(3).",
       "flavor": "This ornate shield is indestructible, able to deflect lethal strikes.",
       "points": 5

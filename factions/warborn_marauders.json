@@ -50,7 +50,7 @@
               "withWeapon": [{"id": "energy_handweapon", "count": 5}, {"id": "energy_greatweapon", "count": 5}, {"id": "energy_powerweapon", "count": 5}]
             },
             {"addWeapon": ["attack_beast"]},
-            {"addRule": [{"id": "defiant", "x": 3, "name": "Cyborg Body"}, "ultra_armor"], "limit": 1},
+            {"addRule": [{"id": "resistant", "x": 3, "name": "Cyborg Body"}, "ultra_armor"], "limit": 1},
             {"addRule": [{"id": "inspiring", "x": "Infantry"}, "war_banner"], "limit": 1},
             {"replaceRule": {"id": "warrior", "x": 1}, "withRule": {"id": "warrior", "x": 2}}
           ],
@@ -124,7 +124,7 @@
               "withWeapon": [{"id": "energy_handweapon", "count": 3}, {"id": "energy_greatweapon", "count": 3}, {"id": "energy_powerweapon", "count": 3}, {"id": "energy_polearm", "count": 3}]
             },
             {"replaceRule": {"id": "power", "x": 1}, "withRule": {"id": "power", "x": 2}},
-            {"addRule": [{"id": "defiant", "x": 3, "name": "Cyborg Body"}, "ultra_armor"], "limit": 1}
+            {"addRule": [{"id": "resistant", "x": 3, "name": "Cyborg Body"}, "ultra_armor"], "limit": 1}
           ],
           "min": 1,
           "max": 1
@@ -196,7 +196,7 @@
               "withWeapon": [{"id": "energy_handweapon", "count": 3}, {"id": "energy_greatweapon", "count": 3}, {"id": "energy_powerweapon", "count": 3}]
             },
             {"addRule": ["force_field", "precision_monicle", "goblin_assistant"]},
-            {"addRule": [{"id": "defiant", "x": 3, "name": "Cyborg Body"}, "ultra_armor"], "limit": 1}
+            {"addRule": [{"id": "resistant", "x": 3, "name": "Cyborg Body"}, "ultra_armor"], "limit": 1}
           ],
           "min": 1,
           "max": 1
@@ -303,7 +303,7 @@
               "replaceWeapon": {"id": "handweapon", "count": 3},
               "withWeapon": [{"id": "energy_handweapon", "count": 3}, {"id": "energy_greatweapon", "count": 3}, {"id": "energy_powerweapon", "count": 3}]
             },
-            {"addRule": [{"id": "defiant", "x": 3, "name": "Cyborg Body"}, "ultra_armor"], "limit": 1}
+            {"addRule": [{"id": "resistant", "x": 3, "name": "Cyborg Body"}, "ultra_armor"], "limit": 1}
           ],
           "min": 1,
           "max": 1
@@ -380,7 +380,7 @@
         {"replaceWeapon": ["carbine", "handweapon"], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 2}]]},
         {"replaceWeapon": ["carbine"], "withWeapon": ["plasma_rifle", "fusion_rifle", "flamethrower", "grenade_launcher", "light_machinegun"], "modelLimit": "1/10"},
         {"replaceWeapon": ["carbine"], "withWeapon": ["rocket_launcher", "heavy_machinegun", "plasma_cannon", "fusion_cannon", "railgun"], "modelLimit": "1/10"},
-        {"addRule": ["light_armor", {"id": "defiant", "x": 2}], "modelLimit": "all"},
+        {"addRule": ["light_armor", {"id": "resistant", "x": 2}], "modelLimit": "all"},
         {"addRule": ["banner"], "modelLimit": 1}
       ],
       "models": [
@@ -429,7 +429,7 @@
               "withWeapon": [{"id": "energy_handweapon", "count": 3}, {"id": "energy_greatweapon", "count": 3}, {"id": "energy_powerweapon", "count": 3}]
             },
             {"addWeapon": ["attack_beast"], "modelLimit": 1},
-            {"addRule": [{"id": "defiant", "x": 3, "name": "Cyborg Body"}]},
+            {"addRule": [{"id": "resistant", "x": 3, "name": "Cyborg Body"}]},
             {"addRule": ["champion"], "modelLimit": 1},
             {"addRule": ["banner"], "modelLimit": 1}
           ],
@@ -596,7 +596,7 @@
           "defense": 4,
           "reflexes": 5,
           "weapons": ["beast_bite"],
-          "options": [{"addRule": {"id": "defiant", "x": 3, "name": "Cyborg Body"}}],
+          "options": [{"addRule": {"id": "resistant", "x": 3, "name": "Cyborg Body"}}],
           "min": 10,
           "max": 20
         }

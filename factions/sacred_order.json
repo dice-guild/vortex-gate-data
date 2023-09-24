@@ -296,7 +296,7 @@
       "name": "Redemption Wardens",
       "description": "A group of wardens atoning for their sins with righteous fury.",
       "category": "elite",
-      "rules": [{"id": "resilient", "x": 3}, "fanatical"],
+      "rules": [{"id": "resistant", "x": 3}, "fanatical"],
       "models": [
         {
           "name": "Redemption Warden Superior",
@@ -419,7 +419,7 @@
           "options": [
             {"replaceWeapon": {"id": "heavy_flamethrower", "count": 2}, "withWeapon": [{"id": "heavy_machinegun", "count": 2}]},
             {"replaceWeapon": {"id": "walker_flail", "count": 4}, "withWeapon": [{"id": "walker_saw", "count": 4}]},
-            {"addRule": [{"id": "resilient", "x": 4, "name": "Berzerk"}, "coffin_enclosure"]}
+            {"addRule": [{"id": "resistant", "x": 4, "name": "Berzerk"}, "coffin_enclosure"]}
           ],
           "min": 1,
           "max": 1

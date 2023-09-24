@@ -467,7 +467,7 @@
           "options": [
             {"replaceWeapon": [{"id": "great_weapon", "count": 3}], "withWeapon": [{"id": "grand_weapon", "count": 3}, {"id": "heavy_polearm", "count": 3}]},
             {"addWeapon": ["spirit_flask"], "modelLimit": 3},
-            {"addRule": ["ambush", "shield", {"name": "Oath of Protection", "id": "resilient", "x": 3}], "modelLimit": "all"}
+            {"addRule": ["ambush", "shield", {"name": "Oath of Protection", "id": "resistant", "x": 3}], "modelLimit": "all"}
           ],
           "min": 3,
           "max": 15
@@ -736,6 +736,6 @@
     "storm_trident": {"ap": 3, "attacks": 1, "medium": 12, "name": "Stormstrike Trident", "rules": ["assault", {"id": "deadly", "x": 1}], "short": 6},
     "throwing_hammer": {"ap": 2, "attacks": 1, "name": "Throwing Hammer", "rules": ["assault"], "short": 6},
     "legend_hammer": {"name": "Meteorite Hammer", "attacks": 2, "short": "Melee", "ap": 3, "rules": [{"id": "blast", "x": 3}]},
-    "legend_shield": {"name": "Dragonscale Shield", "attacks": 0, "short": "Melee", "rules": [{"id": "defiant", "x": 3}, "shield"]}
+    "legend_shield": {"name": "Dragonscale Shield", "attacks": 0, "short": "Melee", "rules": [{"id": "resistant", "x": 3}, "shield"]}
   }
 }

@@ -152,7 +152,7 @@
                 {"replaceWeapon": ["heavy_auto_rifle", "light_handweapon"], "withWeapon": [["energy_handweapon", "heavy_pistol", "shield"]], "modelLimit": "any"},
                 {"addRule": [{"name": "Orbital Insertion", "id": "ambush"}], "modelLimit": "all"},
                 {"addRule": ["field_radio"], "modelLimit": 1},
-                {"addRule": ["medic_squad"], "modelLimit": 1}
+                {"addRule": ["medic"], "modelLimit": 1}
             ],
             "models": [
                 {

@@ -237,7 +237,7 @@
           "fight": 6,
           "defense": 5,
           "reflexes": 6,
-          "rules": [{"id": "resilient", "x": 3}],
+          "rules": [{"id": "resistant", "x": 3}],
           "weapons": [{"id": "shock_staff", "count": 2}],
           "options": [{"replaceWeapon": {"id": "shock_staff", "count": 2}, "withWeapon": [["taser_gauntlets_zap", {"id": "taser_gauntlets_strike", "count": 2}]]}],
           "min": 5,

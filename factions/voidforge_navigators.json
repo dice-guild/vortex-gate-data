@@ -790,7 +790,7 @@
               ],
               "limit": 2
             },
-            {"addRule": [{"name": "Shield Generator", "id": "defiant", "x": 3}, "field_radio", "reinforced_armor", "lookout_system", "targeting_array"]},
+            {"addRule": [{"name": "Shield Generator", "id": "resistant", "x": 3}, "field_radio", "reinforced_armor", "lookout_system", "targeting_array"]},
             {"addRule": [{"id": "power", "x": 1}], "subfactions": ["power_focus"]}
           ],
           "min": 1,
@@ -865,7 +865,7 @@
               ],
               "limit": 2
             },
-            {"addRule": [{"name": "Shield Generator", "id": "defiant", "x": 3}, "field_radio", "reinforced_armor", "lookout_system", "targeting_array"]},
+            {"addRule": [{"name": "Shield Generator", "id": "resistant", "x": 3}, "field_radio", "reinforced_armor", "lookout_system", "targeting_array"]},
             {"addRule": [{"id": "power", "x": 1}, {"id": "power", "x": 2}], "subfactions": ["power_focus"], "limit": 1}
           ],
           "min": 1,

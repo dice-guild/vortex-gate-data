@@ -35,7 +35,7 @@
               "addRule": [
                 "advanced_plating",
                 {"name": "Orbital Insertion", "id": "ambush"},
-                {"name": "Shield Generator", "id": "resilient", "x": 3},
+                {"name": "Shield Generator", "id": "resistant", "x": 3},
                 "lookout_system",
                 "threat_detector_suit",
                 "booster",
@@ -293,7 +293,7 @@
             },
             {"addWeapon": ["assault_mortar", "ion_gatling", "flamethrower", "pulse_gatling", "plasma_rifle", "fusion_blaster", "rocket_pod"], "limit": 1},
             {"addRule": {"name": "Orbital Insertion", "id": "ambush"}, "modelLimit": "all"},
-            {"addRule": [{"name": "Shield Generator", "id": "defiant", "x": 3, "ArrayItem": "lookout_system"}, "threat_detector_suit", "advanced_plating", "targeting_array"]}
+            {"addRule": [{"name": "Shield Generator", "id": "resistant", "x": 3, "ArrayItem": "lookout_system"}, "threat_detector_suit", "advanced_plating", "targeting_array"]}
           ],
           "min": 3,
           "max": 6
@@ -501,7 +501,7 @@
           "fight": 4,
           "defense": 12,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 6}, {"id": "defiant", "x": 3}, "fly"],
+          "rules": [{"id": "wounds", "x": 6}, {"id": "resistant", "x": 3}, "fly"],
           "weapons": [{"id": "suit_fists", "count": 4}, "ion_cannon", {"id": "plasma_rifle", "count": 2}],
           "options": [
             {"replaceWeapon": "ion_cannon", "withWeapon": "heavy_pulse_gatling"},
@@ -670,7 +670,7 @@
       "fight": 0,
       "defense": "-",
       "reflexes": "-",
-      "rules": [{"id": "resilient", "x": 3}],
+      "rules": [{"id": "resistant", "x": 3}],
       "weapons": ["missile_pod"],
       "min": 1,
       "max": 1

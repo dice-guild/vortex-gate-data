@@ -297,7 +297,7 @@
           "fight": 7,
           "defense": 7,
           "reflexes": 6,
-          "rules": ["ambush", {"id": "defiant", "x": 3}, "fly", {"id": "warrior", "x": 1}, {"id": "leader", "x": "Infantry, Cavalry"}, {"id": "wounds", "x": 3}],
+          "rules": ["ambush", {"id": "resistant", "x": 3}, "fly", {"id": "warrior", "x": 1}, {"id": "leader", "x": "Infantry, Cavalry"}, {"id": "wounds", "x": 3}],
           "weapons": [{"id": "grand_weapon", "count": 4}, "shield", {"id": "heavy_hooves_and_teeth", "count": 2}],
           "options": [
             {"replaceWeapon": [{"id": "grand_weapon", "count": 4}], "withWeapon": [{"id": "heavy_lance", "count": 4}]},

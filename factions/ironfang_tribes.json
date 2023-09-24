@@ -19,7 +19,7 @@
           "fight": 6,
           "defense": 7,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 3}, {"id": "defiant", "x": 2}, {"id": "leader", "x": "Monster"}, "monstrous_regeneration", {"id": "power", "x": 1}],
+          "rules": [{"id": "wounds", "x": 3}, {"id": "resistant", "x": 2}, {"id": "leader", "x": "Monster"}, "monstrous_regeneration", {"id": "power", "x": 1}],
           "weapons": [{"id": "fangs_and_teeth", "count": 3}, {"id": "grand_hammer", "count": 2}, "rock_throw"],
           "min": 1,
           "max": 1
@@ -130,7 +130,7 @@
           "fight": 7,
           "defense": 8,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 3}, {"id": "defiant", "x": 2}, {"id": "leader", "x": "Monster"}, "monstrous_regeneration", {"id": "orc_tactics", "x": 1}],
+          "rules": [{"id": "wounds", "x": 3}, {"id": "resistant", "x": 2}, {"id": "leader", "x": "Monster"}, "monstrous_regeneration", {"id": "orc_tactics", "x": 1}],
           "weapons": [{"id": "great_weapon", "count": 3}, {"id": "fangs_and_teeth", "count": 3, "id_0": "grand_hammer"}, "rock_throw"],
           "options": [
             {
@@ -865,7 +865,7 @@
           "fight": 6,
           "defense": 7,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 3}, {"id": "defiant", "x": 2}, "monstrous_regeneration"],
+          "rules": [{"id": "wounds", "x": 3}, {"id": "resistant", "x": 2}, "monstrous_regeneration"],
           "weapons": [{"id": "fangs_and_teeth", "count": 3}, "grand_hammer", "rock_throw"],
           "min": 3,
           "max": 6
@@ -917,7 +917,7 @@
           "fight": 6,
           "defense": 7,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 3}, {"id": "defiant", "x": 2}, "monstrous_regeneration", {"id": "open_topped", "x": 6}, {"id": "transport", "x": 6}],
+          "rules": [{"id": "wounds", "x": 3}, {"id": "resistant", "x": 2}, "monstrous_regeneration", {"id": "open_topped", "x": 6}, {"id": "transport", "x": 6}],
           "weapons": [{"id": "fangs_and_teeth", "count": 6}, "rock_throw"],
           "min": 1,
           "max": 1
@@ -938,7 +938,7 @@
           "fight": 6,
           "defense": 9,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 3}, {"id": "defiant", "x": 3}, {"id": "heavy_impact", "x": 3}, "magic_runes"],
+          "rules": [{"id": "wounds", "x": 3}, {"id": "resistant", "x": 3}, {"id": "heavy_impact", "x": 3}, "magic_runes"],
           "weapons": [{"id": "crushing_fists", "count": 8}, "rock_throw"],
           "min": 1,
           "max": 1

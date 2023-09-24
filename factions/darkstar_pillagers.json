@@ -312,7 +312,7 @@
           "fight": 6,
           "defense": 5,
           "reflexes": 5,
-          "rules": [{"id": "defiant", "x": 2}, "furious", "support", {"id": "wounds", "x": 2}],
+          "rules": [{"id": "resistant", "x": 2}, "furious", "support", {"id": "wounds", "x": 2}],
           "weapons": [{"id": "piercing_claws", "count": 3}],
           "min": 1,
           "max": 3
@@ -352,7 +352,7 @@
           "fight": 6,
           "defense": 5,
           "reflexes": 5,
-          "rules": [{"id": "defiant", "x": 3}, {"id": "wounds", "x": 2}],
+          "rules": [{"id": "resistant", "x": 3}, {"id": "wounds", "x": 2}],
           "weapons": [{"id": "heavy_energy_sword", "count": 3}, "barb_carbine"],
           "min": 1,
           "max": 3

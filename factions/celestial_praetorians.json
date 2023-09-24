@@ -226,7 +226,7 @@
       "name": "Wardens",
       "description": "Watch masters and veteran praetorians.",
       "category": "core",
-      "rules": [{"id": "resilient", "x": 3}, {"id": "wounds", "x": 2}],
+      "rules": [{"id": "resistant", "x": 3}, {"id": "wounds", "x": 2}],
       "options": [
         {
           "replaceWeapon": [{"id": "praetorian_spear_blade", "count": 3}, "praetorian_spear_rifle"],

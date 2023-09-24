@@ -710,7 +710,7 @@
           "fight": 6,
           "defense": 6,
           "reflexes": 5,
-          "rules": ["hover", {"id": "impact", "x": 1}, {"id": "resilient", "x": 3}],
+          "rules": ["hover", {"id": "impact", "x": 1}, {"id": "resistant", "x": 3}],
           "weapons": ["marine_pistol", {"id": "handweapon", "count": 2}],
           "options": [
             {

@@ -223,7 +223,7 @@
           "fight": 6,
           "defense": 7,
           "reflexes": 6,
-          "rules": [{"id": "defiant", "x": 2}, "fear", "fearless", "leader", {"id": "tactician", "x": 1}, {"id": "wounds", "x": 3}],
+          "rules": [{"id": "resistant", "x": 2}, "fear", "fearless", "leader", {"id": "tactician", "x": 1}, {"id": "wounds", "x": 3}],
           "weapons": [{"id": "heavy_polearm", "count": 4}],
           "options": [
             {"replaceWeapon": [{"id": "heavy_polearm", "count": 4}], "withWeapon": [{"id": "grand_weapon", "count": 4}]},
@@ -248,7 +248,7 @@
           "fight": 7,
           "defense": 12,
           "reflexes": 7,
-          "rules": [{"id": "wounds", "x": 3}, {"id": "defiant", "x": 2}, "fear", "fearless", "fly", {"id": "tactician", "x": 2}, {"id": "leader", "x": "Cavalry, Monster"}],
+          "rules": [{"id": "wounds", "x": 3}, {"id": "resistant", "x": 2}, "fear", "fearless", "fly", {"id": "tactician", "x": 2}, {"id": "leader", "x": "Cavalry, Monster"}],
           "weapons": [{"id": "heavy_polearm", "count": 4}, {"id": "beak_and_claws", "count": 6}, {"id": "flame_breath", "count": 2}],
           "options": [
             {"replaceWeapon": [{"id": "heavy_polearm", "count": 4}], "withWeapon": [{"id": "grand_weapon", "count": 4}]},
@@ -273,7 +273,7 @@
           "fight": 6,
           "defense": 10,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 3}, {"id": "defiant", "x": 2}, "fear", "fearless", {"id": "impact", "x": 3}, {"id": "leader", "x": "Vehicle"}, {"id": "tactician", "x": 2}],
+          "rules": [{"id": "wounds", "x": 3}, {"id": "resistant", "x": 2}, "fear", "fearless", {"id": "impact", "x": 3}, {"id": "leader", "x": "Vehicle"}, {"id": "tactician", "x": 2}],
           "weapons": [{"id": "hooves_and_teeth", "count": 4}, {"id": "heavy_polearm", "count": 4}],
           "options": [
             {"replaceWeapon": [{"id": "heavy_polearm", "count": 4}], "withWeapon": [{"id": "grand_weapon", "count": 4}]},
@@ -433,7 +433,7 @@
           "fight": 6,
           "defense": 6,
           "reflexes": 6,
-          "rules": [{"id": "defiant", "x": 2}, "fearless", "fear"],
+          "rules": [{"id": "resistant", "x": 2}, "fearless", "fear"],
           "weapons": [{"id": "heavy_polearm", "count": 2}],
           "options": [{"replaceWeapon": [{"id": "heavy_polearm", "count": 2}], "withWeapon": [{"id": "grand_weapon", "count": 2}], "modelLimit": "all"}, {"addRule": ["shield"], "modelLimit": "all"}],
           "min": 5,
@@ -723,7 +723,7 @@
   "relics": {
     "phoenix_armor": {
       "name": "Moon Armor",
-      "rule": {"id": "defiant", "x": 2},
+      "rule": {"id": "resistant", "x": 2},
       "description": "Upgrade one Hero model with Defiant(2).",
       "flavor": "Gilded armor that has been blessed by the Moon God.",
       "points": 10
