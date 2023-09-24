@@ -1700,7 +1700,7 @@
   },
   "rules": {
     "poisoned_blades": {"name": "Poisoned Blades", "description": "This model's melee weapons have +1 AP against enemies without _Damage Table(X)_.", "points": 5},
-    "legend_strategist": {"name": "Brilliant Strategist", "description": "While this model is on the field the first Strategy you use each turn cost 1 SP less.", "points": 20},
+    "legend_strategist": {"name": "Strategist", "description": "At the start of the round, roll a D10 for each model with this rule. On any 5 or less gain 1 Tactic Point.", "points": 20},
     "legend_wounds": {"name": "Resilient", "description": "This model gains Wounds(+1).", "points": 10},
     "legend_courage": {"name": "Inspired", "description": "This model gains +1 Courage.", "points": 10},
     "legend_quick_reflexes": {"name": "Quick Reflexes", "description": "This model gains +1 Initiative.", "points": 10},

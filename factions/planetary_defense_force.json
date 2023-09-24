@@ -881,16 +881,16 @@
           "movement": 10,
           "reflexes": 5,
           "rules": [{"id": "wounds", "x": 5}, {"id": "impact", "x": 6}, "vulnerable_side_rear"],
-          "weapons": ["battle_cannon", {"id": "heavy_flamethrower", "mount": ["Front"]}],
+          "weapons": ["heavy_plasma_cannon", {"id": "heavy_flamethrower", "mount": ["Front"]}],
           "options": [
             {
-              "replaceWeapon": "battle_cannon",
+              "replaceWeapon": "heavy_plasma_cannon",
               "withWeapon": [
                 "nova_cannon",
                 "siege_cannon",
-                "heavy_autocannon",
+                "twin_autocannon",
                 "tank_hunter_cannon",
-                "heavy_plasma_cannon",
+                "battle_cannon",
                 "gatling_cannon",
                 "heavy_fusion_cannon",
                 "twin_heavy_laser_cannon",
