@@ -394,17 +394,9 @@
           "defense": 7,
           "movement": 6,
           "reflexes": 5,
-          "weapons": [{"id": "battle_cannon", "mount": ["Front"]}, {"id": "light_handweapon", "count": 3}],
+          "weapons": [{"id": "rocket_battery", "mount": ["Front"]}, {"id": "light_handweapon", "count": 3}],
           "options": [
-            {
-              "replaceWeapon": {"id": "battle_cannon", "mount": ["Front"]},
-              "withWeapon": [
-                {"id": "rocket_battery", "mount": ["Front"]},
-                {"id": "light_artillery_cannon", "mount": ["Front"]},
-                {"id": "gatling_cannon", "mount": ["Front"]},
-                {"id": "tank_hunter_cannon", "mount": ["Front"]}
-              ]
-            }
+            {"replaceWeapon": {"id": "rocket_battery", "mount": ["Front"]}, "withWeapon": [{"id": "light_artillery_cannon", "mount": ["Front"]}, {"id": "tank_hunter_cannon", "mount": ["Front"]}]}
           ],
           "min": 2,
           "max": 2
