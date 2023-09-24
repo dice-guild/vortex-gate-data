@@ -1983,34 +1983,9 @@
       "subfactions": ["none"]
     }
   },
-  "powerCategories": {"psychic": {"name": "Psychic", "subfactions": ["power_focus"]}, "poison": {"name": "Poison", "subfactions": ["toughness_focus"]}},
   "powers": {
     "balefire": {"name": "Balefire", "description": "Target enemy unit within 24\" take 3 hits with AP(1).", "charge": 7},
     "hex": {"name": "Hex", "description": "Target enemy unit within 12\" must re-roll one die of your choice on its next Save test.", "charge": 5},
-    "sap_strength": {"name": "Sap Strength", "description": "Target enemy unit within 18\" takes 3 hits with AP(1) and has -1 Strength until the end of the turn.", "charge": 6},
-    "arcane_bolt": {
-      "subfactions": ["power_focus"],
-      "name": "Arcane Bolt",
-      "description": "Target enemy unit within 24\" takes 1 hit with AP(4). This power may be cast unlimited times per turn.",
-      "charge": 7,
-      "category": "psychic"
-    },
-    "inferno": {
-      "subfactions": ["power_focus"],
-      "name": "Inferno",
-      "description": "Target enemy unit within 12\" take 3 hits with AP(3). This power may be cast unlimited times per turn.",
-      "charge": 5,
-      "category": "psychic"
-    },
-    "arcane_barrage": {
-      "subfactions": ["power_focus"],
-      "name": "Arcane Barrage",
-      "description": "Target enemy unit within 12\" take 5 hits with AP(1). This power may be cast unlimited times per turn.",
-      "charge": 6,
-      "category": "psychic"
-    },
-    "deadly_miasma": {"subfactions": ["toughness_focus"], "name": "Deadly Miasma", "description": "Target enemy unit within 18\" take 6 hits with AP(2).", "charge": 6, "category": "poison"},
-    "unholy_vitality": {"subfactions": ["toughness_focus"], "name": "Unholy Vitality", "description": "Target friendly unit within 12\" heals 1 lost wound.", "charge": 7, "category": "poison"},
-    "spreading_plague": {"name": "Spreading Plague", "description": "Roll a d10 for every enemy unit within 12\". On a 3 or less that unit takes 4 hits with AP(1).", "charge": 5, "category": "poison"}
+    "sap_strength": {"name": "Sap Strength", "description": "Target enemy unit within 18\" takes 3 hits with AP(1) and has -1 Strength until the end of the turn.", "charge": 6}
   }
 }

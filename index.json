@@ -668,9 +668,27 @@
     "shadow": {"name": "Shadow"},
     "death": {"name": "Death"},
     "lunar": {"name": "Lunar"},
-    "solar": {"name": "Solar"}
+    "solar": {"name": "Solar"},
+    "psychic": {"name": "Psychic"},
+    "poison": {"name": "Poison"}
   },
   "powers": {
+    "deadly_miasma": {"name": "Deadly Miasma", "description": "Target enemy unit within 18\" take 6 hits with AP(2).", "charge": 6, "category": "poison"},
+    "unholy_vitality": {"name": "Unholy Vitality", "description": "Target friendly unit within 12\" heals 1 lost wound.", "charge": 7, "category": "poison"},
+    "spreading_plague": {
+      "name": "Spreading Plague",
+      "description": "Roll a d10 for every enemy unit within 12\". On a 3 or less that unit takes 4 hits with AP(1).",
+      "charge": 5,
+      "category": "poison"
+    },
+    "blink": {
+      "name": "Blink",
+      "description": "Target friendly unit within 12\" may move up to 12\" ignoring all models and terrain. This must end outside of 12\" of any enemy units.",
+      "charge": 7,
+      "category": "psychic"
+    },
+    "banishment": {"name": "Banishment", "description": "Target enemy model within 12\" takes 1 automatic hit with AP(7).", "charge": 5, "category": "psychic"},
+    "purge": {"name": "Purge", "description": "Target enemy unit within 12\" take 8 automatic hits with AP(0).", "charge": 6, "category": "psychic"},
     "fireball": {"name": "Fireball", "description": "Target enemy unit within 18\" takes 3 hits with AP(0). This power may be cast unlimited times per turn.", "charge": 7, "category": "fire"},
     "flaming_sword": {"name": "Flaming Sword", "description": "A friendly unit within 6\" gains +1 AP with one Melee weapon until the end of the turn.", "charge": 6, "category": "fire"},
     "searing_bolt": {
