@@ -8,7 +8,7 @@
       "name": "Lord",
       "description": "A lord of the undying machines.",
       "category": "hero",
-      "rules": [{"id": "leader", "x": "Infantry"}, {"id": "wounds", "x": 3}, {"id": "machine_tactics", "x": 1}],
+      "rules": [{"id": "leader", "x": "Infantry"}, {"id": "wounds", "x": 3}, {"id": "striker", "x": 1}],
       "models": [
         {
           "name": "Lord",
@@ -22,7 +22,7 @@
           "options": [
             {
               "replaceWeapon": {"id": "force_blade", "count": 3},
-              "withWeapon": [{"id": "phase_sword", "count": 3}, {"id": "oblivion_scythe", "count": 3}, {"id": "reaper_glaive", "count": 3}, [{"id": "energy_polearm", "count": 3}, "force_beam"]]
+              "withWeapon": [{"id": "phase_sword", "count": 3}, {"id": "oblivion_scythe", "count": 3}, {"id": "reaper_glaive", "count": 3}, [{"id": "energy_polearm", "count": 2}, "force_beam"]]
             },
             {"addWeapon": ["fusion_gauntlet", "fusion_pistol", "antimatter_pistol", "plasma_pistol"], "limit": 1},
             {"addRule": "regeneration_orb"}
@@ -36,7 +36,7 @@
       "name": "Overlord",
       "description": "A high lord of the undying machines.",
       "category": "hero",
-      "rules": [{"id": "leader", "x": "Infantry"}, {"id": "wounds", "x": 3}, {"id": "machine_tactics", "x": 2}],
+      "rules": [{"id": "leader", "x": "Infantry"}, {"id": "wounds", "x": 3}, {"id": "tactician", "x": 2}],
       "models": [
         {
           "name": "Overlord",
@@ -54,7 +54,7 @@
                 {"id": "phase_sword", "count": 4},
                 {"id": "oblivion_scythe", "count": 4},
                 {"id": "reaper_glaive", "count": 4},
-                [{"id": "energy_polearm", "count": 4}, {"id": "force_beam", "count": 2}]
+                [{"id": "energy_polearm", "count": 2}, {"id": "force_beam", "count": 2}]
               ]
             },
             {"limit": 1, "addWeapon": ["fusion_gauntlet", "fusion_pistol", "antimatter_pistol", "plasma_pistol"]},
@@ -97,7 +97,7 @@
       "description": "A high lord with a repulsion engine.",
       "category": "hero",
       "keywords": ["Heavy Infantry"],
-      "rules": ["leader", "hover", {"id": "wounds", "x": 3}, {"id": "machine_tactics", "x": 1}],
+      "rules": ["leader", "hover", {"id": "wounds", "x": 3}, {"id": "tactician", "x": 1}],
       "models": [
         {
           "name": "Annihilator Overlord",
@@ -115,7 +115,7 @@
                 {"id": "phase_sword", "count": 4},
                 {"id": "oblivion_scythe", "count": 4},
                 {"id": "reaper_glaive", "count": 4},
-                [{"id": "energy_polearm", "count": 4}, {"id": "force_beam", "count": 2}]
+                [{"id": "energy_polearm", "count": 2}, {"id": "force_beam", "count": 2}]
               ]
             },
             {"addRule": "regeneration_orb"}
@@ -130,7 +130,7 @@
       "description": "A lord equipped with high tech tri-legs and a tough carapace, rushing into the fray in a flash of steel.",
       "category": "hero",
       "keywords": ["Heavy Infantry"],
-      "rules": ["leader", "strider", {"id": "wounds", "x": 3}, {"id": "machine_tactics", "x": 1}],
+      "rules": ["leader", "strider", {"id": "wounds", "x": 3}, {"id": "tactician", "x": 1}],
       "models": [
         {
           "name": "Tri-Scorpion Lord",
@@ -150,7 +150,7 @@
       "name": "Command Arc",
       "description": "A floating command vehicle.",
       "category": "hero",
-      "rules": ["leader", {"id": "wounds", "x": 3}, "hover", "flare_shielding", {"id": "impact", "x": 3}, {"id": "machine_tactics", "x": 1}],
+      "rules": ["leader", {"id": "wounds", "x": 3}, "hover", {"id": "impact", "x": 3}, {"id": "tactician", "x": 1}],
       "keywords": ["Vehicle"],
       "models": [
         {
@@ -168,8 +168,7 @@
               "withWeapon": [{"id": "phase_sword", "count": 3}, {"id": "oblivion_scythe", "count": 3}, {"id": "reaper_glaive", "count": 3}, [{"id": "energy_polearm", "count": 3}, "force_beam"]]
             },
             {"replaceWeapon": {"id": "gauss_beamer", "mount": ["Front"]}, "withWeapon": {"id": "tesla_cannon", "mount": ["Front"]}},
-            {"addRule": "regeneration_orb"},
-            {"replaceRule": {"id": "machine_tactics", "x": 1}, "withRule": {"id": "machine_tactics", "x": 2}}
+            {"addRule": "regeneration_orb"}
           ],
           "min": 1,
           "max": 1
@@ -507,7 +506,7 @@
       "name": "Outcasts",
       "description": "A group of machine guardians trained to stop Magic powers.",
       "category": "elite",
-      "rules": [{"id": "ward", "x": 1}],
+      "rules": [{"id": "palisade", "x": 1}],
       "models": [
         {
           "name": "Outcast",
@@ -527,7 +526,7 @@
       "name": "Hypersonic Transport",
       "description": "A very fast and highly advanced transport craft.",
       "category": "transport",
-      "rules": ["aircraft", {"id": "transport", "x": 10}, {"id": "wounds", "x": 4}],
+      "rules": ["aircraft", {"id": "transport", "x": 11}, {"id": "wounds", "x": 4}],
       "keywords": ["Vehicle", "Aircraft"],
       "models": [
         {
@@ -571,7 +570,7 @@
       "name": "Transport Arc",
       "description": "A hovering transport craft with optional built-in repair-machines.",
       "category": "transport",
-      "rules": ["hover", "flare_shielding", "vulnerable_side_rear", {"id": "impact", "x": 6}, {"id": "transport", "x": 11}, {"id": "wounds", "x": 4}],
+      "rules": ["hover", "vulnerable_side_rear", {"id": "impact", "x": 6}, {"id": "transport", "x": 11}, {"id": "wounds", "x": 4}],
       "keywords": ["Vehicle"],
       "models": [
         {
@@ -593,7 +592,7 @@
       "name": "Doom Arc",
       "description": "A hovering deadly weapon carrier.",
       "category": "rare",
-      "rules": ["hover", "flare_shielding", "vulnerable_side_rear", {"id": "impact", "x": 6}, {"id": "wounds", "x": 5}],
+      "rules": ["hover", "vulnerable_side_rear", {"id": "impact", "x": 6}, {"id": "wounds", "x": 5}],
       "keywords": ["Vehicle"],
       "models": [
         {
@@ -614,7 +613,7 @@
       "name": "Tesla Arc",
       "description": "A floating vehicle with large tesla cannons.",
       "category": "rare",
-      "rules": ["hover", "flare_shielding", {"id": "wounds", "x": 4}, {"id": "impact", "x": 3}],
+      "rules": ["hover", {"id": "wounds", "x": 4}, {"id": "impact", "x": 3}],
       "keywords": ["Vehicle"],
       "models": [
         {
@@ -658,7 +657,7 @@
       "name": "Heavy Invasion Arc",
       "description": "A large hovering fortress with optional portal.",
       "category": "rare",
-      "rules": ["hover", "flare_shielding", "vulnerable_rear", {"id": "wounds", "x": 6}],
+      "rules": ["hover", "vulnerable_rear", {"id": "wounds", "x": 6}],
       "keywords": ["Vehicle"],
       "models": [
         {
@@ -705,7 +704,7 @@
       "name": "Dimensional Shard Vault",
       "description": "A large hovering vault containing a dimensional shard.",
       "category": "rare",
-      "rules": ["hover", "flare_shielding", "vulnerable_rear", {"id": "wounds", "x": 6}, {"id": "power", "x": 3}, {"id": "psychic_prowess", "x": 2}],
+      "rules": ["hover", "vulnerable_rear", {"id": "wounds", "x": 6}, {"id": "power", "x": 3}, {"id": "psychic_prowess", "x": 2}],
       "keywords": ["Vehicle"],
       "models": [
         {
@@ -727,7 +726,7 @@
       "name": "Doom Walker",
       "description": "A tall walking machine tasked with a large cannon.",
       "category": "rare",
-      "rules": ["walker", "flare_shielding", {"id": "wounds", "x": 4}, {"id": "impact", "x": 3}],
+      "rules": ["walker", {"id": "wounds", "x": 4}, {"id": "impact", "x": 3}],
       "keywords": ["Vehicle"],
       "models": [
         {
@@ -748,7 +747,7 @@
       "name": "Machine Stalker",
       "description": "A large walking vehicle with underslung mounted weapon and massive crushing legs.",
       "category": "rare",
-      "rules": ["walker", "flare_shielding", "vulnerable_side_rear", {"id": "wounds", "x": 5}, "targeting_relay"],
+      "rules": ["walker", "vulnerable_side_rear", {"id": "wounds", "x": 5}, "targeting_relay"],
       "keywords": ["Vehicle"],
       "models": [
         {
@@ -824,8 +823,8 @@
     "twin_heavy_gauss_rifle": {"name": "Twin Heavy Gauss Rifle", "attacks": 2, "ap": 3, "short": 18, "medium": 36, "rules": ["heavy", "rapid_fire"]},
     "gauss_sniper": {"name": "Gauss Sniper", "attacks": 1, "short": 18, "medium": 36, "ap": 3, "rules": ["sniper"]},
     "gauss_beamer": {"name": "Gauss Beamer", "attacks": 1, "ap": 4, "short": 12, "medium": 24},
-    "heavy_gauss_beamer": {"name": "Heavy Gauss Beamer", "attacks": 1, "ap": 8, "short": 18, "medium": 36, "rules": ["heavy"]},
-    "twin_heavy_gauss_beamer": {"name": "Twin Heavy Gauss Beamer", "attacks": 2, "ap": 7, "short": 18, "medium": 36, "rules": ["heavy"]},
+    "heavy_gauss_beamer": {"name": "Heavy Gauss Beamer", "attacks": 1, "ap": 8, "short": 18, "medium": 36, "rules": ["heavy", {"id": "deadly", "x": 1}]},
+    "twin_heavy_gauss_beamer": {"name": "Twin Heavy Gauss Beamer", "attacks": 2, "ap": 7, "short": 18, "medium": 36, "rules": ["heavy", {"id": "deadly", "x": 1}]},
     "tesla_rifle": {"name": "Tesla Rifle", "attacks": 1, "ap": 2, "short": 12, "medium": 24, "rules": ["assault", {"id": "lethal", "x": 1}]},
     "twin_tesla_rifle": {"name": "Twin Tesla Rifle", "attacks": 2, "ap": 2, "short": 12, "medium": 24, "rules": ["assault", {"id": "lethal", "x": 1}]},
     "tesla_cannon": {"name": "Tesla Cannon", "attacks": 1, "ap": 4, "short": 12, "medium": 24, "rules": ["assault", {"id": "blast", "x": 3}]},
@@ -840,9 +839,12 @@
     "doom_cannon": {
       "name": "Doom Cannon",
       "rules": ["heavy"],
-      "profiles": [{"name": "Focused", "attacks": 1, "short": 24, "medium": 48, "ap": 8}, {"name": "Dispersed", "attacks": 1, "short": 24, "medium": 48, "ap": 4, "rules": [{"id": "blast", "x": 6}]}]
+      "profiles": [
+        {"name": "Focused", "attacks": 1, "short": 24, "medium": 48, "ap": 8, "rules": [{"id": "deadly", "x": 2}]},
+        {"name": "Dispersed", "attacks": 1, "short": 24, "medium": 48, "ap": 4, "rules": [{"id": "blast", "x": 6}]}
+      ]
     },
-    "doom_ray": {"name": "Doom Ray", "attacks": 1, "short": 18, "medium": 36, "ap": 7, "rules": ["assault"]},
+    "doom_ray": {"name": "Doom Ray", "attacks": 1, "short": 18, "medium": 36, "ap": 7, "rules": ["assault", {"id": "deadly", "x": 1}]},
     "heavy_doom_ray": {"name": "Heavy Doom Ray", "attacks": 1, "short": 18, "medium": 36, "ap": 7, "rules": ["assault", {"id": "blast", "x": 3}]},
     "eye_beam": {"name": "Eye Beam", "attacks": 1, "ap": 3, "short": 6, "medium": 12, "rules": ["pistol"]},
     "dimensional_beam": {"name": "Dimensional Beam", "attacks": 2, "ap": 2, "short": 6, "medium": 12, "rules": ["pistol"]},
@@ -880,12 +882,12 @@
       "flavor": "A significantly more powerful orb known to reanimate entire armies in masses.",
       "points": 5
     },
-    "nanorobot_cloak": {
-      "name": "Nanorobot Cloak",
-      "rule": "legend_nanobot_cloak",
-      "description": "Upgrade one Leader model with Nanorobot Cloak.",
+    "flare_shield": {
+      "name": "Flare Shield",
+      "rule": "legend_flare_shielding",
+      "description": "Upgrade one _Vehicle_ model with Flare Shield.",
       "flavor": "A cloak filled with repair nanorobots which repairs the bearer of damage.",
-      "points": 5
+      "points": 10
     },
     "Prideful Leader": {
       "name": "Prideful Leader",
@@ -900,12 +902,6 @@
     "legend_nanobot_cloak": {"name": "Nanorobot Cloak", "description": "When this model is hit by an attack, roll a D10. On a 3 or less, that attack is prevented.", "points": 1},
     "relentless_advance": {"name": "Relentless Advance", "description": "Friendly _Infantry_ units within 6\" add +1\" to their Movement characteristic.", "points": 5},
     "plasma_injector": {"name": "Plasma Injector", "description": "Once per round, this unit may re-roll a single failed Strength test.", "points": 5},
-    "machine_tactics": {
-      "name": "Machine Tactics",
-      "inputs": ["x"],
-      "description": "When this unit is activated, choose up to X friendly _Infantry_ units within 6\" to receive one of the following bonuses until the end of the round: \n * Re-roll failed Strength tests of 9+ \n * Re-roll failed Accuracy tests of 9+\n * +3\" of Movement",
-      "points": ["rule.x", {"multiply": 10}]
-    },
     "warden_tactics": {"name": "Commanding Presence", "description": "Once per round, a friendly _Infantry_ unit within 6\" may gain +2 Initiative for a skill test.", "points": 5},
     "reanimation_beam": {
       "name": "Reanimation Beam",
@@ -943,7 +939,7 @@
       "points": 10
     },
     "extra_space": {"name": "Extra Space", "description_short": "Transport +10", "hidden": true, "description": "This model gains +10 Transport space.", "points": 10},
-    "flare_shielding": {"name": "Flare Shields", "description": "Subtract 1 from all Damage Chart rolls for this model.", "points": 10},
+    "legend_flare_shielding": {"name": "Flare Shield", "description": "Subtract 2 AP from all incoming hits.", "points": 10},
     "phase_field": {"name": "Phase Field", "description": "Once per round, a friendly _Infantry_ unit within 6\" may gain +1 Save.", "points": 10},
     "anti_gravity_generators": {
       "name": "Anti-Grav Generators",

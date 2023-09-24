@@ -1889,6 +1889,11 @@
       "description": "Up to X times per round, this model may attempt to dispel a Power cast within 24\". Roll a D10 and if the value is equal to or lower than the rolled value for the test, the power is stopped. If the power is not stopped, no further attempts may be made to stop the same power.",
       "points": [5, {"multiply": "rule.x"}]
     },
+    "palisade": {
+      "name": "Palisade",
+      "description": "This unit may attempt to dispel multiple _Powers_ within 24\" each round based on the total number of model with this ability: \n * 1-5 Models: 1 Power \n * 6+ Models: 2 Powers \n * 11+ Models: 3 Powers",
+      "points": [2]
+    },
     "defensive": {"name": "Defensive", "inputs": ["x"], "description": "This model increases its Save by X.", "points": [2, {"multiply": "rule.x"}]},
     "hover": {"name": "Hover", "description": "This model may ignore difficult terrain and obstacles of height 2\" or less when moving.", "points": 1},
     "agile": {"name": "Agile", "description": "This model may ignore low obstacles of 1\" or less in height when moving.", "points": 0.5},
