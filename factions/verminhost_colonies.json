@@ -633,7 +633,6 @@
     "biting_winds": {"name": "Biting Winds", "description": "Target enemy unit within 24\" suffers 4 hits with AP(0). They half their movement until the end of the activation phase.", "charge": 6},
     "surge": {"name": "Galvanic Surge", "description": "Target friendly unit within 12“ gains +1 Accuracy or Strength until the end of the activation phase. It then suffers 1 Shock.", "charge": 7}
   },
-  "powerCategories": {},
   "strategies": [
     {
       "name": "Hit and Run",
