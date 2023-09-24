@@ -931,7 +931,7 @@
           "weapons": ["heavy_machinegun"],
           "options": [
             {"replaceWeapon": "heavy_machinegun", "withWeapon": ["fusion_cannon", "plasma_cannon", "thermal_lance"]},
-            {"addWeapon": ["heavy_flamethrower", "minigun"], "limit": 1},
+            {"addWeapon": ["heavy_flamethrower", "gatling_gun"], "limit": 1},
             {"addWeapon": "twin_missile_launcher"}
           ],
           "min": 1,
@@ -965,7 +965,7 @@
                 "gravity_cannon",
                 "fusion_cannon",
                 "plasma_cannon",
-                "minigun",
+                "gatling_gun",
                 "missile_launcher",
                 "heavy_flamethrower",
                 "plasma_repeater",
@@ -1037,7 +1037,7 @@
       "options": [
         {
           "replaceWeapon": "heavy_flamethrower",
-          "withWeapon": ["heavy_machinegun", "missile_launcher", "laser_cannon", "fusion_cannon", "plasma_cannon", "gravity_cannon", "thermal_lance", "autocannon", "minigun"]
+          "withWeapon": ["heavy_machinegun", "missile_launcher", "laser_cannon", "fusion_cannon", "plasma_cannon", "gravity_cannon", "thermal_lance", "autocannon", "gatling_gun"]
         }
       ]
     },
@@ -1198,7 +1198,7 @@
                 {"id": "twin_fusion_rifle", "mount": ["Front"]},
                 {"id": "twin_thermal_rifle", "mount": ["Front"]},
                 {"id": "gravity_cannon", "mount": ["Front"]},
-                {"id": "twin_minigun", "mount": ["Front"]}
+                {"id": "twin_gatling_gun", "mount": ["Front"]}
               ]
             },
             {
@@ -1264,11 +1264,11 @@
           "options": [
             {
               "replaceWeapon": {"id": "twin_fusion_cannon", "mount": ["Front"]},
-              "withWeapon": [{"id": "twin_heavy_machinegun", "mount": ["Front"]}, {"id": "twin_missile_launcher", "mount": ["Front"]}, {"id": "twin_minigun", "mount": ["Front"]}]
+              "withWeapon": [{"id": "twin_heavy_machinegun", "mount": ["Front"]}, {"id": "twin_missile_launcher", "mount": ["Front"]}, {"id": "twin_gatling_gun", "mount": ["Front"]}]
             },
             {
               "replaceWeapon": {"id": "twin_laser_cannon", "mount": ["Front", "Left", "Right"]},
-              "withWeapon": [{"id": "twin_minigun", "mount": ["Front", "Left", "Right"]}, {"id": "twin_heavy_plasma_cannon", "mount": ["Front", "Left", "Right"]}]
+              "withWeapon": [{"id": "twin_gatling_gun", "mount": ["Front", "Left", "Right"]}, {"id": "twin_heavy_plasma_cannon", "mount": ["Front", "Left", "Right"]}]
             },
             {"addRule": [{"id": "open_topped", "x": 12}]}
           ],
@@ -1623,7 +1623,7 @@
           "defense": 10,
           "reflexes": 6,
           "rules": ["aircraft", {"id": "wounds", "x": 5}, "hover_mode"],
-          "weapons": ["twin_minigun", {"id": "twin_laser_cannon", "mount": ["Front"]}],
+          "weapons": ["twin_gatling_gun", {"id": "twin_laser_cannon", "mount": ["Front"]}],
           "options": [
             {
               "replaceWeapon": {"id": "twin_laser_cannon", "mount": ["Front"]},

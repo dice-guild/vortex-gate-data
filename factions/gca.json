@@ -445,7 +445,7 @@
           "options": [
             {"addRule": [{"id": "dozer", "name": "Dozer Blade"}, "field_radio"]},
             {"addWeapon": [{"id": "light_machinegun", "count": 1}, {"id": "twin_combat_rifle", "count": 1}], "limit": 1},
-            {"replaceWeapon": "light_battle_cannon", "withWeapon": ["twin_minigun", "missile_rack"]},
+            {"replaceWeapon": "light_battle_cannon", "withWeapon": ["twin_gatling_gun", "missile_rack"]},
             {"addWeapon": [{"id": "heavy_volley_gun", "count": 2, "mount": ["Front"]}, {"id": "autocannon", "count": 2, "mount": ["Front"]}], "limit": 1}
           ],
           "min": 1,
@@ -635,7 +635,7 @@
               ],
               "limit": 1
             },
-            {"replaceWeapon": {"id": "twin_heavy_machinegun", "mount": ["Front"]}, "withWeapon": {"id": "twin_minigun", "mount": ["Front"]}},
+            {"replaceWeapon": {"id": "twin_heavy_machinegun", "mount": ["Front"]}, "withWeapon": {"id": "twin_gatling_gun", "mount": ["Front"]}},
             {"addRule": ["spiked_ram", {"id": "dozer", "name": "Dozer Blade"}]}
           ],
           "rules": [],
@@ -750,7 +750,7 @@
           "defense": 7,
           "reflexes": 6,
           "weapons": ["twin_heavy_machinegun"],
-          "options": [{"replaceWeapon": "twin_heavy_machinegun", "withWeapon": ["twin_laser_cannon", "twin_minigun", "missile_launcher"]}]
+          "options": [{"replaceWeapon": "twin_heavy_machinegun", "withWeapon": ["twin_laser_cannon", "twin_gatling_gun", "missile_launcher"]}]
         }
       ],
       "keywords": ["Fortification"]
