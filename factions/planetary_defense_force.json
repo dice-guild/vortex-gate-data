@@ -857,10 +857,9 @@
             },
             {"addWeapon": ["light_machinegun", "twin_heavy_auto_rifle"], "limit": 1},
             {"addWeapon": ["hunter_missiles"]},
-            {"addRule": [{"id": "dozer", "name": "Dozer Blade"}, "field_radio"]},
-            {"replaceRule": [{"id": "tactician", "x": 1}], "withRule": [{"id": "tactician", "x": 2}]}
+            {"addRule": [{"id": "dozer", "name": "Dozer Blade"}, "field_radio"]}
           ],
-          "rules": [{"id": "tactician", "x": 1}, {"id": "wounds", "x": 5}, {"id": "impact", "x": 6}, {"id": "leader", "x": "Vehicle"}, "vulnerable_side_rear"],
+          "rules": [{"id": "tactician", "x": 1}, {"id": "wounds", "x": 5}, {"id": "impact", "x": 6}, "vulnerable_side_rear"],
           "min": 1,
           "max": 1
         }
