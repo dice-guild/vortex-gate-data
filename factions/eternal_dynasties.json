@@ -970,7 +970,6 @@
       "cost": 1
     }
   ],
-  "powerCategories": {"solar": {"name": "Solar", "subfactions": ["solar_fire"]}, "lunar": {"name": "Lunar", "subfactions": ["combat_focus"]}},
   "powers": {
     "deconstruction_beam": {"name": "Deconstruction Beam", "description": "Target enemy unit within 12\" takes 2 hits with AP(4).", "charge": 5},
     "dimensional_rift": {"name": "Dimensional Rift", "description": "Target enemy unit within 12\" gets -2\" of Movement until the end of the round.", "charge": 6},

@@ -490,7 +490,7 @@
                     "weapons": ["light_battle_cannon"],
                     "options": [
                         {"addRule": [{"id": "dozer", "name": "Dozer Blade"}, "field_radio"]},
-                        {"addWeapon": [{"id": "light_machinegun", "count": 1}, {"id": "twin_marine_rifle", "count": 1}], "limit": 1},
+                        {"addWeapon": [{"id": "light_machinegun", "count": 1}, {"id": "twin_heavy_auto_rifle", "count": 1}], "limit": 1},
                         {"replaceWeapon": "light_battle_cannon", "withWeapon": ["twin_minigun", "missile_rack"]},
                         {"addWeapon": [{"id": "heavy_volley_gun", "count": 2, "mount": ["Front"]}, {"id": "autocannon", "count": 2, "mount": ["Front"]}], "limit": 1}
                     ],
@@ -631,8 +631,8 @@
                     "fight": 6,
                     "defense": 11,
                     "reflexes": 6,
-                    "weapons": ["twin_marine_rifle"],
-                    "options": [{"addWeapon": ["twin_marine_rifle", "hunter_missiles"]}, {"addRule": ["spiked_ram", {"id": "dozer", "name": "Dozer Blade"}]}],
+                    "weapons": ["twin_heavy_auto_rifle"],
+                    "options": [{"addWeapon": ["twin_heavy_auto_rifle", "hunter_missiles"]}, {"addRule": ["spiked_ram", {"id": "dozer", "name": "Dozer Blade"}]}],
                     "rules": [],
                     "min": 1,
                     "max": 1
@@ -654,10 +654,10 @@
                     "fight": 6,
                     "defense": 11,
                     "reflexes": 6,
-                    "weapons": ["twin_marine_rifle", "heavy_flamethrower"],
+                    "weapons": ["twin_heavy_auto_rifle", "heavy_flamethrower"],
                     "options": [
                         {"addWeapon": ["heavy_flamethrower", "hunter_missiles"]},
-                        {"replaceWeapon": "twin_marine_rifle", "withWeapon": "twin_grenade_launcher"},
+                        {"replaceWeapon": "twin_heavy_auto_rifle", "withWeapon": "twin_grenade_launcher"},
                         {"addRule": ["spiked_ram", {"id": "dozer", "name": "Dozer Blade"}]}
                     ],
                     "rules": [],
@@ -687,7 +687,7 @@
                         {"id": "assault_rifle_array", "mount": ["Right", "Front"]}
                     ],
                     "options": [
-                        {"addWeapon": ["twin_marine_rifle", "heavy_fusion_rifle", "hunter_missiles"]},
+                        {"addWeapon": ["twin_heavy_auto_rifle", "heavy_fusion_rifle", "hunter_missiles"]},
                         {
                             "replaceWeapon": [{"id": "assault_rifle_array", "mount": ["Left", "Front"]}, {"id": "assault_rifle_array", "mount": ["Right", "Front"]}],
                             "withWeapon": [
@@ -723,7 +723,7 @@
                     "reflexes": 5,
                     "weapons": ["pistol", {"id": "light_handweapon", "count": 2}],
                     "options": [
-                        {"replaceWeapon": "pistol", "withWeapon": ["marine_pistol", "plasma_pistol", "combat_shotgun"]},
+                        {"replaceWeapon": "pistol", "withWeapon": ["heavy_pistol", "plasma_pistol", "combat_shotgun"]},
                         {"replaceWeapon": {"id": "light_handweapon", "count": 2}, "withWeapon": ["handweapon", "energy_handweapon", "energy_powerweapon"]}
                     ],
                     "min": 1,
@@ -767,7 +767,7 @@
                         {"addRule": [{"id": "dozer", "name": "Dozer Blade"}, "field_radio", "extra_armor"]},
                         {"replaceWeapon": "nova_cannon", "withWeapon": ["battle_cannon", "siege_cannon", "twin_autocannon", "tank_hunter_cannon", "heavy_plasma_cannon", "gatling_cannon"]},
                         {"replaceWeapon": {"id": "heavy_flamethrower", "mount": ["Front"]}, "withWeapon": [{"id": "heavy_machinegun", "mount": ["Front"]}, {"id": "laser_cannon", "mount": ["Front"]}]},
-                        {"addWeapon": [{"id": "light_machinegun", "count": 1}, {"id": "twin_marine_rifle", "count": 1}], "limit": 1},
+                        {"addWeapon": [{"id": "light_machinegun", "count": 1}, {"id": "twin_heavy_auto_rifle", "count": 1}], "limit": 1},
                         {"addWeapon": ["hunter_missiles"]},
                         {
                             "addWeapon": [

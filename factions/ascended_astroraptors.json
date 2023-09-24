@@ -537,7 +537,7 @@
             {"addRule": [{"id": "dozer", "name": "Dozer Blade"}]},
             {"replaceWeapon": "nova_cannon", "withWeapon": ["battle_cannon", "siege_cannon", "twin_autocannon", "tank_hunter_cannon", "heavy_plasma_cannon", "gatling_cannon"]},
             {"replaceWeapon": {"id": "heavy_flamethrower", "mount": ["Front"]}, "withWeapon": [{"id": "heavy_machinegun", "mount": ["Front"]}, {"id": "laser_cannon", "mount": ["Front"]}]},
-            {"addWeapon": [{"id": "light_machinegun", "count": 1}, {"id": "twin_marine_rifle", "count": 1}], "limit": 1},
+            {"addWeapon": [{"id": "light_machinegun", "count": 1}, {"id": "twin_heavy_auto_rifle", "count": 1}], "limit": 1},
             {"addWeapon": ["hunter_missiles"]},
             {
               "addWeapon": [
@@ -614,7 +614,7 @@
           "weapons": [{"id": "heavy_flamethrower", "mount": ["Front"]}, "heavy_flamethrower"],
           "options": [
             {"addRule": [{"id": "dozer", "name": "Dozer Blade"}]},
-            {"addWeapon": [{"id": "light_machinegun", "count": 1}, {"id": "twin_marine_rifle", "count": 1}], "limit": 1},
+            {"addWeapon": [{"id": "light_machinegun", "count": 1}, {"id": "twin_heavy_auto_rifle", "count": 1}], "limit": 1},
             {"addWeapon": ["hunter_missiles"]},
             {"addWeapon": [[{"id": "laser_carbine_array", "mount": ["Left"]}, {"id": "laser_carbine_array", "mount": ["Right"]}]]},
             {"replaceWeapon": "heavy_flamethrower", "withWeapon": ["laser_machinegun", "heavy_machinegun"]},
@@ -645,7 +645,7 @@
           "weapons": [{"id": "heavy_fusion_rifle", "mount": ["Front"]}, "fusion_cannon"],
           "options": [
             {"addRule": [{"id": "dozer", "name": "Dozer Blade"}, "extra_armor"]},
-            {"addWeapon": [{"id": "light_machinegun", "count": 1}, {"id": "twin_marine_rifle", "count": 1}], "limit": 1},
+            {"addWeapon": [{"id": "light_machinegun", "count": 1}, {"id": "twin_heavy_auto_rifle", "count": 1}], "limit": 1},
             {"addWeapon": ["hunter_missiles"]},
             {"replaceWeapon": "fusion_cannon", "withWeapon": ["acid_cannon", "flamestorm_cannon"]},
             {"replaceWeapon": {"id": "heavy_fusion_rifle", "mount": ["Front"]}, "withWeapon": [{"id": "heavy_machinegun", "mount": ["Front"]}, {"id": "heavy_flamethrower", "mount": ["Front"]}]}
@@ -675,7 +675,7 @@
           "weapons": [{"id": "heavy_flamethrower", "mount": ["Front"]}, "twin_gatling_aa"],
           "options": [
             {"addRule": [{"id": "dozer", "name": "Dozer Blade"}, "extra_armor"]},
-            {"addWeapon": [{"id": "light_machinegun", "count": 1}, {"id": "twin_marine_rifle", "count": 1}], "limit": 1},
+            {"addWeapon": [{"id": "light_machinegun", "count": 1}, {"id": "twin_heavy_auto_rifle", "count": 1}], "limit": 1},
             {
               "replaceWeapon": "twin_gatling_aa",
               "withWeapon": [{"id": "twin_shard_mortar", "count": 2}, "artillery_cannon", {"id": "twin_aa_autocannon", "count": 2}, "eagle_rockets", "death_missile"]
