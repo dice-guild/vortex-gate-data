@@ -1428,13 +1428,6 @@
     "grand_claw": {"name": "Grand Claw", "profiles": [{"name": "elite", "attacks": 5, "short": "Melee", "ap": 7}, {"name": "Sweep", "attacks": 10, "short": "Melee", "ap": 3}]},
     "twin_mini_mg": {"name": "Twin Mini-MGs", "attacks": 6, "ap": 2, "short": 9, "medium": 18, "rules": ["assault"]},
     "twin_double_shotgun": {"name": "Twin Double Shotgun", "attacks": 4, "short": 6, "medium": 12, "ap": 2, "rules": ["assault", "brutal"]},
-    "combi_rifle": {
-      "name": "Combi Rocket Launcher",
-      "profiles": [
-        {"name": "Assault Carbine", "attacks": 1, "ap": 1, "short": 9, "medium": 18, "rules": ["assault", "rapid_fire"]},
-        {"name": "Rocket Launcher", "attacks": 1, "short": 12, "medium": 24, "ap": 6, "rules": ["assault"]}
-      ]
-    },
     "cutlass": {"name": "Cutlass", "ap": 2, "attacks": 1, "short": "Melee"},
     "energy_greatweapon": {"name": "Energy Sawblade", "attacks": 1, "ap": 4, "short": "Melee"},
     "beast_bite": {"name": "Beast Bite", "attacks": 2, "ap": 1, "short": "Melee"},
