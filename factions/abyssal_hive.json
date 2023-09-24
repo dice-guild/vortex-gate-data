@@ -50,7 +50,7 @@
           "fight": 5,
           "defense": 12,
           "movement": 8,
-          "rules": ["leader", {"id": "power", "x": 1}, "regeneration_pods", "tactician", {"id": "wounds", "x": 8}],
+          "rules": ["leader", {"id": "power", "x": 1}, "regeneration_pods", "tactician", {"id": "wounds", "x": 5}],
           "weapons": [{"id": "large_razor_talons", "count": 3}, "spine_salvo"],
           "options": [{"replaceWeapon": {"id": "large_razor_talons", "count": 3}, "withWeapon": [{"id": "crushing_claws", "count": 3}]}, {"addRule": [{"id": "transport", "x": 12}]}],
           "min": 1,
