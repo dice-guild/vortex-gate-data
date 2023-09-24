@@ -59,34 +59,6 @@
         }
       ]
     },
-    "platoon_commander": {
-      "name": "Platoon Commander",
-      "description": "Foot infantry platoon leader of the imperial defense force.",
-      "category": "hero",
-      "rules": [{"id": "leader", "x": "Infantry"}, {"id": "tactician", "x": 1}, {"id": "wounds", "x": 2}],
-      "models": [
-        {
-          "name": "Platoon Commander",
-          "courage": 7,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 6,
-          "reflexes": 6,
-          "movement": 6,
-          "weapons": ["auto_rifle", {"id": "light_handweapon", "count": 2}],
-          "options": [
-            {"replaceWeapon": ["auto_rifle", {"id": "light_handweapon", "count": 2}], "withWeapon": [["pistol", {"id": "light_handweapon", "count": 3}]]},
-            {"replaceWeapon": "pistol", "withWeapon": ["marine_pistol", "plasma_pistol"]},
-            {
-              "replaceWeapon": {"id": "light_handweapon", "count": 3},
-              "withWeapon": [{"id": "energy_handweapon", "count": 3}, {"id": "energy_powerweapon", "count": 3}, {"id": "handweapon", "count": 3}]
-            }
-          ],
-          "min": 1,
-          "max": 1
-        }
-      ]
-    },
     "commissar": {
       "name": "Commissar",
       "description": "A field officer assigned to keep soldiers motivated and in line.",
@@ -1038,7 +1010,10 @@
           "rules": [{"id": "wounds", "x": 5}, {"id": "impact", "x": 3}, "vulnerable_side_rear"],
           "weapons": [{"id": "twin_aa_autocannon", "count": 2}, {"id": "heavy_flamethrower", "mount": ["Front"]}],
           "options": [
-            {"replaceWeapon": {"id": "twin_aa_autocannon", "count": 2}, "withWeapon": ["plasma_cannon", "fusion_cannon", "acid_cannon", "flamestorm_cannon", {"id": "heavy_mortar", "count": 4}, "artillery_cannon", "eagle_rockets", "death_missile"]},
+            {
+              "replaceWeapon": {"id": "twin_aa_autocannon", "count": 2},
+              "withWeapon": ["plasma_cannon", "fusion_cannon", "acid_cannon", "flamestorm_cannon", {"id": "heavy_mortar", "count": 4}, "artillery_cannon", "eagle_rockets", "death_missile"]
+            },
             {
               "replaceWeapon": [{"id": "heavy_flamethrower", "mount": ["Front"]}],
               "withWeapon": [

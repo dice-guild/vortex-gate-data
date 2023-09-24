@@ -1924,7 +1924,7 @@
     {
       "name": "Masterfully Engineered",
       "phase": "activation",
-      "description": "Use before taking Save rolls for a unit. It gets +1 Save.",
+      "description": "Use before taking Save rolls for a unit. Reduce the AP of all hits by 2.",
       "flavor": "With the best implants and engineering that can be found, it's easy to take a hit and keep standing.",
       "cost": 2
     },

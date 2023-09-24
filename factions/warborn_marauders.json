@@ -43,7 +43,7 @@
           "rules": ["leader", {"id": "warrior", "x": 1}, {"id": "wounds", "x": 3}],
           "weapons": ["carbine", {"id": "handweapon", "count": 4}],
           "options": [
-            {"replaceWeapon": ["carbine"], "withWeapon": ["twin_carbine", "combi_heavy_flamer", "combi_rocket_launcher"]},
+            {"replaceWeapon": ["carbine"], "withWeapon": ["twin_carbine", "combi_rifle"]},
             {"replaceWeapon": ["carbine", {"id": "handweapon", "count": 4}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 5}]]},
             {
               "replaceWeapon": {"id": "handweapon", "count": 5},
@@ -76,7 +76,7 @@
           "rules": [{"id": "impact", "x": 1}, {"id": "leader", "x": "Infantry, Biker"}, {"id": "warrior", "x": 1}, {"id": "wounds", "x": 3}],
           "weapons": ["carbine", {"id": "handweapon", "count": 4}, {"id": "twin_double_shotgun", "mount": ["Front"]}],
           "options": [
-            {"replaceWeapon": ["carbine"], "withWeapon": ["twin_carbine", "combi_heavy_flamer", "combi_rocket_launcher", "double_shotgun"]},
+            {"replaceWeapon": ["carbine"], "withWeapon": ["twin_carbine", "combi_rifle", "double_shotgun"]},
             {"replaceWeapon": ["carbine", {"id": "handweapon", "count": 4}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 5}]]},
             {
               "replaceWeapon": {"id": "handweapon", "count": 5},
@@ -117,7 +117,7 @@
           "rules": ["leader", {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
           "weapons": ["carbine", {"id": "handweapon", "count": 2}],
           "options": [
-            {"replaceWeapon": "carbine", "withWeapon": ["twin_carbine", "combi_heavy_flamer", "combi_rocket_launcher"]},
+            {"replaceWeapon": "carbine", "withWeapon": ["twin_carbine", "combi_rifle"]},
             {"replaceWeapon": ["carbine", {"id": "handweapon", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 3}]]},
             {
               "replaceWeapon": {"id": "handweapon", "count": 3},
@@ -148,7 +148,7 @@
           "rules": [{"id": "impact", "x": 1}, {"id": "leader", "x": "Infantry, Biker"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
           "weapons": ["carbine", {"id": "handweapon", "count": 2}, {"id": "twin_carbine", "mount": ["Front"]}],
           "options": [
-            {"replaceWeapon": "carbine", "withWeapon": ["twin_carbine", "combi_heavy_flamer", "combi_rocket_launcher"]},
+            {"replaceWeapon": "carbine", "withWeapon": ["twin_carbine", "combi_rifle"]},
             {"replaceWeapon": ["carbine", {"id": "handweapon", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 3}]]},
             {
               "replaceWeapon": {"id": "handweapon", "count": 3},
@@ -188,7 +188,7 @@
           "rules": ["engineer", "leader", {"id": "wounds", "x": 3}, "marksman"],
           "weapons": ["carbine", {"id": "handweapon", "count": 2}],
           "options": [
-            {"replaceWeapon": "carbine", "withWeapon": ["twin_carbine", "combi_heavy_flamer", "combi_rocket_launcher", "plasma_rifle", "shock_gun", "rocket_launcher"]},
+            {"replaceWeapon": "carbine", "withWeapon": ["twin_carbine", "combi_rifle", "plasma_rifle", "shock_gun", "rocket_launcher"]},
             {"replaceWeapon": ["carbine", {"id": "handweapon", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 3}]]},
             {"replaceWeapon": "heavy_pistol", "withWeapon": ["plasma_pistol", "teleport_pistol", "fusion_pistol"]},
             {
@@ -220,7 +220,7 @@
           "rules": ["engineer", {"id": "impact", "x": 1}, {"id": "leader", "x": "Infantry, Biker"}, {"id": "wounds", "x": 3}],
           "weapons": ["carbine", {"id": "handweapon", "count": 2}, {"id": "twin_carbine", "mount": ["Front"]}],
           "options": [
-            {"replaceWeapon": "carbine", "withWeapon": ["twin_carbine", "combi_heavy_flamer", "combi_rocket_launcher", "plasma_rifle", "shock_gun", "rocket_launcher"]},
+            {"replaceWeapon": "carbine", "withWeapon": ["twin_carbine", "combi_rifle", "plasma_rifle", "shock_gun", "rocket_launcher"]},
             {"replaceWeapon": ["carbine", {"id": "handweapon", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 3}]]},
             {"replaceWeapon": "heavy_pistol", "withWeapon": ["plasma_pistol", "teleport_pistol", "fusion_pistol"]},
             {
@@ -296,7 +296,7 @@
           "rules": ["medic", "support", {"id": "wounds", "x": 2}],
           "weapons": ["carbine", {"id": "handweapon", "count": 2}],
           "options": [
-            {"replaceWeapon": "carbine", "withWeapon": ["twin_carbine", "combi_heavy_flamer", "combi_rocket_launcher"]},
+            {"replaceWeapon": "carbine", "withWeapon": ["twin_carbine", "combi_rifle"]},
             {"replaceWeapon": ["carbine", {"id": "handweapon", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 3}]]},
             {"replaceWeapon": "heavy_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol"]},
             {
@@ -327,7 +327,7 @@
           "rules": [{"id": "impact", "x": 1}, "medic", {"id": "support", "x": "Infantry, Biker"}, {"id": "wounds", "x": 2}],
           "weapons": ["carbine", {"id": "handweapon", "count": 2}, {"id": "twin_carbine", "mount": ["Front"]}],
           "options": [
-            {"replaceWeapon": "carbine", "withWeapon": ["twin_carbine", "combi_heavy_flamer", "combi_rocket_launcher"]},
+            {"replaceWeapon": "carbine", "withWeapon": ["twin_carbine", "combi_rifle"]},
             {"replaceWeapon": ["carbine", {"id": "handweapon", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 3}]]},
             {"replaceWeapon": "heavy_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol"]},
             {
@@ -394,7 +394,7 @@
           "reflexes": 5,
           "weapons": ["carbine", "handweapon"],
           "options": [
-            {"replaceWeapon": ["carbine"], "withWeapon": ["twin_carbine", "combi_heavy_flamer", "combi_rocket_launcher"]},
+            {"replaceWeapon": ["carbine"], "withWeapon": ["twin_carbine", "combi_rifle"]},
             {
               "replaceWeapon": {"id": "handweapon", "count": 2},
               "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "energy_greatweapon", "count": 2}, {"id": "energy_powerweapon", "count": 2}]
@@ -422,7 +422,7 @@
           "reflexes": 5,
           "weapons": ["carbine", {"id": "handweapon", "count": 2}],
           "options": [
-            {"replaceWeapon": "carbine", "withWeapon": ["twin_carbine", "combi_heavy_flamer", "combi_rocket_launcher"]},
+            {"replaceWeapon": "carbine", "withWeapon": ["twin_carbine", "combi_rifle"]},
             {"replaceWeapon": ["carbine", {"id": "handweapon", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 3}], {"id": "energy_greatweapon", "count": 4}]},
             {
               "replaceWeapon": {"id": "handweapon", "count": 3},
@@ -454,7 +454,7 @@
           "reflexes": 5,
           "weapons": ["carbine", "handweapon"],
           "options": [
-            {"replaceWeapon": "carbine", "withWeapon": ["twin_carbine", "combi_heavy_flamer", "combi_rocket_launcher"]},
+            {"replaceWeapon": "carbine", "withWeapon": ["twin_carbine", "combi_rifle"]},
             {"replaceWeapon": ["carbine", "handweapon"], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 2}]]},
             {
               "replaceWeapon": {"id": "handweapon", "count": 2},
@@ -492,7 +492,7 @@
           "reflexes": 6,
           "weapons": ["carbine", "handweapon"],
           "options": [
-            {"replaceWeapon": "carbine", "withWeapon": ["twin_carbine", "combi_heavy_flamer", "combi_rocket_launcher"]},
+            {"replaceWeapon": "carbine", "withWeapon": ["twin_carbine", "combi_rifle"]},
             {
               "replaceWeapon": {"id": "handweapon", "count": 2},
               "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "energy_greatweapon", "count": 2}, {"id": "energy_powerweapon", "count": 2}]
@@ -528,7 +528,7 @@
           "reflexes": 5,
           "weapons": ["carbine", "handweapon"],
           "options": [
-            {"replaceWeapon": ["carbine"], "withWeapon": ["twin_carbine", "combi_heavy_flamer", "combi_rocket_launcher"]},
+            {"replaceWeapon": ["carbine"], "withWeapon": ["twin_carbine", "combi_rifle"]},
             {
               "replaceWeapon": {"id": "handweapon", "count": 2},
               "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "energy_greatweapon", "count": 2}, {"id": "energy_powerweapon", "count": 2}]
@@ -561,8 +561,8 @@
             {
               "replaceWeapon": "twin_carbine",
               "withWeapon": [
-                "combi_heavy_flamer",
-                "combi_rocket_launcher",
+                "combi_rifle",
+                "combi_rifle",
                 "rocket_launcher",
                 "railgun",
                 "heavy_machinegun",
@@ -633,7 +633,7 @@
           "reflexes": 5,
           "weapons": ["carbine", "handweapon", {"id": "twin_carbine", "mount": ["Front"]}],
           "options": [
-            {"replaceWeapon": "carbine", "withWeapon": ["twin_carbine", "combi_heavy_flamer", "combi_rocket_launcher"]},
+            {"replaceWeapon": "carbine", "withWeapon": ["twin_carbine", "combi_rifle"]},
             {
               "replaceWeapon": {"id": "handweapon", "count": 2},
               "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "energy_greatweapon", "count": 2}, {"id": "energy_powerweapon", "count": 2}]
@@ -674,7 +674,7 @@
           "reflexes": 6,
           "weapons": ["carbine", {"id": "handweapon", "count": 2}, {"id": "twin_carbine", "mount": ["Front"]}],
           "options": [
-            {"replaceWeapon": "carbine", "withWeapon": ["twin_carbine", "combi_heavy_flamer", "combi_rocket_launcher"]},
+            {"replaceWeapon": "carbine", "withWeapon": ["twin_carbine", "combi_rifle"]},
             {"replaceWeapon": ["carbine", {"id": "handweapon", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 3}]]},
             {
               "replaceWeapon": {"id": "handweapon", "count": 3},
@@ -1421,23 +1421,16 @@
     "shock_gun": {"name": "Shock Gun", "attacks": 1, "short": 24, "medium": 48, "ap": 5, "rules": [{"id": "blast", "x": 3}]},
     "beast_cannon": {"name": "Beast Cannon", "attacks": 2, "short": 18, "ap": 3, "medium": 36, "rules": [{"id": "blast", "x": 3}, "indirect"]},
     "beast_launcher": {"name": "Beast Launcher", "attacks": 1, "short": 9, "ap": 3, "medium": 18, "rules": [{"id": "blast", "x": 3}, "indirect"]},
-    "carbine": {"name": "Burst Carbine", "attacks": 1, "short": 9, "medium": 18, "ap": 1, "rules": ["assault", "rapid_fire"]},
-    "twin_carbine": {"name": "Twin Burst Carbine", "attacks": 2, "short": 9, "medium": 18, "ap": 1, "rules": ["assault", "rapid_fire"]},
+    "carbine": {"name": "Assault Carbine", "attacks": 2, "short": 9, "medium": 18, "ap": 1, "rules": ["assault"]},
+    "twin_carbine": {"name": "Twin Assault Carbine", "attacks": 4, "short": 9, "medium": 18, "ap": 1, "rules": ["assault"]},
     "grand_carbine": {"name": "Grand Carbine", "attacks": 12, "short": 9, "medium": 18, "ap": 2, "rules": ["assault"]},
     "grand_claw": {"name": "Grand Claw", "profiles": [{"name": "elite", "attacks": 5, "short": "Melee", "ap": 7}, {"name": "Sweep", "attacks": 10, "short": "Melee", "ap": 3}]},
     "twin_mini_mg": {"name": "Twin Mini-MGs", "attacks": 6, "ap": 2, "short": 9, "medium": 18, "rules": ["assault"]},
     "twin_double_shotgun": {"name": "Twin Double Shotgun", "attacks": 4, "short": 6, "medium": 12, "ap": 2, "rules": ["assault", "brutal"]},
-    "combi_heavy_flamer": {
-      "name": "Combi Heavy Flamethrower",
-      "profiles": [
-        {"name": "Burst Carbine", "attacks": 1, "short": 9, "medium": 18, "ap": 1, "rules": ["assault", "rapid_fire"]},
-        {"name": "Heavy Flamethrower", "attacks": 3, "ap": 2, "short": 6, "medium": 12, "rules": ["flame"]}
-      ]
-    },
-    "combi_rocket_launcher": {
+    "combi_rifle": {
       "name": "Combi Rocket Launcher",
       "profiles": [
-        {"name": "Burst Carbine", "attacks": 1, "ap": 1, "short": 9, "medium": 18, "rules": ["assault", "rapid_fire"]},
+        {"name": "Assault Carbine", "attacks": 1, "ap": 1, "short": 9, "medium": 18, "rules": ["assault", "rapid_fire"]},
         {"name": "Rocket Launcher", "attacks": 1, "short": 12, "medium": 24, "ap": 6, "rules": ["assault"]}
       ]
     },
