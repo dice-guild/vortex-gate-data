@@ -20,7 +20,7 @@
           "defense": 12,
           "reflexes": 6,
           "courage": 7,
-          "rules": ["leader", {"id": "leader", "x": "Monster"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 5}],
+          "rules": [{"id": "power", "x": 1}, {"id": "wounds", "x": 5}],
           "weapons": [{"id": "large_razor_talons", "count": 6}, "grabbing_tail"],
           "options": [
             {
