@@ -689,7 +689,7 @@
     },
     "banishment": {"name": "Banishment", "description": "Target enemy model within 12\" takes 1 automatic hit with AP(7).", "charge": 5, "category": "psychic"},
     "purge": {"name": "Purge", "description": "Target enemy unit within 12\" take 8 automatic hits with AP(0).", "charge": 6, "category": "psychic"},
-    "fireball": {"name": "Fireball", "description": "Target enemy unit within 18\" takes 3 hits with AP(0). This power may be cast unlimited times per turn.", "charge": 7, "category": "fire"},
+    "fireball": {"name": "Fireball", "description": "Target enemy unit within 18\" takes 3 hits with AP(0).", "charge": 7, "category": "fire"},
     "flaming_sword": {"name": "Flaming Sword", "description": "A friendly unit within 6\" gains +1 AP with one Melee weapon until the end of the turn.", "charge": 6, "category": "fire"},
     "searing_bolt": {
       "name": "Searing Bolt",
@@ -737,7 +737,7 @@
       "charge": 5,
       "category": "nature"
     },
-    "silver_bolt": {"name": "Silver Bolt", "description": "Target enemy unit within 24\" takes 1 hit with AP(5). This power may be cast unlimited times per turn.", "charge": 7, "category": "metal"},
+    "silver_bolt": {"name": "Silver Bolt", "description": "Target enemy unit within 24\" takes 1 hit with AP(5).", "charge": 7, "category": "metal"},
     "molten_rain": {"name": "Molten Rain", "description": "Target enemy unit within 12\" take 6 automatic hits with AP(2).", "charge": 6, "category": "metal"},
     "rust": {"name": "Rust", "description": "Target enemy unit within 12\" has -1 Save until end of turn.", "charge": 5, "category": "metal"},
     "cloak_of_shadows": {
@@ -783,12 +783,7 @@
       "charge": 5,
       "category": "lunar"
     },
-    "detect_weakness": {
-      "name": "Detect Weakness",
-      "description": "Target enemy unit within 12\" must re-roll one succesful die on its next Save test. This power may be cast unlimited times.",
-      "charge": 6,
-      "category": "lunar"
-    },
+    "detect_weakness": {"name": "Detect Weakness", "description": "Target enemy unit within 12\" must re-roll one succesful die on its next Save test.", "charge": 6, "category": "lunar"},
     "heightened_senses": {"name": "Heightened Senses", "description": "Target friendly unit within 12\" has +1 Initiative until the of the turn.", "charge": 7, "category": "lunar"}
   },
   "weapons": {
