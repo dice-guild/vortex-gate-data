@@ -1320,7 +1320,7 @@
       "name": "Battle Tank",
       "description": "An armored tank helmed by imperial marines.",
       "category": "rare",
-      "keywords": ["Vehicle", "Tank"],
+      "keywords": ["Vehicle"],
       "models": [
         {
           "name": "Battle Tank",
@@ -1360,7 +1360,7 @@
       "name": "Strike Tank",
       "description": "A lighter tank with increased speed helmed by imperial marines.",
       "category": "rare",
-      "keywords": ["Vehicle", "Tank"],
+      "keywords": ["Vehicle"],
       "models": [
         {
           "name": "Strike Tank",
@@ -1398,7 +1398,7 @@
       "description": "An heavy armored tank helmed by imperial marines.",
       "category": "rare",
       "rules": [{"id": "wounds", "x": 6}, {"id": "impact", "x": 6}, "vulnerable_rear"],
-      "keywords": ["Vehicle", "Tank"],
+      "keywords": ["Vehicle"],
       "models": [
         {
           "name": "Heavy Battle Tank",

@@ -609,7 +609,7 @@
       "description": "A heavy assault vehicle with devastating weapons.",
       "category": "rare",
       "rules": [{"id": "wounds", "x": 5}, {"id": "impact", "x": 6}, "vulnerable_side_rear"],
-      "keywords": ["Vehicle", "Tank"],
+      "keywords": ["Vehicle"],
       "models": [
         {
           "name": "Forgeborn Battle Tank",
@@ -637,7 +637,7 @@
       "description": "A heavy assault vehicle with devastating weapons.",
       "category": "rare",
       "rules": [{"id": "wounds", "x": 6}, {"id": "impact", "x": 6}, {"id": "transport", "x": 12}, "vulnerable_side_rear"],
-      "keywords": ["Vehicle", "Tank"],
+      "keywords": ["Vehicle"],
       "models": [
         {
           "name": "Forgeborn Assault Tank",
@@ -790,7 +790,7 @@
               ],
               "limit": 2
             },
-            {"addRule": [{"name": "Shield Generator", "id": "resistant", "x": 3}, "field_radio", "reinforced_armor", "lookout_system", "targeting_array"]},
+            {"addRule": [{"name": "Shield Generator", "id": "resistant", "x": 3}, "field_radio", "lookout_system", "targeting_array"]},
             {"addRule": [{"id": "power", "x": 1}], "subfactions": ["power_focus"]}
           ],
           "min": 1,
@@ -865,7 +865,7 @@
               ],
               "limit": 2
             },
-            {"addRule": [{"name": "Shield Generator", "id": "resistant", "x": 3}, "field_radio", "reinforced_armor", "lookout_system", "targeting_array"]},
+            {"addRule": [{"name": "Shield Generator", "id": "resistant", "x": 3}, "field_radio", "lookout_system", "targeting_array"]},
             {"addRule": [{"id": "power", "x": 1}, {"id": "power", "x": 2}], "subfactions": ["power_focus"], "limit": 1}
           ],
           "min": 1,
@@ -886,8 +886,7 @@
       "name": "Lookout System",
       "description": "Models in this unit may reroll Initiative checks when attempting the Counter-Attack reaction. Multiple Lookout Systems do not stack bonuses.",
       "points": 5
-    },
-    "reinforced_armor": {"name": "Reinforced Armor", "description": "Subtract 1 from all Damage Chart rolls for this model.", "points": 10}
+    }
   },
   "strategies": [
     {

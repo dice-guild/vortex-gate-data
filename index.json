@@ -2032,6 +2032,7 @@
     "zealot": {"name": "Zealot", "description": "Strength rolls of 1 or 2 for this model's unit cause 2 hits instead of 1.", "points": 10},
     "spotter": {"name": "Spotter", "description": "Accuracy rolls of 1 or 2 for this model's unit cause 2 hits instead of 1.", "points": 10},
     "marksman": {"name": "Marksman", "description": "This model's unit may re-roll failed Accuracy tests of 9+.", "points": 10},
+    "marksman_aura": {"name": "Marksman Aura", "description": "Friendly units within 6\" may re-roll failed Accuracy tests of 9+.", "points": 10},
     "striker": {"name": "Striker", "description": "This model's unit gains +1 AP on all weapons.", "points": 10},
     "vigilant_aura": {"name": "Vigilant Aura", "description": "Friendly units within 6\" gain +1 Initiative.", "points": 10},
     "vigilant": {"name": "Vigilant", "description": "This model's unit gains +1 Initiative.", "points": 10},

@@ -844,7 +844,7 @@
       "name": "Warborn Battle Tank",
       "description": "A ramshackle battle tank held together by sheer will.",
       "category": "rare",
-      "keywords": ["Vehicle", "Tank"],
+      "keywords": ["Vehicle"],
       "models": [
         {
           "name": "Warborn Battle Tank",
@@ -890,7 +890,7 @@
       "name": "Warborn Heavy Battle Tank",
       "description": "A larger ramshackle tank with more powerful weapon options.",
       "category": "rare",
-      "keywords": ["Vehicle", "Tank"],
+      "keywords": ["Vehicle"],
       "models": [
         {
           "name": "Warborn Heavy Battle Tank",

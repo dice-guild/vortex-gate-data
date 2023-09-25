@@ -623,7 +623,7 @@
       "name": "Hover Tank",
       "description": "A hovering tank for supporting landing assaults.",
       "category": "rare",
-      "keywords": ["Vehicle", "Tank"],
+      "keywords": ["Vehicle"],
       "models": [
         {
           "name": "Hover Tank",
@@ -660,7 +660,7 @@
       "name": "Guild Tank Destroyer",
       "description": "A large tracked cannon used to obliterate other tanks.",
       "category": "rare",
-      "keywords": ["Vehicle", "Tank"],
+      "keywords": ["Vehicle"],
       "models": [
         {
           "name": "Tank Destroyer",
@@ -695,7 +695,7 @@
       "name": "Guild Heavy Tank",
       "description": "A mighty vehicle designed to break apart formations.",
       "category": "rare",
-      "keywords": ["Vehicle", "Tank"],
+      "keywords": ["Vehicle"],
       "models": [
         {
           "name": "Guild Heavy Tank",
@@ -721,7 +721,7 @@
       "name": "Guild Heavy APC",
       "description": "A mighty vehicle designed to carry large groups of infantry wherever they are needed.",
       "category": "rare",
-      "keywords": ["Vehicle", "Tank"],
+      "keywords": ["Vehicle"],
       "models": [
         {
           "name": "Guild Heavy APC",

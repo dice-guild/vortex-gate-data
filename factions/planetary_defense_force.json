@@ -809,7 +809,7 @@
       "name": "Battle Tank Commander",
       "description": "A main line battle tank commander.",
       "category": "hero",
-      "keywords": ["Vehicle", "Tank"],
+      "keywords": ["Vehicle"],
       "models": [
         {
           "name": "Battle Tank Commander",
@@ -859,7 +859,7 @@
             {"addWeapon": ["hunter_missiles"]},
             {"addRule": [{"id": "dozer", "name": "Dozer Blade"}, "field_radio"]}
           ],
-          "rules": [{"id": "tactician", "x": 1}, {"id": "wounds", "x": 5}, {"id": "impact", "x": 6}, "vulnerable_side_rear"],
+          "rules": ["marksman_aura", {"id": "wounds", "x": 5}, {"id": "impact", "x": 6}, "vulnerable_side_rear"],
           "min": 1,
           "max": 1
         }
@@ -869,7 +869,7 @@
       "name": "Battle Tank",
       "description": "A main line battle tank.",
       "category": "rare",
-      "keywords": ["Vehicle", "Tank"],
+      "keywords": ["Vehicle"],
       "models": [
         {
           "name": "Battle Tank",
@@ -930,7 +930,7 @@
       "name": "Heavy Battle Tank",
       "description": "A larger battle tank with more powerful weapon options.",
       "category": "rare",
-      "keywords": ["Vehicle", "Tank"],
+      "keywords": ["Vehicle"],
       "models": [
         {
           "name": "Heavy Battle Tank",
@@ -1061,7 +1061,7 @@
       "name": "Super Heavy Battle Tank",
       "description": "A titanic battle tank with a variety of weapon options.",
       "category": "rare",
-      "keywords": ["Vehicle", "Tank"],
+      "keywords": ["Vehicle"],
       "models": [
         {
           "name": "Super Heavy Battle Tank",
@@ -1110,7 +1110,7 @@
       "name": "Super Heavy Transport Tank",
       "description": "A titanic battle tank with an extended deck to transport troops",
       "category": "rare",
-      "keywords": ["Vehicle", "Tank"],
+      "keywords": ["Vehicle"],
       "models": [
         {
           "name": "Super Heavy Transport Tank",

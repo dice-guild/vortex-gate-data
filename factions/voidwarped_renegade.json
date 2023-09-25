@@ -953,7 +953,7 @@
       "description": "An armored tank helmed by Pestilence Marines equipped with a deadly mortar.",
       "category": "rare",
       "subfactions": ["toughness_focus"],
-      "keywords": ["Vehicle", "Tank"],
+      "keywords": ["Vehicle"],
       "models": [
         {
           "name": "Pestilence Mortar Tank",
@@ -1546,7 +1546,7 @@
       "name": "Voidwarped Battle Tank",
       "description": "An armored tank helmed by Voidwarped Renegade.",
       "category": "rare",
-      "keywords": ["Vehicle", "Tank"],
+      "keywords": ["Vehicle"],
       "models": [
         {
           "name": "Voidwarped Battle Tank",
@@ -1586,7 +1586,7 @@
       "name": "Voidwarped Heavy Battle Tank",
       "description": "An heavy armored tank helmed by imperial marines.",
       "category": "rare",
-      "keywords": ["Vehicle", "Tank"],
+      "keywords": ["Vehicle"],
       "models": [
         {
           "name": "Heavy Battle Tank",

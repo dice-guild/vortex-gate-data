@@ -735,7 +735,7 @@
       "name": "Light Tank",
       "description": "An ingenious armoured fighting platform.",
       "category": "rare",
-      "keywords": ["Vehicle", "Tank"],
+      "keywords": ["Vehicle"],
       "models": [
         {
           "name": "Light Tank",

@@ -448,7 +448,7 @@
       "name": "Battle Tank",
       "description": "A main line battle tank stolen from the planetary defense force.",
       "category": "rare",
-      "keywords": ["Vehicle", "Tank"],
+      "keywords": ["Vehicle"],
       "models": [
         {
           "name": "Battle Tank",
@@ -509,7 +509,7 @@
       "name": "Cult Heavy Battle Tank",
       "description": "A larger battle tank with more powerful weapon options stolen from the planetary defense force.",
       "category": "rare",
-      "keywords": ["Vehicle", "Tank"],
+      "keywords": ["Vehicle"],
       "models": [
         {
           "name": "Cult Heavy Battle Tank",
@@ -555,7 +555,7 @@
             },
             {"addWeapon": ["light_machinegun", "twin_combat_rifle"], "limit": 1},
             {"addWeapon": ["hunter_missiles"]},
-            {"addRule": [{"id": "dozer", "name": "Dozer Blade"}, "field_radio", "extra_armor"]}
+            {"addRule": [{"id": "dozer", "name": "Dozer Blade"}, "field_radio"]}
           ],
           "rules": [{"id": "wounds", "x": 6}, {"id": "impact", "x": 9}, "vulnerable_rear"],
           "min": 1,
@@ -591,7 +591,7 @@
               ]
             },
             {"addWeapon": ["light_machinegun", "twin_combat_rifle"], "limit": 1},
-            {"addRule": [{"id": "dozer", "name": "Dozer Blade"}, "extra_armor"]}
+            {"addRule": [{"id": "dozer", "name": "Dozer Blade"}]}
           ],
           "min": 1,
           "max": 1
@@ -875,7 +875,6 @@
     "cult_speaker": {"name": "Cult Speaker", "description": "This model's unit gains +1 Courage.", "points": 10},
     "chosen_abomination": {"name": "Chosen Abomination", "description": "Once per round, a friendly _Heavy Infantry_ unit within 6\" may gain +1 AP on all Melee weapons.", "points": 10},
     "cult_icon": {"name": "Cult Icon", "description": "Once per round, a friendly _Infantry_ unit within 6\" may gain +1 Save when targeted by a Shooting or Fighting attack.", "points": 10},
-    "extra_armor": {"name": "Reinforced Hull", "description": "Subtract 1 from all Damage Chart rolls for this model.", "points": 10},
     "legend_mind_link": {"name": "Mind Link", "description": "Increase the range of all abilities which target friendly units by 6\".", "points": 10},
     "legend_supernatural_speed": {"name": "Supernatural Speed", "description": "Increase this model's Movement by 2\".", "points": 10},
     "sacrifice": {
