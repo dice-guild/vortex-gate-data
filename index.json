@@ -1350,7 +1350,7 @@
       "subfactions": ["toughness_focus"],
       "name": "Durability",
       "phase": "activation",
-      "description": "Use before activating a unit with a Damage Chart. That unit is treated as having full wounds for this activation.",
+      "description": "Use before activating a unit with Wounds. That unit is treated as having full wounds for this activation.",
       "flavor": "Some of the most well-maintained vehicles and machinery can operate under great stress.",
       "cost": 1
     },
@@ -2020,7 +2020,7 @@
       "description": "This model causes X Melee hits with AP(1) when it successfully charges an enemy unit.",
       "points": [4, {"multiply": "rule.x"}]
     },
-    "disrupt": {"name": "Disrupt", "inputs": ["x"], "description": "This weapon has +X AP against units with _Damage Chart_.", "points": ["rule.x", {"multiply": 0.5}]},
+    "disrupt": {"name": "Disrupt", "inputs": ["x"], "description": "This weapon has +X AP against units _Vehicles_ and _Monsters_.", "points": ["rule.x", {"multiply": 0.5}]},
     "inspiring": {"name": "Inspiring", "description": "This model's unit may re-roll failed Courage Tests.", "points": 10},
     "inspiring_aura": {"name": "Inspiring Aura", "description": "Friendly units within 6\" may re-roll failed Courage tests.", "points": 10},
     "amplification_aura": {"name": "Amplification Aura", "description": "Friendly units within 6\" may re-roll failed Power tests.", "points": 10},
@@ -2064,7 +2064,7 @@
     "marking_flares": {"name": "Marking Flares", "description": "Once per round, a friendly _Biker_ unit may gain +4\" of Movement.", "points": 5},
     "surveying_device": {"name": "Surveying Device", "description": "Once per round, a friendly _Infantry_ unit within 12\" may ignore the benefit of cover while shooting.", "points": 10},
     "spotting_device": {"name": "Spotting Device", "description": "Increase the short and long range of all ranged weapons equipped by this unit by 6\".", "points": 5},
-    "titan_shield": {"name": "Titan Shield", "description": "This unit subtracts 1 from all Damage Chart rolls.", "points": 10},
+    "titan_shield": {"name": "Titan Shield", "description": "Units suffer -1 Accuracy and Strength when attacking this model.", "points": 10},
     "inspiration": {"name": "Inspiration", "description": "Models gain +1 Courage when taking Courage Tests within 6\" of this model.", "points": 5},
     "intensity": {"name": "Intensity", "inputs": ["x"], "description": "This weapon has +X AP at long range.", "points": ["rule.x", {"multiply": 1}]},
     "medic_biker": {
