@@ -186,7 +186,7 @@
           "fight": 7,
           "defense": 11,
           "reflexes": 6,
-          "rules": ["vulnerable_rear", {"id": "wounds", "x": 5}, {"id": "tactician", "x": "Juggernaut"}],
+          "rules": ["vulnerable_rear", {"id": "wounds", "x": 5}, "tactician_aura"],
           "weapons": [{"id": "walker_fist", "count": 4}],
           "options": [
             {
