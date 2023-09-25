@@ -30,7 +30,7 @@
       "name": "Gecko Oracle on Raptor",
       "description": "Oracles can divine the outcome of a battle through magical rituals. They also function as the spiritiual overseers of the Lizardfolk Empire.",
       "category": "hero",
-      "keywords": ["Cavalry", "Gecko"],
+      "keywords": ["Mounted", "Gecko"],
       "models": [
         {
           "name": "Gecko Oracle on Raptor",
@@ -52,7 +52,7 @@
       "name": "Gecko Oracle on Pterodactyl",
       "description": "Oracles can divine the outcome of a battle through magical rituals. They also function as the spiritiual overseers of the Lizardfolk Empire.",
       "category": "hero",
-      "keywords": ["Cavalry", "Gecko"],
+      "keywords": ["Mounted", "Gecko"],
       "models": [
         {
           "name": "Gecko Oracle on Pterodactyl",
@@ -74,7 +74,7 @@
       "name": "Gecko Oracle on Dreadscale",
       "description": "Oracles can divine the outcome of a battle through magical rituals. They also function as the spiritiual overseers of the Lizardfolk Empire.",
       "category": "hero",
-      "keywords": ["Beast", "Cavalry", "Monster"],
+      "keywords": ["Mounted", "Monster"],
       "models": [
         {
           "name": "Gecko Oracle on Dreadscale",
@@ -121,7 +121,7 @@
       "name": "Gecko Chieftain on Raptor",
       "description": "A great hero of the gecko tribes on a swift raptor, leading his kin into battle alongside the other lizardfolk tribes.",
       "category": "hero",
-      "keywords": ["Cavalry", "Gecko"],
+      "keywords": ["Mounted", "Gecko"],
       "models": [
         {
           "name": "Gecko Chieftain on Raptor",
@@ -147,7 +147,7 @@
       "name": "Gecko Chieftain on Pterodactyl",
       "description": "A great hero of the gecko tribes riding an airborne hunter, leading his kin into battle alongside the other lizardfolk tribes.",
       "category": "hero",
-      "keywords": ["Cavalry", "Gecko"],
+      "keywords": ["Mounted", "Gecko"],
       "models": [
         {
           "name": "Gecko Chieftain on Pterodactyl",
@@ -172,7 +172,7 @@
       "name": "Gecko Chieftain on Dreadscale",
       "description": "A great herald of the Lizardfolk Empire riding a terrifying dinosaur, slaughtering their foes with great zeal.",
       "category": "hero",
-      "keywords": ["Beast", "Cavalry", "Monster"],
+      "keywords": ["Mounted", "Monster"],
       "models": [
         {
           "name": "Gecko Chieftain on Dreadscale",
@@ -223,7 +223,7 @@
       "name": "Saurian Warlord on Terrorfang",
       "description": "A great herald of the Lizardfolk Empire riding a deadly dinosaur, slaughtering their foes with great zeal.",
       "category": "hero",
-      "keywords": ["Beast", "Cavalry"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Saurian Warlord on Terrorfang",
@@ -249,7 +249,7 @@
       "name": "Saurian Warlord on Dreadscale",
       "description": "A great herald of the Lizardfolk Empire riding a terrifying dinosaur, slaughtering their foes with great zeal.",
       "category": "hero",
-      "keywords": ["Beast", "Cavalry", "Monster"],
+      "keywords": ["Mounted", "Monster"],
       "models": [
         {
           "name": "Saurian Warlord on Dreadscale",
@@ -339,7 +339,7 @@
       "name": "Gecko Raptor-Riders",
       "description": "Elite geckos riding swift dinosaurs, using their speed to outmatch their foes.",
       "category": "elite",
-      "keywords": ["Cavalry", "Gecko"],
+      "keywords": ["Mounted", "Gecko"],
       "models": [
         {
           "name": "Gecko Raptor-Rider",
@@ -361,7 +361,7 @@
       "name": "Saurian Terrorfang-Riders",
       "description": "Elite saurians riding deadly dinosaurs, crushing their foes under an avalance of claws and teeth.",
       "category": "elite",
-      "keywords": ["Cavalry"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Saurian Terrorfang-Rider",
@@ -409,7 +409,7 @@
       "name": "Pterodactyl Riders",
       "description": "Airborne predators, carrying gecko warriors on their back.",
       "category": "elite",
-      "keywords": ["Cavalry", "Gecko"],
+      "keywords": ["Mounted", "Gecko"],
       "models": [
         {
           "name": "Pterodactyl Rider",

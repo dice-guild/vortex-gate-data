@@ -121,7 +121,7 @@
           "rules": [{"id": "wounds", "x": 3}]
         }
       ],
-      "keywords": ["Beast", "Cavalry"],
+      "keywords": ["Mounted"],
       "subfactions": ["none", "poison", "wrath", "excess", "change"]
     },
     "centaur_hybrid_lord": {
@@ -147,7 +147,7 @@
           "rules": [{"id": "wounds", "x": 4}, {"id": "leader", "x": "Beast"}, {"id": "warrior", "x": 1}]
         }
       ],
-      "keywords": ["Beast", "Cavalry"],
+      "keywords": ["Mounted"],
       "subfactions": ["none", "poison", "wrath", "excess", "change"]
     },
     "black_souls": {

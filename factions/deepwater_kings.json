@@ -29,7 +29,7 @@
           "max": 1
         }
       ],
-      "keywords": ["Cavalry"]
+      "keywords": ["Mounted"]
     },
     "prophet": {
       "name": "Prophet",
@@ -144,7 +144,7 @@
           "max": 12
         }
       ],
-      "keywords": ["Cavalry"],
+      "keywords": ["Mounted"],
       "options": [
         {"replaceWeapon": [{"id": "heavy_spear", "count": 2}], "withWeapon": [{"id": "heavy_handweapon", "count": 3}], "modelLimit": "all"},
         {"addRule": ["champion"], "modelLimit": 1},

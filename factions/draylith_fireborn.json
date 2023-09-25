@@ -78,7 +78,7 @@
         }
       ],
       "subfactions": ["none"],
-      "keywords": ["Cavalry"]
+      "keywords": ["Mounted"]
     },
     "sorcerer": {
       "name": "Sorcerer",
@@ -128,7 +128,7 @@
         }
       ],
       "subfactions": ["none"],
-      "keywords": ["Cavalry"]
+      "keywords": ["Mounted"]
     },
     "dark_lord_dragon": {
       "name": "Dark Lord on Balefire Drake",

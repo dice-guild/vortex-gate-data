@@ -38,7 +38,7 @@
       "name": "Corrupted Lord on Cursed Steed",
       "description": "A favored champion of the dark gods, leading their warband into war ontop of a demonic beast.",
       "category": "hero",
-      "keywords": ["Cavalry"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Corrupted Lord on Cursed Steed",
@@ -67,7 +67,7 @@
       "name": "Corrupted Lord on Lizard Beast",
       "description": "A favored champion of the dark gods, leading their warband into war ontop of a massive lizard beast.",
       "category": "hero",
-      "keywords": ["Beast", "Cavalry", "Monster"],
+      "keywords": ["Mounted", "Monster"],
       "models": [
         {
           "name": "Corrupted Lord on Lizard Beast",
@@ -96,7 +96,7 @@
       "name": "Corrupted Lord on Manticore",
       "description": "A favored champion of the dark gods, leading their warband into war ontop of a deadly manticore.",
       "category": "hero",
-      "keywords": ["Beast", "Cavalry", "Monster"],
+      "keywords": ["Mounted", "Monster"],
       "models": [
         {
           "name": "Corrupted Lord on Manticore",
@@ -151,7 +151,7 @@
       "name": "Sorcerer on Cursed Steed",
       "description": "A corrupted spellcaster on a demonic beast, bending reality to the twisted visions of their dark gods.",
       "category": "hero",
-      "keywords": ["Cavalry"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Sorcerer on Cursed Steed",
@@ -177,7 +177,7 @@
       "name": "Sorcerer on Manticore",
       "description": "A corrupted spellcaster on a deadly manticore, bending reality to the twisted visions of their dark gods.",
       "category": "hero",
-      "keywords": ["Beast", "Cavalry", "Monster"],
+      "keywords": ["Mounted", "Monster"],
       "models": [
         {
           "name": "Sorcerer on Manticore",
@@ -203,7 +203,7 @@
       "name": "Exalted Sorcerer on Arcane Disk",
       "description": "A spellcaster on top of a floating disk, who has mastered the reality-shifting magic of the old gods.",
       "category": "hero",
-      "keywords": ["Cavalry"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Exalted Sorcerer on Arcane Disk",
@@ -226,7 +226,7 @@
       "name": "Pestilent Master on Abomination",
       "description": "A revulsive overlord of a cult of pestilence, riding a personally-fleshcrafted abomination.",
       "category": "hero",
-      "keywords": ["Beast", "Cavalry", "Monster"],
+      "keywords": ["Mounted", "Monster"],
       "models": [
         {
           "name": "Pestilent Master on Abomination",
@@ -347,7 +347,7 @@
       "name": "Barbarian Outriders",
       "description": "Barbarians who ride atop crazed beasts into battle, trampling their foes under their hooves and steel.",
       "category": "elite",
-      "keywords": ["Cavalry"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Barbarian Outrider",
@@ -371,7 +371,7 @@
       "name": "Corrupted Knights",
       "description": "A regiment of corrupted knights who ride into battle atop demonic steeds to gain the favours of their dark gods.",
       "category": "elite",
-      "keywords": ["Cavalry"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Corrupted Knight",
@@ -422,7 +422,7 @@
       "name": "Chosen Knights",
       "description": "Personal Bodyguards of the great Corrupted Lords, ready to bring carnage to the battlefield.",
       "category": "rare",
-      "keywords": ["Cavalry"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Chosen Knight",
@@ -517,7 +517,7 @@
       "description": "Knights who have acquired forbidden knowledge and transmutated their steeds into arcane disks.",
       "category": "elite",
       "subfactions": ["power_focus"],
-      "keywords": ["Cavalry"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Enchanted Knight",

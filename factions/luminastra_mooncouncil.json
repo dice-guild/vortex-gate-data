@@ -36,7 +36,7 @@
       "name": "Luminastra Noble on Warhorse",
       "description": "A noble of the ancient high elves atop a mighty steed, leading his kin into battle.",
       "category": "hero",
-      "keywords": ["Cavalry"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Luminastra Noble on Warhorse",
@@ -141,7 +141,7 @@
       "name": "Archmage on Warhorse",
       "description": "A powerful spellcaster of the ancient high elves atop a mighty steed.",
       "category": "hero",
-      "keywords": ["Cavalry"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Archmage on Warhorse",
@@ -332,7 +332,7 @@
       "name": "Luminastra Vanguard",
       "description": "Fast cavalry, patroling the outskirts of the elven realms.",
       "category": "core",
-      "keywords": ["Cavalry"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Luminastra Vanguard",
@@ -354,7 +354,7 @@
       "name": "Luminastra Knights",
       "description": "Mounted soldiers of the elves, overrunning their foes.",
       "category": "core",
-      "keywords": ["Cavalry"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Luminastra Knight",
@@ -468,7 +468,7 @@
       "name": "Luminastra Dragoons",
       "description": "These noble warriors ride upon barded steeds into battle.",
       "category": "elite",
-      "keywords": ["Cavalry"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Luminastra Dragoon",

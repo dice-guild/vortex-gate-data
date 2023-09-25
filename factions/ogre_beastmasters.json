@@ -9,7 +9,7 @@
       "name": "Great-Ogre Mounted Leader",
       "description": "From high atop his mount, this great-ogre leads his tribe",
       "category": "hero",
-      "keywords": ["Cavalry"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Great-Ogre Leader",
@@ -32,7 +32,7 @@
       "category": "core",
       "options": [{"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}],
       "rules": [{"id": "wounds", "x": 3}, {"id": "impact", "x": 2}],
-      "keywords": ["Cavalry"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Great-Ogre Heir",
@@ -119,7 +119,7 @@
       "name": "Ogre Captain on Tundra Beast",
       "description": "From high atop his mount, this ogre captain leads his mercenary company.",
       "category": "hero",
-      "keywords": ["Beast", "Cavalry"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Ogre Captain on Tundra Beast",
@@ -129,7 +129,7 @@
           "defense": 13,
           "reflexes": 6,
           "courage": 7,
-          "rules": [{"id": "wounds", "x": 3}, {"id": "resistant", "x": 3}, {"id": "heavy_impact", "x": 6}, {"id": "leader", "x": "Cavalry"}, {"id": "warrior", "x": 2}],
+          "rules": [{"id": "wounds", "x": 3}, {"id": "resistant", "x": 3}, {"id": "heavy_impact", "x": 6}, {"id": "leader", "x": "Mounted"}, {"id": "warrior", "x": 2}],
           "weapons": [{"id": "mount_feet", "count": 2}, "frost_breath", {"id": "grand_weapon", "count": 6}, {"id": "mount_horns", "count": 4}],
           "options": [
             {"replaceWeapon": [{"id": "grand_weapon", "count": 6}], "withWeapon": [{"id": "grand_hammer", "count": 6}, {"id": "great_polearm", "count": 6}]},
@@ -192,7 +192,7 @@
       "name": "Ogre Shaman on Tundra Beast",
       "description": "From high atop his mount, this powerful wizard supports his mercenary company.",
       "category": "hero",
-      "keywords": ["Beast", "Cavalry"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Ogre Shaman on Tundra Beast",
@@ -202,7 +202,7 @@
           "defense": 12,
           "reflexes": 6,
           "courage": 6,
-          "rules": [{"id": "wounds", "x": 3}, {"id": "resistant", "x": 3}, {"id": "heavy_impact", "x": 6}, {"id": "leader", "x": "Cavalry"}, {"id": "power", "x": 2}],
+          "rules": [{"id": "wounds", "x": 3}, {"id": "resistant", "x": 3}, {"id": "heavy_impact", "x": 6}, {"id": "leader", "x": "Mounted"}, {"id": "power", "x": 2}],
           "weapons": [{"id": "mount_feet", "count": 2}, "frost_breath", {"id": "grand_weapon", "count": 7}, {"id": "mount_horns", "count": 4}],
           "options": [{"replaceRule": [{"id": "power", "x": 2}], "withRule": [{"id": "power", "x": 3}]}],
           "min": 1,
@@ -257,7 +257,7 @@
       "name": "Ogre Beastmaster on Tundra Beast",
       "description": "From high atop his mount, this skilled hunter leads his beast pack.",
       "category": "hero",
-      "keywords": ["Beast", "Cavalry"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Ogre Beastmaster on Tundra Beast",
@@ -504,7 +504,7 @@
       "name": "Ogre Veterans on Tundra Beast",
       "description": "From high atop his mount, a pair of ogre veterans crush anyone under their bulk.",
       "category": "rare",
-      "keywords": ["Beast", "Cavalry"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Ogre Veterans on Tundra Beast",

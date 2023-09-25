@@ -216,7 +216,7 @@
       "name": "Voidwarped Lord on Warbeast",
       "description": "A lord of the vortex gate riding a biomechanical monster.",
       "category": "hero",
-      "keywords": ["Cavalry"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Voidwarped Lord on Warbeast",

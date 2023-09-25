@@ -34,7 +34,7 @@
       "description": "A demonic lord, commanding their warband atop an unstoppable beast.",
       "category": "hero",
       "subfactions": ["assault_focus"],
-      "keywords": ["Cavalry"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Vortex Champion on Warbeast",
@@ -59,7 +59,7 @@
       "name": "Vortex Champion on Infernal Steed",
       "description": "A demonic lord, commanding their warband atop a loyal mount.",
       "category": "hero",
-      "keywords": ["Cavalry"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Vortex Champion on Infernal Steed",
@@ -134,7 +134,7 @@
       "name": "Vortex Sorcerer on Infernal Steed",
       "description": "A demonic mage using infernal magic atop a loyal mount.",
       "category": "hero",
-      "keywords": ["Cavalry"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Vortex Sorcerer on Infernal Steed",
@@ -254,7 +254,7 @@
       "description": "A swarm of lesser demons riding atop unstoppable beasts.",
       "category": "elite",
       "subfactions": ["assault_focus"],
-      "keywords": ["Cavalry"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Lesser Vortex on Warbeast",
@@ -313,7 +313,7 @@
       "name": "Vortex Cavalry",
       "description": "A horde of demonic riders.",
       "category": "elite",
-      "keywords": ["Cavalry"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Vortex Cavalry",
@@ -361,7 +361,7 @@
       "name": "Exalted Vortex Cavalry",
       "description": "A horde of elite demonic riders.",
       "category": "elite",
-      "keywords": ["Cavalry"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Exalted Vortex Cavalry",

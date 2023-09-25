@@ -38,7 +38,7 @@
       "name": "Celestial Lord on Dragon-Lizard",
       "category": "hero",
       "description": "A warrior mage, blessed in the eye of a storm with magical weapons.",
-      "keywords": ["Cavalry", "Monster"],
+      "keywords": ["Mounted", "Monster"],
       "models": [
         {
           "name": "Celestial Lord on Dragon-Lizard",
@@ -67,7 +67,7 @@
       "name": "Celestial Lord on Starborn Drake",
       "category": "hero",
       "description": "A warrior mage, blessed in the eye of a storm with magical weapons.",
-      "keywords": ["Cavalry", "Monster"],
+      "keywords": ["Mounted", "Monster"],
       "models": [
         {
           "name": "Celestial Lord on Starborn Drake",
@@ -125,7 +125,7 @@
       "name": "Celestial Lord on Gryphon",
       "category": "hero",
       "description": "A warrior mage on a hardy gryphon mount, swooping down on his foes.",
-      "keywords": ["Beast", "Cavalry"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Celestial Lord on Gryphon",
@@ -199,7 +199,7 @@
       "name": "Stormcaller Mage on Greater Celestial Beast",
       "category": "hero",
       "description": "A mighty lightning mage on a celestial beast, charging into the fray with steel and spell.",
-      "keywords": ["Beast", "Cavalry"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Stormcaller Mage on Greater Celestial Beast",
@@ -221,7 +221,7 @@
       "name": "Stormcaller Mage on Gryphon",
       "category": "hero",
       "description": "A mighty lightning mage on a hardy gryphon mount, swooping down on his foes.",
-      "keywords": ["Beast", "Cavalry"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Stormcaller Mage on Gryphon",
@@ -401,7 +401,7 @@
       "name": "Invokers on Dragon-Lizards",
       "category": "rare",
       "description": "Warrior mages on dragon-lizards who channel the power of lightning to burn their enemies and block ranged attacks.",
-      "keywords": ["Cavalry", "Monster"],
+      "keywords": ["Mounted", "Monster"],
       "models": [
         {
           "name": "Invoker on Dragon-Lizard",
@@ -427,7 +427,7 @@
       "name": "Invokers on Greater Celestial Beasts",
       "category": "rare",
       "description": "Warrior mages on celestial beasts who channel the power of lightning to burn their enemies and block ranged attacks.",
-      "keywords": ["Beast", "Cavalry"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Invoker on Greater Celestial Beast",
@@ -479,7 +479,7 @@
       "name": "Protectors on Dragon-Lizards",
       "category": "rare",
       "description": "Veteran Warriors on dragon-lizards, smiting their foes with elemental attacks.",
-      "keywords": ["Cavalry", "Monster"],
+      "keywords": ["Mounted", "Monster"],
       "models": [
         {
           "name": "Protector on Dragon-Lizard",
@@ -536,7 +536,7 @@
       "name": "Skirmishers on Greater Celestial Beasts",
       "category": "elite",
       "description": "Swift warrior mages who can cover their enemies in hails of bolts whilst evading their attacks.",
-      "keywords": ["Beast", "Cavalry"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Skirmisher on Greater Celestial Beast",
@@ -559,7 +559,7 @@
       "name": "Protectors on Greater Celestial Beasts",
       "category": "rare",
       "description": "Personal Honorguard on celestial beasts, striking their enemies with elemental weapons.",
-      "keywords": ["Beast", "Cavalry"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Protector on Greater Celestial Beast",
@@ -604,7 +604,7 @@
       "name": "Dragon Guard",
       "category": "rare",
       "description": "Powerful warrior mages that have tamed ferocious starborn drakes, bringing judgement from above to the forces of evil.",
-      "keywords": ["Cavalry", "Monster"],
+      "keywords": ["Mounted", "Monster"],
       "models": [
         {
           "name": "Dragon Guard",

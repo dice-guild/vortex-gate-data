@@ -60,7 +60,7 @@
       "name": "Orc Warboss on Giant Boar",
       "description": "Stronger and more savage than the normal orc.",
       "category": "hero",
-      "keywords": ["Orc", "Cavalry"],
+      "keywords": ["Orc", "Mounted"],
       "models": [
         {
           "name": "Orc Warboss on Giant Boar",
@@ -90,7 +90,7 @@
       "name": "Orc Warboss on Great Warg",
       "description": "Stronger and more savage than the normal orc.",
       "category": "hero",
-      "keywords": ["Orc", "Cavalry"],
+      "keywords": ["Orc", "Mounted"],
       "models": [
         {
           "name": "Orc Warboss on Great Warg",
@@ -150,7 +150,7 @@
       "name": "Orc Warboss on Giant Vulture",
       "description": "Stronger and more savage than the normal orc.",
       "category": "hero",
-      "keywords": ["Orc", "Beast", "Cavalry"],
+      "keywords": ["Orc", "Mounted"],
       "models": [
         {
           "name": "Orc Warboss on Giant Vulture",
@@ -262,7 +262,7 @@
       "name": "Orc Shaman on Giant Boar",
       "description": "Tough in stature and a fearsome wizard.",
       "category": "hero",
-      "keywords": ["Orc", "Cavalry"],
+      "keywords": ["Orc", "Mounted"],
       "models": [
         {
           "name": "Orc Shaman on Giant Boar",
@@ -284,7 +284,7 @@
       "name": "Orc Shaman on Giant Vulture",
       "description": "Tough in stature and a fearsome wizard.",
       "category": "hero",
-      "keywords": ["Orc", "Beast", "Cavalry"],
+      "keywords": ["Orc", "Mounted"],
       "models": [
         {
           "name": "Orc Shaman on Giant Vulture",
@@ -377,7 +377,7 @@
       "name": "Goblin Warboss on Giant Spider",
       "description": "Small in size but a master of deception.",
       "category": "hero",
-      "keywords": ["Goblin", "Cavalry"],
+      "keywords": ["Goblin", "Mounted"],
       "models": [
         {
           "name": "Goblin Warboss on Giant Spider",
@@ -404,7 +404,7 @@
       "name": "Goblin Warboss on Dire Wolf",
       "description": "Small in size but a master of deception.",
       "category": "hero",
-      "keywords": ["Goblin", "Cavalry"],
+      "keywords": ["Goblin", "Mounted"],
       "models": [
         {
           "name": "Goblin Warboss on Dire Wolf",
@@ -431,7 +431,7 @@
       "name": "Goblin Warboss on Cave Beast",
       "description": "Small in size but a master of deception.",
       "category": "hero",
-      "keywords": ["Goblin", "Cavalry"],
+      "keywords": ["Goblin", "Mounted"],
       "models": [
         {
           "name": "Goblin Warboss on Cave Beast",
@@ -507,7 +507,7 @@
       "name": "Goblin Shaman on Giant Spider",
       "description": "Miniscule in size but still a fearsome wizard.",
       "category": "hero",
-      "keywords": ["Goblin", "Cavalry"],
+      "keywords": ["Goblin", "Mounted"],
       "models": [
         {
           "name": "Goblin Shaman on Giant Spider",
@@ -551,7 +551,7 @@
       "name": "Goblin Shaman on Cave Beast",
       "description": "Miniscule in size but still a fearsome wizard.",
       "category": "hero",
-      "keywords": ["Goblin", "Cavalry"],
+      "keywords": ["Goblin", "Mounted"],
       "models": [
         {
           "name": "Goblin Shaman on Cave Beast",
@@ -668,7 +668,7 @@
       "name": "Goblin Spider Riders",
       "description": "Goblins that have tamed various kinds of deadly spiders and ride them into battle.",
       "category": "core",
-      "keywords": ["Goblin", "Cavalry"],
+      "keywords": ["Goblin", "Mounted"],
       "models": [
         {
           "name": "Goblin Spider Rider",
@@ -690,7 +690,7 @@
       "name": "Goblin Wolf Riders",
       "description": "Goblins that have tamed various kinds of feral wolves and ride them into battle.",
       "category": "core",
-      "keywords": ["Goblin", "Cavalry"],
+      "keywords": ["Goblin", "Mounted"],
       "models": [
         {
           "name": "Goblin Wolf Rider",
@@ -783,7 +783,7 @@
       "name": "Orc Boar Riders",
       "description": "Wild swine are just as bad-tempered as the savage orcs who ride them, making for a devastating force.",
       "category": "elite",
-      "keywords": ["Orc", "Cavalry"],
+      "keywords": ["Orc", "Mounted"],
       "models": [
         {
           "name": "Orc Boar Rider",
@@ -832,7 +832,7 @@
       "name": "Goblin Knights",
       "description": "Insane goblins riding ferocious cave-beasts.",
       "category": "elite",
-      "keywords": ["Goblin", "Cavalry"],
+      "keywords": ["Goblin", "Mounted"],
       "models": [
         {
           "name": "Goblin Knight",

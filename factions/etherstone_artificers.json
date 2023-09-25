@@ -37,7 +37,7 @@
       "name": "Thane on War-Beast",
       "description": "A dwarven leader riding atop a ferocious beast into battle.",
       "category": "hero",
-      "keywords": ["Cavalry"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Thane on War-Beast",
@@ -97,7 +97,7 @@
       "name": "Thane on Magma Drake",
       "description": "A dwarven leader riding atop a terrifying beast into battle.",
       "category": "hero",
-      "keywords": ["Cavalry", "Monster"],
+      "keywords": ["Mounted", "Monster"],
       "models": [
         {
           "name": "Thane on Magma Drake",
@@ -107,14 +107,14 @@
           "fight": 6,
           "defense": 13,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 3}, "fly", {"id": "heavy_impact", "x": 3}, {"id": "warrior", "x": 1}, {"id": "leader", "x": "Cavalry"}],
+          "rules": [{"id": "wounds", "x": 3}, "fly", {"id": "heavy_impact", "x": 3}, {"id": "warrior", "x": 1}, {"id": "leader", "x": "Mounted"}],
           "weapons": ["devouring_maw", {"id": "great_weapon", "count": 4}, {"id": "horn_and_claws", "count": 6}, "napalm_breath"],
           "options": [
             {
               "replaceWeapon": [{"id": "great_weapon", "count": 4}],
               "withWeapon": [{"id": "great_weapon", "count": 5}, {"id": "grand_hammer", "count": 4}, {"id": "grand_weapon", "count": 4}, {"id": "heavy_lance", "count": 4}]
             },
-            {"addRule": ["relic_shield", {"id": "inspiring", "x": "Cavalry"}]},
+            {"addRule": ["relic_shield", {"id": "inspiring", "x": "Mounted"}]},
             {"addWeapon": ["heavy_crossbow", "heavy_pistol"], "limit": 1},
             {"replaceRule": [{"id": "warrior", "x": 1}], "withRule": [{"id": "warrior", "x": 2}]}
           ],
@@ -152,7 +152,7 @@
       "name": "Runepriest on War-Beast",
       "description": "A dwarven wizard riding atop a ferocious beast into battle.",
       "category": "hero",
-      "keywords": ["Cavalry"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Runepriest on War-Beast",
@@ -200,7 +200,7 @@
       "name": "Runepriest on Magma Drake",
       "description": "A dwarven wizard riding atop a terrifying beast into battle.",
       "category": "hero",
-      "keywords": ["Cavalry", "Monster"],
+      "keywords": ["Mounted", "Monster"],
       "models": [
         {
           "name": "Runepriest on Magma Drake",
@@ -210,7 +210,7 @@
           "fight": 6,
           "defense": 13,
           "reflexes": 5,
-          "rules": [{"id": "wounds", "x": 3}, "fly", {"id": "heavy_impact", "x": 3}, {"id": "leader", "x": "Cavalry"}, {"id": "power", "x": 2}],
+          "rules": [{"id": "wounds", "x": 3}, "fly", {"id": "heavy_impact", "x": 3}, {"id": "leader", "x": "Mounted"}, {"id": "power", "x": 2}],
           "weapons": ["handweapon", "staff", "devouring_maw", {"id": "horn_and_claws", "count": 6}, "napalm_breath"],
           "options": [{"replaceWeapon": ["handweapon", "staff"], "withWeapon": ["great_staff", "grand_hammer"]}, {"replaceRule": [{"id": "power", "x": 2}], "withRule": [{"id": "power", "x": 3}]}],
           "min": 1,
@@ -222,7 +222,7 @@
       "name": "Runepriest on Dwarven Chariot",
       "description": "A dwarven wizard riding atop a well-armored chariot pulled by two ferocious beasts.",
       "category": "hero",
-      "keywords": ["Cavalry"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Runepriest on Dwarven Chariot",
@@ -315,7 +315,7 @@
       "name": "Berserker Champion on War-Beast",
       "description": "A dwarven berserker champion riding atop a ferocious beast into battle.",
       "category": "hero",
-      "keywords": ["Cavalry"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Berserker Champion on War-Beast",
@@ -337,7 +337,7 @@
       "name": "Berserker Champion on Magma Drake",
       "description": "A dwarven berserker champion riding atop a terrifying beast into battle.",
       "category": "hero",
-      "keywords": ["Cavalry", "Monster"],
+      "keywords": ["Mounted", "Monster"],
       "models": [
         {
           "name": "Berserker Champion on Magma Drake",
@@ -347,9 +347,9 @@
           "fight": 6,
           "defense": 13,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 3}, "fanatical", "furious", "fly", {"id": "heavy_impact", "x": 3}, {"id": "warrior", "x": 1}, {"id": "leader", "x": "Cavalry"}],
+          "rules": [{"id": "wounds", "x": 3}, "fanatical", "furious", "fly", {"id": "heavy_impact", "x": 3}, {"id": "warrior", "x": 1}, {"id": "leader", "x": "Mounted"}],
           "weapons": ["devouring_maw", {"id": "grand_weapon", "count": 6}, {"id": "horn_and_claws", "count": 6}, "napalm_breath"],
-          "options": [{"addRule": [{"id": "inspiring", "x": "Cavalry"}]}, {"replaceRule": [{"id": "warrior", "x": 1}], "withRule": [{"id": "warrior", "x": 2}]}],
+          "options": [{"addRule": [{"id": "inspiring", "x": "Mounted"}]}, {"replaceRule": [{"id": "warrior", "x": 1}], "withRule": [{"id": "warrior", "x": 2}]}],
           "min": 1,
           "max": 1
         }
@@ -401,7 +401,7 @@
       "name": "Dwarven Warriors on War-Beasts",
       "description": "A squad of dwarven warriors riding atop ferocious beasts into battle.",
       "category": "elite",
-      "keywords": ["Cavalry"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Dwarven Warrior on War-Beast",
@@ -510,7 +510,7 @@
       "name": "Dwarven Berserkers on War-Beasts",
       "description": "A squad of dwarven berserkers riding atop ferocious beasts into battle.",
       "category": "elite",
-      "keywords": ["Cavalry"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Dwarven Berserker on War-Beast",

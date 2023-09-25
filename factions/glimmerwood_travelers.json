@@ -173,7 +173,7 @@
       "name": "Druid on Great Beast",
       "description": "A mystical spellcaster riding upon a great beast, rousing the forest from its slumber.",
       "category": "hero",
-      "keywords": ["Cavalry"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Druid on Great Beast",
@@ -200,7 +200,7 @@
       "name": "Druid on Great Eagle",
       "description": "A mystical spellcaster riding upon a mighty eagle, rousing the forest from its slumber.",
       "category": "hero",
-      "keywords": ["Beast", "Cavalry", "Monster"],
+      "keywords": ["Mounted", "Monster"],
       "models": [
         {
           "name": "Druid on Great Eagle",
@@ -210,7 +210,7 @@
           "fight": 6,
           "defense": 8,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 3}, "fly", {"id": "impact", "x": 2}, {"id": "leader", "x": "Cavalry"}, {"id": "power", "x": 1}],
+          "rules": [{"id": "wounds", "x": 3}, "fly", {"id": "impact", "x": 2}, {"id": "leader", "x": "Mounted"}, {"id": "power", "x": 1}],
           "weapons": ["staff", "handweapon", {"id": "beak", "count": 2}, {"id": "claws", "count": 2}],
           "options": [
             {"replaceWeapon": ["staff", "handweapon"], "withWeapon": [{"id": "polearm", "count": 2}, {"id": "great_staff", "count": 2}]},
@@ -226,7 +226,7 @@
       "name": "Druid on Forest Dragon",
       "description": "A mystical spellcaster riding a giant dragon, rousing the forest from its slumber.",
       "category": "hero",
-      "keywords": ["Cavalry", "Monster"],
+      "keywords": ["Mounted", "Monster"],
       "models": [
         {
           "name": "Druid on Forest Dragon",
@@ -280,7 +280,7 @@
       "name": "Wild Noble on Great Beast",
       "description": "A crowned leader of the reclusive wood elves, riding upon a great beast into combat.",
       "category": "hero",
-      "keywords": ["Cavalry"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Wild Noble on Great Beast",
@@ -310,7 +310,7 @@
       "name": "Wild Noble on Great Eagle",
       "description": "A crowned leader of the reclusive wood elves, riding upon a mighty eagle into combat.",
       "category": "hero",
-      "keywords": ["Beast", "Cavalry", "Monster"],
+      "keywords": ["Mounted", "Monster"],
       "models": [
         {
           "name": "Wild Noble on Great Eagle",
@@ -320,14 +320,14 @@
           "fight": 6,
           "defense": 8,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 3}, "fly", {"id": "impact", "x": 2}, {"id": "leader", "x": "Cavalry"}, {"id": "marksman", "x": 1}],
+          "rules": [{"id": "wounds", "x": 3}, "fly", {"id": "impact", "x": 2}, {"id": "leader", "x": "Mounted"}, {"id": "marksman", "x": 1}],
           "weapons": [{"id": "handweapon", "count": 3}, "long_bow", {"id": "beak", "count": 2}, {"id": "claws", "count": 2}],
           "options": [
             {
               "replaceWeapon": [{"id": "handweapon", "count": 3}],
               "withWeapon": [{"id": "great_weapon", "count": 3}, {"id": "handweapon", "count": 4}, {"id": "polearm", "count": 3}, {"id": "lance", "count": 3}]
             },
-            {"addRule": ["relic_shield", {"id": "power", "x": 1}, {"id": "inspiring", "x": "Cavalry"}]},
+            {"addRule": ["relic_shield", {"id": "power", "x": 1}, {"id": "inspiring", "x": "Mounted"}]},
             {"replaceRule": [{"id": "marksman", "x": 1}], "withRule": [{"id": "warrior", "x": 1}]}
           ],
           "min": 1,
@@ -339,7 +339,7 @@
       "name": "Wild Noble on Forest Dragon",
       "description": "A crowned leader of the reclusive wood elves, riding a giant dragon.",
       "category": "hero",
-      "keywords": ["Cavalry", "Monster"],
+      "keywords": ["Mounted", "Monster"],
       "models": [
         {
           "name": "Wild Noble on Forest Dragon",
@@ -471,7 +471,7 @@
       "name": "Wild Knights",
       "description": "The cavalry of the wood elves, capable of shooting a hail of arrows on the run or trampling down their foes.",
       "category": "elite",
-      "keywords": ["Cavalry"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Wild Knight",
@@ -496,7 +496,7 @@
       "name": "Moon Knights",
       "description": "Blessed by the Goddess of the Night, they ride into combat with magic and steel.",
       "category": "elite",
-      "keywords": ["Cavalry"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Moon Knight",
@@ -611,7 +611,7 @@
       "name": "Hawk Knights",
       "description": "Brave warriors riding giant birds of prey, striking fear into their foes.",
       "category": "elite",
-      "keywords": ["Beast", "Cavalry"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Hawk Knight",

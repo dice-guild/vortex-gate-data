@@ -525,7 +525,7 @@
       "name": "Rider Squad",
       "description": "A squad of soldiers mounted on either horseback or motorcycle for more mobility.",
       "category": "elite",
-      "keywords": ["Biker", "Cavalry"],
+      "keywords": ["Biker", "Mounted"],
       "rules": [{"id": "impact", "x": 1}, {"id": "wounds", "x": 2}],
       "options": [{"replaceWeapon": {"id": "light_handweapon", "count": 2}, "withWeapon": ["rider_lance"]}],
       "models": [

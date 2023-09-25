@@ -51,7 +51,7 @@
           "max": 1
         }
       ],
-      "keywords": ["Undead", "Cavalry", "Monster"],
+      "keywords": ["Undead", "Mounted", "Monster"],
       "subfactions": ["none"]
     },
     "vampire_lord_horse": {
@@ -79,7 +79,7 @@
           "max": 1
         }
       ],
-      "keywords": ["Undead", "Cavalry"],
+      "keywords": ["Undead", "Mounted"],
       "subfactions": ["none"]
     },
     "vampire_lord": {
@@ -163,7 +163,7 @@
           ]
         }
       ],
-      "keywords": ["Undead", "Cavalry"],
+      "keywords": ["Undead", "Mounted"],
       "subfactions": ["none"],
       "rules": [{"id": "wounds", "x": 3}, {"id": "leader", "x": "Infantry, Cavalry"}]
     },
@@ -331,7 +331,7 @@
           "options": [{"replaceWeapon": [{"id": "heavy_handweapon", "count": 3}], "withWeapon": [{"id": "great_lance", "count": 2}]}]
         }
       ],
-      "keywords": ["Undead", "Cavalry"],
+      "keywords": ["Undead", "Mounted"],
       "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}],
       "subfactions": ["none"]
     },
@@ -354,7 +354,7 @@
           "options": [{"replaceWeapon": [{"id": "lance", "count": 3}], "withWeapon": [{"id": "heavy_handweapon", "count": 5}]}]
         }
       ],
-      "keywords": ["Undead", "Cavalry"],
+      "keywords": ["Undead", "Mounted"],
       "rules": [{"id": "wounds", "x": 2}],
       "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}],
       "subfactions": ["none"]

@@ -36,7 +36,7 @@
       "name": "Shrouded Noble on Ghost Horse",
       "description": "Once a minor noble of the planet, now nothing more than a spiteful revenant mounted on a cursed spirit-mare.",
       "category": "hero",
-      "keywords": ["Cavalry"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Shrouded Noble on Ghost Horse",
@@ -120,7 +120,7 @@
       "name": "Shrouded King on Ghost Horse",
       "description": "Once a hero of the planet, now nothing more than a spiteful revenant mounted on a cursed spirit-mare.",
       "category": "hero",
-      "keywords": ["Cavalry"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Shrouded King on Ghost Horse",
@@ -149,7 +149,7 @@
       "name": "Shrouded King on Ghostly Chariot",
       "description": "Once a hero of the planet, now nothing more than a spiteful revenant mounted on a ghastly chariot.",
       "category": "hero",
-      "keywords": ["Cavalry"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Shrouded King on Ghostly Chariot",
@@ -273,7 +273,7 @@
       "name": "Ghostly Knights",
       "description": "Spirits of ancient knights, reaping the living with their massive scythes.",
       "category": "elite",
-      "keywords": ["Cavalry"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Knight",

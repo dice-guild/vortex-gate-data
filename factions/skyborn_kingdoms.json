@@ -43,7 +43,7 @@
       "name": "Captain on Warhorse",
       "description": "A captain of the Human Kingdoms who inspires his troops from horseback.",
       "category": "hero",
-      "keywords": ["Cavalry"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Captain on Warhorse",
@@ -73,7 +73,7 @@
       "name": "Captain on Gryphon",
       "description": "A captain of the Human Kingdoms flying across the battlefield atop a terrifying beast.",
       "category": "hero",
-      "keywords": ["Beast", "Cavalry"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Captain on Gryphon",
@@ -121,7 +121,7 @@
       "name": "Battlemage on Warhorse",
       "description": "A powerful wizard on horseback who hurls powerful spells at their foes.",
       "category": "hero",
-      "keywords": ["Cavalry"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Battlemage on Warhorse",
@@ -147,7 +147,7 @@
       "name": "Grand Mage on Unicorn",
       "description": "A mighty wizard on a mythical unicorn who hurls powerful spells at their foes.",
       "category": "hero",
-      "keywords": ["Cavalry"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Grand Mage on Unicorn",
@@ -190,7 +190,7 @@
       "name": "Warrior-Priest on Warhorse",
       "description": "A zealot on horseback who smites their foe with the power of divine justice.",
       "category": "hero",
-      "keywords": ["Cavalry"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Warrior-Priest on Warhorse",
@@ -237,7 +237,7 @@
       "name": "Engineer on Mechanical Horse",
       "description": "An engineer of the Human Kingdoms who looks after the warmachines of the army on horseback.",
       "category": "hero",
-      "keywords": ["Cavalry"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Engineer on Mechanical Horse",
@@ -259,7 +259,7 @@
       "name": "Paladin",
       "description": "A noble of the Human Kingdoms, commanding his personal knights.",
       "category": "hero",
-      "keywords": ["Cavalry"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Paladin",
@@ -269,7 +269,7 @@
           "fight": 7,
           "defense": 7,
           "reflexes": 6,
-          "rules": [{"id": "leader", "x": "Cavalry"}, {"id": "warrior", "x": 1}, {"id": "wounds", "x": 3}],
+          "rules": [{"id": "leader", "x": "Mounted"}, {"id": "warrior", "x": 1}, {"id": "wounds", "x": 3}],
           "weapons": [{"id": "heavy_handweapon", "count": 3}, "shield", {"id": "hooves_and_teeth", "count": 2}],
           "options": [
             {
@@ -287,7 +287,7 @@
       "name": "Spirit Guardian",
       "description": "A once forgotten knight who has returned to defend the great human kingdoms.",
       "category": "hero",
-      "keywords": ["Cavalry", "Undead"],
+      "keywords": ["Mounted", "Undead"],
       "models": [
         {
           "name": "Spirit Guardian",
@@ -467,7 +467,7 @@
       "name": "Mounted Pistoliers",
       "description": "Powerful cavalry that hammer their opponents with shot before closing in for the kill.",
       "category": "elite",
-      "keywords": ["Cavalry"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Mounted Pistolier",
@@ -612,7 +612,7 @@
       "name": "Realm Knights on Warhorses",
       "description": "Those who can afford a warhorse and are of noble blood ride united into battle.",
       "category": "elite",
-      "keywords": ["Cavalry"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Realm Knight on Warhorse",
@@ -639,7 +639,7 @@
       "name": "Realm Knights on Lesser Gryphons",
       "description": "Gryphons are mighty creatures and are often being mounted by noble knights.",
       "category": "rare",
-      "keywords": ["Beast", "Cavalry"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Realm Knight on Lesser Gryphon",
@@ -662,7 +662,7 @@
       "name": "Crusaders on Warhorses",
       "description": "Mounted on the strongest and fastest horses of the realms, few can stand before their charge.",
       "category": "rare",
-      "keywords": ["Cavalry"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Crusader on Warhorse",

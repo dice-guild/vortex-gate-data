@@ -121,7 +121,7 @@
       "name": "Centaur Lord",
       "description": "Wild-born hero, stampeding across the realms in hunt of their prey.",
       "category": "hero",
-      "keywords": ["Beast", "Cavalry"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Centaur Lord",
@@ -142,7 +142,7 @@
       "name": "Blessed Ogre Centaur",
       "description": "The greatest of Ogre Centaurs can channel the wrath of the heavens above.",
       "category": "hero",
-      "keywords": ["Beast", "Cavalry"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Blessed Ogre Centaur",
@@ -309,7 +309,7 @@
       "name": "Centaurs",
       "description": "Wild-born creatures, stampeding across the realms in hunt of their prey.",
       "category": "elite",
-      "keywords": ["Beast", "Cavalry"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Centaur",
@@ -331,7 +331,7 @@
       "name": "Ogre Centaurs",
       "description": "Monstrous centaurs using brutal weapons to crush their enemies.",
       "category": "elite",
-      "keywords": ["Beast", "Cavalry"],
+      "keywords": ["Mounted"],
       "models": [
         {
           "name": "Ogre Centaur",
