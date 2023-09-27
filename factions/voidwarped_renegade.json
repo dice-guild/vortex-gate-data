@@ -1623,6 +1623,57 @@
         }
       ]
     },
+    "heavy_apc": {
+      "name": "Heavy APC",
+      "description": "A heavy transport twisted by the vortex.",
+      "category": "transport",
+      "keywords": ["Vehicle"],
+      "models": [
+        {
+          "name": "Heavy APC",
+          "movement": 10,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 0,
+          "defense": 12,
+          "reflexes": 6,
+          "rules": [{"id": "wounds", "x": 5}, {"id": "impact", "x": 3}, {"id": "transport", "x": 12}, "vulnerable_side_rear"],
+          "weapons": [{"id": "twin_combat_rifle", "mount": ["Front"]}, {"id": "twin_combat_rifle", "mount": ["Front", "Left"]}, {"id": "twin_combat_rifle", "mount": ["Front", "Right"]}],
+          "options": [
+            {
+              "replaceWeapon": [{"id": "twin_combat_rifle", "mount": ["Front"]}],
+              "withWeapon": [
+                {"id": "twin_light_machinegun", "mount": ["Front"]},
+                {"id": "twin_flamethrower", "mount": ["Front"]},
+                {"id": "twin_plasma_rifle", "mount": ["Front"]},
+                {"id": "twin_fusion_rifle", "mount": ["Front"]},
+                {"id": "twin_thermal_rifle", "mount": ["Front"]},
+                {"id": "gravity_cannon", "mount": ["Front"]},
+                {"id": "twin_gatling_gun", "mount": ["Front"]}
+              ]
+            },
+            {
+              "replaceWeapon": [{"id": "twin_combat_rifle", "mount": ["Front", "Left"]}, {"id": "twin_combat_rifle", "mount": ["Front", "Right"]}],
+              "withWeapon": [
+                [{"id": "twin_light_machinegun", "mount": ["Front", "Left"]}, {"id": "twin_light_machinegun", "mount": ["Front", "Right"]}],
+                [{"id": "twin_flamethrower", "mount": ["Front", "Left"]}, {"id": "twin_flamethrower", "mount": ["Front", "Right"]}],
+                [{"id": "twin_plasma_rifle", "mount": ["Front", "Left"]}, {"id": "twin_plasma_rifle", "mount": ["Front", "Right"]}],
+                [{"id": "twin_fusion_rifle", "mount": ["Front", "Left"]}, {"id": "twin_fusion_rifle", "mount": ["Front", "Right"]}],
+                [{"id": "rocket_pod", "mount": ["Front", "Left"]}, {"id": "rocket_pod", "mount": ["Front", "Right"]}],
+                [{"id": "twin_laser_cannon", "mount": ["Front", "Left"]}, {"id": "twin_laser_cannon", "mount": ["Front", "Right"]}],
+                [{"id": "gravity_cannon", "mount": ["Front", "Left"]}, {"id": "gravity_cannon", "mount": ["Front", "Right"]}],
+                [{"id": "thermal_lance", "mount": ["Front", "Left"]}, {"id": "thermal_lance", "mount": ["Front", "Right"]}]
+              ]
+            },
+            {"addWeapon": ["twin_combat_rifle", "heavy_machinegun", "plasma_cannon", "fusion_cannon", "heavy_flamethrower", "missile_launcher"], "limit": 1},
+            {"addWeapon": ["hunter_missiles"]},
+            {"addRule": ["assault_ramp", {"id": "dozer", "name": "Dozer Blade"}, {"id": "hover", "name": "Anti-Gravity Engine"}, "spiked_ram"]}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
     "voidwarped_juggernaut": {
       "name": "Voidwarped Juggernaut",
       "description": "A corrupted attack walker upgraded with infernal weapons.",
