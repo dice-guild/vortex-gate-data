@@ -675,12 +675,6 @@
     "runes": {"name": "Warding Runes", "description": "All model within 6\" of this terrain feature have +1 to their Save characteristic when being hit by a Power.", "points": [20]},
     "discipline": {"name": "Discipline", "description": "This unit and all friendly units within 6\" ignore Shock when making any reaction rolls.", "points": 15},
     "astral_quiver": {"name": "Astral Quiver", "description": "When you use the Moonfire Arrows strategy on this unit, you don't spend SP to use it.", "points": 4},
-    "tactician": {
-      "name": "Luminastra Tactics",
-      "inputs": ["x"],
-      "description": "When this unit is activated, choose up to X friendly _Infantry_ or _Cavalry_ units within 6\". This unit and those units gains one of these effects until the end of the round.\n* Re-roll failed Strength tests of 9+\n* Re-roll failed Accuracy tests of 9+",
-      "points": ["rule.x", {"multiply": 10}]
-    },
     "crown_of_ages": {"name": "Crown of Ages", "description": "This unit may perform a group activation with another unit.", "points": [10]}
   },
   "powers": {
