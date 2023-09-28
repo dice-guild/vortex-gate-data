@@ -51,8 +51,7 @@
           "options": [
             {"replaceWeapon": [{"id": "handweapon", "count": 3}], "withWeapon": [{"id": "lance", "count": 3}, {"id": "great_weapon", "count": 3}, {"id": "handweapon", "count": 4}]},
             {"addWeapon": ["long_bow"]},
-            {"addRule": ["cloak", "shield", {"id": "inspiring", "x": "Infantry, Cavalry"}, {"id": "power", "x": 1}]},
-            {"replaceRule": [{"id": "tactician", "x": 1}], "withRule": [{"id": "tactician", "x": 2}]}
+            {"addRule": ["cloak", "shield", {"id": "power", "x": 1}]}
           ],
           "min": 1,
           "max": 1
@@ -73,12 +72,12 @@
           "fight": 7,
           "defense": 13,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 5}, "fly", {"id": "tactician", "x": 1}],
-          "weapons": [{"id": "handweapon", "count": 3}, {"id": "flame_breath", "count": 4}, {"id": "fangs_and_claws", "count": 3}, "bashing_tail"],
+          "rules": [{"id": "wounds", "x": 5}, "fly"],
+          "weapons": [{"id": "handweapon", "count": 5}, {"id": "flame_breath", "count": 6}],
           "options": [
-            {"replaceWeapon": [{"id": "handweapon", "count": 3}], "withWeapon": [{"id": "lance", "count": 3}, {"id": "great_weapon", "count": 3}, {"id": "handweapon", "count": 4}]},
+            {"replaceWeapon": [{"id": "handweapon", "count": 5}], "withWeapon": [{"id": "lance", "count": 5}, {"id": "great_weapon", "count": 5}]},
             {"addWeapon": ["long_bow"]},
-            {"addRule": ["cloak", "relic_shield", {"id": "inspiring", "x": "Monster"}, {"id": "power", "x": 1}]}
+            {"addRule": ["cloak", "relic_shield", "inspiring_aura"]}
           ],
           "min": 1,
           "max": 1
@@ -99,7 +98,7 @@
           "fight": 7,
           "defense": 10,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 3}, {"id": "tactician", "x": 2}, {"id": "impact", "x": 3}, {"id": "leader", "x": "Vehicle"}],
+          "rules": [{"id": "wounds", "x": 3}, {"id": "impact", "x": 3}],
           "weapons": [{"id": "hooves_and_teeth", "count": 4}, {"id": "handweapon", "count": 3}],
           "options": [
             {"replaceWeapon": [{"id": "handweapon", "count": 3}], "withWeapon": [{"id": "lance", "count": 3}, {"id": "great_weapon", "count": 3}, {"id": "handweapon", "count": 4}]},
@@ -129,8 +128,7 @@
           "rules": ["leader", {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
           "weapons": ["staff", "handweapon"],
           "options": [
-            {"replaceWeapon": ["staff", "handweapon"], "withWeapon": ["great_staff", {"id": "great_weapon", "count": 2}]},
-            {"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]}
+            {"replaceWeapon": ["staff", "handweapon"], "withWeapon": ["great_staff", {"id": "great_weapon", "count": 2}]}
           ],
           "min": 1,
           "max": 1
@@ -151,9 +149,9 @@
           "fight": 5,
           "defense": 6,
           "reflexes": 6,
-          "rules": [{"id": "leader", "x": "Infantry, Cavalry"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
+          "rules": ["leader", {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
           "weapons": ["staff", "handweapon", {"id": "heavy_hooves_and_teeth", "count": 2}],
-          "options": [{"replaceWeapon": ["staff", "handweapon"], "withWeapon": ["great_staff"]}, {"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]}],
+          "options": [{"replaceWeapon": ["staff", "handweapon"], "withWeapon": ["great_staff"]}],
           "min": 1,
           "max": 1
         }
@@ -174,10 +172,9 @@
           "defense": 13,
           "reflexes": 6,
           "rules": [{"id": "wounds", "x": 5}, "fly", {"id": "power", "x": 2}, {"id": "leader", "x": "Cavalry, Monster"}],
-          "weapons": [{"id": "staff", "count": 2}, {"id": "handweapon", "count": 2}, {"id": "flame_breath", "count": 4}, {"id": "fangs_and_claws", "count": 3}, "bashing_tail"],
+          "weapons": [{"id": "staff", "count": 2}, {"id": "handweapon", "count": 2}, {"id": "flame_breath", "count": 6}],
           "options": [
-            {"replaceWeapon": [{"id": "staff", "count": 2}, {"id": "handweapon", "count": 2}], "withWeapon": [{"id": "great_staff", "count": 3}]},
-            {"replaceRule": [{"id": "power", "x": 2}], "withRule": [{"id": "power", "x": 3}]}
+            {"replaceWeapon": [{"id": "staff", "count": 2}, {"id": "handweapon", "count": 2}], "withWeapon": [{"id": "great_staff", "count": 3}]}
           ],
           "min": 1,
           "max": 1
@@ -202,8 +199,7 @@
           "weapons": [{"id": "hooves_and_teeth", "count": 4}, {"id": "handweapon", "count": 2}, {"id": "staff", "count": 2}],
           "options": [
             {"replaceWeapon": [{"id": "staff", "count": 2}, {"id": "handweapon", "count": 2}], "withWeapon": [{"id": "great_staff", "count": 3}]},
-            {"replaceWeapon": [{"id": "hooves_and_teeth", "count": 4}], "withWeapon": [{"id": "claws", "count": 4}]},
-            {"replaceRule": [{"id": "power", "x": 2}], "withRule": [{"id": "power", "x": 3}]}
+            {"replaceWeapon": [{"id": "hooves_and_teeth", "count": 4}], "withWeapon": [{"id": "claws", "count": 4}]}
           ],
           "min": 1,
           "max": 1
@@ -227,7 +223,7 @@
           "weapons": [{"id": "heavy_polearm", "count": 4}],
           "options": [
             {"replaceWeapon": [{"id": "heavy_polearm", "count": 4}], "withWeapon": [{"id": "grand_weapon", "count": 4}]},
-            {"addRule": ["shield", {"id": "inspiring", "x": "Infantry"}, {"id": "power", "x": 1}]}
+            {"addRule": ["shield"]}
           ],
           "min": 1,
           "max": 1
@@ -248,11 +244,10 @@
           "fight": 7,
           "defense": 12,
           "reflexes": 7,
-          "rules": [{"id": "wounds", "x": 3}, {"id": "resistant", "x": 2}, "fear", "fearless", "fly", {"id": "tactician", "x": 2}, {"id": "leader", "x": "Cavalry, Monster"}],
-          "weapons": [{"id": "heavy_polearm", "count": 4}, {"id": "beak_and_claws", "count": 6}, {"id": "flame_breath", "count": 2}],
+          "rules": [{"id": "wounds", "x": 3}, {"id": "resistant", "x": 2}, "fear", "fearless", "fly", "inspiring_aura"],
+          "weapons": [{"id": "heavy_polearm", "count": 4}, {"id": "beak_and_claws", "count": 6}, {"id": "flame_breath", "count": 4}],
           "options": [
-            {"replaceWeapon": [{"id": "heavy_polearm", "count": 4}], "withWeapon": [{"id": "grand_weapon", "count": 4}]},
-            {"addRule": ["relic_shield", {"id": "inspiring", "x": "Cavalry, Monster"}, {"id": "power", "x": 1}]}
+            {"replaceWeapon": [{"id": "heavy_polearm", "count": 4}], "withWeapon": [{"id": "grand_weapon", "count": 4}]}
           ],
           "min": 1,
           "max": 1
@@ -273,13 +268,11 @@
           "fight": 6,
           "defense": 10,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 3}, {"id": "resistant", "x": 2}, "fear", "fearless", {"id": "impact", "x": 3}, {"id": "leader", "x": "Vehicle"}, {"id": "tactician", "x": 2}],
+          "rules": [{"id": "wounds", "x": 3}, {"id": "resistant", "x": 2}, "fear", "inspiring_aura", "fearless", {"id": "impact", "x": 3}],
           "weapons": [{"id": "hooves_and_teeth", "count": 4}, {"id": "heavy_polearm", "count": 4}],
           "options": [
             {"replaceWeapon": [{"id": "heavy_polearm", "count": 4}], "withWeapon": [{"id": "grand_weapon", "count": 4}]},
-            {"replaceWeapon": [{"id": "hooves_and_teeth", "count": 4}], "withWeapon": [{"id": "claws", "count": 4}]},
-            {"addRule": ["relic_shield", {"id": "inspiring", "x": "Vehicle"}, {"id": "power", "x": 1}]},
-            {"replaceRule": [{"id": "tactician", "x": 2}], "withRule": [{"id": "tactician", "x": 3}]}
+            {"replaceWeapon": [{"id": "hooves_and_teeth", "count": 4}], "withWeapon": [{"id": "claws", "count": 4}]}
           ],
           "min": 1,
           "max": 1
@@ -565,8 +558,8 @@
           "fight": 7,
           "defense": 13,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 3}, "fly"],
-          "weapons": [{"id": "flame_breath", "count": 4}, {"id": "fangs_and_claws", "count": 3}, "bashing_tail"],
+          "rules": [{"id": "wounds", "x": 5}, "fly"],
+          "weapons": [{"id": "flame_breath", "count": 6}, {"id": "fangs_and_claws", "count": 5}],
           "min": 1,
           "max": 1
         }
@@ -676,7 +669,7 @@
   "rules": {
     "cloak": {
       "name": "Enchanted Cloak",
-      "description": "This model has +1 to its Save characteristic when being hit by a ranged attack.",
+      "description": "Enemy units suffer -1 Accuracy when targeting this unit if all models have this rule.",
       "points": ["model.rules.wounds.x", {"max": 1}, {"multiply": 1}]
     },
     "runes": {"name": "Warding Runes", "description": "All model within 6\" of this terrain feature have +1 to their Save characteristic when being hit by a Power.", "points": [20]},
@@ -688,7 +681,7 @@
       "description": "When this unit is activated, choose up to X friendly _Infantry_ or _Cavalry_ units within 6\". This unit and those units gains one of these effects until the end of the round.\n* Re-roll failed Strength tests of 9+\n* Re-roll failed Accuracy tests of 9+",
       "points": ["rule.x", {"multiply": 10}]
     },
-    "crown_of_ages": {"name": "Crown of Ages", "description": "This unit may perform a group activation with one additional unit.", "points": [10]}
+    "crown_of_ages": {"name": "Crown of Ages", "description": "This unit may perform a group activation with another unit.", "points": [10]}
   },
   "powers": {
     "arcane_flux": {
@@ -726,7 +719,7 @@
     "phoenix_armor": {
       "name": "Moon Armor",
       "rule": {"id": "resistant", "x": 2},
-      "description": "Upgrade one Hero model with Defiant(2).",
+      "description": "Upgrade one Hero model with Resistant(2).",
       "flavor": "Gilded armor that has been blessed by the Moon God.",
       "points": 10
     },

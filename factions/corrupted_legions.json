@@ -592,7 +592,7 @@
     {
       "name": "Runic Armor",
       "rule": {"id": "resistant", "x": 3},
-      "description": "Upgrade one _Leader_ model with Defiant(3).",
+      "description": "Upgrade one _Leader_ model with Resistant(3).",
       "flavor": "This enchanted piece of armor grants its wearer unholy vitality.",
       "points": 5
     },

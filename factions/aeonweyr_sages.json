@@ -983,7 +983,7 @@
     },
     "runic_armor": {
       "name": "Runic Armor",
-      "description": "Upgrade one _Leader_ model with Defiant(3).",
+      "description": "Upgrade one _Leader_ model with Resistant(3).",
       "flavor": "Sometimes it seems like a champion is protected by an unseen force, deflecting lethal blows.",
       "points": 5,
       "rule": {"id": "resistant", "x": 3}

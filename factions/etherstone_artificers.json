@@ -1069,7 +1069,7 @@
     {
       "name": "Mastercrafted Armor",
       "rule": {"id": "resistant", "x": 3},
-      "description": "Upgrade one _Leader_ model with Defiant(3).",
+      "description": "Upgrade one _Leader_ model with Resistant(3).",
       "flavor": "This suit of armor is covered in runes of power.",
       "points": 5
     },
