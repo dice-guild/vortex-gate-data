@@ -3,7 +3,7 @@
   "name": "Warborn Marauders",
   "author": "guitarninja",
   "background": "The Warborn Marauders are a band of roving orc-like beings who scrap, fight and die for the glory of it. Their origin is still unknown, but they are spread across the galaxy in wide numbers. Marauders usually gather with a steady amount of goblins who act as the workers and some even pilot goblin mech creations.",
-  "lore": "\n\nIn the far reaches of the galaxy, on a planet called Cragoria, exists a formidable race known as the Warborn Marauders. These marauders are a warlike and tenacious people, who have embraced their warrior spirit and mastered the art of combat. They are renowned for their fearsome raids and conquests, leaving a trail of destruction in their wake.\n\nLong ago, the Warborn Marauders emerged on a desolate and unforgiving planet, a world of harsh landscapes and scarce resources. In their quest for survival, the Warborn learned to harness their natural strength and adaptability, becoming skilled scavengers and warriors.\n\nIn this harsh environment, they encountered remnants of advanced technology scattered across their planet. These remnants were the ruins of a long-lost civilization, abandoned in ages past. The Warborn saw potential in this scrap technology and, over time, learned to salvage, repair, and repurpose it to their advantage. They became masters of makeshift weapons, armor, and machinery, cobbling together formidable war machines from salvaged parts.\n\nWith their newfound technological prowess and relentless combat skills, the Warborn Marauders began to expand their influence beyond their homeworld. Driven by their warrior spirit, they embarked on interstellar conquests, raiding and pillaging other planets and civilizations that stood in their way.\n\nTheir ferocity and scrap technology made them a formidable force, and their reputation as marauders spread across the galaxy. Few dared to challenge the Warborn in open warfare, for their scrap-armored warriors and powerful war machines struck terror into the hearts of their enemies.\n\nAs the Warborn Marauders continued their relentless conquests, they formed tight-knit clans, each led by a battle-hardened warlord. These warlords, known for their tactical brilliance and indomitable spirit, were chosen through feats of strength and cunning, proving themselves worthy to lead the clans into battle.\n\nThe Warborn Marauders developed a code of honor, respecting strength, courage, and loyalty. They valued those who fought alongside them, whether they were born Warborn or earned their place among the clan through combat prowess and loyalty.\n\nDespite their fearsome reputation, the Warborn Marauders were not without honor. In certain cases, they forged uneasy alliances with other races or civilizations, entering into mercenary contracts to bolster their resources and expand their dominion. However, when these alliances no longer served their interests, the Warborn had no qualms about turning on former allies to claim victory.\n\nAs the Warborn Marauders continue to conquer and raid across the galaxy, they remain a force to be reckoned with – a people driven by their warrior spirit, bound by the strength of their clans, and wielding scrap technology that has become a symbol of their resilience and resourcefulness. Their legacy as feared marauders continues to echo across the cosmos, leaving the galaxy to wonder what worlds will fall next to the unstoppable might of the Warborn Marauders.",
+  "lore": "In the far reaches of the galaxy, on a planet called Cragoria, exists a formidable race known as the Warborn Marauders. These marauders are a warlike and tenacious people, who have embraced their warrior spirit and mastered the art of combat. They are renowned for their fearsome raids and conquests, leaving a trail of destruction in their wake.\n\nLong ago, the Warborn Marauders emerged on a desolate and unforgiving planet, a world of harsh landscapes and scarce resources. In their quest for survival, the Warborn learned to harness their natural strength and adaptability, becoming skilled scavengers and warriors.\n\nIn this harsh environment, they encountered remnants of advanced technology scattered across their planet. These remnants were the ruins of a long-lost civilization, abandoned in ages past. The Warborn saw potential in this scrap technology and, over time, learned to salvage, repair, and repurpose it to their advantage. They became masters of makeshift weapons, armor, and machinery, cobbling together formidable war machines from salvaged parts.\n\nWith their newfound technological prowess and relentless combat skills, the Warborn Marauders began to expand their influence beyond their homeworld. Driven by their warrior spirit, they embarked on interstellar conquests, raiding and pillaging other planets and civilizations that stood in their way.\n\nTheir ferocity and scrap technology made them a formidable force, and their reputation as marauders spread across the galaxy. Few dared to challenge the Warborn in open warfare, for their scrap-armored warriors and powerful war machines struck terror into the hearts of their enemies.\n\nAs the Warborn Marauders continued their relentless conquests, they formed tight-knit clans, each led by a battle-hardened warlord. These warlords, known for their tactical brilliance and indomitable spirit, were chosen through feats of strength and cunning, proving themselves worthy to lead the clans into battle.\n\nThe Warborn Marauders developed a code of honor, respecting strength, courage, and loyalty. They valued those who fought alongside them, whether they were born Warborn or earned their place among the clan through combat prowess and loyalty.\n\nDespite their fearsome reputation, the Warborn Marauders were not without honor. In certain cases, they forged uneasy alliances with other races or civilizations, entering into mercenary contracts to bolster their resources and expand their dominion. However, when these alliances no longer served their interests, the Warborn had no qualms about turning on former allies to claim victory.\n\nAs the Warborn Marauders continue to conquer and raid across the galaxy, they remain a force to be reckoned with – a people driven by their warrior spirit, bound by the strength of their clans, and wielding scrap technology that has become a symbol of their resilience and resourcefulness. Their legacy as feared marauders continues to echo across the cosmos, leaving the galaxy to wonder what worlds will fall next to the unstoppable might of the Warborn Marauders.",
   "hidden_units": {
     "grand_warlord": {
       "name": "Grand Warlord",
@@ -29,7 +29,7 @@
   "units": {
     "warlord": {
       "name": "Warlord",
-      "description": "The clan leader and toughest boss.",
+      "description": "A powerful leader of a marauder warband.",
       "category": "hero",
       "models": [
         {
@@ -40,19 +40,19 @@
           "fight": 7,
           "defense": 8,
           "reflexes": 6,
-          "rules": ["leader", {"id": "warrior", "x": 1}, {"id": "wounds", "x": 3}],
+          "rules": ["leader", "warrior", {"id": "wounds", "x": 3}],
           "weapons": ["assault_carbine", {"id": "handweapon", "count": 4}],
           "options": [
             {"replaceWeapon": ["assault_carbine"], "withWeapon": ["twin_assault_carbine", "combi_rifle"]},
             {"replaceWeapon": ["assault_carbine", {"id": "handweapon", "count": 4}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 5}]]},
+            {"replaceWeapon": ["heavy_pistol"], "withWeapon": ["plasma_pistol", "flamethrower_pistol", "storm_rifle"]},
             {
               "replaceWeapon": {"id": "handweapon", "count": 5},
-              "withWeapon": [{"id": "energy_handweapon", "count": 5}, {"id": "energy_greatweapon", "count": 5}, {"id": "energy_powerweapon", "count": 5}]
+              "withWeapon": [{"id": "energy_handweapon", "count": 5}, {"id": "energy_greatweapon", "count": 5}, {"id": "energy_powerweapon", "count": 5}, {"id": "twin_energy_handweapon", "count": 6}]
             },
             {"addWeapon": ["attack_beast"]},
             {"addRule": [{"id": "resistant", "x": 3, "name": "Cyborg Body"}, "ultra_armor"], "limit": 1},
-            {"addRule": [{"id": "inspiring", "x": "Infantry"}, "war_banner"], "limit": 1},
-            {"replaceRule": {"id": "warrior", "x": 1}, "withRule": {"id": "warrior", "x": 2}}
+            {"addRule": [{"id": "inspiring", "x": "Infantry"}, "war_banner"], "limit": 1}
           ],
           "min": 1,
           "max": 1
@@ -61,7 +61,7 @@
     },
     "warlord_bike": {
       "name": "Warlord on Bike",
-      "description": "A tough warboss mounted on a war bike.",
+      "description": "A powerful leader of a marauder warband mounted on a war bike.",
       "category": "hero",
       "keywords": ["Mounted"],
       "models": [
@@ -73,14 +73,15 @@
           "fight": 7,
           "defense": 9,
           "reflexes": 7,
-          "rules": [{"id": "impact", "x": 1}, {"id": "leader", "x": "Infantry, Biker"}, {"id": "warrior", "x": 1}, {"id": "wounds", "x": 3}],
+          "rules": [{"id": "impact", "x": 1}, "leader", "warrior", {"id": "wounds", "x": 3}],
           "weapons": ["assault_carbine", {"id": "handweapon", "count": 4}, {"id": "twin_double_shotgun", "mount": ["Front"]}],
           "options": [
             {"replaceWeapon": ["assault_carbine"], "withWeapon": ["twin_assault_carbine", "combi_rifle", "double_shotgun"]},
             {"replaceWeapon": ["assault_carbine", {"id": "handweapon", "count": 4}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 5}]]},
+            {"replaceWeapon": ["heavy_pistol"], "withWeapon": ["plasma_pistol", "flamethrower_pistol", "storm_rifle"]},
             {
               "replaceWeapon": {"id": "handweapon", "count": 5},
-              "withWeapon": [{"id": "energy_handweapon", "count": 5}, {"id": "energy_greatweapon", "count": 5}, {"id": "energy_powerweapon", "count": 5}]
+              "withWeapon": [{"id": "energy_handweapon", "count": 5}, {"id": "energy_greatweapon", "count": 5}, {"id": "energy_powerweapon", "count": 5}, {"id": "twin_energy_handweapon", "count": 6}]
             },
             {
               "replaceWeapon": [{"id": "twin_double_shotgun", "mount": ["Front"]}],
@@ -93,8 +94,7 @@
                 {"id": "fusion_cannon", "mount": ["Front"]},
                 {"id": "railgun", "mount": ["Front"]}
               ]
-            },
-            {"replaceRule": [{"id": "warrior", "x": 1}], "withRule": [{"id": "warrior", "x": 2}]}
+            }
           ],
           "min": 1,
           "max": 1
@@ -119,12 +119,19 @@
           "options": [
             {"replaceWeapon": "assault_carbine", "withWeapon": ["twin_assault_carbine", "combi_rifle"]},
             {"replaceWeapon": ["assault_carbine", {"id": "handweapon", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 3}]]},
+            {"replaceWeapon": ["heavy_pistol"], "withWeapon": ["plasma_pistol", "flamethrower_pistol", "storm_rifle"]},
             {
               "replaceWeapon": {"id": "handweapon", "count": 3},
-              "withWeapon": [{"id": "energy_handweapon", "count": 3}, {"id": "energy_greatweapon", "count": 3}, {"id": "energy_powerweapon", "count": 3}, {"id": "energy_polearm", "count": 3}]
+              "withWeapon": [
+                {"id": "energy_handweapon", "count": 3},
+                {"id": "energy_greatweapon", "count": 3},
+                {"id": "energy_powerweapon", "count": 3},
+                {"id": "energy_polearm", "count": 3},
+                {"id": "twin_energy_handweapon", "count": 4}
+              ]
             },
-            {"replaceRule": {"id": "power", "x": 1}, "withRule": {"id": "power", "x": 2}},
-            {"addRule": [{"id": "resistant", "x": 3, "name": "Cyborg Body"}, "ultra_armor"], "limit": 1}
+            {"addRule": [{"id": "resistant", "x": 3, "name": "Cyborg Body"}, "ultra_armor"], "limit": 1},
+            {"replaceRule": {"id": "power", "x": 1}, "withRule": {"id": "power", "x": 2}}
           ],
           "min": 1,
           "max": 1
@@ -145,14 +152,21 @@
           "fight": 6,
           "defense": 7,
           "reflexes": 5,
-          "rules": [{"id": "impact", "x": 1}, {"id": "leader", "x": "Infantry, Biker"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
+          "rules": [{"id": "impact", "x": 1}, "leader", {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
           "weapons": ["assault_carbine", {"id": "handweapon", "count": 2}, {"id": "twin_assault_carbine", "mount": ["Front"]}],
           "options": [
             {"replaceWeapon": "assault_carbine", "withWeapon": ["twin_assault_carbine", "combi_rifle"]},
             {"replaceWeapon": ["assault_carbine", {"id": "handweapon", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 3}]]},
+            {"replaceWeapon": ["heavy_pistol"], "withWeapon": ["plasma_pistol", "flamethrower_pistol", "storm_rifle"]},
             {
               "replaceWeapon": {"id": "handweapon", "count": 3},
-              "withWeapon": [{"id": "energy_handweapon", "count": 3}, {"id": "energy_greatweapon", "count": 3}, {"id": "energy_powerweapon", "count": 3}, {"id": "energy_polearm", "count": 3}]
+              "withWeapon": [
+                {"id": "energy_handweapon", "count": 3},
+                {"id": "energy_greatweapon", "count": 3},
+                {"id": "energy_powerweapon", "count": 3},
+                {"id": "energy_polearm", "count": 3},
+                {"id": "twin_energy_handweapon", "count": 4}
+              ]
             },
             {
               "replaceWeapon": [{"id": "twin_assault_carbine", "mount": ["Front"]}],
@@ -185,17 +199,17 @@
           "fight": 6,
           "defense": 7,
           "reflexes": 5,
-          "rules": ["engineer", "leader", {"id": "wounds", "x": 3}, "marksman"],
+          "rules": ["engineer", "leader", "marksman", {"id": "wounds", "x": 3}],
           "weapons": ["assault_carbine", {"id": "handweapon", "count": 2}],
           "options": [
             {"replaceWeapon": "assault_carbine", "withWeapon": ["twin_assault_carbine", "combi_rifle", "plasma_rifle", "shock_gun", "missile_launcher"]},
             {"replaceWeapon": ["assault_carbine", {"id": "handweapon", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 3}]]},
-            {"replaceWeapon": "heavy_pistol", "withWeapon": ["plasma_pistol", "teleport_pistol", "fusion_pistol"]},
+            {"replaceWeapon": "heavy_pistol", "withWeapon": ["plasma_pistol", "teleport_pistol", "fusion_pistol", "flamethrower_pistol", "storm_rifle"]},
             {
               "replaceWeapon": {"id": "handweapon", "count": 3},
-              "withWeapon": [{"id": "energy_handweapon", "count": 3}, {"id": "energy_greatweapon", "count": 3}, {"id": "energy_powerweapon", "count": 3}]
+              "withWeapon": [{"id": "energy_handweapon", "count": 3}, {"id": "energy_greatweapon", "count": 3}, {"id": "energy_powerweapon", "count": 3}, {"id": "twin_energy_handweapon", "count": 4}]
             },
-            {"addRule": ["force_field", "precision_monicle", "goblin_assistant"]},
+            {"addRule": ["precision_monicle", "goblin_assistant", {"name": "Force Field", "id": "resistant", "Number": 3}]},
             {"addRule": [{"id": "resistant", "x": 3, "name": "Cyborg Body"}, "ultra_armor"], "limit": 1}
           ],
           "min": 1,
@@ -217,15 +231,15 @@
           "fight": 6,
           "defense": 7,
           "reflexes": 5,
-          "rules": ["engineer", {"id": "impact", "x": 1}, {"id": "leader", "x": "Infantry, Biker"}, {"id": "wounds", "x": 3}],
+          "rules": ["engineer", {"id": "impact", "x": 1}, "leader", "marksman", {"id": "wounds", "x": 3}],
           "weapons": ["assault_carbine", {"id": "handweapon", "count": 2}, {"id": "twin_assault_carbine", "mount": ["Front"]}],
           "options": [
             {"replaceWeapon": "assault_carbine", "withWeapon": ["twin_assault_carbine", "combi_rifle", "plasma_rifle", "shock_gun", "missile_launcher"]},
             {"replaceWeapon": ["assault_carbine", {"id": "handweapon", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 3}]]},
-            {"replaceWeapon": "heavy_pistol", "withWeapon": ["plasma_pistol", "teleport_pistol", "fusion_pistol"]},
+            {"replaceWeapon": "heavy_pistol", "withWeapon": ["plasma_pistol", "teleport_pistol", "fusion_pistol", "flamethrower_pistol", "storm_rifle"]},
             {
               "replaceWeapon": {"id": "handweapon", "count": 3},
-              "withWeapon": [{"id": "energy_handweapon", "count": 3}, {"id": "energy_greatweapon", "count": 3}, {"id": "energy_powerweapon", "count": 3}]
+              "withWeapon": [{"id": "energy_handweapon", "count": 3}, {"id": "energy_greatweapon", "count": 3}, {"id": "energy_powerweapon", "count": 3}, {"id": "twin_energy_handweapon", "count": 4}]
             },
             {
               "replaceWeapon": [{"id": "twin_assault_carbine", "mount": ["Front"]}],
@@ -238,7 +252,7 @@
                 {"id": "railgun", "mount": ["Front"]}
               ]
             },
-            {"addRule": ["force_field", "precision_monicle", "goblin_assistant"]}
+            {"addRule": ["precision_monicle", "goblin_assistant", {"name": "Force Field", "id": "resistant", "Number": 3}]}
           ],
           "min": 1,
           "max": 1
@@ -249,7 +263,7 @@
       "name": "Mechanic in Heavy Juggernaut",
       "description": "A souped up but ramshackle heavy combat walker piloted by an orc with a knack for scrapping and fixing things.",
       "category": "hero",
-      "keywords": ["Vehicle"],
+      "keywords": ["Vehicle", "Juggernaut"],
       "models": [
         {
           "name": "Mechanic in Heavy Juggernaut",
@@ -259,7 +273,7 @@
           "fight": 6,
           "defense": 12,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 5}, "engineer", {"id": "leader", "x": "Vehicle"}, "vulnerable_rear"],
+          "rules": ["engineer", "leader", "marksman", "vulnerable_rear", {"id": "wounds", "x": 5}],
           "weapons": [{"id": "battle_cannon", "count": 2}, {"id": "heavy_flamethrower", "count": 2, "mount": ["Front"]}],
           "options": [
             {"replaceWeapon": {"id": "battle_cannon"}, "withWeapon": [{"id": "walker_claw", "count": 4}, {"id": "walker_saw", "count": 4}, "heavy_fusion_cannon", "shock_gun"], "limit": 2},
@@ -273,7 +287,7 @@
                 {"id": "teleport_rifle", "count": 2, "mount": ["Front"]}
               ]
             },
-            {"addRule": ["force_field"]}
+            {"addRule": [{"name": "Force Field", "id": "resistant", "Number": 3}]}
           ],
           "min": 1,
           "max": 1
@@ -298,10 +312,10 @@
           "options": [
             {"replaceWeapon": "assault_carbine", "withWeapon": ["twin_assault_carbine", "combi_rifle"]},
             {"replaceWeapon": ["assault_carbine", {"id": "handweapon", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 3}]]},
-            {"replaceWeapon": "heavy_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol"]},
+            {"replaceWeapon": "heavy_pistol", "withWeapon": ["plasma_pistol", "flamethrower_pistol", "storm_rifle"]},
             {
               "replaceWeapon": {"id": "handweapon", "count": 3},
-              "withWeapon": [{"id": "energy_handweapon", "count": 3}, {"id": "energy_greatweapon", "count": 3}, {"id": "energy_powerweapon", "count": 3}]
+              "withWeapon": [{"id": "energy_handweapon", "count": 3}, {"id": "energy_greatweapon", "count": 3}, {"id": "energy_powerweapon", "count": 3}, {"id": "twin_energy_handweapon", "count": 4}]
             },
             {"addRule": [{"id": "resistant", "x": 3, "name": "Cyborg Body"}, "ultra_armor"], "limit": 1}
           ],
@@ -324,15 +338,15 @@
           "fight": 6,
           "defense": 7,
           "reflexes": 5,
-          "rules": [{"id": "impact", "x": 1}, "medic", {"id": "support", "x": "Infantry, Biker"}, {"id": "wounds", "x": 2}],
+          "rules": [{"id": "impact", "x": 1}, "medic", "support", {"id": "wounds", "x": 2}],
           "weapons": ["assault_carbine", {"id": "handweapon", "count": 2}, {"id": "twin_assault_carbine", "mount": ["Front"]}],
           "options": [
             {"replaceWeapon": "assault_carbine", "withWeapon": ["twin_assault_carbine", "combi_rifle"]},
             {"replaceWeapon": ["assault_carbine", {"id": "handweapon", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 3}]]},
-            {"replaceWeapon": "heavy_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol"]},
+            {"replaceWeapon": "heavy_pistol", "withWeapon": ["plasma_pistol", "flamethrower_pistol", "storm_rifle"]},
             {
               "replaceWeapon": {"id": "handweapon", "count": 3},
-              "withWeapon": [{"id": "energy_handweapon", "count": 3}, {"id": "energy_greatweapon", "count": 3}, {"id": "energy_powerweapon", "count": 3}]
+              "withWeapon": [{"id": "energy_handweapon", "count": 3}, {"id": "energy_greatweapon", "count": 3}, {"id": "energy_powerweapon", "count": 3}, {"id": "twin_energy_handweapon", "count": 4}]
             },
             {
               "replaceWeapon": [{"id": "twin_assault_carbine", "mount": ["Front"]}],
@@ -351,7 +365,51 @@
         }
       ]
     },
-    "goblin_herd": {
+    "goblin_leader": {
+      "name": "Goblin Leader",
+      "description": "A cunning goblin with a motivating presence.",
+      "category": "hero",
+      "keywords": ["Goblin", "Infantry"],
+      "models": [
+        {
+          "name": "Goblin Leader",
+          "courage": 6,
+          "shoot": 7,
+          "fight": 6,
+          "defense": 6,
+          "reflexes": 6,
+          "movement": 6,
+          "rules": ["leader", "striker", {"id": "wounds", "x": 3}],
+          "weapons": ["assault_carbine", {"id": "light_handweapon", "count": 3}],
+          "options": [{"addRule": ["jetpack_character"]}],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "goblin_tank_commander": {
+      "name": "Goblin Tank Commander",
+      "description": "A custom goblin tank upgraded by a particularly crafty goblin.",
+      "category": "hero",
+      "keywords": ["Goblin", "Vehicle", "Tank"],
+      "models": [
+        {
+          "name": "Goblin Tank Commander",
+          "movement": 10,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 3,
+          "defense": 9,
+          "reflexes": 5,
+          "rules": [{"id": "impact", "x": 3}, "leader", "striker", "vulnerable_side_rear", {"id": "wounds", "x": 3}],
+          "weapons": ["plasma_rifle", "heavy_machinegun"],
+          "options": [{"replaceWeapon": {"id": "plasma_rifle"}, "withWeapon": ["heavy_flamethrower", "missile_launcher", "heavy_machinegun", "goblin_bazooka"]}],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "goblins": {
       "name": "Goblins",
       "description": "A horde of lowly goblins.",
       "category": "core",
@@ -372,17 +430,133 @@
         }
       ]
     },
+    "goblin_bikes": {
+      "name": "Goblin Bikers",
+      "description": "Only the best are selected to ride these fast moving death traps.",
+      "category": "elite",
+      "keywords": ["Mounted"],
+      "models": [
+        {
+          "name": "Goblin Biker",
+          "movement": 10,
+          "courage": 4,
+          "shoot": 6,
+          "fight": 4,
+          "defense": 7,
+          "reflexes": 5,
+          "rules": [{"id": "impact", "x": 1}],
+          "weapons": ["assault_carbine", "light_handweapon"],
+          "options": [{"replaceWeapon": "light_handweapon", "withWeapon": "handweapon"}],
+          "min": 3,
+          "max": 9
+        }
+      ]
+    },
+    "goblin_tank": {
+      "name": "Goblin Tanks",
+      "description": "A small tank squadron built and crewed by goblins.",
+      "category": "elite",
+      "keywords": ["Goblin", "Vehicle", "Tank"],
+      "models": [
+        {
+          "name": "Goblin Tank",
+          "movement": 10,
+          "courage": 4,
+          "shoot": 5,
+          "fight": 3,
+          "defense": 9,
+          "reflexes": 5,
+          "rules": [{"id": "impact", "x": 3}, "vulnerable_side_rear", {"id": "wounds", "x": 3}],
+          "weapons": ["plasma_rifle"],
+          "options": [{"replaceWeapon": {"id": "plasma_rifle"}, "withWeapon": ["heavy_flamethrower", "missile_launcher", "heavy_machinegun", "goblin_bazooka"]}],
+          "min": 3,
+          "max": 6
+        }
+      ]
+    },
+    "goblin_mega_tank": {
+      "name": "Goblin Mega Tank",
+      "description": "A huge tank built and crewed by goblins.",
+      "category": "rare",
+      "keywords": ["Goblin", "Vehicle", "Tank"],
+      "models": [
+        {
+          "name": "Goblin Mega Tank",
+          "movement": 8,
+          "courage": 4,
+          "shoot": 5,
+          "fight": 4,
+          "defense": 10,
+          "reflexes": 5,
+          "rules": [{"id": "impact", "x": 6}, "vulnerable_side_rear", {"id": "wounds", "x": 5}],
+          "weapons": [{"id": "twin_heavy_machinegun", "count": 2}, {"id": "heavy_machinegun", "count": 3}],
+          "options": [
+            {
+              "replaceWeapon": {"id": "twin_heavy_machinegun"},
+              "withWeapon": [{"id": "heavy_flamethrower", "count": 2}, {"id": "missile_launcher", "count": 2}, {"id": "goblin_bazooka", "count": 2}, {"id": "plasma_cannon", "count": 2}],
+              "modelLimit": 2
+            },
+            {
+              "replaceWeapon": {"id": "heavy_machinegun", "count": 1},
+              "withWeapon": [{"id": "heavy_flamethrower", "count": 1}, {"id": "missile_launcher", "count": 1}, {"id": "goblin_bazooka", "count": 1}, {"id": "plasma_cannon", "count": 1}],
+              "modelLimit": 3
+            },
+            {"addRule": ["wrecking_ball"]}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "goblin_walker": {
+      "name": "Goblin Mechs",
+      "description": "A small mech group built and crewed by goblins.",
+      "category": "elite",
+      "keywords": ["Goblin", "Vehicle"],
+      "models": [
+        {
+          "name": "Goblin Mech",
+          "movement": 6,
+          "courage": 4,
+          "shoot": 5,
+          "fight": 4,
+          "defense": 9,
+          "reflexes": 5,
+          "rules": ["vulnerable_rear", "walker", {"id": "wounds", "x": 3}],
+          "weapons": ["plasma_rifle", {"id": "mini_claw", "count": 2}],
+          "options": [{"replaceWeapon": {"id": "plasma_rifle"}, "withWeapon": ["heavy_flamethrower", "missile_launcher", "heavy_machinegun", "goblin_bazooka"]}],
+          "min": 1,
+          "max": 3
+        }
+      ]
+    },
+    "goblin_divers": {
+      "name": "Goblin Divers",
+      "description": "Goblins with ramshackle jetacks prepared to strike fast and hard.",
+      "category": "elite",
+      "keywords": ["Goblin", "Infantry"],
+      "rules": ["ambush"],
+      "models": [
+        {
+          "name": "Diver Leader",
+          "movement": 8,
+          "courage": 5,
+          "shoot": 6,
+          "fight": 5,
+          "defense": 4,
+          "reflexes": 5,
+          "weapons": ["shotgun", {"id": "light_handweapon", "count": 2}],
+          "options": [{"replaceWeapon": {"id": "shotgun"}, "withWeapon": ["assault_carbine", "sniper_rifle"]}],
+          "min": 1,
+          "max": 1
+        },
+        {"name": "Goblin Diver", "movement": 8, "courage": 5, "shoot": 5, "fight": 4, "defense": 4, "reflexes": 5, "weapons": ["shotgun", "light_handweapon"], "min": 9, "max": 19}
+      ]
+    },
     "orc_mob": {
       "name": "Marauders",
       "description": "A group of angry marauders.",
       "category": "core",
-      "options": [
-        {"replaceWeapon": ["assault_carbine", "handweapon"], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 2}]]},
-        {"replaceWeapon": ["assault_carbine"], "withWeapon": ["plasma_rifle", "fusion_rifle", "flamethrower", "missile_launcher", "medium_machinegun"], "modelLimit": "1/10"},
-        {"replaceWeapon": ["assault_carbine"], "withWeapon": ["missile_launcher", "heavy_machinegun", "plasma_cannon", "fusion_cannon", "railgun"], "modelLimit": "1/10"},
-        {"addRule": ["light_armor", {"id": "resistant", "x": 2}], "modelLimit": "all"},
-        {"addRule": ["banner"], "modelLimit": 1}
-      ],
       "models": [
         {
           "name": "Marauder Champion",
@@ -395,9 +569,10 @@
           "weapons": ["assault_carbine", "handweapon"],
           "options": [
             {"replaceWeapon": ["assault_carbine"], "withWeapon": ["twin_assault_carbine", "combi_rifle"]},
+            {"replaceWeapon": ["heavy_pistol"], "withWeapon": ["plasma_pistol", "flamethrower_pistol", "storm_rifle"]},
             {
               "replaceWeapon": {"id": "handweapon", "count": 2},
-              "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "energy_greatweapon", "count": 2}, {"id": "energy_powerweapon", "count": 2}]
+              "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "energy_greatweapon", "count": 2}, {"id": "energy_powerweapon", "count": 2}, {"id": "twin_energy_handweapon", "count": 3}]
             },
             {"addRule": ["champion"]}
           ],
@@ -405,6 +580,13 @@
           "max": 1
         },
         {"name": "Marauder", "movement": 6, "courage": 5, "shoot": 4, "fight": 6, "defense": 5, "reflexes": 5, "weapons": ["assault_carbine", "handweapon"], "min": 9, "max": 19}
+      ],
+      "options": [
+        {"replaceWeapon": ["assault_carbine", "handweapon"], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 2}]]},
+        {"replaceWeapon": ["assault_carbine"], "withWeapon": ["plasma_rifle", "fusion_rifle", "flamethrower", "grenade_launcher", "light_machinegun"], "modelLimit": "1/10"},
+        {"replaceWeapon": ["assault_carbine"], "withWeapon": ["missile_launcher", "heavy_machinegun", "plasma_cannon", "fusion_cannon", "railgun"], "modelLimit": "1/10"},
+        {"addRule": ["light_armor", {"id": "resistant", "x": 2}], "modelLimit": "all"},
+        {"addRule": ["banner"], "modelLimit": 1}
       ]
     },
     "boss_mob": {
@@ -413,7 +595,7 @@
       "category": "core",
       "models": [
         {
-          "name": "Warborn Brute",
+          "name": "Brute",
           "movement": 6,
           "courage": 5,
           "shoot": 4,
@@ -423,10 +605,11 @@
           "weapons": ["assault_carbine", {"id": "handweapon", "count": 2}],
           "options": [
             {"replaceWeapon": "assault_carbine", "withWeapon": ["twin_assault_carbine", "combi_rifle"]},
-            {"replaceWeapon": ["assault_carbine", {"id": "handweapon", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 3}], {"id": "energy_greatweapon", "count": 4}]},
+            {"replaceWeapon": ["assault_carbine", {"id": "handweapon", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 3}]]},
+            {"replaceWeapon": ["heavy_pistol"], "withWeapon": ["plasma_pistol", "flamethrower_pistol", "storm_rifle"]},
             {
               "replaceWeapon": {"id": "handweapon", "count": 3},
-              "withWeapon": [{"id": "energy_handweapon", "count": 3}, {"id": "energy_greatweapon", "count": 3}, {"id": "energy_powerweapon", "count": 3}]
+              "withWeapon": [{"id": "energy_handweapon", "count": 3}, {"id": "energy_greatweapon", "count": 3}, {"id": "energy_powerweapon", "count": 3}, {"id": "twin_energy_handweapon", "count": 4}]
             },
             {"addWeapon": ["attack_beast"], "modelLimit": 1},
             {"addRule": [{"id": "resistant", "x": 3, "name": "Cyborg Body"}]},
@@ -439,16 +622,12 @@
       ]
     },
     "looter_mob": {
-      "name": "Looters",
+      "name": "Scavengers",
       "description": "A group of marauders obsessed with looting and upgrading shooting weapons. Can be equipped for various specialist roles.",
       "category": "elite",
-      "options": [
-        {"replaceWeapon": "assault_carbine", "withWeapon": ["flamethrower", "plasma_rifle", "fusion_rifle", "missile_launcher", "medium_machinegun"]},
-        {"addRule": ["banner"], "modelLimit": 1}
-      ],
       "models": [
         {
-          "name": "Looter Champion",
+          "name": "Scavenger Champion",
           "movement": 6,
           "courage": 5,
           "shoot": 5,
@@ -459,16 +638,22 @@
           "options": [
             {"replaceWeapon": "assault_carbine", "withWeapon": ["twin_assault_carbine", "combi_rifle"]},
             {"replaceWeapon": ["assault_carbine", "handweapon"], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 2}]]},
+            {"replaceWeapon": ["heavy_pistol"], "withWeapon": ["plasma_pistol", "flamethrower_pistol", "storm_rifle"]},
             {
               "replaceWeapon": {"id": "handweapon", "count": 2},
-              "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "energy_greatweapon", "count": 2}, {"id": "energy_powerweapon", "count": 2}]
+              "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "energy_greatweapon", "count": 2}, {"id": "energy_powerweapon", "count": 2}, {"id": "twin_energy_handweapon", "count": 3}]
             },
             {"addRule": ["champion"]}
           ],
           "min": 1,
           "max": 1
         },
-        {"name": "Looter Orc", "movement": 6, "courage": 5, "shoot": 5, "fight": 6, "defense": 5, "reflexes": 5, "weapons": ["assault_carbine", "handweapon"], "min": 4, "max": 9}
+        {"name": "Scavenger", "movement": 6, "courage": 5, "shoot": 5, "fight": 6, "defense": 5, "reflexes": 5, "weapons": ["assault_carbine", "handweapon"], "min": 4, "max": 9}
+      ],
+      "options": [
+        {"replaceWeapon": "assault_carbine", "withWeapon": ["flamethrower", "plasma_rifle", "fusion_rifle", "grenade_launcher", "light_machinegun"]},
+        {"replaceWeapon": "assault_carbine", "withWeapon": ["missile_launcher", "heavy_machinegun", "plasma_cannon", "fusion_cannon", "railgun"], "modelLimit": "2/5"},
+        {"addRule": ["banner"], "modelLimit": 1}
       ]
     },
     "commando_orcs": {
@@ -476,14 +661,6 @@
       "description": "A group of sneaky marauders.",
       "category": "elite",
       "rules": ["ambush", "evasive"],
-      "options": [
-        {"replaceWeapon": ["assault_carbine"], "withWeapon": ["combat_shotgun"]},
-        {"replaceWeapon": ["assault_carbine"], "withWeapon": ["sniper_rifle", "plasma_rifle", "fusion_rifle", "flamethrower", "missile_launcher", "medium_machinegun"], "modelLimit": "1/5"},
-        {"replaceWeapon": ["assault_carbine"], "withWeapon": ["missile_launcher", "heavy_machinegun", "plasma_cannon", "fusion_cannon", "railgun"], "modelLimit": "1/5"},
-        {"replaceWeapon": ["assault_carbine", "handweapon"], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 2}]]},
-        {"replaceWeapon": {"id": "handweapon", "count": 2}, "withWeapon": ["assault_ram"], "modelLimit": 1},
-        {"addRule": ["light_armor", "grappling_hook"], "modelLimit": "all"}
-      ],
       "models": [
         {
           "name": "Commando Champion",
@@ -496,16 +673,35 @@
           "weapons": ["assault_carbine", "handweapon"],
           "options": [
             {"replaceWeapon": "assault_carbine", "withWeapon": ["twin_assault_carbine", "combi_rifle"]},
+            {"replaceWeapon": ["heavy_pistol"], "withWeapon": ["plasma_pistol", "flamethrower_pistol", "storm_rifle"]},
             {
               "replaceWeapon": {"id": "handweapon", "count": 2},
-              "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "energy_greatweapon", "count": 2}, {"id": "energy_powerweapon", "count": 2}]
+              "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "energy_greatweapon", "count": 2}, {"id": "energy_powerweapon", "count": 2}, {"id": "twin_energy_handweapon", "count": 2}]
             },
             {"addRule": ["champion"]}
           ],
           "min": 1,
           "max": 1
         },
-        {"name": "Commando", "movement": 6, "courage": 5, "shoot": 5, "fight": 6, "defense": 6, "reflexes": 6, "weapons": ["assault_carbine", "handweapon"], "min": 4, "max": 14}
+        {"name": "Commando", "movement": 6, "courage": 5, "shoot": 5, "fight": 6, "defense": 6, "reflexes": 6, "weapons": ["assault_carbine", "handweapon"], "min": 4, "max": 9}
+      ],
+      "options": [
+        {"replaceWeapon": ["assault_carbine"], "withWeapon": ["combat_shotgun"]},
+        {"replaceWeapon": ["assault_carbine"], "withWeapon": ["sniper_rifle", "plasma_rifle", "fusion_rifle", "flamethrower", "grenade_launcher", "light_machinegun"], "modelLimit": "1/5"},
+        {"replaceWeapon": ["assault_carbine"], "withWeapon": ["missile_launcher", "heavy_machinegun", "plasma_cannon", "fusion_cannon", "railgun"], "modelLimit": "1/5"},
+        {"replaceWeapon": ["assault_carbine", "handweapon"], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 2}]]},
+        {
+          "replaceWeapon": {"id": "handweapon", "count": 2},
+          "withWeapon": [
+            "assault_ram",
+            {"id": "energy_handweapon", "count": 2},
+            {"id": "energy_greatweapon", "count": 2},
+            {"id": "energy_powerweapon", "count": 2},
+            {"id": "twin_energy_handweapon", "count": 2}
+          ],
+          "modelLimit": 1
+        },
+        {"addRule": ["light_armor", "grappling_hook"], "modelLimit": "all"}
       ]
     },
     "storm_orcs": {
@@ -513,13 +709,6 @@
       "description": "A group of angry marauders equipped with jetpacks.",
       "category": "elite",
       "rules": ["fly"],
-      "options": [
-        {"replaceWeapon": ["assault_carbine"], "withWeapon": ["combat_shotgun"]},
-        {"replaceWeapon": ["assault_carbine", "handweapon"], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 2}]]},
-        {"replaceWeapon": ["assault_carbine"], "withWeapon": ["plasma_rifle", "fusion_rifle", "flamethrower", "missile_launcher", "light_machinegun"], "modelLimit": "1/5"},
-        {"replaceWeapon": ["assault_carbine"], "withWeapon": ["missile_launcher", "heavy_machinegun", "plasma_cannon", "fusion_cannon", "railgun"], "modelLimit": "1/5"},
-        {"addWeapon": "fusion_bomb", "modelLimit": 3}
-      ],
       "models": [
         {
           "name": "Jetpack Champion",
@@ -532,9 +721,10 @@
           "weapons": ["assault_carbine", "handweapon"],
           "options": [
             {"replaceWeapon": ["assault_carbine"], "withWeapon": ["twin_assault_carbine", "combi_rifle"]},
+            {"replaceWeapon": ["heavy_pistol"], "withWeapon": ["plasma_pistol", "flamethrower_pistol", "storm_rifle"]},
             {
               "replaceWeapon": {"id": "handweapon", "count": 2},
-              "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "energy_greatweapon", "count": 2}, {"id": "energy_powerweapon", "count": 2}]
+              "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "energy_greatweapon", "count": 2}, {"id": "energy_powerweapon", "count": 2}, {"id": "twin_energy_handweapon", "count": 3}]
             },
             {"addRule": ["champion"]}
           ],
@@ -542,14 +732,18 @@
           "max": 1
         },
         {"name": "Jetpack Marauders", "movement": 8, "courage": 5, "shoot": 4, "fight": 6, "defense": 5, "reflexes": 5, "weapons": ["assault_carbine", "handweapon"], "min": 4, "max": 19}
+      ],
+      "options": [
+        {"replaceWeapon": ["assault_carbine"], "withWeapon": ["combat_shotgun"]},
+        {"replaceWeapon": ["assault_carbine", "handweapon"], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 2}]]},
+        {"replaceWeapon": ["assault_carbine"], "withWeapon": ["plasma_rifle", "fusion_rifle", "flamethrower", "grenade_launcher", "light_machinegun"], "modelLimit": "1/5"},
+        {"replaceWeapon": ["assault_carbine"], "withWeapon": ["missile_launcher", "heavy_machinegun", "plasma_cannon", "fusion_cannon", "railgun"], "modelLimit": "1/5"}
       ]
     },
     "ultra_boss_mob": {
       "name": "Gravite Brutes",
       "description": "A group of marauders bosses that are heavily armored and dangerous.",
       "category": "elite",
-      "keywords": ["Heavy Infantry"],
-      "rules": [{"id": "wounds", "x": 2}],
       "models": [
         {
           "name": "Gravite Brute",
@@ -559,12 +753,12 @@
           "fight": 6,
           "defense": 9,
           "reflexes": 5,
+          "rules": [{"id": "wounds", "x": 2}],
           "weapons": [{"id": "twin_assault_carbine", "count": 2}],
           "options": [
             {
               "replaceWeapon": "twin_assault_carbine",
               "withWeapon": [
-                "combi_rifle",
                 "combi_rifle",
                 "missile_launcher",
                 "railgun",
@@ -573,7 +767,8 @@
                 "fusion_cannon",
                 {"id": "energy_handweapon", "count": 3},
                 {"id": "energy_greatweapon", "count": 3},
-                {"id": "energy_powerweapon", "count": 3}
+                {"id": "energy_powerweapon", "count": 3},
+                {"id": "twin_energy_handweapon", "count": 4}
               ],
               "limit": 2
             }
@@ -611,20 +806,6 @@
       "category": "elite",
       "keywords": ["Mounted"],
       "rules": [{"id": "impact", "x": 1}],
-      "options": [
-        {"replaceWeapon": ["assault_carbine", "handweapon"], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 2}]]},
-        {
-          "replaceWeapon": [{"id": "twin_assault_carbine", "mount": ["Front"]}],
-          "withWeapon": [
-            {"id": "twin_mini_mg", "mount": ["Front"]},
-            {"id": "missile_launcher", "mount": ["Front"]},
-            {"id": "heavy_machinegun", "mount": ["Front"]},
-            {"id": "plasma_cannon", "mount": ["Front"]},
-            {"id": "fusion_cannon", "mount": ["Front"]},
-            {"id": "railgun", "mount": ["Front"]}
-          ]
-        }
-      ],
       "models": [
         {
           "name": "Biker Champion",
@@ -637,9 +818,10 @@
           "weapons": ["assault_carbine", "handweapon", {"id": "twin_assault_carbine", "mount": ["Front"]}],
           "options": [
             {"replaceWeapon": "assault_carbine", "withWeapon": ["twin_assault_carbine", "combi_rifle"]},
+            {"replaceWeapon": ["heavy_pistol"], "withWeapon": ["plasma_pistol", "flamethrower_pistol", "storm_rifle"]},
             {
               "replaceWeapon": {"id": "handweapon", "count": 2},
-              "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "energy_greatweapon", "count": 2}, {"id": "energy_powerweapon", "count": 2}]
+              "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "energy_greatweapon", "count": 2}, {"id": "energy_powerweapon", "count": 2}, {"id": "twin_energy_handweapon", "count": 2}]
             },
             {"addRule": ["champion"]}
           ],
@@ -656,16 +838,29 @@
           "reflexes": 5,
           "weapons": ["assault_carbine", "handweapon", {"id": "twin_assault_carbine", "mount": ["Front"]}],
           "min": 2,
-          "max": 11
+          "max": 8
+        }
+      ],
+      "options": [
+        {"replaceWeapon": ["assault_carbine", "handweapon"], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 2}]]},
+        {
+          "replaceWeapon": [{"id": "twin_assault_carbine", "mount": ["Front"]}],
+          "withWeapon": [
+            {"id": "twin_mini_mg", "mount": ["Front"]},
+            {"id": "missile_launcher", "mount": ["Front"]},
+            {"id": "heavy_machinegun", "mount": ["Front"]},
+            {"id": "plasma_cannon", "mount": ["Front"]},
+            {"id": "fusion_cannon", "mount": ["Front"]},
+            {"id": "railgun", "mount": ["Front"]}
+          ]
         }
       ]
     },
     "boss_bikers": {
-      "name": "Biker Brutes",
+      "name": "Brute Bikers",
       "description": "A group of bigger marauders mounted on bikes.",
       "category": "elite",
       "keywords": ["Mounted"],
-      "rules": [{"id": "impact", "x": 1}],
       "models": [
         {
           "name": "Brute Biker",
@@ -675,13 +870,15 @@
           "fight": 6,
           "defense": 7,
           "reflexes": 6,
+          "rules": [{"id": "impact", "x": 1}],
           "weapons": ["assault_carbine", {"id": "handweapon", "count": 2}, {"id": "twin_assault_carbine", "mount": ["Front"]}],
           "options": [
             {"replaceWeapon": "assault_carbine", "withWeapon": ["twin_assault_carbine", "combi_rifle"]},
             {"replaceWeapon": ["assault_carbine", {"id": "handweapon", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 3}]]},
+            {"replaceWeapon": ["heavy_pistol"], "withWeapon": ["plasma_pistol", "flamethrower_pistol", "storm_rifle"]},
             {
               "replaceWeapon": {"id": "handweapon", "count": 3},
-              "withWeapon": [{"id": "energy_handweapon", "count": 3}, {"id": "energy_greatweapon", "count": 3}, {"id": "energy_powerweapon", "count": 3}]
+              "withWeapon": [{"id": "energy_handweapon", "count": 3}, {"id": "energy_greatweapon", "count": 3}, {"id": "energy_powerweapon", "count": 3}, {"id": "twin_energy_handweapon", "count": 4}]
             },
             {
               "replaceWeapon": [{"id": "twin_assault_carbine", "mount": ["Front"]}],
@@ -733,11 +930,11 @@
           "movement": 5,
           "courage": 4,
           "shoot": 5,
-          "fight": 0,
+          "fight": 5,
           "defense": 8,
           "reflexes": 5,
           "rules": [{"id": "wounds", "x": 3}],
-          "weapons": ["fusion_cannon"],
+          "weapons": ["fusion_cannon", {"id": "light_handweapon", "count": 3}],
           "options": [{"replaceWeapon": "fusion_cannon", "withWeapon": ["tractor_beam", "plasma_cannon", "bubble_cannon", "mortar"]}],
           "min": 1,
           "max": 3
@@ -758,7 +955,7 @@
           "fight": 0,
           "defense": 10,
           "reflexes": 5,
-          "rules": [{"id": "wounds", "x": 5}, {"id": "impact", "x": 3}, {"id": "transport", "x": 12}, {"id": "open_topped", "x": 12}, "vulnerable_side_rear"],
+          "rules": [{"id": "impact", "x": 3}, {"id": "open_topped", "x": 12}, {"id": "transport", "x": 12}, "vulnerable_side_rear", {"id": "wounds", "x": 5}],
           "weapons": [{"id": "heavy_machinegun", "mount": ["Front"]}],
           "options": [
             {
@@ -792,15 +989,15 @@
           "fight": 0,
           "defense": 11,
           "reflexes": 5,
-          "rules": [{"id": "wounds", "x": 5}, {"id": "impact", "x": 6}, {"id": "transport", "x": 12}, {"id": "open_topped", "x": 12}, "vulnerable_side_rear"],
+          "rules": [{"id": "impact", "x": 6}, {"id": "open_topped", "x": 12}, {"id": "transport", "x": 12}, "vulnerable_side_rear", {"id": "wounds", "x": 5}],
           "weapons": ["heavy_machinegun"],
           "options": [
             {"replaceWeapon": {"id": "heavy_machinegun"}, "withWeapon": ["missile_launcher", "plasma_cannon", "fusion_cannon", "railgun"]},
             {"addWeapon": ["heavy_mortar"]},
             {"addWeapon": ["lightning_cannon", "siege_cannon", "battle_cannon", "light_battle_cannon"], "limit": 1},
             {"addWeapon": ["missile_launcher", "heavy_machinegun", "plasma_cannon", "fusion_cannon", "railgun"], "limit": 3},
-            {"replaceRule": {"id": "open_topped", "x": 12}, "withRule": "extra_armor"},
-            {"addRule": [{"id": "dozer", "name": "Battle Ram"}, "wrecking_ball", "boarding_plank"]}
+            {"addRule": [{"id": "dozer", "name": "Battle Ram"}, "wrecking_ball", "boarding_plank"]},
+            {"replaceRule": {"id": "open_topped", "x": 12}, "withRule": "extra_armor"}
           ],
           "min": 1,
           "max": 1
@@ -821,7 +1018,7 @@
           "fight": 0,
           "defense": 10,
           "reflexes": 5,
-          "rules": [{"id": "wounds", "x": 5}, "fly", "hover_mode", {"id": "transport", "x": 12}, {"id": "open_topped", "x": 12}],
+          "rules": ["fly", "hover_mode", {"id": "open_topped", "x": 12}, {"id": "transport", "x": 12}, {"id": "wounds", "x": 5}],
           "weapons": [{"id": "heavy_machinegun", "mount": ["Front", "Left", "Right"]}],
           "options": [
             {
@@ -844,7 +1041,7 @@
       "name": "Warborn Battle Tank",
       "description": "A ramshackle battle tank held together by sheer will.",
       "category": "rare",
-      "keywords": ["Vehicle"],
+      "keywords": ["Vehicle", "Tank"],
       "models": [
         {
           "name": "Warborn Battle Tank",
@@ -854,7 +1051,7 @@
           "fight": 0,
           "defense": 12,
           "reflexes": 5,
-          "rules": [{"id": "wounds", "x": 5}, {"id": "impact", "x": 6}, "vulnerable_side_rear"],
+          "rules": [{"id": "impact", "x": 6}, "vulnerable_side_rear", {"id": "wounds", "x": 5}],
           "weapons": ["battle_cannon"],
           "options": [
             {"replaceWeapon": "battle_cannon", "withWeapon": ["siege_cannon", "heavy_plasma_cannon", "gatling_cannon", "heavy_fusion_cannon", "lightning_cannon"]},
@@ -890,7 +1087,7 @@
       "name": "Warborn Heavy Battle Tank",
       "description": "A larger ramshackle tank with more powerful weapon options.",
       "category": "rare",
-      "keywords": ["Vehicle"],
+      "keywords": ["Vehicle", "Tank"],
       "models": [
         {
           "name": "Warborn Heavy Battle Tank",
@@ -900,7 +1097,7 @@
           "fight": 0,
           "defense": 13,
           "reflexes": 5,
-          "rules": [{"id": "wounds", "x": 6}, {"id": "impact", "x": 9}, "vulnerable_rear"],
+          "rules": [{"id": "impact", "x": 9}, "vulnerable_rear", {"id": "wounds", "x": 6}],
           "weapons": ["battle_cannon", {"id": "heavy_flamethrower", "mount": ["Front"]}],
           "options": [
             {"replaceWeapon": "battle_cannon", "withWeapon": ["heavy_fusion_cannon", "heavy_plasma_cannon", "siege_cannon", "gatling_cannon", "lightning_cannon"]},
@@ -957,7 +1154,7 @@
           "fight": 0,
           "defense": 8,
           "reflexes": 5,
-          "rules": [{"id": "wounds", "x": 3}, {"id": "impact", "x": 3}, "vulnerable_side_rear"],
+          "rules": [{"id": "impact", "x": 3}, "vulnerable_side_rear", {"id": "wounds", "x": 3}],
           "weapons": ["heavy_flamethrower"],
           "options": [{"replaceWeapon": "heavy_flamethrower", "withWeapon": ["twin_missile_launcher", "twin_heavy_machinegun", "fusion_cannon", "plasma_cannon"]}, {"addRule": ["tracks"]}],
           "min": 1,
@@ -979,10 +1176,13 @@
           "fight": 0,
           "defense": 9,
           "reflexes": 5,
-          "rules": [{"id": "wounds", "x": 4}, {"id": "impact", "x": 3}, "vulnerable_side_rear"],
+          "rules": [{"id": "impact", "x": 3}, "vulnerable_side_rear", {"id": "wounds", "x": 4}],
           "weapons": ["heavy_machinegun"],
           "options": [
-            {"replaceWeapon": "heavy_machinegun", "withWeapon": ["twin_missile_launcher", "twin_gatling_gun", "twin_heavy_machinegun", "mortar", "plasma_cannon", "fusion_cannon", "flamethrower_cannon"]},
+            {
+              "replaceWeapon": "heavy_machinegun",
+              "withWeapon": ["twin_missile_launcher", "twin_gatling_gun", "twin_heavy_machinegun", "mortar", "plasma_cannon", "fusion_cannon", "flamethrower_cannon"]
+            },
             {
               "addWeapon": [
                 {"id": "plasma_cannon", "mount": ["Front"]},
@@ -1058,7 +1258,7 @@
               ],
               "limit": 1
             },
-            {"addRule": ["force_field"]}
+            {"addRule": [{"name": "Force Field", "id": "resistant", "Number": 3}]}
           ],
           "min": 1,
           "max": 1
@@ -1079,7 +1279,7 @@
           "fight": 6,
           "defense": 11,
           "reflexes": 5,
-          "rules": [{"id": "wounds", "x": 5}, "vulnerable_rear"],
+          "rules": ["vulnerable_rear", {"id": "wounds", "x": 5}],
           "weapons": [{"id": "heavy_flamethrower", "count": 4}],
           "options": [
             {
@@ -1097,7 +1297,7 @@
       "name": "Heavy Juggernaut",
       "description": "A souped up but ramshackle heavy combat walker.",
       "category": "rare",
-      "keywords": ["Vehicle"],
+      "keywords": ["Vehicle", "Juggernaut"],
       "models": [
         {
           "name": "Heavy Juggernaut",
@@ -1107,7 +1307,7 @@
           "fight": 6,
           "defense": 12,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 6}, "vulnerable_rear"],
+          "rules": ["vulnerable_rear", {"id": "wounds", "x": 6}],
           "weapons": [{"id": "battle_cannon", "count": 2}, {"id": "heavy_flamethrower", "count": 2, "mount": ["Front"]}],
           "options": [
             {"replaceWeapon": {"id": "battle_cannon"}, "withWeapon": [{"id": "walker_claw", "count": 4}, {"id": "walker_saw", "count": 4}], "limit": 2},
@@ -1130,7 +1330,7 @@
       "name": "Warborn Heavy Juggernaut",
       "description": "A large walker with a multitude of weapons and transport capacity within its belly.",
       "category": "rare",
-      "keywords": ["Vehicle"],
+      "keywords": ["Vehicle", "Juggernaut"],
       "models": [
         {
           "name": "Warborn Heavy Juggernaut",
@@ -1140,7 +1340,7 @@
           "fight": 6,
           "defense": 13,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 6}, "strider", {"id": "transport", "x": 10}, "vulnerable_rear"],
+          "rules": ["strider", {"id": "transport", "x": 10}, "vulnerable_rear", {"id": "wounds", "x": 6}],
           "weapons": [
             {"id": "heavy_flamethrower", "mount": ["Front"]},
             {"id": "twin_heavy_machinegun", "count": 2, "mount": ["Front"]},
@@ -1163,7 +1363,7 @@
                 {"id": "plasma_cannon", "mount": ["Front"]}
               ]
             },
-            {"addRule": ["extra_space", "force_field"]}
+            {"addRule": ["extra_space", {"name": "Force Field", "id": "resistant", "Number": 3}]}
           ],
           "min": 1,
           "max": 1
@@ -1174,7 +1374,7 @@
       "name": "Warborn Super Heavy Juggernaut",
       "description": "A massive walker with a multitude of weapons and transport capacity within its belly.",
       "category": "rare",
-      "keywords": ["Vehicle"],
+      "keywords": ["Vehicle", "Juggernaut"],
       "models": [
         {
           "name": "Warborn Super Heavy Juggernaut",
@@ -1184,7 +1384,7 @@
           "fight": 6,
           "defense": 13,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 6}, "strider", {"id": "transport", "x": 10}, "vulnerable_rear"],
+          "rules": ["strider", {"id": "transport", "x": 10}, "vulnerable_rear", {"id": "wounds", "x": 6}],
           "weapons": [
             {"id": "heavy_flamethrower", "mount": ["Front"]},
             {"id": "heavy_stomp", "count": 3},
@@ -1208,7 +1408,7 @@
               ]
             },
             {"addWeapon": {"id": "twin_missile_launcher"}},
-            {"addRule": ["extra_space", "force_field", "orc_idol"]}
+            {"addRule": ["extra_space", "orc_idol", {"name": "Force Field", "id": "resistant", "Number": 3}]}
           ],
           "min": 1,
           "max": 1
@@ -1229,182 +1429,11 @@
           "fight": 6,
           "defense": 13,
           "reflexes": 5,
-          "rules": [{"id": "wounds", "x": 6}, {"id": "impact", "x": 6}, {"id": "open_topped", "x": 20}, {"id": "transport", "x": 20}, "vulnerable_rear", "walker"],
+          "rules": [{"id": "impact", "x": 6}, {"id": "open_topped", "x": 20}, {"id": "transport", "x": 20}, "vulnerable_rear", "walker", {"id": "wounds", "x": 6}],
           "weapons": ["light_battle_cannon", {"id": "goring_tusks", "count": 5}, {"id": "heavy_stomp", "count": 4}],
           "options": [{"addWeapon": ["twin_heavy_machinegun"], "limit": 2}, {"addWeapon": ["light_battle_cannon", "siege_cannon"], "limit": 1}],
           "min": 1,
           "max": 1
-        }
-      ]
-    },
-    "goblin_leader": {
-      "name": "Goblin Leader",
-      "subfactions": ["none", "mechanized_focus", "revolution_focus"],
-      "description": "A cunning goblin with a motivating presence.",
-      "category": "hero",
-      "keywords": ["Goblin", "Infantry"],
-      "rules": [{"id": "leader", "x": "Infantry"}, {"id": "wounds", "x": 3}, {"id": "goblin_tactics", "x": 1}],
-      "models": [
-        {
-          "name": "Goblin Leader",
-          "courage": 6,
-          "shoot": 7,
-          "fight": 6,
-          "defense": 6,
-          "reflexes": 6,
-          "movement": 6,
-          "weapons": ["assault_carbine", {"id": "light_handweapon", "count": 3}],
-          "options": [{"replaceRule": {"id": "goblin_tactics", "x": 1}, "withRule": {"id": "goblin_tactics", "x": 2}}],
-          "min": 1,
-          "max": 1
-        }
-      ]
-    },
-    "goblin_tank_commander": {
-      "name": "Goblin Tank Commander",
-      "description": "A custom goblin tank upgraded by a particularly crafty goblin.",
-      "subfactions": ["none", "mechanized_focus", "revolution_focus"],
-      "category": "hero",
-      "keywords": ["Goblin", "Vehicle"],
-      "rules": [{"id": "impact", "x": 3}, "vulnerable_side_rear", {"id": "wounds", "x": 3}, {"id": "leader", "x": "Vehicle"}, {"id": "goblin_vehicles", "x": 1}],
-      "models": [
-        {
-          "name": "Goblin Tank Commander",
-          "courage": 6,
-          "shoot": 6,
-          "fight": 3,
-          "defense": 9,
-          "reflexes": 5,
-          "movement": 10,
-          "weapons": [{"id": "plasma_rifle"}, {"id": "heavy_machinegun"}],
-          "options": [{"replaceWeapon": {"id": "plasma_rifle"}, "withWeapon": ["heavy_flamethrower", "missile_launcher", "heavy_machinegun", "goblin_bazooka"]}],
-          "min": 1,
-          "max": 1
-        }
-      ]
-    },
-    "goblin_divers": {
-      "name": "Goblin Divers",
-      "description": "Skydiving goblins prepared to strike fast and hard.",
-      "subfactions": ["none", "mechanized_focus", "revolution_focus"],
-      "category": "elite",
-      "keywords": ["Goblin"],
-      "rules": ["ambush"],
-      "models": [
-        {
-          "name": "Dive Leader",
-          "courage": 5,
-          "shoot": 6,
-          "fight": 5,
-          "defense": 4,
-          "reflexes": 5,
-          "movement": 8,
-          "weapons": ["shotgun", {"id": "light_handweapon", "count": 2}],
-          "options": [{"replaceWeapon": {"id": "shotgun"}, "withWeapon": ["assault_carbine", "sniper_rifle"]}],
-          "min": 1,
-          "max": 1
-        },
-        {"name": "Goblin Diver", "courage": 5, "shoot": 5, "fight": 4, "defense": 4, "reflexes": 5, "movement": 8, "weapons": ["shotgun", "light_handweapon"], "min": 9, "max": 19}
-      ]
-    },
-    "goblin_tank": {
-      "name": "Goblin Tanks",
-      "description": "A small tank squadron built and crewed by goblins.",
-      "subfactions": ["none", "mechanized_focus", "revolution_focus"],
-      "category": "elite",
-      "keywords": ["Goblin", "Vehicle"],
-      "rules": [{"id": "impact", "x": 3}, "vulnerable_side_rear", {"id": "wounds", "x": 2}],
-      "models": [
-        {
-          "name": "Goblin Tank",
-          "courage": 4,
-          "shoot": 5,
-          "fight": 3,
-          "defense": 9,
-          "reflexes": 5,
-          "movement": 10,
-          "weapons": [{"id": "plasma_rifle"}],
-          "options": [{"replaceWeapon": {"id": "plasma_rifle"}, "withWeapon": ["heavy_flamethrower", "missile_launcher", "heavy_machinegun", "goblin_bazooka"]}],
-          "min": 3,
-          "max": 6
-        }
-      ]
-    },
-    "goblin_mega_tank": {
-      "name": "Goblin Mega Tank",
-      "description": "A huge tank built and crewed by goblins.",
-      "category": "rare",
-      "keywords": ["Goblin", "Vehicle"],
-      "subfactions": ["none", "mechanized_focus", "revolution_focus"],
-      "rules": [{"id": "impact", "x": 6}, "vulnerable_side_rear", {"id": "wounds", "x": 5}],
-      "models": [
-        {
-          "name": "Goblin Mega Tank",
-          "courage": 4,
-          "shoot": 5,
-          "fight": 4,
-          "defense": 10,
-          "reflexes": 5,
-          "movement": 8,
-          "weapons": [{"count": 2, "id": "twin_heavy_machinegun"}, {"count": 3, "id": "heavy_machinegun"}],
-          "options": [
-            {
-              "replaceWeapon": {"id": "twin_heavy_machinegun"},
-              "withWeapon": [{"id": "heavy_flamethrower", "count": 2}, {"id": "missile_launcher", "count": 2}, {"id": "goblin_bazooka", "count": 2}, {"id": "plasma_cannon", "count": 2}]
-            },
-            {
-              "replaceWeapon": {"id": "heavy_machinegun"},
-              "withWeapon": [{"id": "heavy_flamethrower", "count": 1}, {"id": "missile_launcher", "count": 1}, {"id": "goblin_bazooka", "count": 1}, {"id": "plasma_cannon", "count": 1}]
-            },
-            {"addRule": ["wrecking_ball"]}
-          ],
-          "min": 1,
-          "max": 1
-        }
-      ]
-    },
-    "goblin_walker": {
-      "name": "Goblin Mechs",
-      "description": "A small mech group built and crewed by goblins.",
-      "keywords": ["Vehicle, Mech"],
-      "category": "elite",
-      "subfactions": ["none", "mechanized_focus", "revolution_focus"],
-      "rules": ["vulnerable_rear", {"id": "wounds", "x": 3}, "walker"],
-      "models": [
-        {
-          "name": "Goblin Mech",
-          "courage": 4,
-          "shoot": 5,
-          "fight": 4,
-          "defense": 9,
-          "reflexes": 5,
-          "movement": 6,
-          "weapons": [{"id": "plasma_rifle"}, {"id": "mini_claw", "count": 2}],
-          "options": [{"replaceWeapon": {"id": "plasma_rifle"}, "withWeapon": ["heavy_flamethrower", "missile_launcher", "heavy_machinegun", "goblin_bazooka"]}],
-          "min": 1,
-          "max": 3
-        }
-      ]
-    },
-    "goblin_bikes": {
-      "name": "Goblin Bikers",
-      "description": "Only the best are selected to ride these fast moving death traps.",
-      "category": "elite",
-      "keywords": ["Mounted"],
-      "options": [{}],
-      "models": [
-        {
-          "name": "Goblin Biker",
-          "courage": 4,
-          "shoot": 6,
-          "fight": 4,
-          "defense": 7,
-          "reflexes": 5,
-          "movement": 10,
-          "weapons": ["assault_carbine", {"id": "light_handweapon"}],
-          "options": [{"replaceWeapon": "light_handweapon", "withWeapon": "handweapon"}],
-          "min": 3,
-          "max": 11
         }
       ]
     }
@@ -1412,11 +1441,9 @@
   "weapons": {
     "lightning_cannon": {"name": "Lightning Cannon", "attacks": 1, "short": 24, "medium": 48, "ap": 7},
     "boom_cannon": {"name": "Boom Cannon", "attacks": 1, "short": 24, "medium": 48, "ap": 6, "rules": [{"id": "blast", "x": 6}, "heavy"]},
-    "combi_gun": {"name": "Combi-Gun", "attacks": 9, "short": 12, "medium": 24, "ap": 3, "rules": ["assault"]},
     "walker_claw": {"name": "Juggernaut Claw", "attacks": 1, "ap": 6, "short": "Melee"},
     "walker_saw": {"name": "Juggernaut Saw", "attacks": 1, "ap": 5, "short": "Melee"},
     "mega_claw": {"name": "Mega Claw", "profiles": [{"name": "elite", "attacks": 4, "ap": 8, "short": "Melee"}, {"name": "Sweep", "attacks": 8, "ap": 4, "short": "Melee"}]},
-    "rivet_cannon": {"name": "Rivet Cannon", "attacks": 2, "short": 18, "medium": 36, "ap": 5, "rules": [{"id": "blast", "x": 3}]},
     "teleport_pistol": {"name": "Teleport Pistol", "attacks": 1, "short": 6, "ap": 6, "medium": 12, "rules": [{"id": "blast", "x": 3}]},
     "teleport_rifle": {"name": "Teleport Rifle", "attacks": 1, "ap": 6, "short": 9, "medium": 18, "rules": [{"id": "blast", "x": 3}]},
     "twin_teleport_rifle": {"name": "Twin Teleport Rifle", "attacks": 2, "short": 9, "ap": 6, "medium": 18, "rules": [{"id": "blast", "x": 3}]},
@@ -1428,11 +1455,7 @@
     "grand_claw": {"name": "Grand Claw", "profiles": [{"name": "elite", "attacks": 5, "short": "Melee", "ap": 7}, {"name": "Sweep", "attacks": 10, "short": "Melee", "ap": 3}]},
     "twin_mini_mg": {"name": "Twin Mini-MGs", "attacks": 6, "ap": 2, "short": 9, "medium": 18, "rules": ["assault"]},
     "twin_double_shotgun": {"name": "Twin Double Shotgun", "attacks": 4, "short": 6, "medium": 12, "ap": 2, "rules": ["assault", "brutal"]},
-    "cutlass": {"name": "Cutlass", "ap": 2, "attacks": 1, "short": "Melee"},
-    "energy_greatweapon": {"name": "Energy Sawblade", "attacks": 1, "ap": 4, "short": "Melee"},
     "beast_bite": {"name": "Beast Bite", "attacks": 2, "ap": 1, "short": "Melee"},
-    "rocket_pistol": {"name": "Rocket Pistol", "attacks": 1, "short": 6, "medium": 12, "ap": 6, "rules": ["assault", "pistol"]},
-    "bomb_hammer": {"name": "Bomb Hammer", "attacks": 1, "ap": 7, "short": "Melee"},
     "flame_bombs": {"name": "Flame Bombs", "attacks": 2, "ap": 2, "short": 6, "rules": [{"id": "blast", "x": 3}, "bomb", "breaching"]},
     "heavy_bombs": {"name": "Heavy Bomb", "attacks": 1, "ap": 3, "short": 6, "rules": [{"id": "blast", "x": 3}, "bomb"]},
     "flame_missiles": {"name": "Flame Missiles", "attacks": 2, "ap": 2, "short": 12, "medium": 24, "rules": [{"id": "blast", "x": 3}, "breaching"]},
@@ -1455,32 +1478,13 @@
     "goblin_assistant": {"name": "Goblin Assistant", "description": "Models in this unit gain +1 to their Repair rule for each model with this rule.", "points": 2},
     "orc_idol": {"name": "Warborn Idol", "description": "This model and friendly _Infantry_ units within 6\" gain +1 Courage.", "points": 10},
     "precision_monicle": {"name": "Precision Monicle", "description": "This model has +1 Accuracy.", "points": 5},
-    "force_field": {"name": "Force Field", "description": "Roll a die for each hit this model's unit takes, on a 3 or less that hit is prevented.", "points": 20},
     "wrecking_ball": {"name": "Wrecking Ball", "hidden": true, "description_short": "Impact +3", "points": 6},
     "boarding_plank": {"name": "Boarding Plank", "description_short": "Impact +3", "hidden": true, "points": 6},
     "extra_space": {"name": "Extra Space", "description_short": "Transport +10", "hidden": true, "points": 10},
     "extra_armor": {"name": "Extra Armor", "description_short": "Save +1", "hidden": true, "points": 12},
-    "war_banner": {"name": "War Banner", "description": "Once per round, a friendly _Infantry_ unit within 6\" gains +1 AP on all Melee weapons.", "points": 10},
-    "inspiring": {"name": "Icon", "description": "Friendly units of X types within 6\" may re-roll a single failed Courage test when removing Shock.", "points": 10, "inputs": ["x"]},
+    "war_banner": {"name": "War Banner", "description": "This model's unit gains +1 AP on all Melee weapons.", "points": 10},
     "brr": {"name": "Big Red Button", "hidden": true, "description_short": "Movement +2\"", "points": 6},
     "ultra_armor": {"name": "Ultra Armor", "hidden": true, "description_short": "Save +1, Movement -1\"", "points": 5, "description": "Save +1, Movement -1\""},
-    "goblin_tactics": {
-      "name": "Goblin Tactics",
-      "inputs": ["x"],
-      "description": "When this unit is activated, choose up to X friendly _Goblin_ _Infantry_ units within 6\" to receive one of the following bonuses until the end of the round: \n * Re-roll failed Accuracy tests of 9+ \n * Re-roll failed Initiative tests of 9+",
-      "points": ["rule.x", {"multiply": 10}]
-    },
-    "goblin_vehicles": {
-      "name": "Goblin Vehicle Tactics",
-      "inputs": ["x"],
-      "description": "When this unit is activated, choose up to X friendly _Goblin_ _Vehicle_ units within 6\" to receive one of the following bonuses until the end of the round: \n * Re-roll failed Accuracy tests of 9+ \n * Re-roll failed Initiative tests of 9+",
-      "points": ["rule.x", {"multiply": 10}]
-    },
-    "mad_doctor": {
-      "name": "Mad Doctor",
-      "description": "Whenever this model, or a friendly _Infantry_ model within 6\" is killed or loses a Wound(x), roll a D10. On a 3 or less, that loss is prevented.",
-      "points": 10
-    },
     "shouty": {"name": "Shouty", "description": "This model may use Goblin Tactics an additional time per turn", "points": 10},
     "quick_thinker": {"name": "Quick Thinker", "description": "While this model is on the table you gain 1 additional Strategy Point per round.", "points": 20}
   },
@@ -1495,7 +1499,7 @@
     "speed_pole": {
       "name": "Big Boss Banner",
       "rule": "speed_pole",
-      "description": "Upgrade one Warlord model with The Big Boss Banner.",
+      "description": "Upgrade one _Leader_ model with The Big Boss Banner.",
       "flavor": "Nearby marauders are filled with a zeal to charge forward and attack.",
       "points": 5
     },
