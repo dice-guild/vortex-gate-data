@@ -3,13 +3,12 @@
   "name": "Voidwarped Renegade",
   "author": "guitarninja",
   "lore": "In the center of the galaxy lies a cosmic anomaly known as the Vortex Gate, a swirling maelstrom of energy and power that defies comprehension. The Stellar Vanguard, humanity's elite interplanetary marines, once stood as protectors of peace and justice, defending the far reaches of the cosmos from threats both internal and external.\n\nUnaware of the malevolent forces lurking within the Vortex Gate, the Vanguard embarked on a daring mission to investigate its mysteries. They believed that understanding and harnessing its energy could grant them an unprecedented advantage in defending the universe. Led by their most skilled and revered commander, Captain Talvar Thorne, they approached the Vortex Gate with caution and determination.\n\nAs the Stellar Vanguard drew near the enigmatic gateway, they were engulfed by its powerful currents. The energies within the gate were not of this reality, and its dark tendrils reached into their souls, seeking vulnerabilities to exploit. Unprepared for the sheer malevolence they encountered, the Vanguard's minds and spirits were overwhelmed by the chaotic forces within the Vortex Gate.\n\nThe once-honorable and valiant marines were twisted and corrupted by the malevolent energies. Their eyes glowed with an eerie, ominous light, and their once-dignified armor became tainted with dark, swirling patterns. The Stellar Vanguard had been transformed into something entirely different – the Voidwarped Renegade.\n\nTheir loyalty to mankind was replaced with an insatiable desire for power and control. Their purpose shifted from protecting the innocent to seeking dominion over all they encountered. The corrupted energies amplified their physical abilities and granted them sinister new powers, which they used to subjugate other civilizations, planets, and even their former comrades.\n\nCaptain Alexia Hartwell, once the pinnacle of leadership and valor, became the malevolent Sovereign of the Voidwarped Renegade. Under her command, the Voidwarped Renegade sought to spread darkness and chaos throughout the cosmos. They attacked the very worlds they once vowed to protect, causing devastation and fear wherever they went.\n\nThe corruption within the Vortex Gate had transformed the Stellar Vanguard into relentless and merciless beings, fueled by an insatiable hunger for power. Their dark and ominous presence became a harbinger of doom, and their conquests left a trail of suffering and destruction in their wake.\n\nTheir sinister legacy spread like a plague, and the galaxy recoiled in horror at the once-heroic Stellar Vanguard's transformation. The Voidwarped Renegade became the embodiment of fear and malevolence, shrouded in legend and whispered warnings to those who dared to venture near the Vortex Gate.\n\nWhile the Stellar Vanguard's fall was a devastating tragedy, there were those who believed that redemption was still possible. A secret resistance group, comprised of individuals from various species, emerged to challenge the Voidwarped Renegade and free their former comrades from the dark grip of the Vortex Gate.\n\nThe conflict between the Voidwarped Renegade and the resistance waged on, spanning worlds and dimensions. It was a battle of epic proportions, where the forces of darkness sought to engulf the universe in eternal night, while the resistance fought to restore the once-heroic legacy of the Stellar Vanguard.\n\nIn the heart of the galaxy, the Vortex Gate stood as a constant reminder of the corruption that had befallen the Stellar Vanguard. The fate of the cosmos hung in the balance as the battle between light and shadow raged on, a testament to the enduring power of darkness and the indomitable spirit of those who fought to reclaim their fallen comrades from the abyss.",
-  "units": {
+  "hidden_units": {
     "voidwarped_warmaster": {
       "name": "Voidwarped Arch-Marine of War",
       "description": "Once one of Humanity's favoured, this powerful Marine now seeks only to watch the galaxy burn.",
       "category": "hero",
       "keywords": ["Heavy Infantry"],
-      "rules": ["ambush", {"id": "leader", "x": "Infantry, Heavy Infantry"}, {"id": "limited", "x": 1}, {"id": "wounds", "x": 4}, {"id": "warmaster_tactics", "x": 3}],
       "models": [
         {
           "name": "Voidwarped Arch-Marine of War",
@@ -19,7 +18,8 @@
           "fight": 7,
           "defense": 10,
           "reflexes": 7,
-          "weapons": [{"id": "archtraitor_sword", "count": 6}, {"id": "archtraitor_claw", "count": 3}, {"id": "archtraitor_ranged"}],
+          "rules": ["ambush", "leader", {"id": "limited", "x": 1}, "warmaster_tactics", {"id": "wounds", "x": 6}],
+          "weapons": ["archtraitor_ranged", {"id": "archtraitor_sword", "count": 6}, {"id": "archtraitor_claw", "count": 3}],
           "min": 1,
           "max": 1
         }
@@ -50,29 +50,9 @@
       "rules": [{"id": "power", "x": 3}, {"id": "archmage_tactics", "x": 3}, {"id": "wounds", "x": 3}, "fly", "archmage", {"id": "psychic_prowess", "x": 2}, {"id": "limited", "x": 1}],
       "subfactions": ["power_focus"],
       "models": [{"name": "Psychic Arch-Corrupted", "movement": 12, "courage": 7, "shoot": 7, "fight": 7, "defense": 13, "reflexes": 6, "weapons": ["arch_staff"], "min": 1, "max": 1}]
-    },
-    "lord_on_infernal_stalker": {
-      "name": "Voidwarped Lord on Infernal Stalker",
-      "description": "An infernal creation that crawls on the ground, stalking its prey.",
-      "category": "hero",
-      "keywords": ["Vehicle"],
-      "rules": [{"id": "wounds", "x": 4}, "fear", "vulnerable_rear", "walker"],
-      "models": [
-        {
-          "name": "Infernal Stalker",
-          "movement": 10,
-          "courage": 7,
-          "shoot": 7,
-          "fight": 7,
-          "defense": 11,
-          "reflexes": 6,
-          "weapons": ["bane_flamethrower", "maul_cutter", {"id": "claws", "count": 5}, {"id": "energy_polearm", "count": 4}],
-          "options": [{"replaceWeapon": "bane_flamethrower", "withWeapon": ["autocannon"]}, {"replaceWeapon": "maul_cutter", "withWeapon": ["virus_injector"]}],
-          "min": 1,
-          "max": 1
-        }
-      ]
-    },
+    }
+  },
+  "units": {
     "voidwarped_champion": {
       "name": "Voidwarped Champion",
       "description": "A champion of the vortex gate.",
@@ -86,25 +66,23 @@
           "fight": 7,
           "defense": 8,
           "reflexes": 6,
-          "rules": ["leader", {"id": "tactician", "x": 1}, {"id": "wounds", "x": 3}],
-          "weapons": ["combat_rifle", {"id": "handweapon", "count": 3}],
+          "rules": ["leader", "striker", {"id": "wounds", "x": 2}],
+          "weapons": ["combat_rifle", {"id": "handweapon", "count": 2}],
           "options": [
-            {"replaceWeapon": ["combat_rifle"], "withWeapon": ["twin_combat_rifle", "combi_rifle", "combi_rifle"]},
-            {"replaceWeapon": ["combat_rifle", {"id": "handweapon", "count": 3}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 4}], {"id": "twin_energy_handweapon", "count": 6}]},
+            {"replaceWeapon": ["combat_rifle"], "withWeapon": ["twin_combat_rifle", "combi_rifle"]},
+            {"replaceWeapon": ["combat_rifle", {"id": "handweapon", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 3}]]},
             {"replaceWeapon": "heavy_pistol", "withWeapon": ["plasma_pistol", "flamethrower_pistol", "fusion_pistol", "thermal_pistol"]},
             {
-              "replaceWeapon": {"id": "handweapon", "count": 4},
+              "replaceWeapon": {"id": "handweapon", "count": 3},
               "withWeapon": [
-                {"id": "energy_handweapon", "count": 4},
-                {"id": "chainfist", "count": 4},
-                {"id": "chainaxe", "count": 4},
-                {"id": "energy_powerweapon", "count": 4},
-                {"id": "twin_energy_handweapon", "count": 5},
-                {"id": "energy_polearm", "count": 4}
+                {"id": "energy_handweapon", "count": 3},
+                {"id": "energy_powerweapon", "count": 3},
+                {"id": "twin_energy_handweapon", "count": 4},
+                {"id": "energy_greatweapon", "count": 3},
+                {"id": "energy_polearm", "count": 3}
               ]
             },
-            {"addRule": ["jetpack", "destroyer_armor"], "limit": 1},
-            {"replaceRule": {"id": "tactician", "x": 1}, "withRule": {"id": "tactician", "x": 1}}
+            {"addRule": ["jetpack_character", "destroyer_armor"], "limit": 1}
           ],
           "min": 1,
           "max": 1
@@ -118,28 +96,105 @@
       "keywords": ["Mounted"],
       "models": [
         {
-          "name": "Voidwarped Lord on Bike",
+          "name": "Voidwarped Champion on Bike",
           "movement": 8,
           "courage": 7,
           "shoot": 7,
           "fight": 7,
           "defense": 9,
           "reflexes": 6,
-          "rules": [{"id": "impact", "x": 1}, {"id": "leader", "x": "Infantry, Biker"}, {"id": "wounds", "x": 3}, {"id": "tactician", "x": 1}],
-          "weapons": ["combat_rifle", {"id": "handweapon", "count": 3}, {"id": "twin_combat_rifle", "mount": ["Front"]}],
+          "rules": [{"id": "impact", "x": 1}, "leader", "striker", {"id": "wounds", "x": 2}],
+          "weapons": ["combat_rifle", {"id": "handweapon", "count": 2}, {"id": "twin_combat_rifle", "mount": ["Front"]}],
           "options": [
-            {"replaceWeapon": ["combat_rifle"], "withWeapon": ["twin_combat_rifle", "combi_rifle", "combi_rifle"]},
-            {"replaceWeapon": ["combat_rifle", {"id": "handweapon", "count": 3}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 4}], {"id": "twin_energy_handweapon", "count": 6}]},
+            {"replaceWeapon": ["combat_rifle"], "withWeapon": ["twin_combat_rifle", "combi_rifle"]},
+            {"replaceWeapon": ["combat_rifle", {"id": "handweapon", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 3}]]},
             {"replaceWeapon": "heavy_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol", "thermal_pistol"]},
             {
-              "replaceWeapon": {"id": "handweapon", "count": 4},
-              "withWeapon": [{"id": "energy_handweapon", "count": 4}, {"id": "energy_powerweapon", "count": 4}, {"id": "twin_energy_handweapon", "count": 5}, {"id": "energy_polearm", "count": 4}]
+              "replaceWeapon": {"id": "handweapon", "count": 3},
+              "withWeapon": [
+                {"id": "energy_handweapon", "count": 3},
+                {"id": "energy_powerweapon", "count": 3},
+                {"id": "twin_energy_handweapon", "count": 4},
+                {"id": "energy_greatweapon", "count": 3},
+                {"id": "energy_polearm", "count": 3}
+              ]
             },
             {
               "replaceWeapon": {"id": "twin_combat_rifle", "mount": ["Front"]},
               "withWeapon": [{"id": "twin_plasma_rifle", "mount": ["Front"]}, {"id": "twin_flamethrower", "mount": ["Front"]}, {"id": "twin_fusion_rifle", "mount": ["Front"]}]
+            }
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "voidwarped_champion_on_warbeast": {
+      "name": "Voidwarped Champion on Warbeast",
+      "description": "A champion of the vortex gate riding a biomechanical monster.",
+      "category": "hero",
+      "subfactions": ["assault_focus"],
+      "keywords": ["Mounted"],
+      "models": [
+        {
+          "name": "Voidwarped Champion on Warbeast",
+          "movement": 8,
+          "courage": 7,
+          "shoot": 7,
+          "fight": 7,
+          "defense": 9,
+          "reflexes": 6,
+          "rules": [{"id": "impact", "x": 3}, "leader", "striker", {"id": "wounds", "x": 3}],
+          "weapons": ["combat_rifle", {"id": "handweapon", "count": 2}, {"id": "warbeast_horn", "count": 2}],
+          "options": [
+            {"replaceWeapon": ["combat_rifle"], "withWeapon": ["twin_combat_rifle", "combi_rifle"]},
+            {"replaceWeapon": ["combat_rifle", {"id": "handweapon", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 3}]]},
+            {"replaceWeapon": "heavy_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol", "thermal_pistol"]},
+            {
+              "replaceWeapon": {"id": "handweapon", "count": 3},
+              "withWeapon": [
+                {"id": "energy_handweapon", "count": 3},
+                {"id": "energy_powerweapon", "count": 3},
+                {"id": "twin_energy_handweapon", "count": 4},
+                {"id": "energy_polearm", "count": 3},
+                {"id": "energy_greatweapon", "count": 3}
+              ]
+            }
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "champion_on_infernal_stalker": {
+      "name": "Voidwarped Champion on Infernal Stalker",
+      "description": "A champion of the vortex gate on an infernal creation that crawls on the ground, stalking its prey.",
+      "category": "hero",
+      "keywords": ["Vehicle"],
+      "models": [
+        {
+          "name": "Voidwarped Champion on Infernal Stalker",
+          "movement": 10,
+          "courage": 7,
+          "shoot": 7,
+          "fight": 7,
+          "defense": 11,
+          "reflexes": 6,
+          "rules": ["fear", "striker", "vulnerable_rear", "walker", {"id": "wounds", "x": 3}],
+          "weapons": ["heavy_flamethrower", "maul_cutter", {"id": "claws", "count": 5}, {"id": "handweapon", "count": 3}],
+          "options": [
+            {
+              "replaceWeapon": [{"id": "handweapon", "count": 3}],
+              "withWeapon": [
+                {"id": "energy_handweapon", "count": 3},
+                {"id": "energy_powerweapon", "count": 3},
+                {"id": "twin_energy_handweapon", "count": 4},
+                {"id": "energy_greatweapon", "count": 3},
+                {"id": "energy_polearm", "count": 3}
+              ]
             },
-            {"replaceRule": {"id": "tactician", "x": 1}, "withRule": {"id": "tactician", "x": 1}}
+            {"replaceWeapon": "heavy_flamethrower", "withWeapon": ["autocannon"]},
+            {"replaceWeapon": "maul_cutter", "withWeapon": ["virus_injector"]}
           ],
           "min": 1,
           "max": 1
@@ -159,18 +214,23 @@
           "fight": 7,
           "defense": 8,
           "reflexes": 6,
-          "rules": ["leader", {"id": "wounds", "x": 3}, {"id": "tactician", "x": 2}],
-          "weapons": ["combat_rifle", {"id": "handweapon", "count": 4}],
+          "rules": ["leader", "tactician", {"id": "wounds", "x": 3}],
+          "weapons": ["combat_rifle", {"id": "handweapon", "count": 3}],
           "options": [
-            {"replaceWeapon": ["combat_rifle"], "withWeapon": ["twin_combat_rifle", "combi_rifle", "combi_rifle"]},
-            {"replaceWeapon": ["combat_rifle", {"id": "handweapon", "count": 4}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 5}], {"id": "twin_energy_handweapon", "count": 7}]},
+            {"replaceWeapon": ["combat_rifle"], "withWeapon": ["twin_combat_rifle", "combi_rifle"]},
+            {"replaceWeapon": ["combat_rifle", {"id": "handweapon", "count": 3}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 4}]]},
             {"replaceWeapon": "heavy_pistol", "withWeapon": ["plasma_pistol", "flamethrower_pistol", "fusion_pistol", "thermal_pistol"]},
             {
-              "replaceWeapon": {"id": "handweapon", "count": 5},
-              "withWeapon": [{"id": "energy_handweapon", "count": 5}, {"id": "energy_powerweapon", "count": 5}, {"id": "twin_energy_handweapon", "count": 6}, {"id": "energy_polearm", "count": 5}]
+              "replaceWeapon": {"id": "handweapon", "count": 4},
+              "withWeapon": [
+                {"id": "energy_handweapon", "count": 4},
+                {"id": "energy_powerweapon", "count": 4},
+                {"id": "twin_energy_handweapon", "count": 5},
+                {"id": "energy_polearm", "count": 4},
+                {"id": "energy_greatweapon", "count": 4}
+              ]
             },
-            {"addRule": ["jetpack", "destroyer_armor"], "limit": 1},
-            {"replaceRule": {"id": "tactician", "x": 2}, "withRule": {"id": "tactician", "x": 2}}
+            {"addRule": ["jetpack_character", "destroyer_armor"], "limit": 1}
           ],
           "min": 1,
           "max": 1
@@ -191,21 +251,26 @@
           "fight": 7,
           "defense": 9,
           "reflexes": 6,
-          "rules": [{"id": "impact", "x": 1}, {"id": "leader", "x": "Infantry, Biker"}, {"id": "wounds", "x": 3}, {"id": "tactician", "x": 2}],
-          "weapons": ["combat_rifle", {"id": "handweapon", "count": 4}, {"id": "twin_combat_rifle", "mount": ["Front"]}],
+          "rules": [{"id": "impact", "x": 1}, "leader", "tactician", {"id": "wounds", "x": 3}],
+          "weapons": ["combat_rifle", {"id": "handweapon", "count": 3}, {"id": "twin_combat_rifle", "mount": ["Front"]}],
           "options": [
-            {"replaceWeapon": ["combat_rifle"], "withWeapon": ["twin_combat_rifle", "combi_rifle", "combi_rifle"]},
-            {"replaceWeapon": ["combat_rifle", {"id": "handweapon", "count": 4}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 5}], {"id": "twin_energy_handweapon", "count": 7}]},
+            {"replaceWeapon": ["combat_rifle"], "withWeapon": ["twin_combat_rifle", "combi_rifle"]},
+            {"replaceWeapon": ["combat_rifle", {"id": "handweapon", "count": 3}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 4}]]},
             {"replaceWeapon": "heavy_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol", "thermal_pistol"]},
             {
-              "replaceWeapon": {"id": "handweapon", "count": 5},
-              "withWeapon": [{"id": "energy_handweapon", "count": 5}, {"id": "energy_powerweapon", "count": 5}, {"id": "twin_energy_handweapon", "count": 6}, {"id": "energy_polearm", "count": 5}]
+              "replaceWeapon": {"id": "handweapon", "count": 4},
+              "withWeapon": [
+                {"id": "energy_handweapon", "count": 4},
+                {"id": "energy_powerweapon", "count": 4},
+                {"id": "twin_energy_handweapon", "count": 5},
+                {"id": "energy_polearm", "count": 4},
+                {"id": "energy_greatweapon", "count": 4}
+              ]
             },
             {
               "replaceWeapon": {"id": "twin_combat_rifle", "mount": ["Front"]},
               "withWeapon": [{"id": "twin_plasma_rifle", "mount": ["Front"]}, {"id": "twin_flamethrower", "mount": ["Front"]}, {"id": "twin_fusion_rifle", "mount": ["Front"]}]
-            },
-            {"replaceRule": {"id": "tactician", "x": 2}, "withRule": {"id": "tactician", "x": 2}}
+            }
           ],
           "min": 1,
           "max": 1
@@ -216,6 +281,7 @@
       "name": "Voidwarped Lord on Warbeast",
       "description": "A lord of the vortex gate riding a biomechanical monster.",
       "category": "hero",
+      "subfactions": ["assault_focus"],
       "keywords": ["Mounted"],
       "models": [
         {
@@ -226,23 +292,62 @@
           "fight": 7,
           "defense": 9,
           "reflexes": 6,
-          "rules": [{"id": "impact", "x": 1}, {"id": "leader", "x": "Infantry, Biker"}, {"id": "wounds", "x": 3}, {"id": "tactician", "x": 2}],
-          "weapons": ["combat_rifle", {"id": "handweapon", "count": 4}, {"id": "warbeast_horn", "count": 2}],
+          "rules": [{"id": "impact", "x": 3}, "leader", "tactician", {"id": "wounds", "x": 4}],
+          "weapons": ["combat_rifle", {"id": "handweapon", "count": 3}, {"id": "warbeast_horn", "count": 2}],
           "options": [
-            {"replaceWeapon": ["combat_rifle"], "withWeapon": ["twin_combat_rifle", "combi_rifle", "combi_rifle"]},
-            {"replaceWeapon": ["combat_rifle", {"id": "handweapon", "count": 4}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 5}], {"id": "twin_energy_handweapon", "count": 7}]},
+            {"replaceWeapon": ["combat_rifle"], "withWeapon": ["twin_combat_rifle", "combi_rifle"]},
+            {"replaceWeapon": ["combat_rifle", {"id": "handweapon", "count": 3}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 4}]]},
             {"replaceWeapon": "heavy_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol", "thermal_pistol"]},
             {
-              "replaceWeapon": {"id": "handweapon", "count": 5},
-              "withWeapon": [{"id": "energy_handweapon", "count": 5}, {"id": "energy_powerweapon", "count": 5}, {"id": "twin_energy_handweapon", "count": 6}, {"id": "energy_polearm", "count": 5}]
-            },
-            {"replaceRule": {"id": "tactician", "x": 2}, "withRule": {"id": "tactician", "x": 2}}
+              "replaceWeapon": {"id": "handweapon", "count": 4},
+              "withWeapon": [
+                {"id": "energy_handweapon", "count": 4},
+                {"id": "energy_powerweapon", "count": 4},
+                {"id": "twin_energy_handweapon", "count": 5},
+                {"id": "energy_polearm", "count": 4},
+                {"id": "energy_greatweapon", "count": 4}
+              ]
+            }
           ],
           "min": 1,
           "max": 1
         }
-      ],
-      "subfactions": ["assault_focus"]
+      ]
+    },
+    "lord_on_infernal_stalker": {
+      "name": "Voidwarped Lord on Infernal Stalker",
+      "description": "A lord of the vortex gate on an infernal creation that crawls on the ground, stalking its prey.",
+      "category": "hero",
+      "keywords": ["Vehicle"],
+      "models": [
+        {
+          "name": "Voidwarped Lord on Infernal Stalker",
+          "movement": 10,
+          "courage": 7,
+          "shoot": 7,
+          "fight": 7,
+          "defense": 11,
+          "reflexes": 6,
+          "rules": ["fear", "tactician", "vulnerable_rear", "walker", {"id": "wounds", "x": 4}],
+          "weapons": ["heavy_flamethrower", "maul_cutter", {"id": "claws", "count": 5}, {"id": "handweapon", "count": 4}],
+          "options": [
+            {
+              "replaceWeapon": [{"id": "handweapon", "count": 4}],
+              "withWeapon": [
+                {"id": "energy_handweapon", "count": 4},
+                {"id": "energy_powerweapon", "count": 4},
+                {"id": "twin_energy_handweapon", "count": 5},
+                {"id": "energy_greatweapon", "count": 4},
+                {"id": "energy_polearm", "count": 4}
+              ]
+            },
+            {"replaceWeapon": "heavy_flamethrower", "withWeapon": ["autocannon"]},
+            {"replaceWeapon": "maul_cutter", "withWeapon": ["virus_injector"]}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
     },
     "voidwarped_engineer": {
       "name": "Voidwarped Engineer",
@@ -258,18 +363,18 @@
           "defense": 10,
           "reflexes": 6,
           "rules": ["engineer", "leader", {"id": "wounds", "x": 3}],
-          "weapons": ["combat_rifle", {"id": "handweapon", "count": 3}],
+          "weapons": ["combat_rifle", {"id": "handweapon", "count": 2}],
           "options": [
-            {"replaceWeapon": ["combat_rifle"], "withWeapon": ["twin_combat_rifle", "combi_rifle", "combi_rifle"]},
-            {"replaceWeapon": ["combat_rifle", {"id": "handweapon", "count": 3}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 4}], {"id": "twin_energy_handweapon", "count": 6}]},
+            {"replaceWeapon": ["combat_rifle"], "withWeapon": ["twin_combat_rifle", "combi_rifle"]},
+            {"replaceWeapon": ["combat_rifle", {"id": "handweapon", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 3}]]},
             {"replaceWeapon": "heavy_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol", "thermal_pistol"]},
             {
-              "replaceWeapon": {"id": "handweapon", "count": 4},
-              "withWeapon": [{"id": "energy_handweapon", "count": 4}, {"id": "energy_powerweapon", "count": 4}, {"id": "twin_energy_handweapon", "count": 5}]
+              "replaceWeapon": {"id": "handweapon", "count": 3},
+              "withWeapon": [{"id": "energy_handweapon", "count": 3}, {"id": "energy_powerweapon", "count": 3}, {"id": "twin_energy_handweapon", "count": 4}, {"id": "energy_greatweapon", "count": 3}]
             },
-            {"addWeapon": ["plasma_rifle", "flamethrower", "gravity_rifle", "fusion_rifle", "combat_rifle"], "limit": 2},
+            {"addWeapon": ["plasma_rifle", "flamethrower", "thermal_rifle", "fusion_rifle", "combat_rifle"], "limit": 2},
             {"addWeapon": ["servo_arm"], "limit": 2},
-            {"addRule": ["destroyer_armor", "jetpack"], "limit": 1}
+            {"addRule": ["jetpack_character", "destroyer_armor"], "limit": 1}
           ],
           "min": 1,
           "max": 1
@@ -290,17 +395,17 @@
           "fight": 6,
           "defense": 10,
           "reflexes": 6,
-          "rules": ["engineer", {"id": "impact", "x": 1}, {"id": "leader", "x": "Infantry, Biker"}, {"id": "wounds", "x": 3}],
-          "weapons": ["combat_rifle", {"id": "handweapon", "count": 3}, {"id": "twin_combat_rifle", "mount": ["Front"]}],
+          "rules": ["engineer", {"id": "impact", "x": 1, "id_0": "leader"}, {"id": "wounds", "x": 3}],
+          "weapons": ["combat_rifle", {"id": "handweapon", "count": 2}, {"id": "twin_combat_rifle", "mount": ["Front"]}],
           "options": [
-            {"replaceWeapon": ["combat_rifle"], "withWeapon": ["twin_combat_rifle", "combi_rifle", "combi_rifle"]},
-            {"replaceWeapon": ["combat_rifle", {"id": "handweapon", "count": 3}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 4}], {"id": "twin_energy_handweapon", "count": 6}]},
+            {"replaceWeapon": ["combat_rifle"], "withWeapon": ["twin_combat_rifle", "combi_rifle"]},
+            {"replaceWeapon": ["combat_rifle", {"id": "handweapon", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 3}]]},
             {"replaceWeapon": "heavy_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol", "thermal_pistol"]},
             {
-              "replaceWeapon": {"id": "handweapon", "count": 4},
-              "withWeapon": [{"id": "energy_handweapon", "count": 4}, {"id": "energy_powerweapon", "count": 4}, {"id": "twin_energy_handweapon", "count": 5}]
+              "replaceWeapon": {"id": "handweapon", "count": 3},
+              "withWeapon": [{"id": "energy_handweapon", "count": 3}, {"id": "energy_powerweapon", "count": 3}, {"id": "twin_energy_handweapon", "count": 4}, {"id": "energy_greatweapon", "count": 3}]
             },
-            {"addWeapon": ["plasma_rifle", "flamethrower", "gravity_rifle", "fusion_rifle", "combat_rifle"], "limit": 2},
+            {"addWeapon": ["plasma_rifle", "flamethrower", "thermal_rifle", "fusion_rifle", "combat_rifle"], "limit": 2},
             {"addWeapon": ["servo_arm"], "limit": 2},
             {
               "replaceWeapon": {"id": "twin_combat_rifle", "mount": ["Front"]},
@@ -326,16 +431,22 @@
           "defense": 8,
           "reflexes": 6,
           "rules": ["leader", {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
-          "weapons": ["combat_rifle", {"id": "handweapon", "count": 3}],
+          "weapons": ["combat_rifle", {"id": "handweapon", "count": 2}],
           "options": [
-            {"replaceWeapon": "combat_rifle", "withWeapon": ["twin_combat_rifle", "combi_rifle", "combi_rifle"]},
-            {"replaceWeapon": ["combat_rifle", {"id": "handweapon", "count": 3}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 4}], {"id": "twin_energy_handweapon", "count": 6}]},
+            {"replaceWeapon": "combat_rifle", "withWeapon": ["twin_combat_rifle", "combi_rifle"]},
+            {"replaceWeapon": ["combat_rifle", {"id": "handweapon", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 3}]]},
             {"replaceWeapon": "heavy_pistol", "withWeapon": ["plasma_pistol", "flamethrower_pistol", "fusion_pistol", "thermal_pistol"]},
             {
-              "replaceWeapon": {"id": "handweapon", "count": 4},
-              "withWeapon": [{"id": "energy_handweapon", "count": 4}, {"id": "energy_powerweapon", "count": 4}, {"id": "twin_energy_handweapon", "count": 5}, {"id": "energy_polearm", "count": 4}]
+              "replaceWeapon": {"id": "handweapon", "count": 3},
+              "withWeapon": [
+                {"id": "energy_handweapon", "count": 3},
+                {"id": "energy_powerweapon", "count": 3},
+                {"id": "twin_energy_handweapon", "count": 4},
+                {"id": "energy_polearm", "count": 3},
+                {"id": "energy_greatweapon", "count": 3}
+              ]
             },
-            {"addRule": ["jetpack", "destroyer_armor", "disk_of_change"], "limit": 1},
+            {"addRule": ["jetpack_character", "destroyer_armor", "disk_of_change"], "limit": 1},
             {"replaceRule": {"id": "power", "x": 1}, "withRule": {"id": "power", "x": 2}}
           ],
           "min": 1,
@@ -357,21 +468,217 @@
           "fight": 6,
           "defense": 9,
           "reflexes": 6,
-          "rules": [{"id": "impact", "x": 1}, {"id": "leader", "x": "Infantry, Biker"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
-          "weapons": ["combat_rifle", {"id": "handweapon", "count": 3}, {"id": "twin_combat_rifle", "mount": ["Front"]}],
+          "rules": [{"id": "impact", "x": 1}, "leader", {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
+          "weapons": ["combat_rifle", {"id": "handweapon", "count": 2}, {"id": "twin_combat_rifle", "mount": ["Front"]}],
           "options": [
-            {"replaceWeapon": "combat_rifle", "withWeapon": ["twin_combat_rifle", "combi_rifle", "combi_rifle"]},
-            {"replaceWeapon": ["combat_rifle", {"id": "handweapon", "count": 3}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 4}], {"id": "twin_energy_handweapon", "count": 6}]},
+            {"replaceWeapon": "combat_rifle", "withWeapon": ["twin_combat_rifle", "combi_rifle"]},
+            {"replaceWeapon": ["combat_rifle", {"id": "handweapon", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 3}]]},
             {"replaceWeapon": "heavy_pistol", "withWeapon": ["plasma_pistol", "flamethrower_pistol", "fusion_pistol", "thermal_pistol"]},
             {
-              "replaceWeapon": {"id": "handweapon", "count": 4},
-              "withWeapon": [{"id": "energy_handweapon", "count": 4}, {"id": "energy_powerweapon", "count": 4}, {"id": "twin_energy_handweapon", "count": 5}, {"id": "energy_polearm", "count": 4}]
+              "replaceWeapon": {"id": "handweapon", "count": 3},
+              "withWeapon": [
+                {"id": "energy_handweapon", "count": 3},
+                {"id": "energy_powerweapon", "count": 3},
+                {"id": "twin_energy_handweapon", "count": 4},
+                {"id": "energy_polearm", "count": 3},
+                {"id": "energy_greatweapon", "count": 3}
+              ]
             },
             {
               "replaceWeapon": {"id": "twin_combat_rifle", "mount": ["Front"]},
               "withWeapon": [{"id": "twin_plasma_rifle", "mount": ["Front"]}, {"id": "twin_flamethrower", "mount": ["Front"]}, {"id": "twin_fusion_rifle", "mount": ["Front"]}]
             },
             {"replaceRule": {"id": "power", "x": 1}, "withRule": {"id": "power", "x": 2}}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "voidwarped_surgeon": {
+      "name": "Voidwarped Surgeon",
+      "description": "A combat medic of the vortex gate.",
+      "category": "hero",
+      "models": [
+        {
+          "name": "Voidwarped Surgeon",
+          "movement": 6,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 8,
+          "reflexes": 6,
+          "rules": ["medic", "support", {"id": "wounds", "x": 2}],
+          "weapons": ["heavy_pistol", {"id": "handweapon", "count": 3}],
+          "options": [
+            {"replaceWeapon": ["heavy_pistol"], "withWeapon": ["plasma_pistol", "flamethrower_pistol", "fusion_pistol", "thermal_pistol"]},
+            {
+              "replaceWeapon": [{"id": "handweapon", "count": 3}],
+              "withWeapon": [
+                {"id": "energy_handweapon", "count": 3},
+                {"id": "energy_powerweapon", "count": 3},
+                {"id": "twin_energy_handweapon", "count": 4},
+                {"id": "energy_greatweapon", "count": 3},
+                {"id": "energy_polearm", "count": 3}
+              ]
+            },
+            {"addRule": ["jetpack_character", "destroyer_armor"], "limit": 1},
+            {"addRule": ["shield"]}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "voidwarped_surgeon_on_bike": {
+      "name": "Voidwarped Surgeon on Bike",
+      "description": "A combat medic of the vortex gate on a combat bike.",
+      "category": "hero",
+      "models": [
+        {
+          "name": "Voidwarped Surgeon on Bike",
+          "movement": 8,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 8,
+          "reflexes": 6,
+          "rules": [{"id": "impact", "x": 1}, "medic", "support", {"id": "wounds", "x": 2}],
+          "weapons": ["heavy_pistol", {"id": "handweapon", "count": 3}, {"id": "twin_combat_rifle", "mount": ["Front"]}],
+          "options": [
+            {"replaceWeapon": ["heavy_pistol"], "withWeapon": ["plasma_pistol", "flamethrower_pistol", "fusion_pistol", "thermal_pistol"]},
+            {
+              "replaceWeapon": [{"id": "handweapon", "count": 3}],
+              "withWeapon": [
+                {"id": "energy_handweapon", "count": 3},
+                {"id": "energy_powerweapon", "count": 3},
+                {"id": "twin_energy_handweapon", "count": 4},
+                {"id": "energy_greatweapon", "count": 3},
+                {"id": "energy_polearm", "count": 3}
+              ]
+            },
+            {
+              "replaceWeapon": {"id": "twin_combat_rifle", "mount": ["Front"]},
+              "withWeapon": [
+                {"id": "twin_plasma_rifle", "mount": ["Front"]},
+                {"id": "twin_flamethrower", "mount": ["Front"]},
+                {"id": "twin_fusion_rifle", "mount": ["Front"]},
+                {"id": "twin_thermal_rifle", "mount": ["Front"]}
+              ]
+            },
+            {"addRule": [{"id": "hover", "name": "Anti-Grav Engine"}, "shield"]}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "voidwarped_priest": {
+      "name": "Voidwarped Priest",
+      "description": "A devotee of the vortex gate who seeks to spread their faith to non-believers on the battlefield.",
+      "category": "hero",
+      "models": [
+        {
+          "name": "Voidwarped Priest",
+          "movement": 6,
+          "courage": 7,
+          "shoot": 7,
+          "fight": 7,
+          "defense": 8,
+          "reflexes": 6,
+          "rules": ["support", {"id": "wounds", "x": 3}, "zealot"],
+          "weapons": ["combat_rifle", {"id": "handweapon", "count": 3}],
+          "options": [
+            {"replaceWeapon": ["combat_rifle"], "withWeapon": ["combi_rifle", "twin_combat_rifle"]},
+            {"replaceWeapon": ["combat_rifle", {"id": "handweapon", "count": 3}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 4}]]},
+            {"replaceWeapon": ["heavy_pistol"], "withWeapon": ["plasma_pistol", "flamethrower_pistol", "fusion_pistol", "thermal_pistol"]},
+            {
+              "replaceWeapon": [{"id": "handweapon", "count": 3}],
+              "withWeapon": [
+                {"id": "energy_handweapon", "count": 3},
+                {"id": "energy_powerweapon", "count": 3},
+                {"id": "twin_energy_handweapon", "count": 4},
+                {"id": "energy_greatweapon", "count": 3},
+                {"id": "energy_polearm", "count": 3}
+              ]
+            },
+            {"addRule": ["destroyer_armor", "jetpack_character"], "limit": 1}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "voidwarped_priest_on_bike": {
+      "name": "Voidwarped Priest on Bike",
+      "description": "A devotee of the vortex gate on a combat bike who seeks to spread their faith to non-believers on the battlefield.",
+      "category": "hero",
+      "keywords": ["Mounted"],
+      "models": [
+        {
+          "name": "Voidwarped Priest on Bike",
+          "movement": 6,
+          "courage": 7,
+          "shoot": 7,
+          "fight": 7,
+          "defense": 8,
+          "reflexes": 6,
+          "rules": ["support", {"id": "wounds", "x": 3}, "zealot"],
+          "weapons": ["combat_rifle", {"id": "handweapon", "count": 3}, {"id": "twin_combat_rifle", "mount": ["Front"]}],
+          "options": [
+            {"replaceWeapon": ["combat_rifle"], "withWeapon": ["combi_rifle", "twin_combat_rifle"]},
+            {"replaceWeapon": ["combat_rifle", {"id": "handweapon", "count": 3}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 4}]]},
+            {"replaceWeapon": ["heavy_pistol"], "withWeapon": ["plasma_pistol", "flamethrower_pistol", "fusion_pistol", "thermal_pistol"]},
+            {
+              "replaceWeapon": [{"id": "handweapon", "count": 3}],
+              "withWeapon": [
+                {"id": "energy_handweapon", "count": 3},
+                {"id": "energy_powerweapon", "count": 3},
+                {"id": "twin_energy_handweapon", "count": 4},
+                {"id": "energy_greatweapon", "count": 3},
+                {"id": "energy_polearm", "count": 3}
+              ]
+            },
+            {
+              "replaceWeapon": {"id": "twin_combat_rifle", "mount": ["Front"]},
+              "withWeapon": [{"id": "twin_plasma_rifle", "mount": ["Front"]}, {"id": "twin_flamethrower", "mount": ["Front"]}, {"id": "twin_fusion_rifle", "mount": ["Front"]}]
+            }
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "voidwarped_priest_on_warbeast": {
+      "name": "Voidwarped Priest on Warbeast",
+      "description": "A devotee of the vortex gate on a biomechanical monster who seeks to spread their faith to non-believers on the battlefield.",
+      "category": "hero",
+      "subfactions": ["assault_focus"],
+      "models": [
+        {
+          "name": "Voidwarped Priest on Warbeast",
+          "movement": 6,
+          "courage": 7,
+          "shoot": 7,
+          "fight": 7,
+          "defense": 8,
+          "reflexes": 6,
+          "rules": [{"id": "impact", "x": 3}, "support", {"id": "wounds", "x": 3}, "zealot"],
+          "weapons": ["combat_rifle", {"id": "handweapon", "count": 3}, {"id": "warbeast_horn", "count": 2}],
+          "options": [
+            {"replaceWeapon": ["combat_rifle"], "withWeapon": ["combi_rifle", "twin_combat_rifle"]},
+            {"replaceWeapon": ["combat_rifle", {"id": "handweapon", "count": 3}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 4}]]},
+            {"replaceWeapon": ["heavy_pistol"], "withWeapon": ["plasma_pistol", "flamethrower_pistol", "fusion_pistol", "thermal_pistol"]},
+            {
+              "replaceWeapon": [{"id": "handweapon", "count": 3}],
+              "withWeapon": [
+                {"id": "energy_handweapon", "count": 3},
+                {"id": "energy_powerweapon", "count": 3},
+                {"id": "twin_energy_handweapon", "count": 4},
+                {"id": "energy_greatweapon", "count": 3},
+                {"id": "energy_polearm", "count": 3}
+              ]
+            }
           ],
           "min": 1,
           "max": 1
@@ -392,7 +699,7 @@
           "fight": 7,
           "defense": 10,
           "reflexes": 7,
-          "rules": [{"id": "wounds", "x": 4}, "leader", {"id": "tactician", "x": 2}, {"id": "power", "x": 1}],
+          "rules": ["leader", {"id": "power", "x": 1}, "tactician", {"id": "wounds", "x": 4}],
           "weapons": [{"id": "daemon_sword", "count": 3}, {"id": "daemon_claws", "count": 2}],
           "options": [
             {"replaceWeapon": {"id": "daemon_sword", "count": 3}, "withWeapon": [{"id": "daemon_axe", "count": 3}, {"id": "daemon_claws", "count": 4}]},
@@ -402,145 +709,6 @@
           "max": 1
         }
       ]
-    },
-    "lord_of_pestilence": {
-      "name": "Lord of Pestilence",
-      "description": "A lord of death and decay.",
-      "category": "hero",
-      "keywords": ["Heavy Infantry"],
-      "subfactions": ["toughness_focus"],
-      "models": [
-        {
-          "name": "Lord of Pestilence",
-          "movement": 5,
-          "courage": 7,
-          "shoot": 7,
-          "fight": 7,
-          "defense": 9,
-          "reflexes": 6,
-          "rules": ["ambush", {"id": "leader", "x": "Infantry, Heavy Infantry"}, {"id": "tactician", "x": 2}, {"id": "wounds", "x": 3}],
-          "weapons": [{"id": "pestilence_great_cleaver", "count": 3}],
-          "options": [
-            {"replaceWeapon": [{"id": "pestilence_great_cleaver", "count": 3}], "withWeapon": [{"id": "pestilence_scythe", "count": 3}, [{"id": "pestilence_claw", "count": 3}, "pestilence_sprayer"]]}
-          ],
-          "min": 1,
-          "max": 1
-        }
-      ]
-    },
-    "pestilence_surgeon": {
-      "name": "Pestilence Surgeon",
-      "description": "A combat medic who has spreads disease across the battlefield.",
-      "category": "elite",
-      "subfactions": ["toughness_focus"],
-      "models": [
-        {
-          "name": "Pestilence Surgeon",
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 8,
-          "movement": 6,
-          "reflexes": 6,
-          "rules": ["support", "medic", {"id": "wounds", "x": 2}],
-          "weapons": ["heavy_pistol", {"id": "pestilence_sword", "count": 4}],
-          "min": 1,
-          "max": 1
-        }
-      ]
-    },
-    "voidwarped_priest": {
-      "name": "Voidwarped Priest",
-      "description": "A devotee of the vortex gate who seeks to spread their faith to non-believers on the battlefield.",
-      "category": "hero",
-      "models": [
-        {
-          "name": "Voidwarped Priest",
-          "movement": 6,
-          "courage": 7,
-          "shoot": 7,
-          "fight": 7,
-          "defense": 8,
-          "reflexes": 6,
-          "rules": ["zealot", "leader", {"id": "wounds", "x": 3}],
-          "weapons": ["combat_rifle", {"id": "handweapon", "count": 3}],
-          "options": [
-            {"replaceWeapon": ["combat_rifle"], "withWeapon": ["combi_rifle", "twin_combat_rifle", "combi_rifle"]},
-            {"replaceWeapon": ["combat_rifle", {"id": "handweapon", "count": 3}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 4}], {"id": "twin_energy_handweapon", "count": 6}]},
-            {"replaceWeapon": ["heavy_pistol"], "withWeapon": ["plasma_pistol", "flamethrower_pistol", "fusion_pistol", "thermal_pistol"]},
-            {
-              "replaceWeapon": [{"id": "handweapon", "count": 3}],
-              "withWeapon": [{"id": "energy_handweapon", "count": 3}, {"id": "energy_powerweapon", "count": 3}, {"id": "twin_energy_handweapon", "count": 4}]
-            },
-            {"addRule": ["destroyer_armor", "jetpack"], "limit": 1}
-          ],
-          "min": 1,
-          "max": 1
-        }
-      ]
-    },
-    "voidwarped_priest_on_bike": {
-      "name": "Voidwarped Priest on Bike",
-      "description": "A devotee of the vortex gate on a combat bike who seeks to spread their faith to non-believers on the battlefield.",
-      "category": "hero",
-      "models": [
-        {
-          "name": "Voidwarped Priest on Bike",
-          "movement": 6,
-          "courage": 7,
-          "shoot": 7,
-          "fight": 7,
-          "defense": 8,
-          "reflexes": 6,
-          "rules": ["zealot", {"id": "leader", "x": "Infantry, Biker"}, {"id": "wounds", "x": 3}],
-          "weapons": ["combat_rifle", {"id": "handweapon", "count": 3}, {"id": "twin_combat_rifle", "mount": ["Front"]}],
-          "options": [
-            {"replaceWeapon": ["combat_rifle"], "withWeapon": ["combi_rifle", "twin_combat_rifle", "combi_rifle"]},
-            {"replaceWeapon": ["combat_rifle", {"id": "handweapon", "count": 3}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 4}], {"id": "twin_energy_handweapon", "count": 6}]},
-            {"replaceWeapon": ["heavy_pistol"], "withWeapon": ["plasma_pistol", "flamethrower_pistol", "fusion_pistol", "thermal_pistol"]},
-            {
-              "replaceWeapon": [{"id": "handweapon", "count": 3}],
-              "withWeapon": [{"id": "energy_handweapon", "count": 3}, {"id": "energy_powerweapon", "count": 3}, {"id": "twin_energy_handweapon", "count": 4}]
-            },
-            {
-              "replaceWeapon": {"id": "twin_combat_rifle", "mount": ["Front"]},
-              "withWeapon": [{"id": "twin_plasma_rifle", "mount": ["Front"]}, {"id": "twin_flamethrower", "mount": ["Front"]}, {"id": "twin_fusion_rifle", "mount": ["Front"]}]
-            }
-          ],
-          "min": 1,
-          "max": 1
-        }
-      ]
-    },
-    "voidwarped_priest_on_warbeast": {
-      "name": "Voidwarped Priest on Warbeast",
-      "description": "A devotee of the vortex gate on a biomechanical monster who seeks to spread their faith to non-believers on the battlefield.",
-      "category": "hero",
-      "models": [
-        {
-          "name": "Voidwarped Priest on Warbeast",
-          "movement": 6,
-          "courage": 7,
-          "shoot": 7,
-          "fight": 7,
-          "defense": 8,
-          "reflexes": 6,
-          "rules": ["zealot", {"id": "leader", "x": "Infantry, Biker"}, {"id": "wounds", "x": 3}, {"id": "heavy_impact", "x": 2}],
-          "weapons": ["combat_rifle", {"id": "handweapon", "count": 3}, {"id": "warbeast_horn", "count": 2}],
-          "options": [
-            {"replaceWeapon": ["combat_rifle"], "withWeapon": ["combi_rifle", "twin_combat_rifle", "combi_rifle"]},
-            {"replaceWeapon": ["combat_rifle", {"id": "handweapon", "count": 3}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 4}], {"id": "twin_energy_handweapon", "count": 6}]},
-            {"replaceWeapon": ["heavy_pistol"], "withWeapon": ["plasma_pistol", "flamethrower_pistol", "fusion_pistol", "thermal_pistol"]},
-            {
-              "replaceWeapon": [{"id": "handweapon", "count": 3}],
-              "withWeapon": [{"id": "energy_handweapon", "count": 3}, {"id": "energy_powerweapon", "count": 3}, {"id": "twin_energy_handweapon", "count": 4}]
-            }
-          ],
-          "min": 1,
-          "max": 1
-        }
-      ],
-      "subfactions": ["assault_focus"]
     },
     "cultists": {
       "name": "Cultists",
@@ -566,10 +734,32 @@
         }
       ]
     },
+    "cultist_magus": {
+      "name": "Cultist Magus",
+      "description": "A cult leader who has sold their soul to the vortex gate.",
+      "category": "hero",
+      "models": [
+        {
+          "name": "Cultist Magus",
+          "movement": 6,
+          "courage": 5,
+          "shoot": 5,
+          "fight": 5,
+          "defense": 5,
+          "reflexes": 5,
+          "rules": ["leader", {"id": "wounds", "x": 2}, {"id": "power", "x": 1}],
+          "weapons": ["pistol", {"id": "energy_polearm", "count": 2}],
+          "options": [{"replaceWeapon": "pistol", "withWeapon": ["plasma_pistol", "flamethrower_pistol"]}],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
     "cultist_berzerkers": {
       "name": "Cultist Berzerkers",
       "description": "Rage-filled lunatics who have sold their souls to the vortex gate.",
       "category": "core",
+      "rules": ["furious"],
       "models": [
         {
           "name": "Cultist Berzerker",
@@ -580,8 +770,8 @@
           "defense": 5,
           "reflexes": 5,
           "weapons": ["pistol", {"id": "handweapon", "count": 2}],
-          "options": [{"replaceWeapon": {"id": "handweapon", "count": 2}, "withWeapon": [{"id": "heavy_chainsword", "count": 2}], "modelLimit": "2/10"}],
-          "min": 9,
+          "options": [{"replaceWeapon": {"id": "handweapon", "count": 2}, "withWeapon": [{"id": "energy_powerweapon", "count": 2}], "modelLimit": "2/10"}],
+          "min": 10,
           "max": 20
         },
         {
@@ -592,66 +782,55 @@
           "fight": 6,
           "defense": 6,
           "reflexes": 5,
-          "weapons": [{"id": "chainaxe", "count": 3}],
-          "options": [{"replaceWeapon": {"id": "chainaxe", "count": 3}, "withWeapon": [{"id": "energy_handweapon", "count": 3}]}],
+          "weapons": [{"id": "energy_handweapon", "count": 3}],
+          "options": [{"replaceWeapon": {"id": "energy_handweapon", "count": 3}, "withWeapon": [{"id": "energy_greatweapon", "count": 3}]}],
           "min": 0,
           "max": 3
         }
-      ],
-      "rules": ["furious"]
+      ]
     },
-    "maurauder_squad": {
-      "name": "Traitor Marauder Squad",
-      "description": "A group of highly aggressive Planetary Defense deserters who can handle some close quarters fighting.",
+    "traitor_infantry_squad": {
+      "name": "Traitor Infantry Squad",
+      "description": "A squad of Planetary Defense deserters who have joined the vortex gate forces.",
       "category": "elite",
-      "options": [{"replaceWeapon": "auto_rifle", "withWeapon": "shotgun"}, {"addRule": ["heavy_armor"], "modelLimit": "all"}],
-      "rules": ["stealth"],
+      "rules": ["evasive"],
       "models": [
         {
-          "name": "Marauder Leader",
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 6,
-          "reflexes": 5,
+          "name": "Traitor Sergeant",
           "movement": 6,
+          "courage": 5,
+          "shoot": 5,
+          "fight": 5,
+          "defense": 5,
+          "reflexes": 5,
           "weapons": ["auto_rifle", "light_handweapon"],
           "options": [
             {"replaceWeapon": "auto_rifle", "withWeapon": ["combat_rifle"]},
-            {"replaceWeapon": ["auto_rifle", {"id": "light_handweapon", "count": 1}], "withWeapon": [[{"id": "pistol"}, {"id": "light_handweapon", "count": 2}]]},
             {"replaceWeapon": "pistol", "withWeapon": ["heavy_pistol", "plasma_pistol"]},
             {
               "replaceWeapon": {"id": "light_handweapon", "count": 2},
-              "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "energy_handweapon", "count": 2}, {"id": "energy_handweapon", "count": 2}, {"id": "energy_powerweapon", "count": 2}]
+              "withWeapon": [{"id": "handweapon", "count": 2}, {"id": "energy_handweapon", "count": 2}, {"id": "energy_powerweapon", "count": 2}]
             }
           ],
           "min": 1,
           "max": 1
         },
-        {
-          "name": "Marauder",
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 6,
-          "reflexes": 5,
-          "movement": 6,
-          "weapons": ["auto_rifle", "light_handweapon"],
-          "options": [
-            {"addRule": "field_radio", "modelLimit": 1},
-            {"replaceWeapon": "auto_rifle", "withWeapon": ["flamethrower", "grenade_launcher", "fusion_rifle", "plasma_rifle", "sniper_rifle"], "modelLimit": 3}
-          ],
-          "min": 4,
-          "max": 9
-        }
+        {"name": "Traitor Trooper", "movement": 6, "courage": 5, "shoot": 5, "fight": 5, "defense": 5, "reflexes": 5, "weapons": ["auto_rifle", "light_handweapon"], "min": 9, "max": 19}
+      ],
+      "options": [
+        {"replaceWeapon": "auto_rifle", "withWeapon": "shotgun"},
+        {"replaceWeapon": ["auto_rifle", "light_handweapon"], "withWeapon": [["pistol", {"id": "light_handweapon", "count": 2}]]},
+        {"replaceWeapon": "auto_rifle", "withWeapon": ["flamethrower", "grenade_launcher", "fusion_rifle", "plasma_rifle", "sniper_rifle"], "modelLimit": "2/10"},
+        {"addRule": "field_radio", "modelLimit": 1},
+        {"addRule": ["light_armor"], "modelLimit": "all"}
       ]
     },
-    "plague_walkers": {
-      "name": "Plague Walkers",
+    "zombies": {
+      "name": "Vortexspawn Zombies",
       "description": "Unfortunate souls who have been mutated into walking undead.",
       "category": "core",
       "subfactions": ["toughness_focus"],
-      "models": [{"name": "Plague Walker", "movement": 5, "courage": 5, "shoot": 5, "fight": 5, "defense": 5, "reflexes": 5, "weapons": [{"id": "light_handweapon", "count": 2}], "min": 10, "max": 20}]
+      "models": [{"name": "Zombie", "movement": 5, "courage": 5, "shoot": 5, "fight": 5, "defense": 5, "reflexes": 5, "weapons": [{"id": "light_handweapon", "count": 2}], "min": 10, "max": 20}]
     },
     "birdman_sorcerer": {
       "name": "Birdman Sorcerer",
@@ -669,7 +848,7 @@
           "reflexes": 4,
           "rules": ["leader", {"id": "power", "x": 1}, {"id": "wounds", "x": 2}],
           "weapons": [{"id": "energy_polearm", "count": 3}],
-          "options": [{"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]}, {"addRule": "disk_of_change"}],
+          "options": [{"addRule": "disk_of_change"}, {"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]}],
           "min": 1,
           "max": 1
         }
@@ -677,7 +856,7 @@
     },
     "birdmen": {
       "name": "Birdmen",
-      "description": "Mutated half avian-half man creatures that fight with the psychic brothers to achieve their goals.",
+      "description": "Mutated half avian-half man creatures that fight with the voidwarped renegade to achieve their goals.",
       "category": "core",
       "subfactions": ["power_focus"],
       "models": [
@@ -723,13 +902,19 @@
         }
       ]
     },
-    "voidwarped_marines": {
-      "name": "Voidwarped Marines",
-      "description": "Marines corrupted by the vortex gate.",
+    "renegade_squad": {
+      "name": "Renegade Squad",
+      "description": "Elite Marines corrupted by the vortex gate.",
       "category": "core",
+      "hidden_options": [
+        {"addRule": [{"id": "impact", "x": 1}], "modelLimit": "all", "subfactions": ["mobility_focus"]},
+        {"addRule": ["poison_weapons"], "modelLimit": "all", "subfactions": ["toughness_focus"]},
+        {"addRule": ["conclave"], "modelLimit": "all", "subfactions": ["power_focus"]},
+        {"addRule": ["furious"], "modelLimit": "all", "subfactions": ["assault_focus"]}
+      ],
       "models": [
         {
-          "name": "Voidwarped Sergeant",
+          "name": "Renegade Sergeant",
           "movement": 6,
           "courage": 6,
           "shoot": 6,
@@ -739,33 +924,49 @@
           "weapons": ["combat_rifle", "handweapon"],
           "options": [
             {"replaceWeapon": ["combat_rifle"], "withWeapon": ["combi_rifle", "twin_combat_rifle"]},
-            {"replaceWeapon": ["combat_rifle", "handweapon"], "withWeapon": [{"id": "twin_energy_handweapon", "count": 4}]},
             {"replaceWeapon": "heavy_pistol", "withWeapon": ["plasma_pistol", "flamethrower_pistol", "fusion_pistol", "thermal_pistol"]},
             {
               "replaceWeapon": {"id": "handweapon", "count": 2},
-              "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "energy_powerweapon", "count": 2}, {"id": "twin_energy_handweapon", "count": 3}, {"id": "energy_polearm", "count": 2}]
+              "withWeapon": [
+                {"id": "energy_handweapon", "count": 2},
+                {"id": "energy_powerweapon", "count": 2},
+                {"id": "twin_energy_handweapon", "count": 3},
+                {"id": "energy_polearm", "count": 2},
+                {"id": "energy_greatweapon", "count": 2}
+              ]
             }
           ],
           "min": 1,
           "max": 1
         },
-        {"name": "Voidwarped Marine", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 8, "reflexes": 6, "weapons": ["combat_rifle", "handweapon"], "min": 4, "max": 19}
+        {"name": "Renegade Marine", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 8, "reflexes": 6, "weapons": ["combat_rifle", "handweapon"], "min": 4, "max": 9}
       ],
       "options": [
         {"replaceWeapon": ["combat_rifle", "handweapon"], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 2}]]},
-        {"replaceWeapon": ["combat_rifle", "handweapon"], "withWeapon": [{"id": "energy_polearm", "count": 2}], "modelLimit": "1/5"},
-        {"modelLimit": "1/5", "replaceWeapon": "combat_rifle", "withWeapon": ["plasma_rifle", "flamethrower", "fusion_rifle", "thermal_rifle"]},
+        {
+          "replaceWeapon": [{"id": "handweapon", "count": 2}],
+          "withWeapon": [
+            {"id": "energy_handweapon", "count": 2},
+            {"id": "energy_powerweapon", "count": 2},
+            {"id": "twin_energy_handweapon", "count": 3},
+            {"id": "energy_polearm", "count": 2},
+            {"id": "energy_greatweapon", "count": 2}
+          ],
+          "modelLimit": "2/5"
+        },
+        {"modelLimit": "1/5", "replaceWeapon": "combat_rifle", "withWeapon": ["plasma_rifle", "flamethrower", "fusion_rifle", "thermal_rifle", "grenade_launcher"]},
         {
           "modelLimit": "1/5",
           "replaceWeapon": "combat_rifle",
           "withWeapon": ["heavy_machinegun", "missile_launcher", "laser_cannon", "autocannon", "gatling_gun", "heavy_flamethrower", "plasma_cannon", "fusion_cannon", "thermal_lance"]
         },
-        {"addRule": ["shield"]}
+        {"addRule": ["shield"]},
+        {"addRule": ["jetpack"], "modelLimit": "all"}
       ]
     },
     "voidwarped_veterans": {
       "name": "Voidwarped Veterans",
-      "description": "Marines that have spent long service to the vortex gate.",
+      "description": "Veteran Marines that have spent long service to the vortex gate.",
       "category": "elite",
       "models": [
         {
@@ -776,340 +977,167 @@
           "fight": 6,
           "defense": 8,
           "reflexes": 6,
+          "rules": ["furious"],
           "weapons": ["combat_rifle", {"id": "handweapon", "count": 2}],
           "options": [
-            {"replaceWeapon": "combat_rifle", "withWeapon": ["plasma_rifle", "flamethrower", "fusion_rifle", "thermal_rifle", "combi_rifle", "twin_combat_rifle"]},
-            {"replaceWeapon": ["combat_rifle", {"id": "handweapon", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 3}], {"id": "twin_energy_handweapon", "count": 5}]},
+            {"replaceWeapon": "combat_rifle", "withWeapon": ["plasma_rifle", "flamethrower", "fusion_rifle", "thermal_rifle", "combi_rifle", "twin_combat_rifle", "grenade_launcher"]},
+            {
+              "modelLimit": "1/5",
+              "replaceWeapon": "combat_rifle",
+              "withWeapon": ["heavy_machinegun", "missile_launcher", "laser_cannon", "autocannon", "gatling_gun", "heavy_flamethrower", "plasma_cannon", "fusion_cannon", "thermal_lance"]
+            },
+            {"replaceWeapon": ["combat_rifle", {"id": "handweapon", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 3}]]},
             {"replaceWeapon": "heavy_pistol", "withWeapon": ["plasma_pistol", "flamethrower_pistol", "fusion_pistol", "thermal_pistol"]},
             {
               "replaceWeapon": {"id": "handweapon", "count": 3},
-              "withWeapon": [{"id": "energy_handweapon", "count": 3}, {"id": "energy_powerweapon", "count": 3}, {"id": "twin_energy_handweapon", "count": 4}, {"id": "energy_polearm", "count": 3}]
+              "withWeapon": [
+                {"id": "energy_handweapon", "count": 3},
+                {"id": "energy_powerweapon", "count": 3},
+                {"id": "twin_energy_handweapon", "count": 4},
+                {"id": "energy_polearm", "count": 3},
+                {"id": "energy_greatweapon", "count": 3}
+              ]
             },
-            {"addRule": ["shield"]}
-          ],
-          "min": 5,
-          "max": 20
-        }
-      ]
-    },
-    "pestilence_marines": {
-      "name": "Pestilence Marines",
-      "description": "Marines corrupted by the vortex gate.",
-      "category": "core",
-      "subfactions": ["toughness_focus"],
-      "options": [
-        {
-          "replaceWeapon": ["combat_rifle", "pestilence_ccw"],
-          "withWeapon": [
-            ["heavy_pistol", {"id": "pestilence_ccw", "count": 2}],
-            {"id": "pestilence_great_flail", "count": 2},
-            {"id": "pestilence_great_cleaver", "count": 2},
-            {"id": "pestilence_ccw", "count": 3},
-            {"id": "pestilence_axe", "count": 2},
-            ["pestilence_mace", "pestilence_axe"]
-          ]
-        },
-        {"modelLimit": "2/5", "replaceWeapon": "combat_rifle", "withWeapon": ["plasma_rifle", "pestilence_sprayer", "pestilence_launcher", "fusion_rifle"]}
-      ],
-      "models": [
-        {
-          "name": "Pestilence Marine Sergeant",
-          "movement": 6,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 8,
-          "reflexes": 6,
-          "weapons": ["combat_rifle", "pestilence_ccw"],
-          "options": [
-            {"replaceWeapon": ["heavy_pistol"], "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol", "thermal_pistol"]},
-            {
-              "replaceWeapon": {"id": "pestilence_ccw", "count": 2},
-              "withWeapon": [{"id": "pestilence_sword", "count": 2}, {"id": "energy_powerweapon", "count": 2}, {"id": "pestilence_axe", "count": 2}]
-            }
-          ],
-          "min": 1,
-          "max": 1
-        },
-        {"name": "Pestilence Marine", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 8, "reflexes": 6, "weapons": ["combat_rifle", "pestilence_ccw"], "min": 4, "max": 9}
-      ]
-    },
-    "pestilence_destroyers": {
-      "name": "Pestilence Gravite Assault Squad",
-      "description": "Destroyers that are infected with pestilence.",
-      "category": "elite",
-      "keywords": ["Heavy Infantry"],
-      "subfactions": ["toughness_focus"],
-      "models": [
-        {
-          "name": "Pestilence Gravite Assault Marine",
-          "movement": 5,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 9,
-          "reflexes": 6,
-          "rules": ["ambush"],
-          "weapons": ["twin_combat_rifle", {"id": "pestilence_sword", "count": 2}],
-          "options": [
-            {"replaceWeapon": "storm_rifle", "withWeapon": ["combi_rifle", "combi_rifle"]},
-            {"replaceWeapon": {"id": "pestilence_sword", "count": 2}, "withWeapon": [{"id": "pestilence_axe", "count": 2}]},
-            {"modelLimit": "2/5", "replaceWeapon": "storm_rifle", "withWeapon": ["pestilence_sprayer", "pestilence_launcher", "reaper_cannon"]},
-            {"modelLimit": "1/5", "replaceWeapon": ["storm_rifle", {"id": "pestilence_sword", "count": 2}], "withWeapon": [{"id": "pestilence_great_flail", "count": 4}]}
+            {"addRule": ["shield"]},
+            {"addRule": ["jetpack"], "modelLimit": "all"}
           ],
           "min": 5,
           "max": 10
         }
       ]
     },
-    "pestilence_elite_destroyers": {
-      "name": "Pestilence Elite Gravite Squad",
-      "description": "Destroyers that are infected with pestilence.",
-      "category": "elite",
-      "keywords": ["Heavy Infantry"],
-      "rules": [{"id": "wounds", "x": 2}, "ambush"],
-      "subfactions": ["toughness_focus"],
-      "models": [
-        {
-          "name": "Pestilence Elite Gravite Sergeant",
-          "movement": 5,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 7,
-          "defense": 9,
-          "reflexes": 6,
-          "weapons": ["pestilence_pistol", {"id": "pestilence_scythe", "count": 2}],
-          "options": [{"addWeapon": ["pestilence_pistol"]}],
-          "min": 1,
-          "max": 1
-        },
-        {
-          "name": "Pestilence Elite Gravite Destroyer",
-          "movement": 5,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 7,
-          "defense": 9,
-          "reflexes": 6,
-          "weapons": ["pestilence_pistol", {"id": "pestilence_scythe", "count": 2}],
-          "min": 2,
-          "max": 4
-        }
-      ]
-    },
-    "pestilence_hauler": {
-      "name": "Pestilence Hauler",
-      "description": "A lightly armored living strike vehicle.",
-      "category": "elite",
-      "rules": ["vulnerable_rear", {"id": "wounds", "x": 3}],
-      "subfactions": ["toughness_focus"],
-      "keywords": ["Vehicle"],
-      "models": [
-        {
-          "name": "Pestilence Hauler",
-          "movement": 8,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 10,
-          "reflexes": 6,
-          "weapons": [
-            {"id": "pestilence_spit", "mount": ["Front"]},
-            {"id": "hauler_jaws", "count": 3},
-            {"id": "heavy_fusion_rifle", "mount": ["Front"]},
-            {"id": "missile_launcher", "mount": ["Front"]}
-          ],
-          "min": 1,
-          "max": 3
-        }
-      ]
-    },
-    "pestilence_drone": {
-      "name": "Pestilence Drone",
-      "description": "A lightly armored living drone.",
-      "category": "elite",
-      "rules": ["vulnerable_rear", {"id": "wounds", "x": 3}, "fly"],
-      "subfactions": ["toughness_focus"],
-      "keywords": ["Vehicle"],
-      "models": [
-        {
-          "name": "Pestilence Drone",
-          "movement": 8,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 10,
-          "reflexes": 6,
-          "weapons": [{"id": "proboscis", "count": 3}],
-          "min": 1,
-          "max": 1,
-          "options": [{"addWeapon": [{"id": "pestilence_sprayer", "count": "2", "mount": ["Front"]}, {"id": "pestilence_hlauncher", "mount": ["Front"]}], "limit": 1}]
-        }
-      ],
-      "options": [{"replaceWeapon": {"id": "proboscis", "count": 3}, "withWeapon": "pestilence_mower"}]
-    },
-    "pestilence_mortar_tank": {
-      "name": "Pestilence Mortar Tank",
-      "description": "An armored tank helmed by Pestilence Marines equipped with a deadly mortar.",
-      "category": "rare",
-      "subfactions": ["toughness_focus"],
-      "keywords": ["Vehicle"],
-      "models": [
-        {
-          "name": "Pestilence Mortar Tank",
-          "movement": 10,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 12,
-          "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 6}, {"id": "impact", "x": 6}, "vulnerable_side_rear"],
-          "weapons": [{"id": "pestilence_mortar", "mount": ["Front"]}, {"id": "light_machinegun", "mount": ["Front"]}],
-          "options": [
-            {"replaceWeapon": [{"id": "light_machinegun", "mount": ["Front"]}], "withWeapon": [{"id": "heavy_machinegun", "mount": ["Front"]}]},
-            {
-              "addWeapon": [
-                [{"id": "pestilence_cannon", "mount": ["Front", "Left"]}, {"id": "pestilence_cannon", "mount": ["Front", "Right"]}],
-                [{"id": "pestilence_sprayer", "mount": ["Front", "Left"]}, {"id": "pestilence_sprayer", "mount": ["Front", "Right"]}]
-              ],
-              "limit": 1
-            },
-            {"addRule": [{"id": "dozer", "name": "Dozer Blade"}, "spiked_ram"]}
-          ],
-          "min": 1,
-          "max": 1
-        }
-      ]
-    },
-    "voidwarped_berzerkers": {
-      "name": "Voidwarped Berzerkers",
-      "description": "Marines corrupted by the vortex gate with rage.",
+    "recon_squad": {
+      "name": "Recon Squad",
+      "description": "A squad of elite marines sent to scout ahead and sow dissent.",
       "category": "core",
-      "subfactions": ["assault_focus"],
-      "rules": ["furious"],
-      "models": [
-        {
-          "name": "Berzerker Sergeant",
-          "movement": 6,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 8,
-          "reflexes": 6,
-          "weapons": ["heavy_pistol", {"id": "handweapon", "count": 3}],
-          "options": [
-            {"replaceWeapon": ["combat_rifle"], "withWeapon": ["combi_rifle", "twin_combat_rifle", "combi_rifle"]},
-            {"replaceWeapon": ["heavy_pistol", {"id": "handweapon", "count": 3}], "withWeapon": [["combat_rifle", {"id": "handweapon", "count": 2}]]},
-            {"replaceWeapon": "heavy_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol", "thermal_pistol"]},
-            {
-              "replaceWeapon": {"id": "handweapon", "count": 3},
-              "withWeapon": [{"id": "energy_handweapon", "count": 3}, {"id": "energy_powerweapon", "count": 3}, {"id": "twin_energy_handweapon", "count": 4}]
-            }
-          ],
-          "min": 1,
-          "max": 1
-        },
-        {
-          "name": "Berzerker Marine",
-          "movement": 6,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 8,
-          "reflexes": 6,
-          "weapons": ["heavy_pistol", {"id": "handweapon", "count": 3}],
-          "min": 4,
-          "max": 19
-        }
-      ],
-      "options": [
-        {"modelLimit": "1/5", "replaceWeapon": "heavy_pistol", "withWeapon": ["plasma_pistol"]},
-        {"replaceWeapon": ["heavy_pistol", {"id": "handweapon", "count": 3}], "withWeapon": [{"id": "twin_energy_handweapon", "count": 5}]},
-        {"replaceWeapon": ["heavy_pistol", {"id": "handweapon", "count": 3}], "withWeapon": [{"id": "energy_polearm", "count": 3}], "modelLimit": "1/5"}
-      ]
-    },
-    "recon_marines": {
-      "name": "Recon Marines",
-      "description": "A lightly armed and armoured squad sent to scout and sow dissent.",
-      "category": "elite",
-      "options": [{"replaceWeapon": "combat_rifle", "withWeapon": ["heavy_combat_shotgun", "sniper_rifle"]}, {"addRule": {"id": "evasive", "name": "Camouflage Cloak"}, "modelLimit": "all"}],
       "rules": ["scout"],
       "models": [
         {
-          "name": "Recon Marine Sergeant",
+          "name": "Recon Sergeant",
           "movement": 6,
           "courage": 6,
           "shoot": 6,
           "fight": 6,
           "defense": 7,
-          "reflexes": 7,
+          "reflexes": 6,
           "weapons": ["combat_rifle", "handweapon"],
           "options": [
-            {"replaceWeapon": ["combat_rifle"], "withWeapon": ["combi_rifle", "twin_combat_rifle", "combi_rifle"]},
-            {"replaceWeapon": ["combat_rifle", "handweapon"], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 2}], {"id": "twin_energy_handweapon", "count": 4}]},
+            {"replaceWeapon": ["combat_rifle"], "withWeapon": ["combi_rifle", "twin_combat_rifle"]},
+            {"replaceWeapon": ["combat_rifle", "handweapon"], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 2}]]},
             {"replaceWeapon": "heavy_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol", "thermal_pistol"]},
             {
               "replaceWeapon": {"id": "handweapon", "count": 2},
-              "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "energy_powerweapon", "count": 2}, {"id": "twin_energy_handweapon", "count": 3}]
+              "withWeapon": [
+                {"id": "energy_handweapon", "count": 2},
+                {"id": "energy_powerweapon", "count": 2},
+                {"id": "twin_energy_handweapon", "count": 3},
+                {"id": "energy_polearm", "count": 2},
+                {"id": "energy_greatweapon", "count": 2}
+              ]
             }
           ],
           "min": 1,
           "max": 1
         },
-        {"name": "Recon Marine", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 7, "reflexes": 7, "weapons": ["combat_rifle", "handweapon"], "min": 4, "max": 19}
+        {"name": "Recon Marine", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 7, "reflexes": 6, "weapons": ["combat_rifle", "handweapon"], "min": 4, "max": 9}
+      ],
+      "options": [
+        {"replaceWeapon": "combat_rifle", "withWeapon": ["heavy_combat_shotgun", "sniper_rifle"]},
+        {"addRule": ["jetpack", {"name": "Camouflage Cloak", "id": "evasive"}], "modelLimit": "all", "limit": 1},
+        {"addRule": ["poison_weapons"], "modelLimit": "all", "subfactions": ["toughness_focus"]}
       ]
     },
-    "gravite_assault_squad": {
-      "name": "Gravite Assault Squad",
-      "description": "Renegade marines clad in very heavy armor.",
-      "category": "elite",
-      "keywords": ["Infantry"],
+    "decimator_marines": {
+      "name": "Decimator Squad",
+      "description": "Elite Marines corrupted by the vortex gate trained in fear tactics.",
+      "category": "core",
+      "subfactions": ["none", "shock_focus"],
+      "rules": ["fear"],
       "models": [
         {
-          "name": "Gravite Assault Squad",
+          "name": "Decimator Sergeant",
+          "movement": 6,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 8,
+          "reflexes": 7,
+          "weapons": ["seismic_rifle", "handweapon"],
+          "options": [
+            {"replaceWeapon": ["heavy_pistol"], "withWeapon": ["seismic_pistol"]},
+            {
+              "replaceWeapon": [{"id": "handweapon", "count": 2}],
+              "withWeapon": [
+                {"id": "energy_handweapon", "count": 2},
+                {"id": "twin_energy_handweapon", "count": 3},
+                {"id": "energy_powerweapon", "count": 2},
+                {"id": "energy_greatweapon", "count": 2},
+                {"id": "energy_polearm", "count": 2}
+              ]
+            }
+          ],
+          "min": 1,
+          "max": 1
+        },
+        {"name": "Decimator Marine", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 8, "reflexes": 7, "weapons": ["seismic_rifle", "handweapon"], "min": 4, "max": 9}
+      ],
+      "options": [
+        {"replaceWeapon": ["seismic_rifle"], "withWeapon": ["seismic_cannon"], "modelLimit": "1/5"},
+        {"replaceWeapon": ["seismic_rifle", "handweapon"], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 2}]]}
+      ]
+    },
+    "decimator_gravite_squad": {
+      "name": "Decimator Gravite Squad",
+      "description": "Renegade marines clad in heavy gravite armor trained in fear tactics.",
+      "category": "elite",
+      "subfactions": ["none", "shock_focus"],
+      "rules": ["ambush", "fear"],
+      "models": [
+        {
+          "name": "Decimator Gravite Sergeant",
+          "movement": 5,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 9,
+          "reflexes": 7,
+          "weapons": ["heavy_combat_rifle", {"id": "energy_handweapon", "count": 2}],
+          "options": [
+            {"replaceWeapon": "heavy_combat_rifle", "withWeapon": ["combi_rifle", "twin_combat_rifle"]},
+            {"replaceWeapon": ["heavy_pistol"], "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol", "thermal_pistol"]}
+          ],
+          "min": 1,
+          "max": 1
+        },
+        {
+          "name": "Decimator Gravite Marine",
           "movement": 5,
           "courage": 6,
           "shoot": 6,
           "fight": 6,
           "defense": 9,
           "reflexes": 6,
-          "rules": ["ambush"],
-          "weapons": ["storm_rifle", {"id": "energy_handweapon", "count": 2}],
-          "options": [
-            {
-              "replaceWeapon": "storm_rifle",
-              "withWeapon": [
-                "combi_rifle",
-                "twin_autocannon",
-                "thermal_lance",
-                "gravity_cannon",
-                "fusion_cannon",
-                "plasma_cannon",
-                "gatling_gun",
-                "missile_launcher",
-                "heavy_flamethrower",
-                "plasma_repeater",
-                "thermal_carbine"
-              ]
-            },
-            {"replaceWeapon": ["storm_rifle", {"id": "energy_handweapon", "count": 2}], "withWeapon": [{"id": "twin_energy_handweapon", "count": 4}]},
-            {
-              "replaceWeapon": {"id": "energy_handweapon", "count": 2},
-              "withWeapon": [{"id": "energy_powerweapon", "count": 2}, {"id": "twin_energy_handweapon", "count": 3}, {"id": "energy_greatweapon", "count": 2}]
-            },
-            {"addWeapon": ["rocket_pod"], "modelLimit": "1/5"},
-            {"addRule": ["shield"]}
-          ],
-          "min": 5,
-          "max": 10
+          "weapons": ["heavy_combat_rifle", {"id": "energy_handweapon", "count": 2}],
+          "min": 4,
+          "max": 9
         }
+      ],
+      "options": [
+        {"replaceWeapon": "heavy_combat_rifle", "withWeapon": ["seismic_cannon"]},
+        {"replaceWeapon": ["heavy_combat_rifle", {"id": "energy_handweapon", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "energy_handweapon", "count": 3}]]},
+        {
+          "replaceWeapon": {"id": "energy_handweapon", "count": 2},
+          "withWeapon": [{"id": "energy_powerweapon", "count": 2}, {"id": "twin_energy_handweapon", "count": 3}, {"id": "energy_greatweapon", "count": 2}, {"id": "energy_polearm", "count": 2}]
+        },
+        {"addRule": ["shield"]},
+        {"addRule": ["jetpack"], "modelLimit": "all"}
       ]
     },
     "psychic_marines": {
       "name": "Psychic Marines",
       "description": "Marines corrupted by the vortex gate with potent psychic powers.",
       "category": "core",
-      "subfactions": ["power_focus"],
+      "subfactions": ["power_focus", "none"],
       "rules": ["conclave"],
       "models": [
         {
@@ -1148,7 +1176,7 @@
       "name": "Psychic Veterans",
       "description": "Elite marines corrupted by the vortex gate with potent psychic powers.",
       "category": "elite",
-      "subfactions": ["power_focus"],
+      "subfactions": ["power_focus", "none"],
       "models": [
         {
           "name": "Psychic Veteran",
@@ -1178,7 +1206,7 @@
       "name": "Psychic Gravite Squad",
       "description": "Deadly destroyers corrupted by the vortex gate with potent psychic powers.",
       "category": "elite",
-      "subfactions": ["power_focus"],
+      "subfactions": ["power_focus", "none"],
       "keywords": ["Heavy Infantry"],
       "models": [
         {
@@ -1217,47 +1245,243 @@
         }
       ]
     },
-    "voidwarped_devastators": {
-      "name": "Voidwarped Devastation Squad",
-      "description": "A squad of highly trained Voidwarped Renegade armed to the teeth with advanced weaponry.",
-      "category": "elite",
-      "options": [{"replaceWeapon": "plasma_rifle", "withWeapon": ["flamethrower", "fusion_rifle", "thermal_rifle"]}, {"addRule": "shield"}],
+    "pestilence_marines": {
+      "name": "Pestilence Marines",
+      "description": "Marines corrupted by the dark gods.",
+      "category": "core",
+      "subfactions": ["toughness_focus", "none"],
       "models": [
         {
-          "name": "Voidwarped Devastation Sergeant",
+          "name": "Pestilence Marine Sergeant",
           "movement": 6,
           "courage": 6,
           "shoot": 6,
           "fight": 6,
           "defense": 8,
           "reflexes": 6,
-          "weapons": ["combat_rifle", "handweapon"],
+          "weapons": ["combat_rifle", "pestilence_ccw"],
           "options": [
-            {"replaceWeapon": ["combat_rifle"], "withWeapon": ["combi_rifle", "twin_combat_rifle", "plasma_rifle"]},
-            {"replaceWeapon": ["combat_rifle", "handweapon"], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 2}], {"id": "twin_energy_handweapon", "count": 4}]},
-            {"replaceWeapon": "heavy_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol", "thermal_pistol"]},
+            {"replaceWeapon": ["heavy_pistol"], "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol", "thermal_pistol"]},
             {
-              "replaceWeapon": {"id": "handweapon", "count": 2},
-              "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "energy_powerweapon", "count": 2}, {"id": "twin_energy_handweapon", "count": 3}]
+              "replaceWeapon": {"id": "pestilence_ccw", "count": 2},
+              "withWeapon": [{"id": "pestilence_sword", "count": 2}, {"id": "energy_greatweapon", "count": 2}, {"id": "pestilence_axe", "count": 2}]
             }
           ],
           "min": 1,
           "max": 1
         },
-        {"name": "Voidwarped Devastation Marine", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 8, "reflexes": 6, "weapons": ["plasma_rifle", "handweapon"], "min": 4, "max": 14}
+        {"name": "Pestilence Marine", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 8, "reflexes": 6, "weapons": ["combat_rifle", "pestilence_ccw"], "min": 4, "max": 9}
+      ],
+      "options": [
+        {
+          "replaceWeapon": ["combat_rifle", "pestilence_ccw"],
+          "withWeapon": [
+            ["heavy_pistol", {"id": "pestilence_ccw", "count": 2}],
+            {"id": "pestilence_great_flail", "count": 2},
+            {"id": "pestilence_great_cleaver", "count": 2},
+            {"id": "pestilence_ccw", "count": 3},
+            {"id": "pestilence_axe", "count": 2},
+            ["pestilence_mace", "pestilence_axe"]
+          ]
+        }
       ]
     },
-    "voidwarped_heavy_devastators": {
-      "name": "Voidwarped Heavy Devastation Squad",
-      "description": "A squad of highly trained Voidwarped Renegade armed to the teeth with advanced weaponry.",
-      "category": "rare",
-      "options": [
-        {"replaceWeapon": "heavy_flamethrower", "withWeapon": ["heavy_machinegun", "autocannon", "missile_launcher", "gatling_gun", "plasma_cannon", "fusion_cannon", "laser_cannon", "thermal_lance"]},
-        {"addRule": "shield"}
-      ],
+    "pestilence_destroyers": {
+      "name": "Pestilence Gravite Assault Squad",
+      "description": "Destroyers that are infected with pestilence.",
+      "category": "elite",
+      "subfactions": ["toughness_focus", "none"],
       "models": [
         {
-          "name": "Voidwarped Heavy Devastation Sergeant",
+          "name": "Pestilence Gravite Assault Marine",
+          "movement": 5,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 9,
+          "reflexes": 6,
+          "rules": ["ambush"],
+          "weapons": ["twin_combat_rifle", {"id": "pestilence_sword", "count": 2}],
+          "options": [
+            {"replaceWeapon": "twin_combat_rifle", "withWeapon": ["combi_rifle"]},
+            {"replaceWeapon": {"id": "pestilence_sword", "count": 2}, "withWeapon": [{"id": "pestilence_axe", "count": 2}]},
+            {"modelLimit": "2/5", "replaceWeapon": "twin_combat_rifle", "withWeapon": ["pestilence_sprayer", "pestilence_launcher", "reaper_cannon"]},
+            {"modelLimit": "1/5", "replaceWeapon": ["twin_combat_rifle", {"id": "pestilence_sword", "count": 2}], "withWeapon": [{"id": "pestilence_great_flail", "count": 4}]}
+          ],
+          "min": 5,
+          "max": 10
+        }
+      ]
+    },
+    "pestilence_elite_destroyers": {
+      "name": "Pestilence Elite Gravite Squad",
+      "description": "Destroyers that are infected with pestilence.",
+      "category": "elite",
+      "rules": ["ambush", {"id": "wounds", "x": 2}],
+      "subfactions": ["toughness_focus", "none"],
+      "models": [
+        {
+          "name": "Pestilence Elite Gravite Sergeant",
+          "movement": 5,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 7,
+          "defense": 9,
+          "reflexes": 6,
+          "weapons": ["pestilence_pistol", {"id": "pestilence_scythe", "count": 2}],
+          "options": [{"addWeapon": ["pestilence_pistol"]}],
+          "min": 1,
+          "max": 1
+        },
+        {
+          "name": "Pestilence Elite Gravite Destroyer",
+          "movement": 5,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 7,
+          "defense": 9,
+          "reflexes": 6,
+          "weapons": ["pestilence_pistol", {"id": "pestilence_scythe", "count": 2}],
+          "min": 2,
+          "max": 5
+        }
+      ]
+    },
+    "pestilence_hauler": {
+      "name": "Pestilence Hauler",
+      "description": "A lightly armored living strike vehicle.",
+      "category": "elite",
+      "subfactions": ["toughness_focus", "none"],
+      "keywords": ["Vehicle"],
+      "models": [
+        {
+          "name": "Pestilence Hauler",
+          "movement": 8,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 10,
+          "reflexes": 6,
+          "rules": ["vulnerable_rear", {"id": "wounds", "x": 3}],
+          "weapons": [
+            {"id": "pestilence_spit", "mount": ["Front"]},
+            {"id": "hauler_jaws", "count": 3},
+            {"id": "heavy_fusion_rifle", "mount": ["Front"]},
+            {"id": "missile_launcher", "mount": ["Front"]}
+          ],
+          "min": 1,
+          "max": 3
+        }
+      ]
+    },
+    "pestilence_drone": {
+      "name": "Pestilence Drone",
+      "description": "A lightly armored living drone.",
+      "category": "elite",
+      "subfactions": ["toughness_focus", "none"],
+      "keywords": ["Vehicle"],
+      "models": [
+        {
+          "name": "Pestilence Drone",
+          "movement": 8,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 10,
+          "reflexes": 6,
+          "rules": ["vulnerable_rear", {"id": "wounds", "x": 3}, "fly"],
+          "weapons": [{"id": "proboscis", "count": 3}],
+          "options": [
+            {"replaceWeapon": {"id": "proboscis", "count": 3}, "withWeapon": "pestilence_mower"},
+            {"addWeapon": [{"id": "pestilence_sprayer", "count": "2", "mount": ["Front"]}, {"id": "pestilence_hlauncher", "mount": ["Front"]}], "limit": 1}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "voidwarped_berserkers": {
+      "name": "Voidwarped Berserkers",
+      "description": "Marines corrupted by the vortex gate with rage.",
+      "category": "core",
+      "subfactions": ["assault_focus", "none"],
+      "rules": ["furious"],
+      "models": [
+        {
+          "name": "Berzerker Sergeant",
+          "movement": 6,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 8,
+          "reflexes": 6,
+          "weapons": ["heavy_pistol", {"id": "handweapon", "count": 3}],
+          "options": [
+            {"replaceWeapon": ["combat_rifle"], "withWeapon": ["combi_rifle", "twin_combat_rifle"]},
+            {"replaceWeapon": ["heavy_pistol", {"id": "handweapon", "count": 3}], "withWeapon": [["combat_rifle", {"id": "handweapon", "count": 2}]]},
+            {"replaceWeapon": "heavy_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol", "thermal_pistol"]},
+            {
+              "replaceWeapon": {"id": "handweapon", "count": 3},
+              "withWeapon": [{"id": "energy_handweapon", "count": 3}, {"id": "energy_powerweapon", "count": 3}, {"id": "twin_energy_handweapon", "count": 4}]
+            }
+          ],
+          "min": 1,
+          "max": 1
+        },
+        {
+          "name": "Berzerker Marine",
+          "movement": 6,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 8,
+          "reflexes": 6,
+          "weapons": ["heavy_pistol", {"id": "handweapon", "count": 3}],
+          "min": 4,
+          "max": 19
+        }
+      ],
+      "options": [
+        {"modelLimit": "1/5", "replaceWeapon": "heavy_pistol", "withWeapon": ["plasma_pistol"]},
+        {"replaceWeapon": ["heavy_pistol", {"id": "handweapon", "count": 3}], "withWeapon": [{"id": "twin_energy_handweapon", "count": 5}]},
+        {"replaceWeapon": ["heavy_pistol", {"id": "handweapon", "count": 3}], "withWeapon": [{"id": "energy_polearm", "count": 3}], "modelLimit": "1/5"}
+      ]
+    },
+    "gravite_berserkers": {
+      "name": "Gravite Berserkers",
+      "description": "Raging renegade marines clad in heavy gravite armor.",
+      "category": "elite",
+      "subfactions": ["assault_focus", "none"],
+      "models": [
+        {
+          "name": "Gravite Berserker",
+          "movement": 5,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 9,
+          "reflexes": 6,
+          "rules": ["ambush", "furious"],
+          "weapons": ["heavy_pistol", {"id": "energy_handweapon", "count": 4}],
+          "options": [
+            {
+              "replaceWeapon": [{"id": "energy_handweapon", "count": 4}],
+              "withWeapon": [{"id": "energy_powerweapon", "count": 4}, {"id": "twin_energy_handweapon", "count": 5}, {"id": "energy_greatweapon", "count": 4}, {"id": "energy_polearm", "count": 4}]
+            },
+            {"addRule": ["jetpack"], "modelLimit": "all"}
+          ],
+          "min": 5,
+          "max": 10
+        }
+      ]
+    },
+    "despoiler_squad": {
+      "name": "Despoiler Squad",
+      "description": "A squad of highly trained marines armed to the teeth with advanced weaponry.",
+      "category": "elite",
+      "models": [
+        {
+          "name": "Despoiler Sergeant",
           "movement": 6,
           "courage": 6,
           "shoot": 6,
@@ -1267,27 +1491,115 @@
           "weapons": ["combat_rifle", "handweapon"],
           "options": [
             {"replaceWeapon": ["combat_rifle"], "withWeapon": ["combi_rifle", "twin_combat_rifle", "heavy_flamethrower"]},
-            {"replaceWeapon": ["combat_rifle", "handweapon"], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 2}], {"id": "twin_energy_handweapon", "count": 4}]},
+            {"replaceWeapon": ["combat_rifle", "handweapon"], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 2}]]},
             {"replaceWeapon": "heavy_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol", "thermal_pistol"]},
             {
               "replaceWeapon": {"id": "handweapon", "count": 2},
-              "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "energy_powerweapon", "count": 2}, {"id": "twin_energy_handweapon", "count": 3}]
+              "withWeapon": [
+                {"id": "energy_handweapon", "count": 2},
+                {"id": "energy_powerweapon", "count": 2},
+                {"id": "twin_energy_handweapon", "count": 3},
+                {"id": "energy_polearm", "count": 2},
+                {"id": "energy_greatweapon", "count": 2}
+              ]
+            }
+          ],
+          "min": 1,
+          "max": 1
+        },
+        {"name": "Despoiler Marine", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 8, "reflexes": 6, "weapons": ["heavy_flamethrower", "handweapon"], "min": 4, "max": 9}
+      ],
+      "options": [
+        {"replaceWeapon": "heavy_flamethrower", "withWeapon": ["heavy_machinegun", "missile_launcher", "laser_cannon", "autocannon", "gatling_gun", "plasma_cannon", "fusion_cannon", "thermal_lance"]},
+        {"addRule": "shield"},
+        {"addRule": ["jetpack"], "modelLimit": "all"}
+      ]
+    },
+    "voidwarped_gravite_squad": {
+      "name": "Voidwarped Gravite Squad",
+      "description": "Renegade marines clad in heavy gravite armor.",
+      "category": "core",
+      "rules": ["ambush"],
+      "models": [
+        {
+          "name": "Voidwarped Gravite Sergeant",
+          "movement": 5,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 9,
+          "reflexes": 6,
+          "weapons": ["heavy_combat_rifle", "energy_handweapon"],
+          "options": [
+            {"replaceWeapon": "heavy_combat_rifle", "withWeapon": ["combi_rifle", "twin_combat_rifle"]},
+            {"replaceWeapon": ["heavy_combat_rifle", "energy_handweapon"], "withWeapon": [["heavy_pistol", {"id": "energy_handweapon", "count": 2}]]},
+            {"replaceWeapon": ["heavy_pistol"], "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol", "thermal_pistol"]},
+            {
+              "replaceWeapon": {"id": "energy_handweapon", "count": 2},
+              "withWeapon": [{"id": "energy_powerweapon", "count": 2}, {"id": "twin_energy_handweapon", "count": 3}, {"id": "energy_greatweapon", "count": 2}, {"id": "energy_polearm", "count": 2}]
             }
           ],
           "min": 1,
           "max": 1
         },
         {
-          "name": "Voidwarped Heavy Devastation Marine",
-          "movement": 6,
+          "name": "Voidwarped Gravite Marine",
+          "movement": 5,
           "courage": 6,
           "shoot": 6,
           "fight": 6,
-          "defense": 8,
+          "defense": 9,
           "reflexes": 6,
-          "weapons": ["heavy_flamethrower", "handweapon"],
+          "weapons": ["heavy_combat_rifle", "energy_handweapon"],
           "min": 4,
-          "max": 14
+          "max": 9
+        }
+      ],
+      "options": [
+        {"replaceWeapon": "heavy_combat_rifle", "withWeapon": ["thermal_shotgun"], "subfactions": ["terror_focus"]},
+        {
+          "replaceWeapon": "heavy_combat_rifle",
+          "withWeapon": ["twin_autocannon", "thermal_lance", "fusion_cannon", "plasma_cannon", "gatling_gun", "missile_launcher", "heavy_flamethrower"],
+          "modelLimit": "1/5"
+        },
+        {"addWeapon": ["rocket_pod"], "modelLimit": "1/5"},
+        {"addRule": ["shield"]},
+        {"addRule": ["jetpack"], "modelLimit": "all"}
+      ]
+    },
+    "veteran_gravite_squad": {
+      "name": "Veteran Gravite Squad",
+      "description": "Veteran renegade marines clad in heavy gravite armor.",
+      "category": "elite",
+      "models": [
+        {
+          "name": "Veteran Gravite Marine",
+          "movement": 5,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 9,
+          "reflexes": 6,
+          "rules": ["ambush", "furious"],
+          "weapons": ["heavy_combat_rifle", {"id": "energy_handweapon", "count": 2}],
+          "options": [
+            {
+              "replaceWeapon": "heavy_combat_rifle",
+              "withWeapon": ["twin_autocannon", "thermal_lance", "fusion_cannon", "plasma_cannon", "gatling_gun", "missile_launcher", "heavy_flamethrower", "combi_rifle", "twin_combat_rifle"]
+            },
+            {"replaceWeapon": "heavy_combat_rifle", "withWeapon": ["thermal_shotgun"], "subfactions": ["terror_focus"]},
+            {"replaceWeapon": ["heavy_combat_rifle", {"id": "energy_handweapon", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "energy_handweapon", "count": 3}]]},
+            {"replaceWeapon": ["heavy_pistol"], "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol", "thermal_pistol"]},
+            {
+              "replaceWeapon": {"id": "energy_handweapon", "count": 3},
+              "withWeapon": [{"id": "energy_powerweapon", "count": 3}, {"id": "twin_energy_handweapon", "count": 4}, {"id": "energy_greatweapon", "count": 3}, {"id": "energy_polearm", "count": 3}]
+            },
+            {"addWeapon": ["rocket_pod"], "modelLimit": "1/3"},
+            {"addRule": ["shield"]},
+            {"addRule": ["jetpack"], "modelLimit": "all"}
+          ],
+          "min": 3,
+          "max": 6
         }
       ]
     },
@@ -1304,8 +1616,8 @@
           "fight": 6,
           "defense": 8,
           "reflexes": 6,
-          "weapons": [{"id": "claws", "count": 2}],
           "rules": ["mutations"],
+          "weapons": [{"id": "claws", "count": 2}],
           "options": [{"addRule": "wings", "modelLimit": "all"}, {"addWeapon": ["combat_rifle"]}],
           "min": 5,
           "max": 10
@@ -1328,126 +1640,50 @@
           "reflexes": 5,
           "rules": ["mutations", {"id": "wounds", "x": 3}],
           "weapons": [{"id": "huge_mutated_claw", "count": 5}],
+          "options": [
+            {"replaceWeapon": {"id": "huge_mutated_claw", "count": 5}, "withWeapon": [{"id": "energy_powerweapon", "count": 6}], "subfactions": ["assault_focus"]},
+            {"replaceWeapon": {"id": "huge_mutated_claw", "count": 5}, "withWeapon": [{"id": "energy_polearm", "count": 4}], "subfactions": ["assault_focus"], "modelLimit": 1}
+          ],
           "min": 1,
           "max": 3
-        }
-      ],
-      "options": [
-        {
-          "replaceWeapon": {"id": "huge_mutated_claw", "count": 5},
-          "withWeapon": [{"id": "chainaxe", "count": 6}, [{"id": "chainaxe", "count": 3}, {"id": "chainfist", "count": 2}]],
-          "subfactions": ["assault_focus"]
-        },
-        {
-          "replaceWeapon": {"id": "huge_mutated_claw", "count": 5},
-          "withWeapon": [{"id": "energy_polearm", "count": 4}, {"id": "chainfist", "count": 4}],
-          "subfactions": ["assault_focus"],
-          "modelLimit": 1
         }
       ]
     },
     "demon_spawn": {
-      "name": "Demonic Spawn",
-      "description": "Horribly mutated beings that run rampant on the battlefield.",
+      "name": "Vortexgate Spawn",
+      "description": "Demonic beings that run rampant on the battlefield.",
       "category": "elite",
-      "rules": ["mutations", "agile", "fear", {"id": "wounds", "x": 2}],
-      "models": [{"name": "Demonic Spawn", "movement": 7, "courage": 7, "shoot": 0, "fight": 5, "defense": 7, "reflexes": 6, "weapons": [{"id": "claws", "count": 3}], "min": 1, "max": 5}]
-    },
-    "talon_raptors": {
-      "name": "Talon Raptors",
-      "description": "A squad of elite Voidwarped Renegade jumping into the fray with a jetpack.",
-      "category": "elite",
-      "rules": ["ambush", "fly", "fear"],
-      "options": [
-        {
-          "replaceWeapon": ["heavy_pistol", {"id": "handweapon", "count": 2}],
-          "withWeapon": [["plasma_pistol", {"id": "handweapon", "count": 2}], "plasma_rifle", "flamethrower", "fusion_rifle"],
-          "modelLimit": "1/5"
-        },
-        {"replaceWeapon": ["heavy_pistol", {"id": "handweapon", "count": 2}], "withWeapon": [{"id": "twin_energy_handweapon", "count": 4}]},
-        {"addWeapon": "fusion_bomb", "modelLimit": 3}
-      ],
       "models": [
         {
-          "name": "Talon Raptor Sergeant",
-          "movement": 8,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 8,
+          "name": "Demonic Spawn",
+          "movement": 7,
+          "courage": 7,
+          "shoot": 0,
+          "fight": 5,
+          "defense": 7,
           "reflexes": 6,
-          "weapons": ["heavy_pistol", {"id": "handweapon", "count": 2}],
-          "options": [
-            {"replaceWeapon": ["combat_rifle"], "withWeapon": ["combi_rifle", "twin_combat_rifle"]},
-            {"replaceWeapon": ["heavy_pistol", {"id": "handweapon", "count": 2}], "withWeapon": [["combat_rifle", "handweapon"]]},
-            {"replaceWeapon": ["heavy_pistol"], "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol"]},
-            {
-              "replaceWeapon": {"id": "handweapon", "count": 2},
-              "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "energy_powerweapon", "count": 2}, {"id": "twin_energy_handweapon", "count": 3}]
-            }
-          ],
+          "rules": ["agile", "fear", "mutations", {"id": "wounds", "x": 2}],
+          "weapons": [{"id": "claws", "count": 3}],
           "min": 1,
-          "max": 1
-        },
-        {"name": "Talon Raptor", "movement": 8, "courage": 6, "shoot": 6, "fight": 6, "defense": 8, "reflexes": 6, "weapons": ["heavy_pistol", {"id": "handweapon", "count": 2}], "min": 4, "max": 14}
-      ]
-    },
-    "voidwarped_destoyers": {
-      "name": "Voidwarped Gravite Squad",
-      "description": "Destroyers that have been corrupted by the vortex gate.",
-      "category": "elite",
-      "keywords": ["Heavy Infantry"],
-      "models": [
-        {
-          "name": "Voidwarped Destroyer",
-          "movement": 5,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 9,
-          "reflexes": 6,
-          "rules": ["ambush"],
-          "weapons": ["twin_combat_rifle", {"id": "chainaxe", "count": 2}],
-          "options": [
-            {
-              "replaceWeapon": "twin_combat_rifle",
-              "withWeapon": ["combi_rifle", "gatling_gun", "missile_launcher", "thermal_lance", "fusion_cannon", "plasma_cannon", "twin_autocannon", "heavy_flamethrower"]
-            },
-            {"replaceWeapon": "twin_combat_rifle", "withWeapon": ["thermal_shotgun"], "subfactions": ["terror_focus"]},
-            {"replaceWeapon": ["twin_combat_rifle", {"id": "chainaxe", "count": 2}], "withWeapon": [{"id": "twin_energy_handweapon", "count": 4}, {"id": "chainfist", "count": 3}]},
-            {
-              "replaceWeapon": {"id": "chainaxe", "count": 2},
-              "withWeapon": [
-                {"id": "energy_polearm", "count": 2},
-                {"id": "chainfist", "count": 2},
-                {"id": "energy_handweapon", "count": 2},
-                {"id": "energy_powerweapon", "count": 2},
-                {"id": "twin_energy_handweapon", "count": 3}
-              ]
-            },
-            {"addWeapon": ["missile_rack"], "modelLimit": "1/5"},
-            {"addRule": ["shield"]}
-          ],
-          "min": 5,
-          "max": 10
+          "max": 5
         }
       ]
     },
-    "mutated_destoyers": {
+    "mutated_gravite_squad": {
       "name": "Mutated Gravite Squad",
-      "description": "Destroyers that have been mutated by the vortex gate.",
+      "description": "Heavily armored marines that have been mutated by the vortex gate.",
       "category": "elite",
       "keywords": ["Heavy Infantry"],
-      "rules": ["ambush", {"id": "wounds", "x": 2}],
       "models": [
         {
-          "name": "Mutated Destroyer",
+          "name": "Mutated Gravite Marine",
           "movement": 5,
           "courage": 6,
           "shoot": 6,
           "fight": 6,
           "defense": 9,
           "reflexes": 5,
+          "rules": ["ambush", {"id": "wounds", "x": 2}],
           "weapons": [{"id": "mutated_fists", "count": 3}, "mutated_guns"],
           "min": 1,
           "max": 3
@@ -1460,14 +1696,6 @@
       "category": "elite",
       "keywords": ["Mounted"],
       "rules": [{"id": "impact", "x": 1}, {"id": "wounds", "x": 2}],
-      "options": [
-        {"replaceWeapon": ["combat_rifle", "handweapon"], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 2}]]},
-        {"replaceWeapon": ["combat_rifle"], "withWeapon": ["fusion_rifle", "flamethrower", "plasma_rifle"], "modelLimit": "1/3"},
-        {
-          "replaceWeapon": {"id": "twin_combat_rifle", "mount": ["Front"]},
-          "withWeapon": [{"id": "twin_plasma_rifle", "mount": ["Front"]}, {"id": "twin_flamethrower", "mount": ["Front"]}, {"id": "twin_fusion_rifle", "mount": ["Front"]}]
-        }
-      ],
       "models": [
         {
           "name": "Voidwarped Biker Sergeant",
@@ -1480,11 +1708,16 @@
           "weapons": [{"id": "twin_combat_rifle", "mount": ["Front"]}, "combat_rifle", "handweapon"],
           "options": [
             {"replaceWeapon": ["combat_rifle"], "withWeapon": ["combi_rifle", "twin_combat_rifle"]},
-            {"replaceWeapon": ["combat_rifle", "handweapon"], "withWeapon": [{"id": "twin_energy_handweapon", "count": 4}]},
             {"replaceWeapon": ["heavy_pistol"], "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol", "thermal_pistol"]},
             {
               "replaceWeapon": [{"id": "handweapon", "count": 2}],
-              "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "energy_powerweapon", "count": 2}, {"id": "energy_powerweapon", "count": 2}, {"id": "twin_energy_handweapon", "count": 3}]
+              "withWeapon": [
+                {"id": "energy_handweapon", "count": 2},
+                {"id": "energy_powerweapon", "count": 2},
+                {"id": "energy_greatweapon", "count": 2},
+                {"id": "twin_energy_handweapon", "count": 3},
+                {"id": "energy_polearm", "count": 2}
+              ]
             }
           ],
           "min": 1,
@@ -1502,11 +1735,24 @@
           "min": 2,
           "max": 8
         }
+      ],
+      "options": [
+        {"replaceWeapon": ["combat_rifle"], "withWeapon": ["fusion_rifle", "flamethrower", "plasma_rifle", "thermal_rifle"], "modelLimit": "1/3"},
+        {"replaceWeapon": ["combat_rifle", "handweapon"], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 2}]]},
+        {
+          "replaceWeapon": {"id": "twin_combat_rifle", "mount": ["Front"]},
+          "withWeapon": [
+            {"id": "twin_plasma_rifle", "mount": ["Front"]},
+            {"id": "twin_flamethrower", "mount": ["Front"]},
+            {"id": "twin_fusion_rifle", "mount": ["Front"]},
+            {"id": "twin_thermal_rifle", "mount": ["Front"]}
+          ]
+        }
       ]
     },
     "voidwarped_apc": {
       "name": "Voidwarped APC",
-      "description": "A durable transport built by Voidwarped Renegade.",
+      "description": "A durable transport built by the Voidwarped Renegade.",
       "category": "transport",
       "keywords": ["Vehicle"],
       "models": [
@@ -1515,129 +1761,36 @@
           "movement": 10,
           "courage": 6,
           "shoot": 6,
-          "fight": 6,
+          "fight": 0,
           "defense": 11,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 5}, {"id": "impact", "x": 3}, {"id": "transport", "x": 12}, "vulnerable_side_rear"],
-          "weapons": [{"id": "twin_combat_rifle", "mount": ["Front", "Left"]}, {"id": "twin_combat_rifle", "mount": ["Front", "Right"]}],
+          "rules": [{"id": "impact", "x": 3}, {"id": "transport", "x": 12}, "vulnerable_side_rear", {"id": "wounds", "x": 4}],
+          "weapons": ["twin_combat_rifle"],
           "options": [
-            {
-              "replaceWeapon": [{"id": "twin_combat_rifle", "mount": ["Front", "Left"]}, {"id": "twin_combat_rifle", "mount": ["Front", "Right"]}],
-              "withWeapon": [
-                [{"id": "twin_light_machinegun", "mount": ["Front", "Left"]}, {"id": "twin_light_machinegun", "mount": ["Front", "Right"]}],
-                [{"id": "twin_flamethrower", "mount": ["Front", "Left"]}, {"id": "twin_flamethrower", "mount": ["Front", "Right"]}],
-                [{"id": "twin_plasma_rifle", "mount": ["Front", "Left"]}, {"id": "twin_plasma_rifle", "mount": ["Front", "Right"]}],
-                [{"id": "twin_fusion_rifle", "mount": ["Front", "Left"]}, {"id": "twin_fusion_rifle", "mount": ["Front", "Right"]}],
-                [{"id": "rocket_pod", "mount": ["Front", "Left"]}, {"id": "rocket_pod", "mount": ["Front", "Right"]}],
-                [{"id": "twin_laser_cannon", "mount": ["Front", "Left"]}, {"id": "twin_laser_cannon", "mount": ["Front", "Right"]}],
-                [{"id": "twin_thermal_rifle", "mount": ["Front", "Left"]}, {"id": "twin_thermal_rifle", "mount": ["Front", "Right"]}]
-              ]
-            },
-            {"addWeapon": ["twin_combat_rifle", "combi_rifle", "combi_rifle"], "limit": 1},
-            {"addWeapon": ["missile_launcher"]},
-            {"addRule": [{"name": "Doom Siren", "id": "fear"}, {"id": "dozer", "name": "Dozer Blade"}, "spiked_ram"]}
+            {"replaceWeapon": ["twin_combat_rifle"], "withWeapon": ["light_machinegun", "plasma_rifle", "fusion_rifle", "flamethrower", "missile_launcher", "thermal_rifle"]},
+            {"addWeapon": ["hunter_missiles"]},
+            {"addRule": ["assault_ramp", {"id": "dozer", "name": "Dozer Blade"}, "spiked_ram"]}
           ],
           "min": 1,
           "max": 1
         }
       ]
     },
-    "corrrupted_battle_tank": {
-      "name": "Voidwarped Battle Tank",
-      "description": "An armored tank helmed by Voidwarped Renegade.",
-      "category": "rare",
-      "keywords": ["Vehicle"],
-      "models": [
-        {
-          "name": "Voidwarped Battle Tank",
-          "movement": 10,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 12,
-          "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 6}, {"id": "impact", "x": 6}, "vulnerable_side_rear"],
-          "weapons": ["twin_laser_cannon", {"id": "twin_combat_rifle", "mount": ["Front", "Left"]}, {"id": "twin_combat_rifle", "mount": ["Front", "Right"]}],
-          "options": [
-            {"replaceWeapon": ["twin_laser_cannon"], "withWeapon": ["battle_cannon", "heavy_autocannon", "demolition_cannon", "twin_gatling_gun"]},
-            {
-              "replaceWeapon": [{"id": "twin_combat_rifle", "mount": ["Front", "Left"]}, {"id": "twin_combat_rifle", "mount": ["Front", "Right"]}],
-              "withWeapon": [
-                [{"id": "heavy_machinegun", "mount": ["Front", "Left"]}, {"id": "heavy_machinegun", "mount": ["Front", "Right"]}],
-                [{"id": "laser_cannon", "mount": ["Front", "Left"]}, {"id": "laser_cannon", "mount": ["Front", "Right"]}],
-                [{"id": "plasma_cannon", "mount": ["Front", "Left"]}, {"id": "plasma_cannon", "mount": ["Front", "Right"]}],
-                [{"id": "fusion_cannon", "mount": ["Front", "Left"]}, {"id": "fusion_cannon", "mount": ["Front", "Right"]}],
-                [{"id": "heavy_flamethrower", "mount": ["Front", "Left"]}, {"id": "heavy_flamethrower", "mount": ["Front", "Right"]}],
-                [{"id": "twin_thermal_rifle", "mount": ["Front", "Left"]}, {"id": "twin_thermal_rifle", "mount": ["Front", "Right"]}],
-                [{"id": "thermal_lance", "mount": ["Front", "Left"]}, {"id": "thermal_lance", "mount": ["Front", "Right"]}]
-              ],
-              "limit": 1
-            },
-            {"addWeapon": ["twin_combat_rifle", "combi_rifle", "combi_rifle"], "limit": 1},
-            {"addWeapon": ["missile_launcher"]},
-            {"addRule": [{"name": "Doom Siren", "id": "fear"}, {"id": "dozer", "name": "Dozer Blade"}, "spiked_ram"]}
-          ],
-          "min": 1,
-          "max": 1
-        }
-      ]
-    },
-    "voidwarped_heavy_battle_tank": {
-      "name": "Voidwarped Heavy Battle Tank",
-      "description": "An heavy armored tank helmed by imperial marines.",
-      "category": "rare",
-      "keywords": ["Vehicle"],
-      "models": [
-        {
-          "name": "Heavy Battle Tank",
-          "movement": 10,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 13,
-          "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 6}, {"id": "impact", "x": 6}, "vulnerable_rear"],
-          "weapons": ["twin_laser_cannon", {"id": "laser_cannon", "mount": ["Front", "Left"]}, {"id": "laser_cannon", "mount": ["Front", "Right"]}],
-          "options": [
-            {"replaceWeapon": ["twin_laser_cannon"], "withWeapon": ["battle_cannon", "heavy_autocannon", "twin_gatling_gun", "heavy_plasma_cannon", "heavy_fusion_cannon", "twin_flamethrower_cannon"]},
-            {
-              "replaceWeapon": [{"id": "laser_cannon", "mount": ["Front", "Left"]}, {"id": "laser_cannon", "mount": ["Front", "Right"]}],
-              "withWeapon": [
-                [{"id": "twin_light_machinegun", "mount": ["Front", "Left"]}, {"id": "twin_light_machinegun", "mount": ["Front", "Right"]}],
-                [{"id": "heavy_machinegun", "mount": ["Front", "Left"]}, {"id": "heavy_machinegun", "mount": ["Front", "Right"]}],
-                [{"id": "plasma_cannon", "mount": ["Front", "Left"]}, {"id": "plasma_cannon", "mount": ["Front", "Right"]}],
-                [{"id": "fusion_cannon", "mount": ["Front", "Left"]}, {"id": "fusion_cannon", "mount": ["Front", "Right"]}],
-                [{"id": "heavy_flamethrower", "mount": ["Front", "Left"]}, {"id": "heavy_flamethrower", "mount": ["Front", "Right"]}],
-                [{"id": "thermal_lance", "mount": ["Front", "Left"]}, {"id": "thermal_lance", "mount": ["Front", "Right"]}]
-              ],
-              "limit": 1
-            },
-            {"addWeapon": ["gatling_gun", "plasma_cannon", "fusion_cannon", "missile_launcher", "heavy_flamethrower", "heavy_machinegun", "thermal_lance"], "limit": 1},
-            {"addWeapon": ["twin_combat_rifle", "combi_rifle", "combi_rifle"], "limit": 2},
-            {"addWeapon": ["twin_combat_rifle", "grenade_launcher", "aa_rocket_pod"], "limit": 1},
-            {"addWeapon": ["missile_launcher"]},
-            {"addRule": [{"id": "fear", "name": "Doom Siren"}, "spiked_ram", {"id": "dozer", "name": "Dozer Blade"}]}
-          ],
-          "min": 1,
-          "max": 1
-        }
-      ]
-    },
-    "heavy_apc": {
-      "name": "Heavy APC",
-      "description": "A heavy transport twisted by the vortex.",
+    "voidwarped_heavy_apc": {
+      "name": "Voidwarped Heavy APC",
+      "description": "A heavy transport built by the Voidwarped Renegade.",
       "category": "transport",
       "keywords": ["Vehicle"],
       "models": [
         {
-          "name": "Heavy APC",
+          "name": "Voidwarped Heavy APC",
           "movement": 10,
           "courage": 6,
           "shoot": 6,
           "fight": 0,
           "defense": 12,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 5}, {"id": "impact", "x": 3}, {"id": "transport", "x": 12}, "vulnerable_side_rear"],
+          "rules": [{"id": "impact", "x": 3}, {"id": "transport", "x": 12}, "vulnerable_side_rear", {"id": "wounds", "x": 5}],
           "weapons": [{"id": "twin_combat_rifle", "mount": ["Front"]}, {"id": "twin_combat_rifle", "mount": ["Front", "Left"]}, {"id": "twin_combat_rifle", "mount": ["Front", "Right"]}],
           "options": [
             {
@@ -1648,7 +1801,6 @@
                 {"id": "twin_plasma_rifle", "mount": ["Front"]},
                 {"id": "twin_fusion_rifle", "mount": ["Front"]},
                 {"id": "twin_thermal_rifle", "mount": ["Front"]},
-                {"id": "gravity_cannon", "mount": ["Front"]},
                 {"id": "twin_gatling_gun", "mount": ["Front"]}
               ]
             },
@@ -1661,13 +1813,224 @@
                 [{"id": "twin_fusion_rifle", "mount": ["Front", "Left"]}, {"id": "twin_fusion_rifle", "mount": ["Front", "Right"]}],
                 [{"id": "rocket_pod", "mount": ["Front", "Left"]}, {"id": "rocket_pod", "mount": ["Front", "Right"]}],
                 [{"id": "twin_laser_cannon", "mount": ["Front", "Left"]}, {"id": "twin_laser_cannon", "mount": ["Front", "Right"]}],
-                [{"id": "gravity_cannon", "mount": ["Front", "Left"]}, {"id": "gravity_cannon", "mount": ["Front", "Right"]}],
                 [{"id": "thermal_lance", "mount": ["Front", "Left"]}, {"id": "thermal_lance", "mount": ["Front", "Right"]}]
               ]
             },
-            {"addWeapon": ["twin_combat_rifle", "heavy_machinegun", "plasma_cannon", "fusion_cannon", "heavy_flamethrower", "missile_launcher"], "limit": 1},
+            {"addWeapon": ["twin_combat_rifle", "heavy_machinegun", "plasma_cannon", "fusion_cannon", "heavy_flamethrower", "missile_launcher", "thermal_lance"], "limit": 1},
             {"addWeapon": ["hunter_missiles"]},
-            {"addRule": ["assault_ramp", {"id": "dozer", "name": "Dozer Blade"}, {"id": "hover", "name": "Anti-Gravity Engine"}, "spiked_ram"]}
+            {"addRule": ["assault_ramp", {"id": "dozer", "name": "Dozer Blade"}, "spiked_ram"]}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "drop_pod": {
+      "name": "Drop Pod",
+      "description": "A durable transport built by the Voidwarped Renegade.",
+      "category": "transport",
+      "keywords": ["Vehicle"],
+      "models": [
+        {
+          "name": "Drop Pod",
+          "movement": 0,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 0,
+          "defense": 10,
+          "reflexes": 6,
+          "rules": ["ambush", {"id": "transport", "x": 12}, {"id": "wounds", "x": 3}],
+          "weapons": ["twin_combat_rifle"],
+          "options": [{"replaceWeapon": "twin_combat_rifle", "withWeapon": "missile_launcher"}],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "voidwarped_heavy_gunship": {
+      "name": "Voidwarped Heavy Gunship",
+      "description": "A heavy transport and fire support gunship.",
+      "category": "transport",
+      "keywords": ["Aircraft", "Vehicle"],
+      "models": [
+        {
+          "name": "Voidwarped Heavy Gunship",
+          "movement": 10,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 12,
+          "reflexes": 6,
+          "rules": ["aircraft", "hover_mode", {"id": "transport", "x": 12}, {"id": "walker_transport", "x": 1}, {"id": "wounds", "x": 5}],
+          "weapons": [{"id": "twin_fusion_cannon", "mount": ["Front"]}, {"id": "storm_missiles", "mount": ["Front"]}, {"id": "twin_laser_cannon", "mount": ["Front", "Left", "Right"]}],
+          "options": [
+            {
+              "replaceWeapon": {"id": "twin_fusion_cannon", "mount": ["Front"]},
+              "withWeapon": [{"id": "twin_heavy_machinegun", "mount": ["Front"]}, {"id": "twin_missile_launcher", "mount": ["Front"]}, {"id": "twin_gatling_gun", "mount": ["Front"]}]
+            },
+            {
+              "replaceWeapon": {"id": "twin_laser_cannon", "mount": ["Front", "Left", "Right"]},
+              "withWeapon": [{"id": "twin_gatling_gun", "mount": ["Front", "Left", "Right"]}, {"id": "twin_heavy_plasma_cannon", "mount": ["Front", "Left", "Right"]}]
+            },
+            {"addRule": [{"id": "open_topped", "x": 12}]}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "voidwarped_artillery_vehicle": {
+      "name": "Voidwarped Artillery Vehicle",
+      "description": "An armored artillery vehicle helmed by Voidwarped Renegade.",
+      "category": "rare",
+      "keywords": ["Vehicle"],
+      "models": [
+        {
+          "name": "Voidwarped Artillery Vehicle",
+          "movement": 10,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 0,
+          "defense": 10,
+          "reflexes": 6,
+          "rules": [{"id": "impact", "x": 3}, "vulnerable_side_rear", {"id": "wounds", "x": 5}],
+          "weapons": [{"id": "twin_combat_rifle", "mount": ["Front"]}, {"id": "twin_missile_launcher", "mount": ["Front"]}],
+          "options": [
+            {
+              "replaceWeapon": [{"id": "twin_missile_launcher", "mount": ["Front"]}],
+              "withWeapon": [
+                {"id": "twin_aa_autocannon", "mount": ["Front"]},
+                {"id": "heavy_plasma_mortar", "mount": ["Front"]},
+                {"id": "twin_heavy_fusion_cannon", "mount": ["Front"]},
+                {"id": "medium_artillery_cannon", "mount": ["Front"]},
+                {"id": "artillery_cannon", "mount": ["Front"]}
+              ]
+            },
+            {
+              "replaceWeapon": [{"id": "twin_combat_rifle", "mount": ["Front"]}],
+              "withWeapon": [
+                {"id": "twin_light_machinegun", "mount": ["Front"]},
+                {"id": "twin_flamethrower", "mount": ["Front"]},
+                {"id": "twin_plasma_rifle", "mount": ["Front"]},
+                {"id": "twin_fusion_rifle", "mount": ["Front"]},
+                {"id": "twin_thermal_rifle", "mount": ["Front"]}
+              ]
+            }
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "vodiwarped_battle_tank": {
+      "name": "Voidwarped Battle Tank",
+      "description": "An armored tank helmed by Voidwarped Renegade.",
+      "category": "rare",
+      "keywords": ["Vehicle", "Tank"],
+      "models": [
+        {
+          "name": "Voidwarped Battle Tank",
+          "movement": 10,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 0,
+          "defense": 12,
+          "reflexes": 6,
+          "rules": [{"id": "impact", "x": 6}, "vulnerable_side_rear", {"id": "wounds", "x": 5}],
+          "weapons": [{"id": "twin_combat_rifle", "mount": ["Front", "Left"]}, {"id": "twin_combat_rifle", "mount": ["Front", "Right"]}, "heavy_autocannon"],
+          "options": [
+            {"replaceWeapon": ["heavy_autocannon"], "withWeapon": ["battle_cannon", "twin_laser_cannon", "demolition_cannon", "twin_gatling_gun"]},
+            {
+              "replaceWeapon": [{"id": "twin_combat_rifle", "mount": ["Front", "Left"]}, {"id": "twin_combat_rifle", "mount": ["Front", "Right"]}],
+              "withWeapon": [
+                [{"id": "twin_light_machinegun", "mount": ["Front", "Left"]}, {"id": "twin_light_machinegun", "mount": ["Front", "Right"]}],
+                [{"id": "heavy_machinegun", "mount": ["Front", "Left"]}, {"id": "heavy_machinegun", "mount": ["Front", "Right"]}],
+                [{"id": "laser_cannon", "mount": ["Front", "Left"]}, {"id": "laser_cannon", "mount": ["Front", "Right"]}],
+                [{"id": "plasma_cannon", "mount": ["Front", "Left"]}, {"id": "plasma_cannon", "mount": ["Front", "Right"]}],
+                [{"id": "fusion_cannon", "mount": ["Front", "Left"]}, {"id": "fusion_cannon", "mount": ["Front", "Right"]}],
+                [{"id": "heavy_flamethrower", "mount": ["Front", "Left"]}, {"id": "heavy_flamethrower", "mount": ["Front", "Right"]}],
+                [{"id": "thermal_lance", "mount": ["Front", "Left"]}, {"id": "thermal_lance", "mount": ["Front", "Right"]}]
+              ],
+              "limit": 1
+            },
+            {"addWeapon": ["hunter_missiles"]},
+            {"addRule": [{"id": "dozer", "name": "Dozer Blade"}, "spiked_ram"]}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "voidwarped_strike_tank": {
+      "name": "Voidwarped Strike Tank",
+      "description": "A lighter tank with increased speed helmed by Voidwarped Renegade.",
+      "category": "rare",
+      "keywords": ["Vehicle", "Tank"],
+      "models": [
+        {
+          "name": "Voidwarped Strike Tank",
+          "movement": 12,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 0,
+          "defense": 12,
+          "reflexes": 6,
+          "rules": [{"id": "impact", "x": 6}, "vulnerable_side_rear", {"id": "wounds", "x": 5}],
+          "weapons": [{"id": "heavy_thermal_lance", "mount": ["Front"]}],
+          "options": [
+            {
+              "replaceWeapon": [{"id": "heavy_thermal_lance", "mount": ["Front"]}],
+              "withWeapon": [
+                {"id": "twin_autocannon", "mount": ["Front"]},
+                {"id": "twin_laser_cannon", "mount": ["Front"]},
+                {"id": "twin_plasma_cannon", "mount": ["Front"]},
+                {"id": "twin_fusion_cannon", "mount": ["Front"]},
+                {"id": "twin_heavy_flamethrower", "mount": ["Front"]}
+              ]
+            },
+            {"addWeapon": ["heavy_machinegun", "fusion_cannon", "thermal_lance", "heavy_flamethrower", "plasma_cannon", "laser_cannon"], "limit": 1},
+            {"addWeapon": ["hunter_missiles"], "limit": 4},
+            {"addRule": [{"id": "dozer", "name": "Dozer Blade"}, "spiked_ram"]}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "voidwarped_heavy_battle_tank": {
+      "name": "Voidwarped Heavy Battle Tank",
+      "description": "An heavy armored tank helmed by Voidwarped Renegade.",
+      "category": "rare",
+      "keywords": ["Vehicle", "Tank"],
+      "models": [
+        {
+          "name": "Voidwarped Heavy Battle Tank",
+          "movement": 10,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 0,
+          "defense": 13,
+          "reflexes": 6,
+          "rules": [{"id": "impact", "x": 6}, "vulnerable_rear", {"id": "wounds", "x": 6}],
+          "weapons": ["twin_laser_cannon", {"id": "twin_light_machinegun", "mount": ["Front", "Left"]}, {"id": "twin_light_machinegun", "mount": ["Front", "Right"]}],
+          "options": [
+            {"replaceWeapon": ["twin_laser_cannon"], "withWeapon": ["battle_cannon", "heavy_autocannon", "twin_gatling_gun", "heavy_plasma_cannon", "heavy_fusion_cannon", "twin_flamethrower_cannon"]},
+            {
+              "replaceWeapon": [{"id": "twin_light_machinegun", "mount": ["Front", "Left"]}, {"id": "twin_light_machinegun", "mount": ["Front", "Right"]}],
+              "withWeapon": [
+                [{"id": "heavy_machinegun", "mount": ["Front", "Left"]}, {"id": "heavy_machinegun", "mount": ["Front", "Right"]}],
+                [{"id": "plasma_cannon", "mount": ["Front", "Left"]}, {"id": "plasma_cannon", "mount": ["Front", "Right"]}],
+                [{"id": "fusion_cannon", "mount": ["Front", "Left"]}, {"id": "fusion_cannon", "mount": ["Front", "Right"]}],
+                [{"id": "heavy_flamethrower", "mount": ["Front", "Left"]}, {"id": "heavy_flamethrower", "mount": ["Front", "Right"]}],
+                [{"id": "thermal_lance", "mount": ["Front", "Left"]}, {"id": "thermal_lance", "mount": ["Front", "Right"]}]
+              ],
+              "limit": 1
+            },
+            {"addWeapon": ["gatling_gun", "plasma_cannon", "fusion_cannon", "missile_launcher", "heavy_flamethrower", "heavy_machinegun", "thermal_lance"], "limit": 1},
+            {"addWeapon": ["twin_combat_rifle", "light_machinegun", "plasma_rifle", "fusion_rifle", "flamethrower", "rocket_pod", "thermal_rifle"], "limit": 2},
+            {"addWeapon": ["twin_combat_rifle", "grenade_launcher", "aa_rocket_pod", "twin_aa_light_machinegun"], "limit": 1},
+            {"addWeapon": ["hunter_missiles"]},
+            {"addRule": ["spiked_ram", {"id": "dozer", "name": "Dozer Blade"}]}
           ],
           "min": 1,
           "max": 1
@@ -1688,7 +2051,7 @@
           "fight": 6,
           "defense": 11,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 5}, "vulnerable_rear"],
+          "rules": ["vulnerable_rear", {"id": "wounds", "x": 5}],
           "weapons": [{"id": "heavy_fusion_cannon", "count": 2}],
           "options": [
             {
@@ -1741,7 +2104,7 @@
           "fight": 5,
           "defense": 12,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 6}, "fear", "vulnerable_rear"],
+          "rules": ["fear", "vulnerable_rear", {"id": "wounds", "x": 6}],
           "weapons": [{"id": "fiend_claws", "count": 3}, {"id": "fiend_jaws", "count": 4}],
           "options": [
             {"replaceWeapon": {"id": "fiend_claws", "count": 3}, "withWeapon": [{"id": "heavy_plasma_cannon", "count": 2}, {"id": "heavy_autocannon", "count": 2}]},
@@ -1767,7 +2130,7 @@
           "fight": 5,
           "defense": 11,
           "reflexes": 6,
-          "rules": ["walker", "vulnerable_side_rear", {"id": "wounds", "x": 5}],
+          "rules": ["vulnerable_side_rear", "walker", {"id": "wounds", "x": 5}],
           "weapons": [{"id": "excruciating_cannons", "count": 2}, {"id": "claws_and_tendrils", "count": 6}],
           "min": 1,
           "max": 1
@@ -1788,7 +2151,7 @@
           "fight": 5,
           "defense": 11,
           "reflexes": 5,
-          "rules": [{"id": "wounds", "x": 5}, {"id": "power", "x": 1}, "vulnerable_rear"],
+          "rules": [{"id": "power", "x": 1}, "vulnerable_rear", {"id": "wounds", "x": 5}],
           "weapons": [{"id": "enormous_claws", "count": 2}, {"id": "tentacle_maw", "count": 2}],
           "min": 1,
           "max": 1
@@ -1810,11 +2173,11 @@
           "defense": 12,
           "reflexes": 6,
           "rules": ["vulnerable_rear", {"id": "wounds", "x": 6}],
-          "weapons": ["crab_cannon", {"id": "heavy_claw"}, "havoc_missiles", "twin_laser_cannon"],
+          "weapons": ["crab_cannon", "heavy_claw", "missile_launcher", "twin_laser_cannon"],
           "options": [
-            {"addRule": ["doom_siren"]},
-            {"replaceWeapon": "havoc_missiles", "withWeapon": [{"id": "heavy_flail", "count": 6}, "twin_heavy_flamethrower"]},
-            {"replaceWeapon": "twin_laser_cannon", "withWeapon": ["reaper_cannon", "twin_heavy_machinegun"]}
+            {"replaceWeapon": "missile_launcher", "withWeapon": [{"id": "heavy_flail", "count": 6}, "twin_heavy_flamethrower"]},
+            {"replaceWeapon": "twin_laser_cannon", "withWeapon": ["reaper_cannon", "twin_heavy_machinegun"]},
+            {"addRule": [{"name": "Doom Siren", "id": "fear"}]}
           ],
           "min": 1,
           "max": 1
@@ -1835,51 +2198,72 @@
           "fight": 6,
           "defense": 11,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 5}, "fly", "vulnerable_rear"],
-          "weapons": ["forge_flamethrower", {"id": "dragon_claws", "count": 4}],
-          "options": [{"replaceWeapon": "forge_flamethrower", "withWeapon": ["forge_cannon"]}],
+          "rules": ["aircraft", "fly", "hover_mode", "vulnerable_rear", {"id": "wounds", "x": 5}],
+          "weapons": ["heavy_flamethrower", {"id": "dragon_claws", "count": 4}],
+          "options": [{"replaceWeapon": "heavy_flamethrower", "withWeapon": ["autocannon", "plasma_cannon", "fusion_cannon", "gatling_gun"]}],
           "min": 1,
           "max": 1
         }
       ]
     },
-    "titanic_destruction_engine": {
-      "name": "Titanic Destruction Engine",
-      "description": "A giant, treaded robot designed only to kill.",
-      "category": "rare",
-      "keywords": ["Vehicle"],
+    "spider_tank": {
+      "name": "Spider Tank",
+      "description": "A huge demon-forged tank which is fueled by the souls of its victims.",
+      "category": "heavy",
+      "keywords": ["Vehicle", "Tank"],
       "models": [
         {
-          "name": "Titanic Destruction Engine",
+          "name": "Spider Tank",
+          "movement": 8,
+          "courage": 6,
+          "shoot": 5,
+          "fight": 5,
+          "defense": 12,
+          "reflexes": 6,
+          "rules": ["strider", "vulnerable_rear", {"id": "wounds", "x": 5}],
+          "weapons": ["crab_claw", {"id": "battle_cannon", "mount": ["Front"]}, {"id": "twin_laser_cannon", "count": 2}],
+          "options": [
+            {
+              "replaceWeapon": "twin_laser_cannon",
+              "withWeapon": [
+                "twin_rocket_pod",
+                "twin_heavy_machinegun",
+                "heavy_autocannon",
+                {"id": "energy_great_flail", "count": 6},
+                "twin_heavy_flamethrower",
+                "twin_plasma_cannon",
+                "twin_fusion_cannon"
+              ],
+              "limit": 2
+            },
+            {"addWeapon": ["twin_marine_rifle", "combi_rifle"], "limit": 1},
+            {"addRule": [{"name": "Doom Siren", "id": "fear"}]}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "voidwarped_death_engine": {
+      "name": "Voidwarped Death Engine",
+      "description": "A giant, demon-forged robot designed only to kill.",
+      "category": "super_heavy",
+      "keywords": ["Vehicle", "Titanic"],
+      "models": [
+        {
+          "name": "Voidwarped Death Engine",
           "movement": 10,
           "courage": 6,
           "shoot": 6,
           "fight": 6,
           "defense": 13,
           "reflexes": 6,
-          "weapons": ["greatest_cleaver", "giant_gatling", "train_mounted_blastgun"],
-          "rules": [{"id": "wounds", "x": 6}, "vulnerable_rear"],
-          "options": [{"replaceWeapon": ["train_mounted_blastgun"], "withWeapon": ["flaming_bloodsoaker"]}, {"replaceWeapon": ["giant_gatling"], "withWeapon": ["hatespewer"]}]
-        }
-      ]
-    },
-    "giant_metal_scorpion": {
-      "name": "Giant Metal Scorpion",
-      "description": "A giant metal scorpion. It hates you. It hates everything.",
-      "rules": ["vulnerable_rear", {"id": "wounds", "x": 6}, {"id": "ward", "x": 2}],
-      "category": "rare",
-      "min": 1,
-      "max": 1,
-      "models": [
-        {
-          "name": "Giant Metal Scorpion",
-          "movement": 12,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 7,
-          "defense": 13,
-          "reflexes": 6,
-          "weapons": [{"id": "scorpion_cannon", "count": 2}, "flaming_bloodsoaker", "demolition_cannon", "hellcrusher_claws"],
+          "rules": ["titanic", "vulnerable_rear", {"id": "wounds", "x": 6}],
+          "weapons": ["titan_cleaver", "gatling_cannon", {"id": "twin_battle_cannon", "mount": ["Front"]}],
+          "options": [
+            {"replaceWeapon": ["gatling_cannon"], "withWeapon": ["twin_plasma_cannon"]},
+            {"replaceWeapon": [{"id": "twin_battle_cannon", "mount": ["Front"]}], "withWeapon": [{"id": "twin_flamethrower_cannon", "mount": ["Front"]}]}
+          ],
           "min": 1,
           "max": 1
         }
@@ -1935,22 +2319,18 @@
     "scorpion_cannon": {"name": "Scorpion Cannon", "attacks": 8, "short": 18, "medium": 36, "ap": 3},
     "legend_flamethrower_pistol": {"name": "Psychic Inferno Pistol", "attacks": 3, "short": 6, "medium": 12, "ap": 2, "rules": ["rending", "breaching"]},
     "legend_staff": {"name": "Psychic Staff", "attacks": 1, "short": "Melee", "ap": 1, "rules": ["shielding", "warding_staff"]},
-    "legend_cursed_rifle": {"name": "Accursed Rifle", "attacks": 1, "short": 12, "medium": 24, "ap": 1, "rules": ["rapid_fire", {"id": "blast", "x": 3}]}
+    "legend_cursed_rifle": {"name": "Accursed Rifle", "attacks": 1, "short": 12, "medium": 24, "ap": 1, "rules": [{"id": "deadly", "x": 1}, "rapid_fire"]},
+    "seismic_rifle": {"name": "Seismic Rifle", "attacks": 1, "short": 12, "medium": 24, "ap": 3, "rules": ["shocking"]},
+    "seismic_pistol": {"name": "Seismic Pistol", "attacks": 1, "short": 6, "ap": 3, "rules": ["pistol", "shocking"]}
   },
   "rules": {
-    "warmaster_tactics": {
-      "name": "Warmaster Tactics",
-      "inputs": ["x"],
-      "description": "When this unit is activated, choose up to X friendly _Infantry_ units within 6\" to receive one of the following bonuses until the end of the round: \n * Re-roll all failed Accuracy tests \n * Re-roll all failed Strength tests",
-      "points": ["rule.x", {"multiply": 20}]
-    },
+    "warmaster_tactics": {"name": "Warmaster Tactics", "description": "This model's unit may re-roll failed Accuracy and Strength tests.", "points": 20},
     "pest_tactics": {
       "name": "Pestilent Tactics",
       "inputs": ["x"],
       "description": "When this unit is activated, choose up to X friendly _Infantry_ units within 6\" to receive one of the following bonuses until the end of the round: \n * Re-roll all failed Save rolls \n * Re-roll all failed Strength tests",
       "points": ["rule.x", {"multiply": 20}]
     },
-    "doom_siren": {"name": "Doom Siren", "description": "Enemy units within 6\" of this model suffer -1 Courage.", "points": 5},
     "archmage_tactics": {
       "name": "Arch-Psyker's Tactics",
       "inputs": ["x"],
@@ -1959,20 +2339,21 @@
     },
     "archmage": {"name": "Blessings of the Psyker God", "description": "When this unit casts the Arcane Barrage Power, double the number of hits it deals.", "points": 10},
     "warding_staff": {"name": "Warding", "description": "Enemy units suffer -1 to all Power(x) test while within 12\" of this model.", "points": 1},
-    "legend_unholy_strength": {"name": "Unholy Strength", "description": "This unit has +1 Strength.", "points": 5}
+    "legend_war_veteran": {"name": "War Veteran", "description": "This model's unit may re-roll failed Courage tests when making a Break test.", "points": 5},
+    "poison_weapons": {"name": "Poisoned Weapons", "description": "Enemy units hit by this model's weapons must re-roll successful Save rolls of 1.", "points": 2}
   },
   "strategies": {
     "hate": {
       "name": "Hate",
       "phase": "activation",
       "flavor": "Full with fury, Voidwarped Renegade can launch devastating close combat assaults.",
-      "description": "Use before an Infantry unit fights. Hit rolls of 1 or 2 gain +1 AP.",
+      "description": "Use before a unit fights. Hit rolls of 1 or 2 gain +1 AP.",
       "cost": 1
     },
     "daemonforge": {
       "phase": "activation",
       "name": "Daemonforge",
-      "flavor": "Imbued with demonic energy, traitor vehicles can call upon the powers of the vortex gate.",
+      "flavor": "Imbued with demonic energy, voidwarped renegade can call upon the powers of the vortex gate.",
       "description": "Use before a unit is targeted by an attack. Roll a D10 for each hit. On a 3 or less that hit is prevented.",
       "cost": 2
     },
@@ -1985,58 +2366,31 @@
     }
   },
   "relics": {
-    "legend_psychic_prowess": {
-      "name": "Psychic Prowess",
-      "subfactions": ["power_focus"],
-      "rule": {"id": "psychic_prowess", "x": 1},
-      "description": "Upgrade one Leader model with Prowess(1).",
-      "flavor": "This hero has studied the magic arts and is adept at invoking powers.",
-      "points": 5
-    },
-    "legend_staff": {
-      "subfactions": ["power_focus"],
-      "name": "The Warding Staff",
-      "weapon": "legend_staff",
-      "description": "Replace one Leader model's Energy Staff with The Warding Staff.",
-      "flavor": "This staff has the power to absorb and stop psychic energy.",
-      "points": 5
-    },
-    "legend_flamethrower_pistol": {
-      "subfactions": ["power_focus"],
-      "name": "The Psychic Inferno Pistol",
-      "weapon": "legend_flamethrower_pistol",
-      "description": "Replace one Hexed Flamethrower Pistol with The Psychic Inferno Pistol",
-      "flavor": "This pistol is enhanced with fiery magic immolating those at longer range.",
-      "points": 5
-    },
-    "legend_unholy_strength": {
-      "name": "Unholy Strength",
-      "rule": "legend_unholy_strength",
-      "description": "Upgrade one Leader model with Unholy Strength.",
+    "legend_demonic_armor": {
+      "name": "Demonic Armor",
+      "description": "Upgrade one _Leader_ or _Support_ model with Resistant(3).",
+      "rule": {"id": "resistant", "x": 3},
       "flavor": "Those that pray to the vortex gate reveive blessings beyond human comprehension.",
-      "points": 5,
-      "subfactions": ["none"]
+      "points": 10
     },
     "legend_war_veteran": {
       "name": "War Veteran",
-      "rule": "fearless",
-      "description": "Upgrade one Leader model with Fearless.",
-      "flavor": "This hero has lived through so many battles that nothing can phase it anymore.",
-      "points": 5,
-      "subfactions": ["none"]
+      "rule": "legend_war_veteran",
+      "description": "Upgrade one _Leader_ or _Support_ model with War Veteran.",
+      "flavor": "This hero has lived through so many battles that nothing can phase them anymore.",
+      "points": 5
     },
     "legend_accursed_rifle": {
       "name": "Accursed Rifle",
       "weapon": "legend_cursed_rifle",
-      "description": "Replace one Leader model's Marine Rifle with the Accursed Rifle.",
+      "description": "Replace one _Leader_ or _Support_ model's Combat Rifle with the Accursed Rifle.",
       "flavor": "This ancient relic emits an aura of malice, shooting purified hatred.",
-      "points": 10,
-      "subfactions": ["none"]
+      "points": 5
     }
   },
   "powers": {
     "balefire": {"name": "Balefire", "description": "Target enemy unit within 24\" take 3 hits with AP(1).", "charge": 7},
-    "hex": {"name": "Hex", "description": "Target enemy unit within 12\" must re-roll one die of your choice on its next Save test.", "charge": 5},
-    "sap_strength": {"name": "Sap Strength", "description": "Target enemy unit within 18\" takes 3 hits with AP(1) and has -1 Strength until the end of the turn.", "charge": 6}
+    "sap_strength": {"name": "Sap Strength", "description": "Target enemy unit within 18\" takes 3 hits with AP(1) and has -1 Strength until the end of the turn.", "charge": 6},
+    "hex": {"name": "Hex", "description": "Target enemy unit within 12\" must re-roll one die of your choice on its next Save test.", "charge": 5}
   }
 }
