@@ -299,15 +299,6 @@
       "alliance": "order",
       "description": "The myriad of Feudal Kingdoms are mercurial and quick-blooded, wanting only peace one generation while seeking to conquer the world the next - and well-equipped for either."
     },
-    "lizardmen": {
-      "version": "1.0",
-      "name": "Lizardfolk Empire",
-      "id": "lizardmen",
-      "url": "lizardmen.json",
-      "color": "#087194",
-      "alliance": "destruction",
-      "description": "A sprawling empire of jungle-dwellers who believe they are the rightful rulers of the world."
-    },
     "verminhost_colonies": {
       "version": "1.0",
       "name": "Verminhost Colonies",
