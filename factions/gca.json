@@ -767,8 +767,8 @@
     "spectral_eye": {"name": "Spectral Eye", "attacks": 2, "ap": 4, "short": 9, "medium": 18},
     "assassin_unarmed": {"name": "Assassin Martial Arts", "attacks": 1, "ap": 4, "short": "Melee", "rules": ["rending"]},
     "mind_shredder": {"name": "Mind Shredder", "attacks": 1, "ap": 4, "short": 6, "medium": 12, "rules": [{"id": "shocking", "x": 3}]},
-    "web_carbine": {"name": "Web Carbine", "attacks": 1, "ap": 1, "short": 9, "medium": 18, "rules": [{"id": "slowing", "x": 2}, "assault"]},
-    "web_cannon": {"name": "Web Cannon", "attacks": 1, "ap": 1, "short": 12, "medium": 24, "rules": [{"id": "slowing", "x": 2}, {"id": "blast", "x": 3}, "assault"]},
+    "web_carbine": {"name": "Web Carbine", "attacks": 1, "ap": 1, "short": 9, "medium": 18, "rules": [{"id": "shocking", "x": 2}, "assault"]},
+    "web_cannon": {"name": "Web Cannon", "attacks": 1, "ap": 1, "short": 12, "medium": 24, "rules": [{"id": "shocking", "x": 2}, {"id": "blast", "x": 3}, "assault"]},
     "phase_sword": {"name": "Phase Sword", "attacks": 1, "ap": 5, "short": "Melee", "rules": ["rending", "phase"]},
     "twin_grenade_launcher": {
       "name": "Twin Grenade Launcher",

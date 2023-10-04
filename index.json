@@ -933,7 +933,7 @@
     "ballista": {"name": "Ballista", "profiles": [{"name": "Focus", "ap": 6, "attacks": 1, "medium": 36, "short": 18}, {"name": "Volley", "ap": 2, "attacks": 6, "medium": 36, "short": 18}]},
     "harpoon_rifle": {"name": "Harpoon-Rifle", "ap": 6, "attacks": 1, "short": 9, "medium": 18, "rules": [{"id": "deadly", "x": 2}]},
     "harpoon_rifle_warmachine": {"name": "Harpoon-Rifle (Warmachine)", "ap": 8, "attacks": 1, "short": 12, "medium": 24, "rules": [{"id": "deadly", "x": 2}]},
-    "net_launcher": {"name": "Net Launcher", "attacks": 1, "ap": 2, "rules": ["ensnare", {"id": "slowing", "x": 2}, {"id": "blast", "x": 3}], "short": 12, "medium": 24},
+    "net_launcher": {"name": "Net Launcher", "attacks": 1, "ap": 2, "rules": ["ensnare", {"id": "shocking", "x": 2}, {"id": "blast", "x": 3}], "short": 12, "medium": 24},
     "torpedoes": {"name": "Torpedoes", "attacks": 1, "ap": 5, "short": 12, "medium": 24, "rules": ["unreliable"]},
     "chainsaw": {"name": "Chainsaw", "attacks": 1, "short": "Melee", "ap": 3},
     "volley_gun": {"name": "Volley Gun", "attacks": 2, "short": 12, "ap": 2, "medium": 24},
@@ -1795,7 +1795,6 @@
       "description": "Units engaged in Melee with a model that has this weapon suffer -1 to Initiative tests when escaping combat for each weapon with this rule.",
       "points": 1
     },
-    "slowing": {"inputs": ["x"], "name": "Slowing", "description": "Enemy units hit by this weapon suffer -X\" of Movement until the end of the round.", "points": ["rule.x", {"multiply": 0.5}]},
     "ambush": {"name": "Ambush", "description": "This unit may be placed in _Ambush Reserves_ before the game begins.", "points": 2},
     "ambush_large": {"name": "Ambush", "description": "This unit may be placed in _Ambush Reserves_ before the game begins.", "points": 10},
     "scout": {
@@ -1865,7 +1864,11 @@
       "description": "This unit may use _Powers_ and attempt to stop _Powers_ each round based on the total number of model with this ability: \n * 1-5 Models: 1 Power \n * 6+ Models: 2 Powers \n * 11+ Models: 3 Powers",
       "points": [2]
     },
-    "shocking": {"name": "Shocking", "inputs": ["x"], "description": "A unit hit by this weapon gains X additional Shock.", "points": ["rule.x", {"multiply": 2}]},
+    "shocking": {
+      "name": "Shocking",
+      "description": "A unit hit by this weapon gains an additional Shock. A unit may only be affected by this rule once per attacking unit.",
+      "points": ["weapon.attacks", {"multiply": 2}]
+    },
     "distracting": {"name": "Distracting", "description": "Enemy units engaged with this unit suffer -1 Strength.", "points": 2},
     "ward": {
       "name": "Ward",

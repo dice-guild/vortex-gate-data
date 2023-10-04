@@ -558,7 +558,7 @@
     "hunting_spear": {"name": "Hunting Spear", "attacks": 1, "ap": 3, "short": 6, "medium": 12, "rules": ["assault"]},
     "stuff_chucker": {"name": "Stuff-Chucker", "attacks": 1, "ap": 2, "short": 18, "medium": 36, "rules": [{"id": "blast", "x": 6}, "indirect"]},
     "sling": {"name": "Sling", "attacks": 1, "short": 9, "medium": 18, "rules": ["assault"]},
-    "frost_breath": {"name": "Frost Breath", "attacks": 1, "short": 9, "medium": 18, "ap": 2, "rules": [{"id": "blast", "x": 6}, {"id": "slowing", "x": 1}]}
+    "frost_breath": {"name": "Frost Breath", "attacks": 1, "short": 9, "medium": 18, "ap": 2, "rules": [{"id": "blast", "x": 6}, {"id": "shocking", "x": 1}]}
   },
   "rules": {
     "great_leader": {
