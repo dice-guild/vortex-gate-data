@@ -222,21 +222,7 @@
       "name": "Ghostly Warriors",
       "description": "Foul spirits amassed into terrifying formations, slaying their foes with rusted weapons.",
       "category": "core",
-      "models": [
-        {
-          "name": "Warrior",
-          "movement": 6,
-          "courage": 5,
-          "shoot": 5,
-          "fight": 5,
-          "defense": 5,
-          "reflexes": 5,
-          "weapons": ["handweapon"],
-          "options": [{"replaceWeapon": ["handweapon"], "withWeapon": ["flail", "great_weapon", "polearm", "great_scythe"], "modelLimit": "all"}],
-          "min": 10,
-          "max": 20
-        }
-      ],
+      "models": [{"name": "Warrior", "movement": 6, "courage": 5, "shoot": 5, "fight": 5, "defense": 5, "reflexes": 5, "weapons": ["handweapon"], "min": 10, "max": 20}],
       "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
     },
     "ghost_marksmen": {
