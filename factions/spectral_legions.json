@@ -238,7 +238,7 @@
       "name": "Glaive Stalkers",
       "description": "Stalking spirits with glaives.",
       "category": "core",
-      "models": [{"name": "Glaive Stalkers", "movement": 8, "courage": 6, "shoot": 5, "fight": 5, "defense": 6, "reflexes": 5, "weapons": [{"id": "polearm", "count": 2}], "min": 4, "max": 8}],
+      "models": [{"name": "Glaive Stalkers", "movement": 8, "courage": 6, "shoot": 5, "fight": 5, "defense": 6, "reflexes": 5, "weapons": [{"id": "polearm", "count": 2}], "min": 5, "max": 10}],
       "keywords": ["Undead", "Infantry"],
       "options": [{"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
     },
