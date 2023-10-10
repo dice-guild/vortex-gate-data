@@ -244,9 +244,32 @@
       "description": "Spirits with accursed crossbows, shooting their foe with eerie accuracy.",
       "category": "core",
       "models": [
-        {"name": "Marksman", "movement": 6, "courage": 5, "shoot": 5, "fight": 5, "defense": 5, "reflexes": 6, "rules": ["crack_shot"], "weapons": ["handweapon", "crossbow"], "min": 5, "max": 20}
+        {"name": "Marksman", "movement": 6, "courage": 5, "shoot": 5, "fight": 5, "defense": 5, "reflexes": 6, "rules": ["crack_shot"], "weapons": ["handweapon", "crossbow"], "min": 5, "max": 10}
       ],
       "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
+    },
+    "stalkers": {
+      "name": "Glaive Stalkers",
+      "description": "Stalking spirits with glaives.",
+      "category": "core",
+      "models": [{"name": "Glaive Stalkers", "movement": 8, "courage": 6, "shoot": 5, "fight": 5, "defense": 6, "reflexes": 5, "weapons": [{"id": "polearm", "count": 2}], "min": 4, "max": 8}],
+      "keywords": ["Undead", "Infantry"],
+      "options": [{"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
+    },
+    "reapers": {
+      "name": "Ghastly Reapers",
+      "description": "Spirits with large scythes, hunting the living.",
+      "category": "elite",
+      "models": [{"name": "Reaper", "movement": 8, "courage": 6, "shoot": 5, "fight": 5, "defense": 7, "reflexes": 5, "weapons": [{"id": "rending_heavy_polearm", "count": 2}], "min": 5, "max": 10}],
+      "keywords": ["Undead", "Infantry"],
+      "options": [{"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
+    },
+    "revenants": {
+      "name": "Cursed Revenants",
+      "description": "These are the spirits of those that met a vicious end, forever cursed to be in endless pain.",
+      "category": "elite",
+      "models": [{"name": "Revenant", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 7, "reflexes": 5, "weapons": [{"id": "great_weapon", "count": 2}], "min": 5, "max": 10}],
+      "keywords": ["Undead", "Infantry"]
     },
     "spirits": {
       "name": "Spirit Swarms",
@@ -325,9 +348,8 @@
           "fight": 5,
           "defense": 11,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 4}, {"id": "impact", "x": 3}],
-          "weapons": [{"id": "great_scythe", "count": 3}, {"id": "hooves_and_teeth", "count": 4}],
-          "options": [{"addRule": ["banner"]}],
+          "rules": [{"id": "wounds", "x": 4}, {"id": "impact", "x": 3}, "fear"],
+          "weapons": [{"id": "great_scythe", "count": 8}, {"id": "hooves_and_teeth", "count": 6}],
           "min": 1,
           "max": 1
         }
