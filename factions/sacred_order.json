@@ -121,7 +121,7 @@
       "name": "Herald",
       "description": "A herald of the order, inspiring those around them with a blessed banner.",
       "category": "elite",
-      "rules": ["support", "banner_of_focus", {"id": "wounds", "x": 2}],
+      "rules": ["support", "striker", {"id": "wounds", "x": 2}],
       "models": [
         {
           "name": "Herald",
@@ -132,7 +132,6 @@
           "defense": 7,
           "reflexes": 6,
           "weapons": ["combat_rifle", {"id": "light_handweapon", "count": 2}],
-          "options": [{"replaceRule": "banner_of_focus", "withRule": ["banner_of_justice", "banner_of_wrath"], "limit": 1}, {"addRule": [{"id": "ward", "x": 1}]}],
           "min": 1,
           "max": 1
         }
