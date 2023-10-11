@@ -520,7 +520,7 @@
         {"modelLimit": 1, "addRule": ["banner"]}
       ]
     },
-    "sacred _juggernaut": {
+    "sacred_juggernaut": {
       "name": "Sacred Juggernaut",
       "description": "A powerful mech suit piloted by a zealous soldier.",
       "category": "rare",
