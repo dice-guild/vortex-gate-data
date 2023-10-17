@@ -1885,7 +1885,7 @@
     "hover": {"name": "Hover", "description": "This model may ignore difficult terrain and obstacles of height 2\" or less when moving.", "points": 1},
     "agile": {"name": "Agile", "description": "This model may ignore low obstacles of 1\" or less in height when moving.", "points": 0.5},
     "walker": {"name": "Walker", "description": "This model may ignore low obstacles of 2\" or less in height when moving.", "points": 5},
-    "fearless": {"name": "Fearless", "description": "This unit requires an extra shock to take break tests.", "points": 1},
+    "fearless": {"name": "Fearless", "description": "This unit gains +1 Courage when taking Shock tests.", "points": 1},
     "resist": {"name": "Protect", "inputs": ["x"], "description": "This unit gets +X to its Resist rolls.", "points": ["rule.x", {"multiply": 2}]},
     "open_topped": {
       "name": "Open-Topped",
