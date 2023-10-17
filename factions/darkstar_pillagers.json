@@ -751,7 +751,7 @@
           "fight": 5,
           "defense": 11,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 6}, {"id": "heavy_impact", "x": 6}, "hover", "vulnerable_side_rear"],
+          "rules": [{"id": "wounds", "x": 5}, {"id": "heavy_impact", "x": 6}, "hover", "vulnerable_side_rear"],
           "weapons": [{"id": "twin_fusion_cannon", "mount": ["Front"]}, {"id": "twin_barb_rifle", "mount": ["Front"]}],
           "options": [
             {
