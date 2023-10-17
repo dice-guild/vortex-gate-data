@@ -257,7 +257,7 @@
       ]
     },
     "flayers": {
-      "name": "Flayer Constructs",
+      "name": "Flayers",
       "description": "Deadly soldiers clad in the flayed skin of their fallen enemies.",
       "category": "core",
       "models": [
