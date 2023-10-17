@@ -148,28 +148,27 @@
       ]
     },
     "command_arc": {
-      "name": "Hover Command Tank",
+      "name": "Hover Command Arc",
       "description": "A floating command vehicle.",
       "category": "hero",
       "keywords": ["Vehicle"],
       "models": [
         {
-          "name": "Hover Command Tank",
+          "name": "Hover Command Arc",
           "movement": 8,
           "courage": 7,
           "shoot": 7,
           "fight": 7,
           "defense": 10,
           "reflexes": 6,
-          "rules": ["hover", {"id": "impact", "x": 3}, "leader", "tactician", {"id": "wounds", "x": 5}],
+          "rules": ["hover", {"id": "impact", "x": 3}, "tactician_aura", {"id": "wounds", "x": 5}],
           "weapons": ["force_beam", {"id": "energy_handweapon", "count": 3}, {"id": "gauss_beamer", "mount": ["Front"]}],
           "options": [
             {
               "replaceWeapon": {"id": "energy_handweapon", "count": 3},
               "withWeapon": [{"id": "energy_powerweapon", "count": 3}, {"id": "energy_greatweapon", "count": 3}, {"id": "energy_polearm", "count": 3}]
             },
-            {"replaceWeapon": {"id": "gauss_beamer", "mount": ["Front"]}, "withWeapon": {"id": "tesla_cannon", "mount": ["Front"]}},
-            {"addRule": "regeneration_orb"}
+            {"replaceWeapon": {"id": "gauss_beamer", "mount": ["Front"]}, "withWeapon": {"id": "tesla_cannon", "mount": ["Front"]}}
           ],
           "min": 1,
           "max": 1
@@ -224,14 +223,14 @@
       "models": [
         {
           "name": "Warrior",
-          "movement": 5,
           "courage": 5,
+          "movement": 5,
           "shoot": 5,
           "fight": 5,
           "defense": 7,
           "reflexes": 4,
-          "weapons": ["combat_rifle", "handweapon"],
-          "options": [{"replaceWeapon": "combat_rifle", "withWeapon": ["heavy_combat_rifle", "tesla_rifle", "reaper_beamer"], "modelLimit": "all"}],
+          "weapons": ["gauss_rifle", "handweapon"],
+          "options": [{"replaceWeapon": "gauss_rifle", "withWeapon": ["reaper_beamer"]}],
           "min": 10,
           "max": 20
         }
@@ -239,20 +238,19 @@
     },
     "eternals": {
       "name": "Eternals",
-      "description": "A squad of mechanical soldiers, wielding deadly weaponry.",
-      "category": "elite",
+      "description": "Veteran machine soldiers, wielding deadly weaponry.",
+      "category": "core",
       "models": [
         {
           "name": "Eternal",
-          "movement": 5,
           "courage": 6,
+          "movement": 5,
           "shoot": 6,
           "fight": 6,
           "defense": 8,
           "reflexes": 5,
-          "rules": ["relentless"],
-          "weapons": ["tesla_rifle", {"id": "handweapon", "count": 2}],
-          "options": [{"replaceWeapon": "tesla_rifle", "withWeapon": ["heavy_combat_rifle"], "modelLimit": "all"}],
+          "weapons": ["heavy_gauss_rifle", {"id": "handweapon", "count": 2}],
+          "options": [{"replaceWeapon": "heavy_gauss_rifle", "withWeapon": ["tesla_rifle"]}],
           "min": 5,
           "max": 10
         }
@@ -535,7 +533,7 @@
     "hypersonic_fighter": {
       "name": "Hypersonic Fighter",
       "description": "A very fast and highly advanced fighter craft.",
-      "category": "elite",
+      "category": "rare",
       "keywords": ["Vehicle", "Aircraft"],
       "models": [
         {
@@ -631,9 +629,9 @@
           "courage": 6,
           "shoot": 6,
           "fight": 6,
-          "defense": 13,
+          "defense": 12,
           "reflexes": 5,
-          "rules": ["hover", "invasion_portal", "vulnerable_rear", {"id": "wounds", "x": 6}],
+          "rules": ["hover", "invasion_portal", "vulnerable_rear", {"id": "wounds", "x": 5}],
           "weapons": [
             "heavy_antimatter_cannon",
             "gravity_pulse",
@@ -679,9 +677,8 @@
           "fight": 7,
           "defense": 10,
           "reflexes": 6,
-          "rules": ["fly", "leader", {"id": "power", "x": 2}, {"id": "wounds", "x": 5}],
-          "weapons": [{"id": "dimensional_strikes", "count": 5}],
-          "options": [{"replaceRule": {"id": "power", "x": 2}, "withRule": [{"id": "power", "x": 3}]}],
+          "rules": ["fly", {"id": "power", "x": 2}, {"id": "wounds", "x": 4}],
+          "weapons": [{"id": "energy_powerweapon", "count": 5}],
           "min": 1,
           "max": 1
         }
@@ -699,9 +696,9 @@
           "courage": 7,
           "shoot": 6,
           "fight": 6,
-          "defense": 13,
+          "defense": 12,
           "reflexes": 5,
-          "rules": ["hover", {"id": "power", "x": 3}, {"id": "psychic_prowess", "x": 2}, "vulnerable_rear", {"id": "wounds", "x": 6}],
+          "rules": ["hover", {"id": "power", "x": 3}, {"id": "psychic_prowess", "x": 2}, "vulnerable_rear", {"id": "wounds", "x": 5}],
           "weapons": ["tesla_field", "gravity_pulse"],
           "options": [{"addRule": [{"name": "Orbital Drop", "id": "ambush_large"}]}],
           "min": 1,
@@ -787,6 +784,8 @@
     "heavy_reaper_cannon": {"name": "Heavy Reaper Cannon", "attacks": 1, "ap": 4, "short": 18, "medium": 36, "rules": ["heavy", {"id": "blast", "x": 3}]},
     "twin_heavy_reaper_cannon": {"name": "Twin Heavy Reaper Cannon", "attacks": 2, "ap": 4, "short": 18, "medium": 36, "rules": ["heavy", {"id": "blast", "x": 3}]},
     "gauss_rifle_array": {"name": "Gauss Rifle Array", "attacks": 3, "ap": 1, "short": 12, "medium": 24, "rules": ["rapid_fire"]},
+    "gauss_rifle": {"name": "Gauss Rifle", "attacks": 1, "ap": 1, "short": 12, "medium": 24, "rules": ["rapid_fire"]},
+    "heavy_gauss_rifle": {"name": "Heavy Gauss Rifle", "attacks": 1, "ap": 2, "short": 18, "medium": 36, "rules": ["heavy", "rapid_fire"]},
     "twin_heavy_gauss_rifle": {"name": "Twin Heavy Gauss Rifle", "attacks": 2, "ap": 3, "short": 18, "medium": 36, "rules": ["heavy", "rapid_fire"]},
     "gauss_beamer": {"name": "Gauss Beamer", "attacks": 1, "ap": 4, "short": 12, "medium": 24},
     "heavy_gauss_beamer": {"name": "Heavy Gauss Beamer", "attacks": 1, "ap": 8, "short": 18, "medium": 36, "rules": ["heavy", {"id": "deadly", "x": 1}]},
