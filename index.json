@@ -1792,7 +1792,7 @@
     "fly": {"name": "Fly", "description": "This model may ignore terrain and other models without the Fly special rule when moving.", "points": 2},
     "ensnare": {
       "name": "Ensnare",
-      "description": "Units engaged in Melee with a model that has this weapon suffer -2 to Initiative tests when escaping combat for each weapon with this rule.",
+      "description": "Units engaged in Melee with a model that has this weapon suffer -2 to Initiative tests when escaping combat.",
       "points": 1
     },
     "ambush": {"name": "Ambush", "description": "This unit may be placed in _Ambush Reserves_ before the game begins.", "points": 2},
