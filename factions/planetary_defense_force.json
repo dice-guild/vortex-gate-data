@@ -46,7 +46,7 @@
           "fight": 6,
           "defense": 6,
           "reflexes": 6,
-          "movement": 6,
+          "movement": 8,
           "weapons": ["pistol", {"id": "light_handweapon", "count": 3}],
           "options": [
             {"replaceWeapon": "pistol", "withWeapon": ["heavy_pistol", "plasma_pistol"]},
