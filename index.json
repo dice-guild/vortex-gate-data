@@ -1302,11 +1302,11 @@
       "description": "Up to half of any force's units, one point for each may be placed in _Outflanking Reserves_ instead of deployed on the field.",
       "cost": "1/per"
     },
-    "firing_ports": {
+    "combined_arms": {
       "name": "Combined Arms",
       "subfactions": ["mounted_focus"],
       "phase": "activation",
-      "description": "Use when activating a unit within 6\" of a friendly _Transport_ unit. That unit may re-roll failed Accuracy and Strength tests of 9+.",
+      "description": "Use when _Shooting_ or _Fighting_ with a unit within 6\" of a friendly _Transport_ unit. That unit may re-roll failed Accuracy and Strength tests of 9+ for that action.",
       "flavor": "Mechanized forces usually operate in close proximity of their transport vehicles.",
       "cost": 1
     },
