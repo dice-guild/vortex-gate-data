@@ -1818,7 +1818,7 @@
           "fight": 7,
           "defense": 12,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 5}, "leader", {"id": "power", "x": 1}, "tactician", "vulnerable_rear"],
+          "rules": [{"id": "wounds", "x": 5}, {"id": "power", "x": 1}, "tactician_aura", "vulnerable_rear"],
           "weapons": [{"id": "walker_fist", "count": 5}],
           "options": [
             {"replaceWeapon": {"id": "walker_fist", "count": 5}, "withWeapon": [{"id": "energy_greathammer", "count": 5}, {"id": "energy_greatsword", "count": 5}]},
