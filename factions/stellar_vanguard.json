@@ -645,7 +645,7 @@
           "weapons": ["heavy_combat_rifle", "handweapon"],
           "options": [
             {"replaceWeapon": ["heavy_combat_rifle"], "withWeapon": ["combi_rifle", "twin_combat_rifle"]},
-            {"replaceWeapon": ["heavy_combat_rifle", "handweapon"], "withWeapon": ["heavy_pistol", {"id": "handweapon", "count": 2}]},
+            {"replaceWeapon": ["heavy_combat_rifle", "handweapon"], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 2}]]},
             {"replaceWeapon": "heavy_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol", "gravity_pistol", "thermal_pistol"]},
             {
               "replaceWeapon": {"id": "handweapon", "count": 2},
@@ -663,7 +663,6 @@
           "withWeapon": ["heavy_machinegun", "missile_launcher", "laser_cannon", "fusion_cannon", "plasma_cannon", "gravity_cannon", "heavy_flamethrower", "thermal_lance", "autocannon"],
           "modelLimit": "1/5"
         },
-        {"addWeapon": "grenade_launcher_attachment", "modelLimit": "1/5"},
         {"addRule": "multi_scanner", "modelLimit": 1}
       ]
     },
