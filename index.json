@@ -1419,7 +1419,7 @@
       "name": "Stealth Move",
       "phase": "activation",
       "flavor": "Moving quietly is sometimes key in advancing on the enemy.",
-      "description": "Use this strategy when a unit performs a _Move_ action. Enemy units may not perform reactions to that _Move_ action.",
+      "description": "Use this strategy when a unit performs a _Move_ or Charge action. Enemy units may not perform reactions to that action.",
       "cost": 1
     },
     "moving_fire": {
