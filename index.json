@@ -768,12 +768,7 @@
     },
     "incinerating_beam": {"name": "Incinerating Beam", "description": "Target enemy unit within 12\" takes 1 hits with AP(8).", "charge": 7, "category": "solar"},
     "supernova": {"name": "Supernova", "description": "Roll a d10 for each enemy unit within 6\". On a roll of 5 or lower the unit hit takes 2 hits with AP(4).", "charge": 5, "category": "solar"},
-    "moonlight_blessing": {
-      "name": "Moonlight Blessing",
-      "description": "Target friendly unit within 12\" gains +1 Save until the end of the turn.",
-      "charge": 5,
-      "category": "lunar"
-    },
+    "moonlight_blessing": {"name": "Moonlight Blessing", "description": "Target friendly unit within 12\" gains +1 Save until the end of the turn.", "charge": 5, "category": "lunar"},
     "detect_weakness": {"name": "Detect Weakness", "description": "Target enemy unit within 12\" must re-roll one succesful die on its next Save test.", "charge": 6, "category": "lunar"},
     "heightened_senses": {"name": "Heightened Senses", "description": "Target friendly unit within 12\" has +1 Initiative until the of the turn.", "charge": 7, "category": "lunar"}
   },
@@ -1024,7 +1019,7 @@
     "razor_talons": {"name": "Razor Talons", "attacks": 1, "short": "Melee", "ap": 1},
     "piercing_claws": {"name": "Piercing Claws", "attacks": 1, "short": "Melee", "ap": 1, "rules": ["rending"]},
     "ogre_maul": {"name": "Ogre Maul", "attacks": 2, "ap": 5, "short": "Melee"},
-    "rider_lance": {"name": "Rider Lance", "attacks": 1, "ap": 3, "short": "Melee", "rules": [{"id": "impact", "x": 1}]},
+    "rider_lance": {"name": "Rider Lance", "attacks": 1, "ap": 3, "short": "Melee", "rules": ["lance"]},
     "walker_chainsaw": {"name": "Walker Chainsaw", "attacks": 2, "ap": 2, "short": "Melee"},
     "axe_halberd": {"name": "Axe-Halberd", "attacks": 1, "ap": 3, "short": "Melee"},
     "assault_drill": {"name": "Assault Drill", "attacks": 1, "ap": 6, "short": "Melee"},
@@ -1792,11 +1787,7 @@
     },
     "fear": {"name": "Fear", "description": "Enemy units within 6\" get -1 Courage.", "points": 2},
     "fly": {"name": "Fly", "description": "This model may ignore terrain and other models without the Fly special rule when moving.", "points": 2},
-    "ensnare": {
-      "name": "Ensnare",
-      "description": "Units engaged in Melee with a model that has this weapon suffer -2 to Initiative tests when escaping combat.",
-      "points": 1
-    },
+    "ensnare": {"name": "Ensnare", "description": "Units engaged in Melee with a model that has this weapon suffer -2 to Initiative tests when escaping combat.", "points": 1},
     "ambush": {"name": "Ambush", "description": "This unit may be placed in _Ambush Reserves_ before the game begins.", "points": 2},
     "ambush_large": {"name": "Ambush", "description": "This unit may be placed in _Ambush Reserves_ before the game begins.", "points": 10},
     "scout": {

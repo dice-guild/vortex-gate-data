@@ -648,7 +648,7 @@
       "name": "Rider Squad",
       "description": "A team of operatives mounted on either horseback or motorcycle for more mobility.",
       "category": "elite",
-      "keywords": ["Biker", "Mounted"],
+      "keywords": ["Mounted"],
       "rules": [{"id": "impact", "x": 1}, {"id": "wounds", "x": 2}],
       "options": [{"replaceWeapon": {"id": "light_handweapon", "count": 2}, "withWeapon": ["rider_lance"]}],
       "models": [

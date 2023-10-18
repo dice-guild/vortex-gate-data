@@ -32,6 +32,34 @@
         }
       ]
     },
+    "mounted_commander": {
+      "name": "Mounted Commander",
+      "description": "Mounted commander of the planetary defense force.",
+      "category": "hero",
+      "rules": [{"id": "leader", "x": "Infantry"}, {"id": "tactician", "x": 2}, {"id": "wounds", "x": 3}],
+      "keywords": ["Mounted"],
+      "models": [
+        {
+          "name": "Mounted Commander",
+          "courage": 7,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 6,
+          "reflexes": 6,
+          "movement": 6,
+          "weapons": ["pistol", {"id": "light_handweapon", "count": 3}],
+          "options": [
+            {"replaceWeapon": "pistol", "withWeapon": ["heavy_pistol", "plasma_pistol"]},
+            {
+              "replaceWeapon": {"id": "light_handweapon", "count": 3},
+              "withWeapon": [{"id": "energy_handweapon", "count": 3}, {"id": "energy_powerweapon", "count": 3}, {"id": "handweapon", "count": 3}]
+            }
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
     "stormtrooper_commander": {
       "name": "Stormtrooper Commander",
       "description": "Foot infantry commander of the elite storm troopers.",
@@ -227,52 +255,6 @@
           "min": 9,
           "max": 19
         }
-      ],
-      "subfactions": ["siege_focus"]
-    },
-    "void_veteran_squad": {
-      "name": "Void Veteran Infantry Squad",
-      "description": "A heavily armored squad that has seen combat and survived.",
-      "category": "elite",
-      "models": [
-        {
-          "name": "Void Veteran Sergeant",
-          "courage": 6,
-          "shoot": 6,
-          "fight": 5,
-          "defense": 6,
-          "reflexes": 5,
-          "movement": 6,
-          "weapons": ["thermal_rifle", "light_handweapon"],
-          "options": [
-            {"replaceWeapon": ["thermal_rifle", "light_handweapon"], "withWeapon": [["pistol", {"id": "light_handweapon", "count": 2}]]},
-            {"replaceWeapon": "pistol", "withWeapon": ["heavy_pistol", "plasma_pistol"]},
-            {
-              "replaceWeapon": {"id": "light_handweapon", "count": 2},
-              "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "energy_powerweapon", "count": 2}, {"id": "handweapon", "count": 2}]
-            }
-          ],
-          "min": 1,
-          "max": 1
-        },
-        {
-          "name": "Void Veteran Trooper",
-          "courage": 6,
-          "shoot": 6,
-          "fight": 5,
-          "defense": 6,
-          "reflexes": 5,
-          "movement": 6,
-          "weapons": ["thermal_rifle", "light_handweapon"],
-          "options": [{"addRule": "field_radio", "modelLimit": 1}],
-          "min": 4,
-          "max": 9
-        }
-      ],
-      "subfactions": ["siege_focus"],
-      "options": [
-        {"replaceWeapon": "thermal_rifle", "withWeapon": ["gatling_rifle", "flamethrower"], "modelLimit": "all"},
-        {"replaceWeapon": ["thermal_rifle", "light_handweapon"], "withWeapon": [[{"id": "energy_handweapon", "count": 2}, "pistol"]], "modelLimit": "all"}
       ]
     },
     "veteran_squad": {
@@ -525,8 +507,8 @@
       "name": "Rider Squad",
       "description": "A squad of soldiers mounted on either horseback or motorcycle for more mobility.",
       "category": "elite",
-      "keywords": ["Biker", "Mounted"],
-      "rules": [{"id": "impact", "x": 1}, {"id": "wounds", "x": 2}],
+      "keywords": ["Mounted"],
+      "rules": [{"id": "wounds", "x": 2}],
       "options": [{"replaceWeapon": {"id": "light_handweapon", "count": 2}, "withWeapon": ["rider_lance"]}],
       "models": [
         {
@@ -534,7 +516,7 @@
           "courage": 5,
           "shoot": 5,
           "fight": 5,
-          "defense": 5,
+          "defense": 6,
           "movement": 8,
           "reflexes": 5,
           "weapons": ["pistol", {"id": "light_handweapon", "count": 2}],
@@ -551,7 +533,7 @@
           "shoot": 5,
           "fight": 5,
           "movement": 8,
-          "defense": 5,
+          "defense": 6,
           "reflexes": 5,
           "weapons": ["pistol", {"id": "light_handweapon", "count": 2}],
           "options": [{"replaceWeapon": "pistol", "withWeapon": ["flamethrower", "grenade_launcher", "fusion_rifle", "plasma_rifle"], "modelLimit": 4}, {"addRule": "field_radio", "modelLimit": 1}],
