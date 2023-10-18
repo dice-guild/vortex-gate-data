@@ -1484,7 +1484,7 @@
     "extra_armor": {"name": "Extra Armor", "description_short": "Save +1", "hidden": true, "points": 12},
     "war_banner": {"name": "War Banner", "description": "This model's unit gains +1 AP on all Melee weapons.", "points": 10},
     "brr": {"name": "Big Red Button", "hidden": true, "description_short": "Movement +2\"", "points": 6},
-    "ultra_armor": {"name": "Ultra Armor", "hidden": true, "description_short": "Save +1, Movement -1\"", "points": 5, "description": "Save +1, Movement -1\""},
+    "ultra_armor": {"name": "Ultra Armor", "hidden": true, "description_short": "Save +1, Movement -1\"", "points": 10, "description": "Save +1, Movement -1\""},
     "shouty": {"name": "Shouty", "description": "This model may use Goblin Tactics an additional time per turn", "points": 10},
     "quick_thinker": {"name": "Quick Thinker", "description": "While this model is on the table you gain 1 additional Strategy Point per round.", "points": 20}
   },

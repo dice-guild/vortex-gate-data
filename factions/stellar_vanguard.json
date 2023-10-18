@@ -633,7 +633,6 @@
       "name": "Gravite Vanguard Squad",
       "description": "Elite trained marines in heavy gravite armor.",
       "category": "core",
-      "rules": ["ambush"],
       "models": [
         {
           "name": "Gravite Vanguard Sergeant",
@@ -643,31 +642,20 @@
           "fight": 6,
           "defense": 9,
           "reflexes": 6,
-          "weapons": ["heavy_combat_rifle", "energy_handweapon"],
+          "weapons": ["heavy_combat_rifle", "handweapon"],
           "options": [
             {"replaceWeapon": ["heavy_combat_rifle"], "withWeapon": ["combi_rifle", "twin_combat_rifle"]},
-            {"replaceWeapon": ["heavy_combat_rifle", "energy_handweapon"], "withWeapon": [["heavy_pistol", {"id": "energy_handweapon", "count": 2}]]},
+            {"replaceWeapon": ["heavy_combat_rifle", "handweapon"], "withWeapon": ["heavy_pistol", {"id": "handweapon", "count": 2}]},
             {"replaceWeapon": "heavy_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol", "gravity_pistol", "thermal_pistol"]},
             {
-              "replaceWeapon": {"id": "energy_handweapon", "count": 2},
-              "withWeapon": [{"id": "energy_powerweapon", "count": 2}, {"id": "twin_energy_handweapon", "count": 3}, {"id": "energy_greatweapon", "count": 2}, {"id": "energy_polearm", "count": 2}]
+              "replaceWeapon": {"id": "handweapon", "count": 2},
+              "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "energy_powerweapon", "count": 2}, {"id": "twin_energy_handweapon", "count": 3}, {"id": "energy_greatweapon", "count": 2}]
             }
           ],
           "min": 1,
           "max": 1
         },
-        {
-          "name": "Gravite Vanguard Marine",
-          "movement": 5,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 9,
-          "reflexes": 6,
-          "weapons": ["heavy_combat_rifle", "energy_handweapon"],
-          "min": 4,
-          "max": 9
-        }
+        {"name": "Gravite Vanguard Marine", "movement": 5, "courage": 6, "shoot": 6, "fight": 6, "defense": 9, "reflexes": 6, "weapons": ["heavy_combat_rifle", "handweapon"], "min": 4, "max": 9}
       ],
       "options": [
         {
@@ -675,10 +663,8 @@
           "withWeapon": ["heavy_machinegun", "missile_launcher", "laser_cannon", "fusion_cannon", "plasma_cannon", "gravity_cannon", "heavy_flamethrower", "thermal_lance", "autocannon"],
           "modelLimit": "1/5"
         },
-        {"addWeapon": ["rocket_pod"], "modelLimit": "1/5"},
-        {"addRule": "jetpack", "modelLimit": "all"},
-        {"addRule": "multi_scanner", "modelLimit": 1},
-        {"addRule": "shield"}
+        {"addWeapon": "grenade_launcher_attachment", "modelLimit": "1/5"},
+        {"addRule": "multi_scanner", "modelLimit": 1}
       ]
     },
     "scout_squad": {
@@ -1040,7 +1026,8 @@
     "gravite_assault_squad": {
       "name": "Gravite Assault Squad",
       "description": "Marines clad in heavy gravite armor equipped to fight in close combat.",
-      "category": "core",
+      "category": "elite",
+      "keywords": ["Infantry"],
       "models": [
         {
           "name": "Gravite Assault Marine",
@@ -1051,27 +1038,81 @@
           "defense": 9,
           "reflexes": 6,
           "rules": ["ambush"],
-          "weapons": [{"id": "heavy_pistol", "count": 2}, {"id": "energy_handweapon", "count": 2}],
+          "weapons": ["storm_rifle", {"id": "energy_handweapon", "count": 2}],
           "options": [
             {
-              "replaceWeapon": [{"id": "heavy_pistol", "count": 2}],
+              "replaceWeapon": "storm_rifle",
               "withWeapon": [
-                {"id": "plasma_pistol", "count": 2},
-                {"id": "fusion_pistol", "count": 2},
-                {"id": "flamethrower_pistol", "count": 2},
-                {"id": "gravity_pistol", "count": 2},
-                {"id": "thermal_pistol", "count": 2},
-                {"id": "storm_rifle", "count": 2}
+                "combi_rifle",
+                "twin_autocannon",
+                "thermal_lance",
+                "gravity_cannon",
+                "fusion_cannon",
+                "plasma_cannon",
+                "gatling_gun",
+                "missile_launcher",
+                "heavy_flamethrower",
+                "plasma_repeater",
+                "thermal_carbine"
               ]
             },
+            {"replaceWeapon": ["storm_rifle", {"id": "energy_handweapon", "count": 2}], "withWeapon": [{"id": "twin_energy_handweapon", "count": 4}]},
             {
               "replaceWeapon": {"id": "energy_handweapon", "count": 2},
-              "withWeapon": [{"id": "energy_powerweapon", "count": 2}, {"id": "twin_energy_handweapon", "count": 3}, {"id": "energy_greatweapon", "count": 2}, {"id": "energy_polearm", "count": 2}]
+              "withWeapon": [{"id": "energy_powerweapon", "count": 2}, {"id": "twin_energy_handweapon", "count": 3}, {"id": "energy_greatweapon", "count": 2}]
             },
             {"addWeapon": ["rocket_pod"], "modelLimit": "1/5"},
-            {"addRule": "shield"},
-            {"addRule": "jetpack", "modelLimit": "all"}
+            {"addRule": ["shield"]}
           ],
+          "min": 5,
+          "max": 10
+        }
+      ]
+    },
+    "honor_guard": {
+      "name": "Honor Guard",
+      "description": "Marines clad in golden armor and wings with dangerous melee weapons.",
+      "category": "elite",
+      "subfactions": ["assault_focus"],
+      "models": [
+        {
+          "name": "Honor Guard",
+          "courage": 6,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 9,
+          "reflexes": 6,
+          "movement": 7,
+          "rules": ["fly"],
+          "weapons": ["storm_rifle", {"id": "energy_handweapon", "count": 3}],
+          "options": [
+            {"replaceWeapon": "storm_rifle", "withWeapon": ["flamethrower_pistol", "plasma_pistol", "fusion_pistol", "thermal_pistol"]},
+            {
+              "replaceWeapon": {"id": "energy_handweapon", "count": 3},
+              "withWeapon": [{"id": "energy_powerweapon", "count": 3}, {"id": "twin_energy_handweapon", "count": 4}, {"id": "energy_greatweapon", "count": 3}]
+            }
+          ],
+          "min": 5,
+          "max": 10
+        }
+      ]
+    },
+    "werewolves": {
+      "name": "Werewolves",
+      "description": "Marines that are half marine and half werewolf.",
+      "category": "elite",
+      "subfactions": ["assault_focus"],
+      "models": [
+        {
+          "name": "Werewolf",
+          "courage": 6,
+          "shoot": 5,
+          "fight": 6,
+          "defense": 8,
+          "reflexes": 6,
+          "movement": 8,
+          "weapons": [{"id": "twin_energy_handweapon", "count": 3}],
+          "options": [{"replaceWeapon": {"id": "twin_energy_handweapon", "count": 3}, "withWeapon": [[{"id": "energy_powerweapon", "count": 2}, "shield"]]}, {"addWeapon": "grenade_launcher"}],
           "min": 5,
           "max": 10
         }
@@ -1146,6 +1187,27 @@
         {"addRule": ["jetpack"], "modelLimit": "all"}
       ]
     },
+    "gravite_blade_squad": {
+      "name": "Gravite Blade Squad",
+      "description": "Marines wearing experimental Gravite armor with heavy swords and shields.",
+      "category": "elite",
+      "options": [{"addRule": "banner", "modelLimit": 1}],
+      "models": [
+        {
+          "name": "Gravite Blade Marine",
+          "courage": 6,
+          "movement": 5,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 9,
+          "reflexes": 6,
+          "rules": [{"id": "wounds", "x": 2}],
+          "weapons": ["heavy_pistol", {"id": "energy_handweapon", "count": 3}],
+          "min": 3,
+          "max": 6
+        }
+      ]
+    },
     "elimination_squad": {
       "name": "Elimination Squad",
       "description": "Elite trained marines with long ranged weapons, tasked with eliminating threats.",
@@ -1167,51 +1229,6 @@
         }
       ]
     },
-    "gravite_veteran_squad": {
-      "name": "Gravite Veteran Squad",
-      "description": "Elite veteran marines in heavy gravite armor.",
-      "category": "elite",
-      "models": [
-        {
-          "name": "Gravite Veteran Marine",
-          "movement": 5,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 9,
-          "reflexes": 6,
-          "rules": ["ambush", "furious"],
-          "weapons": ["heavy_combat_rifle", {"id": "handweapon", "count": 2}],
-          "options": [
-            {"replaceWeapon": ["heavy_combat_rifle"], "withWeapon": ["combi_rifle", "twin_combat_rifle", "plasma_rifle", "fusion_rifle", "thermal_rifle", "flamethrower", "gravity_rifle"]},
-            {
-              "replaceWeapon": "heavy_combat_rifle",
-              "withWeapon": ["heavy_machinegun", "missile_launcher", "laser_cannon", "fusion_cannon", "plasma_cannon", "gravity_cannon", "heavy_flamethrower", "thermal_lance", "autocannon"],
-              "modelLimit": "1/3"
-            },
-            {"replaceWeapon": ["heavy_combat_rifle", "handweapon"], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 2}]]},
-            {"replaceWeapon": "heavy_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol", "gravity_pistol", "thermal_pistol"]},
-            {
-              "replaceWeapon": {"id": "handweapon", "count": 2},
-              "withWeapon": [
-                {"id": "energy_handweapon", "count": 2},
-                {"id": "energy_powerweapon", "count": 2},
-                {"id": "twin_energy_handweapon", "count": 3},
-                {"id": "energy_greatweapon", "count": 2},
-                {"id": "energy_polearm", "count": 2}
-              ]
-            },
-            {"addWeapon": ["rocket_pod"], "modelLimit": "1/3"},
-            {"addRule": "jetpack", "modelLimit": "all"},
-            {"addRule": "multi_scanner", "modelLimit": 1},
-            {"addRule": "banner", "modelLimit": 1},
-            {"addRule": "shield"}
-          ],
-          "min": 3,
-          "max": 6
-        }
-      ]
-    },
     "gravite_devastation_squad": {
       "name": "Gravite Devastation Squad",
       "description": "Elite trained marines in heavy gravite armor armed to the teeth with advanced weaponry.",
@@ -1219,19 +1236,27 @@
       "models": [
         {
           "name": "Gravite Devastation Marine",
-          "movement": 5,
           "courage": 6,
+          "movement": 5,
           "shoot": 6,
           "fight": 6,
           "defense": 9,
           "reflexes": 6,
-          "rules": ["ambush"],
-          "weapons": ["heavy_flamethrower", "energy_handweapon"],
+          "rules": [{"id": "wounds", "x": 2}],
+          "weapons": ["twin_assault_carbine", {"id": "energy_powerweapon", "count": 2}],
           "options": [
             {
-              "replaceWeapon": "heavy_flamethrower",
-              "withWeapon": ["heavy_machinegun", "missile_launcher", "laser_cannon", "fusion_cannon", "plasma_cannon", "gravity_cannon", "thermal_lance", "autocannon", "gatling_gun"]
+              "replaceWeapon": ["twin_assault_carbine", {"id": "energy_powerweapon", "count": 2}],
+              "withWeapon": [
+                ["fusion_cannon", {"id": "heavy_handweapon", "count": 2}],
+                ["twin_plasma_carbine", {"id": "energy_powerweapon", "count": 2}],
+                ["twin_flamethrower", {"id": "energy_powerweapon", "count": 2}],
+                ["autocannon", {"id": "heavy_handweapon", "count": 2}],
+                ["heavy_machinegun", {"id": "heavy_handweapon", "count": 2}]
+              ],
+              "modelLimit": "all"
             },
+            {"addWeapon": "grenade_launcher", "modelLimit": "all"},
             {"addRule": ["jetpack"], "modelLimit": "all"}
           ],
           "min": 3,
