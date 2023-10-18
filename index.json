@@ -1303,23 +1303,23 @@
       "cost": "1/per"
     },
     "firing_ports": {
-      "name": "Firing Ports",
-      "subfactions": ["mechanized_focus"],
+      "name": "Combined Arms",
+      "subfactions": ["mounted_focus"],
       "phase": "activation",
-      "description": "Use when activating a unit embarked in a Transport. That unit may make a single _Shoot_ action.",
-      "flavor": "Mechanized forces usually have modified firing ports to allow infantry to fire their weapons while embarked.",
+      "description": "Use when activating a unit within 6\" of a friendly _Transport_ unit. That unit may re-roll failed Accuracy and Strength tests of 9+.",
+      "flavor": "Mechanized forces usually operate in close proximity of their transport vehicles.",
       "cost": 1
     },
     "rapid_disembark": {
       "name": "Rapid Disembark",
-      "subfactions": ["mechanized_focus"],
+      "subfactions": ["mounted_focus"],
       "phase": "activation",
       "description": "Use when activating a transport _Vehicle_ unit. At any time during this unit's activation, all embarked units may make a free _Move_ action to disembark. This may be used even after the transport has taken 2 _Move_ actions.",
       "flavor": "Rapidly disembarking is a difficult feat only for those expertly trained.",
       "cost": 1
     },
     "well_built": {
-      "subfactions": ["mechanized_focus"],
+      "subfactions": ["mounted_focus"],
       "phase": "activation",
       "name": "Well-Built",
       "flavor": "Expertly built and well-maintained, this vehicle is prepared for battle.",
