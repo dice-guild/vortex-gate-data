@@ -683,7 +683,7 @@
     "bio_eruptor": {"name": "Bio-Eruptor", "attacks": 3, "short": 24, "medium": 48, "ap": 8, "rules": ["heavy", {"id": "deadly", "x": 1}]},
     "spore_cannon": {"name": "Spore Cannon", "attacks": 1, "short": 24, "medium": 48, "ap": 7, "rules": [{"id": "deadly", "x": 1}, "heavy", "indirect"]},
     "web_cannon": {"name": "Web Cannon", "attacks": 1, "short": 12, "medium": 24, "ap": 2, "rules": [{"id": "shocking", "x": 2}, {"id": "blast", "x": 3}]},
-    "impaler_rifle": {"name": "Impaler Rifle", "attacks": 1, "short": 12, "medium": 24, "ap": 4, "rules": ["sniper"]},
+    "impaler_rifle": {"name": "Impaler Rifle", "attacks": 1, "short": 12, "medium": 24, "ap": 4, "rules": ["precise"]},
     "light_acid_cannon": {"name": "Light Acid Cannon", "attacks": 1, "short": 12, "medium": 24, "ap": 3, "rules": [{"id": "deadly", "x": 1}, {"id": "blast", "x": 2}]}
   },
   "rules": {

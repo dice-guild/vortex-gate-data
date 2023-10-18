@@ -868,7 +868,7 @@
     "taser_prow": {"name": "Taser Prow", "attacks": 1, "ap": 4, "short": "Melee", "rules": ["lethal", "lance"]},
     "radiation_pistol": {"name": "Radiation Pistol", "attacks": 1, "short": 6, "rules": ["pistol", "poison"]},
     "radiation_carbine": {"name": "Radiation Carbine", "attacks": 2, "short": 9, "medium": 18, "rules": ["assault", "poison"]},
-    "radiation_sniper": {"name": "Radiation Sniper", "attacks": 1, "short": 15, "medium": 30, "ap": 3, "rules": ["sniper", "poison"]},
+    "radiation_sniper": {"name": "Radiation Sniper", "attacks": 1, "short": 15, "medium": 30, "ap": 3, "rules": ["precise", "poison"]},
     "radiation_emitter": {"name": "Radiation Emitter", "attacks": 3, "short": 6, "medium": 12, "ap": 3, "rules": ["breaching", "poison"]},
     "heavy_radiation_emitter": {"name": "Heavy Radiation Emitter", "attacks": 3, "short": 6, "medium": 12, "ap": 4, "rules": ["breaching", "poison"]},
     "radiation_rocket_array": {"name": "Radiation Rocket Array", "attacks": 2, "short": 18, "medium": 36, "ap": 4, "rules": ["poison", "indirect", {"id": "blast", "x": 3}]},

@@ -1023,7 +1023,7 @@
     "gauntlet": {"name": "Scythed Gauntlet", "attacks": 1, "short": "Melee", "ap": 3, "rules": ["buckler"]},
     "attack_beast": {"name": "Attack Beast", "attacks": 2, "ap": 1, "short": "Melee", "rules": ["cumbersome"]},
     "makeshift_bombs": {"name": "Makeshift Explosive", "attacks": 1, "ap": 3, "short": 9, "rules": ["assault"]},
-    "bolt_thrower": {"name": "Bolt Thrower", "attacks": 1, "ap": 5, "short": 18, "medium": 36, "rules": [{"id": "deadly", "x": 6}, "sniper"]},
+    "bolt_thrower": {"name": "Bolt Thrower", "attacks": 1, "ap": 5, "short": 18, "medium": 36, "rules": [{"id": "deadly", "x": 6}, "precise"]},
     "boar_tusks": {"name": "Boar Tusks", "ap": 1, "attacks": 1, "short": "Melee", "rules": ["lance"]},
     "legend_bonecrusher": {"name": "Bonecrusher", "attacks": 3, "short": "Melee", "ap": 6, "rules": ["cumbersome", {"id": "deadly", "x": 1}]},
     "arcing_spit": {"name": "Arcing Spit", "attacks": 3, "short": 15, "medium": 30, "ap": 2, "rules": [{"id": "blast", "x": 2}, "indirect"]},

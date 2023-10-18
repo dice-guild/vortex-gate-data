@@ -960,7 +960,7 @@
     "sniper_cannon": {
       "name": "Sniper Cannon",
       "profiles": [
-        {"name": "Sniper Mode", "attacks": 1, "short": 12, "medium": 24, "rules": ["sniper", {"id": "shocking", "x": 1}, "rending"], "ap": 3},
+        {"name": "Sniper Mode", "attacks": 1, "short": 12, "medium": 24, "rules": ["precise", {"id": "shocking", "x": 1}, "rending"], "ap": 3},
         {"name": "Suppression Mode", "attacks": 3, "short": 12, "medium": 24, "rules": [{"id": "shocking", "x": 1}, "rending"], "ap": 2}
       ]
     },
