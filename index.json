@@ -150,6 +150,15 @@
       "alliance": "doom",
       "description": "The Corrupted Legions prove that even dead gods can be mightier than mortals. Wearing powerful cursed armour and wielding weapons with ancient enchantments, they seek the absolute worship of their warlord and leader."
     },
+    "darkforge_runesmiths": {
+      "version": "1.0",
+      "name": "Darkforge Runesmiths",
+      "id": "darkforge_runesmiths",
+      "url": "darkforge_runesmiths.json",
+      "color": "#343a40",
+      "alliance": "doom",
+      "description": "Twisted by the whispers of the deep stone, the Darkforge Runesmiths have learned to put chaotic magic into their machines. They fight as much at the whims of their dark masters as their own choice."
+    },
     "eternal_dynasties": {
       "version": "1.0",
       "name": "Eternal Dynasties",

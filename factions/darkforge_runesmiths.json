@@ -1,6 +1,7 @@
 {
-  "name": "Corrupted Dwarves",
-  "id": "corrupted_dwarves",
+  "name": "Darkforge Runesmiths",
+  "id": "darkforge_runesmiths",
+  "lore": "In the heart of a foreboding mountain range, where the veins of obsidian and onyx ran deep, the Darkforge Runesmiths found their home. These mountain dwarves were unlike any other of their kind, for they had embraced the shadows that dwelled within the depths of the earth. Legends whispered that eons ago, they made a sinister pact with ancient, malevolent powers that were buried within their mountainous realm.\n\nThe tale of the Darkforge Runesmiths began with a daring and ambitious leader named Durgan Blackheart. Frustrated by their isolation and a desire for power, Durgan delved deep into the ancient tomes and arcane secrets of their mountain home. It was during these research expeditions that he stumbled upon a forgotten chamber deep within the heart of the mountain. There, he discovered an ancient runestone infused with dark, malevolent magic.\n\nIn his quest for power, Durgan made a fateful choice. He decided to invoke the power of the runestone and, in doing so, entered into a pact with a malevolent entity known as the Shadowbinder. This entity granted the Darkforge Runesmiths unparalleled mastery over dark magic, but in return, they were forever bound to serve its nefarious desires.\n\nUnder the influence of the Shadowbinder, the Darkforge Runesmiths were forever changed. Their once-beautiful underground city was twisted into a dark, nightmarish labyrinth filled with shadows and eerie, blue-hued torches that flickered with unnatural fire. The dwarves' traditional craftsmanship took on an eerie quality, with their weapons and armor being imbued with malevolence, capable of sowing chaos and despair on the battlefield.\n\nThe Darkforge Runesmiths' craft was the stuff of nightmares. They learned to inscribe dark runes onto their weapons and armor, infusing them with wicked enchantments. Their blades could drain the life force of their victims, and their armor turned them into eerie specters on the battlefield, difficult to harm. They reveled in the terror they could strike into the hearts of their foes.\n\nThe Darkforge Runesmiths were a secretive and tightly-knit society, ruled by a council of elders who communed with the Shadowbinder to determine their actions. They harbored a deep-seated desire for power and dominance over their underground domain, and they viewed the world above with a malevolent eye. Their ambition led them to wage war on neighboring dwarven clans, and they sought to expand their dominion, spreading darkness and fear.\n\nTheir malevolence and dark ambitions brought the Darkforge Runesmiths into conflict with other races and even their fellow dwarves, who saw them as a dark stain on their kind. Their relentless pursuit of power and willingness to unleash dark magic upon the world above led to their isolation from other dwarven clans and earned them a fearsome reputation throughout the land.\n\nThe Darkforge Runesmiths' legacy was one of darkness and evil, marked by their mastery of malevolent magic and their insatiable lust for power. Their underground city became a forbidden place, and their name was whispered in fear and trepidation by those who knew of their existence.\n\nThe Darkforge Runesmiths, masters of malevolent craft, remained a haunting presence in the annals of dwarven history, a reminder of the peril that could befall those who dared to delve too deep into the shadows.",
   "author": "Xekon#8266",
   "units": {
     "corrupted_runesmith": {
@@ -27,8 +28,7 @@
             {"replaceRule": [{"id": "charger", "x": 1}], "withRule": [{"id": "charger", "x": 2}]}
           ]
         }
-      ],
-      "subfactions": ["wrath", "excess", "poison", "none", "change"]
+      ]
     },
     "iron_souls": {
       "name": "Iron Souls",
@@ -49,7 +49,6 @@
           "max": 20
         }
       ],
-      "subfactions": ["wrath", "excess", "poison", "none", "change"],
       "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
     },
     "iron_lord": {
@@ -75,8 +74,7 @@
             {"replaceRule": [{"id": "warrior", "x": 1}], "withRule": [{"id": "warrior", "x": 2}]}
           ]
         }
-      ],
-      "subfactions": ["wrath", "excess", "poison", "none", "change"]
+      ]
     },
     "soul_bound_orcs": {
       "name": "Soul-bound Orcs",
@@ -98,7 +96,6 @@
         }
       ],
       "keywords": ["Soul-bound", "Infantry"],
-      "subfactions": ["wrath", "excess", "poison", "none", "change"],
       "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
     },
     "centaur_hybrids": {
@@ -121,8 +118,7 @@
           "rules": [{"id": "wounds", "x": 3}]
         }
       ],
-      "keywords": ["Mounted"],
-      "subfactions": ["none", "poison", "wrath", "excess", "change"]
+      "keywords": ["Mounted"]
     },
     "centaur_hybrid_lord": {
       "name": "Centaur Hybrid Lord",
@@ -147,8 +143,7 @@
           "rules": [{"id": "wounds", "x": 4}, {"id": "leader", "x": "Beast"}, {"id": "warrior", "x": 1}]
         }
       ],
-      "keywords": ["Mounted"],
-      "subfactions": ["none", "poison", "wrath", "excess", "change"]
+      "keywords": ["Mounted"]
     },
     "black_souls": {
       "name": "Black Souls",
@@ -170,7 +165,6 @@
           "rules": [{"id": "wounds", "x": 2}]
         }
       ],
-      "subfactions": ["wrath", "excess", "poison", "none", "change"],
       "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
     },
     "engineers": {
@@ -193,7 +187,6 @@
           "rules": [{"id": "repair", "x": 3}]
         }
       ],
-      "subfactions": ["wrath", "excess", "poison", "none", "change"],
       "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
     },
     "cinder_spirits": {
@@ -203,7 +196,6 @@
       "models": [
         {"name": "Cinder Spirits", "movement": 7, "courage": 5, "shoot": 5, "fight": 5, "defense": 6, "reflexes": 5, "weapons": [{"id": "claws", "count": 2}, "flame_breath"], "min": 5, "max": 15}
       ],
-      "subfactions": ["wrath", "excess", "poison", "none", "change"],
       "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
     },
     "magma_elementals": {
@@ -225,7 +217,6 @@
           "rules": [{"id": "wounds", "x": 3}]
         }
       ],
-      "subfactions": ["wrath", "excess", "poison", "none", "change"],
       "options": [{"addRule": ["champion"], "modelLimit": 1}]
     },
     "obsidian_golem": {
@@ -247,7 +238,6 @@
           "rules": [{"id": "wounds", "x": 3}]
         }
       ],
-      "subfactions": ["wrath", "excess", "poison", "none", "change"],
       "options": [{"addRule": ["champion"], "modelLimit": 1}]
     }
   },
@@ -265,7 +255,7 @@
   "rules": {},
   "powers": {
     "fireball": {"name": "Fireball", "description": "Target enemy unit within 12\" takes 3 hits with AP(3).", "charge": 6},
-    "pain": {"name": "Pain", "description": "Target enemy model within 12\" takes 1 automatic hit with AP(3).", "charge": 6, "subfactions": ["blood", "bone", "dread", "none"]},
+    "pain": {"name": "Pain", "description": "Target enemy model within 12\" takes 1 automatic hit with AP(3).", "charge": 6},
     "slow": {"name": "Slow", "description": "Target enemy unit within 12\" gets -2\" of Movement until the end of the round.", "charge": 7}
   },
   "strategies": [
@@ -274,11 +264,9 @@
       "phase": "activation",
       "description": "Use before an Infantry unit fights. Hit rolls of 1 or 2 gain +1 AP.",
       "flavor": "Corrupted Dwarves wield enchanted weapons, covered in unholy runes and burning with dark magic.",
-      "cost": 1,
-      "subfactions": ["wrath", "excess", "poison", "none", "change"]
+      "cost": 1
     },
     {
-      "subfactions": ["none", "wrath", "excess", "poison", "change"],
       "name": "Unnatural Strength",
       "phase": "activation",
       "description": "Use when a friendly unit destroys an enemy unit. That unit gains +1 Strength until the end of the battle. A unit may only be affected by this strategy once.",
@@ -290,8 +278,7 @@
       "name": "Daemonforged Bullets",
       "flavor": "Possessed bullets, forged in Hellfire and inscribed with cursed runes, are highly unstable but very effective.",
       "description": "Use before an Infantry unit shoots. Add +6\" to the short and long range bands of all weapons.",
-      "cost": 1,
-      "subfactions": ["wrath", "excess", "poison", "none", "change"]
+      "cost": 1
     }
   ],
   "relics": []
