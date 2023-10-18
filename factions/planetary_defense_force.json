@@ -560,28 +560,8 @@
           "defense": 7,
           "reflexes": 5,
           "weapons": ["heavy_shotgun", {"id": "handweapon", "count": 2}],
-          "options": [{"addRule": ["shield"]}, {"replaceWeapon": "heavy_shotgun", "withWeapon": ["wrist_grenades"]}, {"replaceWeapon": {"id": "handweapon", "count": 2}, "withWeapon": ["ogre_maul"]}],
+          "options": [{"addRule": ["shield"]}, {"replaceWeapon": "heavy_shotgun", "withWeapon": ["wrist_grenades"]}, {"replaceWeapon": {"id": "handweapon", "count": 2}, "withWeapon": ["ogre_maul", {"id": "twin_energy_handweapon", "count": 3}]}],
           "rules": [{"id": "wounds", "x": 2}],
-          "min": 3,
-          "max": 9
-        }
-      ]
-    },
-    "void_ogres": {
-      "name": "Ogre Berserkers",
-      "description": "A squad of super-strong large mutated berserkers.",
-      "category": "elite",
-      "models": [
-        {
-          "name": "Ogre Berserker",
-          "courage": 6,
-          "shoot": 5,
-          "fight": 6,
-          "movement": 6,
-          "defense": 8,
-          "reflexes": 5,
-          "weapons": [{"id": "twin_energy_handweapon", "count": 3}],
-          "rules": ["furious", {"id": "wounds", "x": 2}],
           "min": 3,
           "max": 9
         }
