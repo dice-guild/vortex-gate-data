@@ -141,6 +141,15 @@
       "alliance": "doom",
       "description": "The Voidwarped Renegade are a band of marines that betrayed the mankind and now cooperate with demons and other heretics to pursue their own desires. They have a mix of deadly beasts, dangerous war machines and tough marine infantry."
     },
+    "corrupted_legions": {
+      "version": "1.0",
+      "name": "Corrupted Legions",
+      "id": "corrupted_legions",
+      "url": "corrupted_legions.json",
+      "color": "#343a40",
+      "alliance": "doom",
+      "description": "The Corrupted Legions prove that even dead gods can be mightier than mortals. Wearing powerful cursed armour and wielding weapons with ancient enchantments, they seek the absolute worship of their warlord and leader."
+    },
     "eternal_dynasties": {
       "version": "1.0",
       "name": "Eternal Dynasties",
