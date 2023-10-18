@@ -1354,7 +1354,7 @@
       "subfactions": ["siege_focus"],
       "name": "Bolster",
       "phase": "activation",
-      "description": "Use when a unit is targeted by an enemy. If it did not move this round, that unit is treated as if it was in cover.",
+      "description": "Use when a unit is targeted by an enemy. If it did not move this round, that unit is treated as if it was in normal cover.",
       "flavor": "A strong defensive position ensures greater survival, even against the toughest of weapons.",
       "cost": 1
     },
