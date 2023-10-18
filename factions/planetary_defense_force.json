@@ -513,7 +513,7 @@
       "category": "elite",
       "keywords": ["Mounted"],
       "rules": [{"id": "wounds", "x": 2}],
-      "options": [{"replaceWeapon": {"id": "light_handweapon", "count": 2}, "withWeapon": ["rider_lance"]}],
+      "options": [{"replaceWeapon": {"id": "light_handweapon", "count": 2}, "withWeapon": ["rider_lance"]}, {"replaceWeapon": "pistol", "withWeapon": ["flamethrower", "grenade_launcher", "fusion_rifle", "plasma_rifle"], "modelLimit": "1/5"}],
       "models": [
         {
           "name": "Rider Sergeant",
@@ -540,7 +540,7 @@
           "defense": 6,
           "reflexes": 5,
           "weapons": ["pistol", {"id": "light_handweapon", "count": 2}],
-          "options": [{"replaceWeapon": "pistol", "withWeapon": ["flamethrower", "grenade_launcher", "fusion_rifle", "plasma_rifle"], "modelLimit": 4}, {"addRule": "field_radio", "modelLimit": 1}],
+          "options": [{"addRule": "field_radio", "modelLimit": 1}],
           "min": 4,
           "max": 9
         }
