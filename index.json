@@ -1987,7 +1987,7 @@
     "musician": {"name": "Musician", "description": "Once per round, this model's unit may re-roll a single failed Initiative test when rushing.", "points": 5},
     "banner": {"name": "Banner", "description": "Once per round, this model's unit may re-roll a single failed Courage test when removing Shock.", "points": 5},
     "champion": {"name": "Champion", "description": "Once per round, this model's unit may re-roll a single failed Accuracy or Strength test when attacking.", "points": 5},
-    "brutal": {"name": "Brutal", "description": "This weapon gains +1 AP at Short range.", "points": ["weapon.attacks", {"multiply": 0.5}]},
+    "brutal": {"name": "Brutal", "description": "This weapon gains +1 AP at Short range.", "points": ["weapon.attacks", {"multiply": 1}]},
     "sorcerer": {"name": "Sorcerer", "description": "This model's unit may re-roll failed Power tests of 9+ until the end of the round.", "points": 10},
     "crazed": {
       "name": "Crazed",
