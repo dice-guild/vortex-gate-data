@@ -2286,6 +2286,33 @@
         "rules": "* All units suffer -1 to Courage tests."
       }
     },
+    "primaries": {
+      "new_orders": {
+        "name": "New Orders",
+        "description": "New orders have been received and additional objectives are available.",
+        "rules": "* Each player places one additional objective 12\" away from any existing objectives and more than 12\" away from their deployment area.\n\n Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling three or more objectives"
+      },
+      "breakthrough": {
+        "name": "Breakthrough",
+        "description": "Breaking through enemy lines can cause havoc for troop organization.",
+        "rules": "* Once per round, players may move a unit off their opponents table edge. After doing so, remove the unit from the board and gain 5 VP.\n\n Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling three or more objectives"
+      },
+      "take_and_hold": {
+        "name": "Take and Hold",
+        "description": "Taking key ground can be critical to moving the frontline forward.",
+        "rules": "* Each player places one additional objective inside the enemy deployment area and 12\" away from all existing objectives.\n\n Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling three or more objectives"
+      },
+      "priority_orders": {
+        "name": "Priority Orders",
+        "description": "A message has come from high command to take this important objective.",
+        "rules": "* Players designate one objective to be their priority objective. If held, you gain 3 VP. This cannot be the objective closest to your deployment zone.\n\n Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling three or more objectives"
+      },
+      "deploy": {
+        "name": "Deploy",
+        "description": "Setting up critical battlefield objectives can prove valuable in the coming battles.",
+        "rules": "* Choose up to 3 units at the start of the game to carry a deploy objective marker. \n* During a unit's activation, they may perform an initiative test to setup a deploy objective marker outside their deployment area and in base contact with a model from the unit. \n* A player with more models within 3\" of that objective marker may perform an Initiative test to destroy a deploy objective marker. \n* At the end of the game, players earn 3 VP for each deploy objective marker still active on the table.\n\n Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling three or more objectives"
+      }
+    },
     "secondaries": {
       "infiltrate": {
         "name": "Infiltrate",
@@ -2296,26 +2323,6 @@
         "name": "Secure",
         "description": "Securing an objective for further control can be essential.",
         "rules": "* Once per round, a unit in range of an objective may perform the Secure action. Perform an Initiative test with that unit. If successful, gain 3 VP."
-      },
-      "new_orders": {
-        "name": "New Orders",
-        "description": "New orders have been received and additional objectives are available.",
-        "rules": "* Each player places one additional objective 12\" away from any existing objectives and more than 12\" away from their deployment area."
-      },
-      "breakthrough": {
-        "name": "Breakthrough",
-        "description": "Breaking through enemy lines can cause havoc for troop organization.",
-        "rules": "* Once per round, players may move a unit off their opponents table edge. After doing so, remove the unit from the board and gain 5 VP."
-      },
-      "take_and_hold": {
-        "name": "Take and Hold",
-        "description": "Taking key ground can be critical to moving the frontline forward.",
-        "rules": "* Each player places one additional objective inside the enemy deployment area and 12\" away from all existing objectives."
-      },
-      "priority_orders": {
-        "name": "Priority Orders",
-        "description": "A message has come from high command to take this important objective.",
-        "rules": "* Players designate one objective to be their priority objective. If held, you gain 3 VP. This cannot be the objective closest to your deployment zone."
       },
       "critical_asset": {
         "name": "Critical Asset",
@@ -2356,11 +2363,6 @@
         "name": "Conquest",
         "description": "Taking ground from the enemy can be even more satisfying than holding your own.",
         "rules": "* At the end of the round, each objective captured which was previously controlled by an enemy grants an additional 3 VP."
-      },
-      "deploy": {
-        "name": "Deploy",
-        "description": "Setting up critical battlefield objectives can prove valuable in the coming battles.",
-        "rules": "* Choose up to 3 units at the start of the game to carry a deploy objective marker. \n* During a unit's activation, they may perform an initiative test to setup a deploy objective marker outside their deployment area and in base contact with a model from the unit. \n* A player with more models within 3\" of that objective marker may perform an Initiative test to destroy a deploy objective marker. \n* At the end of the game, players earn 3 VP for each deploy objective marker still active on the table."
       }
     }
   }
