@@ -24,11 +24,18 @@
           "options": [
             {
               "replaceWeapon": [{"id": "suit_fists", "count": 2}],
-              "withWeapon": ["energy_greatsword", "energy_powerweapon", "flamethrower", "plasma_rifle", "fusion_blaster", "assault_mortar", "ion_gatling", "pulse_gatling", "rocket_pod"]
-            },
-            {
-              "replaceWeapon": [{"id": "suit_fists", "count": 2}],
-              "withWeapon": ["energy_greatsword", "energy_powerweapon", "assault_mortar", "ion_gatling", "flamethrower", "pulse_gatling", "plasma_rifle", "fusion_blaster", "rocket_pod"]
+              "withWeapon": [
+                {"id": "energy_greatsword", "count": 2},
+                {"id": "energy_powerweapon", "count": 2},
+                "flamethrower",
+                "plasma_rifle",
+                "fusion_blaster",
+                "assault_mortar",
+                "ion_gatling",
+                "pulse_gatling",
+                "rocket_pod"
+              ],
+              "count": 2
             },
             {"addWeapon": ["assault_mortar", "ion_gatling", "flamethrower", "pulse_gatling", "plasma_rifle", "fusion_blaster", "rocket_pod"], "limit": 2},
             {
@@ -285,11 +292,18 @@
           "options": [
             {
               "replaceWeapon": [{"id": "suit_fists", "count": 2}],
-              "withWeapon": ["energy_greatsword", "energy_powerweapon", "assault_mortar", "ion_gatling", "flamethrower", "pulse_gatling", "plasma_rifle", "fusion_blaster", "rocket_pod"]
-            },
-            {
-              "replaceWeapon": [{"id": "suit_fists", "count": 2}],
-              "withWeapon": ["energy_greatsword", "energy_powerweapon", "assault_mortar", "ion_gatling", "flamethrower", "pulse_gatling", "plasma_rifle", "fusion_blaster", "rocket_pod"]
+              "withWeapon": [
+                {"id": "energy_greatsword", "count": 2},
+                {"id": "energy_powerweapon", "count": 2},
+                "assault_mortar",
+                "ion_gatling",
+                "flamethrower",
+                "pulse_gatling",
+                "plasma_rifle",
+                "fusion_blaster",
+                "rocket_pod"
+              ],
+              "count": 2
             },
             {"addWeapon": ["assault_mortar", "ion_gatling", "flamethrower", "pulse_gatling", "plasma_rifle", "fusion_blaster", "rocket_pod"], "limit": 1},
             {"addRule": {"name": "Orbital Insertion", "id": "ambush"}, "modelLimit": "all"},
@@ -433,6 +447,27 @@
         }
       ]
     },
+    "light_observer": {
+      "name": "Observation Team",
+      "description": "A pair of light observation skimmers.",
+      "category": "elite",
+      "keywords": ["Mounted"],
+      "models": [
+        {
+          "name": "Observation Craft",
+          "movement": 8,
+          "courage": 5,
+          "shoot": 5,
+          "fight": 5,
+          "defense": 8,
+          "reflexes": 6,
+          "weapons": [{"id": "pulse_rifle"}],
+          "rules": [{"id": "wounds", "x": 2}, "hover", "spotting_laser"],
+          "min": 2,
+          "max": 4
+        }
+      ]
+    },
     "scout_craft": {
       "name": "Scout Craft",
       "description": "A mobile scouting vehicle equipped with anti-gravity technology.",
@@ -543,7 +578,7 @@
     "light_fighter": {
       "name": "Light Fighter",
       "description": "A light fighter aircraft.",
-      "category": "elite",
+      "category": "rare",
       "keywords": ["Aircraft", "Vehicle"],
       "options": [{"addModel": ["gunner_drone", "missile_drone", "shield_drone", "spotter_drone"], "modelLimit": 2}],
       "models": [
@@ -569,7 +604,7 @@
     "light_bomber": {
       "name": "Light Bomber",
       "description": "A light bomber aircraft.",
-      "category": "elite",
+      "category": "rare",
       "keywords": ["Aircraft", "Vehicle"],
       "options": [{"addModel": ["gunner_drone", "missile_drone", "shield_drone", "spotter_drone"], "modelLimit": 2}],
       "models": [
@@ -605,7 +640,7 @@
           "reflexes": 7,
           "courage": 5,
           "weapons": ["rifle", {"id": "handweapon", "count": 3}],
-          "options": [{"replaceWeapon": "rifle", "withWeapon": "tribal_carbine"}, {"replaceRule": {"id": "warrior", "x": 1}, "withRule": {"id": "warrior", "x": 2}}],
+          "options": [{"replaceWeapon": "rifle", "withWeapon": "carbine"}, {"replaceRule": {"id": "warrior", "x": 1}, "withRule": {"id": "warrior", "x": 2}}],
           "min": 1,
           "max": 1
         }
@@ -613,37 +648,29 @@
     },
     "tribe_warriors": {
       "name": "Tribal Warriors",
-      "description": "The basic biosoldiers of the mutated tribes",
+      "description": "Mutual allies of unknown worlds, specializing in strong shock melee assaults.",
       "category": "core",
       "keywords": ["Infantry"],
       "models": [
-        {"name": "Tribal Warrior", "movement": 6, "shoot": 5, "fight": 6, "defense": 5, "reflexes": 5, "courage": 5, "weapons": ["rifle", {"id": "handweapon", "count": 1}], "min": 5, "max": 20}
+        {"name": "Tribal Warrior", "movement": 6, "shoot": 5, "fight": 6, "defense": 5, "reflexes": 5, "courage": 5, "weapons": ["rifle", {"id": "handweapon", "count": 2}], "min": 5, "max": 10}
       ]
     },
     "wild_dogs": {
-      "name": "Wild Dogs",
+      "name": "Tribal Hounds",
       "description": "Tribe members whose mutations failed, these once-proud warriors are now nothing but wild beasts",
       "category": "elite",
       "keywords": ["Beasts"],
       "rules": ["agile"],
-      "models": [{"name": "Wild Dogs", "movement": 8, "shoot": 4, "fight": 6, "reflexes": 6, "courage": 5, "defense": 5, "weapons": [{"id": "handweapon", "count": 2}], "min": 4, "max": 8}]
-    },
-    "tribal_ogres": {
-      "name": "Tribal Ogre",
-      "description": "Giant apelike creatures who smash and bash",
-      "category": "elite",
-      "keywords": ["Infantry"],
-      "rules": [{"id": "wounds", "x": 2}],
-      "models": [{"name": "Tribal Ogres", "movement": 6, "shoot": 4, "fight": 6, "reflexes": 6, "courage": 5, "defense": 7, "weapons": [{"id": "ogre_fists", "count": 2}], "min": 1, "max": 3}]
+      "models": [{"name": "Tribal Hound", "movement": 8, "shoot": 4, "fight": 6, "reflexes": 6, "courage": 5, "defense": 5, "weapons": [{"id": "handweapon", "count": 2}], "min": 4, "max": 8}]
     },
     "ogre_riders": {
       "name": "Ogre Riders",
       "description": "Warriors with powerful guns mounted on the back of Ogres",
-      "category": "rare",
+      "category": "elite",
       "keywords": ["Infantry"],
-      "rules": [{"id": "wounds", "x": 2}],
+      "rules": [{"id": "wounds", "x": 3}],
       "models": [
-        {"name": "Ogre Riders", "movement": 6, "shoot": 5, "fight": 6, "reflexes": 6, "courage": 5, "defense": 7, "weapons": [{"id": "ogre_fists", "count": 2}, "laser_cannon"], "min": 1, "max": 3}
+        {"name": "Ogre Rider", "movement": 6, "shoot": 5, "fight": 6, "reflexes": 6, "courage": 5, "defense": 7, "weapons": [{"id": "ogre_fists", "count": 3}, "laser_cannon"], "min": 1, "max": 3}
       ]
     }
   },
@@ -688,8 +715,6 @@
     "ion_bombs": {"name": "Ion Bombs", "attacks": 2, "short": 3, "ap": 4, "rules": ["bomb", {"id": "blast", "x": 3}]},
     "homing_missile": {"name": "Homing Missile", "attacks": 1, "short": 36, "medium": 72, "ap": 6, "rules": [{"id": "ammo", "x": 1}, "homing", "indirect"]},
     "assault_mortar": {"name": "Assault Mortar", "attacks": 1, "short": 12, "medium": 24, "ap": 2, "rules": ["assault", {"id": "blast", "x": 3}, "indirect"]},
-    "fusion_blaster": {"name": "Fusion Blaster", "attacks": 1, "short": 12, "medium": 24, "ap": 6, "rules": ["assault", {"id": "deadly", "x": 1}]},
-    "heavy_fusion_blaster": {"name": "Heavy Fusion Blaster", "attacks": 2, "short": 18, "medium": 36, "ap": 6, "rules": ["assault", {"id": "deadly", "x": 1}]},
     "missile_pod": {"name": "Missile Pod", "attacks": 1, "short": 18, "medium": 36, "ap": 4},
     "heavy_missile_pod": {"name": "Heavy Missile Pod", "attacks": 2, "short": 18, "medium": 36, "ap": 4, "rules": ["heavy"]},
     "support_missile_pod": {"name": "Support Missile Pod", "attacks": 2, "short": 18, "medium": 36, "ap": 4},
@@ -718,10 +743,6 @@
       "name": "Enclave Grenade Launcher",
       "profiles": [{"name": "Stun", "attacks": 1, "short": 12, "medium": 24, "rules": ["stun"]}, {"name": "AT", "attacks": 1, "short": 12, "medium": 24, "ap": 3}]
     },
-    "rifle": {"name": "Tribal Rifle", "attacks": 1, "short": 12, "medium": 24, "ap": 1},
-    "tribal_carbine": {"name": "Tribal Carbine", "attacks": 2, "short": 9, "medium": 18, "ap": 1, "rules": []},
-    "tribal_tankbuster": {"name": "Tribal Tankbuster", "attacks": 2, "short": 9, "medium": 18, "ap": 6, "rules": [{"id": "deadly", "x": 1}]},
-    "tribal_flamethrower": {"name": "Tribal Flamethrower", "attacks": 3, "short": 6, "medium": 12, "ap": 1, "rules": ["breaching"]},
     "ogre_fists": {"name": "Ogre Fists", "attacks": 1, "short": "Melee", "ap": 3, "rules": []},
     "dinosaur_claws": {"name": "Dinosaur Claws and Teeth", "attacks": 1, "short": "Melee", "ap": 5, "rules": [{"id": "reach", "x": 1}]}
   },
@@ -753,7 +774,7 @@
     "threat_detector_suit": {"name": "Threat Detector", "description_short": "+1 Initiative", "points": 5, "hidden": true},
     "hover_drone": {"name": "Hover Drone", "hidden": "true", "description_short": "+4\" Move, Fly", "points": 5},
     "protection": {"name": "Protection", "description": "Models in this unit get +1 Save.", "points": 20},
-    "targeting_array": {"name": "Targeting Array", "description_short": "+1 Accuracy", "points": 10, "hidden": true},
+    "targeting_array": {"name": "Targeting Array", "description_short": "+1 Accuracy", "points": 5, "hidden": true},
     "lookout_system": {
       "name": "Lookout System",
       "description": "Models in this unit may reroll Initiative checks when attempting the Counter-Attack reaction. Multiple Lookout Systems do not stack bonuses.",
@@ -776,14 +797,14 @@
       "name": "Covering Fire",
       "phase": "activation",
       "flavor": "Members of the Colonies are tirelessly drilled on covering one another in the event that one unit is overrun.",
-      "description": "Use when a friendly _Infantry_ or _Heavy Infantry_ unit is Charged. One friendly _Infantry_ or _Heavy Infantry_ unit within 6\" may take an Initiative test and attempt to react to the charging unit.",
+      "description": "Use when a friendly unit is Charged. One other friendly unit within 6\" may take an Initiative test and attempt to react to the charging unit.",
       "cost": 1
     },
     "preservation_protocols": {
       "name": "Preservation Protocols",
       "phase": "activation",
       "flavor": "Enclave drones are programmed to protect their creators at all costs.",
-      "description": "Use after a unit has been hit by a ranged weapon. For this attack, you can roll a D10 each time an attack made with a ranged weapon hits that unit. If there is a friendly _Drone_ unit within 6\" of it, and the _Drone_ unit is closer to the attacking model than the target unit. On an 8 or less a hit is transferred to the _Drone_ unit instead of the original target.",
+      "description": "Use after a unit has been hit by a ranged weapon if there is a friendly _Drone_ unit within 6\" of it. Hits are transferred to the _Drone_ unit instead of the original target.",
       "cost": 2
     },
     "danger_close": {
