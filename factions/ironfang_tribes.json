@@ -1079,21 +1079,21 @@
       "name": "Frenzy Banner",
       "description": "Upgrade one _Leader_ model with Frenzy Banner.",
       "flavor": "A crimson banner, dyed in the blood of the Warboss's greatest kills, inciting an endless rage in their followers.",
-      "points": 5,
+      "points": 10,
       "rule": "legend_banner"
     },
     {
       "name": "Bonecrusher",
       "description": "Replace one _Leader_ model's Greatweapon with Bonecrusher.",
       "flavor": "This legendary weapon infuses its wielder with unbound ferocity.",
-      "points": 5,
+      "points": 10,
       "weapon": "legend_bonecrusher"
     },
     {
       "name": "Glowing Charm",
       "description": "Upgrade one _Leader_ model with Regeneration.",
       "flavor": "This talisman is made out bones engraved with magical runes, granting its wearer the healing abilities of a troll.",
-      "points": 10,
+      "points": 20,
       "rule": "regeneration"
     }
   ],

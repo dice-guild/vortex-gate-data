@@ -456,7 +456,7 @@
       "rule": {"id": "ward", "x": 1},
       "description": "Upgrade one _Leader_ model with Ward(1).",
       "flavor": "This crudely carved fetish grants its wielder anti-magical energy.",
-      "points": 5
+      "points": 10
     },
     {
       "name": "Dark Apostle",
@@ -470,7 +470,7 @@
       "rule": {"id": "resistant", "x": 1},
       "description": "Upgrade on _Leader_ model with Resistant(1).",
       "flavor": "Sharp weapons bounce off of this warrior's thick skin.",
-      "points": 5
+      "points": 20
     }
   ],
   "powers": {

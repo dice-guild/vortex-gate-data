@@ -809,14 +809,14 @@
       "weapon": "legend_blade",
       "description": "Replace one Leader model Great Weapon(3) with the Blade of Conquest.",
       "flavor": "An ancient heirloom, granted tho those who are on a divine quest.",
-      "points": 5
+      "points": 10
     },
     {
       "name": "The Holy Grail",
-      "rule": "regeneration",
-      "description": "Upgrade one Leader model with Regeneration.",
+      "rule": {"id": "resistant", "x": 2},
+      "description": "Upgrade one Leader model with Resistant(2).",
       "flavor": "A relic of legend, it grants any who drink from it eternal life.",
-      "points": 10
+      "points": 20
     },
     {
       "name": "Ring of Command",

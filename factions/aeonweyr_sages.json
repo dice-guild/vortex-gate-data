@@ -972,20 +972,20 @@
       "rule": "legend_master_of_war",
       "description": "Upgrade one _Leader_ model with Master of War.",
       "flavor": "This righteous elven champion is always ready to cut down his opposite number.",
-      "points": 5
+      "points": 10
     },
     "psychic_mastery": {
       "name": "Psychic Mastery",
       "rule": "legend_psychic_mastery",
       "description": "Upgrade one _Leader_ model with the Power special rule with Psychic Mastery.",
       "flavor": "An archmage of the psychic arts, this great psychic rivals the champions of the gods.",
-      "points": 10
+      "points": 20
     },
     "runic_armor": {
       "name": "Runic Armor",
       "description": "Upgrade one _Leader_ model with Resistant(3).",
       "flavor": "Sometimes it seems like a champion is protected by an unseen force, deflecting lethal blows.",
-      "points": 5,
+      "points": 10,
       "rule": {"id": "resistant", "x": 3}
     }
   },

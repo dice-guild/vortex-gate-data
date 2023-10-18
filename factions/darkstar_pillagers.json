@@ -861,21 +861,21 @@
       "rule": "legend_scion_of_the_sky",
       "description": "Upgrade one _Leader_ model with Scion of the Sky",
       "flavor": "This leader is adept at guiding the ships of their raids.",
-      "points": 10
+      "points": 20
     },
     "purveyor_of_poison": {
       "name": "Purveyor of Poison",
       "rule": "legend_pop",
       "description": "Upgrade one _Leader_ model with Purveyor of Poison",
       "flavor": "With access to strange sources, this leader's poisons are more potent than most.",
-      "points": 5
+      "points": 10
     },
     "master_of_war": {
       "name": "Master of War",
       "rule": "legend_master_of_war",
       "description": "Upgrade one _Leader_ model with Master of War.",
       "flavor": "The truly long-lived among the dark elves master many methods of war.",
-      "points": 5
+      "points": 10
     }
   },
   "powers": {

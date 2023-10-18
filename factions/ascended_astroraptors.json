@@ -864,14 +864,14 @@
       "weapon": "legend_experimental_charge_pistol",
       "description": "Replace one model's Heavy Charge Pistol with the Experimental Charge Pistol.",
       "flavor": "Fresh from the Prototype Labs, this Heavy Charge Pistol's blast radius is greatly increased.",
-      "points": 5
+      "points": 10
     },
     "relic_metallic_clawtips": {
       "name": "Metallic Clawtips",
       "weapon": "legend_metallic_clawtips",
       "description": "Replace one Command model's CCW with Metallic Clawtips.",
       "flavor": "Made of a rare alloy, these deadly clawtips are only afforded to those of high station.",
-      "points": 5
+      "points": 10
     }
   },
   "buyLinks": [{"name": "Treadhead Rad", "link": "https://www.myminifactory.com/campaigns/raygun-raptors-95"}]

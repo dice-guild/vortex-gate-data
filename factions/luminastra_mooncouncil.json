@@ -715,7 +715,7 @@
       "rule": {"id": "resistant", "x": 2},
       "description": "Upgrade one Hero model with Resistant(2).",
       "flavor": "Gilded armor that has been blessed by the Moon God.",
-      "points": 10
+      "points": 20
     },
     "tempest_blade": {
       "name": "Tempest Blade",

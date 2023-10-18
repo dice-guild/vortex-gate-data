@@ -897,14 +897,14 @@
       "rule": "legend_supernatural_speed",
       "description": "Upgrade one _Leader_ or _Support_ model with Supernatural Speed.",
       "flavor": "This model has an inherent supernatural speed.",
-      "points": 5
+      "points": 10
     },
     "mind_link": {
       "name": "Mind Link",
       "rule": "legend_mind_link",
       "description": "Upgrade one _Leader_ or _Support_ model with Mind Link.",
       "flavor": "This model has an unnatural connection to those it commands.",
-      "points": 10
+      "points": 20
     }
   },
   "strategies": [

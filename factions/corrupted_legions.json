@@ -594,21 +594,21 @@
       "rule": {"id": "resistant", "x": 3},
       "description": "Upgrade one _Leader_ model with Resistant(3).",
       "flavor": "This enchanted piece of armor grants its wearer unholy vitality.",
-      "points": 5
+      "points": 10
     },
     {
       "name": "Blade of Ruin",
       "weapon": "legend_cursed_blade",
       "description": "Replace one _Leader_ model's Great Weapon(X) with Blade of Ruin(X).",
       "flavor": "This ancient relic emits an aura of malice, dripping with black blood.",
-      "points": 5
+      "points": 10
     },
     {
       "name": "War Veteran",
       "rule": "legend_war_veteran",
       "description": "Upgrade one _Leader_ model with War Veteran.",
       "flavor": "This hero has lived through so many battles that they are being gazed upon by the dark gods.",
-      "points": 10
+      "points": 20
     }
   ],
   "powers": {

@@ -342,21 +342,21 @@
       "rule": "legend_courage",
       "description": "Upgrade one _Leader_ model with Inspired.",
       "flavor": "This model inspires the best in those who serve them.",
-      "points": 5
+      "points": 10
     },
     "expert_fighter": {
       "name": "Expert Fighter",
       "rule": "legend_expert_fighter",
       "description": "Upgrade one _Leader_ model with Expert Fighter.",
       "flavor": "This model has fought in many close quarters fights and survived.",
-      "points": 5
+      "points": 10
     },
     "quick_reflexes": {
       "name": "Quick Reflexes",
       "rule": "legend_quick_reflexes",
       "description": "Upgrade one _Leader_ model with Quick Reflexes.",
       "flavor": "This model has expert awareness and can react quickly.",
-      "points": 5
+      "points": 10
     },
     "arcane_awakening": {
       "subfactions": ["power_focus"],
@@ -364,7 +364,7 @@
       "rule": {"id": "power", "x": 1},
       "flavor": "The dormant powers within this leader have awakened.",
       "description": "Upgrade one _Leader_ model with Magic(1).",
-      "points": 10
+      "points": 20
     },
     "power_surge": {
       "subfactions": ["power_focus"],
@@ -372,7 +372,7 @@
       "rule": "legend_power_surge",
       "flavor": "A boost of magic helps with casting powers.",
       "description": "Upgrade one _Power_ model with Power Surge.",
-      "points": 5
+      "points": 10
     },
     "tome_of_power": {
       "subfactions": ["power_focus"],
@@ -380,7 +380,7 @@
       "rule": "legend_tome",
       "flavor": "A powerful artifact containing arcane knowledge.",
       "description": "Upgrade one _Power_ model with Tome of Power.",
-      "points": 5
+      "points": 10
     },
     "battle_frenzy": {
       "subfactions": ["assault_focus"],
@@ -388,7 +388,7 @@
       "rule": "legend_battle_frenzy",
       "flavor": "This leader can incite a potent bloodlust in their allies.",
       "description": "Upgrade one _Leader_ model with Battle Frenzy.",
-      "points": 5
+      "points": 10
     },
     "final_stand": {
       "subfactions": ["assault_focus"],
@@ -396,7 +396,7 @@
       "rule": "legend_final_stand",
       "flavor": "Prepared to fight to the end, this leader will fight on beyond death.",
       "description": "Upgrade one _Leader_ model with Final Stand.",
-      "points": 5
+      "points": 10
     },
     "reaping_blade": {
       "subfactions": ["assault_focus"],
@@ -404,7 +404,7 @@
       "weapon": "legend_reaping_blade",
       "flavor": "This weapon emits an aura of unbridled rage, granting its wielder superhuman strength.",
       "description": "Replace one _Leader_ model's Melee weapon with Reaping Blade(X).",
-      "points": 10
+      "points": 20
     },
     "momentum": {
       "subfactions": ["mobility_focus"],
@@ -412,7 +412,7 @@
       "name": "Momentum",
       "flavor": "This leader knows how to use their speed to its greatest advantage.",
       "description": "Upgrade one _Leader_ model with Impact(3).",
-      "points": 5
+      "points": 10
     },
     "swiftness": {
       "subfactions": ["mobility_focus"],
@@ -420,7 +420,7 @@
       "rule": "legend_swiftness",
       "flavor": "This unit has been blessed with great swiftness.",
       "description": "Upgrade one _Biker_, _Vehicle_ or _Monster_ unit with Swiftness.",
-      "points": 10
+      "points": 20
     },
     "pathfinder": {
       "subfactions": ["mobility_focus"],
@@ -428,7 +428,7 @@
       "rule": "legend_pathfinder",
       "flavor": "This leader knows and teaches how to read tracks and where to move for maximum efficency.",
       "description": "Upgrade one _Leader_ model with Pathfinder.",
-      "points": 5
+      "points": 10
     },
     "surprise_attack": {
       "subfactions": ["stealth_focus"],
@@ -436,7 +436,7 @@
       "rule": "legend_surprise_attack",
       "flavor": "Once the trap has been sprung the enemy is stuck in a deadly assault.",
       "description": "Upgrade one _Infantry_, _Heavy Infantry_ or _Biker_ unit with Surprise Attack.",
-      "points": 5
+      "points": 10
     },
     "poison_mastery": {
       "subfactions": ["stealth_focus"],
@@ -444,7 +444,7 @@
       "rule": "poison",
       "flavor": "This leader coated their weapons with a lethal poison.",
       "description": "Upgrade one _Leader_ model's Melee weapons with Poison.",
-      "points": 5
+      "points": 10
     },
     "headhunter": {
       "subfactions": ["stealth_focus"],
@@ -452,7 +452,7 @@
       "weapon": "legend_headhunter",
       "flavor": "This legendary weapon has ended many wars before they even started.",
       "description": "Replace one _Leader_ model's Ranged weapon with Headhunter(X).",
-      "points": 10
+      "points": 20
     },
     "preacher": {
       "subfactions": ["morale_focus"],
@@ -460,7 +460,7 @@
       "rule": "battle_prayer",
       "flavor": "A prayer in dark times can lift spirits to achieve impossible deeds.",
       "description": "Upgrade one _Leader_ model with Battle Prayer.",
-      "points": 5
+      "points": 10
     },
     "heroism": {
       "subfactions": ["morale_focus"],
@@ -468,7 +468,7 @@
       "rule": "legend_heroism",
       "flavor": "These fighters easily shakes off the horrors of war.",
       "description": "Upgrade one unit with Heroism.",
-      "points": 5
+      "points": 10
     },
     "banner_of_legend": {
       "subfactions": ["morale_focus"],
@@ -476,7 +476,7 @@
       "rule": "legend_banner_of_legend",
       "flavor": "This enchanted banner inspires nearby allies.",
       "description": "Upgrade one _Leader_ model with the Banner of Legend.",
-      "points": 10
+      "points": 20
     },
     "brilliant_strategist": {
       "subfactions": ["tactical_focus"],
@@ -484,7 +484,7 @@
       "rule": "legend_strategist",
       "flavor": "A mastermind of war, able to guide fellow soldiers to victory.",
       "description": "Upgrade one _Leader_ model with Brilliant Strategist.",
-      "points": 10
+      "points": 20
     },
     "commanding_presence": {
       "subfactions": ["tactical_focus"],
@@ -492,7 +492,7 @@
       "rule": "legend_presence",
       "flavor": "This leader has natural charisma and leadership, enhancing their orders.",
       "description": "Upgrade one _Leader_ model with Commanding Presence.",
-      "points": 5
+      "points": 10
     },
     "cqc": {
       "subfactions": ["tactical_focus"],
@@ -500,7 +500,7 @@
       "rule": "legend_cqc",
       "flavor": "These fighters are trained to fight close up with the enemy.",
       "description": "Upgrade an _Infantry_ or _Heavy Infantry_ unit with Close Combat Fighters.",
-      "points": 5
+      "points": 10
     },
     "eagle_eyed": {
       "subfactions": ["vigilance_focus"],
@@ -508,7 +508,7 @@
       "rule": "legend_eagle_eyed",
       "flavor": "These fighters are trained to hold objectives and strike down any enemy that tries to take it from them.",
       "description": "Upgrade one _Infantry_ or _Heavy Infantry_ unit with Eagle-Eyed.",
-      "points": 5
+      "points": 10
     },
     "watchmaster": {
       "subfactions": ["vigilance_focus"],
@@ -516,7 +516,7 @@
       "rule": "legend_watchmaster",
       "flavor": "This leader emits an aura of intent that grants their allies increased reflexes.",
       "description": "Upgrade one _Leader_ unit with Watchmaster.",
-      "points": 5
+      "points": 10
     },
     "swift": {
       "subfactions": ["vigilance_focus"],
@@ -524,7 +524,7 @@
       "rule": "swift",
       "flavor": "This leader can easily dodge attacks after they analyzed the enemy's movements.",
       "description": "Upgrade one _Leader_ unit with Swift.",
-      "points": 5
+      "points": 10
     },
     "bulwark": {
       "subfactions": ["toughness_focus"],
@@ -532,7 +532,7 @@
       "rule": "legend_bulwark",
       "flavor": "This leader increases the defense of nearby allies.",
       "description": "Upgrade one _Leader_ model with Bulwark.",
-      "points": 5
+      "points": 10
     },
     "defensive_mastery": {
       "subfactions": ["toughness_focus"],
@@ -540,7 +540,7 @@
       "rule": "legend_defensive_mastery",
       "flavor": "This leader shrugs of deadly strikes with well-timed blocks.",
       "description": "Upgrade one _Leader_ model with Defensive Mastery.",
-      "points": 5
+      "points": 10
     },
     "unnatural_vitality": {
       "subfactions": ["toughness_focus"],
@@ -548,7 +548,7 @@
       "rule": {"id": "wounds", "x": 1},
       "flavor": "Blessed with superhuman vitality, this fighter can endure countless injuries.",
       "description": "Upgrade one _Leader_ model with Wounds(+1).",
-      "points": 10
+      "points": 20
     },
     "relentless": {
       "subfactions": ["siege_focus"],
@@ -556,7 +556,7 @@
       "rule": "relentless",
       "flavor": "These fighters don't stop until the enemy positions are reduced to rubble.",
       "description": "Upgrade one _Infantry_ or _Heavy Infantry_ unit with Relentless.",
-      "points": 5
+      "points": 10
     },
     "siege_master": {
       "subfactions": ["siege_focus"],
@@ -564,7 +564,7 @@
       "rule": "legend_siege_master",
       "flavor": "This leader is legendary for their ability to annihilate enemy warmachines.",
       "description": "Upgrade one _Leader_ model with Siege Master.",
-      "points": 5
+      "points": 10
     },
     "siegebreaker": {
       "subfactions": ["siege_focus"],
@@ -572,7 +572,7 @@
       "weapon": "legend_siegebreaker",
       "flavor": "When this legendary hammer strikes true the enemy is reduced to nothing but dust.",
       "description": "Replace one _Leader_ model's Melee weapon with Siegebreaker(X).",
-      "points": 10
+      "points": 20
     },
     "stabilizers": {
       "subfactions": ["mounted_focus"],
@@ -580,7 +580,7 @@
       "rule": "legend_stabilizers",
       "flavor": "Stabilizers allow for heavy fire on the move.",
       "description": "Upgrade one _Vehicle_ or _Monster_ model with Stabilizers.",
-      "points": 5
+      "points": 10
     },
     "repair_drones": {
       "subfactions": ["mounted_focus"],
@@ -588,7 +588,7 @@
       "rule": "regeneration",
       "flavor": "This titan of war employs supportive drones that fix any damage suffered.",
       "description": "Upgrade one _Vehicle_ or _Monster_ model with Regeneration.",
-      "points": 5
+      "points": 10
     },
     "devastation_battery": {
       "subfactions": ["mounted_focus"],
@@ -596,7 +596,7 @@
       "weapon": "legend_battery",
       "flavor": "Enhanced with missile batteries, this war machine can unleash devastating attacks.",
       "description": "Upgrade one _Vehicle_ or _Monster_ model with Devastation Battery.",
-      "points": 10
+      "points": 20
     },
     "expert_gunner": {
       "subfactions": ["firepower_focus"],
@@ -604,7 +604,7 @@
       "rule": "legend_expert_gunner",
       "flavor": "This model has fought in many long range battles and survived.",
       "description": "Upgrade one _Leader_ unit with Expert Gunner.",
-      "points": 5
+      "points": 10
     },
     "crack_shot": {
       "subfactions": ["firepower_focus"],
@@ -612,7 +612,7 @@
       "rule": "crack_shot",
       "flavor": "This leader is an expert sharpshooter or just lucky.",
       "description": "Upgrade one _Leader_ unit with Crack Shot.",
-      "points": 5
+      "points": 10
     },
     "grenadier": {
       "subfactions": ["firepower_focus"],
@@ -620,7 +620,7 @@
       "rule": "legend_grenadier",
       "flavor": "These fighters are experts at using grenades and other explosives.",
       "description": "Upgrade one _Infantry_ unit with Grenadier.",
-      "points": 5
+      "points": 10
     },
     "brutal_display": {
       "subfactions": ["shock_focus"],
@@ -628,7 +628,7 @@
       "rule": {"id": "shocking", "x": 3},
       "flavor": "This leader fights with such a frenzy that enemies flee in terror.",
       "description": "Upgrade one _Leader_'s Melee weapon with Shocking(3).",
-      "points": 10
+      "points": 20
     },
     "master_hunter": {
       "subfactions": ["shock_focus"],
@@ -636,7 +636,7 @@
       "rule": "legend_master_hunter",
       "flavor": "This leader has perfected the art of hunting down their weakened prey.",
       "description": "Upgrade one _Leader_ unit with Master Hunter.",
-      "points": 5
+      "points": 10
     },
     "grizly_trophies": {
       "subfactions": ["shock_focus"],
@@ -644,7 +644,7 @@
       "rule": "fear",
       "flavor": "These fighters collects trophies of war and display them to terrorize the enemy.",
       "description": "Upgrade one unit with Fear. ",
-      "points": 5
+      "points": 10
     }
   },
   "powerCategories": {

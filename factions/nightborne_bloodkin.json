@@ -430,14 +430,14 @@
       "rule": "fear",
       "description": "Upgrade one Leader model with Fear.",
       "flavor": "Stories about the creatures of the night are seldom exaggerated.",
-      "points": 5
+      "points": 10
     },
     "sanguine_chalice": {
       "name": "The Sanguine Chalice",
       "rule": "sanguine_chalice",
       "description": "Upgrade one Leader model with Sanguine Chalice.",
       "flavor": "This chalice overflows with fresh blood, inciting fallen soldiers to return from beyond.",
-      "points": 5
+      "points": 10
     },
     "staff_of_dominion": {
       "name": "Staff of Dominion",

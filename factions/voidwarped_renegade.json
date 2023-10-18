@@ -2371,21 +2371,21 @@
       "description": "Upgrade one _Leader_ or _Support_ model with Resistant(3).",
       "rule": {"id": "resistant", "x": 3},
       "flavor": "Those that pray to the vortex gate reveive blessings beyond human comprehension.",
-      "points": 10
+      "points": 20
     },
     "legend_war_veteran": {
       "name": "War Veteran",
       "rule": "legend_war_veteran",
       "description": "Upgrade one _Leader_ or _Support_ model with War Veteran.",
       "flavor": "This hero has lived through so many battles that nothing can phase them anymore.",
-      "points": 5
+      "points": 10
     },
     "legend_accursed_rifle": {
       "name": "Accursed Rifle",
       "weapon": "legend_cursed_rifle",
       "description": "Replace one _Leader_ or _Support_ model's Combat Rifle with the Accursed Rifle.",
       "flavor": "This ancient relic emits an aura of malice, shooting purified hatred.",
-      "points": 5
+      "points": 10
     }
   },
   "powers": {

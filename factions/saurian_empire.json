@@ -539,7 +539,7 @@
       "name": "Feathered Crown",
       "description": "Upgrade one _Leader_ model with Scout.",
       "flavor": "A magical headdress which blesses its wearer with the swiftness of the wind.",
-      "points": 5,
+      "points": 10,
       "rule": "scout"
     },
     {

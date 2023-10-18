@@ -505,14 +505,14 @@
       "rule": "legend_pitlord",
       "description": "Upgrade one Leader model with Pitlord.",
       "flavor": "The bellowing commands issued by this leader are more effective.",
-      "points": 5
+      "points": 10
     },
     "legend_kingslayer": {
       "name": "Kingslayer",
       "weapon": "legend_kingslayer",
       "description": "Upgrade one _Leader_ model with the Kingslayer.",
       "flavor": "A demonic blade that seeks out its own targets to slay.",
-      "points": 5
+      "points": 10
     }
   }
 }

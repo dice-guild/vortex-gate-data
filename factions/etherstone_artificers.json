@@ -1064,21 +1064,21 @@
       "rule": "regeneration",
       "description": "Upgrade one _Leader_ model with Regeneration.",
       "flavor": "Dwarves are known for their love of alcohol, which they even carry into battle.",
-      "points": 5
+      "points": 10
     },
     {
       "name": "Mastercrafted Armor",
       "rule": {"id": "resistant", "x": 3},
       "description": "Upgrade one _Leader_ model with Resistant(3).",
       "flavor": "This suit of armor is covered in runes of power.",
-      "points": 5
+      "points": 10
     },
     {
       "name": "Drillmaster",
       "rule": "legend_drillmaster",
       "description": "Upgrade one _Leader_ model with Drillmaster.",
       "flavor": "This warrior is known for their strict combat training.",
-      "points": 10
+      "points": 20
     }
   ]
 }

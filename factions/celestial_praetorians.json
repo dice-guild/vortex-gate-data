@@ -544,11 +544,11 @@
       "description": "Once per round a when a friendly Infantry unit is targeted by a shooting attack, the attacker suffers -1 Accuracy.",
       "points": 10
     },
-    "legend_ever_vigilant": {"name": "Ever-Vigilant", "description": "If this unit did not take a Move or _Charge_ action in its previous activation, it gains +2 to its Save", "points": 5},
+    "legend_ever_vigilant": {"name": "Ever-Vigilant", "description": "If this unit did not take a Move or _Charge_ action in its previous activation, it gains +1 to its Save", "points": 5},
     "legend_peerless_warrior": {
       "name": "Peerless Warrior",
-      "description": "Once per turn, this unit may take the Counter-Attack reaction without losing the ability to activate later in the turn.",
-      "points": 15
+      "description": "Once per round, this model's unit may perform a free Fight action after being targeted by a Fight or Charge action. It may not Fight again this round.",
+      "points": 20
     }
   },
   "strategies": [
@@ -575,26 +575,19 @@
     }
   ],
   "relics": {
-    "legend_witch_hunter": {
-      "name": "Psychic Feedback",
-      "rule": "legend_witch_hunter",
-      "description": "Upgrade one Leader model with Psychic Feedback.",
-      "flavor": "Whether with powerful warding tech or their own psychic skill, this officer can deliver a mental counter-blow to a target.",
-      "points": 5
+    "ever_vigilant": {
+      "name": "Ever-Vigilant",
+      "rule": "legend_ever_vigilant",
+      "description": "Choose a unit consisting of a single model.  It gains the Ever Vigilant rule.",
+      "flavor": "As a guardian of the Emperor's Throne, the Guardians are patient - and watchful.",
+      "points": 10
     },
-    "legend_alien_hunter": {
-      "name": "Breacher Weapons",
-      "rule": "legend_alien_hunter",
-      "description": "Upgrade one Leader model with Breacher Weapons.",
-      "flavor": "This officer's experimental tech allows them to bypass even the most advanced or paranormal of defences.",
-      "points": 5
-    },
-    "legend_mutant_hunter": {
-      "name": "Blacksite Warden",
-      "rule": "legend_mutant_hunter",
-      "description": "Upgrade one Leader model with Blacksite Warden.",
-      "flavor": "Countless years defending Agency blacksites from internal and external threats has given this officer great skill in repelling ambushes.",
-      "points": 5
+    "peerless_warrior": {
+      "name": "Peerless Warrior",
+      "rule": "legend_peerless_warrior",
+      "description": "Choose a unit consisting of a single model.  It gains the Peerless Warrior rule.",
+      "flavor": "The Throne Guardians are the strongest of mankind's warriors, and through augmentation can move faster than sight",
+      "points": 20
     }
   },
   "color": "#7d0a15",

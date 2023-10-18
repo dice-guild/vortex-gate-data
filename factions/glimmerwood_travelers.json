@@ -690,7 +690,7 @@
     "legend_one_with_nature": {
       "name": "One with Nature",
       "rule": "warrior",
-      "description": "Upgrade one _Leader_ model with Battle Prayer.",
+      "description": "Upgrade one _Leader_ model with Warrior.",
       "flavor": "This hero has meditated within a sacred grove for many years and has gained a deep connection with the forest spirits.",
       "points": 10
     },
@@ -699,14 +699,14 @@
       "rule": "evasive",
       "description": "Upgrade one _Leader_ model with Evasive.",
       "flavor": "This enchanted cloak is made out of golden leaves plucked from the world tree.",
-      "points": 5
+      "points": 10
     },
     "legend_shield": {
       "name": "Timeless Shield",
       "rule": {"id": "resistant", "x": 3},
       "description": "Upgrade one _Leader_ model with Resistant(3).",
       "flavor": "This ornate shield is indestructible, able to deflect lethal strikes.",
-      "points": 5
+      "points": 10
     }
   },
   "color": "#0f3923"

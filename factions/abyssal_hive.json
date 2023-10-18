@@ -735,21 +735,21 @@
       "rule": "regeneration",
       "description": "Upgrade one _Leader_ or _Monster_ model with Regeneration.",
       "flavor": "Using hyper-adaptive mutations, flesh knits itself together and lethal blows are turned into scars.",
-      "points": 10
+      "points": 20
     },
     "adrenaline_pheromones": {
       "name": "Adrenaline Pheromones",
       "rule": "legend_adrenaline_pheromones",
       "description": "Upgrade one _Leader_ or _Monster_ model with Adrenaline Pheromones.",
       "flavor": "This model can exude pheromones that give nearby units a burst of energy.",
-      "points": 5
+      "points": 10
     },
     "stealth_master": {
       "name": "Master Infiltrator",
       "rule": "legend_stealth_master",
       "description": "Upgrade one _Leader_ model with Master Infiltrator.",
       "flavor": "This model is a master at hiding and avoiding enemy blows.",
-      "points": 5
+      "points": 10
     }
   },
   "buyLinks": [

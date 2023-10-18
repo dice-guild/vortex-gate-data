@@ -2070,14 +2070,14 @@
       "rule": "legend_master_duelist",
       "description": "Upgrade one _Leader_ model with Master Duelist.",
       "flavor": "This master of the blade has struck down countless foes, earning them this grim title.",
-      "points": 5
+      "points": 10
     },
     "legend_energy_shield": {
       "name": "Personal Shield Generator",
-      "rule": {"id": "tough", "x": 1},
-      "description": "Upgrade one _Leader_ or _Support_ model with Tough(1).",
+      "rule": {"id": "resistant", "x": 2},
+      "description": "Upgrade one _Leader_ or _Support_ model with Resistant(2).",
       "flavor": "This shield generator can be overcharged to bounce back even the toughest attacks for a moment.",
-      "points": 10
+      "points": 20
     },
     "legend_drill_sergeant": {
       "name": "Drill Sergeant",

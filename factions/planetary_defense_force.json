@@ -513,7 +513,10 @@
       "category": "elite",
       "keywords": ["Mounted"],
       "rules": [{"id": "wounds", "x": 2}],
-      "options": [{"replaceWeapon": {"id": "light_handweapon", "count": 2}, "withWeapon": ["rider_lance"]}, {"replaceWeapon": "pistol", "withWeapon": ["flamethrower", "grenade_launcher", "fusion_rifle", "plasma_rifle"], "modelLimit": "2/5"}],
+      "options": [
+        {"replaceWeapon": {"id": "light_handweapon", "count": 2}, "withWeapon": ["rider_lance"]},
+        {"replaceWeapon": "pistol", "withWeapon": ["flamethrower", "grenade_launcher", "fusion_rifle", "plasma_rifle"], "modelLimit": "2/5"}
+      ],
       "models": [
         {
           "name": "Rider Sergeant",
@@ -560,7 +563,11 @@
           "defense": 7,
           "reflexes": 5,
           "weapons": ["heavy_shotgun", {"id": "handweapon", "count": 2}],
-          "options": [{"addRule": ["shield"]}, {"replaceWeapon": "heavy_shotgun", "withWeapon": ["wrist_grenades"]}, {"replaceWeapon": {"id": "handweapon", "count": 2}, "withWeapon": ["ogre_maul", {"id": "twin_energy_handweapon", "count": 3}]}],
+          "options": [
+            {"addRule": ["shield"]},
+            {"replaceWeapon": "heavy_shotgun", "withWeapon": ["wrist_grenades"]},
+            {"replaceWeapon": {"id": "handweapon", "count": 2}, "withWeapon": ["ogre_maul", {"id": "twin_energy_handweapon", "count": 3}]}
+          ],
           "rules": [{"id": "wounds", "x": 2}],
           "min": 3,
           "max": 9
@@ -1309,7 +1316,7 @@
       "rule": "legend_strategist",
       "description": "Upgrade one Leader model with Brilliant Strategist.",
       "flavor": "This model has an adept strategic mind.",
-      "points": 15
+      "points": 20
     },
     "high_command": {
       "name": "High Command",
@@ -1318,19 +1325,12 @@
       "flavor": "This model has been promoted to a higher position in the defense force ranks.",
       "points": 10
     },
-    "hammer_cannon": {
-      "name": "The Hammer",
-      "weapon": "hammer_cannon",
-      "description": "Replace one model's Battle Cannon with The Hammer.",
-      "flavor": "A battle cannon with extra deadly force.",
-      "points": 10
-    },
     "savage_claw": {
       "name": "The Savage Claw",
       "weapon": "savage_claw",
       "description": "Replace one Leader's Energy Fist(X) with The Savage Claw(X)",
       "flavor": "Torn from the body of a savage orc warlord, this claw is particularly deadly.",
-      "points": 5
+      "points": 10
     }
   },
   "buyLinks": [

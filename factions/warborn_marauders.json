@@ -51,7 +51,7 @@
               "withWeapon": [{"id": "energy_handweapon", "count": 5}, {"id": "energy_greatweapon", "count": 5}, {"id": "energy_powerweapon", "count": 5}, {"id": "twin_energy_handweapon", "count": 6}]
             },
             {"addWeapon": ["attack_beast"]},
-            {"addRule": [{"id": "resistant", "x": 3, "name": "Cyborg Body"}, "ultra_armor"], "limit": 1},
+            {"addRule": [{"id": "resistant", "x": 3, "name": "Cyborg Body"}, "gravite_armor"], "limit": 1},
             {"addRule": [{"id": "inspiring", "x": "Infantry"}, "war_banner"], "limit": 1}
           ],
           "min": 1,
@@ -130,7 +130,7 @@
                 {"id": "twin_energy_handweapon", "count": 4}
               ]
             },
-            {"addRule": [{"id": "resistant", "x": 3, "name": "Cyborg Body"}, "ultra_armor"], "limit": 1},
+            {"addRule": [{"id": "resistant", "x": 3, "name": "Cyborg Body"}, "gravite_armor"], "limit": 1},
             {"replaceRule": {"id": "power", "x": 1}, "withRule": {"id": "power", "x": 2}}
           ],
           "min": 1,
@@ -210,7 +210,7 @@
               "withWeapon": [{"id": "energy_handweapon", "count": 3}, {"id": "energy_greatweapon", "count": 3}, {"id": "energy_powerweapon", "count": 3}, {"id": "twin_energy_handweapon", "count": 4}]
             },
             {"addRule": ["precision_monicle", "goblin_assistant", {"name": "Force Field", "id": "resistant", "Number": 3}]},
-            {"addRule": [{"id": "resistant", "x": 3, "name": "Cyborg Body"}, "ultra_armor"], "limit": 1}
+            {"addRule": [{"id": "resistant", "x": 3, "name": "Cyborg Body"}, "gravite_armor"], "limit": 1}
           ],
           "min": 1,
           "max": 1
@@ -317,7 +317,7 @@
               "replaceWeapon": {"id": "handweapon", "count": 3},
               "withWeapon": [{"id": "energy_handweapon", "count": 3}, {"id": "energy_greatweapon", "count": 3}, {"id": "energy_powerweapon", "count": 3}, {"id": "twin_energy_handweapon", "count": 4}]
             },
-            {"addRule": [{"id": "resistant", "x": 3, "name": "Cyborg Body"}, "ultra_armor"], "limit": 1}
+            {"addRule": [{"id": "resistant", "x": 3, "name": "Cyborg Body"}, "gravite_armor"], "limit": 1}
           ],
           "min": 1,
           "max": 1
@@ -1484,7 +1484,7 @@
     "extra_armor": {"name": "Extra Armor", "description_short": "Save +1", "hidden": true, "points": 12},
     "war_banner": {"name": "War Banner", "description": "This model's unit gains +1 AP on all Melee weapons.", "points": 10},
     "brr": {"name": "Big Red Button", "hidden": true, "description_short": "Movement +2\"", "points": 6},
-    "ultra_armor": {"name": "Ultra Armor", "hidden": true, "description_short": "Save +1, Movement -1\"", "points": 10, "description": "Save +1, Movement -1\""},
+    "gravite_armor": {"name": "Gravite Armor", "hidden": true, "description_short": "Save +1, Movement -1\"", "points": 10, "description": "Save +1, Movement -1\""},
     "shouty": {"name": "Shouty", "description": "This model may use Goblin Tactics an additional time per turn", "points": 10},
     "quick_thinker": {"name": "Quick Thinker", "description": "While this model is on the table you gain 1 additional Strategy Point per round.", "points": 20}
   },
@@ -1494,21 +1494,21 @@
       "weapon": "relic_ultra_claw",
       "description": "Replace one model's Energy Powerweapon(X) with The Killer Claw(X).",
       "flavor": "This Claw is the most killy claw you've ever seen.",
-      "points": 5
+      "points": 10
     },
     "speed_pole": {
       "name": "Big Boss Banner",
       "rule": "speed_pole",
       "description": "Upgrade one _Leader_ model with The Big Boss Banner.",
       "flavor": "Nearby marauders are filled with a zeal to charge forward and attack.",
-      "points": 5
+      "points": 10
     },
     "boom_cannon": {
       "name": "The Blast Cannon",
       "weapon": "boom_cannon",
       "description": "Replace one model's Battle Cannon with The Blast Cannon.",
       "flavor": "A very scary cannon for pure destruction.",
-      "points": 10
+      "points": 20
     }
   },
   "powers": {

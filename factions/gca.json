@@ -836,21 +836,21 @@
       "rule": "legend_witch_hunter",
       "description": "Upgrade one Leader model with Reality Stabilizer.",
       "flavor": "The culmination of extensive R&D, this magitech gadget painfully counters attempts to cast unwanted spells.",
-      "points": 5
+      "points": 10
     },
     "legend_alien_hunter": {
       "name": "Breacher Weapons",
       "rule": "legend_alien_hunter",
       "description": "Upgrade one Leader model with Breacher Weapons.",
       "flavor": "Experimental tech allows the bearer to bypass even the most advanced or paranormal of defences.",
-      "points": 5
+      "points": 10
     },
     "legend_mutant_hunter": {
       "name": "Blacksite Warden",
       "rule": "legend_mutant_hunter",
       "description": "Upgrade one Leader model with Blacksite Warden.",
       "flavor": "Countless years defending GCA blacksites from external threats has given this commander great skill in repelling close-quarters ambushes.",
-      "points": 5
+      "points": 10
     }
   },
   "powers": {}

@@ -838,21 +838,21 @@
       "rule": "legend_relentless_advance",
       "description": "Upgrade one _Leader_ model with Relentless Advance.",
       "flavor": "With a steady marching pace, nearby infantry march towards impending doom.",
-      "points": 5
+      "points": 10
     },
     "eternal_orb": {
       "name": "The Eternal Orb",
       "rule": "legend_eternal_orb",
       "description": "Replace one _Leader_ model's Regeneration Orb with The Eternal Orb.",
       "flavor": "A significantly more powerful orb known to reanimate entire armies in masses.",
-      "points": 10
+      "points": 20
     },
     "phase_shield": {
       "name": "Phase Shield",
       "rule": {"String": "resistant", "Number": 2},
       "description": "Upgrade one _Vehicle_ model with Resistant(2).",
       "flavor": "This machine possesses a powerful shield generator that allows it to ignore small arms fire.",
-      "points": 5
+      "points": 10
     }
   },
   "rules": {

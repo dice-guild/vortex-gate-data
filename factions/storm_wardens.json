@@ -680,23 +680,23 @@
   "relics": [
     {
       "name": "Spectral Charm",
-      "description": "Upgrade one _Leader_ model with Tough(1).",
+      "description": "Upgrade one _Leader_ model with Resistant(2).",
       "flavor": "A powerful amulet which makes its wearer partially incorporeal.",
-      "points": 5,
-      "rule": {"id": "tough", "x": 1}
+      "points": 10,
+      "rule": {"id": "resistant", "x": 2}
     },
     {
       "name": "Dragonscale Shield",
       "description": "Replace one _Leader_ model Shield with the Dragonscale Shield.",
       "flavor": "This powerful shield can to absorb lethal strikes directed at its wielder.",
-      "points": 5,
+      "points": 10,
       "weapon": "legend_shield"
     },
     {
       "name": "Meteorite Hammer",
       "description": "Replace one _Leader_ model Great Weapon with the Meteorite Hammer.",
       "flavor": "This weapon has been forged from a meteor and has been imbued with astral magic.",
-      "points": 5,
+      "points": 10,
       "weapon": "legend_hammer"
     }
   ],

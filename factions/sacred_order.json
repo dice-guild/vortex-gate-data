@@ -721,24 +721,24 @@
   "relics": {
     "legend_gravity_field": {
       "name": "Gravity Field",
-      "rule": {"id": "tough", "x": 1},
-      "description": "Upgrade one model with Tough(1).",
+      "rule": {"id": "resistant", "x": 2},
+      "description": "Upgrade one Hero model with Resistant(2).",
       "flavor": "This gravity field generator can be overcharged to bounce even the toughest attacks for a moment.",
-      "points": 10
+      "points": 20
     },
     "legend_holy_presence": {
       "name": "Holy Presence",
       "rule": {"id": "resistant", "x": 2},
       "description": "Upgrade one _Leader_ or _Support_ model with Resistant(2).",
       "flavor": "Blessed by the saints with enhanced armor.",
-      "points": 5
+      "points": 10
     },
     "legend_vengeance_pistol": {
       "name": "The Vengeance Pistol",
       "weapon": "legend_vengeance_pistol",
       "description": "Replace one Fusion Pistol with The Vengeance Pistol",
       "flavor": "This pistol is impued with holy fusion that can defeat even the most armored foes.",
-      "points": 5
+      "points": 10
     }
   },
   "strategies": [

@@ -669,14 +669,14 @@
       "weapon": "legend_lance",
       "description": "Upgrade one _Leader_ model's Heavy Polearm with the Lance of Rust.",
       "flavor": "This unholy relic is coated in a poison that melts through the thickest armor.",
-      "points": 5
+      "points": 10
     },
     "mutation_serum": {
       "name": "Mutation Serum",
       "rule": "legend_mutation_serum",
       "description": "Upgrade one _Leader_ model with Mutation Serum.",
       "flavor": "This master mutator carries around a powerful serum that swells the ferocity and power of beasts.",
-      "points": 5
+      "points": 10
     }
   }
 }

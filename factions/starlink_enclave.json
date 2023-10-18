@@ -821,21 +821,21 @@
       "rule": "legend_emergency_kit",
       "description": "Upgrade one _Leader_ model to be upgraded with Emergency Kit.",
       "flavor": "It never hurts to have a backup plan.",
-      "points": 5
+      "points": 10
     },
     "advanced_spotting_laser": {
       "name": "Advanced Spotting Laser",
       "rule": "legend_advanced_spotting_laser",
       "description": "Replace one Spotting Laser with an Advanced Spotting Laser.",
       "flavor": "Upgraded with advanced optics, this spotting laser can iluminate targets twice as bright.",
-      "points": 5
+      "points": 10
     },
     "amplified_pulse_rifle": {
       "name": "Amplified Pulse Rifle",
       "weapon": "amplified_pulse_rifle",
       "description": "Replace one _Leader_ Pulse Rifle with an Amplified Pulse Rifle.",
       "flavor": "Specifically crafted for longer range fire support, this pulse rifle can rapidly fire and cause significant damage.",
-      "points": 5
+      "points": 10
     }
   },
   "powers": {
