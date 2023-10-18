@@ -610,5 +610,6 @@
     "balefire": {"name": "Balefire", "description": "Target enemy unit within 24\" take 3 hits with AP(1).", "charge": 7},
     "sap_strength": {"name": "Sap Strength", "description": "Target enemy unit within 24\" has -1 Strength until the end of the turn.", "charge": 6},
     "hex": {"name": "Hex", "description": "Target enemy unit within 12\" must re-roll successful Save rolls of 1 until the end of the turn.", "charge": 5}
-  }
+  },
+  "buyLinks": [{"name": "Games Workshop", "link": "https://www.games-workshop.com/en-US/Warhammer-Age-of-Sigmar?N=2070689437+2779910718"}]
 }
