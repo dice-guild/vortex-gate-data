@@ -578,7 +578,7 @@
       "name": "Light Combat Mechs",
       "description": "Lightly equipped recon mechs.",
       "category": "elite",
-      "keywords": ["Vehicle", "Mech"],
+      "keywords": ["Vehicle"],
       "models": [
         {
           "name": "Light Combat Mech",

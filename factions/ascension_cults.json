@@ -744,7 +744,7 @@
       "name": "Cult Light Combat Mechs",
       "description": "Lightly equipped recon mechs.",
       "category": "elite",
-      "keywords": ["Vehicle", "Mech"],
+      "keywords": ["Vehicle"],
       "models": [
         {
           "name": "Cult Light Combat Mech",

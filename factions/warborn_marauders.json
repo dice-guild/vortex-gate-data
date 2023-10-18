@@ -1207,7 +1207,7 @@
       "name": "Blitz Bomber",
       "description": "A ramshackle plane equipped for heavy bombing runs.",
       "category": "elite",
-      "keywords": ["Vehicle", "Aircraft"],
+      "keywords": ["Vehicle"],
       "models": [
         {
           "name": "Blitz Bomber",
@@ -1233,7 +1233,7 @@
       "name": "Blitz Fighter",
       "description": "A ramshackle plane equipped for fire support.",
       "category": "elite",
-      "keywords": ["Vehicle", "Aircraft"],
+      "keywords": ["Vehicle"],
       "models": [
         {
           "name": "Blitz Fighter",

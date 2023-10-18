@@ -512,7 +512,7 @@
       "name": "Hypersonic Transport",
       "description": "A very fast and highly advanced transport craft.",
       "category": "transport",
-      "keywords": ["Vehicle", "Aircraft"],
+      "keywords": ["Vehicle"],
       "models": [
         {
           "name": "Hypersonic Transport",
@@ -534,7 +534,7 @@
       "name": "Hypersonic Fighter",
       "description": "A very fast and highly advanced fighter craft.",
       "category": "rare",
-      "keywords": ["Vehicle", "Aircraft"],
+      "keywords": ["Vehicle"],
       "models": [
         {
           "name": "Hypersonic Fighter",

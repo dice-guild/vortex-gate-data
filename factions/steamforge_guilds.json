@@ -361,6 +361,7 @@
       "name": "Cyborg Breachers",
       "description": "Cyborgs specialized in breaching defenses and fighting armored targets.",
       "category": "elite",
+      "keywords": ["Heavy Infantry"],
       "models": [
         {
           "name": "Cyborg Breacher",
@@ -443,6 +444,7 @@
       "name": "Combat Robots",
       "description": "A squad of tactical robots built to attack with a variety of deadly weapons.",
       "category": "elite",
+      "keywords": ["Heavy Infantry"],
       "models": [
         {
           "name": "Combat Robot",
@@ -528,7 +530,7 @@
       "name": "APC Gunship",
       "description": "A troop-carrying gunship.",
       "category": "transport",
-      "keywords": ["Vehicle", "Aircraft"],
+      "keywords": ["Vehicle"],
       "models": [
         {
           "name": "APC Gunship",
@@ -562,7 +564,7 @@
       "name": "Guild Scout Mechsuits",
       "description": "Light mechsuits with various weapons, well suited for scouting missions.",
       "category": "elite",
-      "keywords": ["Vehicle", "Mech"],
+      "keywords": ["Vehicle"],
       "models": [
         {
           "name": "Guild Scout Mechsuit",
@@ -584,7 +586,7 @@
       "name": "Guild Heavy Mechsuits",
       "description": "Heavy mechsuits with a variety of heavy weapons, well suited for difficult terrain.",
       "category": "rare",
-      "keywords": ["Vehicle", "Mech"],
+      "keywords": ["Vehicle"],
       "models": [
         {
           "name": "Guild Heavy Mechsuit",
@@ -606,7 +608,7 @@
       "name": "Heavy Gunship",
       "description": "A gunship equipped with heavy weapons.",
       "category": "rare",
-      "keywords": ["Vehicle", "Aircraft"],
+      "keywords": ["Vehicle"],
       "models": [
         {
           "name": "Heavy Gunship",
