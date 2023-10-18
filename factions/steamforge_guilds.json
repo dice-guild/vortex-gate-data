@@ -109,6 +109,7 @@
       "name": "Data Specialist",
       "description": "An expert in manipulating machine data.",
       "category": "hero",
+      "keywords": ["Heavy Infantry"],
       "models": [
         {
           "name": "Data Specialist",
