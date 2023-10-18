@@ -160,7 +160,7 @@
           "courage": 6,
           "shoot": 5,
           "fight": 6,
-          "defense": 7,
+          "defense": 8,
           "reflexes": 6,
           "movement": 6,
           "rules": [{"id": "wounds", "x": 2}],
