@@ -2310,12 +2310,12 @@
       "caches": {
         "name": "Caches",
         "description": "Important caches are scattered throughout the battlefield which can be secured.",
-        "rules": "* Players roll off and alternate placing 6 cache markers on the field within 3\" of any objective marker and more than 3\" away from other cache markers.\n* No objective may have more than 2 cache markers placed within 3“ of it.\n* Units may perform the Recover action when in base contact with a cache marker. Perform an Initiative test with that unit. If successful, gain 3 VP and remove the cache marker from the board."
+        "rules": "* Players roll off and alternate placing 6 cache markers on the field within 3\" of any objective marker and more than 3\" away from other cache markers.\n* No objective may have more than 2 cache markers placed within 3“ of it.\n* Units may perform the Recover action when in base contact with a cache marker. Perform an Initiative test with that unit. If successful, gain 3 VP and remove the cache marker from the board.\n\n Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling three or more objectives"
       },
       "raze": {
         "name": "Raze",
         "description": "Destroying an objective can ensure your opponent cannot use it against you.",
-        "rules": "* At the end of the round after objectives are scored, if you control more than one objective, you may choose to destroy an objective you control for 5 VP. After you do this, remove the objective from the board."
+        "rules": "* At the end of the round after objectives are scored, if you control more than one objective, you may choose to destroy an objective you control for 5 VP. After you do this, remove the objective from the board.\n\n Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling three or more objectives"
       }
     },
     "secondaries": {
