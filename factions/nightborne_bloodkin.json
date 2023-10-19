@@ -121,7 +121,7 @@
           "reflexes": 6,
           "weapons": [{"id": "feral_claws", "count": 4}, "vampire_bite"],
           "options": [{"addRule": [{"id": "fly", "name": "Wings"}]}],
-          "rules": [{"id": "wounds", "x": 3}, "leader", {"id": "warrior", "x": 1}],
+          "rules": [{"id": "wounds", "x": 3}, "leader", {"id": "warrior", "x": 1}, "fear"],
           "min": 1,
           "max": 1
         }
