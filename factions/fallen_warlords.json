@@ -1,17 +1,17 @@
 {
-  "name": "Corrupted Legions",
-  "id": "corrupted_legions",
+  "name": "Fallen Warlords",
+  "id": "fallen_warlords",
   "author": "Xekon#8266",
   "color": "#343a40",
-  "lore": "Tormentis Vex is a desolate and foreboding planet located in the darkest reaches of the galaxy. Its landscape is scarred by perpetual storms, toxic wastelands, and jagged mountains that seem to reach out for the heavens in a malevolent grasp. The planet's harsh conditions and isolation have given rise to a society of merciless marauding warriors known as the Corrupted Legions. \n\nLong ago, Tormentis Vex was a world of unparalleled beauty and harmony, home to a diverse array of civilizations and cultures. However, a cataclysmic event, believed by many to be a cosmic anomaly or a malevolent curse, plunged the planet into chaos. The skies darkened, and the land became twisted and corrupted, giving birth to the nightmarish landscape it is today.\n\nIn the aftermath of this catastrophic event, a charismatic and power-hungry warlord known as Zarkoth the Malevolent emerged. Zarkoth exploited the chaos and despair that had befallen Tormentis Vex, amassing a following of brutal warriors who sought power and dominance above all else. Zarkoth's leadership was marked by ruthless conquest, enslavement, and a brutal code of warfare.\n\nZarkoth believed that the planet's turmoil was a sign that they were chosen by malevolent cosmic forces to rule the universe. He and his Corrupted Legions, fiercely loyal to their warlord, engaged in dark rituals and practices that further corrupted their minds and bodies. They became formidable warriors but lost touch with their humanity and any sense of morality.\n\nThe Corrupted Legions worship a pantheon of sinister deities, believed to be the cosmic entities responsible for the planet's descent into darkness. These gods demand blood sacrifices, acts of cruelty, and unending devotion. In return, they bestow dark powers upon their worshipers, enhancing their martial prowess and granting them the ability to manipulate the corrupted energies that permeate Tormentis Vex.\n\nThe Corrupted Legions, driven by their belief in their divine destiny, have become feared raiders and conquerors. They traverse the cosmos in formidable starships, descending upon unsuspecting worlds to plunder, enslave, and further expand their dominion. Zarkoth, their warlord, is seen as an immortal figure, his corrupted essence preserved by the dark energies of Tormentis Vex.\n\nAmidst the darkness of Tormentis Vex, there are whispers of resistance. A small but determined group of individuals seeks to break free from the Corrupted Legions' grip and find a way to redeem their planet. They believe that there is a hidden source of light and hope buried deep within the planet's heart, waiting to be discovered.\n\nThe fate of Tormentis Vex and the Corrupted Legions hangs in the balance. Will the malevolent rule of Zarkoth persist, or can the planet's inhabitants rediscover the path to redemption and break free from the darkness that plagues their world?",
+  "lore": "Tormentis Vex is a desolate and foreboding planet located in the darkest reaches of the galaxy. Its landscape is scarred by perpetual storms, toxic wastelands, and jagged mountains that seem to reach out for the heavens in a malevolent grasp. The planet's harsh conditions and isolation have given rise to a society of merciless marauding warriors known as the Fallen Warlords. \n\nLong ago, Tormentis Vex was a world of unparalleled beauty and harmony, home to a diverse array of civilizations and cultures. However, a cataclysmic event, believed by many to be a cosmic anomaly or a malevolent curse, plunged the planet into chaos. The skies darkened, and the land became twisted and corrupted, giving birth to the nightmarish landscape it is today.\n\nIn the aftermath of this catastrophic event, a charismatic and power-hungry warlord known as Zarkoth the Malevolent emerged. Zarkoth exploited the chaos and despair that had befallen Tormentis Vex, amassing a following of brutal warriors who sought power and dominance above all else. Zarkoth's leadership was marked by ruthless conquest, enslavement, and a brutal code of warfare.\n\nZarkoth believed that the planet's turmoil was a sign that they were chosen by malevolent cosmic forces to rule the universe. He and his Fallen Warlords, fiercely loyal to their warlord, engaged in dark rituals and practices that further corrupted their minds and bodies. They became formidable warriors but lost touch with their humanity and any sense of morality.\n\nThe Fallen Warlords worship a pantheon of sinister deities, believed to be the cosmic entities responsible for the planet's descent into darkness. These gods demand blood sacrifices, acts of cruelty, and unending devotion. In return, they bestow dark powers upon their worshipers, enhancing their martial prowess and granting them the ability to manipulate the corrupted energies that permeate Tormentis Vex.\n\nThe Fallen Warlords, driven by their belief in their divine destiny, have become feared raiders and conquerors. They traverse the cosmos in formidable starships, descending upon unsuspecting worlds to plunder, enslave, and further expand their dominion. Zarkoth, their warlord, is seen as an immortal figure, his corrupted essence preserved by the dark energies of Tormentis Vex.\n\nAmidst the darkness of Tormentis Vex, there are whispers of resistance. A small but determined group of individuals seeks to break free from the Fallen Warlords' grip and find a way to redeem their planet. They believe that there is a hidden source of light and hope buried deep within the planet's heart, waiting to be discovered.\n\nThe fate of Tormentis Vex and the Fallen Warlords hangs in the balance. Will the malevolent rule of Zarkoth persist, or can the planet's inhabitants rediscover the path to redemption and break free from the darkness that plagues their world?",
   "units": {
     "corrupted_lord": {
-      "name": "Corrupted Lord",
+      "name": "Fallen Lord",
       "description": "A favored champion of the dark gods, leading their warband into war.",
       "category": "hero",
       "models": [
         {
-          "name": "Corrupted Lord",
+          "name": "Fallen Lord",
           "movement": 6,
           "courage": 7,
           "shoot": 5,
@@ -36,13 +36,13 @@
       ]
     },
     "corrupted_lord_mount": {
-      "name": "Corrupted Lord on Cursed Steed",
+      "name": "Fallen Lord on Cursed Steed",
       "description": "A favored champion of the dark gods, leading their warband into war ontop of a demonic beast.",
       "category": "hero",
       "keywords": ["Mounted"],
       "models": [
         {
-          "name": "Corrupted Lord on Cursed Steed",
+          "name": "Fallen Lord on Cursed Steed",
           "movement": 8,
           "courage": 7,
           "shoot": 5,
@@ -65,13 +65,13 @@
       ]
     },
     "corrupted_lord_on_lizard": {
-      "name": "Corrupted Lord on Lizard Beast",
+      "name": "Fallen Lord on Lizard Beast",
       "description": "A favored champion of the dark gods, leading their warband into war ontop of a massive lizard beast.",
       "category": "hero",
       "keywords": ["Mounted", "Monster"],
       "models": [
         {
-          "name": "Corrupted Lord on Lizard Beast",
+          "name": "Fallen Lord on Lizard Beast",
           "movement": 8,
           "courage": 7,
           "shoot": 5,
@@ -94,13 +94,13 @@
       ]
     },
     "corrupted_lord_manticore": {
-      "name": "Corrupted Lord on Manticore",
+      "name": "Fallen Lord on Manticore",
       "description": "A favored champion of the dark gods, leading their warband into war ontop of a deadly manticore.",
       "category": "hero",
       "keywords": ["Mounted", "Monster"],
       "models": [
         {
-          "name": "Corrupted Lord on Manticore",
+          "name": "Fallen Lord on Manticore",
           "movement": 10,
           "courage": 7,
           "shoot": 5,
@@ -255,12 +255,12 @@
       "subfactions": ["toughness_focus"]
     },
     "corrupted_warriors": {
-      "name": "Corrupted Warriors",
+      "name": "Fallen Warriors",
       "description": "A regiment of corrupted warriors who march into battle to gain the favours of their dark gods.",
       "category": "core",
       "models": [
         {
-          "name": "Corrupted Warrior",
+          "name": "Fallen Warrior",
           "movement": 6,
           "courage": 6,
           "shoot": 5,
@@ -285,12 +285,12 @@
       "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
     },
     "corrupted_mutants": {
-      "name": "Corrupted Mutants",
+      "name": "Fallen Mutants",
       "description": "A pack of corrupted warriors who have gone insane in their twisted bodies.",
       "category": "core",
       "models": [
         {
-          "name": "Corrupted Mutant",
+          "name": "Fallen Mutant",
           "movement": 6,
           "courage": 6,
           "shoot": 5,
@@ -306,12 +306,12 @@
       ]
     },
     "corrupted_barbarians": {
-      "name": "Corrupted Barbarians",
+      "name": "Fallen Barbarians",
       "description": "Frenzied Warriors who rush into battle to appease their dark gods.",
       "category": "core",
       "models": [
         {
-          "name": "Corrupted Barbarian",
+          "name": "Fallen Barbarian",
           "movement": 7,
           "courage": 5,
           "shoot": 5,
@@ -369,13 +369,13 @@
       "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
     },
     "corrupted_knights": {
-      "name": "Corrupted Knights",
+      "name": "Fallen Knights",
       "description": "A regiment of corrupted knights who ride into battle atop demonic steeds to gain the favours of their dark gods.",
       "category": "elite",
       "keywords": ["Mounted"],
       "models": [
         {
-          "name": "Corrupted Knight",
+          "name": "Fallen Knight",
           "movement": 8,
           "courage": 6,
           "shoot": 5,
@@ -392,12 +392,12 @@
       "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
     },
     "chosen": {
-      "name": "Corrupted Chosen",
+      "name": "Fallen Chosen",
       "description": "Blessed by their dark gods, these warriors set out to slay the mightiest of heroes.",
       "category": "elite",
       "models": [
         {
-          "name": "Corrupted Chosen",
+          "name": "Fallen Chosen",
           "movement": 6,
           "courage": 6,
           "shoot": 5,
@@ -421,7 +421,7 @@
     },
     "chosen_knights": {
       "name": "Chosen Knights",
-      "description": "Personal Bodyguards of the great Corrupted Lords, ready to bring carnage to the battlefield.",
+      "description": "Personal Bodyguards of the great Fallen Lords, ready to bring carnage to the battlefield.",
       "category": "rare",
       "keywords": ["Mounted"],
       "models": [
@@ -488,13 +488,13 @@
       ]
     },
     "corrupted_berzerkers": {
-      "name": "Corrupted Berzerkers",
+      "name": "Fallen Berzerkers",
       "description": "A regiment of mindless brutes blessed with eternal bloodlust, killing for their dark gods.",
       "category": "core",
       "subfactions": ["assault_focus"],
       "models": [
         {
-          "name": "Corrupted Berzerker",
+          "name": "Fallen Berzerker",
           "movement": 6,
           "courage": 6,
           "shoot": 5,
@@ -579,7 +579,7 @@
       "name": "Blazing Runes",
       "phase": "activation",
       "description": "Use before an Infantry unit fights. Hit rolls of 1 or 2 gain +1 AP.",
-      "flavor": "Corrupted Warriors wield enchanted weapons, covered in unholy runes and burning with dark magic.",
+      "flavor": "Fallen Warriors wield enchanted weapons, covered in unholy runes and burning with dark magic.",
       "cost": 1
     }
   ],
