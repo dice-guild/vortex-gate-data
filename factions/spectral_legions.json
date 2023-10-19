@@ -44,7 +44,7 @@
           "courage": 7,
           "shoot": 5,
           "fight": 5,
-          "defense": 6,
+          "defense": 7,
           "reflexes": 6,
           "rules": [{"id": "leader", "x": "Infantry, Cavalry"}, {"id": "wounds", "x": 3}],
           "weapons": [{"id": "great_weapon", "count": 3}, {"id": "hooves_and_teeth", "count": 2}],
@@ -108,8 +108,7 @@
               "replaceWeapon": [{"id": "great_weapon", "count": 4}],
               "withWeapon": [{"id": "great_weapon", "count": 5}, {"id": "great_axe", "count": 4}, {"id": "heavy_polearm", "count": 4}, {"id": "heavy_flail", "count": 4}]
             },
-            {"addRule": ["shield", {"id": "inspiring", "x": "Infantry"}, {"id": "power", "x": 1}]},
-            {"replaceRule": [{"id": "tactician", "x": 1}], "withRule": [{"id": "tactician", "x": 2}]}
+            {"addRule": ["shield", {"id": "inspiring", "x": "Infantry"}, {"id": "power", "x": 1}]}
           ],
           "min": 1,
           "max": 1
@@ -128,7 +127,7 @@
           "courage": 7,
           "shoot": 6,
           "fight": 6,
-          "defense": 7,
+          "defense": 8,
           "reflexes": 6,
           "rules": [{"id": "warrior", "x": 1}, {"id": "leader", "x": "Infantry, Cavalry"}, {"id": "wounds", "x": 3}],
           "weapons": [{"id": "great_weapon", "count": 4}, {"id": "hooves_and_teeth", "count": 2}],
@@ -137,8 +136,7 @@
               "replaceWeapon": [{"id": "great_weapon", "count": 4}],
               "withWeapon": [{"id": "great_weapon", "count": 5}, {"id": "great_axe", "count": 4}, {"id": "heavy_lance", "count": 4}, {"id": "heavy_flail", "count": 4}]
             },
-            {"addRule": ["shield", {"id": "inspiring", "x": "Infantry, Cavalry"}, {"id": "power", "x": 1}, {"name": "Wings", "id": "fly"}]},
-            {"replaceRule": [{"id": "warrior", "x": 1}], "withRule": [{"id": "warrior", "x": 2}]}
+            {"addRule": ["shield", {"id": "inspiring", "x": "Infantry, Cavalry"}, {"id": "power", "x": 1}, {"name": "Wings", "id": "fly"}]}
           ],
           "min": 1,
           "max": 1
@@ -166,8 +164,7 @@
               "replaceWeapon": [{"id": "great_weapon", "count": 4}],
               "withWeapon": [{"id": "great_weapon", "count": 5}, {"id": "great_axe", "count": 4}, {"id": "heavy_lance", "count": 4}, {"id": "heavy_flail", "count": 4}]
             },
-            {"addRule": ["shield", {"id": "inspiring", "x": "Infantry, Cavalry"}, {"id": "power", "x": 1}]},
-            {"replaceRule": [{"id": "warrior", "x": 1}], "withRule": [{"id": "warrior", "x": 2}]}
+            {"addRule": ["shield", {"id": "inspiring", "x": "Infantry, Cavalry"}, {"id": "power", "x": 1}]}
           ],
           "min": 1,
           "max": 1
@@ -187,7 +184,7 @@
           "fight": 6,
           "defense": 6,
           "reflexes": 6,
-          "rules": ["leader", {"id": "power", "x": 1}, "soul_lantern", {"id": "wounds", "x": 3}],
+          "rules": ["leader", {"id": "power", "x": 1}, "striker", {"id": "wounds", "x": 3}],
           "weapons": ["heavy_handweapon", "staff"],
           "options": [
             {"replaceWeapon": ["heavy_handweapon", "staff"], "withWeapon": [{"id": "great_staff", "count": 2}]},
@@ -283,6 +280,7 @@
       "description": "Spirits of ancient knights, reaping the living with their massive scythes.",
       "category": "elite",
       "keywords": ["Mounted"],
+      "rules": [{"id": "wounds", "x": 2}],
       "models": [
         {
           "name": "Knight",
@@ -290,7 +288,7 @@
           "courage": 6,
           "shoot": 5,
           "fight": 5,
-          "defense": 7,
+          "defense": 8,
           "reflexes": 5,
           "weapons": [{"id": "great_scythe", "count": 2}, {"id": "hooves_and_teeth", "count": 2}],
           "options": [{"addRule": [{"name": "Wings", "id": "fly"}], "modelLimit": "all"}],
@@ -343,7 +341,6 @@
     }
   },
   "weapons": {"great_scythe": {"name": "Great-scythe", "attacks": 1, "ap": 5, "short": "Melee", "rules": ["cumbersome"]}},
-  "rules": {"soul_lantern": {"name": "Soul Lantern", "description": "Once per round, a friendly _Infantry_ unit within 6\" gains +1 AP on all Melee weapons.", "points": 10}},
   "powers": {
     "gravecall": {"name": "Gravecall", "description": "Target friendly unit within 12\" restores 1D3 wounds. If no wounds can be restored, restore 1d3 models instead.", "charge": 5},
     "spectral_bindings": {"name": "Spectral Bindings", "description": "Target enemy unit within 12\" halves their Movement until the end of the turn.", "charge": 6},
@@ -361,13 +358,7 @@
       "flavor": "This leader has the ability to see even the most hidden foes.",
       "points": 10
     },
-    "nightmare_shroud": {
-      "name": "Nightmare Shroud",
-      "rule": "fear",
-      "description": "Upgrade one _Hero_ with Fear.",
-      "flavor": "A horrifying dark shroud of nightmares.",
-      "points": 10
-    },
+    "nightmare_shroud": {"name": "Nightmare Shroud", "rule": "fear", "description": "Upgrade one _Hero_ with Fear.", "flavor": "A horrifying dark shroud of nightmares.", "points": 10},
     "soul_caller": {
       "name": "Soul Caller",
       "rule": "regeneration",
