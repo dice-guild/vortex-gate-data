@@ -190,7 +190,7 @@
       "name": "Zombies",
       "description": "The risen undead. Be careful or you might end up part of them.",
       "category": "core",
-      "models": [{"name": "Zombie", "movement": 5, "courage": 5, "shoot": 4, "fight": 5, "defense": 4, "reflexes": 4, "weapons": ["unarmed"], "rules": ["raise_dead", "fear"], "min": 10, "max": 20}],
+      "models": [{"name": "Zombie", "movement": 5, "courage": 5, "shoot": 4, "fight": 5, "defense": 4, "reflexes": 4, "weapons": ["light_handweapon"], "rules": ["raise_dead", "fear"], "min": 10, "max": 20}],
       "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}],
       "subfactions": ["none"]
     },
