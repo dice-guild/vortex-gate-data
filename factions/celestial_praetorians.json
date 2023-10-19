@@ -421,15 +421,15 @@
         }
       ]
     },
-    "contemptor_assault_walker": {
-      "name": "Relic Contemptor Juggernaut",
+    "relic_assault_walker": {
+      "name": "Relic Juggernaut",
       "description": "A heavily armed ancient walker.",
       "rules": ["vulnerable_rear", {"id": "wounds", "x": 5}],
       "category": "rare",
       "keywords": ["Vehicle, Juggernaut"],
       "models": [
         {
-          "name": "Relic Contemptor Juggernaut",
+          "name": "Relic Juggernaut",
           "movement": 8,
           "courage": 7,
           "shoot": 7,
@@ -437,7 +437,7 @@
           "defense": 12,
           "reflexes": 7,
           "weapons": ["heavy_gatling_gun", {"id": "walker_fist", "count": 4}, {"id": "twin_combat_rifle"}],
-          "options": [{"replaceWeapon": "heavy_gatling_gun", "withWeapon": ["heavy_fusion_rifle"]}],
+          "options": [{"replaceWeapon": "heavy_gatling_gun", "withWeapon": ["twin_heavy_fusion_rifle"]}],
           "min": 1,
           "max": 1
         }
@@ -495,16 +495,16 @@
     "praetorian_lance": {"name": "Praetorian Lance", "attacks": 1, "short": "Melee", "ap": 3, "rules": ["lance"]},
     "praetorian_dagger": {"name": "Praetorian Dagger", "attacks": 1, "short": "Melee", "ap": 1},
     "praetorian_axe_blade": {"name": "Praetorian Axe (Blade)", "attacks": 1, "short": "Melee", "ap": 5, "rules": ["cumbersome"]},
-    "praetorian_axe_rifle": {"name": "Praetorian Axe (Rifle)", "attacks": 1, "short": 12, "medium": 24, "ap": 1, "rules": ["rapid_fire"]},
+    "praetorian_axe_rifle": {"name": "Praetorian Axe (Rifle)", "attacks": 1, "short": 6, "medium": 12, "ap": 1, "rules": ["assault", "brutal"]},
     "praetorian_lance_blade": {"name": "Praetorian Lance (Blade)", "attacks": 1, "short": "Melee", "ap": 4},
     "praetorian_lance_rifle": {"name": "Praetorian Lance (Rifle)", "attacks": 1, "short": 6, "medium": 12, "ap": 3, "rules": ["assault"]},
     "praetorian_spear_blade": {"name": "Praetorian Spear (Blade)", "attacks": 1, "short": "Melee", "ap": 2},
     "praetorian_spear_rifle": {"name": "Praetorian Spear (Rifle)", "attacks": 1, "short": 12, "medium": 24, "ap": 1, "rules": ["rapid_fire"]},
     "praetorian_spear_carbine": {"name": "Praetorian Spear (Carbine)", "attacks": 1, "short": 9, "medium": 18, "ap": 1, "rules": ["assault"]},
-    "praetorian_spear_fusion": {"name": "Praetorian Spear (Fusion)", "attacks": 1, "short": 6, "medium": 12, "ap": 6, "rules": [{"id": "deadly", "x": 1}]},
+    "praetorian_spear_fusion": {"name": "Praetorian Spear (Fusion)", "attacks": 1, "short": 6, "medium": 12, "ap": 6},
     "praetorian_rifle": {
       "name": "Praetorian Rifle",
-      "profiles": [{"name": "HE", "attacks": 1, "short": 18, "medium": 36, "ap": 2, "rules": ["rapid_fire"]}, {"name": "AP", "attacks": 1, "short": 12, "medium": 24, "ap": 5, "rules": ["rapid_fire"]}]
+      "profiles": [{"name": "HE", "attacks": 1, "short": 18, "medium": 36, "ap": 2, "rules": ["rapid_fire"]}, {"name": "AP", "attacks": 1, "short": 12, "medium": 24, "ap": 5}]
     },
     "twin_guardian_rifle": {"name": "Twin Guardian Rifle", "attacks": 2, "short": 12, "medium": 24, "ap": 2, "rules": ["rapid_fire"]},
     "twin_guardian_destructor": {"name": "Twin Guardian Destructor", "attacks": 2, "short": 9, "medium": 18, "ap": 4, "rules": ["assault"]},
