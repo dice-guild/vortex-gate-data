@@ -353,11 +353,34 @@
       "charge": 7
     }
   },
+  "relics": {
+    "unnatural_senses": {
+      "name": "Unnatural Senses",
+      "rule": "guidance",
+      "description": "Upgrade one _Leader_ with Guidance.",
+      "flavor": "This leader has the ability to see even the most hidden foes.",
+      "points": 10
+    },
+    "nightmare_shroud": {
+      "name": "Nightmare Shroud",
+      "rule": "fear",
+      "description": "Upgrade one _Hero_ with Fear.",
+      "flavor": "A horrifying dark shroud of nightmares.",
+      "points": 10
+    },
+    "soul_caller": {
+      "name": "Soul Caller",
+      "rule": "regeneration",
+      "description": "Upgrade one _Leader_ with Regeneration.",
+      "flavor": "A powerful relic which can preserve the souls of the recently fallen.",
+      "points": 20
+    }
+  },
   "strategies": {
     "accursed_blades": {
       "name": "Accursed Blades",
       "phase": "activation",
-      "description": "Use before a unit makes a melee attack. Succesful hits have +1 AP.",
+      "description": "Use before a unit makes a melee attack. Succesful Strength rolls of 1 or 2 gain +1 AP.",
       "flavor": "The rusted blades of the haunted ghosts are covered in ancient curses that inflict immense pain on any target they strike.",
       "cost": 1
     },

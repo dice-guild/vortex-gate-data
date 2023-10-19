@@ -1701,7 +1701,11 @@
     "legend_expert_fighter": {"name": "Expert Fighter", "description": "This model may make one additional attack with any Melee weapon.", "points": 10},
     "mount_horse": {"name": "Horse", "hidden": true, "description_short": "+2\" Movement", "description": "Increase this model's Movement by 2\".", "points": 2},
     "barbed_net": {"name": "Barbed Net", "description": "Units hit by this weapon half their movement until the end of the turn.", "points": 3},
-    "regeneration": {"name": "Regeneration", "description": "At the end of it's activation you can heal 1 wound that has been allocated to this model.", "points": 5},
+    "regeneration": {
+      "name": "Regeneration",
+      "description": "Once per round after taking Saves for this model's unit, roll a D10 for each model or Wound(x) lost. On a 3 or less, that model or Wound(x) is restored. Models must be restored to full Wounds(x) before restoring a new model.",
+      "points": 5
+    },
     "regeneration_aura": {
       "name": "Regeneration(Aura)",
       "description": "Once per round after taking Saves for a unit within 6\", roll a D10 for each model or Wound(x) lost. On a 3 or less, that model or Wound(x) is restored. Models must be restored to full Wounds(x) before restoring a new model.",
@@ -2043,6 +2047,7 @@
     "marksman": {"name": "Marksman", "description": "This model's unit may re-roll failed Accuracy tests of 9+.", "points": 10},
     "marksman_aura": {"name": "Marksman (Aura)", "description": "Friendly units within 6\" may re-roll failed Accuracy tests of 9+.", "points": 10},
     "striker": {"name": "Striker", "description": "This model's unit gains +1 AP on all weapons.", "points": 10},
+    "guidance": {"name": "Guidance", "description": "This model's unit may ignore cover when making ranged attacks.", "points": 10},
     "vigilant_aura": {"name": "Vigilant(Aura)", "description": "Friendly units within 6\" gain +1 Initiative.", "points": 10},
     "vigilant": {"name": "Vigilant", "description": "This model's unit gains +1 Initiative.", "points": 10},
     "wings": {"name": "Wings", "description": "This model may ignore models and terrain when moving.", "points": 5},
