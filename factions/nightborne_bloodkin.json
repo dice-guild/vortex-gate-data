@@ -15,7 +15,7 @@
           "courage": 7,
           "shoot": 5,
           "fight": 5,
-          "defense": 5,
+          "defense": 6,
           "reflexes": 6,
           "weapons": ["handweapon", "great_staff"],
           "rules": [{"id": "wounds", "x": 2}, "leader", {"id": "power", "x": 1}, "striker"],
