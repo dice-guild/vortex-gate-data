@@ -825,5 +825,9 @@
       "flavor": "This magical ring enhances the wearer's charisma and battlefield presence, allowing them to grant orders to more units.",
       "points": 10
     }
+  ],
+  "buyLinks": [
+    {"name": "Games Workshop", "link": "https://www.games-workshop.com/en-US/Warhammer-Age-of-Sigmar?N=2070689437+78046592"},
+    {"name": "OnePageRules", "link": "https://www.myminifactory.com/object/3d-print-human-empire-release-5-321975"}
   ]
 }
