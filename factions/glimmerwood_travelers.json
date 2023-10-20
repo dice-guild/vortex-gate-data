@@ -390,7 +390,7 @@
       ]
     },
     "elf_scouts": {
-      "name": "Elven Scouts",
+      "name": "Glimmerwood Scouts",
       "description": "Swift archers of the wood elves, protecting the edges of the sacred forests.",
       "category": "core",
       "models": [{"name": "Scout", "movement": 7, "courage": 5, "shoot": 6, "fight": 5, "defense": 5, "reflexes": 6, "rules": ["scout"], "weapons": ["bow", "light_handweapon"], "min": 10, "max": 20}],
@@ -422,7 +422,7 @@
     },
     "revenants": {
       "name": "Revenants",
-      "description": "Elven Spirits that have been summoned from beyond the grave to protect their living kin.",
+      "description": "Glimmerwood Spirits that have been summoned from beyond the grave to protect their living kin.",
       "category": "elite",
       "models": [
         {
@@ -515,7 +515,7 @@
       "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
     },
     "elf_rangers": {
-      "name": "Elven Rangers",
+      "name": "Glimmerwood Rangers",
       "description": "Travelling along the hidden Spirit Paths, ambushing armies that have travelled too far into the sacred forests.",
       "category": "elite",
       "models": [

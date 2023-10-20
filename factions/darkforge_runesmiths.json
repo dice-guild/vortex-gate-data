@@ -6,7 +6,7 @@
   "units": {
     "corrupted_runesmith": {
       "name": "Corrupted Runesmith",
-      "description": "",
+      "description": "A runemaster and studied scholar, trained in runesmithing and lore.",
       "category": "hero",
       "models": [
         {
@@ -17,15 +17,14 @@
           "fight": 6,
           "defense": 7,
           "reflexes": 6,
-          "rules": ["leader", {"id": "wounds", "x": 3}, {"id": "power", "x": 1}, {"id": "charger", "x": 1}],
+          "rules": ["leader", {"id": "wounds", "x": 2}, {"id": "power", "x": 1}],
           "weapons": [{"id": "grand_weapon", "count": 2}, "frag_grenade"],
           "min": 1,
           "max": 1,
           "options": [
             {"replaceWeapon": [{"id": "grand_weapon", "count": 2}], "withWeapon": ["blazing_staff"]},
             {"addWeapon": "heavy_pistol"},
-            {"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]},
-            {"replaceRule": [{"id": "charger", "x": 1}], "withRule": [{"id": "charger", "x": 2}]}
+            {"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]}
           ]
         }
       ]
@@ -53,7 +52,7 @@
     },
     "iron_lord": {
       "name": "Iron Lord",
-      "description": "",
+      "description": "A noble and respected member of the darkforge council.",
       "category": "hero",
       "models": [
         {
@@ -74,7 +73,7 @@
     },
     "iron_king": {
       "name": "Iron King",
-      "description": "",
+      "description": "A highly feared king of the darkforge.",
       "category": "hero",
       "models": [
         {
@@ -259,7 +258,6 @@
     }
   },
   "weapons": {
-    "blazing_staff": {"name": "Blazing Staff", "attacks": 1, "ap": 5, "short": "Melee", "rules": [{"id": "reach", "x": 1}, {"id": "deadly", "x": 1}]},
     "glaive_carbine": {
       "name": "Glaive-Carbine",
       "profiles": [
@@ -284,7 +282,7 @@
       "cost": 1
     },
     {
-      "name": "Unnatural Strength",
+      "name": "Absorb Strength",
       "phase": "activation",
       "description": "Use when a friendly unit destroys an enemy unit. That unit gains +1 Strength until the end of the battle. A unit may only be affected by this strategy once.",
       "flavor": "Corrupted Dwarves consume the souls of foes they’ve slain to gain ever greater strength.",

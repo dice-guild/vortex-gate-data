@@ -963,9 +963,9 @@
     "heavy_bomb": {"name": "Heavy Bomb", "rules": ["bomb", {"id": "ammo", "x": 1}, {"id": "blast", "x": 6}], "ap": 4, "attacks": 1, "short": 6},
     "medium_bomb": {"name": "Medium Bomb", "rules": ["bomb", {"id": "ammo", "x": 1}, {"id": "blast", "x": 6}], "ap": 3, "attacks": 1, "short": 6},
     "light_bomb": {"name": "Light Bomb", "rules": ["bomb", {"id": "ammo", "x": 1}, {"id": "blast", "x": 6}], "ap": 2, "attacks": 1, "short": 6},
-    "gas_grenade": {"name": "Gas Grenades", "attacks": 1, "short": 6, "rules": [{"id": "blast", "x": 3}, "indirect", "grenade", "poison"]},
-    "frag_grenade": {"name": "Firebombs", "attacks": 1, "ap": 1, "short": 6, "rules": [{"id": "blast", "x": 3}, "indirect", "grenade"]},
-    "smoke_grenade": {"name": "Smokebombs", "attacks": 1, "short": 6, "rules": ["indirect", "grenade", "smoke"]},
+    "gas_grenade": {"name": "Gas Grenades", "attacks": 1, "short": 6, "rules": [{"id": "blast", "x": 3}, "indirect", "breaching", "poison"]},
+    "frag_grenade": {"name": "Firebombs", "attacks": 1, "ap": 1, "short": 6, "rules": [{"id": "blast", "x": 3}, "indirect", "breaching"]},
+    "smoke_grenade": {"name": "Smokebombs", "attacks": 1, "short": 6, "rules": ["indirect", "breaching", "smoke"]},
     "chemthrower": {"name": "Chemthrower", "rules": ["poison", "distracting"], "attacks": 3, "ap": 1, "medium": 12, "short": 6},
     "barbed_net": {"name": "Barbed Net", "attacks": 1, "short": 9, "rules": ["barbed_net"]},
     "demon_sword": {"name": "Demon Sword", "attacks": 1, "short": "Melee", "ap": 5},
@@ -992,6 +992,7 @@
     "chainfist": {"name": "Chainfist", "attacks": 1, "ap": 4, "short": "Melee", "rules": ["cumbersome", "rending"]},
     "heavy_chainsword": {"name": "Heavy Chainsword", "attacks": 1, "ap": 3, "short": "Melee"},
     "servo_arm": {"name": "Servo-Arm", "attacks": 1, "short": "Melee", "ap": 3},
+    "blazing_staff": {"name": "Blazing Staff", "attacks": 1, "ap": 5, "short": "Melee", "rules": [{"id": "reach", "x": 1}, {"id": "deadly", "x": 1}]},
     "energy_staff": {"name": "Energy Staff", "attacks": 1, "short": "Melee", "ap": 3, "rules": [{"id": "reach", "x": 1}]},
     "energy_lance": {"name": "Energy Lance", "attacks": 1, "short": "Melee", "ap": 3, "rules": ["lance"]},
     "energy_claws": {"name": "Energy Claws", "attacks": 1, "short": "Melee", "ap": 2, "rules": ["rending"]},
@@ -1059,8 +1060,8 @@
         {"name": "Frag", "attacks": 1, "rules": [{"id": "blast", "x": 3}], "short": 6, "medium": 12}
       ]
     },
-    "gas_grenades": {"name": "Gas Grenades", "attacks": 1, "rules": ["grenade", "poison", "smoke", {"id": "blast", "x": 3}], "short": 6},
-    "smoke_grenades": {"name": "Smokes", "attacks": 1, "short": 6, "rules": ["grenade", "indirect", "smoke"]},
+    "gas_grenades": {"name": "Gas Grenades", "attacks": 1, "rules": ["breaching", "poison", "smoke", {"id": "blast", "x": 3}], "short": 6},
+    "smoke_grenades": {"name": "Smokes", "attacks": 1, "short": 6, "rules": ["breaching", "indirect", "smoke"]},
     "wrist_grenades": {"name": "Wrist Grenades", "attacks": 1, "short": 6, "medium": 12, "ap": 1, "rules": ["assault", {"id": "blast", "x": 3}]},
     "fear_grenade_launcher": {"name": "Fear Grenade Launcher", "attacks": 1, "short": 9, "medium": 18, "ap": 2, "rules": [{"id": "shocking", "x": 1}, {"id": "blast", "x": 2}]},
     "at_grenade_launcher": {"name": "AT Grenade Launcher", "attacks": 1, "short": 12, "medium": 24, "ap": 3},
@@ -1068,9 +1069,9 @@
     "psychic_grenades": {
       "name": "Psychic Grenades",
       "profiles": [
-        {"name": "Frag", "attacks": 1, "short": 6, "rules": ["grenade", {"id": "blast", "x": 3}]},
-        {"name": "AT", "attacks": 1, "short": 6, "ap": 3, "rules": ["grenade"]},
-        {"name": "Psychic", "attacks": 1, "short": 6, "rules": ["grenade", "psych_out", {"id": "blast", "x": 3}]}
+        {"name": "Frag", "attacks": 1, "short": 6, "rules": ["breaching", {"id": "blast", "x": 3}]},
+        {"name": "AT", "attacks": 1, "short": 6, "ap": 3, "rules": ["breaching"]},
+        {"name": "Psychic", "attacks": 1, "short": 6, "rules": ["breaching", "psych_out", {"id": "blast", "x": 3}]}
       ]
     },
     "Pistol weapons": "",
@@ -1969,7 +1970,6 @@
     "rending": {"name": "Rending", "description": "Hit rolls of 1 or 2 gain +1 AP.", "points": ["weapon.attacks", {"multiply": 0.2}]},
     "indirect": {"name": "Indirect", "description": "This weapon may target units out of line of sight at -1 Accuracy.", "points": ["weapon.attacks"]},
     "anti_air": {"name": "Anti-air", "description": "This weapon gets +1 to hit units with the Aircraft special rule.", "points": ["weapon.attacks", {"multiply": 1}]},
-    "grenade": {"name": "Grenade", "description": "One model in this unit may use this weapon instead of any other weapons. This weapon ignores cover bonuses."},
     "poison": {"name": "Poison", "description": "Enemy units hit by this weapon must re-roll successful Save rolls of 1.", "points": ["weapon.attacks", {"multiply": 0.5}]},
     "lance": {"name": "Lance", "description": "This weapon gets +1 AP when used during a Charge.", "points": ["weapon.attacks", {"multiply": 0.5}]},
     "leader": {
