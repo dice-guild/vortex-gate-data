@@ -233,6 +233,15 @@
       "color": "#50974A",
       "description": "The Warborn Marauders are a mostly disconnected species of orc clans who are constantly at war with others and each other. The Warborn Marauders rely on massive all-out assaults and cobbled-together technology and vehicles to outlast and overwhelm their foes."
     },
+    "ironfang_tribes": {
+      "version": "1.0",
+      "name": "Ironfang Tribes",
+      "id": "ironfang_tribes",
+      "url": "ironfang_tribes.json",
+      "alliance": "destruction",
+      "color": "#50974A",
+      "description": "Hailing from the harsh planet of Vilefang, these united bands of Orcs and Goblins can fight off even the most advanced foes with sheer strength."
+    },
     "celestial_praetorians": {
       "version": "1.0",
       "name": "Celestial Praetorians",
