@@ -2392,5 +2392,8 @@
     "balefire": {"name": "Balefire", "description": "Target enemy unit within 24\" take 3 hits with AP(1).", "charge": 7},
     "sap_strength": {"name": "Sap Strength", "description": "Target enemy unit within 18\" takes 3 hits with AP(1) and has -1 Strength until the end of the turn.", "charge": 6},
     "hex": {"name": "Hex", "description": "Target enemy unit within 12\" must re-roll one die of your choice on its next Save test.", "charge": 5}
-  }
+  },
+  "buyLinks": [
+    {"name": "Games Workshop", "link": "https://www.games-workshop.com/en-US/Warhammer-40-000?N=2562756967+2590967967"}
+  ]
 }

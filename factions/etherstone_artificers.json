@@ -1080,5 +1080,8 @@
       "flavor": "This warrior is known for their strict combat training.",
       "points": 20
     }
+  ],
+  "buyLinks": [
+    {"name": "Games Workshop", "link": "https://www.games-workshop.com/en-US/Warhammer-Age-of-Sigmar?N=2070689437+648148254"}
   ]
 }
