@@ -785,7 +785,7 @@
       "phase": "activation",
       "name": "Blessed Armory",
       "flavor": "Blessed by priests before the fight, these weapons are empowered with divine strength.",
-      "description": "Use before an Infantry unit fights. Hit rolls of 1 or 2 gain +1 AP.",
+      "description": "Use before a unit fights. Hit rolls of 1 or 2 gain +1 AP.",
       "cost": 1
     },
     {
@@ -796,10 +796,10 @@
       "cost": 1
     },
     {
-      "name": "Expedient Retreat",
+      "name": "Tactical Reposition",
       "phase": "activation",
       "flavor": "Great tacticians employ hit and run tactics to wear down their enemy without taking many losses themselves.",
-      "description": "Use after one of your _Cavalry_ units performs a _Shoot_ or _Fight_ action. It may immediately take a free _Move_ action.",
+      "description": "Use after one of your units performs a _Shoot_ or _Fight_ action. It may immediately take a free _Move_ action.",
       "cost": 1
     }
   ],
