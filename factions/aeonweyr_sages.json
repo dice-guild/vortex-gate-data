@@ -9,7 +9,7 @@
       "name": "Lore Master",
       "description": "A master of Aeonweyr Lore. Highly swift and deadly on foot.",
       "category": "hero",
-      "rules": [{"id": "leader", "x": "Infantry"}, {"id": "tactician", "x": 1}, {"id": "wounds", "x": 3}],
+      "rules": [{"id": "leader", "x": "Infantry"}, {"id": "tactician", "x": 1}],
       "keywords": ["Infantry"],
       "models": [
         {
@@ -20,6 +20,7 @@
           "fight": 7,
           "defense": 7,
           "reflexes": 6,
+          "wounds": 3,
           "weapons": ["shard_pistol", {"id": "light_energy_handweapon", "count": 4}],
           "options": [
             {"replaceWeapon": "shard_pistol", "withWeapon": ["neuron_pistol", "fusion_pistol"]},
@@ -38,7 +39,7 @@
       "name": "Lore Keeper Dancer",
       "description": "A solo wandering player who has perfected the dance of war and occasionally joins the main troupe to deadly effect.",
       "category": "elite",
-      "rules": [{"id": "support", "x": "Infantry"}, {"id": "wounds", "x": 3}],
+      "rules": [{"id": "support", "x": "Infantry"}],
       "keywords": ["Infantry"],
       "models": [
         {
@@ -49,6 +50,7 @@
           "fight": 7,
           "defense": 7,
           "reflexes": 6,
+          "wounds": 3,
           "weapons": ["deadly_arts"],
           "options": [{"addRule": ["ambush"]}],
           "rules": [],
@@ -61,7 +63,7 @@
       "name": "Lore Keeper Seer",
       "description": "An elven keeper gifted with the power of minor foresight and energy manipulation.",
       "category": "hero",
-      "rules": [{"id": "leader", "x": "Infantry"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
+      "rules": [{"id": "leader", "x": "Infantry"}, {"id": "power", "x": 1}],
       "keywords": ["Infantry"],
       "models": [
         {
@@ -72,6 +74,7 @@
           "fight": 7,
           "defense": 7,
           "reflexes": 6,
+          "wounds": 3,
           "weapons": ["shard_pistol", {"id": "light_energy_handweapon", "count": 3}],
           "options": [
             {"replaceWeapon": "shard_pistol", "withWeapon": ["neuron_pistol", "fusion_pistol"]},
@@ -178,7 +181,8 @@
           "fight": 7,
           "defense": 7,
           "reflexes": 6,
-          "rules": ["leader", {"id": "tactician", "x": 2}, {"id": "wounds", "x": 3}],
+          "wounds": 3,
+          "rules": ["leader", {"id": "tactician", "x": 2}],
           "weapons": ["shard_rifle", {"id": "light_energy_handweapon", "count": 3}],
           "options": [
             {"replaceWeapon": ["shard_rifle"], "withWeapon": ["fusion_rifle", "flamethrower", "shard_sniper", "nova_blaster", "missile_launcher"]},
@@ -201,7 +205,7 @@
       "description": "A leader of the high elf martial forces riding a swift hover bike.",
       "category": "hero",
       "keywords": ["Mounted"],
-      "rules": ["hover", {"id": "leader", "x": "Infantry, Biker"}, {"id": "tactician", "x": 2}, {"id": "wounds", "x": 3}],
+      "rules": ["hover", {"id": "leader", "x": "Infantry, Biker"}, {"id": "tactician", "x": 2}],
       "models": [
         {
           "name": "Aeonweyr Champion on Bike",
@@ -211,6 +215,7 @@
           "fight": 7,
           "defense": 7,
           "reflexes": 6,
+          "wounds": 3,
           "weapons": ["shard_rifle", {"id": "light_energy_handweapon", "count": 3}, {"id": "twin_shard_rifle", "mount": ["Front"]}],
           "options": [
             {"replaceWeapon": ["shard_rifle"], "withWeapon": ["fusion_rifle", "flamethrower", "shard_sniper", "nova_blaster", "missile_launcher"]},
@@ -235,7 +240,7 @@
       "name": "Psychic",
       "description": "A gifted high elf psychic.",
       "category": "hero",
-      "rules": ["leader", {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
+      "rules": ["leader", {"id": "power", "x": 1}],
       "models": [
         {
           "name": "Psychic",
@@ -245,6 +250,7 @@
           "fight": 7,
           "defense": 6,
           "reflexes": 6,
+          "wounds": 3,
           "weapons": ["shard_rifle", {"id": "light_energy_handweapon", "count": 2}],
           "options": [
             {
@@ -264,7 +270,7 @@
       "description": "A gifted high elf psychic riding a swift hover bike.",
       "category": "hero",
       "keywords": ["Mounted"],
-      "rules": ["hover", {"id": "leader", "x": "Infantry, Biker"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
+      "rules": ["hover", {"id": "leader", "x": "Infantry, Biker"}, {"id": "power", "x": 1}],
       "models": [
         {
           "name": "Psychic on Bike",
@@ -274,6 +280,7 @@
           "fight": 7,
           "defense": 6,
           "reflexes": 6,
+          "wounds": 3,
           "weapons": ["shard_rifle", {"id": "light_energy_handweapon", "count": 2}, {"id": "twin_shard_rifle", "mount": ["Front"]}],
           "options": [
             {
@@ -292,7 +299,7 @@
       "name": "Spirit Engineer",
       "description": "A high elf leader focused on enhancing the mechanical aspects of the army.",
       "category": "hero",
-      "rules": ["engineer", {"id": "leader", "x": "Heavy Infantry"}, {"id": "wounds", "x": 3}],
+      "rules": ["engineer", {"id": "leader", "x": "Heavy Infantry"}],
       "models": [
         {
           "name": "Spirit Engineer",
@@ -302,6 +309,7 @@
           "fight": 7,
           "defense": 6,
           "reflexes": 6,
+          "wounds": 3,
           "weapons": ["shard_pistol", {"id": "light_energy_handweapon", "count": 3}],
           "min": 1,
           "max": 1
@@ -312,7 +320,7 @@
       "name": "Spirit Engineer on Bike",
       "description": "A high elf leader focused on enhancing the mechanical aspects of the army, riding on a swift hover bike.",
       "category": "hero",
-      "rules": ["engineer", "hover", {"id": "leader", "x": "Heavy Infantry, Biker"}, {"id": "wounds", "x": 3}],
+      "rules": ["engineer", "hover", {"id": "leader", "x": "Heavy Infantry, Biker"}],
       "models": [
         {
           "name": "Spirit Engineer on Bike",
@@ -322,6 +330,7 @@
           "fight": 7,
           "defense": 6,
           "reflexes": 6,
+          "wounds": 3,
           "weapons": ["shard_pistol", {"id": "light_energy_handweapon", "count": 3}, {"id": "twin_shard_rifle", "mount": ["Front"]}],
           "min": 1,
           "max": 1
@@ -421,7 +430,7 @@
       "description": "A recently risen avatar of an ancient elven god of war.",
       "category": "hero",
       "keywords": ["Monster"],
-      "rules": [{"id": "limited", "x": 1}, {"id": "resistant", "x": 3}, {"id": "wounds", "x": 4}],
+      "rules": [{"id": "limited", "x": 1}, {"id": "resistant", "x": 3}],
       "models": [
         {
           "name": "War God Avatar",
@@ -431,6 +440,7 @@
           "fight": 7,
           "defense": 10,
           "reflexes": 6,
+          "wounds": 4,
           "weapons": [{"id": "shreiking_spear_melee", "count": 5}, "shreiking_spear_shoot"],
           "min": 1,
           "max": 1
@@ -681,7 +691,6 @@
       "description": "A massive revenant armed to the teeth with weapons.",
       "category": "rare",
       "keywords": ["Vehicle"],
-      "rules": [{"id": "wounds", "x": 3}],
       "models": [
         {
           "name": "Revenant Lord",
@@ -691,6 +700,7 @@
           "fight": 6,
           "defense": 12,
           "reflexes": 6,
+          "wounds": 3,
           "weapons": [{"id": "revenant_fist", "count": 4}, {"id": "shard_rifle", "count": 2}],
           "options": [
             {"replaceWeapon": {"id": "revenant_fist", "count": 2}, "withWeapon": {"id": "revenant_blade", "count": 3}},
@@ -787,7 +797,7 @@
       "name": "War Walker",
       "description": "Thanks to the skill of their operators, these walkers move as fast as any elf.",
       "category": "elite",
-      "rules": ["vulnerable_rear", {"id": "wounds", "x": 3}, "scout"],
+      "rules": ["vulnerable_rear", "scout"],
       "keywords": ["Vehicle"],
       "models": [
         {
@@ -798,6 +808,7 @@
           "fight": 6,
           "defense": 8,
           "reflexes": 6,
+          "wounds": 3,
           "weapons": [{"id": "sky_cannon", "count": 2}, {"id": "stomp", "count": 2}],
           "options": [{"replaceWeapon": {"id": "sky_cannon", "x": 1}, "withWeapon": ["missile_launcher", "shard_cannon", "shining_cannon"]}],
           "min": 1,
@@ -809,7 +820,7 @@
       "name": "Hover APC",
       "description": "A hover tank which can swiftly transport troops across the battlefield.",
       "category": "transport",
-      "rules": [{"id": "wounds", "x": 5}, "hover", {"id": "impact", "x": 3}, {"id": "transport", "x": 11}],
+      "rules": ["hover", {"id": "impact", "x": 3}, {"id": "transport", "x": 11}],
       "keywords": ["Vehicle"],
       "models": [
         {
@@ -820,6 +831,7 @@
           "fight": 6,
           "defense": 11,
           "reflexes": 6,
+          "wounds": 5,
           "weapons": [{"id": "twin_shard_rifle", "mount": ["Front"]}, "twin_fusion_cannon"],
           "options": [
             {"replaceWeapon": {"id": "twin_shard_rifle", "mount": ["Front"]}, "withWeapon": [{"id": "shard_cannon", "mount": ["Front"]}]},
@@ -835,7 +847,7 @@
       "name": "Hover Tank",
       "description": "A hover tank that can be outfitted with heavy weaponry to eliminate various threats.",
       "category": "rare",
-      "rules": [{"id": "wounds", "x": 5}, "hover", {"id": "impact", "x": 6}, "vulnerable_rear"],
+      "rules": ["hover", {"id": "impact", "x": 6}, "vulnerable_rear"],
       "keywords": ["Vehicle"],
       "models": [
         {
@@ -846,6 +858,7 @@
           "fight": 6,
           "defense": 11,
           "reflexes": 6,
+          "wounds": 5,
           "weapons": [{"id": "twin_shard_rifle", "mount": ["Front"]}, "twin_fusion_cannon"],
           "options": [
             {
@@ -882,7 +895,6 @@
       "name": "Revenant Titan",
       "description": "A gigantic revenant with a variety of loadouts to punish enemies of the high elves on the bloodiest of battlefields.",
       "category": "rare",
-      "rules": [{"id": "wounds", "x": 6}],
       "keywords": ["Vehicle"],
       "models": [
         {
@@ -893,6 +905,7 @@
           "fight": 6,
           "defense": 13,
           "reflexes": 6,
+          "wounds": 6,
           "weapons": ["titan_sword", {"id": "heavy_stomp", "count": 3}],
           "options": [
             {"replaceWeapon": ["titan_sword"], "withWeapon": ["shining_cannon", "heavy_fusion_lance"]},

@@ -18,7 +18,8 @@
           "defense": 6,
           "reflexes": 6,
           "movement": 6,
-          "rules": [{"id": "leader", "x": "Infantry"}, {"id": "tactician", "x": 1}, {"id": "wounds", "x": 2}],
+          "wounds": 2,
+          "rules": [{"id": "leader", "x": "Infantry"}, {"id": "tactician", "x": 1}],
           "weapons": ["auto_rifle", {"id": "light_handweapon", "count": 2}],
           "options": [
             {"replaceWeapon": ["auto_rifle", {"id": "light_handweapon", "count": 2}], "withWeapon": [["pistol", {"id": "light_handweapon", "count": 3}]]},
@@ -46,7 +47,8 @@
           "fight": 6,
           "defense": 7,
           "reflexes": 6,
-          "rules": ["leader", {"id": "tactician", "x": 1}, {"id": "wounds", "x": 3}],
+          "wounds": 3,
+          "rules": ["leader", {"id": "tactician", "x": 1}],
           "weapons": ["pistol", {"id": "bone_sword", "count": 4}],
           "options": [
             {"replaceWeapon": "pistol", "withWeapon": ["plasma_pistol", "flamethrower_pistol", "web_pistol", "needle_pistol"]},
@@ -74,7 +76,8 @@
           "fight": 6,
           "defense": 6,
           "reflexes": 6,
-          "rules": ["leader", {"id": "power", "x": 1}, {"id": "wounds", "x": 2}],
+          "wounds": 2,
+          "rules": ["leader", {"id": "power", "x": 1}],
           "weapons": ["pistol", {"id": "light_handweapon", "count": 2}],
           "options": [
             {"replaceWeapon": "pistol", "withWeapon": ["heavy_pistol", "plasma_pistol", "flamethrower_pistol", "web_pistol"]},
@@ -100,7 +103,8 @@
           "defense": 7,
           "reflexes": 5,
           "movement": 8,
-          "rules": ["evasive", "spotting_laser", {"id": "support", "x": "Infantry, Biker"}, {"id": "wounds", "x": 2}],
+          "wounds": 2,
+          "rules": ["evasive", "spotting_laser", {"id": "support", "x": "Infantry, Biker"}],
           "weapons": [{"id": "handweapon", "count": 3}, "heavy_sniper_rifle"],
           "min": 1,
           "max": 1
@@ -120,7 +124,8 @@
           "fight": 6,
           "defense": 6,
           "reflexes": 6,
-          "rules": ["evasive", "spotting_laser", "support", {"id": "wounds", "x": 2}],
+          "wounds": 2,
+          "rules": ["evasive", "spotting_laser", "support"],
           "weapons": [{"id": "handweapon", "count": 3}, "heavy_sniper_rifle"],
           "min": 1,
           "max": 1
@@ -141,7 +146,8 @@
           "defense": 7,
           "reflexes": 5,
           "movement": 6,
-          "rules": ["chosen_abomination", {"id": "leader", "x": "Infantry, Heavy Infantry"}, {"id": "resistant", "x": 1}, {"id": "wounds", "x": 3}],
+          "wounds": 3,
+          "rules": ["chosen_abomination", {"id": "leader", "x": "Infantry, Heavy Infantry"}, {"id": "resistant", "x": 1}],
           "weapons": [{"id": "energy_powerweapon", "count": 4}],
           "options": [{"addRule": [{"id": "ward", "x": 1}]}],
           "min": 1,
@@ -162,7 +168,8 @@
           "defense": 8,
           "reflexes": 7,
           "movement": 8,
-          "rules": ["agile", "leader", "warrior", {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
+          "wounds": 3,
+          "rules": ["agile", "leader", "warrior", {"id": "power", "x": 1}],
           "weapons": [{"id": "large_razor_talons", "count": 6}],
           "min": 1,
           "max": 1
@@ -182,7 +189,8 @@
           "fight": 6,
           "defense": 6,
           "reflexes": 6,
-          "rules": ["legend_strategist", "support", {"id": "wounds", "x": 2}],
+          "wounds": 2,
+          "rules": ["legend_strategist", "support"],
           "weapons": ["pistol", {"id": "light_handweapon", "count": 2}],
           "min": 1,
           "max": 1
@@ -202,7 +210,8 @@
           "fight": 6,
           "defense": 6,
           "reflexes": 6,
-          "rules": ["inspiration", "scrambler", "support", {"id": "wounds", "x": 2}],
+          "wounds": 2,
+          "rules": ["inspiration", "scrambler", "support"],
           "weapons": ["pistol", {"id": "light_handweapon", "count": 2}],
           "min": 1,
           "max": 1
@@ -222,7 +231,8 @@
           "fight": 6,
           "defense": 6,
           "reflexes": 6,
-          "rules": ["assassin", "relentless", "scout", "support", {"id": "wounds", "x": 2}],
+          "wounds": 2,
+          "rules": ["assassin", "relentless", "scout", "support"],
           "weapons": [{"id": "heavy_pistol", "count": 3}, "light_handweapon"],
           "options": [{"replaceWeapon": ["heavy_pistol"], "withWeapon": ["plasma_pistol", "flamethrower_pistol", "web_pistol"], "limit": 3}],
           "min": 1,
@@ -306,7 +316,7 @@
           "fight": 5,
           "defense": 5,
           "reflexes": 5,
-          "rules": [{"id": "wounds", "x": 2}],
+          "wounds": 2,
           "weapons": [{"id": "heavy_machinegun", "mount": ["Front"]}, "light_handweapon"],
           "options": [
             {
@@ -402,7 +412,8 @@
           "defense": 7,
           "reflexes": 5,
           "movement": 6,
-          "rules": [{"id": "resistant", "x": 1}, {"id": "wounds", "x": 2}],
+          "wounds": 2,
+          "rules": [{"id": "resistant", "x": 1}],
           "weapons": [{"id": "energy_handweapon", "count": 3}],
           "options": [{"replaceWeapon": {"id": "energy_handweapon", "count": 3}, "withWeapon": [{"id": "energy_powerweapon", "count": 2}]}],
           "min": 5,
@@ -458,7 +469,8 @@
           "defense": 12,
           "movement": 10,
           "reflexes": 5,
-          "rules": [{"id": "wounds", "x": 5}, {"id": "impact", "x": 6}, "vulnerable_side_rear"],
+          "wounds": 5,
+          "rules": [{"id": "impact", "x": 6}, "vulnerable_side_rear"],
           "weapons": ["heavy_plasma_cannon", {"id": "heavy_flamethrower", "mount": ["Front"]}],
           "options": [
             {
@@ -519,6 +531,7 @@
           "fight": 5,
           "defense": 13,
           "reflexes": 5,
+          "wounds": 6,
           "weapons": ["battle_cannon", {"id": "heavy_flamethrower", "mount": ["Front"]}],
           "options": [
             {"replaceWeapon": "battle_cannon", "withWeapon": ["heavy_fusion_cannon", "heavy_plasma_cannon", "siege_cannon", "autocannon", "flamestorm_cannon", "tank_hunter_cannon", "gatling_cannon"]},
@@ -557,7 +570,7 @@
             {"addWeapon": ["hunter_missiles"]},
             {"addRule": [{"id": "dozer", "name": "Dozer Blade"}, "field_radio"]}
           ],
-          "rules": [{"id": "wounds", "x": 6}, {"id": "impact", "x": 9}, "vulnerable_rear"],
+          "rules": [{"id": "impact", "x": 9}, "vulnerable_rear"],
           "min": 1,
           "max": 1
         }
@@ -577,7 +590,8 @@
           "fight": 5,
           "defense": 10,
           "reflexes": 5,
-          "rules": [{"id": "wounds", "x": 5}, {"id": "impact", "x": 3}, "vulnerable_side_rear"],
+          "wounds": 5,
+          "rules": [{"id": "impact", "x": 3}, "vulnerable_side_rear"],
           "weapons": [{"id": {"id": "heavy_mortar", "count": 4}, "count": 2}, {"id": "heavy_flamethrower", "mount": ["Front"]}],
           "options": [
             {"replaceWeapon": {"id": "heavy_mortar", "count": 4}, "withWeapon": [{"id": "twin_aa_autocannon", "count": 2}, "artillery_cannon", "eagle_rockets", "death_missile"]},
@@ -612,7 +626,8 @@
           "fight": 5,
           "defense": 11,
           "reflexes": 5,
-          "rules": [{"id": "wounds", "x": 3}, {"id": "impact", "x": 5}, {"id": "transport", "x": 12}, "vulnerable_side_rear"],
+          "wounds": 3,
+          "rules": [{"id": "impact", "x": 5}, {"id": "transport", "x": 12}, "vulnerable_side_rear"],
           "weapons": ["heavy_flamethrower", {"id": "heavy_flamethrower", "mount": ["Front"]}],
           "options": [
             {"replaceWeapon": "heavy_flamethrower", "withWeapon": ["laser_cannon", "heavy_machinegun", "laser_machinegun"]},
@@ -649,7 +664,8 @@
           "fight": 5,
           "defense": 11,
           "reflexes": 5,
-          "rules": ["aircraft", {"id": "wounds", "x": 5}, "hover_mode", {"id": "transport", "x": 12}],
+          "wounds": 5,
+          "rules": ["aircraft", "hover_mode", {"id": "transport", "x": 12}],
           "weapons": [{"id": "light_machinegun", "mount": ["Front"]}],
           "options": [
             {
@@ -702,7 +718,8 @@
           "fight": 5,
           "defense": 11,
           "reflexes": 5,
-          "rules": ["aircraft", {"id": "wounds", "x": 6}, "hover_mode"],
+          "wounds": 6,
+          "rules": ["aircraft", "hover_mode"],
           "weapons": [{"id": "heavy_machinegun", "mount": ["Front"]}, {"id": "strike_missiles", "mount": ["Front"]}],
           "options": [
             {
