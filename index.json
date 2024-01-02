@@ -238,7 +238,8 @@
       "url": "warborn_marauders.json",
       "alliance": "destruction",
       "color": "#50974A",
-      "description": "The Warborn Marauders are a mostly disconnected species of orc clans who are constantly at war with others and each other. The Warborn Marauders rely on massive all-out assaults and cobbled-together technology and vehicles to outlast and overwhelm their foes."
+      "description": "The Warborn Marauders are a mostly disconnected species of orc clans who are constantly at war with others and each other. The Warborn Marauders rely on massive all-out assaults and cobbled-together technology and vehicles to outlast and overwhelm their foes.",
+      "image": "https://github.com/dice-guild/vortex-gate-data/raw/main/images/warborn.png"
     },
     "ironfang_tribes": {
       "version": "1.0",
@@ -247,7 +248,8 @@
       "url": "ironfang_tribes.json",
       "alliance": "destruction",
       "color": "#50974A",
-      "description": "Hailing from the harsh planet of Vilefang, these united bands of Orcs and Goblins can fight off even the most advanced foes with sheer strength."
+      "description": "Hailing from the harsh planet of Vilefang, these united bands of Orcs and Goblins can fight off even the most advanced foes with sheer strength.",
+      "image": "https://github.com/dice-guild/vortex-gate-data/raw/main/images/ironfang.png"
     },
     "celestial_praetorians": {
       "version": "1.0",
@@ -277,7 +279,8 @@
       "url": "gca.json",
       "color": "#657432",
       "alliance": "mercenaries",
-      "description": "The Galactic Corperate Allegiance is a brittle union of opportunistic arms dealers, cutthroat trading companies and private armies vying for control over lost sectors and profitable regions. They are equipped with the best tech and weapons money can buy and prefer stealth and crafty tactics."
+      "description": "The Galactic Corperate Allegiance is a brittle union of opportunistic arms dealers, cutthroat trading companies and private armies vying for control over lost sectors and profitable regions. They are equipped with the best tech and weapons money can buy and prefer stealth and crafty tactics.",
+      "image": "https://github.com/dice-guild/vortex-gate-data/raw/main/images/gca.png"
     },
     "storm_wardens": {
       "version": "1.0",
@@ -287,7 +290,8 @@
       "color": "#D4AF37",
       "secondary_color": "#0d407f",
       "alliance": "order",
-      "description": "Creations of an arch-wizard, the Storm Wardens exist to enforce peace around the realms - no matter who it may favour.  Their incredible weapons and armour are unmatched by other races."
+      "description": "Creations of an arch-wizard, the Storm Wardens exist to enforce peace around the realms - no matter who it may favour.  Their incredible weapons and armour are unmatched by other races.",
+      "image": "https://github.com/dice-guild/vortex-gate-data/raw/main/images/wardens.png"
     },
     "nightborne_bloodkin": {
       "version": "1.0",
@@ -362,7 +366,8 @@
       "url": "ogre_beastmasters.json",
       "color": "#954535",
       "alliance": "destruction",
-      "description": "Large-bodied mercenaries with huge appetites for gold and destruction."
+      "description": "Large-bodied mercenaries with huge appetites for gold and destruction.",
+      "image": "https://github.com/dice-guild/vortex-gate-data/raw/main/images/beastmasters.png"
     },
     "saurian_empire": {
       "version": "1.0",
