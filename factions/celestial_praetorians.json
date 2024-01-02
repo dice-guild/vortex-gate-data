@@ -17,8 +17,9 @@
           "fight": 6,
           "defense": 7,
           "reflexes": 6,
+          "wounds": 3,
           "weapons": ["combat_rifle", {"id": "light_handweapon", "count": 3}],
-          "rules": [{"id": "ward", "x": 1}, {"id": "tactician", "x": 1}, {"id": "wounds", "x": 3}, {"id": "leader", "x": "Infantry"}],
+          "rules": [{"id": "ward", "x": 1}, {"id": "tactician", "x": 1}, {"id": "leader", "x": "Infantry"}],
           "options": [
             {
               "replaceWeapon": ["combat_rifle", {"id": "light_handweapon", "count": 3}],
@@ -35,7 +36,7 @@
       "name": "Praetorian Commander",
       "description": "Highly trained and elite fighters.",
       "category": "hero",
-      "rules": [{"id": "wounds", "x": 4}, {"id": "tactician", "x": 2}, {"id": "leader", "x": "Infantry"}],
+      "rules": [{"id": "tactician", "x": 2}, {"id": "leader", "x": "Infantry"}],
       "models": [
         {
           "name": "Praetorian Commander",
@@ -45,6 +46,7 @@
           "movement": 6,
           "defense": 9,
           "reflexes": 7,
+          "wounds": 4,
           "weapons": [{"id": "praetorian_sword_blade", "count": 5}, "praetorian_sword_pistol"],
           "options": [
             {
@@ -68,7 +70,7 @@
       "name": "Praetorian Captain",
       "description": "Highly trained and elite fighters.",
       "category": "hero",
-      "rules": [{"id": "wounds", "x": 3}, {"id": "tactician", "x": 1}, {"id": "leader", "x": "Infantry"}],
+      "rules": [{"id": "tactician", "x": 1}, {"id": "leader", "x": "Infantry"}],
       "models": [
         {
           "name": "Praetorian Captain",
@@ -78,6 +80,7 @@
           "movement": 6,
           "defense": 9,
           "reflexes": 7,
+          "wounds": 3,
           "weapons": [{"id": "praetorian_sword_blade", "count": 4}, "praetorian_sword_pistol"],
           "options": [
             {
@@ -102,7 +105,7 @@
       "description": "Praetorians on high speed jet bikes.",
       "category": "hero",
       "keywords": ["Mounted"],
-      "rules": [{"id": "wounds", "x": 3}, "hover", {"id": "tactician", "x": 1}, {"id": "leader", "x": "Infantry, Biker"}],
+      "rules": ["hover", {"id": "tactician", "x": 1}, {"id": "leader", "x": "Infantry, Biker"}],
       "models": [
         {
           "name": "Praetorian Captain on Jetbike",
@@ -112,6 +115,7 @@
           "defense": 9,
           "movement": 8,
           "reflexes": 7,
+          "wounds": 3,
           "weapons": ["praetorian_rifle_array", {"id": "praetorian_lance", "count": 5}],
           "options": [{"replaceWeapon": ["praetorian_rifle_array"], "withWeapon": ["praetorian_missiles"]}, {"addWeapon": {"id": "praetorian_dagger"}}],
           "min": 1,
@@ -124,7 +128,7 @@
       "description": "A Praetorian who foreswore ranged weapons in favor of mastering the blade.",
       "category": "hero",
       "keywords": ["Infantry"],
-      "rules": [{"id": "wounds", "x": 3}, "striker", {"id": "leader", "x": "Infantry"}],
+      "rules": ["striker", {"id": "leader", "x": "Infantry"}],
       "models": [
         {
           "name": "Praetorian Blademaster",
@@ -134,6 +138,7 @@
           "movement": 6,
           "defense": 9,
           "reflexes": 7,
+          "wounds": 3,
           "weapons": [{"id": "praetorian_sword_blade", "count": 4}, "praetorian_sword_pistol"],
           "options": [{"addWeapon": {"id": "praetorian_dagger"}}, {"addWeapon": "shield"}],
           "min": 1,
@@ -170,7 +175,6 @@
       "name": "Praetorians",
       "description": "Highly trained and elite fighters.",
       "category": "core",
-      "rules": [{"id": "wounds", "x": 2}],
       "options": [
         {
           "replaceWeapon": [{"id": "praetorian_sword_blade", "count": 2}, "praetorian_sword_pistol"],
@@ -194,6 +198,7 @@
           "movement": 6,
           "defense": 9,
           "reflexes": 7,
+          "wounds": 2,
           "weapons": [{"id": "praetorian_sword_blade", "count": 2}, "praetorian_sword_pistol"],
           "min": 3,
           "max": 5
@@ -204,7 +209,7 @@
       "name": "Praetorian Jetpack Squad",
       "description": "Highly trained and elite fighters.",
       "category": "elite",
-      "rules": [{"id": "wounds", "x": 2}, "fly", "ambush"],
+      "rules": ["fly", "ambush"],
       "options": [{"addWeapon": "praetorian_dagger"}],
       "models": [
         {
@@ -215,6 +220,7 @@
           "movement": 8,
           "defense": 8,
           "reflexes": 7,
+          "wounds": 2,
           "weapons": ["shield", "praetorian_pistol"],
           "options": [{"replaceWeapon": ["shield", "praetorian_pistol"], "withWeapon": [["praetorian_lance_rifle", {"id": "praetorian_lance_blade", "count": 2}]]}],
           "min": 3,
@@ -226,7 +232,7 @@
       "name": "Wardens",
       "description": "Watch masters and veteran praetorians.",
       "category": "core",
-      "rules": [{"id": "resistant", "x": 3}, {"id": "wounds", "x": 2}],
+      "rules": [{"id": "resistant", "x": 3}],
       "options": [
         {
           "replaceWeapon": [{"id": "praetorian_spear_blade", "count": 3}, "praetorian_spear_rifle"],
@@ -244,6 +250,7 @@
           "defense": 9,
           "movement": 6,
           "reflexes": 7,
+          "wounds": 2,
           "weapons": [{"id": "praetorian_spear_blade", "count": 3}, "praetorian_spear_rifle"],
           "min": 3,
           "max": 5
@@ -254,7 +261,7 @@
       "name": "Jetbikes",
       "description": "Praetorians on high speed jet bikes.",
       "category": "elite",
-      "rules": [{"id": "wounds", "x": 2}, "hover"],
+      "rules": ["hover"],
       "options": [{"replaceWeapon": ["praetorian_rifle_array"], "withWeapon": ["praetorian_missiles"]}],
       "models": [
         {
@@ -265,6 +272,7 @@
           "defense": 9,
           "movement": 8,
           "reflexes": 7,
+          "wounds": 2,
           "weapons": ["praetorian_rifle_array", {"id": "praetorian_lance", "count": 3}],
           "min": 3,
           "max": 9
@@ -274,7 +282,7 @@
     "praetorian_destoyers": {
       "name": "Praetorian Gravite Squad",
       "description": "Praetorians clad in very heavy armor.",
-      "rules": ["ambush", {"id": "wounds", "x": 2}],
+      "rules": ["ambush"],
       "category": "elite",
       "models": [
         {
@@ -285,6 +293,7 @@
           "fight": 7,
           "defense": 10,
           "reflexes": 7,
+          "wounds": 2,
           "weapons": ["twin_guardian_rifle", {"id": "twin_energy_handweapon", "count": 3}],
           "options": [
             {"replaceWeapon": {"id": "twin_energy_handweapon", "count": 3}, "withWeapon": [{"id": "energy_powerweapon", "count": 3}]},
@@ -299,7 +308,7 @@
       "name": "Praetorian Gravite Assault Squad",
       "description": "Praetorians in extra heavy armor.",
       "category": "elite",
-      "rules": ["ambush", {"id": "wounds", "x": 2}],
+      "rules": ["ambush"],
       "models": [
         {
           "name": "Praetorian Gravite Warrior",
@@ -309,6 +318,7 @@
           "defense": 10,
           "movement": 5,
           "reflexes": 7,
+          "wounds": 2,
           "weapons": [{"id": "praetorian_spear_blade", "count": 3}, "praetorian_spear_rifle", "praetorian_grenade_launcher"],
           "options": [
             {"replaceWeapon": [{"id": "praetorian_spear_blade", "count": 3}, "praetorian_spear_rifle"], "withWeapon": [[{"id": "praetorian_axe_blade", "count": 3}, "praetorian_axe_rifle"]]},
@@ -324,7 +334,7 @@
       "description": "A heavily armored transport sporting an arsenal of weapons built by the imperial marines.",
       "keywords": ["Vehicle"],
       "category": "rare",
-      "rules": [{"id": "impact", "x": 6}, {"id": "transport", "x": 11}, "vulnerable_rear", {"id": "wounds", "x": 6}],
+      "rules": [{"id": "impact", "x": 6}, {"id": "transport", "x": 11}, "vulnerable_rear"],
       "models": [
         {
           "name": "Relic Heavy APC",
@@ -334,6 +344,7 @@
           "fight": 7,
           "defense": 13,
           "reflexes": 7,
+          "wounds": 6,
           "weapons": [{"id": "twin_heavy_machinegun", "mount": ["Front"]}, {"id": "twin_laser_cannon", "mount": ["Left", "Front"]}, {"id": "twin_laser_cannon", "mount": ["Right", "Front"]}],
           "options": [{"addWeapon": ["twin_combat_rifle", "heavy_fusion_rifle", "hunter_missiles"]}, {"addRule": ["spiked_ram", {"id": "dozer", "name": "Dozer Blade"}]}],
           "rules": [],
@@ -347,15 +358,15 @@
       "description": "A light attack vehicle with medium tank killing capability.",
       "keywords": ["Vehicle"],
       "category": "elite",
-      "rules": [{"id": "impact", "x": 3}, "vulnerable_side_rear", {"id": "wounds", "x": 4}, "hover"],
-      "models": [{"name": "Light Hover Tank", "movement": 10, "courage": 7, "shoot": 7, "fight": 7, "defense": 11, "reflexes": 7, "weapons": ["twin_light_laser_cannon"], "min": 1, "max": 1}]
+      "rules": [{"id": "impact", "x": 3}, "vulnerable_side_rear", "hover"],
+      "models": [{"name": "Light Hover Tank", "movement": 10, "courage": 7, "shoot": 7, "fight": 7, "defense": 11, "wounds": 4, "reflexes": 7, "weapons": ["twin_light_laser_cannon"], "min": 1, "max": 1}]
     },
     "hover_tank": {
       "name": "Hover Tank",
       "description": "A hover tank with good tank killing capability.",
       "keywords": ["Vehicle"],
       "category": "rare",
-      "rules": [{"id": "impact", "x": 6}, "vulnerable_side_rear", {"id": "wounds", "x": 6}, "hover"],
+      "rules": [{"id": "impact", "x": 6}, "vulnerable_side_rear", "hover"],
       "models": [
         {
           "name": "Hover Tank",
@@ -365,6 +376,7 @@
           "fight": 7,
           "defense": 12,
           "reflexes": 7,
+          "wounds": 6,
           "weapons": ["twin_light_laser_cannon", {"id": "twin_heavy_machinegun", "mount": ["Front"]}],
           "min": 1,
           "max": 1,
@@ -377,7 +389,7 @@
       "description": "A hover transport with decent supporting weaponry.",
       "keywords": ["Vehicle"],
       "category": "transport",
-      "rules": [{"id": "impact", "x": 6}, {"id": "transport", "x": 6}, "vulnerable_side_rear", {"id": "wounds", "x": 5}, "hover"],
+      "rules": [{"id": "impact", "x": 6}, {"id": "transport", "x": 6}, "vulnerable_side_rear", "hover"],
       "models": [
         {
           "name": "Hover Tank",
@@ -387,6 +399,7 @@
           "fight": 7,
           "defense": 12,
           "reflexes": 7,
+          "wounds": 5,
           "weapons": ["twin_light_laser_cannon", {"id": "twin_heavy_machinegun", "mount": ["Front"]}],
           "min": 1,
           "max": 1
@@ -396,7 +409,7 @@
     "combat_walker": {
       "name": "Praetorian Combat Juggernaut",
       "description": "An agile walker with melee weapons.",
-      "rules": ["vulnerable_rear", {"id": "wounds", "x": 5}],
+      "rules": ["vulnerable_rear"],
       "category": "rare",
       "keywords": ["Vehicle, Juggernaut"],
       "models": [
@@ -408,6 +421,7 @@
           "fight": 7,
           "defense": 12,
           "reflexes": 7,
+          "wounds": 5,
           "weapons": ["walker_sword_shoot", {"id": "walker_sword_blade", "count": 5}, {"id": "titan_shield"}],
           "options": [
             {
@@ -424,7 +438,7 @@
     "relic_assault_walker": {
       "name": "Relic Juggernaut",
       "description": "A heavily armed ancient walker.",
-      "rules": ["vulnerable_rear", {"id": "wounds", "x": 5}],
+      "rules": ["vulnerable_rear"],
       "category": "rare",
       "keywords": ["Vehicle, Juggernaut"],
       "models": [
@@ -436,6 +450,7 @@
           "fight": 7,
           "defense": 12,
           "reflexes": 7,
+          "wounds": 5,
           "weapons": ["heavy_gatling_gun", {"id": "walker_fist", "count": 4}, {"id": "twin_combat_rifle"}],
           "options": [{"replaceWeapon": "heavy_gatling_gun", "withWeapon": ["twin_heavy_fusion_rifle"]}],
           "min": 1,
@@ -446,7 +461,7 @@
     "heavy_assault_walker": {
       "name": "Heavy Assault Juggernaut",
       "description": "A heavily armed prime walker.",
-      "rules": ["vulnerable_rear", {"id": "wounds", "x": 6}],
+      "rules": ["vulnerable_rear"],
       "category": "rare",
       "keywords": ["Vehicle, Juggernaut"],
       "models": [
@@ -458,6 +473,7 @@
           "fight": 7,
           "defense": 13,
           "reflexes": 7,
+          "wounds": 6,
           "weapons": [{"id": "heavy_walker_fist", "count": 6}, "praetorian_missile_array"],
           "options": [
             {"replaceWeapon": {"id": "heavy_walker_fist", "count": 3}, "withWeapon": ["twin_plasma_cannon", "twin_light_laser_cannon", "twin_laser_cannon"]},

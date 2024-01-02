@@ -137,7 +137,7 @@
       "url": "vortexspawn_horrors.json",
       "color": "#B52E1F",
       "alliance": "doom",
-      "description": "Demonic entities from another dimension, causing havoc in the name of their infernal masters.",
+      "description": "Demonic entities from another dimension, causing havoc in the name of their infernal masters. They rely on quickly ambushing enemies with hordes of demons.",
       "image": "https://github.com/dice-guild/vortex-gate-data/raw/main/images/vortexspawn.png"
     },
     "voidwarped_renegade": {
