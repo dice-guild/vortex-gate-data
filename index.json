@@ -147,7 +147,8 @@
       "url": "voidwarped_renegade.json",
       "color": "#343a40",
       "alliance": "doom",
-      "description": "The Voidwarped Renegade are a band of marines that betrayed the mankind and now cooperate with demons and other heretics to pursue their own desires. They have a mix of deadly beasts, dangerous war machines and tough marine infantry."
+      "description": "The Voidwarped Renegade are a band of marines that betrayed the mankind and now cooperate with demons and other heretics to pursue their own desires. They have a mix of deadly beasts, dangerous war machines and tough marine infantry.",
+      "image": "https://github.com/dice-guild/vortex-gate-data/raw/main/images/voidwarped.png"
     },
     "fallen_warlords": {
       "version": "1.0",
@@ -186,7 +187,8 @@
       "id": "starlink_enclave",
       "url": "starlink_enclave.json",
       "color": "#008080",
-      "description": "The Starlink Enclave are a group of cooperating aliens and explorers expanding their influence throughout the stars. Their primary fighting style involves a combined arms assault of mechanized infantry, flying battlesuits and high-tech infantry."
+      "description": "The Starlink Enclave are a group of cooperating aliens and explorers expanding their influence throughout the stars. Their primary fighting style involves a combined arms assault of mechanized infantry, flying battlesuits and high-tech infantry.",
+      "image": "https://github.com/dice-guild/vortex-gate-data/raw/main/images/starlink.png"
     },
     "freeblade_mercenaries": {
       "version": "1.0",
@@ -207,7 +209,8 @@
       "color": "#383838",
       "secondary_color": "#9a1115",
       "alliance": "order",
-      "description": "The Sacred Order are a highly religious sect of humans which have a uniquely faithful and religious power. The Sacred Order relies on prayer and faith in their holy symbols along with some good old fashioned holy fire to defeat their enemies."
+      "description": "The Sacred Order are a highly religious sect of humans which have a uniquely faithful and religious power. The Sacred Order relies on prayer and faith in their holy symbols along with some good old fashioned holy fire to defeat their enemies.",
+      "image": "https://github.com/dice-guild/vortex-gate-data/raw/main/images/order.png"
     },
     "steamforge_guilds": {
       "version": "1.0",
@@ -216,7 +219,8 @@
       "url": "steamforge_guilds.json",
       "color": "#9a1115",
       "alliance": "order",
-      "description": "The Steamforge Guilds are a unique group of several different but organized planets which create and maintain all sorts of wild war machines and contraptions. The Steamforge Guilds rely on technological augmentation and deadly weapons to destroy their enemies."
+      "description": "The Steamforge Guilds are a unique group of several different but organized planets which create and maintain all sorts of wild war machines and contraptions. The Steamforge Guilds rely on technological augmentation and deadly weapons to destroy their enemies.",
+      "image": "https://github.com/dice-guild/vortex-gate-data/raw/main/images/steamforge.png"
     },
     "planetary_defense_force": {
       "version": "1.0",
@@ -277,7 +281,8 @@
       "color": "#7a2007",
       "secondary_color": "#a82d0a",
       "description": "The Voidforge Navigators are a mining race of dwarven ancestry. They roam the endless expanse in large fleets searching for exquisite loot and are not opposed to doing a job or two for anyone with the money to pay. They favor heavy armor and deadly close ranged weaponry.",
-      "alliance": "mercenaries"
+      "alliance": "mercenaries",
+      "image": "https://github.com/dice-guild/vortex-gate-data/raw/main/images/navigators.png"
     },
     "gca": {
       "version": "1.0",
