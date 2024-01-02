@@ -2354,7 +2354,7 @@
       "deploy": {
         "name": "Deploy",
         "description": "Setting up critical battlefield objectives can prove valuable in the coming battles.",
-        "rules": "* Choose up to 3 units at the start of the game to carry a deploy objective marker. \n* During a unit's activation, they may perform an initiative test to setup a deploy objective marker outside their deployment area and in base contact with a model from the unit. \n* A player with more models within 3\" of that objective marker may perform an Initiative test to destroy a deploy objective marker. \n* At the end of the game, players earn 1 VP for each deploy objective marker still active on the table.\n\n Players score 1 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling three or more objectives"
+        "rules": "* Choose up to 3 units at the start of the game to carry a deploy marker. \n* During a unit's activation, they may perform an initiative test to setup a deploy marker on an objective you control. \n* A player with more models within 3\" of any deploy marker may spend an action to perform an Initiative test to destroy a deploy objective marker. \n* At the end of the game, players earn 1 VP for each deploy objective marker still active on the table.\n\n Players score 1 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling three or more objectives"
       },
       "caches": {
         "name": "Caches",
@@ -2401,7 +2401,7 @@
       "domination": {
         "name": "Domination",
         "description": "Securing the most ground can give you a positional advantage in the fight.",
-        "rules": "* At the end of the round after objectives are scored, if you have a non-engaged unit in at least 3 table quarters, gain 1 VP. If you have an non-engaged unit in all table quarters gain 1 VP instead."
+        "rules": "* At the end of the round after objectives are scored, if you have a non-engaged unit in at least 3 table quarters, gain 1 VP."
       },
       "bounty": {
         "name": "Bounty",
