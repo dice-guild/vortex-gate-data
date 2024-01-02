@@ -76,7 +76,8 @@
       "color": "#295788",
       "secondary_color": "#e8bb00",
       "alliance": "order",
-      "description": "The Glimmerwood Travelers are a race of forested elves hailing from the planet Lumithorn. They have a unique ability to communicate with nature and the natural forces. They use primitive weapons and natural beasts."
+      "description": "The Glimmerwood Travelers are a race of forested elves hailing from the planet Lumithorn. They have a unique ability to communicate with nature and the natural forces. They use primitive weapons and natural beasts.",
+      "image": "https://github.com/dice-guild/vortex-gate-data/raw/main/images/glimmerwood.png"
     },
     "luminastra_mooncouncil": {
       "version": "1.0",
@@ -85,7 +86,8 @@
       "url": "luminastra_mooncouncil.json",
       "color": "#0d407f",
       "alliance": "order",
-      "description": "The Luminastra Mooncouncil are a race of moon elves organized into several councils of high elders. They have fierce warriors trained in the art of celestial magic."
+      "description": "The Luminastra Mooncouncil are a race of moon elves organized into several councils of high elders. They have fierce warriors trained in the art of celestial magic.",
+      "image": "https://github.com/dice-guild/vortex-gate-data/raw/main/images/mooncouncil.png"
     },
     "draylith_fireborn": {
       "version": "1.0",
@@ -94,7 +96,8 @@
       "url": "draylith_fireborn.json",
       "color": "#4e2894",
       "alliance": "doom",
-      "description": "Born from fire, these dark elves have a sacred bond with dragons, both in combat and in society, some of which are even half-dragon."
+      "description": "Born from fire, these dark elves have a sacred bond with dragons, both in combat and in society, some of which are even half-dragon.",
+      "image": "https://github.com/dice-guild/vortex-gate-data/raw/main/images/draylith.png"
     },
     "darkstar_pillagers": {
       "version": "1.0",
@@ -230,7 +233,8 @@
       "url": "stellar_vanguard.json",
       "color": "#0d407f",
       "alliance": "order",
-      "description": "The Stellar Vanguard are the pride of human engineering and its elite order-keeping force should they need to be deployed. The Stellar Vanguard rely on tough infantry and somewhat advanced vehicle technology to outsmart and eliminate their enemies."
+      "description": "The Stellar Vanguard are the pride of human engineering and its elite order-keeping force should they need to be deployed. The Stellar Vanguard rely on tough infantry and somewhat advanced vehicle technology to outsmart and eliminate their enemies.",
+      "image": "https://github.com/dice-guild/vortex-gate-data/raw/main/images/vanguard.png"
     },
     "warborn_marauders": {
       "version": "1.0",
@@ -321,7 +325,8 @@
       "url": "spectral_legions.json",
       "color": "#4C838A",
       "alliance": "destruction",
-      "description": "Places of necromantic power can often spontaneously bring the dead back to life, and without a leader they have only one drive:  Spread that necromantic power, through the death of those nearby!"
+      "description": "Places of necromantic power can often spontaneously bring the dead back to life, and without a leader they have only one drive:  Spread that necromantic power, through the death of those nearby!",
+      "image": "https://github.com/dice-guild/vortex-gate-data/raw/main/images/spectral.png"
     },
     "tainted_moonclan": {
       "version": "1.0",
@@ -330,7 +335,8 @@
       "url": "tainted_moonclan.json",
       "color": "#954535",
       "alliance": "doom",
-      "description": "The Tainted Moonclan seek nothing less than the destruction of civilization, turning it all into burning rubble."
+      "description": "The Tainted Moonclan seek nothing less than the destruction of civilization, turning it all into burning rubble.",
+      "image": "https://github.com/dice-guild/vortex-gate-data/raw/main/images/moonclan.png"
     },
     "skyborn_kingdoms": {
       "version": "1.0",
@@ -339,7 +345,8 @@
       "url": "skyborn_kingdoms.json",
       "color": "#990c0c",
       "alliance": "order",
-      "description": "The myriad of Feudal Kingdoms are mercurial and quick-blooded, wanting only peace one generation while seeking to conquer the world the next - and well-equipped for either."
+      "description": "The myriad of Feudal Kingdoms are mercurial and quick-blooded, wanting only peace one generation while seeking to conquer the world the next - and well-equipped for either.",
+      "image": "https://github.com/dice-guild/vortex-gate-data/raw/main/images/skyborn.png"
     },
     "verminhost_colonies": {
       "version": "1.0",
@@ -358,7 +365,8 @@
       "url": "etherstone_artificers.json",
       "color": "#A55D35",
       "alliance": "order",
-      "description": "A stout race of miners, engineers and warriors who were driven into the dark eons again. Now that they have returned they take revenge on those that once betrayed them."
+      "description": "A stout race of miners, engineers and warriors who were driven into the dark eons again. Now that they have returned they take revenge on those that once betrayed them.",
+      "image": "https://github.com/dice-guild/vortex-gate-data/raw/main/images/etherstone.png"
     },
     "ogre_beastmasters": {
       "version": "1.0",
