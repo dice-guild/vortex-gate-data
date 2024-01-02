@@ -161,7 +161,8 @@
       "url": "darkforge_runesmiths.json",
       "color": "#343a40",
       "alliance": "doom",
-      "description": "Twisted by the whispers of the deep stone, the Darkforge Runesmiths have learned to put chaotic magic into their machines. They fight as much at the whims of their dark masters as their own choice."
+      "description": "Twisted by the whispers of the deep stone, the Darkforge Runesmiths have learned to put chaotic magic into their machines. They fight as much at the whims of their dark masters as their own choice.",
+      "image": "https://github.com/dice-guild/vortex-gate-data/raw/main/images/darkforge.png"
     },
     "eternal_dynasties": {
       "version": "1.0",
@@ -376,7 +377,8 @@
       "url": "saurian_empire.json",
       "color": "#954535",
       "alliance": "doom",
-      "description": "A highly advanced species of reptilian beings with distinct features reminiscent of both dinosaurs and lizards with regimented order."
+      "description": "A highly advanced species of reptilian beings with distinct features reminiscent of both dinosaurs and lizards with regimented order.",
+      "image": "https://github.com/dice-guild/vortex-gate-data/raw/main/images/saurian.png"
     }
   },
   "relics": {
