@@ -137,7 +137,8 @@
       "url": "vortexspawn_horrors.json",
       "color": "#B52E1F",
       "alliance": "doom",
-      "description": "Demonic entities from another dimension, causing havoc in the name of their infernal masters."
+      "description": "Demonic entities from another dimension, causing havoc in the name of their infernal masters.",
+      "image": "https://github.com/dice-guild/vortex-gate-data/raw/main/images/vortexspawn.png"
     },
     "voidwarped_renegade": {
       "version": "1.0",
@@ -155,7 +156,8 @@
       "url": "fallen_warlords.json",
       "color": "#343a40",
       "alliance": "doom",
-      "description": "The Fallen Warlords prove that even dead gods can be mightier than mortals. Wearing powerful cursed armour and wielding weapons with ancient enchantments, they seek the absolute worship of their warlord and leader."
+      "description": "The Fallen Warlords prove that even dead gods can be mightier than mortals. Wearing powerful cursed armour and wielding weapons with ancient enchantments, they seek the absolute worship of their warlord and leader.",
+      "image": "https://github.com/dice-guild/vortex-gate-data/raw/main/images/fallen.png"
     },
     "darkforge_runesmiths": {
       "version": "1.0",
