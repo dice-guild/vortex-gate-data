@@ -17,7 +17,8 @@
           "shoot": 6,
           "fight": 6,
           "defense": 7,
-          "rules": [{"id": "warrior", "x": 1}, "hover", {"id": "leader", "x": "Beast, Monster"}, {"id": "wounds", "x": 3}],
+          "wounds": 3,
+          "rules": [{"id": "warrior", "x": 1}, "hover", {"id": "leader", "x": "Beast, Monster"}],
           "reflexes": 6,
           "weapons": ["barb_launcher", {"id": "glaive", "count": 3}],
           "options": [
@@ -44,7 +45,8 @@
           "fight": 7,
           "defense": 7,
           "reflexes": 7,
-          "rules": [{"id": "heavy_impact", "x": 3}, "hover", {"id": "leader", "x": "Infantry, Biker"}, {"id": "tactician", "x": 1}, {"id": "wounds", "x": 3}],
+          "wounds": 3,
+          "rules": [{"id": "heavy_impact", "x": 3}, "hover", {"id": "leader", "x": "Infantry, Biker"}, {"id": "tactician", "x": 1}],
           "weapons": ["barb_pistol", {"id": "barb_sword", "count": 5}, {"id": "twin_barb_rifle", "mount": ["Front"]}],
           "options": [
             {"replaceWeapon": "barb_pistol", "withWeapon": ["fusion_pistol", "flamethrower_pistol"]},
@@ -80,7 +82,8 @@
           "fight": 7,
           "defense": 7,
           "reflexes": 6,
-          "rules": [{"id": "defender", "x": 1}, "hover", {"id": "leader", "x": "Infantry, Heavy Infantry"}, {"id": "wounds", "x": 3}],
+          "wounds": 3,
+          "rules": [{"id": "defender", "x": 1}, "hover", {"id": "leader", "x": "Infantry, Heavy Infantry"}],
           "weapons": ["barb_pistol", {"id": "barb_sword", "count": 5}],
           "options": [
             {"replaceWeapon": "barb_pistol", "withWeapon": ["poison_sprayer", "heavy_sniper_rifle", "poison_dart_rifle"]},
@@ -106,7 +109,8 @@
           "fight": 7,
           "defense": 7,
           "reflexes": 7,
-          "rules": ["leader", {"id": "tactician", "x": 1}, {"id": "wounds", "x": 3}],
+          "wounds": 3,
+          "rules": ["leader", {"id": "tactician", "x": 1}],
           "weapons": ["barb_pistol", {"id": "barb_sword", "count": 5}],
           "options": [
             {"replaceWeapon": "barb_pistol", "withWeapon": ["fusion_pistol", "flamethrower_pistol"]},
@@ -141,7 +145,8 @@
           "fight": 7,
           "defense": 8,
           "reflexes": 7,
-          "rules": ["fear", "furious", "leader", {"id": "tactician", "x": 1}, {"id": "wounds", "x": 3}],
+          "wounds": 3,
+          "rules": ["fear", "furious", "leader", {"id": "tactician", "x": 1}],
           "weapons": [{"id": "energy_greatweapon", "count": 3}],
           "min": 1,
           "max": 1
@@ -270,7 +275,7 @@
           "fight": 6,
           "defense": 8,
           "reflexes": 5,
-          "rules": [{"id": "wounds", "x": 2}],
+          "wounds": 2,
           "weapons": ["poison_sprayer", {"id": "mutated_fists", "count": 4}],
           "options": [{"replaceWeapon": ["poison_sprayer"], "withWeapon": ["energy_handweapon"]}],
           "min": 3,
@@ -291,7 +296,8 @@
           "fight": 6,
           "defense": 5,
           "reflexes": 6,
-          "rules": ["legend_pop", "support", {"id": "wounds", "x": 2}],
+          "wounds": 2,
+          "rules": ["legend_pop", "support"],
           "weapons": [{"id": "toxic_blade", "count": 2}],
           "min": 1,
           "max": 3
@@ -312,7 +318,8 @@
           "fight": 6,
           "defense": 5,
           "reflexes": 5,
-          "rules": [{"id": "resistant", "x": 2}, "furious", "support", {"id": "wounds", "x": 2}],
+          "wounds": 2,
+          "rules": [{"id": "resistant", "x": 2}, "furious", "support"],
           "weapons": [{"id": "piercing_claws", "count": 3}],
           "min": 1,
           "max": 3
@@ -332,7 +339,8 @@
           "fight": 6,
           "defense": 5,
           "reflexes": 6,
-          "rules": [{"id": "power", "x": 1}, "support", {"id": "wounds", "x": 2}],
+          "wounds": 2,
+          "rules": [{"id": "power", "x": 1}, "support"],
           "weapons": ["dreadful_gaze"],
           "min": 1,
           "max": 1
@@ -352,7 +360,8 @@
           "fight": 6,
           "defense": 5,
           "reflexes": 5,
-          "rules": [{"id": "resistant", "x": 3}, {"id": "wounds", "x": 2}],
+          "wounds": 2,
+          "rules": [{"id": "resistant", "x": 3}],
           "weapons": [{"id": "heavy_energy_sword", "count": 3}, "barb_carbine"],
           "min": 1,
           "max": 3
@@ -373,7 +382,8 @@
           "fight": 6,
           "defense": 10,
           "reflexes": 5,
-          "rules": [{"id": "wounds", "x": 3}, "hover"],
+          "wounds": 3,
+          "rules": ["hover"],
           "weapons": [{"id": "claw_blade", "count": 4}, {"id": "barb_stinger", "count": 2}],
           "options": [
             {
@@ -420,7 +430,8 @@
           "defense": 5,
           "reflexes": 6,
           "courage": 4,
-          "rules": ["evasive", {"id": "wounds", "x": 2}],
+          "wounds": 2,
+          "rules": ["evasive"],
           "weapons": [{"id": "fangs_and_claws", "count": 2}],
           "min": 3,
           "max": 12
@@ -441,7 +452,8 @@
           "fight": 5,
           "defense": 4,
           "reflexes": 4,
-          "rules": ["fly", {"id": "wounds", "x": 3}],
+          "wounds": 3,
+          "rules": ["fly"],
           "weapons": [{"id": "sharp_claws", "count": 3}],
           "min": 3,
           "max": 12
@@ -561,7 +573,8 @@
           "fight": 5,
           "defense": 9,
           "reflexes": 6,
-          "rules": ["aircraft", {"id": "wounds", "x": 5}],
+          "wounds": 5,
+          "rules": ["aircraft"],
           "weapons": [{"id": "twin_fusion_cannon", "mount": ["Front"]}, "void_bombs"],
           "options": [
             {"replaceWeapon": {"id": "twin_fusion_cannon", "mount": ["Front"]}, "withWeapon": {"id": "twin_fusion_cannon", "count": 2, "mount": ["Front"]}},
@@ -587,7 +600,8 @@
           "fight": 5,
           "defense": 9,
           "reflexes": 6,
-          "rules": ["aircraft", {"id": "wounds", "x": 5}],
+          "wounds": 5,
+          "rules": ["aircraft"],
           "weapons": ["strike_missiles", {"id": "twin_fusion_cannon", "mount": ["Front"]}, {"id": "twin_barb_rifle", "mount": ["Front"]}],
           "options": [
             {
@@ -626,7 +640,8 @@
           "fight": 5,
           "defense": 9,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 4}, "hover", {"id": "impact", "x": 3}, "vulnerable_side_rear"],
+          "wounds": 4,
+          "rules": ["hover", {"id": "impact", "x": 3}, "vulnerable_side_rear"],
           "weapons": [{"id": "barb_cannon", "mount": ["Front"]}, {"id": "twin_barb_rifle", "mount": ["Front"]}],
           "options": [
             {
@@ -661,7 +676,8 @@
           "fight": 5,
           "defense": 10,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 5}, "hover", {"id": "impact", "x": 3}, {"id": "open_topped", "x": 12}, {"id": "transport", "x": 12}, "vulnerable_side_rear"],
+          "wounds": 5,
+          "rules": ["hover", {"id": "impact", "x": 3}, {"id": "open_topped", "x": 12}, {"id": "transport", "x": 12}, "vulnerable_side_rear"],
           "weapons": [{"id": "barb_cannon", "mount": ["Front"]}],
           "options": [
             {
@@ -696,7 +712,8 @@
           "fight": 5,
           "defense": 11,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 5}, "hover", {"id": "heavy_impact", "x": 3}, "vulnerable_side_rear"],
+          "wounds": 5,
+          "rules": ["hover", {"id": "heavy_impact", "x": 3}, "vulnerable_side_rear"],
           "weapons": [{"id": "barb_cannon", "mount": ["Front"]}, {"id": "barb_cannon", "mount": ["Front", "Left"]}, {"id": "barb_cannon", "mount": ["Front", "Right"]}],
           "options": [
             {
@@ -751,7 +768,8 @@
           "fight": 5,
           "defense": 11,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 5}, {"id": "heavy_impact", "x": 6}, "hover", "vulnerable_side_rear"],
+          "wounds": 5,
+          "rules": [{"id": "heavy_impact", "x": 6}, "hover", "vulnerable_side_rear"],
           "weapons": [{"id": "twin_fusion_cannon", "mount": ["Front"]}, {"id": "twin_barb_rifle", "mount": ["Front"]}],
           "options": [
             {
