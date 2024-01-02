@@ -1667,7 +1667,8 @@
           "fight": "-",
           "defense": 8,
           "reflexes": "-",
-          "rules": ["terrain", "cover", {"id": "wounds", "x": 3}],
+          "wounds": 3,
+          "rules": ["terrain", "cover"],
           "min": 1,
           "max": 2
         }
@@ -1687,7 +1688,8 @@
           "fight": "-",
           "defense": 10,
           "reflexes": "-",
-          "rules": ["terrain", "vigilant_aura", {"id": "wounds", "x": 4}],
+          "wounds": 4,
+          "rules": ["terrain", "vigilant_aura"],
           "min": 1,
           "max": 1
         }
@@ -1707,7 +1709,8 @@
           "fight": "-",
           "defense": 10,
           "reflexes": "-",
-          "rules": ["terrain", "inspiring_aura", {"id": "wounds", "x": 4}],
+          "wounds": 4,
+          "rules": ["terrain", "inspiring_aura"],
           "min": 1,
           "max": 1
         }
@@ -1727,7 +1730,8 @@
           "fight": "-",
           "defense": 10,
           "reflexes": "-",
-          "rules": ["terrain", "amplification_aura", {"id": "wounds", "x": 4}],
+          "wounds": 4,
+          "rules": ["terrain", "amplification_aura"],
           "min": 1,
           "max": 1
         }

@@ -88,7 +88,7 @@
       "name": "Lore Keeper Assasin",
       "description": "A highly trained troupe member that specializes in accurate long-range weaponry.",
       "category": "elite",
-      "rules": [{"id": "wounds", "x": 2}, "evasive"],
+      "rules": ["evasive"],
       "keywords": ["Infantry"],
       "models": [
         {
@@ -99,6 +99,7 @@
           "fight": 7,
           "defense": 7,
           "reflexes": 6,
+          "wounds": 2,
           "weapons": ["heavy_sniper_rifle", {"id": "light_handweapon", "count": 2}],
           "rules": [],
           "min": 1,
@@ -145,7 +146,7 @@
       "name": "Lore Keeper Jetbikes",
       "description": "Fast-moving hover bikes outfitted with deadly weapons to choreograph the dance of war.",
       "category": "elite",
-      "rules": ["hover", {"id": "wounds", "x": 2}],
+      "rules": ["hover"],
       "keywords": ["Mounted"],
       "models": [
         {
@@ -156,6 +157,7 @@
           "fight": 6,
           "defense": 7,
           "reflexes": 6,
+          "wounds": 2,
           "weapons": ["shard_cannon", {"id": "energy_greatweapon", "count": 2}],
           "options": [{"replaceWeapon": "shard_cannon", "withWeapon": ["emp_cannon"]}, {"replaceWeapon": "energy_greatweapon", "withWeapon": ["exploding_bola"]}],
           "min": 2,
@@ -330,7 +332,7 @@
       "name": "Runecaster",
       "description": "A high elf psychic supporting the elven forces on the battlefield.",
       "category": "hero",
-      "rules": ["leader", {"id": "power", "x": 1}, {"id": "wounds", "x": 2}],
+      "rules": ["leader", {"id": "power", "x": 1}],
       "models": [
         {
           "name": "Runecaster",
@@ -340,6 +342,7 @@
           "fight": 6,
           "defense": 6,
           "reflexes": 6,
+          "wounds": 2,
           "weapons": ["shard_pistol", {"id": "energy_handweapon", "count": 2}],
           "options": [{"replaceWeapon": {"id": "energy_handweapon", "count": 2}, "withWeapon": [["laser_lance_shoot", {"id": "laser_lance_melee", "count": 2}]]}],
           "min": 1,
@@ -352,7 +355,7 @@
       "description": "A high elf psychic supporting the elven forces on the battlefield, riding a swift hover bike.",
       "category": "hero",
       "keywords": ["Mounted"],
-      "rules": ["hover", {"id": "leader", "x": "Infantry, Biker"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 2}],
+      "rules": ["hover", {"id": "leader", "x": "Infantry, Biker"}, {"id": "power", "x": 1}],
       "models": [
         {
           "name": "Runecaster on Bike",
@@ -362,6 +365,7 @@
           "fight": 6,
           "defense": 6,
           "reflexes": 6,
+          "wounds": 2,
           "weapons": ["shard_pistol", {"id": "energy_handweapon", "count": 2}, {"id": "twin_shard_rifle", "mount": ["Front"]}],
           "options": [{"replaceWeapon": {"id": "energy_handweapon", "count": 2}, "withWeapon": [["laser_lance_shoot", {"id": "laser_lance_melee", "count": 2}]]}],
           "min": 1,
@@ -565,7 +569,7 @@
           "fight": 6,
           "defense": 9,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 2}],
+          "wounds": 2,
           "weapons": [{"id": "energy_handweapon", "count": 3}],
           "options": [
             {"replaceWeapon": [{"id": "energy_handweapon", "count": 3}], "withWeapon": [{"id": "energy_greatweapon", "count": 2}, "fusion_carbine", "distortion_rifle"]},
@@ -705,7 +709,7 @@
       "description": "A squad of highly trained bikers that are adept at both melee and ranged combat.",
       "category": "elite",
       "keywords": ["Mounted"],
-      "rules": ["hover", {"id": "wounds", "x": 2}],
+      "rules": ["hover"],
       "options": [{"replaceWeapon": [{"id": "twin_shard_rifle", "mount": ["Front"]}], "withWeapon": [{"id": "laser_machinegun", "mount": ["Front"]}, {"id": "shard_cannon", "mount": ["Front"]}]}],
       "models": [
         {
@@ -716,6 +720,7 @@
           "defense": 6,
           "reflexes": 6,
           "movement": 8,
+          "wounds": 2,
           "weapons": ["laser_lance_shoot", {"id": "laser_lance_melee", "count": 3}, {"id": "twin_shard_rifle", "mount": ["Front"]}],
           "options": [
             {
@@ -734,6 +739,7 @@
           "defense": 6,
           "reflexes": 6,
           "movement": 8,
+          "wounds": 2,
           "weapons": ["laser_lance_shoot", {"id": "laser_lance_melee", "count": 3}, {"id": "twin_shard_rifle", "mount": ["Front"]}],
           "min": 2,
           "max": 8
@@ -745,7 +751,7 @@
       "description": "A squad of highly trained bikers that are adept at taking out high-value targets on the move.",
       "category": "elite",
       "keywords": ["Mounted"],
-      "rules": ["evasive", "hover", "scout", {"id": "wounds", "x": 2}],
+      "rules": ["evasive", "hover", "scout"],
       "options": [{"replaceWeapon": [{"id": "twin_shard_rifle", "mount": ["Front"]}], "withWeapon": [{"id": "laser_machinegun", "mount": ["Front"]}, {"id": "shard_cannon", "mount": ["Front"]}]}],
       "models": [
         {
@@ -756,6 +762,7 @@
           "defense": 6,
           "reflexes": 6,
           "movement": 8,
+          "wounds": 2,
           "weapons": ["shard_sniper", "light_energy_handweapon", {"id": "twin_shard_rifle", "mount": ["Front"]}],
           "options": [{"replaceWeapon": "shard_sniper", "withWeapon": ["spectre_rifle"]}],
           "min": 1,
@@ -769,6 +776,7 @@
           "defense": 6,
           "reflexes": 6,
           "movement": 8,
+          "wounds": 2,
           "weapons": ["shard_sniper", "light_energy_handweapon", {"id": "twin_shard_rifle", "mount": ["Front"]}],
           "min": 2,
           "max": 8
