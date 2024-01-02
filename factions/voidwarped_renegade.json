@@ -214,7 +214,8 @@
           "fight": 7,
           "defense": 8,
           "reflexes": 6,
-          "rules": ["leader", "tactician", {"id": "wounds", "x": 3}],
+          "wounds": 3,
+          "rules": ["leader", "tactician"],
           "weapons": ["combat_rifle", {"id": "handweapon", "count": 3}],
           "options": [
             {"replaceWeapon": ["combat_rifle"], "withWeapon": ["twin_combat_rifle", "combi_rifle"]},

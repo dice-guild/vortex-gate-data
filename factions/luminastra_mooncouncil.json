@@ -670,7 +670,7 @@
     "cloak": {
       "name": "Enchanted Cloak",
       "description": "Enemy units suffer -1 Accuracy when targeting this unit if all models have this rule.",
-      "points": ["model.rules.wounds.x", {"max": 1}, {"multiply": 1}]
+      "points": ["model.wounds", {"max": 1}, {"multiply": 1}]
     },
     "runes": {"name": "Warding Runes", "description": "All model within 6\" of this terrain feature have +1 to their Save characteristic when being hit by a Power.", "points": [20]},
     "discipline": {"name": "Discipline", "description": "This unit and all friendly units within 6\" ignore Shock when making any reaction rolls.", "points": 15},

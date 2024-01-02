@@ -65,7 +65,8 @@
       "color": "#295788",
       "secondary_color": "#e8bb00",
       "alliance": "order",
-      "description": "The Aeonweyr Sages are a race of Elven scholars chronicling the evolution of the universe and everything in it. They focus on a mobile and deadly mix of advanced technology and unique fast tactics to achieve victory."
+      "description": "The Aeonweyr Sages are a race of Elven scholars chronicling the evolution of the universe and everything in it. They focus on a mobile and deadly mix of advanced technology and unique fast tactics to achieve victory.",
+      "image": "https://github.com/dice-guild/vortex-gate-data/raw/main/images/sages.png"
     },
     "glimmerwood_travelers": {
       "version": "1.0",
@@ -102,7 +103,8 @@
       "url": "darkstar_pillagers.json",
       "color": "#0b474a",
       "alliance": "destruction",
-      "description": "The Darkstar Pillagers are a group of stellar pirates who have an obsession with raiding settlements for plunder. Their tactics revolve around attacking quickly with highly agile ships and doing damage after which they quickly escape."
+      "description": "The Darkstar Pillagers are a group of stellar pirates who have an obsession with raiding settlements for plunder. Their tactics revolve around attacking quickly with highly agile ships and doing damage after which they quickly escape.",
+      "image": "https://github.com/dice-guild/vortex-gate-data/raw/main/images/darkstar.png"
     },
     "abyssal_hive": {
       "version": "1.0",
@@ -111,7 +113,8 @@
       "url": "abyssal_hive.json",
       "color": "#3d3354",
       "alliance": "doom",
-      "description": "A swarm of aliens from far-away systems controlled by an ancient hive mind. They feast on other species, absorbing their biomass to turn into more of their kind. They have a combination of deadly creatures and swarms of agile aliens to defeat their foes."
+      "description": "A swarm of aliens from far-away systems controlled by an ancient hive mind. They feast on other species, absorbing their biomass to turn into more of their kind. They have a combination of deadly creatures and swarms of agile aliens to defeat their foes.",
+      "image": "https://github.com/dice-guild/vortex-gate-data/raw/main/images/abyssal_hive.png"
     },
     "ascension_cults": {
       "version": "1.0",
@@ -121,7 +124,8 @@
       "color": "#606060",
       "secondary_color": "#7d0a15",
       "alliance": "doom",
-      "description": "The Ascension Cults are a loose band of Hive worshippers who wish to see the Hive consume all. Ascension Cults use a mix of hybrid alien creatures and scavenged weapons along with guerilla tactics."
+      "description": "The Ascension Cults are a loose band of Hive worshippers who wish to see the Hive consume all. Ascension Cults use a mix of hybrid alien creatures and scavenged weapons along with guerilla tactics.",
+      "image": "https://github.com/dice-guild/vortex-gate-data/raw/main/images/cults.png"
     },
     "vortexspawn_horrors": {
       "version": "1.0",
@@ -166,7 +170,8 @@
       "url": "eternal_dynasties.json",
       "color": "#1e7331",
       "description": "The Eternal Dynasties are a race of once-people now cursed with unending machine immortality. They rely on waves of reanimating fighters and advanced ancient technology to win their battles.",
-      "alliance": "destruction"
+      "alliance": "destruction",
+      "image": "https://github.com/dice-guild/vortex-gate-data/raw/main/images/dynasty.png"
     },
     "starlink_enclave": {
       "version": "1.0",
@@ -185,7 +190,8 @@
       "color": "#396e9e",
       "secondary_color": "#9a1115",
       "alliance": "mercenaries",
-      "description": "The Freeblade Mercenaries are independent contractors which build and maintain unique and gigantic war machines. The Freeblade Mercenaries rely on huge war machines and good old fashioned might to pound their foes."
+      "description": "The Freeblade Mercenaries are independent contractors which build and maintain unique and gigantic war machines. The Freeblade Mercenaries rely on huge war machines and good old fashioned might to pound their foes.",
+      "image": "https://github.com/dice-guild/vortex-gate-data/raw/main/images/freeblade.png"
     },
     "sacred_order": {
       "version": "1.0",
@@ -213,7 +219,8 @@
       "url": "planetary_defense_force.json",
       "color": "#314821",
       "alliance": "order",
-      "description": "The Planetary Defense Force is the backbone defense force of the many civilian planets of the empire. They are the first to respond to any miliary threats. They rely on hardy battle tanks and good old artillery shells along with waves of human fighters to defend the Empire."
+      "description": "The Planetary Defense Force is the backbone defense force of the many civilian planets of the empire. They are the first to respond to any miliary threats. They rely on hardy battle tanks and good old artillery shells along with waves of human fighters to defend the Empire.",
+      "image": "https://github.com/dice-guild/vortex-gate-data/raw/main/images/pdf.png"
     },
     "stellar_vanguard": {
       "version": "1.0",
@@ -250,7 +257,8 @@
       "color": "#D4AF37",
       "secondary_color": "#7d0a15",
       "alliance": "order",
-      "description": "The Celestial Praetorians are a highly elite force of human soldiers chosen from the most highly skilled members of nearby worlds. They excel at hand to hand combat and bring a retinue of specialists to help support their small numbers."
+      "description": "The Celestial Praetorians are a highly elite force of human soldiers chosen from the most highly skilled members of nearby worlds. They excel at hand to hand combat and bring a retinue of specialists to help support their small numbers.",
+      "image": "https://github.com/dice-guild/vortex-gate-data/raw/main/images/praetorians.png"
     },
     "voidforge_navigators": {
       "version": "1.0",
@@ -288,7 +296,8 @@
       "url": "nightborne_bloodkin.json",
       "color": "#801111",
       "alliance": "destruction",
-      "description": "Nightborne Bloodkin are necromancers who have learned to imbue themselves with necrotic power.  They wield their undead hordes like a weapon, to cut away those who would stand in their way."
+      "description": "Nightborne Bloodkin are necromancers who have learned to imbue themselves with necrotic power.  They wield their undead hordes like a weapon, to cut away those who would stand in their way.",
+      "image": "https://github.com/dice-guild/vortex-gate-data/raw/main/images/nightborn.png"
     },
     "deepwater_kings": {
       "version": "1.0",
@@ -297,7 +306,8 @@
       "url": "deepwater_kings.json",
       "color": "#03414e",
       "alliance": "destruction",
-      "description": "Transmuted by ancient magic to be mightier than any other elf, the Deepwater Kings require incredible alchemical concoctions to survive.  They hire themselves out to other races to afford their survival, and live under the sea to avoid mortal conflict."
+      "description": "Transmuted by ancient magic to be mightier than any other elf, the Deepwater Kings require incredible alchemical concoctions to survive.  They hire themselves out to other races to afford their survival, and live under the sea to avoid mortal conflict.",
+      "image": "https://github.com/dice-guild/vortex-gate-data/raw/main/images/deepwater.png"
     },
     "spectral_legions": {
       "version": "1.0",
@@ -333,7 +343,8 @@
       "url": "verminhost_colonies.json",
       "color": "#3D3636",
       "alliance": "doom",
-      "description": "These cunning and treacherous Vermin assemble into warhosts containing vast swarms, pestilent magic, mutated beasts and doom-tech."
+      "description": "These cunning and treacherous Vermin assemble into warhosts containing vast swarms, pestilent magic, mutated beasts and doom-tech.",
+      "image": "https://github.com/dice-guild/vortex-gate-data/raw/main/images/vermin.png"
     },
     "etherstone_artificers": {
       "version": "1.0",
@@ -1944,11 +1955,11 @@
       "description": "This weapon requires X models to operate effectively. It suffers -1 Accuracy for each model under this number.",
       "points": ["rule.x", {"subtract": 1}, {"multiply": -1}]
     },
-    "light_armor": {"name": "Light Armor", "description": "This model has +1 Save.", "description_short": "+1 Save", "points": ["model.rules.wounds.x", {"max": 1}, {"multiply": 2}]},
-    "heavy_armor": {"name": "Heavy Armor", "description": "This model has +2 Save.", "description_short": "+2 Save", "points": ["model.rules.wounds.x", {"max": 1}, {"multiply": 4}]},
-    "shield": {"name": "Shield", "description": "This model has +1 Save.", "description_short": "+1 Save", "points": ["model.rules.wounds.x", {"max": 1}, {"multiply": 2}]},
-    "relic_shield": {"name": "Heavy Shield", "description": "This model has +1 Save.", "description_short": "+1 Save", "points": ["model.rules.wounds.x", {"max": 1}, {"multiply": 10}]},
-    "buckler": {"name": "Buckler", "description": "This model has +1 Save against melee attacks.", "points": ["model.rules.wounds.x", {"max": 1}, {"multiply": 1}]},
+    "light_armor": {"name": "Light Armor", "description": "This model has +1 Save.", "description_short": "+1 Save", "points": ["model.wounds", {"max": 1}, {"multiply": 2}]},
+    "heavy_armor": {"name": "Heavy Armor", "description": "This model has +2 Save.", "description_short": "+2 Save", "points": ["model.wounds", {"max": 1}, {"multiply": 4}]},
+    "shield": {"name": "Shield", "description": "This model has +1 Save.", "description_short": "+1 Save", "points": ["model.wounds", {"max": 1}, {"multiply": 2}]},
+    "relic_shield": {"name": "Heavy Shield", "description": "This model has +1 Save.", "description_short": "+1 Save", "points": ["model.wounds", {"max": 1}, {"multiply": 10}]},
+    "buckler": {"name": "Buckler", "description": "This model has +1 Save against melee attacks.", "points": ["model.wounds", {"max": 1}, {"multiply": 1}]},
     "shielding": {"name": "Shielding", "description": "Whenever this model is hit by an attack, roll a D10. On a 3 or less that hit is prevented.", "points": 5},
     "gun_shield": {"name": "Gun Shield", "description": "This model gains +1 to its Save when hit in its front arc.", "points": 5},
     "smoke": {
@@ -2187,22 +2198,6 @@
     "exhausted": {"name": "Exhausted", "description": "This unit suffers -1 Initiative for all tests.", "points": [-1, {"multiply": ["unit.totalModels"]}]}
   },
   "missions": {
-    "hidden_missions": {
-      "spearhead_defense": {
-        "name": "Spearhead Defense",
-        "map": "/data/missions/defense.png",
-        "setup": "You and your opponent must set up objective markers as shown in the mission map.",
-        "deployment": "Roll off and the winner chooses a table edge to defend. Their opponent will get the opposite table edges to attack. The defender may additionally deploy any units inside the red marked area during deployment.",
-        "victory_conditions": "Players score 1 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling three or more objectives"
-      },
-      "corner_defense": {
-        "name": "Corner Defense",
-        "map": "/data/missions/corner_defense.png",
-        "setup": "You and your opponent must set up objective markers as shown in the mission map.",
-        "deployment": "Roll off and the winner chooses a table edge to defend. Their opponent will get the opposite table edges to attack. The defender may additionally deploy any units inside the red marked area during deployment.",
-        "victory_conditions": "Players score 1 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling three or more objectives"
-      }
-    },
     "missions": {
       "frontline": {
         "name": "Frontline",

@@ -767,7 +767,7 @@
       "description": "Friendly units deploying using Ambush deployment may ignore enemy units when deploying within 6\" of this model and automatically pass Initiative tests to Ambush.",
       "points": 5
     },
-    "advanced_plating": {"name": "Advanced Plating", "hidden": "true", "description_short": "+1 Save", "points": ["model.rules.wounds.x", {"max": 1}, {"multiply": 2}]},
+    "advanced_plating": {"name": "Advanced Plating", "hidden": "true", "description_short": "+1 Save", "points": ["model.wounds", {"max": 1}, {"multiply": 2}]},
     "inhibitor": {"name": "Inhibitor", "description": "Enemy units suffer -2\" of movement with Charge actions against friendly units within 3\".", "points": 5},
     "recon_drone": {"name": "Laser Targetting", "description": "Models in this unit may ignores cover bonuses.", "points": 10},
     "accelerator": {"name": "Accelerator", "description": "This model and models in its unit add +6\" maximum Range to all weapons.", "points": 5},
