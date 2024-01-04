@@ -51,7 +51,7 @@
           "defense": 9,
           "reflexes": 6,
           "rules": ["hover", "leader", "tactician", {"id": "wounds", "x": 4}],
-          "weapons": [{"id": "heavy_flamethrower", "count": 2, "mount": ["Front"]}, {"id": "energy_powerweapon", "count": 4}],
+          "weapons": [{"id": "heavy_flamethrower", "count": 2}, {"id": "energy_powerweapon", "count": 4}],
           "min": 1,
           "max": 1
         }
@@ -336,7 +336,7 @@
           "defense": 9,
           "reflexes": 6,
           "rules": ["relentless"],
-          "weapons": ["heavy_flamethrower", {"id": "energy_handweapon", "count": 3}, {"id": "twin_combat_rifle", "mount": ["Front"]}],
+          "weapons": ["heavy_flamethrower", {"id": "energy_handweapon", "count": 3}, {"id": "twin_combat_rifle"}],
           "options": [
             {"replaceWeapon": ["heavy_flamethrower"], "withWeapon": ["heavy_machinegun", "fusion_cannon", "plasma_cannon"]},
             {
@@ -587,24 +587,24 @@
           "defense": 12,
           "reflexes": 6,
           "rules": [{"id": "impact", "x": 3}, {"id": "transport", "x": 12}, "vulnerable_side_rear", {"id": "wounds", "x": 5}],
-          "weapons": [{"id": "twin_combat_rifle", "mount": ["Front"]}, {"id": "twin_combat_rifle", "mount": ["Front", "Left"]}, {"id": "twin_combat_rifle", "mount": ["Front", "Right"]}],
+          "weapons": [{"id": "twin_combat_rifle"}],
           "options": [
             {
-              "replaceWeapon": [{"id": "twin_combat_rifle", "mount": ["Front"]}],
+              "replaceWeapon": [{"id": "twin_combat_rifle"}],
               "withWeapon": [
-                {"id": "twin_heavy_machinegun", "mount": ["Front"]},
-                {"id": "twin_heavy_flamethrower", "mount": ["Front"]},
-                {"id": "twin_plasma_cannon", "mount": ["Front"]},
-                {"id": "twin_fusion_cannon", "mount": ["Front"]}
+                {"id": "twin_heavy_machinegun"},
+                {"id": "twin_heavy_flamethrower"},
+                {"id": "twin_plasma_cannon"},
+                {"id": "twin_fusion_cannon"}
               ]
             },
             {
-              "replaceWeapon": [{"id": "twin_combat_rifle", "mount": ["Front", "Left"]}, {"id": "twin_combat_rifle", "mount": ["Front", "Right"]}],
+              "replaceWeapon": [{"id": "twin_combat_rifle"}],
               "withWeapon": [
-                [{"id": "twin_light_machinegun", "mount": ["Front", "Left"]}, {"id": "twin_light_machinegun", "mount": ["Front", "Right"]}],
-                [{"id": "twin_flamethrower", "mount": ["Front", "Left"]}, {"id": "twin_flamethrower", "mount": ["Front", "Right"]}],
-                [{"id": "twin_plasma_rifle", "mount": ["Front", "Left"]}, {"id": "twin_plasma_rifle", "mount": ["Front", "Right"]}],
-                [{"id": "twin_fusion_rifle", "mount": ["Front", "Left"]}, {"id": "twin_fusion_rifle", "mount": ["Front", "Right"]}]
+                [{"id": "twin_light_machinegun"}],
+                [{"id": "twin_flamethrower"}],
+                [{"id": "twin_plasma_rifle"}],
+                [{"id": "twin_fusion_rifle"}]
               ]
             },
             {"addWeapon": ["twin_combat_rifle", "heavy_machinegun", "plasma_cannon", "fusion_cannon", "heavy_flamethrower"], "limit": 1},
@@ -631,17 +631,17 @@
           "defense": 12,
           "reflexes": 6,
           "rules": [{"id": "impact", "x": 6}, "vulnerable_side_rear", {"id": "wounds", "x": 5}],
-          "weapons": [{"id": "twin_combat_rifle", "mount": ["Front", "Left"]}, {"id": "twin_combat_rifle", "mount": ["Front", "Right"]}, "heavy_autocannon"],
+          "weapons": [{"id": "twin_combat_rifle",
           "options": [
             {"replaceWeapon": ["heavy_autocannon"], "withWeapon": ["battle_cannon", "twin_laser_cannon"]},
             {
-              "replaceWeapon": [{"id": "twin_combat_rifle", "mount": ["Front", "Left"]}, {"id": "twin_combat_rifle", "mount": ["Front", "Right"]}],
+              "replaceWeapon": [{"id": "twin_combat_rifle"}],
               "withWeapon": [
-                [{"id": "twin_light_machinegun", "mount": ["Front", "Left"]}, {"id": "twin_light_machinegun", "mount": ["Front", "Right"]}],
-                [{"id": "heavy_machinegun", "mount": ["Front", "Left"]}, {"id": "heavy_machinegun", "mount": ["Front", "Right"]}],
-                [{"id": "plasma_cannon", "mount": ["Front", "Left"]}, {"id": "plasma_cannon", "mount": ["Front", "Right"]}],
-                [{"id": "fusion_cannon", "mount": ["Front", "Left"]}, {"id": "fusion_cannon", "mount": ["Front", "Right"]}],
-                [{"id": "heavy_flamethrower", "mount": ["Front", "Left"]}, {"id": "heavy_flamethrower", "mount": ["Front", "Right"]}]
+                [{"id": "twin_light_machinegun"}],
+                [{"id": "heavy_machinegun"}],
+                [{"id": "plasma_cannon"}],
+                [{"id": "fusion_cannon"}],
+                [{"id": "heavy_flamethrower"}]
               ]
             },
             {"addWeapon": ["hunter_missiles"]},
@@ -667,19 +667,19 @@
           "defense": 10,
           "reflexes": 6,
           "rules": [{"id": "impact", "x": 3}, "vulnerable_side_rear", {"id": "wounds", "x": 5}],
-          "weapons": [{"id": "twin_combat_rifle", "mount": ["Front"]}, "twin_missile_launcher"],
+          "weapons": [{"id": "twin_combat_rifle",
           "options": [
             {
               "replaceWeapon": ["twin_missile_launcher"],
               "withWeapon": ["twin_aa_autocannon", "heavy_plasma_mortar", "twin_heavy_fusion_cannon", "medium_artillery_cannon", "artillery_cannon", "organ_missiles"]
             },
             {
-              "replaceWeapon": [{"id": "twin_combat_rifle", "mount": ["Front"]}],
+              "replaceWeapon": [{"id": "twin_combat_rifle"}],
               "withWeapon": [
-                {"id": "twin_light_machinegun", "mount": ["Front"]},
-                {"id": "twin_flamethrower", "mount": ["Front"]},
-                {"id": "twin_plasma_rifle", "mount": ["Front"]},
-                {"id": "twin_fusion_rifle", "mount": ["Front"]}
+                {"id": "twin_light_machinegun"},
+                {"id": "twin_flamethrower"},
+                {"id": "twin_plasma_rifle"},
+                {"id": "twin_fusion_rifle"}
               ]
             },
             {"addRule": ["spiked_ram", {"id": "dozer", "name": "Dozer Blade"}]}

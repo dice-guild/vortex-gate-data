@@ -407,7 +407,7 @@
           "fight": 5,
           "defense": 11,
           "reflexes": 6,
-          "weapons": [{"id": "pulse_gatling", "mount": ["Front"]}],
+          "weapons": [{"id": "pulse_gatling"}],
           "rules": [{"id": "wounds", "x": 5}, "hover", {"id": "impact", "x": 3}, {"id": "transport", "x": 11}, "vulnerable_side_rear"],
           "options": [
             {"addWeapon": [{"id": "pulse_carbine", "count": 2}, {"id": "smart_missiles", "count": 2}], "limit": 1},
@@ -483,10 +483,10 @@
           "fight": 5,
           "defense": 10,
           "reflexes": 6,
-          "weapons": [{"id": "pulse_gatling", "mount": ["Front"]}],
+          "weapons": [{"id": "pulse_gatling"}],
           "rules": [{"id": "wounds", "x": 3}, "hover", {"id": "impact", "x": 3}, "vulnerable_side_rear"],
           "options": [
-            {"replaceWeapon": {"id": "pulse_gatling", "mount": ["Front"]}, "withWeapon": [{"id": "fusion_blaster", "mount": ["Front"]}, {"id": "plasma_rifle", "mount": ["Front"]}]},
+            {"replaceWeapon": {"id": "pulse_gatling"}]},
             {"addWeapon": ["homing_missile"], "limit": 3}
           ],
           "min": 1,
@@ -591,9 +591,9 @@
           "defense": 9,
           "reflexes": 5,
           "rules": ["aircraft", {"id": "wounds", "x": 5}],
-          "weapons": [{"id": "pulse_gatling", "mount": ["Front"]}, "quad_ion_rifle", {"id": "homing_missile", "count": 2}],
+          "weapons": [{"id": "pulse_gatling"}, "quad_ion_rifle", {"id": "homing_missile", "count": 2}],
           "options": [
-            {"replaceWeapon": {"id": "pulse_gatling", "mount": ["Front"]}, "withWeapon": {"id": "missile_pod", "mount": ["Front"]}},
+            {"replaceWeapon": {"id": "pulse_gatling"}},
             {"addWeapon": {"id": "pulse_carbine", "count": 2}, "limit": 2}
           ],
           "min": 1,
