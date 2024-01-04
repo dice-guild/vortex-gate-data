@@ -350,17 +350,7 @@
           "movement": 6,
           "reflexes": 5,
           "weapons": [{"id": "laser_cannon"}, {"id": "light_handweapon", "count": 2}],
-          "options": [
-            {
-              "replaceWeapon": {"id": "laser_cannon"},
-              "withWeapon": [
-                {"id": "missile_launcher"},
-                {"id": "autocannon"},
-                {"id": "heavy_machinegun"},
-                {"id": "mortar"}
-              ]
-            }
-          ],
+          "options": [{"replaceWeapon": {"id": "laser_cannon"}, "withWeapon": [{"id": "missile_launcher"}, {"id": "autocannon"}, {"id": "heavy_machinegun"}, {"id": "mortar"}]}],
           "min": 3,
           "max": 3
         }
@@ -381,9 +371,7 @@
           "movement": 6,
           "reflexes": 5,
           "weapons": [{"id": "rocket_battery"}, {"id": "light_handweapon", "count": 3}],
-          "options": [
-            {"replaceWeapon": {"id": "rocket_battery"}, "withWeapon": [{"id": "light_artillery_cannon"}, {"id": "tank_hunter_cannon"}]}
-          ],
+          "options": [{"replaceWeapon": {"id": "rocket_battery"}, "withWeapon": [{"id": "light_artillery_cannon"}, {"id": "tank_hunter_cannon"}]}],
           "min": 2,
           "max": 2
         }
@@ -617,25 +605,8 @@
           "rules": ["aircraft", {"id": "wounds", "x": 5}, "hover_mode", {"id": "transport", "x": 12}],
           "weapons": [{"id": "light_machinegun"}],
           "options": [
-            {
-              "replaceWeapon": [{"id": "light_machinegun"}],
-              "withWeapon": [
-                {"id": "laser_cannon"},
-                {"id": "fusion_rifle"},
-                {"id": "plasma_rifle"},
-                {"id": "laser_machinegun"}
-              ]
-            },
-            {
-              "addWeapon": [
-                {"id": "light_machinegun"},
-                {"id": "laser_cannon"},
-                {"id": "fusion_rifle"},
-                {"id": "plasma_rifle"},
-                {"id": "laser_machinegun"}
-              ],
-              "limit": 1
-            },
+            {"replaceWeapon": [{"id": "light_machinegun"}], "withWeapon": [{"id": "laser_cannon"}, {"id": "fusion_rifle"}, {"id": "plasma_rifle"}, {"id": "laser_machinegun"}]},
+            {"addWeapon": [{"id": "light_machinegun"}, {"id": "laser_cannon"}, {"id": "fusion_rifle"}, {"id": "plasma_rifle"}, {"id": "laser_machinegun"}], "limit": 1},
             {
               "addWeapon": [
                 [{"id": "heavy_machinegun"}, {"id": "heavy_machinegun"}],
@@ -670,15 +641,7 @@
           "rules": ["aircraft", {"id": "wounds", "x": 5}, "hover_mode"],
           "weapons": [{"id": "heavy_machinegun"}, {"id": "strike_missiles"}],
           "options": [
-            {
-              "replaceWeapon": [{"id": "heavy_machinegun"}],
-              "withWeapon": [
-                {"id": "twin_laser_cannon"},
-                {"id": "fusion_cannon"},
-                {"id": "plasma_cannon"},
-                {"id": "laser_machinegun"}
-              ]
-            },
+            {"replaceWeapon": [{"id": "heavy_machinegun"}], "withWeapon": [{"id": "twin_laser_cannon"}, {"id": "fusion_cannon"}, {"id": "plasma_cannon"}, {"id": "laser_machinegun"}]},
             {
               "replaceWeapon": {"id": "strike_missiles"},
               "withWeapon": [
@@ -723,15 +686,7 @@
           "weapons": ["heavy_flamethrower", {"id": "heavy_flamethrower"}],
           "options": [
             {"replaceWeapon": "heavy_flamethrower", "withWeapon": ["laser_cannon", "heavy_machinegun", "laser_machinegun"]},
-            {
-              "replaceWeapon": [{"id": "heavy_flamethrower"}],
-              "withWeapon": [
-                {"id": "laser_cannon"},
-                {"id": "heavy_machinegun"},
-                {"id": "plasma_cannon"},
-                {"id": "fusion_cannon"}
-              ]
-            },
+            {"replaceWeapon": [{"id": "heavy_flamethrower"}], "withWeapon": [{"id": "laser_cannon"}, {"id": "heavy_machinegun"}, {"id": "plasma_cannon"}, {"id": "fusion_cannon"}]},
             {"addWeapon": [[{"id": "auto_rifle", "count": 3}, {"id": "auto_rifle", "count": 3}]]},
             {"addWeapon": ["light_machinegun", "twin_combat_rifle"], "limit": 1},
             {"addWeapon": ["hunter_missiles"]},
@@ -761,13 +716,7 @@
           "options": [
             {
               "replaceWeapon": [{"id": "twin_laser_cannon"}],
-              "withWeapon": [
-                {"id": "siege_cannon"},
-                {"id": "twin_heavy_flamethrower"},
-                {"id": "twin_plasma_cannon"},
-                {"id": "twin_fusion_cannon"},
-                {"id": "twin_heavy_machinegun"}
-              ]
+              "withWeapon": [{"id": "siege_cannon"}, {"id": "twin_heavy_flamethrower"}, {"id": "twin_plasma_cannon"}, {"id": "twin_fusion_cannon"}, {"id": "twin_heavy_machinegun"}]
             },
             {"addWeapon": ["laser_cannon", "heavy_flamethrower", "light_machinegun", "twin_combat_rifle"]},
             {"replaceRule": {"id": "transport", "x": 12}, "withRule": [{"id": "transport", "x": 20}]},
@@ -808,23 +757,14 @@
                 "twin_thermal_lance"
               ]
             },
+            {"addWeapon": [{"id": "heavy_flamethrower"}, {"id": "heavy_machinegun"}, {"id": "laser_cannon"}, {"id": "fusion_cannon"}, {"id": "plasma_cannon"}], "limit": 1},
             {
               "addWeapon": [
-                {"id": "heavy_flamethrower"},
-                {"id": "heavy_machinegun"},
-                {"id": "laser_cannon"},
-                {"id": "fusion_cannon"},
-                {"id": "plasma_cannon"}
-              ],
-              "limit": 1
-            },
-            {
-              "addWeapon": [
-                [{"id": "heavy_machinegun"}, {"id": "heavy_machinegun"}],
-                [{"id": "fusion_cannon"}, {"id": "fusion_cannon"}],
-                [{"id": "heavy_flamethrower"}, {"id": "heavy_flamethrower"}],
-                [{"id": "plasma_cannon"}, {"id": "plasma_cannon"}],
-                [{"id": "laser_cannon"}, {"id": "laser_cannon"}]
+                [{"id": "heavy_machinegun", "count": 2}],
+                [{"id": "fusion_cannon", "count": 2}],
+                [{"id": "heavy_flamethrower", "count": 2}],
+                [{"id": "plasma_cannon", "count": 2}],
+                [{"id": "laser_cannon", "count": 2}]
               ],
               "limit": 1
             },
@@ -871,14 +811,7 @@
             },
             {
               "replaceWeapon": {"id": "heavy_flamethrower"},
-              "withWeapon": [
-                {"id": "heavy_machinegun"},
-                {"id": "laser_cannon"},
-                {"id": "gatling_gun"},
-                {"id": "siege_cannon"},
-                {"id": "plasma_cannon"},
-                {"id": "fusion_cannon"}
-              ]
+              "withWeapon": [{"id": "heavy_machinegun"}, {"id": "laser_cannon"}, {"id": "gatling_gun"}, {"id": "siege_cannon"}, {"id": "plasma_cannon"}, {"id": "fusion_cannon"}]
             },
             {
               "addWeapon": [
@@ -919,34 +852,19 @@
             {"addWeapon": ["battle_cannon", "heavy_fusion_cannon", "heavy_plasma_cannon", "siege_cannon", "autocannon", "flamestorm_cannon", "tank_hunter_cannon", "gatling_cannon"], "limit": 1},
             {
               "replaceWeapon": {"id": "heavy_flamethrower"},
-              "withWeapon": [
-                {"id": "heavy_machinegun"},
-                {"id": "laser_cannon"},
-                {"id": "gatling_gun"},
-                {"id": "siege_cannon"},
-                {"id": "plasma_cannon"},
-                {"id": "fusion_cannon"}
-              ]
+              "withWeapon": [{"id": "heavy_machinegun"}, {"id": "laser_cannon"}, {"id": "gatling_gun"}, {"id": "siege_cannon"}, {"id": "plasma_cannon"}, {"id": "fusion_cannon"}]
             },
             {
               "addWeapon": [
-                [{"id": "heavy_machinegun"}, {"id": "heavy_machinegun"}],
-                [{"id": "fusion_cannon"}, {"id": "fusion_cannon"}],
-                [{"id": "heavy_flamethrower"}, {"id": "heavy_flamethrower"}],
-                [{"id": "plasma_cannon"}, {"id": "plasma_cannon"}],
-                [{"id": "laser_cannon"}, {"id": "laser_cannon"}]
+                [{"id": "heavy_machinegun", "count": 2}],
+                [{"id": "fusion_cannon", "count": 2}],
+                [{"id": "heavy_flamethrower", "count": 2}],
+                [{"id": "plasma_cannon", "count": 2}],
+                [{"id": "laser_cannon", "count": 2}]
               ],
               "limit": 1
             },
-            {
-              "addWeapon": [
-                {"id": "fusion_rifle", "count": 2},
-                {"id": "light_machinegun", "count": 2},
-                {"id": "plasma_rifle", "count": 2},
-                {"id": "flamethrower", "count": 2}
-              ],
-              "limit": 1
-            },
+            {"addWeapon": [{"id": "fusion_rifle", "count": 2}, {"id": "light_machinegun", "count": 2}, {"id": "plasma_rifle", "count": 2}, {"id": "flamethrower", "count": 2}], "limit": 1},
             {"addWeapon": ["light_machinegun", "twin_combat_rifle"], "limit": 1},
             {"addWeapon": ["hunter_missiles"]},
             {"addRule": [{"id": "dozer", "name": "Dozer Blade"}, "field_radio"]}
@@ -978,15 +896,7 @@
               "replaceWeapon": {"id": "twin_aa_autocannon", "count": 2},
               "withWeapon": ["plasma_cannon", "fusion_cannon", "acid_cannon", "flamestorm_cannon", {"id": "heavy_mortar", "count": 4}, "artillery_cannon", "eagle_rockets", "death_missile"]
             },
-            {
-              "replaceWeapon": [{"id": "heavy_flamethrower"}],
-              "withWeapon": [
-                {"id": "laser_cannon"},
-                {"id": "heavy_machinegun"},
-                {"id": "plasma_cannon"},
-                {"id": "fusion_cannon"}
-              ]
-            },
+            {"replaceWeapon": [{"id": "heavy_flamethrower"}], "withWeapon": [{"id": "laser_cannon"}, {"id": "heavy_machinegun"}, {"id": "plasma_cannon"}, {"id": "fusion_cannon"}]},
             {"addWeapon": ["light_machinegun", "twin_combat_rifle"], "limit": 1},
             {"addRule": [{"id": "dozer", "name": "Dozer Blade"}]}
           ],
@@ -1013,15 +923,7 @@
           "weapons": ["plasma_cannon", {"id": "heavy_flamethrower"}],
           "options": [
             {"replaceWeapon": "plasma_cannon", "withWeapon": ["fusion_cannon", "acid_cannon", "flamestorm_cannon"]},
-            {
-              "replaceWeapon": [{"id": "heavy_flamethrower"}],
-              "withWeapon": [
-                {"id": "laser_cannon"},
-                {"id": "heavy_machinegun"},
-                {"id": "plasma_cannon"},
-                {"id": "fusion_cannon"}
-              ]
-            },
+            {"replaceWeapon": [{"id": "heavy_flamethrower"}], "withWeapon": [{"id": "laser_cannon"}, {"id": "heavy_machinegun"}, {"id": "plasma_cannon"}, {"id": "fusion_cannon"}]},
             {"addWeapon": ["light_machinegun", "twin_combat_rifle"], "limit": 1},
             {"addRule": [{"id": "dozer", "name": "Dozer Blade"}]}
           ],
@@ -1134,16 +1036,7 @@
           "reflexes": 5,
           "rules": [{"id": "wounds", "x": 5}, {"id": "impact", "x": 3}, {"id": "transport", "x": 12}, "vulnerable_side_rear"],
           "options": [
-            {
-              "addWeapon": [
-                {"id": "twin_autocannon"},
-                {"id": "twin_laser_cannon"},
-                {"id": "twin_plasma_rifle"},
-                {"id": "twin_fusion_rifle"},
-                {"id": "twin_flamethrower"}
-              ],
-              "limit": 1
-            },
+            {"addWeapon": [{"id": "twin_autocannon"}, {"id": "twin_laser_cannon"}, {"id": "twin_plasma_rifle"}, {"id": "twin_fusion_rifle"}, {"id": "twin_flamethrower"}], "limit": 1},
             {"addWeapon": ["light_machinegun", "twin_combat_rifle"], "limit": 1},
             {"addRule": [{"id": "dozer", "name": "Dozer Blade"}, "field_radio"]}
           ],
@@ -1201,17 +1094,7 @@
       "reflexes": 5,
       "weapons": [{"id": "laser_cannon"}, {"id": "light_handweapon", "count": 2}],
       "rules": [{"id": "wounds", "x": 2}],
-      "options": [
-        {
-          "replaceWeapon": {"id": "laser_cannon"},
-          "withWeapon": [
-            {"id": "missile_launcher"},
-            {"id": "autocannon"},
-            {"id": "heavy_machinegun", "count": 1},
-            {"id": "mortar"}
-          ]
-        }
-      ],
+      "options": [{"replaceWeapon": {"id": "laser_cannon"}, "withWeapon": [{"id": "missile_launcher"}, {"id": "autocannon"}, {"id": "heavy_machinegun", "count": 1}, {"id": "mortar"}]}],
       "min": 0,
       "max": 1
     },
@@ -1225,17 +1108,7 @@
       "movement": 6,
       "weapons": [{"id": "laser_cannon"}, {"id": "light_handweapon", "count": 2}],
       "rules": [{"id": "wounds", "x": 2}],
-      "options": [
-        {
-          "replaceWeapon": {"id": "laser_cannon"},
-          "withWeapon": [
-            {"id": "missile_launcher"},
-            {"id": "autocannon"},
-            {"id": "heavy_machinegun", "count": 1},
-            {"id": "mortar"}
-          ]
-        }
-      ],
+      "options": [{"replaceWeapon": {"id": "laser_cannon"}, "withWeapon": [{"id": "missile_launcher"}, {"id": "autocannon"}, {"id": "heavy_machinegun", "count": 1}, {"id": "mortar"}]}],
       "min": 0,
       "max": 1
     },
@@ -1249,17 +1122,7 @@
       "movement": 6,
       "weapons": [{"id": "laser_cannon"}, {"id": "light_handweapon", "count": 2}],
       "rules": [{"id": "wounds", "x": 2}],
-      "options": [
-        {
-          "replaceWeapon": {"id": "laser_cannon"},
-          "withWeapon": [
-            {"id": "missile_launcher"},
-            {"id": "autocannon"},
-            {"id": "heavy_machinegun", "count": 1},
-            {"id": "mortar"}
-          ]
-        }
-      ],
+      "options": [{"replaceWeapon": {"id": "laser_cannon"}, "withWeapon": [{"id": "missile_launcher"}, {"id": "autocannon"}, {"id": "heavy_machinegun", "count": 1}, {"id": "mortar"}]}],
       "min": 0,
       "max": 1
     }
