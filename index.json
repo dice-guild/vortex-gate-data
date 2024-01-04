@@ -1875,6 +1875,7 @@
     },
     "tough": {"name": "Tough", "inputs": ["x"], "description": "This model may re-roll X Save tests per round.", "points": ["model.defense", {"multiply": "rule.x"}, {"multiply": 1}]},
     "wounds": {
+      "hidden": true,
       "name": "Wounds",
       "inputs": ["x"],
       "description": "This model has X lives that it may lose before it is killed. If a unit contains multiple models with Wounds, damage must be assigned to an already damaged model before being assigned to any other model. If this unit is a _Vehicle_ or _Monster_ it suffers -1 Acc and -1 Str while below half Wounds.",
