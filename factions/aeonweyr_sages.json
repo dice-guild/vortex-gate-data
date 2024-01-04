@@ -216,7 +216,7 @@
           "defense": 7,
           "reflexes": 6,
           "wounds": 3,
-          "weapons": ["shard_rifle", {"id": "light_energy_handweapon", "count": 3}, {"id": "twin_shard_rifle"}],
+          "weapons": ["shard_rifle", {"id": "light_energy_handweapon", "count": 3}, {"id": "twin_shard_rifle", "mount": ["Front"]}],
           "options": [
             {"replaceWeapon": ["shard_rifle"], "withWeapon": ["fusion_rifle", "flamethrower", "shard_sniper", "nova_blaster", "missile_launcher"]},
             {
@@ -281,7 +281,7 @@
           "defense": 6,
           "reflexes": 6,
           "wounds": 3,
-          "weapons": ["shard_rifle", {"id": "light_energy_handweapon", "count": 2}, {"id": "twin_shard_rifle"}],
+          "weapons": ["shard_rifle", {"id": "light_energy_handweapon", "count": 2}, {"id": "twin_shard_rifle", "mount": ["Front"]}],
           "options": [
             {
               "replaceWeapon": ["shard_rifle", {"id": "light_energy_handweapon", "count": 2}],
@@ -331,7 +331,7 @@
           "defense": 6,
           "reflexes": 6,
           "wounds": 3,
-          "weapons": ["shard_pistol", {"id": "light_energy_handweapon", "count": 3}, {"id": "twin_shard_rifle"}],
+          "weapons": ["shard_pistol", {"id": "light_energy_handweapon", "count": 3}, {"id": "twin_shard_rifle", "mount": ["Front"]}],
           "min": 1,
           "max": 1
         }
@@ -375,7 +375,7 @@
           "defense": 6,
           "reflexes": 6,
           "wounds": 2,
-          "weapons": ["shard_pistol", {"id": "energy_handweapon", "count": 2}, {"id": "twin_shard_rifle"}],
+          "weapons": ["shard_pistol", {"id": "energy_handweapon", "count": 2}, {"id": "twin_shard_rifle", "mount": ["Front"]}],
           "options": [{"replaceWeapon": {"id": "energy_handweapon", "count": 2}, "withWeapon": [["laser_lance_shoot", {"id": "laser_lance_melee", "count": 2}]]}],
           "min": 1,
           "max": 1
@@ -418,7 +418,7 @@
           "fight": 6,
           "defense": 6,
           "reflexes": 6,
-          "weapons": ["shard_pistol", {"id": "energy_handweapon", "count": 2}, {"id": "twin_shard_rifle"}],
+          "weapons": ["shard_pistol", {"id": "energy_handweapon", "count": 2}, {"id": "twin_shard_rifle", "mount": ["Front"]}],
           "options": [{"replaceWeapon": {"id": "energy_handweapon", "count": 2}, "withWeapon": [["laser_lance_shoot", {"id": "laser_lance_melee", "count": 2}]]}],
           "min": 2,
           "max": 5
@@ -479,15 +479,15 @@
           "defense": 7,
           "reflexes": 6,
           "movement": 7,
-          "weapons": [{"id": "fusion_cannon"}],
+          "weapons": [{"id": "fusion_cannon", "mount": ["Front"]}],
           "options": [
             {
-              "replaceWeapon": {"id": "fusion_cannon"},
+              "replaceWeapon": {"id": "fusion_cannon", "mount": ["Front"]},
               "withWeapon": [
-                {"id": "shard_cannon"},
-                {"id": "missile_launcher"},
-                {"id": "sky_cannon"},
-                {"id": "laser_machinegun"}
+                {"id": "shard_cannon", "mount": ["Front"]},
+                {"id": "missile_launcher", "mount": ["Front"]},
+                {"id": "sky_cannon", "mount": ["Front"]},
+                {"id": "laser_machinegun", "mount": ["Front"]}
               ]
             }
           ],
@@ -720,7 +720,7 @@
       "category": "elite",
       "keywords": ["Mounted"],
       "rules": ["hover"],
-      "options": [{"replaceWeapon": [{"id": "twin_shard_rifle"}]}],
+      "options": [{"replaceWeapon": [{"id": "twin_shard_rifle", "mount": ["Front"]}], "withWeapon": [{"id": "laser_machinegun", "mount": ["Front"]}, {"id": "shard_cannon", "mount": ["Front"]}]}],
       "models": [
         {
           "name": "Aeonweyr Biker Leader",
@@ -731,7 +731,7 @@
           "reflexes": 6,
           "movement": 8,
           "wounds": 2,
-          "weapons": ["laser_lance_shoot", {"id": "laser_lance_melee", "count": 3}, {"id": "twin_shard_rifle"}],
+          "weapons": ["laser_lance_shoot", {"id": "laser_lance_melee", "count": 3}, {"id": "twin_shard_rifle", "mount": ["Front"]}],
           "options": [
             {
               "replaceWeapon": ["laser_lance_shoot", {"id": "laser_lance_melee", "count": 3}],
@@ -750,7 +750,7 @@
           "reflexes": 6,
           "movement": 8,
           "wounds": 2,
-          "weapons": ["laser_lance_shoot", {"id": "laser_lance_melee", "count": 3}, {"id": "twin_shard_rifle"}],
+          "weapons": ["laser_lance_shoot", {"id": "laser_lance_melee", "count": 3}, {"id": "twin_shard_rifle", "mount": ["Front"]}],
           "min": 2,
           "max": 8
         }
@@ -762,7 +762,7 @@
       "category": "elite",
       "keywords": ["Mounted"],
       "rules": ["evasive", "hover", "scout"],
-      "options": [{"replaceWeapon": [{"id": "twin_shard_rifle"}]}],
+      "options": [{"replaceWeapon": [{"id": "twin_shard_rifle", "mount": ["Front"]}], "withWeapon": [{"id": "laser_machinegun", "mount": ["Front"]}, {"id": "shard_cannon", "mount": ["Front"]}]}],
       "models": [
         {
           "name": "Ranger Biker Leader",
@@ -773,7 +773,7 @@
           "reflexes": 6,
           "movement": 8,
           "wounds": 2,
-          "weapons": ["shard_sniper", "light_energy_handweapon", {"id": "twin_shard_rifle"}],
+          "weapons": ["shard_sniper", "light_energy_handweapon", {"id": "twin_shard_rifle", "mount": ["Front"]}],
           "options": [{"replaceWeapon": "shard_sniper", "withWeapon": ["spectre_rifle"]}],
           "min": 1,
           "max": 1
@@ -787,7 +787,7 @@
           "reflexes": 6,
           "movement": 8,
           "wounds": 2,
-          "weapons": ["shard_sniper", "light_energy_handweapon", {"id": "twin_shard_rifle"}],
+          "weapons": ["shard_sniper", "light_energy_handweapon", {"id": "twin_shard_rifle", "mount": ["Front"]}],
           "min": 2,
           "max": 8
         }
@@ -832,9 +832,9 @@
           "defense": 11,
           "reflexes": 6,
           "wounds": 5,
-          "weapons": [{"id": "twin_shard_rifle",
+          "weapons": [{"id": "twin_shard_rifle", "mount": ["Front"]}, "twin_fusion_cannon"],
           "options": [
-            {"replaceWeapon": {"id": "twin_shard_rifle"}]},
+            {"replaceWeapon": {"id": "twin_shard_rifle", "mount": ["Front"]}, "withWeapon": [{"id": "shard_cannon", "mount": ["Front"]}]},
             {"replaceWeapon": "twin_fusion_cannon", "withWeapon": ["twin_shard_cannon", "twin_missile_launcher", "twin_sky_cannon", "twin_laser_machinegun"]},
             {"addRule": ["sky_engine", "gravity_thrusters"]}
           ],
@@ -859,16 +859,16 @@
           "defense": 11,
           "reflexes": 6,
           "wounds": 5,
-          "weapons": [{"id": "twin_shard_rifle",
+          "weapons": [{"id": "twin_shard_rifle", "mount": ["Front"]}, "twin_fusion_cannon"],
           "options": [
             {
-              "replaceWeapon": {"id": "twin_shard_rifle"},
+              "replaceWeapon": {"id": "twin_shard_rifle", "mount": ["Front"]},
               "withWeapon": [
-                {"id": "shard_cannon"},
-                {"id": "sky_cannon"},
-                {"id": "missile_launcher"},
-                {"id": "fusion_cannon"},
-                {"id": "laser_machinegun"}
+                {"id": "shard_cannon", "mount": ["Front"]},
+                {"id": "sky_cannon", "mount": ["Front"]},
+                {"id": "missile_launcher", "mount": ["Front"]},
+                {"id": "fusion_cannon", "mount": ["Front"]},
+                {"id": "laser_machinegun", "mount": ["Front"]}
               ]
             },
             {
