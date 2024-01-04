@@ -480,17 +480,7 @@
           "reflexes": 6,
           "movement": 7,
           "weapons": [{"id": "fusion_cannon"}],
-          "options": [
-            {
-              "replaceWeapon": {"id": "fusion_cannon"},
-              "withWeapon": [
-                {"id": "shard_cannon"},
-                {"id": "missile_launcher"},
-                {"id": "sky_cannon"},
-                {"id": "laser_machinegun"}
-              ]
-            }
-          ],
+          "options": [{"replaceWeapon": {"id": "fusion_cannon"}, "withWeapon": [{"id": "shard_cannon"}, {"id": "missile_launcher"}, {"id": "sky_cannon"}, {"id": "laser_machinegun"}]}],
           "min": 0,
           "max": 1
         }
@@ -557,12 +547,12 @@
           "fight": 6,
           "defense": 7,
           "reflexes": 6,
-          "weapons": ["flamethrower", "fusion_bomb", "light_handweapon"],
+          "weapons": ["flamethrower", "light_handweapon"],
           "options": [{"replaceWeapon": ["flamethrower"], "withWeapon": ["shattersky_launcher", "shard_cannon"]}, {"addWeapon": ["flamethrower", "fusion_rifle"], "limit": 1}],
           "min": 1,
           "max": 1
         },
-        {"name": "Wyvern", "courage": 6, "movement": 7, "shoot": 6, "fight": 6, "defense": 7, "reflexes": 6, "weapons": ["flamethrower", "fusion_bomb", "light_handweapon"], "min": 4, "max": 9}
+        {"name": "Wyvern", "courage": 6, "movement": 7, "shoot": 6, "fight": 6, "defense": 7, "reflexes": 6, "weapons": ["flamethrower", "light_handweapon"], "min": 4, "max": 9}
       ]
     },
     "wraith_squad": {
@@ -863,13 +853,7 @@
           "options": [
             {
               "replaceWeapon": {"id": "twin_shard_rifle"},
-              "withWeapon": [
-                {"id": "shard_cannon"},
-                {"id": "sky_cannon"},
-                {"id": "missile_launcher"},
-                {"id": "fusion_cannon"},
-                {"id": "laser_machinegun"}
-              ]
+              "withWeapon": [{"id": "shard_cannon"}, {"id": "sky_cannon"}, {"id": "missile_launcher"}, {"id": "fusion_cannon"}, {"id": "laser_machinegun"}]
             },
             {
               "replaceWeapon": "twin_fusion_cannon",
