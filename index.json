@@ -2346,11 +2346,6 @@
         "description": "New orders have been received and additional objectives are available.",
         "rules": "* Each player places one additional objective 12\" away from any existing objectives and more than 12\" away from their deployment area.\n\n Players score 1 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling three or more objectives"
       },
-      "breakthrough": {
-        "name": "Breakthrough",
-        "description": "Breaking through enemy lines can cause havoc for troop organization.",
-        "rules": "* Once per round, players may move a unit off their opponents table edge. After doing so, remove the unit from the board and gain 1 VP.\n\n Players score 1 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling three or more objectives"
-      },
       "take_and_hold": {
         "name": "Take and Hold",
         "description": "Taking key ground can be critical to moving the frontline forward.",
