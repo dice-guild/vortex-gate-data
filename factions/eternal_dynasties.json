@@ -168,13 +168,13 @@
           "reflexes": 6,
           "wounds": 5,
           "rules": ["hover", {"id": "impact", "x": 3}, "tactician_aura"],
-          "weapons": ["force_beam", {"id": "energy_handweapon", "count": 3}, {"id": "gauss_beamer",
+          "weapons": ["force_beam", {"id": "energy_handweapon", "count": 3}, {"id": "gauss_beamer", "mount": ["Front"]}],
           "options": [
             {
               "replaceWeapon": {"id": "energy_handweapon", "count": 3},
               "withWeapon": [{"id": "energy_powerweapon", "count": 3}, {"id": "energy_greatweapon", "count": 3}, {"id": "energy_polearm", "count": 3}]
             },
-            {"replaceWeapon": {"id": "gauss_beamer"}}
+            {"replaceWeapon": {"id": "gauss_beamer", "mount": ["Front"]}, "withWeapon": {"id": "tesla_cannon", "mount": ["Front"]}}
           ],
           "min": 1,
           "max": 1
@@ -350,11 +350,11 @@
           "defense": 8,
           "reflexes": 5,
           "rules": ["hover", {"id": "impact", "x": 1}],
-          "weapons": [{"id": "twin_tesla_rifle",
+          "weapons": [{"id": "twin_tesla_rifle", "mount": ["Front"]}],
           "options": [
             {
-              "replaceWeapon": {"id": "twin_tesla_rifle"},
-              "withWeapon": [{"id": "twin_heavy_combat_rifle"
+              "replaceWeapon": {"id": "twin_tesla_rifle", "mount": ["Front"]},
+              "withWeapon": [{"id": "twin_heavy_combat_rifle", "mount": ["Front"]}, {"id": "antimatter_beamer", "count": 3, "mount": ["Front"]}]
             },
             {"addRule": "vision_scope", "modelLimit": "all"}
           ],
@@ -538,7 +538,7 @@
           "reflexes": 5,
           "wounds": 4,
           "rules": ["aircraft", {"id": "transport", "x": 12}],
-          "weapons": [{"id": "twin_tesla_cannon",
+          "weapons": [{"id": "twin_tesla_cannon", "mount": ["Front"]}],
           "options": [{"addRule": ["extra_space"]}],
           "min": 1,
           "max": 1
@@ -561,8 +561,8 @@
           "reflexes": 5,
           "wounds": 4,
           "rules": ["aircraft"],
-          "weapons": [{"id": "twin_tesla_cannon",
-          "options": [{"addWeapon": {"id": "heavy_doom_ray",
+          "weapons": [{"id": "twin_tesla_cannon", "mount": ["Front"]}],
+          "options": [{"addWeapon": {"id": "heavy_doom_ray", "mount": ["Front"]}}, {"addWeapon": ["oblivion_bomb"]}],
           "min": 1,
           "max": 1
         }
@@ -584,7 +584,7 @@
           "reflexes": 5,
           "wounds": 4,
           "rules": ["hover", {"id": "impact", "x": 6}, {"id": "transport", "x": 12}, "vulnerable_side_rear"],
-          "weapons": [{"id": "combat_rifle", "count": 3,
+          "weapons": [{"id": "combat_rifle", "count": 3, "mount": ["Left"]}, {"id": "combat_rifle", "count": 3, "mount": ["Right"]}],
           "options": [{"addRule": ["extra_space", "regeneration_aura"]}],
           "min": 1,
           "max": 1
@@ -607,7 +607,7 @@
           "reflexes": 5,
           "wounds": 5,
           "rules": ["hover", {"id": "impact", "x": 6}, "vulnerable_side_rear"],
-          "weapons": [{"id": "doom_cannon",
+          "weapons": [{"id": "doom_cannon", "mount": ["Front"]}, {"id": "combat_rifle", "count": 3, "mount": ["Left"]}, {"id": "combat_rifle", "count": 3, "mount": ["Right"]}],
           "min": 1,
           "max": 1
         }
@@ -629,8 +629,8 @@
           "reflexes": 5,
           "wounds": 4,
           "rules": ["hover", {"id": "impact", "x": 3}],
-          "weapons": [{"id": "twin_tesla_cannon",
-          "options": [{"replaceWeapon": {"id": "gauss_beamer",
+          "weapons": [{"id": "twin_tesla_cannon", "mount": ["Front"]}, {"id": "gauss_beamer", "mount": ["Front"]}],
+          "options": [{"replaceWeapon": {"id": "gauss_beamer", "mount": ["Front"]}, "withWeapon": {"id": "tesla_cannon", "mount": ["Front"]}}],
           "min": 1,
           "max": 1
         }
@@ -655,26 +655,26 @@
           "weapons": [
             "heavy_antimatter_cannon",
             "gravity_pulse",
-            {"id": "doom_ray"},
-            {"id": "doom_ray"},
-            {"id": "doom_ray"},
-            {"id": "doom_ray"}
+            {"id": "doom_ray", "mount": ["Left", "Front"]},
+            {"id": "doom_ray", "mount": ["Right", "Front"]},
+            {"id": "doom_ray", "mount": ["Right", "Rear"]},
+            {"id": "doom_ray", "mount": ["Left", "Rear"]}
           ],
           "options": [
             {"addRule": [{"id": "ambush_large", "name": "Orbital Drop"}]},
             {
               "replaceWeapon": [
-                {"id": "doom_ray"},
-                {"id": "doom_ray"},
-                {"id": "doom_ray"},
-                {"id": "doom_ray"}
+                {"id": "doom_ray", "mount": ["Left", "Front"]},
+                {"id": "doom_ray", "mount": ["Right", "Front"]},
+                {"id": "doom_ray", "mount": ["Right", "Rear"]},
+                {"id": "doom_ray", "mount": ["Left", "Rear"]}
               ],
               "withWeapon": [
                 [
-                  {"id": "tesla_field"},
-                  {"id": "tesla_field"},
-                  {"id": "tesla_field"},
-                  {"id": "tesla_field"}
+                  {"id": "tesla_field", "mount": ["Left", "Front"]},
+                  {"id": "tesla_field", "mount": ["Right", "Front"]},
+                  {"id": "tesla_field", "mount": ["Right", "Rear"]},
+                  {"id": "tesla_field", "mount": ["Left", "Rear"]}
                 ]
               ]
             }
@@ -742,11 +742,11 @@
           "defense": 10,
           "reflexes": 5,
           "rules": ["targeting_relay", "walker", {"id": "wounds", "x": 5}],
-          "weapons": [{"id": "heat_ray",
+          "weapons": [{"id": "heat_ray", "mount": ["Front"]}, {"id": "combat_rifle", "count": 2, "mount": ["Front"]}, {"id": "heavy_stomp", "count": 3}],
           "options": [
             {
-              "replaceWeapon": [{"id": "heat_ray",
-              "withWeapon": [{"id": "death_ray"
+              "replaceWeapon": [{"id": "heat_ray", "mount": ["Front"]}],
+              "withWeapon": [{"id": "death_ray", "mount": ["Front"]}, {"id": "twin_heavy_gauss_beamer", "mount": ["Front"]}, {"id": "antimatter_cannon", "mount": ["Front"]}]
             }
           ],
           "min": 1,
@@ -769,7 +769,7 @@
           "defense": 10,
           "reflexes": 5,
           "rules": ["regeneration_aura", "walker", {"id": "wounds", "x": 4}],
-          "weapons": [{"id": "combat_rifle", "count": 2,
+          "weapons": [{"id": "combat_rifle", "count": 2, "mount": ["Front"]}, {"id": "heavy_stomp", "count": 3}],
           "min": 1,
           "max": 1
         }

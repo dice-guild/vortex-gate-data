@@ -323,7 +323,7 @@
       "options": [
         {"replaceWeapon": ["heavy_carbine", {"id": "handweapon", "count": 2}], "withWeapon": [[{"id": "thermal_pistol", "count": 2}, "light_handweapon"]]},
         {"replaceWeapon": "heavy_carbine", "withWeapon": "thermal_carbine", "modelLimit": "1/3"},
-        {"addWeapon": [{"id": "heavy_flamethrower", "modelLimit": "all"},
+        {"addWeapon": [{"id": "heavy_flamethrower", "mount": ["Front"]}], "modelLimit": "all"},
         {"addRule": ["data_link"], "modelLimit": 1}
       ]
     },
@@ -487,7 +487,7 @@
               "withWeapon": ["gravity_hammer", "fusion_cannon", "plasma_cannon", "heavy_machinegun", "laser_cannon", "thermal_lance", "gravity_cannon"],
               "count": 2
             },
-            {"addWeapon": [{"id": "rocket_launcher"}
+            {"addWeapon": [{"id": "rocket_launcher", "mount": ["Front"]}]}
           ],
           "min": 1,
           "max": 1
@@ -541,18 +541,18 @@
           "defense": 11,
           "reflexes": 6,
           "rules": ["aircraft", "hover_mode", {"id": "transport", "x": 12}, {"id": "wounds", "x": 5}],
-          "weapons": [{"id": "twin_light_machinegun",
+          "weapons": [{"id": "twin_light_machinegun", "mount": ["Front"]}],
           "options": [
             {
-              "replaceWeapon": {"id": "twin_light_machinegun"},
+              "replaceWeapon": {"id": "twin_light_machinegun", "mount": ["Front"]},
               "withWeapon": [
-                {"id": "twin_thermal_lance"},
-                {"id": "twin_laser_cannon"},
-                {"id": "twin_plasma_rifle"},
-                {"id": "twin_fusion_rifle"}
+                {"id": "twin_thermal_lance", "mount": ["Front"]},
+                {"id": "twin_laser_cannon", "mount": ["Front"]},
+                {"id": "twin_plasma_rifle", "mount": ["Front"]},
+                {"id": "twin_fusion_rifle", "mount": ["Front"]}
               ]
             },
-            {"addWeapon": [[{"id": "light_machinegun"},
+            {"addWeapon": [[{"id": "light_machinegun", "mount": ["Left"]}, {"id": "light_machinegun", "mount": ["Right"]}]]},
             {"addRule": ["data_link"]}
           ],
           "min": 1,
@@ -619,30 +619,30 @@
           "defense": 11,
           "reflexes": 6,
           "rules": ["aircraft", "hover_mode", {"id": "wounds", "x": 6}],
-          "weapons": [{"id": "twin_light_machinegun",
+          "weapons": [{"id": "twin_light_machinegun", "mount": ["Front"]}],
           "options": [
             {
-              "replaceWeapon": {"id": "twin_light_machinegun"},
+              "replaceWeapon": {"id": "twin_light_machinegun", "mount": ["Front"]},
               "withWeapon": [
-                {"id": "twin_thermal_lance"},
-                {"id": "twin_laser_cannon"},
-                {"id": "twin_plasma_rifle"},
-                {"id": "twin_fusion_rifle"},
-                {"id": "rocket_pod", "count": 2}
+                {"id": "twin_thermal_lance", "mount": ["Front"]},
+                {"id": "twin_laser_cannon", "mount": ["Front"]},
+                {"id": "twin_plasma_rifle", "mount": ["Front"]},
+                {"id": "twin_fusion_rifle", "mount": ["Front"]},
+                {"id": "rocket_pod", "count": 2, "mount": ["Front"]}
               ]
             },
             {
               "addWeapon": [
-                [{"id": "light_machinegun",
-                [{"id": "laser_cannon",
-                [{"id": "plasma_rifle",
-                [{"id": "fusion_rifle",
-                [{"id": "thermal_lance",
+                [{"id": "light_machinegun", "mount": ["Front", "Left"]}, {"id": "light_machinegun", "mount": ["Front", "Right"]}],
+                [{"id": "laser_cannon", "mount": ["Front", "Left"]}, {"id": "laser_cannon", "mount": ["Front", "Right"]}],
+                [{"id": "plasma_rifle", "mount": ["Front", "Left"]}, {"id": "plasma_rifle", "mount": ["Front", "Right"]}],
+                [{"id": "fusion_rifle", "mount": ["Front", "Left"]}, {"id": "fusion_rifle", "mount": ["Front", "Right"]}],
+                [{"id": "thermal_lance", "mount": ["Front", "Left"]}, {"id": "thermal_lance", "mount": ["Front", "Right"]}],
                 "bomb_rack"
               ],
               "limit": 1
             },
-            {"addWeapon": [[{"id": "light_machinegun"},
+            {"addWeapon": [[{"id": "light_machinegun", "mount": ["Left"]}, {"id": "light_machinegun", "mount": ["Right"]}]]},
             {"addRule": ["data_link"]}
           ],
           "min": 1,
@@ -665,7 +665,7 @@
           "defense": 11,
           "reflexes": 6,
           "rules": [{"id": "wounds", "x": 5}, "hover", {"id": "impact", "x": 3}, {"id": "transport", "x": 12}, "vulnerable_side_rear"],
-          "weapons": [{"id": "light_machinegun",
+          "weapons": [{"id": "light_machinegun", "mount": ["Front", "Left"]}, {"id": "light_machinegun", "mount": ["Front", "Right"]}],
           "options": [{"addWeapon": ["twin_aa_light_machinegun"]}, {"addRule": "data_link"}],
           "min": 1,
           "max": 1
@@ -687,18 +687,18 @@
           "defense": 12,
           "reflexes": 6,
           "rules": [{"id": "wounds", "x": 6}, "hover", {"id": "impact", "x": 6}, "vulnerable_side_rear"],
-          "weapons": [{"id": "light_machinegun",
+          "weapons": [{"id": "light_machinegun", "mount": ["Front", "Left"]}, {"id": "light_machinegun", "mount": ["Front", "Right"]}, "light_machinegun", "tank_hunter_cannon"],
           "options": [
             {"replaceWeapon": "tank_hunter_cannon", "withWeapon": ["mortar_cannon", "eradication_beam"]},
             {"replaceWeapon": ["light_machinegun"], "withWeapon": ["laser_cannon", "plasma_rifle", "fusion_rifle", "thermal_rifle", "flamethrower"]},
             {
-              "replaceWeapon": [{"id": "light_machinegun",
+              "replaceWeapon": [{"id": "light_machinegun", "mount": ["Front", "Left"]}, {"id": "light_machinegun", "mount": ["Front", "Right"]}],
               "withWeapon": [
-                [{"id": "laser_cannon",
-                [{"id": "plasma_rifle",
-                [{"id": "fusion_rifle",
-                [{"id": "thermal_rifle",
-                [{"id": "flamethrower"
+                [{"id": "laser_cannon", "mount": ["Front", "Left"]}, {"id": "laser_cannon", "mount": ["Front", "Right"]}],
+                [{"id": "plasma_rifle", "mount": ["Front", "Left"]}, {"id": "plasma_rifle", "mount": ["Front", "Right"]}],
+                [{"id": "fusion_rifle", "mount": ["Front", "Left"]}, {"id": "fusion_rifle", "mount": ["Front", "Right"]}],
+                [{"id": "thermal_rifle", "mount": ["Front", "Left"]}, {"id": "thermal_rifle", "mount": ["Front", "Right"]}],
+                [{"id": "flamethrower", "mount": ["Front", "Left"]}, {"id": "flamethrower", "mount": ["Front", "Right"]}]
               ]
             },
             {"addWeapon": "disruption_missiles"},
@@ -724,17 +724,17 @@
           "defense": 11,
           "reflexes": 6,
           "rules": [{"id": "wounds", "x": 5}, {"id": "impact", "x": 6}, "vulnerable_side_rear"],
-          "weapons": [{"id": "tesla_hunter_cannon",
+          "weapons": [{"id": "tesla_hunter_cannon", "mount": ["Front"]}],
           "options": [
-            {"replaceWeapon": {"id": "tesla_hunter_cannon"},
+            {"replaceWeapon": {"id": "tesla_hunter_cannon", "mount": ["Front"]}, "withWeapon": [{"id": "laser_volley_cannon", "mount": ["Front"]}]},
             {
               "addWeapon": [
-                [{"id": "laser_cannon",
-                [{"id": "plasma_rifle",
-                [{"id": "fusion_rifle",
-                [{"id": "thermal_rifle",
-                [{"id": "flamethrower",
-                [{"id": "light_machinegun"
+                [{"id": "laser_cannon", "mount": ["Front", "Left"]}, {"id": "laser_cannon", "mount": ["Front", "Right"]}],
+                [{"id": "plasma_rifle", "mount": ["Front", "Left"]}, {"id": "plasma_rifle", "mount": ["Front", "Right"]}],
+                [{"id": "fusion_rifle", "mount": ["Front", "Left"]}, {"id": "fusion_rifle", "mount": ["Front", "Right"]}],
+                [{"id": "thermal_rifle", "mount": ["Front", "Left"]}, {"id": "thermal_rifle", "mount": ["Front", "Right"]}],
+                [{"id": "flamethrower", "mount": ["Front", "Left"]}, {"id": "flamethrower", "mount": ["Front", "Right"]}],
+                [{"id": "light_machinegun", "mount": ["Front", "Left"]}, {"id": "light_machinegun", "mount": ["Front", "Right"]}]
               ]
             },
             {"addRule": "data_link"}
@@ -760,19 +760,19 @@
           "reflexes": 6,
           "rules": [{"id": "impact", "x": 6}, "vulnerable_side_rear", {"id": "wounds", "x": 6}],
           "weapons": [
-            {"id": "radiation_rocket_array"},
-            {"id": "laser_cannon"},
-            {"id": "laser_cannon"},
+            {"id": "radiation_rocket_array", "mount": ["Front"]},
+            {"id": "laser_cannon", "mount": ["Front", "Left"]},
+            {"id": "laser_cannon", "mount": ["Front", "Right"]},
             {"id": "taser_prow", "count": 3}
           ],
           "options": [
             {
-              "replaceWeapon": [{"id": "laser_cannon",
+              "replaceWeapon": [{"id": "laser_cannon", "mount": ["Front", "Left"]}, {"id": "laser_cannon", "mount": ["Front", "Right"]}],
               "withWeapon": [
-                [{"id": "plasma_cannon",
-                [{"id": "fusion_cannon",
-                [{"id": "tesla_cannon",
-                [{"id": "radiation_emitter"
+                [{"id": "plasma_cannon", "mount": ["Front", "Left"]}, {"id": "plasma_cannon", "mount": ["Front", "Right"]}],
+                [{"id": "fusion_cannon", "mount": ["Front", "Left"]}, {"id": "fusion_cannon", "mount": ["Front", "Right"]}],
+                [{"id": "tesla_cannon", "mount": ["Front", "Left"]}, {"id": "tesla_cannon", "mount": ["Front", "Right"]}],
+                [{"id": "radiation_emitter", "mount": ["Front", "Left"]}, {"id": "radiation_emitter", "mount": ["Front", "Right"]}]
               ]
             }
           ],
@@ -797,19 +797,19 @@
           "reflexes": 6,
           "rules": [{"id": "impact", "x": 6}, {"id": "transport", "x": 20}, "vulnerable_side_rear", {"id": "wounds", "x": 6}],
           "weapons": [
-            {"id": "twin_heavy_machinegun"},
-            {"id": "flamethrower"},
-            {"id": "flamethrower"},
+            {"id": "twin_heavy_machinegun", "mount": ["Front"]},
+            {"id": "flamethrower", "mount": ["Front", "Left"]},
+            {"id": "flamethrower", "mount": ["Front", "Right"]},
             {"id": "taser_prow", "count": 3}
           ],
           "options": [
             {
-              "replaceWeapon": [{"id": "flamethrower",
+              "replaceWeapon": [{"id": "flamethrower", "mount": ["Front", "Left"]}, {"id": "flamethrower", "mount": ["Front", "Right"]}],
               "withWeapon": [
-                [{"id": "plasma_rifle",
-                [{"id": "fusion_rifle",
-                [{"id": "tesla_rifle",
-                [{"id": "thermal_rifle"
+                [{"id": "plasma_rifle", "mount": ["Front", "Left"]}, {"id": "plasma_rifle", "mount": ["Front", "Right"]}],
+                [{"id": "fusion_rifle", "mount": ["Front", "Left"]}, {"id": "fusion_rifle", "mount": ["Front", "Right"]}],
+                [{"id": "tesla_rifle", "mount": ["Front", "Left"]}, {"id": "tesla_rifle", "mount": ["Front", "Right"]}],
+                [{"id": "thermal_rifle", "mount": ["Front", "Left"]}, {"id": "thermal_rifle", "mount": ["Front", "Right"]}]
               ]
             }
           ],
@@ -839,11 +839,11 @@
             {"replaceWeapon": "light_machinegun", "withWeapon": ["aa_autocannon", "plasma_cannon", "fusion_cannon", "heavy_flamethrower", "thermal_lance"]},
             {
               "addWeapon": [
-                {"id": "light_machinegun"},
-                {"id": "plasma_rifle"},
-                {"id": "fusion_rifle"},
-                {"id": "flamethrower"},
-                {"id": "laser_cannon"}
+                {"id": "light_machinegun", "mount": ["Front"]},
+                {"id": "plasma_rifle", "mount": ["Front"]},
+                {"id": "fusion_rifle", "mount": ["Front"]},
+                {"id": "flamethrower", "mount": ["Front"]},
+                {"id": "laser_cannon", "mount": ["Front"]}
               ],
               "limit": 1
             },

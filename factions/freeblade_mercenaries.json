@@ -20,7 +20,7 @@
           "defense": 12,
           "reflexes": 5,
           "rules": ["vulnerable_rear", {"id": "wounds", "x": 5}],
-          "weapons": [{"id": "heavy_autocannon", "count": 2}, {"id": "stomp", "count": 2}, {"id": "light_machinegun",
+          "weapons": [{"id": "heavy_autocannon", "count": 2}, {"id": "stomp", "count": 2}, {"id": "light_machinegun", "mount": ["Front"]}],
           "options": [
             {
               "replaceWeapon": ["heavy_autocannon"],
@@ -39,14 +39,14 @@
               "limit": 2
             },
             {
-              "replaceWeapon": [{"id": "light_machinegun",
+              "replaceWeapon": [{"id": "light_machinegun", "mount": ["Front"]}],
               "withWeapon": [
-                {"id": "plasma_rifle"},
-                {"id": "fusion_rifle"},
-                {"id": "thermal_rifle"},
-                {"id": "rocket_pod"},
-                {"id": "gravity_rifle"},
-                {"id": "tesla_rifle"}
+                {"id": "plasma_rifle", "mount": ["Front"]},
+                {"id": "fusion_rifle", "mount": ["Front"]},
+                {"id": "thermal_rifle", "mount": ["Front"]},
+                {"id": "rocket_pod", "mount": ["Front"]},
+                {"id": "gravity_rifle", "mount": ["Front"]},
+                {"id": "tesla_rifle", "mount": ["Front"]}
               ]
             },
             {"addRule": ["relic_shield"]}
@@ -71,7 +71,7 @@
           "defense": 12,
           "reflexes": 5,
           "rules": ["vulnerable_rear", {"id": "wounds", "x": 5}],
-          "weapons": [{"id": "heavy_autocannon", "count": 2}, {"id": "stomp", "count": 2}, {"id": "light_machinegun",
+          "weapons": [{"id": "heavy_autocannon", "count": 2}, {"id": "stomp", "count": 2}, {"id": "light_machinegun", "mount": ["Front"]}],
           "options": [
             {
               "replaceWeapon": ["heavy_autocannon"],
@@ -90,14 +90,14 @@
               "limit": 2
             },
             {
-              "replaceWeapon": [{"id": "light_machinegun",
+              "replaceWeapon": [{"id": "light_machinegun", "mount": ["Front"]}],
               "withWeapon": [
-                {"id": "plasma_rifle"},
-                {"id": "fusion_rifle"},
-                {"id": "thermal_rifle"},
-                {"id": "rocket_pod"},
-                {"id": "gravity_rifle"},
-                {"id": "tesla_rifle"}
+                {"id": "plasma_rifle", "mount": ["Front"]},
+                {"id": "fusion_rifle", "mount": ["Front"]},
+                {"id": "thermal_rifle", "mount": ["Front"]},
+                {"id": "rocket_pod", "mount": ["Front"]},
+                {"id": "gravity_rifle", "mount": ["Front"]},
+                {"id": "tesla_rifle", "mount": ["Front"]}
               ]
             },
             {"addRule": ["relic_shield"]}
@@ -122,7 +122,7 @@
           "defense": 13,
           "reflexes": 5,
           "rules": ["vulnerable_rear", {"id": "wounds", "x": 6}],
-          "weapons": [{"id": "light_battle_cannon", "count": 2}, {"id": "heavy_stomp", "count": 3}, {"id": "light_machinegun",
+          "weapons": [{"id": "light_battle_cannon", "count": 2}, {"id": "heavy_stomp", "count": 3}, {"id": "light_machinegun", "mount": ["Front"]}],
           "options": [
             {
               "replaceWeapon": ["light_battle_cannon"],
@@ -139,14 +139,14 @@
               "limit": 2
             },
             {
-              "replaceWeapon": [{"id": "light_machinegun",
+              "replaceWeapon": [{"id": "light_machinegun", "mount": ["Front"]}],
               "withWeapon": [
-                {"id": "plasma_rifle"},
-                {"id": "fusion_rifle"},
-                {"id": "thermal_rifle"},
-                {"id": "rocket_pod"},
-                {"id": "gravity_rifle"},
-                {"id": "tesla_rifle"}
+                {"id": "plasma_rifle", "mount": ["Front"]},
+                {"id": "fusion_rifle", "mount": ["Front"]},
+                {"id": "thermal_rifle", "mount": ["Front"]},
+                {"id": "rocket_pod", "mount": ["Front"]},
+                {"id": "gravity_rifle", "mount": ["Front"]},
+                {"id": "tesla_rifle", "mount": ["Front"]}
               ]
             },
             {"limit": 1, "addWeapon": ["twin_aa_autocannon", "titan_rocket_pod"]},
@@ -174,7 +174,7 @@
           "rules": ["vulnerable_rear", {"id": "wounds", "x": 6}],
           "weapons": [
             {"id": "battle_cannon", "count": 2},
-            {"id": "twin_light_machinegun", "count": 2},
+            {"id": "twin_light_machinegun", "count": 2, "mount": ["Front"]},
             {"id": "twin_storm_missiles", "count": 3},
             {"id": "heavy_stomp", "count": 3}
           ],
@@ -196,14 +196,14 @@
               "limit": 2
             },
             {
-              "replaceWeapon": [{"id": "twin_light_machinegun",
+              "replaceWeapon": [{"id": "twin_light_machinegun", "mount": ["Front"]}],
               "withWeapon": [
-                {"id": "twin_plasma_rifle"},
-                {"id": "twin_fusion_rifle"},
-                {"id": "twin_thermal_rifle"},
-                {"id": "twin_rocket_pod"},
-                {"id": "twin_gravity_rifle"},
-                {"id": "twin_tesla_rifle"}
+                {"id": "twin_plasma_rifle", "mount": ["Front"]},
+                {"id": "twin_fusion_rifle", "mount": ["Front"]},
+                {"id": "twin_thermal_rifle", "mount": ["Front"]},
+                {"id": "twin_rocket_pod", "mount": ["Front"]},
+                {"id": "twin_gravity_rifle", "mount": ["Front"]},
+                {"id": "twin_tesla_rifle", "mount": ["Front"]}
               ],
               "limit": 2
             },
