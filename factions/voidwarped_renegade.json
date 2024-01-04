@@ -104,7 +104,7 @@
           "defense": 9,
           "reflexes": 6,
           "rules": [{"id": "impact", "x": 1}, "leader", "striker", {"id": "wounds", "x": 2}],
-          "weapons": ["combat_rifle", {"id": "handweapon", "count": 2}, {"id": "twin_combat_rifle", "mount": ["Front"]}],
+          "weapons": ["combat_rifle", {"id": "handweapon", "count": 2}, {"id": "twin_combat_rifle"}],
           "options": [
             {"replaceWeapon": ["combat_rifle"], "withWeapon": ["twin_combat_rifle", "combi_rifle"]},
             {"replaceWeapon": ["combat_rifle", {"id": "handweapon", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 3}]]},
@@ -120,8 +120,8 @@
               ]
             },
             {
-              "replaceWeapon": {"id": "twin_combat_rifle", "mount": ["Front"]},
-              "withWeapon": [{"id": "twin_plasma_rifle", "mount": ["Front"]}, {"id": "twin_flamethrower", "mount": ["Front"]}, {"id": "twin_fusion_rifle", "mount": ["Front"]}]
+              "replaceWeapon": {"id": "twin_combat_rifle"},
+              "withWeapon": [{"id": "twin_plasma_rifle"}, {"id": "twin_flamethrower"}, {"id": "twin_fusion_rifle"}]
             }
           ],
           "min": 1,
@@ -253,7 +253,7 @@
           "defense": 9,
           "reflexes": 6,
           "rules": [{"id": "impact", "x": 1}, "leader", "tactician", {"id": "wounds", "x": 3}],
-          "weapons": ["combat_rifle", {"id": "handweapon", "count": 3}, {"id": "twin_combat_rifle", "mount": ["Front"]}],
+          "weapons": ["combat_rifle", {"id": "handweapon", "count": 3}, {"id": "twin_combat_rifle"}],
           "options": [
             {"replaceWeapon": ["combat_rifle"], "withWeapon": ["twin_combat_rifle", "combi_rifle"]},
             {"replaceWeapon": ["combat_rifle", {"id": "handweapon", "count": 3}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 4}]]},
@@ -269,8 +269,8 @@
               ]
             },
             {
-              "replaceWeapon": {"id": "twin_combat_rifle", "mount": ["Front"]},
-              "withWeapon": [{"id": "twin_plasma_rifle", "mount": ["Front"]}, {"id": "twin_flamethrower", "mount": ["Front"]}, {"id": "twin_fusion_rifle", "mount": ["Front"]}]
+              "replaceWeapon": {"id": "twin_combat_rifle"},
+              "withWeapon": [{"id": "twin_plasma_rifle"}, {"id": "twin_flamethrower"}, {"id": "twin_fusion_rifle"}]
             }
           ],
           "min": 1,
@@ -397,7 +397,7 @@
           "defense": 10,
           "reflexes": 6,
           "rules": ["engineer", {"id": "impact", "x": 1, "id_0": "leader"}, {"id": "wounds", "x": 3}],
-          "weapons": ["combat_rifle", {"id": "handweapon", "count": 2}, {"id": "twin_combat_rifle", "mount": ["Front"]}],
+          "weapons": ["combat_rifle", {"id": "handweapon", "count": 2}, {"id": "twin_combat_rifle"}],
           "options": [
             {"replaceWeapon": ["combat_rifle"], "withWeapon": ["twin_combat_rifle", "combi_rifle"]},
             {"replaceWeapon": ["combat_rifle", {"id": "handweapon", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 3}]]},
@@ -409,8 +409,8 @@
             {"addWeapon": ["plasma_rifle", "flamethrower", "thermal_rifle", "fusion_rifle", "combat_rifle"], "limit": 2},
             {"addWeapon": ["servo_arm"], "limit": 2},
             {
-              "replaceWeapon": {"id": "twin_combat_rifle", "mount": ["Front"]},
-              "withWeapon": [{"id": "twin_plasma_rifle", "mount": ["Front"]}, {"id": "twin_flamethrower", "mount": ["Front"]}, {"id": "twin_fusion_rifle", "mount": ["Front"]}]
+              "replaceWeapon": {"id": "twin_combat_rifle"},
+              "withWeapon": [{"id": "twin_plasma_rifle"}, {"id": "twin_flamethrower"}, {"id": "twin_fusion_rifle"}]
             }
           ],
           "min": 1,
@@ -470,7 +470,7 @@
           "defense": 9,
           "reflexes": 6,
           "rules": [{"id": "impact", "x": 1}, "leader", {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
-          "weapons": ["combat_rifle", {"id": "handweapon", "count": 2}, {"id": "twin_combat_rifle", "mount": ["Front"]}],
+          "weapons": ["combat_rifle", {"id": "handweapon", "count": 2}, {"id": "twin_combat_rifle"}],
           "options": [
             {"replaceWeapon": "combat_rifle", "withWeapon": ["twin_combat_rifle", "combi_rifle"]},
             {"replaceWeapon": ["combat_rifle", {"id": "handweapon", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 3}]]},
@@ -486,8 +486,8 @@
               ]
             },
             {
-              "replaceWeapon": {"id": "twin_combat_rifle", "mount": ["Front"]},
-              "withWeapon": [{"id": "twin_plasma_rifle", "mount": ["Front"]}, {"id": "twin_flamethrower", "mount": ["Front"]}, {"id": "twin_fusion_rifle", "mount": ["Front"]}]
+              "replaceWeapon": {"id": "twin_combat_rifle"},
+              "withWeapon": [{"id": "twin_plasma_rifle"}, {"id": "twin_flamethrower"}, {"id": "twin_fusion_rifle"}]
             },
             {"replaceRule": {"id": "power", "x": 1}, "withRule": {"id": "power", "x": 2}}
           ],
@@ -545,7 +545,7 @@
           "defense": 8,
           "reflexes": 6,
           "rules": [{"id": "impact", "x": 1}, "medic", "support", {"id": "wounds", "x": 2}],
-          "weapons": ["heavy_pistol", {"id": "handweapon", "count": 3}, {"id": "twin_combat_rifle", "mount": ["Front"]}],
+          "weapons": ["heavy_pistol", {"id": "handweapon", "count": 3}, {"id": "twin_combat_rifle"}],
           "options": [
             {"replaceWeapon": ["heavy_pistol"], "withWeapon": ["plasma_pistol", "flamethrower_pistol", "fusion_pistol", "thermal_pistol"]},
             {
@@ -559,12 +559,12 @@
               ]
             },
             {
-              "replaceWeapon": {"id": "twin_combat_rifle", "mount": ["Front"]},
+              "replaceWeapon": {"id": "twin_combat_rifle"},
               "withWeapon": [
-                {"id": "twin_plasma_rifle", "mount": ["Front"]},
-                {"id": "twin_flamethrower", "mount": ["Front"]},
-                {"id": "twin_fusion_rifle", "mount": ["Front"]},
-                {"id": "twin_thermal_rifle", "mount": ["Front"]}
+                {"id": "twin_plasma_rifle"},
+                {"id": "twin_flamethrower"},
+                {"id": "twin_fusion_rifle"},
+                {"id": "twin_thermal_rifle"}
               ]
             },
             {"addRule": [{"id": "hover", "name": "Anti-Grav Engine"}, "shield"]}
@@ -625,7 +625,7 @@
           "defense": 8,
           "reflexes": 6,
           "rules": ["support", {"id": "wounds", "x": 3}, "zealot"],
-          "weapons": ["combat_rifle", {"id": "handweapon", "count": 3}, {"id": "twin_combat_rifle", "mount": ["Front"]}],
+          "weapons": ["combat_rifle", {"id": "handweapon", "count": 3}, {"id": "twin_combat_rifle"}],
           "options": [
             {"replaceWeapon": ["combat_rifle"], "withWeapon": ["combi_rifle", "twin_combat_rifle"]},
             {"replaceWeapon": ["combat_rifle", {"id": "handweapon", "count": 3}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 4}]]},
@@ -641,8 +641,8 @@
               ]
             },
             {
-              "replaceWeapon": {"id": "twin_combat_rifle", "mount": ["Front"]},
-              "withWeapon": [{"id": "twin_plasma_rifle", "mount": ["Front"]}, {"id": "twin_flamethrower", "mount": ["Front"]}, {"id": "twin_fusion_rifle", "mount": ["Front"]}]
+              "replaceWeapon": {"id": "twin_combat_rifle"},
+              "withWeapon": [{"id": "twin_plasma_rifle"}, {"id": "twin_flamethrower"}, {"id": "twin_fusion_rifle"}]
             }
           ],
           "min": 1,
@@ -1365,10 +1365,10 @@
           "reflexes": 6,
           "rules": ["vulnerable_rear", {"id": "wounds", "x": 3}],
           "weapons": [
-            {"id": "pestilence_spit", "mount": ["Front"]},
+            {"id": "pestilence_spit"},
             {"id": "hauler_jaws", "count": 3},
-            {"id": "heavy_fusion_rifle", "mount": ["Front"]},
-            {"id": "missile_launcher", "mount": ["Front"]}
+            {"id": "heavy_fusion_rifle"},
+            {"id": "missile_launcher"}
           ],
           "min": 1,
           "max": 3
@@ -1394,7 +1394,7 @@
           "weapons": [{"id": "proboscis", "count": 3}],
           "options": [
             {"replaceWeapon": {"id": "proboscis", "count": 3}, "withWeapon": "pestilence_mower"},
-            {"addWeapon": [{"id": "pestilence_sprayer", "count": "2", "mount": ["Front"]}, {"id": "pestilence_hlauncher", "mount": ["Front"]}], "limit": 1}
+            {"addWeapon": [{"id": "pestilence_sprayer", "count": "2"}, {"id": "pestilence_hlauncher"}], "limit": 1}
           ],
           "min": 1,
           "max": 1
@@ -1706,7 +1706,7 @@
           "fight": 6,
           "defense": 8,
           "reflexes": 6,
-          "weapons": [{"id": "twin_combat_rifle", "mount": ["Front"]}, "combat_rifle", "handweapon"],
+          "weapons": [{"id": "twin_combat_rifle"}, "combat_rifle", "handweapon"],
           "options": [
             {"replaceWeapon": ["combat_rifle"], "withWeapon": ["combi_rifle", "twin_combat_rifle"]},
             {"replaceWeapon": ["heavy_pistol"], "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol", "thermal_pistol"]},
@@ -1732,7 +1732,7 @@
           "fight": 6,
           "defense": 8,
           "reflexes": 6,
-          "weapons": [{"id": "twin_combat_rifle", "mount": ["Front"]}, "combat_rifle", "handweapon"],
+          "weapons": [{"id": "twin_combat_rifle"}, "combat_rifle", "handweapon"],
           "min": 2,
           "max": 8
         }
@@ -1741,12 +1741,12 @@
         {"replaceWeapon": ["combat_rifle"], "withWeapon": ["fusion_rifle", "flamethrower", "plasma_rifle", "thermal_rifle"], "modelLimit": "1/3"},
         {"replaceWeapon": ["combat_rifle", "handweapon"], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 2}]]},
         {
-          "replaceWeapon": {"id": "twin_combat_rifle", "mount": ["Front"]},
+          "replaceWeapon": {"id": "twin_combat_rifle"},
           "withWeapon": [
-            {"id": "twin_plasma_rifle", "mount": ["Front"]},
-            {"id": "twin_flamethrower", "mount": ["Front"]},
-            {"id": "twin_fusion_rifle", "mount": ["Front"]},
-            {"id": "twin_thermal_rifle", "mount": ["Front"]}
+            {"id": "twin_plasma_rifle"},
+            {"id": "twin_flamethrower"},
+            {"id": "twin_fusion_rifle"},
+            {"id": "twin_thermal_rifle"}
           ]
         }
       ]
@@ -1792,29 +1792,29 @@
           "defense": 12,
           "reflexes": 6,
           "rules": [{"id": "impact", "x": 3}, {"id": "transport", "x": 12}, "vulnerable_side_rear", {"id": "wounds", "x": 5}],
-          "weapons": [{"id": "twin_combat_rifle", "mount": ["Front"]}, {"id": "twin_combat_rifle", "mount": ["Front", "Left"]}, {"id": "twin_combat_rifle", "mount": ["Front", "Right"]}],
+          "weapons": [{"id": "twin_combat_rifle"}, {"id": "twin_combat_rifle"}, {"id": "twin_combat_rifle"}],
           "options": [
             {
-              "replaceWeapon": [{"id": "twin_combat_rifle", "mount": ["Front"]}],
+              "replaceWeapon": [{"id": "twin_combat_rifle"}],
               "withWeapon": [
-                {"id": "twin_light_machinegun", "mount": ["Front"]},
-                {"id": "twin_flamethrower", "mount": ["Front"]},
-                {"id": "twin_plasma_rifle", "mount": ["Front"]},
-                {"id": "twin_fusion_rifle", "mount": ["Front"]},
-                {"id": "twin_thermal_rifle", "mount": ["Front"]},
-                {"id": "twin_gatling_gun", "mount": ["Front"]}
+                {"id": "twin_light_machinegun"},
+                {"id": "twin_flamethrower"},
+                {"id": "twin_plasma_rifle"},
+                {"id": "twin_fusion_rifle"},
+                {"id": "twin_thermal_rifle"},
+                {"id": "twin_gatling_gun"}
               ]
             },
             {
-              "replaceWeapon": [{"id": "twin_combat_rifle", "mount": ["Front", "Left"]}, {"id": "twin_combat_rifle", "mount": ["Front", "Right"]}],
+              "replaceWeapon": [{"id": "twin_combat_rifle"}, {"id": "twin_combat_rifle"}],
               "withWeapon": [
-                [{"id": "twin_light_machinegun", "mount": ["Front", "Left"]}, {"id": "twin_light_machinegun", "mount": ["Front", "Right"]}],
-                [{"id": "twin_flamethrower", "mount": ["Front", "Left"]}, {"id": "twin_flamethrower", "mount": ["Front", "Right"]}],
-                [{"id": "twin_plasma_rifle", "mount": ["Front", "Left"]}, {"id": "twin_plasma_rifle", "mount": ["Front", "Right"]}],
-                [{"id": "twin_fusion_rifle", "mount": ["Front", "Left"]}, {"id": "twin_fusion_rifle", "mount": ["Front", "Right"]}],
-                [{"id": "rocket_pod", "mount": ["Front", "Left"]}, {"id": "rocket_pod", "mount": ["Front", "Right"]}],
-                [{"id": "twin_laser_cannon", "mount": ["Front", "Left"]}, {"id": "twin_laser_cannon", "mount": ["Front", "Right"]}],
-                [{"id": "thermal_lance", "mount": ["Front", "Left"]}, {"id": "thermal_lance", "mount": ["Front", "Right"]}]
+                [{"id": "twin_light_machinegun"}, {"id": "twin_light_machinegun"}],
+                [{"id": "twin_flamethrower"}, {"id": "twin_flamethrower"}],
+                [{"id": "twin_plasma_rifle"}, {"id": "twin_plasma_rifle"}],
+                [{"id": "twin_fusion_rifle"}, {"id": "twin_fusion_rifle"}],
+                [{"id": "rocket_pod"}, {"id": "rocket_pod"}],
+                [{"id": "twin_laser_cannon"}, {"id": "twin_laser_cannon"}],
+                [{"id": "thermal_lance"}, {"id": "thermal_lance"}]
               ]
             },
             {"addWeapon": ["twin_combat_rifle", "heavy_machinegun", "plasma_cannon", "fusion_cannon", "heavy_flamethrower", "missile_launcher", "thermal_lance"], "limit": 1},
@@ -1863,15 +1863,15 @@
           "defense": 12,
           "reflexes": 6,
           "rules": ["aircraft", "hover_mode", {"id": "transport", "x": 12}, {"id": "walker_transport", "x": 1}, {"id": "wounds", "x": 5}],
-          "weapons": [{"id": "twin_fusion_cannon", "mount": ["Front"]}, {"id": "storm_missiles", "mount": ["Front"]}, {"id": "twin_laser_cannon", "mount": ["Front", "Left", "Right"]}],
+          "weapons": [{"id": "twin_fusion_cannon"}, {"id": "storm_missiles"}, {"id": "twin_laser_cannon"}],
           "options": [
             {
-              "replaceWeapon": {"id": "twin_fusion_cannon", "mount": ["Front"]},
-              "withWeapon": [{"id": "twin_heavy_machinegun", "mount": ["Front"]}, {"id": "twin_missile_launcher", "mount": ["Front"]}, {"id": "twin_gatling_gun", "mount": ["Front"]}]
+              "replaceWeapon": {"id": "twin_fusion_cannon"},
+              "withWeapon": [{"id": "twin_heavy_machinegun"}, {"id": "twin_missile_launcher"}, {"id": "twin_gatling_gun"}]
             },
             {
-              "replaceWeapon": {"id": "twin_laser_cannon", "mount": ["Front", "Left", "Right"]},
-              "withWeapon": [{"id": "twin_gatling_gun", "mount": ["Front", "Left", "Right"]}, {"id": "twin_heavy_plasma_cannon", "mount": ["Front", "Left", "Right"]}]
+              "replaceWeapon": {"id": "twin_laser_cannon"},
+              "withWeapon": [{"id": "twin_gatling_gun"}, {"id": "twin_heavy_plasma_cannon"}]
             },
             {"addRule": [{"id": "open_topped", "x": 12}]}
           ],
@@ -1895,26 +1895,26 @@
           "defense": 10,
           "reflexes": 6,
           "rules": [{"id": "impact", "x": 3}, "vulnerable_side_rear", {"id": "wounds", "x": 5}],
-          "weapons": [{"id": "twin_combat_rifle", "mount": ["Front"]}, {"id": "twin_missile_launcher", "mount": ["Front"]}],
+          "weapons": [{"id": "twin_combat_rifle"}, {"id": "twin_missile_launcher"}],
           "options": [
             {
-              "replaceWeapon": [{"id": "twin_missile_launcher", "mount": ["Front"]}],
+              "replaceWeapon": [{"id": "twin_missile_launcher"}],
               "withWeapon": [
-                {"id": "twin_aa_autocannon", "mount": ["Front"]},
-                {"id": "heavy_plasma_mortar", "mount": ["Front"]},
-                {"id": "twin_heavy_fusion_cannon", "mount": ["Front"]},
-                {"id": "medium_artillery_cannon", "mount": ["Front"]},
-                {"id": "artillery_cannon", "mount": ["Front"]}
+                {"id": "twin_aa_autocannon"},
+                {"id": "heavy_plasma_mortar"},
+                {"id": "twin_heavy_fusion_cannon"},
+                {"id": "medium_artillery_cannon"},
+                {"id": "artillery_cannon"}
               ]
             },
             {
-              "replaceWeapon": [{"id": "twin_combat_rifle", "mount": ["Front"]}],
+              "replaceWeapon": [{"id": "twin_combat_rifle"}],
               "withWeapon": [
-                {"id": "twin_light_machinegun", "mount": ["Front"]},
-                {"id": "twin_flamethrower", "mount": ["Front"]},
-                {"id": "twin_plasma_rifle", "mount": ["Front"]},
-                {"id": "twin_fusion_rifle", "mount": ["Front"]},
-                {"id": "twin_thermal_rifle", "mount": ["Front"]}
+                {"id": "twin_light_machinegun"},
+                {"id": "twin_flamethrower"},
+                {"id": "twin_plasma_rifle"},
+                {"id": "twin_fusion_rifle"},
+                {"id": "twin_thermal_rifle"}
               ]
             }
           ],
@@ -1938,19 +1938,19 @@
           "defense": 12,
           "reflexes": 6,
           "rules": [{"id": "impact", "x": 6}, "vulnerable_side_rear", {"id": "wounds", "x": 5}],
-          "weapons": [{"id": "twin_combat_rifle", "mount": ["Front", "Left"]}, {"id": "twin_combat_rifle", "mount": ["Front", "Right"]}, "heavy_autocannon"],
+          "weapons": [{"id": "twin_combat_rifle"}, {"id": "twin_combat_rifle"}, "heavy_autocannon"],
           "options": [
             {"replaceWeapon": ["heavy_autocannon"], "withWeapon": ["battle_cannon", "twin_laser_cannon", "demolition_cannon", "twin_gatling_gun"]},
             {
-              "replaceWeapon": [{"id": "twin_combat_rifle", "mount": ["Front", "Left"]}, {"id": "twin_combat_rifle", "mount": ["Front", "Right"]}],
+              "replaceWeapon": [{"id": "twin_combat_rifle"}, {"id": "twin_combat_rifle"}],
               "withWeapon": [
-                [{"id": "twin_light_machinegun", "mount": ["Front", "Left"]}, {"id": "twin_light_machinegun", "mount": ["Front", "Right"]}],
-                [{"id": "heavy_machinegun", "mount": ["Front", "Left"]}, {"id": "heavy_machinegun", "mount": ["Front", "Right"]}],
-                [{"id": "laser_cannon", "mount": ["Front", "Left"]}, {"id": "laser_cannon", "mount": ["Front", "Right"]}],
-                [{"id": "plasma_cannon", "mount": ["Front", "Left"]}, {"id": "plasma_cannon", "mount": ["Front", "Right"]}],
-                [{"id": "fusion_cannon", "mount": ["Front", "Left"]}, {"id": "fusion_cannon", "mount": ["Front", "Right"]}],
-                [{"id": "heavy_flamethrower", "mount": ["Front", "Left"]}, {"id": "heavy_flamethrower", "mount": ["Front", "Right"]}],
-                [{"id": "thermal_lance", "mount": ["Front", "Left"]}, {"id": "thermal_lance", "mount": ["Front", "Right"]}]
+                [{"id": "twin_light_machinegun"}, {"id": "twin_light_machinegun"}],
+                [{"id": "heavy_machinegun"}, {"id": "heavy_machinegun"}],
+                [{"id": "laser_cannon"}, {"id": "laser_cannon"}],
+                [{"id": "plasma_cannon"}, {"id": "plasma_cannon"}],
+                [{"id": "fusion_cannon"}, {"id": "fusion_cannon"}],
+                [{"id": "heavy_flamethrower"}, {"id": "heavy_flamethrower"}],
+                [{"id": "thermal_lance"}, {"id": "thermal_lance"}]
               ],
               "limit": 1
             },
@@ -1977,16 +1977,16 @@
           "defense": 12,
           "reflexes": 6,
           "rules": [{"id": "impact", "x": 6}, "vulnerable_side_rear", {"id": "wounds", "x": 5}],
-          "weapons": [{"id": "heavy_thermal_lance", "mount": ["Front"]}],
+          "weapons": [{"id": "heavy_thermal_lance"}],
           "options": [
             {
-              "replaceWeapon": [{"id": "heavy_thermal_lance", "mount": ["Front"]}],
+              "replaceWeapon": [{"id": "heavy_thermal_lance"}],
               "withWeapon": [
-                {"id": "twin_autocannon", "mount": ["Front"]},
-                {"id": "twin_laser_cannon", "mount": ["Front"]},
-                {"id": "twin_plasma_cannon", "mount": ["Front"]},
-                {"id": "twin_fusion_cannon", "mount": ["Front"]},
-                {"id": "twin_heavy_flamethrower", "mount": ["Front"]}
+                {"id": "twin_autocannon"},
+                {"id": "twin_laser_cannon"},
+                {"id": "twin_plasma_cannon"},
+                {"id": "twin_fusion_cannon"},
+                {"id": "twin_heavy_flamethrower"}
               ]
             },
             {"addWeapon": ["heavy_machinegun", "fusion_cannon", "thermal_lance", "heavy_flamethrower", "plasma_cannon", "laser_cannon"], "limit": 1},
@@ -2013,17 +2013,17 @@
           "defense": 13,
           "reflexes": 6,
           "rules": [{"id": "impact", "x": 6}, "vulnerable_rear", {"id": "wounds", "x": 6}],
-          "weapons": ["twin_laser_cannon", {"id": "twin_light_machinegun", "mount": ["Front", "Left"]}, {"id": "twin_light_machinegun", "mount": ["Front", "Right"]}],
+          "weapons": ["twin_laser_cannon", {"id": "twin_light_machinegun"}, {"id": "twin_light_machinegun"}],
           "options": [
             {"replaceWeapon": ["twin_laser_cannon"], "withWeapon": ["battle_cannon", "heavy_autocannon", "twin_gatling_gun", "heavy_plasma_cannon", "heavy_fusion_cannon", "twin_flamethrower_cannon"]},
             {
-              "replaceWeapon": [{"id": "twin_light_machinegun", "mount": ["Front", "Left"]}, {"id": "twin_light_machinegun", "mount": ["Front", "Right"]}],
+              "replaceWeapon": [{"id": "twin_light_machinegun"}, {"id": "twin_light_machinegun"}],
               "withWeapon": [
-                [{"id": "heavy_machinegun", "mount": ["Front", "Left"]}, {"id": "heavy_machinegun", "mount": ["Front", "Right"]}],
-                [{"id": "plasma_cannon", "mount": ["Front", "Left"]}, {"id": "plasma_cannon", "mount": ["Front", "Right"]}],
-                [{"id": "fusion_cannon", "mount": ["Front", "Left"]}, {"id": "fusion_cannon", "mount": ["Front", "Right"]}],
-                [{"id": "heavy_flamethrower", "mount": ["Front", "Left"]}, {"id": "heavy_flamethrower", "mount": ["Front", "Right"]}],
-                [{"id": "thermal_lance", "mount": ["Front", "Left"]}, {"id": "thermal_lance", "mount": ["Front", "Right"]}]
+                [{"id": "heavy_machinegun"}, {"id": "heavy_machinegun"}],
+                [{"id": "plasma_cannon"}, {"id": "plasma_cannon"}],
+                [{"id": "fusion_cannon"}, {"id": "fusion_cannon"}],
+                [{"id": "heavy_flamethrower"}, {"id": "heavy_flamethrower"}],
+                [{"id": "thermal_lance"}, {"id": "thermal_lance"}]
               ],
               "limit": 1
             },
@@ -2074,13 +2074,13 @@
             {"addWeapon": ["plasma_rifle", "fusion_rifle", "light_machinegun", "gatling_gun", "flamethrower", "laser_cannon", "rocket_pod", "thermal_rifle"], "limit": 2},
             {
               "addWeapon": [
-                {"id": "storm_rifle", "mount": ["Front"]},
-                {"id": "plasma_rifle", "mount": ["Front"]},
-                {"id": "fusion_rifle", "mount": ["Front"]},
-                {"id": "flamethrower", "mount": ["Front"]},
-                {"id": "rocket_pod", "mount": ["Front"]},
-                {"id": "light_machinegun", "mount": ["Front"]},
-                {"id": "thermal_rifle", "mount": ["Front"]}
+                {"id": "storm_rifle"},
+                {"id": "plasma_rifle"},
+                {"id": "fusion_rifle"},
+                {"id": "flamethrower"},
+                {"id": "rocket_pod"},
+                {"id": "light_machinegun"},
+                {"id": "thermal_rifle"}
               ],
               "limit": 2
             },
@@ -2222,7 +2222,7 @@
           "defense": 12,
           "reflexes": 6,
           "rules": ["strider", "vulnerable_rear", {"id": "wounds", "x": 5}],
-          "weapons": ["crab_claw", {"id": "battle_cannon", "mount": ["Front"]}, {"id": "twin_laser_cannon", "count": 2}],
+          "weapons": ["crab_claw", {"id": "battle_cannon"}, {"id": "twin_laser_cannon", "count": 2}],
           "options": [
             {
               "replaceWeapon": "twin_laser_cannon",
@@ -2260,10 +2260,10 @@
           "defense": 13,
           "reflexes": 6,
           "rules": ["titanic", "vulnerable_rear", {"id": "wounds", "x": 6}],
-          "weapons": ["titan_cleaver", "gatling_cannon", {"id": "twin_battle_cannon", "mount": ["Front"]}],
+          "weapons": ["titan_cleaver", "gatling_cannon", {"id": "twin_battle_cannon"}],
           "options": [
             {"replaceWeapon": ["gatling_cannon"], "withWeapon": ["twin_plasma_cannon"]},
-            {"replaceWeapon": [{"id": "twin_battle_cannon", "mount": ["Front"]}], "withWeapon": [{"id": "twin_flamethrower_cannon", "mount": ["Front"]}]}
+            {"replaceWeapon": [{"id": "twin_battle_cannon"}], "withWeapon": [{"id": "twin_flamethrower_cannon"}]}
           ],
           "min": 1,
           "max": 1
